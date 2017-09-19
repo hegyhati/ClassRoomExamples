@@ -1,0 +1,5 @@
+#valtozok
+
+#korlatozasok
+
+#celfuggveny
