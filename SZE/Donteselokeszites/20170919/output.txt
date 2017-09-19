@@ -2,25 +2,25 @@ Problem:    Froccs
 Rows:       3
 Columns:    8
 Non-zeros:  24
-Status:     UNDEFINED
-Objective:  Profit = 0 (MAXimum)
+Status:     OPTIMAL
+Objective:  Profit = 95000 (MAXimum)
 
    No.   Row name   St   Activity     Lower bound   Upper bound    Marginal
 ------ ------------ -- ------------- ------------- ------------- -------------
-     1 Bor          B              0                        1000 
-     2 Szoda        B              0                        1500 
-     3 Profit       B              0                             
+     1 Bor          NU          1000                        1000            80 
+     2 Szoda        NU          1500                        1500            10 
+     3 Profit       B          95000                             
 
    No. Column name  St   Activity     Lower bound   Upper bound    Marginal
 ------ ------------ -- ------------- ------------- ------------- -------------
-     1 xKF          NF             0                                     < eps
-     2 xNF          NF             0                                     < eps
-     3 xHL          NF             0                                     < eps
-     4 xHM          NF             0                                     < eps
-     5 xVHM         NF             0                                     < eps
-     6 xKrF         NF             0                                     < eps
-     7 xSF          NF             0                                     < eps
-     8 xPF          NF             0                                     < eps
+     1 xKF          NL             0             0                       < eps
+     2 xNF          B        166.667             0               
+     3 xHL          B        666.667             0               
+     4 xHM          NL             0             0                         -10 
+     5 xVHM         NL             0             0                         -10 
+     6 xKrF         NL             0             0                         -80 
+     7 xSF          NL             0             0                         -30 
+     8 xPF          NL             0             0                         -30 
 
 Karush-Kuhn-Tucker optimality conditions:
 
@@ -32,9 +32,9 @@ KKT.PB: max.abs.err = 0.00e+00 on row 0
         max.rel.err = 0.00e+00 on row 0
         High quality
 
-KKT.DE: max.abs.err = 6.50e+02 on column 6
-        max.rel.err = 9.98e-01 on column 6
-        DUAL SOLUTION IS WRONG
+KKT.DE: max.abs.err = 0.00e+00 on column 0
+        max.rel.err = 0.00e+00 on column 0
+        High quality
 
 KKT.DB: max.abs.err = 0.00e+00 on row 0
         max.rel.err = 0.00e+00 on row 0

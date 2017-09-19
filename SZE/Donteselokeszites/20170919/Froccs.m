@@ -1,12 +1,12 @@
 #valtozok
-var xKF; # adag
-var xNF; # adag
-var xHL; # adag
-var xHM; # adag
-var xVHM; # adag
-var xKrF; # adag
-var xSF; # adag
-var xPF; # adag
+var xKF >=0; # adag
+var xNF >=0; # adag
+var xHL >=0; # adag
+var xHM >=0; # adag
+var xVHM >=0; # adag
+var xKrF >=0; # adag
+var xSF >=0; # adag
+var xPF >=0; # adag
 
 
 #korlatozasok
