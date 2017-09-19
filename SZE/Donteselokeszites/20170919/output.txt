@@ -1,42 +1,34 @@
 Problem:    Froccs
 Rows:       3
-Columns:    8
+Columns:    8 (8 integer, 0 binary)
 Non-zeros:  24
-Status:     OPTIMAL
+Status:     INTEGER OPTIMAL
 Objective:  Profit = 95000 (MAXimum)
 
-   No.   Row name   St   Activity     Lower bound   Upper bound    Marginal
------- ------------ -- ------------- ------------- ------------- -------------
-     1 Bor          NU          1000                        1000            80 
-     2 Szoda        NU          1500                        1500            10 
-     3 Profit       B          95000                             
+   No.   Row name        Activity     Lower bound   Upper bound
+------ ------------    ------------- ------------- -------------
+     1 Bor                      1000                        1000 
+     2 Szoda                    1500                        1500 
+     3 Profit                  95000                             
 
-   No. Column name  St   Activity     Lower bound   Upper bound    Marginal
------- ------------ -- ------------- ------------- ------------- -------------
-     1 xKF          NL             0             0                       < eps
-     2 xNF          B        166.667             0               
-     3 xHL          B        666.667             0               
-     4 xHM          NL             0             0                         -10 
-     5 xVHM         NL             0             0                         -10 
-     6 xKrF         NL             0             0                         -80 
-     7 xSF          NL             0             0                         -30 
-     8 xPF          NL             0             0                         -30 
+   No. Column name       Activity     Lower bound   Upper bound
+------ ------------    ------------- ------------- -------------
+     1 xKF          *              2             0               
+     2 xNF          *            166             0               
+     3 xHL          *            666             0               
+     4 xHM          *              0             0               
+     5 xVHM         *              0             0               
+     6 xKrF         *              0             0               
+     7 xSF          *              0             0               
+     8 xPF          *              0             0               
 
-Karush-Kuhn-Tucker optimality conditions:
+Integer feasibility conditions:
 
 KKT.PE: max.abs.err = 0.00e+00 on row 0
         max.rel.err = 0.00e+00 on row 0
         High quality
 
 KKT.PB: max.abs.err = 0.00e+00 on row 0
-        max.rel.err = 0.00e+00 on row 0
-        High quality
-
-KKT.DE: max.abs.err = 0.00e+00 on column 0
-        max.rel.err = 0.00e+00 on column 0
-        High quality
-
-KKT.DB: max.abs.err = 0.00e+00 on row 0
         max.rel.err = 0.00e+00 on row 0
         High quality
 

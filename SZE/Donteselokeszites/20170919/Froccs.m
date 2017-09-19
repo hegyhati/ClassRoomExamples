@@ -1,12 +1,12 @@
 #valtozok
-var xKF >=0; # adag
-var xNF >=0; # adag
-var xHL >=0; # adag
-var xHM >=0; # adag
-var xVHM >=0; # adag
-var xKrF >=0; # adag
-var xSF >=0; # adag
-var xPF >=0; # adag
+var xKF >=0, integer; # adag
+var xNF >=0, integer; # adag
+var xHL >=0, integer; # adag
+var xHM >=0, integer; # adag
+var xVHM >=0, integer; # adag
+var xKrF >=0, integer; # adag
+var xSF >=0, integer; # adag
+var xPF >=0, integer; # adag
 
 
 #korlatozasok
