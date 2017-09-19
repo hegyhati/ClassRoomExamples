@@ -21,4 +21,5 @@ s.t. Szoda: # deciliter
 #celfuggveny
 # profit legyen minel nagyobb
 
-maximize Profit: 0;
+maximize Profit:
+90*xKF + 170*xNF + 100*xHL + 250*xHM + 180*xVHM + 650*xKrF + 140*xSF + 480*xPF;
