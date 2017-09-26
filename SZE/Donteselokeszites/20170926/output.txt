@@ -1,51 +1,61 @@
-Problem:    oregkocsi
+Problem:    okoskocsi
 Rows:       11
 Columns:    25 (25 integer, 25 binary)
 Non-zeros:  75
 Status:     INTEGER OPTIMAL
-Objective:  Koltsegek = 273000 (MINimum)
+Objective:  Koltseg = 273000 (MINimum)
 
    No.   Row name        Activity     Lower bound   Upper bound
 ------ ------------    ------------- ------------- -------------
-     1 Hetfo                       1             1             = 
-     2 Kedd                        1             1             = 
-     3 Szerda                      1             1             = 
-     4 Csutortok                   1             1             = 
-     5 Pentek                      1             1             = 
-     6 Wartburg                    1             1             = 
-     7 Lada                        1             1             = 
-     8 Fiat                        1             1             = 
-     9 Trabant                     1             1             = 
-    10 Skoda                       1             1             = 
-    11 Koltsegek              273000                             
+     1 EgyNapLegfeljebbEgyAuto[H]
+                                   1                           1 
+     2 EgyNapLegfeljebbEgyAuto[K]
+                                   1                           1 
+     3 EgyNapLegfeljebbEgyAuto[S]
+                                   1                           1 
+     4 EgyNapLegfeljebbEgyAuto[C]
+                                   1                           1 
+     5 EgyNapLegfeljebbEgyAuto[P]
+                                   1                           1 
+     6 MindenKocsibolEgyetSzeretnenk[W]
+                                   1             1             = 
+     7 MindenKocsibolEgyetSzeretnenk[L]
+                                   1             1             = 
+     8 MindenKocsibolEgyetSzeretnenk[F]
+                                   1             1             = 
+     9 MindenKocsibolEgyetSzeretnenk[T]
+                                   1             1             = 
+    10 MindenKocsibolEgyetSzeretnenk[S]
+                                   1             1             = 
+    11 Koltseg                273000                             
 
    No. Column name       Activity     Lower bound   Upper bound
 ------ ------------    ------------- ------------- -------------
-     1 HW           *              0             0             1 
-     2 HL           *              0             0             1 
-     3 HF           *              1             0             1 
-     4 HT           *              0             0             1 
-     5 HS           *              0             0             1 
-     6 KW           *              0             0             1 
-     7 KL           *              0             0             1 
-     8 KF           *              0             0             1 
-     9 KT           *              0             0             1 
-    10 KS           *              1             0             1 
-    11 SW           *              0             0             1 
-    12 SL           *              0             0             1 
-    13 SF           *              0             0             1 
-    14 ST           *              1             0             1 
-    15 SS           *              0             0             1 
-    16 CW           *              0             0             1 
-    17 CL           *              1             0             1 
-    18 CF           *              0             0             1 
-    19 CT           *              0             0             1 
-    20 CS           *              0             0             1 
-    21 PW           *              1             0             1 
-    22 PL           *              0             0             1 
-    23 PF           *              0             0             1 
-    24 PT           *              0             0             1 
-    25 PS           *              0             0             1 
+     1 megvesz[W,H] *              0             0             1 
+     2 megvesz[L,H] *              0             0             1 
+     3 megvesz[F,H] *              0             0             1 
+     4 megvesz[T,H] *              0             0             1 
+     5 megvesz[S,H] *              1             0             1 
+     6 megvesz[W,K] *              0             0             1 
+     7 megvesz[L,K] *              0             0             1 
+     8 megvesz[F,K] *              0             0             1 
+     9 megvesz[T,K] *              1             0             1 
+    10 megvesz[S,K] *              0             0             1 
+    11 megvesz[W,S] *              1             0             1 
+    12 megvesz[L,S] *              0             0             1 
+    13 megvesz[F,S] *              0             0             1 
+    14 megvesz[T,S] *              0             0             1 
+    15 megvesz[S,S] *              0             0             1 
+    16 megvesz[W,C] *              0             0             1 
+    17 megvesz[L,C] *              0             0             1 
+    18 megvesz[F,C] *              1             0             1 
+    19 megvesz[T,C] *              0             0             1 
+    20 megvesz[S,C] *              0             0             1 
+    21 megvesz[W,P] *              0             0             1 
+    22 megvesz[L,P] *              1             0             1 
+    23 megvesz[F,P] *              0             0             1 
+    24 megvesz[T,P] *              0             0             1 
+    25 megvesz[S,P] *              0             0             1 
 
 Integer feasibility conditions:
 
