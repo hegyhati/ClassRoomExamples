@@ -1,61 +1,98 @@
 Problem:    okoskocsi
-Rows:       11
-Columns:    25 (25 integer, 25 binary)
-Non-zeros:  75
+Rows:       12
+Columns:    30 (30 integer, 30 binary)
+Non-zeros:  90
 Status:     INTEGER OPTIMAL
-Objective:  Koltseg = 273000 (MINimum)
+Objective:  Koltseg = 203001 (MINimum)
 
    No.   Row name        Activity     Lower bound   Upper bound
 ------ ------------    ------------- ------------- -------------
-     1 EgyNapLegfeljebbEgyAuto[H]
+     1 EgyNapLegfeljebbEgyAuto[Hetfo]
                                    1                           1 
-     2 EgyNapLegfeljebbEgyAuto[K]
+     2 EgyNapLegfeljebbEgyAuto[Kedd]
                                    1                           1 
-     3 EgyNapLegfeljebbEgyAuto[S]
+     3 EgyNapLegfeljebbEgyAuto[Szerda]
                                    1                           1 
-     4 EgyNapLegfeljebbEgyAuto[C]
+     4 EgyNapLegfeljebbEgyAuto[Csutortok]
+                                   0                           1 
+     5 EgyNapLegfeljebbEgyAuto[Pentek]
                                    1                           1 
-     5 EgyNapLegfeljebbEgyAuto[P]
+     6 EgyNapLegfeljebbEgyAuto[Szombat]
                                    1                           1 
-     6 MindenKocsibolEgyetSzeretnenk[W]
+     7 MindenKocsibolEgyetSzeretnenk[Wartburg]
                                    1             1             = 
-     7 MindenKocsibolEgyetSzeretnenk[L]
+     8 MindenKocsibolEgyetSzeretnenk[Lada]
                                    1             1             = 
-     8 MindenKocsibolEgyetSzeretnenk[F]
+     9 MindenKocsibolEgyetSzeretnenk[Fiat]
                                    1             1             = 
-     9 MindenKocsibolEgyetSzeretnenk[T]
+    10 MindenKocsibolEgyetSzeretnenk[Trabant]
                                    1             1             = 
-    10 MindenKocsibolEgyetSzeretnenk[S]
+    11 MindenKocsibolEgyetSzeretnenk[Skoda]
                                    1             1             = 
-    11 Koltseg                273000                             
+    12 Koltseg                203001                             
 
    No. Column name       Activity     Lower bound   Upper bound
 ------ ------------    ------------- ------------- -------------
-     1 megvesz[W,H] *              0             0             1 
-     2 megvesz[L,H] *              0             0             1 
-     3 megvesz[F,H] *              0             0             1 
-     4 megvesz[T,H] *              0             0             1 
-     5 megvesz[S,H] *              1             0             1 
-     6 megvesz[W,K] *              0             0             1 
-     7 megvesz[L,K] *              0             0             1 
-     8 megvesz[F,K] *              0             0             1 
-     9 megvesz[T,K] *              1             0             1 
-    10 megvesz[S,K] *              0             0             1 
-    11 megvesz[W,S] *              1             0             1 
-    12 megvesz[L,S] *              0             0             1 
-    13 megvesz[F,S] *              0             0             1 
-    14 megvesz[T,S] *              0             0             1 
-    15 megvesz[S,S] *              0             0             1 
-    16 megvesz[W,C] *              0             0             1 
-    17 megvesz[L,C] *              0             0             1 
-    18 megvesz[F,C] *              1             0             1 
-    19 megvesz[T,C] *              0             0             1 
-    20 megvesz[S,C] *              0             0             1 
-    21 megvesz[W,P] *              0             0             1 
-    22 megvesz[L,P] *              1             0             1 
-    23 megvesz[F,P] *              0             0             1 
-    24 megvesz[T,P] *              0             0             1 
-    25 megvesz[S,P] *              0             0             1 
+     1 megvesz[Wartburg,Hetfo]
+                    *              0             0             1 
+     2 megvesz[Lada,Hetfo]
+                    *              1             0             1 
+     3 megvesz[Fiat,Hetfo]
+                    *              0             0             1 
+     4 megvesz[Trabant,Hetfo]
+                    *              0             0             1 
+     5 megvesz[Skoda,Hetfo]
+                    *              0             0             1 
+     6 megvesz[Wartburg,Kedd]
+                    *              0             0             1 
+     7 megvesz[Lada,Kedd]
+                    *              0             0             1 
+     8 megvesz[Fiat,Kedd]
+                    *              0             0             1 
+     9 megvesz[Trabant,Kedd]
+                    *              1             0             1 
+    10 megvesz[Skoda,Kedd]
+                    *              0             0             1 
+    11 megvesz[Wartburg,Szerda]
+                    *              1             0             1 
+    12 megvesz[Lada,Szerda]
+                    *              0             0             1 
+    13 megvesz[Fiat,Szerda]
+                    *              0             0             1 
+    14 megvesz[Trabant,Szerda]
+                    *              0             0             1 
+    15 megvesz[Skoda,Szerda]
+                    *              0             0             1 
+    16 megvesz[Wartburg,Csutortok]
+                    *              0             0             1 
+    17 megvesz[Lada,Csutortok]
+                    *              0             0             1 
+    18 megvesz[Fiat,Csutortok]
+                    *              0             0             1 
+    19 megvesz[Trabant,Csutortok]
+                    *              0             0             1 
+    20 megvesz[Skoda,Csutortok]
+                    *              0             0             1 
+    21 megvesz[Wartburg,Pentek]
+                    *              0             0             1 
+    22 megvesz[Lada,Pentek]
+                    *              0             0             1 
+    23 megvesz[Fiat,Pentek]
+                    *              1             0             1 
+    24 megvesz[Trabant,Pentek]
+                    *              0             0             1 
+    25 megvesz[Skoda,Pentek]
+                    *              0             0             1 
+    26 megvesz[Wartburg,Szombat]
+                    *              0             0             1 
+    27 megvesz[Lada,Szombat]
+                    *              0             0             1 
+    28 megvesz[Fiat,Szombat]
+                    *              0             0             1 
+    29 megvesz[Trabant,Szombat]
+                    *              0             0             1 
+    30 megvesz[Skoda,Szombat]
+                    *              1             0             1 
 
 Integer feasibility conditions:
 
