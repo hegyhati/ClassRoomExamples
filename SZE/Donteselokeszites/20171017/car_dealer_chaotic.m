@@ -32,7 +32,14 @@ s.t. SellOnlyWhatIHave{d in Days, c in Cars}:
 ## I shouldn't have more cars at the end of the day, then my garage capacity
 s.t. MeetGarageCapacity{d in Days}:
     sum {dd in 1..d, c in Cars} (buy[dd,c]-sell[dd,c]) <= garagecapacity;
-    
+
+## It is meaningless to buy more cars a day, than the capacity
+s.t. RedundantConstraint1{d in Days}:
+    sum{c in Cars} buy[d,c] <= garagecapacity;
+## It is not advantageous to buy anything on the last day
+s.t. RedundantConstraint2 {c in Cars}:
+    buy[nDays,c] = 0;
+
 # Objective funtction
 
 ## I want to maximize my budget in the end
