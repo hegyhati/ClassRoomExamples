@@ -1,12 +1,12 @@
-param startbudget := 200000;
+param startbudget := 200000; # HUF
 
-param garagecapacity :=  4;
+param garagecapacity :=  4; # pieces
 
 param nDays := 7;
 
 set Cars := Trabant Skoda Wartburg Fiat;
 
-param price :
+param price : # HUF / piece
         Trabant Skoda   Wartburg    Fiat :=
     1   120000  110000  100000      95000
     2   135000  120000  111000      100000
