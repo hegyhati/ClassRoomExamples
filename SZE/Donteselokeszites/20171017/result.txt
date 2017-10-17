@@ -1,213 +1,246 @@
-Problem:    car_dealer_chaotic
-Rows:       54
-Columns:    56 (56 integer, 0 binary)
-Non-zeros:  760
+Problem:    car_dealer_nicer
+Rows:       52
+Columns:    68 (28 integer, 0 binary)
+Non-zeros:  164
 Status:     INTEGER OPTIMAL
 Objective:  FinalBudget = 338000 (MAXimum)
 
    No.   Row name        Activity     Lower bound   Upper bound
 ------ ------------    ------------- ------------- -------------
-     1 NoNegativeBalance[1]
-                              200000                      200000 
-     2 NoNegativeBalance[2]
-                              178000                      200000 
-     3 NoNegativeBalance[3]
-                              -42000                      200000 
-     4 NoNegativeBalance[4]
-                              148000                      200000 
-     5 NoNegativeBalance[5]
-                              148000                      200000 
-     6 NoNegativeBalance[6]
-                              108000                      200000 
-     7 NoNegativeBalance[7]
-                             -138000                      200000 
-     8 SellOnlyWhatIHave[1,Trabant]
-                                   0                          -0 
-     9 SellOnlyWhatIHave[1,Skoda]
-                                   0                          -0 
-    10 SellOnlyWhatIHave[1,Wartburg]
-                                  -2                          -0 
-    11 SellOnlyWhatIHave[1,Fiat]
-                                   0                          -0 
-    12 SellOnlyWhatIHave[2,Trabant]
-                                   0                          -0 
-    13 SellOnlyWhatIHave[2,Skoda]
-                                   0                          -0 
-    14 SellOnlyWhatIHave[2,Wartburg]
-                                   0                          -0 
-    15 SellOnlyWhatIHave[2,Fiat]
-                                  -2                          -0 
-    16 SellOnlyWhatIHave[3,Trabant]
-                                   0                          -0 
-    17 SellOnlyWhatIHave[3,Skoda]
-                                   0                          -0 
-    18 SellOnlyWhatIHave[3,Wartburg]
-                                   0                          -0 
-    19 SellOnlyWhatIHave[3,Fiat]
-                                   0                          -0 
-    20 SellOnlyWhatIHave[4,Trabant]
-                                   0                          -0 
-    21 SellOnlyWhatIHave[4,Skoda]
-                                   0                          -0 
-    22 SellOnlyWhatIHave[4,Wartburg]
-                                  -2                          -0 
-    23 SellOnlyWhatIHave[4,Fiat]
-                                   0                          -0 
-    24 SellOnlyWhatIHave[5,Trabant]
-                                  -2                          -0 
-    25 SellOnlyWhatIHave[5,Skoda]
-                                   0                          -0 
-    26 SellOnlyWhatIHave[5,Wartburg]
-                                   0                          -0 
-    27 SellOnlyWhatIHave[5,Fiat]
-                                   0                          -0 
-    28 SellOnlyWhatIHave[6,Trabant]
-                                   0                          -0 
-    29 SellOnlyWhatIHave[6,Skoda]
-                                   0                          -0 
-    30 SellOnlyWhatIHave[6,Wartburg]
-                                   0                          -0 
-    31 SellOnlyWhatIHave[6,Fiat]
-                                  -2                          -0 
-    32 SellOnlyWhatIHave[7,Trabant]
-                                   0                          -0 
-    33 SellOnlyWhatIHave[7,Skoda]
-                                   0                          -0 
-    34 SellOnlyWhatIHave[7,Wartburg]
-                                   0                          -0 
-    35 SellOnlyWhatIHave[7,Fiat]
-                                   0                          -0 
-    36 MeetGarageCapacity[1]
-                                   2                           4 
-    37 MeetGarageCapacity[2]
-                                   2                           4 
-    38 MeetGarageCapacity[3]
-                                   0                           4 
-    39 MeetGarageCapacity[4]
-                                   2                           4 
-    40 MeetGarageCapacity[5]
-                                   2                           4 
-    41 MeetGarageCapacity[6]
-                                   2                           4 
-    42 MeetGarageCapacity[7]
-                                   0                           4 
-    43 RedundantConstraint1[1]
-                                   4                           4 
-    44 RedundantConstraint1[2]
-                                   4                           4 
-    45 RedundantConstraint1[3]
-                                   0                           4 
-    46 RedundantConstraint1[4]
-                                   4                           4 
-    47 RedundantConstraint1[5]
-                                   3                           4 
-    48 RedundantConstraint1[6]
-                                   2                           4 
-    49 RedundantConstraint1[7]
-                                   0                           4 
-    50 RedundantConstraint2[Trabant]
+     1 InitialBalance
+                              200000        200000             = 
+     2 ConnectBalanceBuySell[1]
                                    0            -0             = 
-    51 RedundantConstraint2[Skoda]
+     3 ConnectBalanceBuySell[2]
                                    0            -0             = 
-    52 RedundantConstraint2[Wartburg]
+     4 ConnectBalanceBuySell[3]
                                    0            -0             = 
-    53 RedundantConstraint2[Fiat]
+     5 ConnectBalanceBuySell[4]
                                    0            -0             = 
-    54 FinalBudget            138000                             
+     6 ConnectBalanceBuySell[5]
+                                   0            -0             = 
+     7 ConnectBalanceBuySell[6]
+                                   0            -0             = 
+     8 ConnectBalanceBuySell[7]
+                                   0            -0             = 
+     9 InitialGarage[Trabant]
+                                   0            -0             = 
+    10 InitialGarage[Skoda]
+                                   0            -0             = 
+    11 InitialGarage[Wartburg]
+                                   0            -0             = 
+    12 InitialGarage[Fiat]
+                                   0            -0             = 
+    13 ConnectGarageBuySell[1,Trabant]
+                                   0            -0             = 
+    14 ConnectGarageBuySell[1,Skoda]
+                                   0            -0             = 
+    15 ConnectGarageBuySell[1,Wartburg]
+                                   0            -0             = 
+    16 ConnectGarageBuySell[1,Fiat]
+                                   0            -0             = 
+    17 ConnectGarageBuySell[2,Trabant]
+                                   0            -0             = 
+    18 ConnectGarageBuySell[2,Skoda]
+                                   0            -0             = 
+    19 ConnectGarageBuySell[2,Wartburg]
+                                   0            -0             = 
+    20 ConnectGarageBuySell[2,Fiat]
+                                   0            -0             = 
+    21 ConnectGarageBuySell[3,Trabant]
+                                   0            -0             = 
+    22 ConnectGarageBuySell[3,Skoda]
+                                   0            -0             = 
+    23 ConnectGarageBuySell[3,Wartburg]
+                                   0            -0             = 
+    24 ConnectGarageBuySell[3,Fiat]
+                                   0            -0             = 
+    25 ConnectGarageBuySell[4,Trabant]
+                                   0            -0             = 
+    26 ConnectGarageBuySell[4,Skoda]
+                                   0            -0             = 
+    27 ConnectGarageBuySell[4,Wartburg]
+                                   0            -0             = 
+    28 ConnectGarageBuySell[4,Fiat]
+                                   0            -0             = 
+    29 ConnectGarageBuySell[5,Trabant]
+                                   0            -0             = 
+    30 ConnectGarageBuySell[5,Skoda]
+                                   0            -0             = 
+    31 ConnectGarageBuySell[5,Wartburg]
+                                   0            -0             = 
+    32 ConnectGarageBuySell[5,Fiat]
+                                   0            -0             = 
+    33 ConnectGarageBuySell[6,Trabant]
+                                   0            -0             = 
+    34 ConnectGarageBuySell[6,Skoda]
+                                   0            -0             = 
+    35 ConnectGarageBuySell[6,Wartburg]
+                                   0            -0             = 
+    36 ConnectGarageBuySell[6,Fiat]
+                                   0            -0             = 
+    37 ConnectGarageBuySell[7,Trabant]
+                                   0            -0             = 
+    38 ConnectGarageBuySell[7,Skoda]
+                                   0            -0             = 
+    39 ConnectGarageBuySell[7,Wartburg]
+                                   0            -0             = 
+    40 ConnectGarageBuySell[7,Fiat]
+                                   0            -0             = 
+    41 MeetGarageCapacity[1]
+                                   2                           4 
+    42 MeetGarageCapacity[2]
+                                   2                           4 
+    43 MeetGarageCapacity[3]
+                                   0                           4 
+    44 MeetGarageCapacity[4]
+                                   2                           4 
+    45 MeetGarageCapacity[5]
+                                   2                           4 
+    46 MeetGarageCapacity[6]
+                                   2                           4 
+    47 MeetGarageCapacity[7]
+                                   0                           4 
+    48 RedundantConstraint1[Trabant]
+                                   0                          -0 
+    49 RedundantConstraint1[Skoda]
+                                   0                          -0 
+    50 RedundantConstraint1[Wartburg]
+                                   0                          -0 
+    51 RedundantConstraint1[Fiat]
+                                  -2                          -0 
+    52 FinalBudget            338000                             
 
    No. Column name       Activity     Lower bound   Upper bound
 ------ ------------    ------------- ------------- -------------
-     1 buy[1,Trabant]
-                    *              0             0             4 
-     2 buy[1,Skoda] *              0             0             4 
-     3 buy[1,Wartburg]
-                    *              4             0             4 
-     4 buy[1,Fiat]  *              0             0             4 
-     5 buy[2,Trabant]
-                    *              0             0             4 
-     6 buy[2,Skoda] *              0             0             4 
-     7 buy[2,Wartburg]
-                    *              2             0             4 
-     8 buy[2,Fiat]  *              2             0             4 
-     9 buy[3,Trabant]
-                    *              0             0             4 
-    10 buy[3,Skoda] *              0             0             4 
-    11 buy[3,Wartburg]
-                    *              0             0             4 
-    12 buy[3,Fiat]  *              0             0             4 
-    13 buy[4,Trabant]
-                    *              0             0             4 
-    14 buy[4,Skoda] *              0             0             4 
-    15 buy[4,Wartburg]
-                    *              4             0             4 
-    16 buy[4,Fiat]  *              0             0             4 
-    17 buy[5,Trabant]
-                    *              3             0             4 
-    18 buy[5,Skoda] *              0             0             4 
-    19 buy[5,Wartburg]
-                    *              0             0             4 
-    20 buy[5,Fiat]  *              0             0             4 
-    21 buy[6,Trabant]
-                    *              0             0             4 
-    22 buy[6,Skoda] *              0             0             4 
-    23 buy[6,Wartburg]
-                    *              0             0             4 
-    24 buy[6,Fiat]  *              2             0             4 
-    25 buy[7,Trabant]
-                    *              0             0             4 
-    26 buy[7,Skoda] *              0             0             4 
-    27 buy[7,Wartburg]
-                    *              0             0             4 
-    28 buy[7,Fiat]  *              0             0             4 
-    29 sell[1,Trabant]
-                    *              0             0             4 
-    30 sell[1,Skoda]
-                    *              0             0             4 
-    31 sell[1,Wartburg]
-                    *              2             0             4 
-    32 sell[1,Fiat] *              0             0             4 
-    33 sell[2,Trabant]
-                    *              0             0             4 
-    34 sell[2,Skoda]
-                    *              0             0             4 
-    35 sell[2,Wartburg]
-                    *              4             0             4 
-    36 sell[2,Fiat] *              0             0             4 
-    37 sell[3,Trabant]
-                    *              0             0             4 
-    38 sell[3,Skoda]
-                    *              0             0             4 
-    39 sell[3,Wartburg]
-                    *              0             0             4 
-    40 sell[3,Fiat] *              2             0             4 
-    41 sell[4,Trabant]
-                    *              0             0             4 
-    42 sell[4,Skoda]
-                    *              0             0             4 
-    43 sell[4,Wartburg]
-                    *              2             0             4 
-    44 sell[4,Fiat] *              0             0             4 
-    45 sell[5,Trabant]
-                    *              1             0             4 
-    46 sell[5,Skoda]
-                    *              0             0             4 
-    47 sell[5,Wartburg]
-                    *              2             0             4 
-    48 sell[5,Fiat] *              0             0             4 
-    49 sell[6,Trabant]
-                    *              2             0             4 
-    50 sell[6,Skoda]
-                    *              0             0             4 
-    51 sell[6,Wartburg]
-                    *              0             0             4 
-    52 sell[6,Fiat] *              0             0             4 
-    53 sell[7,Trabant]
-                    *              0             0             4 
-    54 sell[7,Skoda]
-                    *              0             0             4 
-    55 sell[7,Wartburg]
-                    *              0             0             4 
-    56 sell[7,Fiat] *              2             0             4 
+     1 buysell[1,Trabant]
+                    *              0            -4             4 
+     2 buysell[1,Skoda]
+                    *              0            -4             4 
+     3 buysell[1,Wartburg]
+                    *              2            -4             4 
+     4 buysell[1,Fiat]
+                    *              0            -4             4 
+     5 buysell[2,Trabant]
+                    *              0            -4             4 
+     6 buysell[2,Skoda]
+                    *              0            -4             4 
+     7 buysell[2,Wartburg]
+                    *             -2            -4             4 
+     8 buysell[2,Fiat]
+                    *              2            -4             4 
+     9 buysell[3,Trabant]
+                    *              0            -4             4 
+    10 buysell[3,Skoda]
+                    *              0            -4             4 
+    11 buysell[3,Wartburg]
+                    *              0            -4             4 
+    12 buysell[3,Fiat]
+                    *             -2            -4             4 
+    13 buysell[4,Trabant]
+                    *              0            -4             4 
+    14 buysell[4,Skoda]
+                    *              0            -4             4 
+    15 buysell[4,Wartburg]
+                    *              2            -4             4 
+    16 buysell[4,Fiat]
+                    *              0            -4             4 
+    17 buysell[5,Trabant]
+                    *              2            -4             4 
+    18 buysell[5,Skoda]
+                    *              0            -4             4 
+    19 buysell[5,Wartburg]
+                    *             -2            -4             4 
+    20 buysell[5,Fiat]
+                    *              0            -4             4 
+    21 buysell[6,Trabant]
+                    *             -2            -4             4 
+    22 buysell[6,Skoda]
+                    *              0            -4             4 
+    23 buysell[6,Wartburg]
+                    *              0            -4             4 
+    24 buysell[6,Fiat]
+                    *              2            -4             4 
+    25 buysell[7,Trabant]
+                    *              0            -4             4 
+    26 buysell[7,Skoda]
+                    *              0            -4             4 
+    27 buysell[7,Wartburg]
+                    *              0            -4             4 
+    28 buysell[7,Fiat]
+                    *             -2            -4             4 
+    29 balance[0]             200000             0               
+    30 balance[1]                  0             0               
+    31 balance[2]              22000             0               
+    32 balance[3]             242000             0               
+    33 balance[4]              52000             0               
+    34 balance[5]              52000             0               
+    35 balance[6]              92000             0               
+    36 balance[7]             338000             0               
+    37 garage[0,Trabant]
+                                   0             0             4 
+    38 garage[0,Skoda]
+                                   0             0             4 
+    39 garage[0,Wartburg]
+                                   0             0             4 
+    40 garage[0,Fiat]
+                                   0             0             4 
+    41 garage[1,Trabant]
+                                   0             0             4 
+    42 garage[1,Skoda]
+                                   0             0             4 
+    43 garage[1,Wartburg]
+                                   2             0             4 
+    44 garage[1,Fiat]
+                                   0             0             4 
+    45 garage[2,Trabant]
+                                   0             0             4 
+    46 garage[2,Skoda]
+                                   0             0             4 
+    47 garage[2,Wartburg]
+                                   0             0             4 
+    48 garage[2,Fiat]
+                                   2             0             4 
+    49 garage[3,Trabant]
+                                   0             0             4 
+    50 garage[3,Skoda]
+                                   0             0             4 
+    51 garage[3,Wartburg]
+                                   0             0             4 
+    52 garage[3,Fiat]
+                                   0             0             4 
+    53 garage[4,Trabant]
+                                   0             0             4 
+    54 garage[4,Skoda]
+                                   0             0             4 
+    55 garage[4,Wartburg]
+                                   2             0             4 
+    56 garage[4,Fiat]
+                                   0             0             4 
+    57 garage[5,Trabant]
+                                   2             0             4 
+    58 garage[5,Skoda]
+                                   0             0             4 
+    59 garage[5,Wartburg]
+                                   0             0             4 
+    60 garage[5,Fiat]
+                                   0             0             4 
+    61 garage[6,Trabant]
+                                   0             0             4 
+    62 garage[6,Skoda]
+                                   0             0             4 
+    63 garage[6,Wartburg]
+                                   0             0             4 
+    64 garage[6,Fiat]
+                                   2             0             4 
+    65 garage[7,Trabant]
+                                   0             0             4 
+    66 garage[7,Skoda]
+                                   0             0             4 
+    67 garage[7,Wartburg]
+                                   0             0             4 
+    68 garage[7,Fiat]
+                                   0             0             4 
 
 Integer feasibility conditions:
 
