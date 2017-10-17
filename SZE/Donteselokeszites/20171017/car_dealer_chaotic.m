@@ -10,8 +10,8 @@ param price{Days,Cars}; # HUF
 # Variables
 
 ## How many do I buy / sell from a car on a scpecific day.
-var buy{Days,Cars}, integer, >=0;
-var sell{Days,Cars}, integer, >=0;
+var buy{Days,Cars}, integer, >=0, <=garagecapacity;
+var sell{Days,Cars}, integer, >=0, <=garagecapacity;
 
 # Constraints
 
