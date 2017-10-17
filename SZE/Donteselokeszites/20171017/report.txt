@@ -1,0 +1,49 @@
+Day  1:
+	BUY: Wartburg(4)
+	SELL: Wartburg(2)
+	--------------------
+	GARAGE [2/4]: Wartburg(2)
+	BUDGET: 0
+
+Day  2:
+	BUY: Wartburg(2) Fiat(2)
+	SELL: Wartburg(4)
+	--------------------
+	GARAGE [2/4]: Fiat(2)
+	BUDGET: 22000
+
+Day  3:
+	BUY:
+	SELL: Fiat(2)
+	--------------------
+	GARAGE [0/4]:
+	BUDGET: 242000
+
+Day  4:
+	BUY: Wartburg(4)
+	SELL: Wartburg(2)
+	--------------------
+	GARAGE [2/4]: Wartburg(2)
+	BUDGET: 52000
+
+Day  5:
+	BUY: Trabant(3)
+	SELL: Trabant(1) Wartburg(2)
+	--------------------
+	GARAGE [2/4]: Trabant(2)
+	BUDGET: 52000
+
+Day  6:
+	BUY: Fiat(2)
+	SELL: Trabant(2)
+	--------------------
+	GARAGE [2/4]: Fiat(2)
+	BUDGET: 92000
+
+Day  7:
+	BUY:
+	SELL: Fiat(2)
+	--------------------
+	GARAGE [0/4]:
+	BUDGET: 338000
+
