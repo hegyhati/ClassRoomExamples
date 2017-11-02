@@ -1,0 +1,346 @@
+Problem:    festes
+Rows:       73
+Columns:    100 (80 integer, 80 binary)
+Non-zeros:  309
+Status:     INTEGER OPTIMAL
+Objective:  TeljesenKeszenVan = 33.33333333 (MAXimum)
+
+   No.   Row name        Activity     Lower bound   Upper bound
+------ ------------    ------------- ------------- -------------
+     1 MindigMindentCsinalValaki[hantas,1]
+                                   2             1               
+     2 MindigMindentCsinalValaki[hantas,2]
+                                   1             1               
+     3 MindigMindentCsinalValaki[hantas,3]
+                                   2             1               
+     4 MindigMindentCsinalValaki[hantas,4]
+                                   1             1               
+     5 MindigMindentCsinalValaki[alap,1]
+                                   1             1               
+     6 MindigMindentCsinalValaki[alap,2]
+                                   1             1               
+     7 MindigMindentCsinalValaki[alap,3]
+                                   1             1               
+     8 MindigMindentCsinalValaki[alap,4]
+                                   1             1               
+     9 MindigMindentCsinalValaki[festes,1]
+                                   1             1               
+    10 MindigMindentCsinalValaki[festes,2]
+                                   2             1               
+    11 MindigMindentCsinalValaki[festes,3]
+                                   1             1               
+    12 MindigMindentCsinalValaki[festes,4]
+                                   2             1               
+    13 MindigMindentCsinalValaki[lakk,1]
+                                   1             1               
+    14 MindigMindentCsinalValaki[lakk,2]
+                                   1             1               
+    15 MindigMindentCsinalValaki[lakk,3]
+                                   1             1               
+    16 MindigMindentCsinalValaki[lakk,4]
+                                   1             1               
+    17 EgyEmberEgyszerreCsakEgyet[Andrea,1]
+                                   1             1             = 
+    18 EgyEmberEgyszerreCsakEgyet[Andrea,2]
+                                   1             1             = 
+    19 EgyEmberEgyszerreCsakEgyet[Andrea,3]
+                                   1             1             = 
+    20 EgyEmberEgyszerreCsakEgyet[Andrea,4]
+                                   1             1             = 
+    21 EgyEmberEgyszerreCsakEgyet[Bela,1]
+                                   1             1             = 
+    22 EgyEmberEgyszerreCsakEgyet[Bela,2]
+                                   1             1             = 
+    23 EgyEmberEgyszerreCsakEgyet[Bela,3]
+                                   1             1             = 
+    24 EgyEmberEgyszerreCsakEgyet[Bela,4]
+                                   1             1             = 
+    25 EgyEmberEgyszerreCsakEgyet[Cili,1]
+                                   1             1             = 
+    26 EgyEmberEgyszerreCsakEgyet[Cili,2]
+                                   1             1             = 
+    27 EgyEmberEgyszerreCsakEgyet[Cili,3]
+                                   1             1             = 
+    28 EgyEmberEgyszerreCsakEgyet[Cili,4]
+                                   1             1             = 
+    29 EgyEmberEgyszerreCsakEgyet[Denes,1]
+                                   1             1             = 
+    30 EgyEmberEgyszerreCsakEgyet[Denes,2]
+                                   1             1             = 
+    31 EgyEmberEgyszerreCsakEgyet[Denes,3]
+                                   1             1             = 
+    32 EgyEmberEgyszerreCsakEgyet[Denes,4]
+                                   1             1             = 
+    33 EgyEmberEgyszerreCsakEgyet[Elemer,1]
+                                   1             1             = 
+    34 EgyEmberEgyszerreCsakEgyet[Elemer,2]
+                                   1             1             = 
+    35 EgyEmberEgyszerreCsakEgyet[Elemer,3]
+                                   1             1             = 
+    36 EgyEmberEgyszerreCsakEgyet[Elemer,4]
+                                   1             1             = 
+    37 HantasInit                  0            -0             = 
+    38 HantasHaladas[1]
+                                  -3                          -0 
+    39 HantasHaladas[2]
+                           -0.333333                          -0 
+    40 HantasHaladas[3]
+                                  -3                          -0 
+    41 HantasHaladas[4]
+                           -0.333333                          -0 
+    42 alapInit                    0            -0             = 
+    43 alapHaladas[1]
+                                   0                          -0 
+    44 alapHaladas[2]
+                                   0                          -0 
+    45 alapHaladas[3]
+                                   0                          -0 
+    46 alapHaladas[4]
+                                   0                          -0 
+    47 festesInit                  0            -0             = 
+    48 festesHaladas[1]
+                                   0                          -0 
+    49 festesHaladas[2]
+                            -6.66667                          -0 
+    50 festesHaladas[3]
+                                   0                          -0 
+    51 festesHaladas[4]
+                            -6.66667                          -0 
+    52 lakkInit                    0            -0             = 
+    53 lakkHaladas[1]
+                                   0                          -0 
+    54 lakkHaladas[2]
+                                   0                          -0 
+    55 lakkHaladas[3]
+                                   0                          -0 
+    56 lakkHaladas[4]
+                                   0                          -0 
+    57 HantasNemMehetTulMesszeALakkozastol[1]
+                                   2                           2 
+    58 HantasNemMehetTulMesszeALakkozastol[2]
+                                   0                           2 
+    59 HantasNemMehetTulMesszeALakkozastol[3]
+                                   2                           2 
+    60 HantasNemMehetTulMesszeALakkozastol[4]
+                                   0                           2 
+    61 AlapozasNemEloz[1]
+                                  -2                          -0 
+    62 AlapozasNemEloz[2]
+                                   0                          -0 
+    63 AlapozasNemEloz[3]
+                                  -2                          -0 
+    64 AlapozasNemEloz[4]
+                                   0                          -0 
+    65 FestesNemEloz[1]
+                                   0                          -0 
+    66 FestesNemEloz[2]
+                                   0                          -0 
+    67 FestesNemEloz[3]
+                                   0                          -0 
+    68 FestesNemEloz[4]
+                                   0                          -0 
+    69 LakkozasNemEloz[1]
+                                   0                          -0 
+    70 LakkozasNemEloz[2]
+                                   0                          -0 
+    71 LakkozasNemEloz[3]
+                                   0                          -0 
+    72 LakkozasNemEloz[4]
+                                   0                          -0 
+    73 TeljesenKeszenVan
+                             33.3333                             
+
+   No. Column name       Activity     Lower bound   Upper bound
+------ ------------    ------------- ------------- -------------
+     1 csinal[Andrea,1,hantas]
+                    *              1             0             1 
+     2 csinal[Bela,1,hantas]
+                    *              0             0             1 
+     3 csinal[Cili,1,hantas]
+                    *              0             0             1 
+     4 csinal[Denes,1,hantas]
+                    *              0             0             1 
+     5 csinal[Elemer,1,hantas]
+                    *              1             0             1 
+     6 csinal[Andrea,2,hantas]
+                    *              0             0             1 
+     7 csinal[Bela,2,hantas]
+                    *              0             0             1 
+     8 csinal[Cili,2,hantas]
+                    *              0             0             1 
+     9 csinal[Denes,2,hantas]
+                    *              0             0             1 
+    10 csinal[Elemer,2,hantas]
+                    *              1             0             1 
+    11 csinal[Andrea,3,hantas]
+                    *              1             0             1 
+    12 csinal[Bela,3,hantas]
+                    *              0             0             1 
+    13 csinal[Cili,3,hantas]
+                    *              0             0             1 
+    14 csinal[Denes,3,hantas]
+                    *              0             0             1 
+    15 csinal[Elemer,3,hantas]
+                    *              1             0             1 
+    16 csinal[Andrea,4,hantas]
+                    *              0             0             1 
+    17 csinal[Bela,4,hantas]
+                    *              0             0             1 
+    18 csinal[Cili,4,hantas]
+                    *              0             0             1 
+    19 csinal[Denes,4,hantas]
+                    *              0             0             1 
+    20 csinal[Elemer,4,hantas]
+                    *              1             0             1 
+    21 csinal[Andrea,1,alap]
+                    *              0             0             1 
+    22 csinal[Bela,1,alap]
+                    *              1             0             1 
+    23 csinal[Cili,1,alap]
+                    *              0             0             1 
+    24 csinal[Denes,1,alap]
+                    *              0             0             1 
+    25 csinal[Elemer,1,alap]
+                    *              0             0             1 
+    26 csinal[Andrea,2,alap]
+                    *              0             0             1 
+    27 csinal[Bela,2,alap]
+                    *              1             0             1 
+    28 csinal[Cili,2,alap]
+                    *              0             0             1 
+    29 csinal[Denes,2,alap]
+                    *              0             0             1 
+    30 csinal[Elemer,2,alap]
+                    *              0             0             1 
+    31 csinal[Andrea,3,alap]
+                    *              0             0             1 
+    32 csinal[Bela,3,alap]
+                    *              1             0             1 
+    33 csinal[Cili,3,alap]
+                    *              0             0             1 
+    34 csinal[Denes,3,alap]
+                    *              0             0             1 
+    35 csinal[Elemer,3,alap]
+                    *              0             0             1 
+    36 csinal[Andrea,4,alap]
+                    *              0             0             1 
+    37 csinal[Bela,4,alap]
+                    *              1             0             1 
+    38 csinal[Cili,4,alap]
+                    *              0             0             1 
+    39 csinal[Denes,4,alap]
+                    *              0             0             1 
+    40 csinal[Elemer,4,alap]
+                    *              0             0             1 
+    41 csinal[Andrea,1,festes]
+                    *              0             0             1 
+    42 csinal[Bela,1,festes]
+                    *              0             0             1 
+    43 csinal[Cili,1,festes]
+                    *              1             0             1 
+    44 csinal[Denes,1,festes]
+                    *              0             0             1 
+    45 csinal[Elemer,1,festes]
+                    *              0             0             1 
+    46 csinal[Andrea,2,festes]
+                    *              1             0             1 
+    47 csinal[Bela,2,festes]
+                    *              0             0             1 
+    48 csinal[Cili,2,festes]
+                    *              1             0             1 
+    49 csinal[Denes,2,festes]
+                    *              0             0             1 
+    50 csinal[Elemer,2,festes]
+                    *              0             0             1 
+    51 csinal[Andrea,3,festes]
+                    *              0             0             1 
+    52 csinal[Bela,3,festes]
+                    *              0             0             1 
+    53 csinal[Cili,3,festes]
+                    *              1             0             1 
+    54 csinal[Denes,3,festes]
+                    *              0             0             1 
+    55 csinal[Elemer,3,festes]
+                    *              0             0             1 
+    56 csinal[Andrea,4,festes]
+                    *              1             0             1 
+    57 csinal[Bela,4,festes]
+                    *              0             0             1 
+    58 csinal[Cili,4,festes]
+                    *              1             0             1 
+    59 csinal[Denes,4,festes]
+                    *              0             0             1 
+    60 csinal[Elemer,4,festes]
+                    *              0             0             1 
+    61 csinal[Andrea,1,lakk]
+                    *              0             0             1 
+    62 csinal[Bela,1,lakk]
+                    *              0             0             1 
+    63 csinal[Cili,1,lakk]
+                    *              0             0             1 
+    64 csinal[Denes,1,lakk]
+                    *              1             0             1 
+    65 csinal[Elemer,1,lakk]
+                    *              0             0             1 
+    66 csinal[Andrea,2,lakk]
+                    *              0             0             1 
+    67 csinal[Bela,2,lakk]
+                    *              0             0             1 
+    68 csinal[Cili,2,lakk]
+                    *              0             0             1 
+    69 csinal[Denes,2,lakk]
+                    *              1             0             1 
+    70 csinal[Elemer,2,lakk]
+                    *              0             0             1 
+    71 csinal[Andrea,3,lakk]
+                    *              0             0             1 
+    72 csinal[Bela,3,lakk]
+                    *              0             0             1 
+    73 csinal[Cili,3,lakk]
+                    *              0             0             1 
+    74 csinal[Denes,3,lakk]
+                    *              1             0             1 
+    75 csinal[Elemer,3,lakk]
+                    *              0             0             1 
+    76 csinal[Andrea,4,lakk]
+                    *              0             0             1 
+    77 csinal[Bela,4,lakk]
+                    *              0             0             1 
+    78 csinal[Cili,4,lakk]
+                    *              0             0             1 
+    79 csinal[Denes,4,lakk]
+                    *              1             0             1 
+    80 csinal[Elemer,4,lakk]
+                    *              0             0             1 
+    81 hantaskm[0]                 0             0               
+    82 hantaskm[1]           10.3333             0               
+    83 hantaskm[2]           16.6667             0               
+    84 hantaskm[3]                27             0               
+    85 hantaskm[4]           33.3333             0               
+    86 alapkm[0]                   0             0               
+    87 alapkm[1]             8.33333             0               
+    88 alapkm[2]             16.6667             0               
+    89 alapkm[3]                  25             0               
+    90 alapkm[4]             33.3333             0               
+    91 festeskm[0]                 0             0               
+    92 festeskm[1]           8.33333             0               
+    93 festeskm[2]           16.6667             0               
+    94 festeskm[3]                25             0               
+    95 festeskm[4]           33.3333             0               
+    96 lakkkm[0]                   0             0               
+    97 lakkkm[1]             8.33333             0               
+    98 lakkkm[2]             16.6667             0               
+    99 lakkkm[3]                  25             0               
+   100 lakkkm[4]             33.3333             0               
+
+Integer feasibility conditions:
+
+KKT.PE: max.abs.err = 3.55e-15 on row 44
+        max.rel.err = 1.03e-16 on row 44
+        High quality
+
+KKT.PB: max.abs.err = 5.33e-15 on row 65
+        max.rel.err = 5.33e-15 on row 65
+        High quality
+
+End of output

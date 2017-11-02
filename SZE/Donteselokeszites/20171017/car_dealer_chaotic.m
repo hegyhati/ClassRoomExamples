@@ -2,6 +2,8 @@ param startbudget; # HUF
 param garagecapacity; #pieces
 param nDays;
 
+param M := 10000000;
+
 set Days := 1..nDays;
 set Cars;
 
@@ -12,7 +14,9 @@ param price{Days,Cars}; # HUF
 ## How many do I buy / sell from a car on a scpecific day.
 var buy{Days,Cars}, integer, >=0, <=garagecapacity;
 var sell{Days,Cars}, integer, >=0, <=garagecapacity;
-
+var buyorsell{Days,Cars}, binary;
+    # 1 if buying, 0 if selling
+    
 # Constraints
 
 ## I shouldn't spend more money than what I have
@@ -32,6 +36,14 @@ s.t. SellOnlyWhatIHave{d in Days, c in Cars}:
 ## I shouldn't have more cars at the end of the day, then my garage capacity
 s.t. MeetGarageCapacity{d in Days}:
     sum {dd in 1..d, c in Cars} (buy[dd,c]-sell[dd,c]) <= garagecapacity;
+
+## We shouldn't buy and sell the same type of car on the same day
+s.t. DontBuyAndSellTogether1{d in Days, c in Cars}:
+    sell[d,c] <= M * (1 - buyorsell[d,c]);
+s.t. DontBuyAndSellTogether2{d in Days, c in Cars}:
+    buy[d,c] <= M * buyorsell[d,c];
+
+
 
 ## It is meaningless to buy more cars a day, than the capacity
 s.t. RedundantConstraint1{d in Days}:
