@@ -1,0 +1,24 @@
+Uj alberletbe koltoztunk, es a konyveinket fel szeretnenk pakolni egy polcszerkezetre. 50 cm magasan kezdodik a ket sin, amire a polclapokat pakolhatjuk. A polcaink 120 cm szelesek, es a celunk, hogy minel alacsonyabban legyen a legmagasabb polc, amit hasznalunk (minimalisan kelljen nyujtozkodni).
+
+A konyveinket 9 csoportba soroltunk: matek, info, sport, zene, egyebregeny, Tolkien, Feist, Harry Potter, diplomak. Az egyes csoportokat nem akarjuk megbontani, tehat egymas mellett kell lenniuk egy polcon. A polcok kozott annyi helynek kell lennie, hogy a legmagasabb konyv felett is maradjon meg 7cm. A polcok vastagsaga 2 cm, melysege 30 cm, es osszesen 7 lapot vettunk, legfeljebb ennyit tudunk felhasznalni.
+
+A konyvcsoportok szelessege, es az abban foglalt konyvek magassagainak intervallumai a kovetkezok (cm-ben):
+
+    matek           100         10-20
+    info            80          10-25
+    sport           30          15-30
+    zene            50          20-30
+    egyebregeny     40          15-20
+    Tolkien         30          13-25
+    Feist           50          9-20
+    Harry Potter    90          12-25
+    Diploma         70          40-40
+
+Otthoni gyakorlas celjabol:
+
+Alternativ feladat: megvan a sin hossza, es sokkal tobb konyvpakk. A cel, hogy a leheto legtobbet feltegyuk a polcokra.
+
+plusz nehezites: minden konyvpakknak megvan a tomege, illetve az, hogy egy polc legfeljebb mennyit bir el.
+
+masik plusz nehezites: Mi dontjuk el, hogy milyen hosszu polcokat vagatunk, de fel es masfel meter kozott kell maradnia. Azt is mi dontjuk el, hogy mennyit. A cel az, hogy minel kevesebb kihasznalatlan terulet maradjon a polcokon. (kevesebb helyen kelljen port torolgetni.)
+
