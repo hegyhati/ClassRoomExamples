@@ -1,0 +1,1 @@
+param max_fenntartas := 319;
