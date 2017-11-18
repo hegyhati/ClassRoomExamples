@@ -1,3 +1,7 @@
+/*
+ * Print out the positive integer numbers until 100 in increasing order
+ */
+
 #include <stdio.h>
 
 int main()
@@ -7,10 +11,10 @@ int main()
     x=1;
 
     
-    while(x<=200)
+    while(x<=100)
     {
         printf("%4d\n",x);
-        x=x+29;
+        x=x+1;
     }
 
 

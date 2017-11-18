@@ -1,3 +1,7 @@
+/*
+ * Ask for a number, print out the Pascal triangle with that depth.
+ */
+
 #include <stdio.h>
 
 int main()
