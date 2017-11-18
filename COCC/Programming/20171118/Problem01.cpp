@@ -1,7 +1,13 @@
+/*
+ * Ask for a number from the input, and display Pascals triangle with that depth.
+ */
+
 #include <iostream>
 #include <iomanip>
 using namespace std;
 
+
+// Marina take a number, and returns its factorial
 int Marina(int number)
 {
     int fact=1;
@@ -10,6 +16,7 @@ int Marina(int number)
     return fact;
 }
 
+// Mira takes two numbers, and returns top over bottom
 int Mira(int top, int bottom)
 {
     return Marina(top) / (Marina(bottom) * Marina(top-bottom));

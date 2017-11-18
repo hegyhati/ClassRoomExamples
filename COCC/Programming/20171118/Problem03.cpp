@@ -1,8 +1,13 @@
+/*
+ * Ask for 5 numbers between 1 and 999, and print out a histogram of the occurances of the digits.
+ * If a number is less then 3 digits long, the leading zeros should be counted.
+ */
+
 #include <iostream>
 using namespace std;
 
 
-
+// Sharine returns how many times a digit appears in a number
 int Sherine (int number, int digit) {
     int count = 0;
     if (number/100 == digit) count++;
@@ -11,15 +16,16 @@ int Sherine (int number, int digit) {
     return count;
 }
 
+// Christine asks for an input between 1 and 999, and asks again, if a wrong input is given
 int Christine() {
-    int n=1;
+    int n=
     do {
-        if(n<1 || n>999) cout<<"Wrong number!"<<endl;
         cin>>n;
     } while (n<1 || n>999);
     return n;
 }
 
+// Bassem prints out the histogram of the digit array
 void Bassem(int occurances[]) {
     for(int d=0; d<10; d++) {
         cout << d << "|";
