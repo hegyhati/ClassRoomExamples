@@ -25,6 +25,11 @@ struct Garden Nevine(){
     return garden;
 }
 
+void Mourad(struct Garden gardens[]){
+    for(int x=0;x<COUNT;x++)
+        gardens[x]=Nevine();
+}
+
 double Aziz(struct Garden garden){
     return garden.width*garden.length;
 }
@@ -43,13 +48,12 @@ double Rania(struct Garden gardens[]){
     return totalTrees;
 }
 
+
+
 int main(){
     struct Garden mygardens[COUNT];
 
-
-    for(int x=0;x<COUNT;x++)
-        mygardens[x]=Nevine();
-
+    Mourad(mygardens);
 
     cout<<"The total area is: "<<Rebecca(mygardens)<<endl;
     cout<<"The total number of trees is: "<<Rania(mygardens)<<endl;

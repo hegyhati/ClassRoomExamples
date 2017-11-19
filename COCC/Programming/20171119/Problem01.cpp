@@ -1,3 +1,7 @@
+/* Ask for the width and length of GARDEN number of gardens.
+ * Print out their total area.
+ */
+
 #include <iostream>
 using namespace std;
 
