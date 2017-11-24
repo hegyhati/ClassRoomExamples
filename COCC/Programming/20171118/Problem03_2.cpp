@@ -12,7 +12,7 @@
 using namespace std;
 
 
-// Sharine returns how many times a digit appears in a number (regardless of the size of the number, the only thing that is assumed is that it is a pozitive integer)
+// Sharine returns how many times a digit appears in a number (regardless of the size of the number, the only thing that is assumed is that it is a positive integer)
 int Sherine (int number, int digit) {
     int count = 0;
     while(number!=0){

@@ -16,8 +16,8 @@ bool Mina (int n) {
     return true;    
 }
 
-// Sarem returns if n and n+2 are twin primes
-bool Sarem (int n) {
+// Samer returns if n and n+2 are twin primes
+bool Samer (int n) {
     return Mina(n) && Mina(n+2);
 }
 
@@ -25,7 +25,7 @@ bool Sarem (int n) {
 int main()
 {
     int n;
-    for(cin>>n;!Sarem(n);n++);
+    for(cin>>n;!Samer(n);n++);
     cout<<"The next twin primes are "<<n<<" and "<<n+2<<"."<<endl;
     
     return 0;
