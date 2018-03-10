@@ -18,7 +18,15 @@
 using namespace std;
 
 int main(){
+    double a,b;
 
+    cin >> a;
+    
+    do {
+        cin >> b;
+    } while (b==0);
+
+    cout << a/b << endl;
 
     return 0;
 }

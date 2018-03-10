@@ -17,8 +17,15 @@
 using namespace std;
 
 int main(){
+    double a;
+    double b;
 
+    cin>>a;
+    cin>>b;
 
+    if (b==0) cout <<"Vilagvege\n";
+    else cout << a/b << endl;
+    
     return 0;
 }
 

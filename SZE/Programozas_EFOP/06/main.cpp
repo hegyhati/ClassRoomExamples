@@ -6,9 +6,10 @@
  * Pelda:
  *  2   3   --->    8
  *  3   2   --->    9
- *  -3  2   --->    9Jajj
+ *  -3  2   --->    9
  *  5   -1  --->    0.2
  *  42  0   --->    1
+ *  0.5 2   --->    0.25
  *
  */
 
@@ -18,7 +19,21 @@
 using namespace std;
 
 int main(){
+    double a;
+    int n;
 
+    cin >> a;
+    cin >> n;
+
+    double an = 1;
+
+     
+    for (int i=0;i<n;i++) {
+        an *= a;
+    }
+
+    cout << an << endl;
+    
 
     return 0;
 }
