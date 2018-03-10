@@ -19,7 +19,14 @@
 using namespace std;
 
 int main(){
+    double x0, dx;
+    int n;
+    cin >> x0 >> dx >> n;
 
+    for(int i=0;i<n;i++)
+        cout<<x0+i*dx<<" ";
+
+    cout << endl;
 
     return 0;
 }
