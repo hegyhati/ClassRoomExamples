@@ -8,6 +8,13 @@ param price{Cars,Days};
 
 var buy{Cars,Days}, integer, >=0;
 var sell{Cars,Days}, integer, >=0;
+var buyorsell{Cars,Days}, binary;
+
+
+s.t. Buyorsell1{c in Cars, d in Days}:
+    buy[c,d]<=buyorsell[c,d]*garagespace;
+s.t. Buyorsell2{c in Cars, d in Days}:
+    sell[c,d]<=(1-buyorsell[c,d])*garagespace;
 
 s.t. DontSpendMoreThanWhatYouHave{d in Days}:
     budget + sum{d2 in 1..d,c in Cars}(price[c,d2]*(sell[c,d2]-buy[c,d2])) >= 0;
@@ -23,7 +30,15 @@ maximize FinalBudget:
 
 solve;
 
-
+for {d in Days}
+{
+    printf "Day %d\n",d;
+    
+    for {c in Cars : sell[c,d]!=0}
+        printf "\t Sell %d %s.\n",sell[c,d],c;
+    for {c in Cars : buy[c,d]!=0}
+        printf "\t Buy %d %s.\n",buy[c,d],c; 
+}
 
 
 data;
