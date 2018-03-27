@@ -8,7 +8,7 @@ class Tower {
         double r;
         double dmg;
     public:
-        
+        Tower(int x, int y, double r, double dmg);
 };
 
 
