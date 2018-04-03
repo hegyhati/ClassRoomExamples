@@ -2,6 +2,7 @@
 #define GAME_HPP
 
 #define TWN 1024
+#define MTN 1024
 
 #include "Tower.hpp"
 #include "Monster.hpp"
@@ -16,13 +17,16 @@ class Game{
 
         int getNextTowerIndex() const;
         bool isTowerAt(int x, int y) const;
+        bool isMonsterAt(Monster * monsters[MTN], int x, int y) const;
+        bool anyMonsterLeft(Monster * monsters[MTN]) const;
+        int getNextMonsterSlot(Monster * monsters[MTN]) const;
 
     public:
         Game(int width, int height);
         ~Game();
         void addTower(int x, int y);
         bool start(int rounds, int spawn, int maxMonster=0);
-        void print() const;
+        void print(Monster * monsters[MTN]) const;
     
 };
 

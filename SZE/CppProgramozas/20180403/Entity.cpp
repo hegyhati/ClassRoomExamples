@@ -8,5 +8,5 @@ double Entity::distance(const Entity& other) const {
 }
 
 bool Entity::isPosition(int x, int y) const {
-    return x==this->x && y==this->y;
+    return x==(this->x) && y==(this->y);
 }
