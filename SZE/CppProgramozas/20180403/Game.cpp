@@ -33,6 +33,13 @@ bool Game::start(int rounds, int spawn, int maxMonster) {
     return true;
 };
 
+bool Game::isTowerAt(int x, int y) const {
+    for(int t=0; t<TWN; t++)
+        if (towers[t]!=NULL)
+            if (towers[t]->isPosition(x,y))
+                return true;
+    return false;
+}
 
 void Game::print() const {
     cout<<"\n\n+";
@@ -42,7 +49,8 @@ void Game::print() const {
     for(int h=0;h<height;h++){
         cout <<"|";
         for(int w=0; w<width; w++)
-            cout<<" ";
+            if(isTowerAt(w,h)) cout<<"T";
+            else cout<<" ";
         cout<<"|\n";
     }
     cout<<"+";

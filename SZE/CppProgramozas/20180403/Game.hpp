@@ -15,6 +15,7 @@ class Game{
         Tower * towers[TWN];
 
         int getNextTowerIndex() const;
+        bool isTowerAt(int x, int y) const;
 
     public:
         Game(int width, int height);
