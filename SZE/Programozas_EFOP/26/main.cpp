@@ -13,11 +13,30 @@
 
 
 #include<iostream>
+#include<iomanip>
 using namespace std;
 
 int main(){
 
+    int n;
+    cin >> n;
+    int m;
+    cin >> m;
 
+    int digits[128];
+    int x;
+
+    for(x=0;n!=0;n/=m,x++) {
+        cout << setw(8)<<n << " | " << n%m << endl;
+        digits[x]=n%m;
+    }
+    cout << setw(8) << n << endl << endl;
+    
+    for(x--;x>=0;x--)
+        cout << digits[x];
+
+    cout << endl;
+    
     return 0;
 }
 

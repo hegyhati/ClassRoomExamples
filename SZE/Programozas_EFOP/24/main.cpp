@@ -26,19 +26,44 @@ int length(int n) {
     return power;
 }
 
-int length2(int n){
+int lengthanddigitsum(int n, int& digitsum){
     int power;
-    for(power=0;n!=0;n/=10) power++;
+    digitsum=0;
+    for(power=0;n!=0;n/=10) {
+        digitsum += n%10;
+        power++;
+    }
     return power;
+}
+
+struct lads {
+    int length;
+    int digitsum;
+};
+
+struct lads lengthanddigitsum2(int n){
+    struct lads toReturn;
+    toReturn.digitsum=0;
+    for(toReturn.length=0;n!=0;n/=10) {
+        toReturn.digitsum += n%10;
+        toReturn.length++;
+    }
+    return toReturn;
 }
 
 int main(){
     int number;
     cin >> number;
 
+    int digitsum=0;
+
     
-    cout << length2(number) << endl;
-    
+    cout << lengthanddigitsum(number,digitsum) << endl;
+    cout << digitsum << endl;
+
+    struct lads x;
+    x=lengthanddigitsum2(number);
+    cout<<x.length<<endl<<x.digitsum<<endl;
     
 
     return 0;
