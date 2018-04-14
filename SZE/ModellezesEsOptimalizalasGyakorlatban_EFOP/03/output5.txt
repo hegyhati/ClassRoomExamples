@@ -1,0 +1,40 @@
+Day 1
+	Sell: 
+	Buy: Lada(4) 
+	Bank: 0
+	Loan: 0
+	Garage rent: 0
+	Budget: 0
+	Bank: 0
+Day 2
+	Sell: Lada(4) 
+	Buy: Trabant(6) 
+	Bank: 0
+	Loan: 178000
+	Garage rent: 2
+	Budget: 0
+	Bank: -178000
+Day 3
+	Sell: Trabant(6) 
+	Buy: Skoda(6) 
+	Bank: -186900
+	Loan: -4000
+	Garage rent: 2
+	Budget: 0
+	Bank: -182900
+Day 4
+	Sell: Skoda(6) 
+	Buy: Trabant(6) 
+	Bank: -192045
+	Loan: -22000
+	Garage rent: 2
+	Budget: 0
+	Bank: -170045
+Day 5
+	Sell: Trabant(6) 
+	Buy: 
+	Bank: -178547
+	Loan: -178547
+	Garage rent: 0
+	Budget: 421453
+	Bank: 0

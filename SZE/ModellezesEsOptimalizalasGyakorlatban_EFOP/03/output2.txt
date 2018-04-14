@@ -1,0 +1,9 @@
+
+
+  Wartburg:	Szerda - 61000
+      Lada:	Pentek - 52000
+ Kispolski:	Csutortok - 30000
+   Trabant:	Kedd - 65000
+     Skoda:	Hetfo - 65000
+
+

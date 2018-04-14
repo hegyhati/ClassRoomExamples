@@ -1,0 +1,49 @@
+Problem:    DJ
+Rows:       6
+Columns:    7 (7 integer, 7 binary)
+Non-zeros:  24
+Status:     INTEGER OPTIMAL
+Objective:  Tracklist = 5 (MAXimum)
+
+   No.   Row name        Activity     Lower bound   Upper bound
+------ ------------    ------------- ------------- -------------
+     1 ShouldntPlayThreeUnlikedSongs[Andi]
+                                   1                           2 
+     2 ShouldntPlayThreeUnlikedSongs[Guszti]
+                                   2                           2 
+     3 ShouldntPlayThreeUnlikedSongs[Patrik]
+                                   2                           2 
+     4 ShouldntPlayThreeUnlikedSongs[Tina]
+                                   2                           2 
+     5 ShouldntPlayThreeUnlikedSongs[Mate]
+                                   2                           2 
+     6 Tracklist                   5                             
+
+   No. Column name       Activity     Lower bound   Upper bound
+------ ------------    ------------- ------------- -------------
+     1 play[Its_my_life]
+                    *              1             0             1 
+     2 play[Whisky_in_the_jar]
+                    *              0             0             1 
+     3 play[I_love_R_n_R]
+                    *              0             0             1 
+     4 play[Highway_to_Hell]
+                    *              1             0             1 
+     5 play[Shipping_up_to_Boston]
+                    *              1             0             1 
+     6 play[Summer_of_69]
+                    *              1             0             1 
+     7 play[Freedom]
+                    *              1             0             1 
+
+Integer feasibility conditions:
+
+KKT.PE: max.abs.err = 0.00e+00 on row 0
+        max.rel.err = 0.00e+00 on row 0
+        High quality
+
+KKT.PB: max.abs.err = 0.00e+00 on row 0
+        max.rel.err = 0.00e+00 on row 0
+        High quality
+
+End of output

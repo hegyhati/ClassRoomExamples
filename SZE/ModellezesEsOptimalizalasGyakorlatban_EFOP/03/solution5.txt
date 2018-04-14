@@ -1,0 +1,254 @@
+Problem:    Cars5
+Rows:       49
+Columns:    77 (30 integer, 0 binary)
+Non-zeros:  174
+Status:     INTEGER OPTIMAL
+Objective:  endbudget = 421452.75 (MAXimum)
+
+   No.   Row name        Activity     Lower bound   Upper bound
+------ ------------    ------------- ------------- -------------
+     1 InitializeBudget
+                              200000        200000             = 
+     2 InitializeGarage[Wartburg]
+                                   0            -0             = 
+     3 InitializeGarage[Lada]
+                                   0            -0             = 
+     4 InitializeGarage[Kispolski]
+                                   0            -0             = 
+     5 InitializeGarage[Trabant]
+                                   0            -0             = 
+     6 InitializeGarage[Skoda]
+                                   0            -0             = 
+     7 InitialBankBalande
+                                   0            -0             = 
+     8 BalanceChange[1]
+                                   0            -0             = 
+     9 BalanceChange[2]
+                                   0            -0             = 
+    10 BalanceChange[3]
+                                   0            -0             = 
+    11 BalanceChange[4]
+                                   0            -0             = 
+    12 BalanceChange[5]
+                                   0            -0             = 
+    13 BankBalanceChange[1]
+                                   0            -0             = 
+    14 BankBalanceChange[2]
+                                   0            -0             = 
+    15 BankBalanceChange[3]
+                                   0            -0             = 
+    16 BankBalanceChange[4]
+                                   0            -0             = 
+    17 BankBalanceChange[5]
+                                   0            -0             = 
+    18 NoLoansAtTheEnd
+                                   0            -0             = 
+    19 CarAvailability[1,Wartburg]
+                                   0            -0             = 
+    20 CarAvailability[1,Lada]
+                                   0            -0             = 
+    21 CarAvailability[1,Kispolski]
+                                   0            -0             = 
+    22 CarAvailability[1,Trabant]
+                                   0            -0             = 
+    23 CarAvailability[1,Skoda]
+                                   0            -0             = 
+    24 CarAvailability[2,Wartburg]
+                                   0            -0             = 
+    25 CarAvailability[2,Lada]
+                                   0            -0             = 
+    26 CarAvailability[2,Kispolski]
+                                   0            -0             = 
+    27 CarAvailability[2,Trabant]
+                                   0            -0             = 
+    28 CarAvailability[2,Skoda]
+                                   0            -0             = 
+    29 CarAvailability[3,Wartburg]
+                                   0            -0             = 
+    30 CarAvailability[3,Lada]
+                                   0            -0             = 
+    31 CarAvailability[3,Kispolski]
+                                   0            -0             = 
+    32 CarAvailability[3,Trabant]
+                                   0            -0             = 
+    33 CarAvailability[3,Skoda]
+                                   0            -0             = 
+    34 CarAvailability[4,Wartburg]
+                                   0            -0             = 
+    35 CarAvailability[4,Lada]
+                                   0            -0             = 
+    36 CarAvailability[4,Kispolski]
+                                   0            -0             = 
+    37 CarAvailability[4,Trabant]
+                                   0            -0             = 
+    38 CarAvailability[4,Skoda]
+                                   0            -0             = 
+    39 CarAvailability[5,Wartburg]
+                                   0            -0             = 
+    40 CarAvailability[5,Lada]
+                                   0            -0             = 
+    41 CarAvailability[5,Kispolski]
+                                   0            -0             = 
+    42 CarAvailability[5,Trabant]
+                                   0            -0             = 
+    43 CarAvailability[5,Skoda]
+                                   0            -0             = 
+    44 CannotHaveMoreCarsThanGarageSpace[1]
+                                   4                           4 
+    45 CannotHaveMoreCarsThanGarageSpace[2]
+                                   4                           4 
+    46 CannotHaveMoreCarsThanGarageSpace[3]
+                                   4                           4 
+    47 CannotHaveMoreCarsThanGarageSpace[4]
+                                   4                           4 
+    48 CannotHaveMoreCarsThanGarageSpace[5]
+                                   0                           4 
+    49 endbudget              421453                             
+
+   No. Column name       Activity     Lower bound   Upper bound
+------ ------------    ------------- ------------- -------------
+     1 buy[Wartburg,1]
+                    *              0                             
+     2 buy[Lada,1]  *              4                             
+     3 buy[Kispolski,1]
+                    *              0                             
+     4 buy[Trabant,1]
+                    *              0                             
+     5 buy[Skoda,1] *              0                             
+     6 buy[Wartburg,2]
+                    *              0                             
+     7 buy[Lada,2]  *             -4                             
+     8 buy[Kispolski,2]
+                    *              0                             
+     9 buy[Trabant,2]
+                    *              6                             
+    10 buy[Skoda,2] *              0                             
+    11 buy[Wartburg,3]
+                    *              0                             
+    12 buy[Lada,3]  *              0                             
+    13 buy[Kispolski,3]
+                    *              0                             
+    14 buy[Trabant,3]
+                    *             -6                             
+    15 buy[Skoda,3] *              6                             
+    16 buy[Wartburg,4]
+                    *              0                             
+    17 buy[Lada,4]  *              0                             
+    18 buy[Kispolski,4]
+                    *              0                             
+    19 buy[Trabant,4]
+                    *              6                             
+    20 buy[Skoda,4] *             -6                             
+    21 buy[Wartburg,5]
+                    *              0                             
+    22 buy[Lada,5]  *              0                             
+    23 buy[Kispolski,5]
+                    *              0                             
+    24 buy[Trabant,5]
+                    *             -6                             
+    25 buy[Skoda,5] *              0                             
+    26 budget[0]              200000             0               
+    27 budget[1]                   0             0               
+    28 budget[2]                   0             0               
+    29 budget[3]                   0             0               
+    30 budget[4]                   0             0               
+    31 budget[5]              421453             0               
+    32 caringarage[Wartburg,0]
+                                   0             0               
+    33 caringarage[Lada,0]
+                                   0             0               
+    34 caringarage[Kispolski,0]
+                                   0             0               
+    35 caringarage[Trabant,0]
+                                   0             0               
+    36 caringarage[Skoda,0]
+                                   0             0               
+    37 caringarage[Wartburg,1]
+                                   0             0               
+    38 caringarage[Lada,1]
+                                   4             0               
+    39 caringarage[Kispolski,1]
+                                   0             0               
+    40 caringarage[Trabant,1]
+                                   0             0               
+    41 caringarage[Skoda,1]
+                                   0             0               
+    42 caringarage[Wartburg,2]
+                                   0             0               
+    43 caringarage[Lada,2]
+                                   0             0               
+    44 caringarage[Kispolski,2]
+                                   0             0               
+    45 caringarage[Trabant,2]
+                                   6             0               
+    46 caringarage[Skoda,2]
+                                   0             0               
+    47 caringarage[Wartburg,3]
+                                   0             0               
+    48 caringarage[Lada,3]
+                                   0             0               
+    49 caringarage[Kispolski,3]
+                                   0             0               
+    50 caringarage[Trabant,3]
+                                   0             0               
+    51 caringarage[Skoda,3]
+                                   6             0               
+    52 caringarage[Wartburg,4]
+                                   0             0               
+    53 caringarage[Lada,4]
+                                   0             0               
+    54 caringarage[Kispolski,4]
+                                   0             0               
+    55 caringarage[Trabant,4]
+                                   6             0               
+    56 caringarage[Skoda,4]
+                                   0             0               
+    57 caringarage[Wartburg,5]
+                                   0             0               
+    58 caringarage[Lada,5]
+                                   0             0               
+    59 caringarage[Kispolski,5]
+                                   0             0               
+    60 caringarage[Trabant,5]
+                                   0             0               
+    61 caringarage[Skoda,5]
+                                   0             0               
+    62 loan[1]                     0                             
+    63 loan[2]                178000                             
+    64 loan[3]                 -4000                             
+    65 loan[4]                -22000                             
+    66 loan[5]               -178547                             
+    67 bankbalance[0]
+                                   0       -200000             0 
+    68 bankbalance[1]
+                                   0       -200000             0 
+    69 bankbalance[2]
+                             -178000       -200000             0 
+    70 bankbalance[3]
+                             -182900       -200000             0 
+    71 bankbalance[4]
+                             -170045       -200000             0 
+    72 bankbalance[5]
+                                   0       -200000             0 
+    73 rentgarage[1]
+                    *              0             0               
+    74 rentgarage[2]
+                    *              2             0               
+    75 rentgarage[3]
+                    *              2             0               
+    76 rentgarage[4]
+                    *              2             0               
+    77 rentgarage[5]
+                    *              0             0               
+
+Integer feasibility conditions:
+
+KKT.PE: max.abs.err = 0.00e+00 on row 0
+        max.rel.err = 0.00e+00 on row 0
+        High quality
+
+KKT.PB: max.abs.err = 8.73e-11 on row 10
+        max.rel.err = 8.73e-11 on row 10
+        High quality
+
+End of output

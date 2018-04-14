@@ -1,0 +1,6 @@
+                    	Andi	Guszti	Patrik	Tina	Mate
+ 1.     I_love_R_n_R	Drink	Dance	Drink	Drink	Drink
+ 2.  Highway_to_Hell	Dance	Drink	Dance	Away	Dance
+ 3.     I_love_R_n_R	Drink	Dance	Drink	Away	Drink
+ 4.  Highway_to_Hell	Dance	Drink	Dance	Away	Dance
+ 5.     I_love_R_n_R	Drink	Away	Drink	Away	Drink

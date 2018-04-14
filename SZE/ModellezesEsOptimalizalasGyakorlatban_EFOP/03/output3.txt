@@ -1,0 +1,20 @@
+Day 1
+	Sell: 
+	Buy: Lada(4) 
+	Budget: 0
+Day 2
+	Sell: Lada(4) 
+	Buy: Trabant(3) 
+	Budget: 25000
+Day 3
+	Sell: Trabant(3) 
+	Buy: Skoda(3) 
+	Budget: 31000
+Day 4
+	Sell: Skoda(3) 
+	Buy: Trabant(3) 
+	Budget: 46000
+Day 5
+	Sell: Trabant(3) 
+	Buy: 
+	Budget: 346000
