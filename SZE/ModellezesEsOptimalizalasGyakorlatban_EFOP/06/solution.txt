@@ -1,0 +1,1914 @@
+Problem:    bike
+Rows:       621
+Columns:    360 (360 integer, 360 binary)
+Non-zeros:  2482
+Status:     INTEGER OPTIMAL
+Objective:  deliveredOrders = 12 (MAXimum)
+
+   No.   Row name        Activity     Lower bound   Upper bound
+------ ------------    ------------- ------------- -------------
+     1 RouteSelection[1]
+                                   1             1             = 
+     2 RouteSelection[2]
+                                   1             1             = 
+     3 RouteSelection[3]
+                                   1             1             = 
+     4 RouteSelection[4]
+                                   1             1             = 
+     5 RouteSelection[5]
+                                   1             1             = 
+     6 RouteSelection[6]
+                                   1             1             = 
+     7 RouteSelection[7]
+                                   1             1             = 
+     8 RouteSelection[8]
+                                   1             1             = 
+     9 OnlyDeliverOnRoute[1,1]
+                                   1                           1 
+    10 OnlyDeliverOnRoute[1,2]
+                                   0                           1 
+    11 OnlyDeliverOnRoute[1,3]
+                                   1                           1 
+    12 OnlyDeliverOnRoute[1,4]
+                                   1                           1 
+    13 OnlyDeliverOnRoute[1,5]
+                                   0                           1 
+    14 OnlyDeliverOnRoute[1,6]
+                                   0                           1 
+    15 OnlyDeliverOnRoute[1,7]
+                                   1                           1 
+    16 OnlyDeliverOnRoute[1,8]
+                                   1                           1 
+    17 OnlyDeliverOnRoute[2,1]
+                                   1                           1 
+    18 OnlyDeliverOnRoute[2,2]
+                                   0                           1 
+    19 OnlyDeliverOnRoute[2,3]
+                                   1                           1 
+    20 OnlyDeliverOnRoute[2,4]
+                                   1                           1 
+    21 OnlyDeliverOnRoute[2,5]
+                                   0                           1 
+    22 OnlyDeliverOnRoute[2,6]
+                                   0                           1 
+    23 OnlyDeliverOnRoute[2,7]
+                                   1                           1 
+    24 OnlyDeliverOnRoute[2,8]
+                                   1                           1 
+    25 OnlyDeliverOnRoute[3,1]
+                                   1                           1 
+    26 OnlyDeliverOnRoute[3,2]
+                                   0                           1 
+    27 OnlyDeliverOnRoute[3,3]
+                                   1                           1 
+    28 OnlyDeliverOnRoute[3,4]
+                                   1                           1 
+    29 OnlyDeliverOnRoute[3,5]
+                                   0                           1 
+    30 OnlyDeliverOnRoute[3,6]
+                                   0                           1 
+    31 OnlyDeliverOnRoute[3,7]
+                                   1                           1 
+    32 OnlyDeliverOnRoute[3,8]
+                                   1                           1 
+    33 OnlyDeliverOnRoute[4,1]
+                                   1                           1 
+    34 OnlyDeliverOnRoute[4,2]
+                                   0                           1 
+    35 OnlyDeliverOnRoute[4,3]
+                                   1                           1 
+    36 OnlyDeliverOnRoute[4,4]
+                                   1                           1 
+    37 OnlyDeliverOnRoute[4,5]
+                                   0                           1 
+    38 OnlyDeliverOnRoute[4,6]
+                                   0                           1 
+    39 OnlyDeliverOnRoute[4,7]
+                                   1                           1 
+    40 OnlyDeliverOnRoute[4,8]
+                                   1                           1 
+    41 OnlyDeliverOnRoute[5,1]
+                                   1                           1 
+    42 OnlyDeliverOnRoute[5,2]
+                                   0                           1 
+    43 OnlyDeliverOnRoute[5,3]
+                                   1                           1 
+    44 OnlyDeliverOnRoute[5,4]
+                                   1                           1 
+    45 OnlyDeliverOnRoute[5,5]
+                                   0                           1 
+    46 OnlyDeliverOnRoute[5,6]
+                                   0                           1 
+    47 OnlyDeliverOnRoute[5,7]
+                                   1                           1 
+    48 OnlyDeliverOnRoute[5,8]
+                                   1                           1 
+    49 OnlyDeliverOnRoute[6,1]
+                                   0                           1 
+    50 OnlyDeliverOnRoute[6,2]
+                                   0                           1 
+    51 OnlyDeliverOnRoute[6,3]
+                                   1                           1 
+    52 OnlyDeliverOnRoute[6,4]
+                                   0                           1 
+    53 OnlyDeliverOnRoute[6,5]
+                                   0                           1 
+    54 OnlyDeliverOnRoute[6,6]
+                                   0                           1 
+    55 OnlyDeliverOnRoute[6,7]
+                                   0                           1 
+    56 OnlyDeliverOnRoute[6,8]
+                                   0                           1 
+    57 OnlyDeliverOnRoute[7,1]
+                                   1                           1 
+    58 OnlyDeliverOnRoute[7,2]
+                                   1                           1 
+    59 OnlyDeliverOnRoute[7,3]
+                                   0                           1 
+    60 OnlyDeliverOnRoute[7,4]
+                                   1                           1 
+    61 OnlyDeliverOnRoute[7,5]
+                                   1                           1 
+    62 OnlyDeliverOnRoute[7,6]
+                                   1                           1 
+    63 OnlyDeliverOnRoute[7,7]
+                                   1                           1 
+    64 OnlyDeliverOnRoute[7,8]
+                                   1                           1 
+    65 OnlyDeliverOnRoute[8,1]
+                                   1                           1 
+    66 OnlyDeliverOnRoute[8,2]
+                                   1                           1 
+    67 OnlyDeliverOnRoute[8,3]
+                                   0                           1 
+    68 OnlyDeliverOnRoute[8,4]
+                                   1                           1 
+    69 OnlyDeliverOnRoute[8,5]
+                                   1                           1 
+    70 OnlyDeliverOnRoute[8,6]
+                                   1                           1 
+    71 OnlyDeliverOnRoute[8,7]
+                                   1                           1 
+    72 OnlyDeliverOnRoute[8,8]
+                                   1                           1 
+    73 OnlyDeliverOnRoute[9,1]
+                                   1                           1 
+    74 OnlyDeliverOnRoute[9,2]
+                                   1                           1 
+    75 OnlyDeliverOnRoute[9,3]
+                                   1                           1 
+    76 OnlyDeliverOnRoute[9,4]
+                                   1                           1 
+    77 OnlyDeliverOnRoute[9,5]
+                                   1                           1 
+    78 OnlyDeliverOnRoute[9,6]
+                                   1                           1 
+    79 OnlyDeliverOnRoute[9,7]
+                                   1                           1 
+    80 OnlyDeliverOnRoute[9,8]
+                                   1                           1 
+    81 OnlyDeliverOnRoute[10,1]
+                                   1                           1 
+    82 OnlyDeliverOnRoute[10,2]
+                                   1                           1 
+    83 OnlyDeliverOnRoute[10,3]
+                                   0                           1 
+    84 OnlyDeliverOnRoute[10,4]
+                                   0                           1 
+    85 OnlyDeliverOnRoute[10,5]
+                                   1                           1 
+    86 OnlyDeliverOnRoute[10,6]
+                                   1                           1 
+    87 OnlyDeliverOnRoute[10,7]
+                                   0                           1 
+    88 OnlyDeliverOnRoute[10,8]
+                                   0                           1 
+    89 OnlyDeliverOnRoute[11,1]
+                                   1                           1 
+    90 OnlyDeliverOnRoute[11,2]
+                                   0                           1 
+    91 OnlyDeliverOnRoute[11,3]
+                                   1                           1 
+    92 OnlyDeliverOnRoute[11,4]
+                                   1                           1 
+    93 OnlyDeliverOnRoute[11,5]
+                                   0                           1 
+    94 OnlyDeliverOnRoute[11,6]
+                                   0                           1 
+    95 OnlyDeliverOnRoute[11,7]
+                                   1                           1 
+    96 OnlyDeliverOnRoute[11,8]
+                                   1                           1 
+    97 OnlyDeliverOnRoute[12,1]
+                                   1                           1 
+    98 OnlyDeliverOnRoute[12,2]
+                                   0                           1 
+    99 OnlyDeliverOnRoute[12,3]
+                                   1                           1 
+   100 OnlyDeliverOnRoute[12,4]
+                                   1                           1 
+   101 OnlyDeliverOnRoute[12,5]
+                                   0                           1 
+   102 OnlyDeliverOnRoute[12,6]
+                                   0                           1 
+   103 OnlyDeliverOnRoute[12,7]
+                                   1                           1 
+   104 OnlyDeliverOnRoute[12,8]
+                                   1                           1 
+   105 OnlyDeliverOnRoute[13,1]
+                                   1                           1 
+   106 OnlyDeliverOnRoute[13,2]
+                                   1                           1 
+   107 OnlyDeliverOnRoute[13,3]
+                                   1                           1 
+   108 OnlyDeliverOnRoute[13,4]
+                                   1                           1 
+   109 OnlyDeliverOnRoute[13,5]
+                                   0                           1 
+   110 OnlyDeliverOnRoute[13,6]
+                                   0                           1 
+   111 OnlyDeliverOnRoute[13,7]
+                                   1                           1 
+   112 OnlyDeliverOnRoute[13,8]
+                                   1                           1 
+   113 OnlyDeliverOnRoute[14,1]
+                                   0                           1 
+   114 OnlyDeliverOnRoute[14,2]
+                                   0                           1 
+   115 OnlyDeliverOnRoute[14,3]
+                                   1                           1 
+   116 OnlyDeliverOnRoute[14,4]
+                                   0                           1 
+   117 OnlyDeliverOnRoute[14,5]
+                                   1                           1 
+   118 OnlyDeliverOnRoute[14,6]
+                                   0                           1 
+   119 OnlyDeliverOnRoute[14,7]
+                                   0                           1 
+   120 OnlyDeliverOnRoute[14,8]
+                                   0                           1 
+   121 OnlyDeliverOnRoute[15,1]
+                                   1                           1 
+   122 OnlyDeliverOnRoute[15,2]
+                                   0                           1 
+   123 OnlyDeliverOnRoute[15,3]
+                                   1                           1 
+   124 OnlyDeliverOnRoute[15,4]
+                                   1                           1 
+   125 OnlyDeliverOnRoute[15,5]
+                                   0                           1 
+   126 OnlyDeliverOnRoute[15,6]
+                                   1                           1 
+   127 OnlyDeliverOnRoute[15,7]
+                                   1                           1 
+   128 OnlyDeliverOnRoute[15,8]
+                                   1                           1 
+   129 OnlyDeliverOnRoute[16,1]
+                                   1                           1 
+   130 OnlyDeliverOnRoute[16,2]
+                                   1                           1 
+   131 OnlyDeliverOnRoute[16,3]
+                                   1                           1 
+   132 OnlyDeliverOnRoute[16,4]
+                                   1                           1 
+   133 OnlyDeliverOnRoute[16,5]
+                                   0                           1 
+   134 OnlyDeliverOnRoute[16,6]
+                                   0                           1 
+   135 OnlyDeliverOnRoute[16,7]
+                                   1                           1 
+   136 OnlyDeliverOnRoute[16,8]
+                                   1                           1 
+   137 OnlyDeliverOnRoute[17,1]
+                                   0                           1 
+   138 OnlyDeliverOnRoute[17,2]
+                                   0                           1 
+   139 OnlyDeliverOnRoute[17,3]
+                                   1                           1 
+   140 OnlyDeliverOnRoute[17,4]
+                                   1                           1 
+   141 OnlyDeliverOnRoute[17,5]
+                                   0                           1 
+   142 OnlyDeliverOnRoute[17,6]
+                                   0                           1 
+   143 OnlyDeliverOnRoute[17,7]
+                                   0                           1 
+   144 OnlyDeliverOnRoute[17,8]
+                                   0                           1 
+   145 OnlyDeliverOnRoute[18,1]
+                                   0                           1 
+   146 OnlyDeliverOnRoute[18,2]
+                                   1                           1 
+   147 OnlyDeliverOnRoute[18,3]
+                                   1                           1 
+   148 OnlyDeliverOnRoute[18,4]
+                                   0                           1 
+   149 OnlyDeliverOnRoute[18,5]
+                                   1                           1 
+   150 OnlyDeliverOnRoute[18,6]
+                                   1                           1 
+   151 OnlyDeliverOnRoute[18,7]
+                                   0                           1 
+   152 OnlyDeliverOnRoute[18,8]
+                                   0                           1 
+   153 OnlyDeliverOnRoute[19,1]
+                                   1                           1 
+   154 OnlyDeliverOnRoute[19,2]
+                                   1                           1 
+   155 OnlyDeliverOnRoute[19,3]
+                                   0                           1 
+   156 OnlyDeliverOnRoute[19,4]
+                                   0                           1 
+   157 OnlyDeliverOnRoute[19,5]
+                                   1                           1 
+   158 OnlyDeliverOnRoute[19,6]
+                                   1                           1 
+   159 OnlyDeliverOnRoute[19,7]
+                                   0                           1 
+   160 OnlyDeliverOnRoute[19,8]
+                                   0                           1 
+   161 OnlyDeliverOnRoute[20,1]
+                                   1                           1 
+   162 OnlyDeliverOnRoute[20,2]
+                                   1                           1 
+   163 OnlyDeliverOnRoute[20,3]
+                                   0                           1 
+   164 OnlyDeliverOnRoute[20,4]
+                                   1                           1 
+   165 OnlyDeliverOnRoute[20,5]
+                                   1                           1 
+   166 OnlyDeliverOnRoute[20,6]
+                                   1                           1 
+   167 OnlyDeliverOnRoute[20,7]
+                                   1                           1 
+   168 OnlyDeliverOnRoute[20,8]
+                                   1                           1 
+   169 OnlyDeliverOnRoute[21,1]
+                                   1                           1 
+   170 OnlyDeliverOnRoute[21,2]
+                                   1                           1 
+   171 OnlyDeliverOnRoute[21,3]
+                                   0                           1 
+   172 OnlyDeliverOnRoute[21,4]
+                                   1                           1 
+   173 OnlyDeliverOnRoute[21,5]
+                                   1                           1 
+   174 OnlyDeliverOnRoute[21,6]
+                                   1                           1 
+   175 OnlyDeliverOnRoute[21,7]
+                                   1                           1 
+   176 OnlyDeliverOnRoute[21,8]
+                                   1                           1 
+   177 OnlyDeliverOnRoute[22,1]
+                                   1                           1 
+   178 OnlyDeliverOnRoute[22,2]
+                                   1                           1 
+   179 OnlyDeliverOnRoute[22,3]
+                                   0                           1 
+   180 OnlyDeliverOnRoute[22,4]
+                                   1                           1 
+   181 OnlyDeliverOnRoute[22,5]
+                                   1                           1 
+   182 OnlyDeliverOnRoute[22,6]
+                                   1                           1 
+   183 OnlyDeliverOnRoute[22,7]
+                                   1                           1 
+   184 OnlyDeliverOnRoute[22,8]
+                                   1                           1 
+   185 OnlyDeliverOnRoute[23,1]
+                                   1                           1 
+   186 OnlyDeliverOnRoute[23,2]
+                                   0                           1 
+   187 OnlyDeliverOnRoute[23,3]
+                                   1                           1 
+   188 OnlyDeliverOnRoute[23,4]
+                                   1                           1 
+   189 OnlyDeliverOnRoute[23,5]
+                                   0                           1 
+   190 OnlyDeliverOnRoute[23,6]
+                                   0                           1 
+   191 OnlyDeliverOnRoute[23,7]
+                                   1                           1 
+   192 OnlyDeliverOnRoute[23,8]
+                                   1                           1 
+   193 OnlyDeliverOnRoute[24,1]
+                                   0                           1 
+   194 OnlyDeliverOnRoute[24,2]
+                                   0                           1 
+   195 OnlyDeliverOnRoute[24,3]
+                                   1                           1 
+   196 OnlyDeliverOnRoute[24,4]
+                                   0                           1 
+   197 OnlyDeliverOnRoute[24,5]
+                                   1                           1 
+   198 OnlyDeliverOnRoute[24,6]
+                                   0                           1 
+   199 OnlyDeliverOnRoute[24,7]
+                                   0                           1 
+   200 OnlyDeliverOnRoute[24,8]
+                                   0                           1 
+   201 OnlyDeliverOnRoute[25,1]
+                                   0                           1 
+   202 OnlyDeliverOnRoute[25,2]
+                                   1                           1 
+   203 OnlyDeliverOnRoute[25,3]
+                                   1                           1 
+   204 OnlyDeliverOnRoute[25,4]
+                                   0                           1 
+   205 OnlyDeliverOnRoute[25,5]
+                                   1                           1 
+   206 OnlyDeliverOnRoute[25,6]
+                                   1                           1 
+   207 OnlyDeliverOnRoute[25,7]
+                                   0                           1 
+   208 OnlyDeliverOnRoute[25,8]
+                                   0                           1 
+   209 OnlyDeliverOnRoute[26,1]
+                                   0                           1 
+   210 OnlyDeliverOnRoute[26,2]
+                                   1                           1 
+   211 OnlyDeliverOnRoute[26,3]
+                                   1                           1 
+   212 OnlyDeliverOnRoute[26,4]
+                                   0                           1 
+   213 OnlyDeliverOnRoute[26,5]
+                                   1                           1 
+   214 OnlyDeliverOnRoute[26,6]
+                                   1                           1 
+   215 OnlyDeliverOnRoute[26,7]
+                                   0                           1 
+   216 OnlyDeliverOnRoute[26,8]
+                                   0                           1 
+   217 OnlyDeliverOnRoute[27,1]
+                                   0                           1 
+   218 OnlyDeliverOnRoute[27,2]
+                                   0                           1 
+   219 OnlyDeliverOnRoute[27,3]
+                                   1                           1 
+   220 OnlyDeliverOnRoute[27,4]
+                                   0                           1 
+   221 OnlyDeliverOnRoute[27,5]
+                                   0                           1 
+   222 OnlyDeliverOnRoute[27,6]
+                                   0                           1 
+   223 OnlyDeliverOnRoute[27,7]
+                                   0                           1 
+   224 OnlyDeliverOnRoute[27,8]
+                                   0                           1 
+   225 OnlyDeliverOnRoute[28,1]
+                                   0                           1 
+   226 OnlyDeliverOnRoute[28,2]
+                                   1                           1 
+   227 OnlyDeliverOnRoute[28,3]
+                                   1                           1 
+   228 OnlyDeliverOnRoute[28,4]
+                                   0                           1 
+   229 OnlyDeliverOnRoute[28,5]
+                                   1                           1 
+   230 OnlyDeliverOnRoute[28,6]
+                                   1                           1 
+   231 OnlyDeliverOnRoute[28,7]
+                                   0                           1 
+   232 OnlyDeliverOnRoute[28,8]
+                                   0                           1 
+   233 OnlyDeliverOnRoute[29,1]
+                                   0                           1 
+   234 OnlyDeliverOnRoute[29,2]
+                                   1                           1 
+   235 OnlyDeliverOnRoute[29,3]
+                                   0                           1 
+   236 OnlyDeliverOnRoute[29,4]
+                                   0                           1 
+   237 OnlyDeliverOnRoute[29,5]
+                                   1                           1 
+   238 OnlyDeliverOnRoute[29,6]
+                                   1                           1 
+   239 OnlyDeliverOnRoute[29,7]
+                                   0                           1 
+   240 OnlyDeliverOnRoute[29,8]
+                                   0                           1 
+   241 OnlyDeliverOnRoute[30,1]
+                                   1                           1 
+   242 OnlyDeliverOnRoute[30,2]
+                                   0                           1 
+   243 OnlyDeliverOnRoute[30,3]
+                                   1                           1 
+   244 OnlyDeliverOnRoute[30,4]
+                                   1                           1 
+   245 OnlyDeliverOnRoute[30,5]
+                                   0                           1 
+   246 OnlyDeliverOnRoute[30,6]
+                                   0                           1 
+   247 OnlyDeliverOnRoute[30,7]
+                                   1                           1 
+   248 OnlyDeliverOnRoute[30,8]
+                                   1                           1 
+   249 OnlyDeliverOnRoute[31,1]
+                                   0                           1 
+   250 OnlyDeliverOnRoute[31,2]
+                                   0                           1 
+   251 OnlyDeliverOnRoute[31,3]
+                                   1                           1 
+   252 OnlyDeliverOnRoute[31,4]
+                                   0                           1 
+   253 OnlyDeliverOnRoute[31,5]
+                                   0                           1 
+   254 OnlyDeliverOnRoute[31,6]
+                                   0                           1 
+   255 OnlyDeliverOnRoute[31,7]
+                                   0                           1 
+   256 OnlyDeliverOnRoute[31,8]
+                                   0                           1 
+   257 OnlyDeliverOnRoute[32,1]
+                                   0                           1 
+   258 OnlyDeliverOnRoute[32,2]
+                                   1                           1 
+   259 OnlyDeliverOnRoute[32,3]
+                                   1                           1 
+   260 OnlyDeliverOnRoute[32,4]
+                                   1                           1 
+   261 OnlyDeliverOnRoute[32,5]
+                                   1                           1 
+   262 OnlyDeliverOnRoute[32,6]
+                                   1                           1 
+   263 OnlyDeliverOnRoute[32,7]
+                                   0                           1 
+   264 OnlyDeliverOnRoute[32,8]
+                                   0                           1 
+   265 OnlyDeliverOnRoute[33,1]
+                                   1                           1 
+   266 OnlyDeliverOnRoute[33,2]
+                                   1                           1 
+   267 OnlyDeliverOnRoute[33,3]
+                                   0                           1 
+   268 OnlyDeliverOnRoute[33,4]
+                                   0                           1 
+   269 OnlyDeliverOnRoute[33,5]
+                                   1                           1 
+   270 OnlyDeliverOnRoute[33,6]
+                                   1                           1 
+   271 OnlyDeliverOnRoute[33,7]
+                                   0                           1 
+   272 OnlyDeliverOnRoute[33,8]
+                                   0                           1 
+   273 OnlyDeliverOnRoute[34,1]
+                                   1                           1 
+   274 OnlyDeliverOnRoute[34,2]
+                                   1                           1 
+   275 OnlyDeliverOnRoute[34,3]
+                                   0                           1 
+   276 OnlyDeliverOnRoute[34,4]
+                                   1                           1 
+   277 OnlyDeliverOnRoute[34,5]
+                                   1                           1 
+   278 OnlyDeliverOnRoute[34,6]
+                                   1                           1 
+   279 OnlyDeliverOnRoute[34,7]
+                                   1                           1 
+   280 OnlyDeliverOnRoute[34,8]
+                                   1                           1 
+   281 OnlyDeliverOnRoute[35,1]
+                                   1                           1 
+   282 OnlyDeliverOnRoute[35,2]
+                                   1                           1 
+   283 OnlyDeliverOnRoute[35,3]
+                                   0                           1 
+   284 OnlyDeliverOnRoute[35,4]
+                                   1                           1 
+   285 OnlyDeliverOnRoute[35,5]
+                                   1                           1 
+   286 OnlyDeliverOnRoute[35,6]
+                                   1                           1 
+   287 OnlyDeliverOnRoute[35,7]
+                                   1                           1 
+   288 OnlyDeliverOnRoute[35,8]
+                                   1                           1 
+   289 OnlyDeliverOnRoute[36,1]
+                                   1                           1 
+   290 OnlyDeliverOnRoute[36,2]
+                                   0                           1 
+   291 OnlyDeliverOnRoute[36,3]
+                                   1                           1 
+   292 OnlyDeliverOnRoute[36,4]
+                                   1                           1 
+   293 OnlyDeliverOnRoute[36,5]
+                                   0                           1 
+   294 OnlyDeliverOnRoute[36,6]
+                                   0                           1 
+   295 OnlyDeliverOnRoute[36,7]
+                                   1                           1 
+   296 OnlyDeliverOnRoute[36,8]
+                                   1                           1 
+   297 OnlyDeliverOnRoute[37,1]
+                                   0                           1 
+   298 OnlyDeliverOnRoute[37,2]
+                                   0                           1 
+   299 OnlyDeliverOnRoute[37,3]
+                                   1                           1 
+   300 OnlyDeliverOnRoute[37,4]
+                                   0                           1 
+   301 OnlyDeliverOnRoute[37,5]
+                                   0                           1 
+   302 OnlyDeliverOnRoute[37,6]
+                                   0                           1 
+   303 OnlyDeliverOnRoute[37,7]
+                                   0                           1 
+   304 OnlyDeliverOnRoute[37,8]
+                                   0                           1 
+   305 OnlyDeliverOnRoute[38,1]
+                                   1                           1 
+   306 OnlyDeliverOnRoute[38,2]
+                                   0                           1 
+   307 OnlyDeliverOnRoute[38,3]
+                                   1                           1 
+   308 OnlyDeliverOnRoute[38,4]
+                                   1                           1 
+   309 OnlyDeliverOnRoute[38,5]
+                                   0                           1 
+   310 OnlyDeliverOnRoute[38,6]
+                                   0                           1 
+   311 OnlyDeliverOnRoute[38,7]
+                                   1                           1 
+   312 OnlyDeliverOnRoute[38,8]
+                                   1                           1 
+   313 OnlyDeliverOnRoute[39,1]
+                                   1                           1 
+   314 OnlyDeliverOnRoute[39,2]
+                                   0                           1 
+   315 OnlyDeliverOnRoute[39,3]
+                                   1                           1 
+   316 OnlyDeliverOnRoute[39,4]
+                                   1                           1 
+   317 OnlyDeliverOnRoute[39,5]
+                                   0                           1 
+   318 OnlyDeliverOnRoute[39,6]
+                                   0                           1 
+   319 OnlyDeliverOnRoute[39,7]
+                                   1                           1 
+   320 OnlyDeliverOnRoute[39,8]
+                                   1                           1 
+   321 OnlyDeliverOnRoute[40,1]
+                                   1                           1 
+   322 OnlyDeliverOnRoute[40,2]
+                                   0                           1 
+   323 OnlyDeliverOnRoute[40,3]
+                                   1                           1 
+   324 OnlyDeliverOnRoute[40,4]
+                                   1                           1 
+   325 OnlyDeliverOnRoute[40,5]
+                                   0                           1 
+   326 OnlyDeliverOnRoute[40,6]
+                                   0                           1 
+   327 OnlyDeliverOnRoute[40,7]
+                                   1                           1 
+   328 OnlyDeliverOnRoute[40,8]
+                                   1                           1 
+   329 OnlyDeliverOnRoute[41,1]
+                                   0                           1 
+   330 OnlyDeliverOnRoute[41,2]
+                                   0                           1 
+   331 OnlyDeliverOnRoute[41,3]
+                                   1                           1 
+   332 OnlyDeliverOnRoute[41,4]
+                                   0                           1 
+   333 OnlyDeliverOnRoute[41,5]
+                                   0                           1 
+   334 OnlyDeliverOnRoute[41,6]
+                                   0                           1 
+   335 OnlyDeliverOnRoute[41,7]
+                                   0                           1 
+   336 OnlyDeliverOnRoute[41,8]
+                                   0                           1 
+   337 OnlyDeliverOnRoute[42,1]
+                                   0                           1 
+   338 OnlyDeliverOnRoute[42,2]
+                                   0                           1 
+   339 OnlyDeliverOnRoute[42,3]
+                                   1                           1 
+   340 OnlyDeliverOnRoute[42,4]
+                                   0                           1 
+   341 OnlyDeliverOnRoute[42,5]
+                                   0                           1 
+   342 OnlyDeliverOnRoute[42,6]
+                                   0                           1 
+   343 OnlyDeliverOnRoute[42,7]
+                                   0                           1 
+   344 OnlyDeliverOnRoute[42,8]
+                                   0                           1 
+   345 OrderDelivery[1]
+                                   0                           1 
+   346 OrderDelivery[2]
+                                   0                           1 
+   347 OrderDelivery[3]
+                                   0                           1 
+   348 OrderDelivery[4]
+                                   0                           1 
+   349 OrderDelivery[5]
+                                   0                           1 
+   350 OrderDelivery[6]
+                                   0                           1 
+   351 OrderDelivery[7]
+                                   0                           1 
+   352 OrderDelivery[8]
+                                   0                           1 
+   353 OrderDelivery[9]
+                                   1                           1 
+   354 OrderDelivery[10]
+                                   1                           1 
+   355 OrderDelivery[11]
+                                   0                           1 
+   356 OrderDelivery[12]
+                                   0                           1 
+   357 OrderDelivery[13]
+                                   1                           1 
+   358 OrderDelivery[14]
+                                   1                           1 
+   359 OrderDelivery[15]
+                                   1                           1 
+   360 OrderDelivery[16]
+                                   1                           1 
+   361 OrderDelivery[17]
+                                   1                           1 
+   362 OrderDelivery[18]
+                                   0                           1 
+   363 OrderDelivery[19]
+                                   1                           1 
+   364 OrderDelivery[20]
+                                   0                           1 
+   365 OrderDelivery[21]
+                                   0                           1 
+   366 OrderDelivery[22]
+                                   0                           1 
+   367 OrderDelivery[23]
+                                   0                           1 
+   368 OrderDelivery[24]
+                                   1                           1 
+   369 OrderDelivery[25]
+                                   0                           1 
+   370 OrderDelivery[26]
+                                   1                           1 
+   371 OrderDelivery[27]
+                                   0                           1 
+   372 OrderDelivery[28]
+                                   0                           1 
+   373 OrderDelivery[29]
+                                   0                           1 
+   374 OrderDelivery[30]
+                                   0                           1 
+   375 OrderDelivery[31]
+                                   0                           1 
+   376 OrderDelivery[32]
+                                   1                           1 
+   377 OrderDelivery[33]
+                                   1                           1 
+   378 OrderDelivery[34]
+                                   0                           1 
+   379 OrderDelivery[35]
+                                   0                           1 
+   380 OrderDelivery[36]
+                                   0                           1 
+   381 OrderDelivery[37]
+                                   0                           1 
+   382 OrderDelivery[38]
+                                   0                           1 
+   383 OrderDelivery[39]
+                                   0                           1 
+   384 OrderDelivery[40]
+                                   0                           1 
+   385 OrderDelivery[41]
+                                   0                           1 
+   386 OrderDelivery[42]
+                                   0                           1 
+   387 BeforeDeadline[1,5]
+                                   0            -0             = 
+   388 BeforeDeadline[1,6]
+                                   0            -0             = 
+   389 BeforeDeadline[1,7]
+                                   0            -0             = 
+   390 BeforeDeadline[1,8]
+                                   0            -0             = 
+   391 BeforeDeadline[2,5]
+                                   0            -0             = 
+   392 BeforeDeadline[2,6]
+                                   0            -0             = 
+   393 BeforeDeadline[2,7]
+                                   0            -0             = 
+   394 BeforeDeadline[2,8]
+                                   0            -0             = 
+   395 BeforeDeadline[3,4]
+                                   0            -0             = 
+   396 BeforeDeadline[3,5]
+                                   0            -0             = 
+   397 BeforeDeadline[3,6]
+                                   0            -0             = 
+   398 BeforeDeadline[3,7]
+                                   0            -0             = 
+   399 BeforeDeadline[3,8]
+                                   0            -0             = 
+   400 BeforeDeadline[4,3]
+                                   0            -0             = 
+   401 BeforeDeadline[4,4]
+                                   0            -0             = 
+   402 BeforeDeadline[4,5]
+                                   0            -0             = 
+   403 BeforeDeadline[4,6]
+                                   0            -0             = 
+   404 BeforeDeadline[4,7]
+                                   0            -0             = 
+   405 BeforeDeadline[4,8]
+                                   0            -0             = 
+   406 BeforeDeadline[5,3]
+                                   0            -0             = 
+   407 BeforeDeadline[5,4]
+                                   0            -0             = 
+   408 BeforeDeadline[5,5]
+                                   0            -0             = 
+   409 BeforeDeadline[5,6]
+                                   0            -0             = 
+   410 BeforeDeadline[5,7]
+                                   0            -0             = 
+   411 BeforeDeadline[5,8]
+                                   0            -0             = 
+   412 BeforeDeadline[6,1]
+                                   0            -0             = 
+   413 BeforeDeadline[6,2]
+                                   0            -0             = 
+   414 BeforeDeadline[6,3]
+                                   0            -0             = 
+   415 BeforeDeadline[6,4]
+                                   0            -0             = 
+   416 BeforeDeadline[6,5]
+                                   0            -0             = 
+   417 BeforeDeadline[6,6]
+                                   0            -0             = 
+   418 BeforeDeadline[6,7]
+                                   0            -0             = 
+   419 BeforeDeadline[6,8]
+                                   0            -0             = 
+   420 BeforeDeadline[7,2]
+                                   0            -0             = 
+   421 BeforeDeadline[7,3]
+                                   0            -0             = 
+   422 BeforeDeadline[7,4]
+                                   0            -0             = 
+   423 BeforeDeadline[7,5]
+                                   0            -0             = 
+   424 BeforeDeadline[7,6]
+                                   0            -0             = 
+   425 BeforeDeadline[7,7]
+                                   0            -0             = 
+   426 BeforeDeadline[7,8]
+                                   0            -0             = 
+   427 BeforeDeadline[8,2]
+                                   0            -0             = 
+   428 BeforeDeadline[8,3]
+                                   0            -0             = 
+   429 BeforeDeadline[8,4]
+                                   0            -0             = 
+   430 BeforeDeadline[8,5]
+                                   0            -0             = 
+   431 BeforeDeadline[8,6]
+                                   0            -0             = 
+   432 BeforeDeadline[8,7]
+                                   0            -0             = 
+   433 BeforeDeadline[8,8]
+                                   0            -0             = 
+   434 BeforeDeadline[9,4]
+                                   0            -0             = 
+   435 BeforeDeadline[9,5]
+                                   0            -0             = 
+   436 BeforeDeadline[9,6]
+                                   0            -0             = 
+   437 BeforeDeadline[9,7]
+                                   0            -0             = 
+   438 BeforeDeadline[9,8]
+                                   0            -0             = 
+   439 BeforeDeadline[10,3]
+                                   0            -0             = 
+   440 BeforeDeadline[10,4]
+                                   0            -0             = 
+   441 BeforeDeadline[10,5]
+                                   0            -0             = 
+   442 BeforeDeadline[10,6]
+                                   0            -0             = 
+   443 BeforeDeadline[10,7]
+                                   0            -0             = 
+   444 BeforeDeadline[10,8]
+                                   0            -0             = 
+   445 BeforeDeadline[11,1]
+                                   0            -0             = 
+   446 BeforeDeadline[11,2]
+                                   0            -0             = 
+   447 BeforeDeadline[11,3]
+                                   0            -0             = 
+   448 BeforeDeadline[11,4]
+                                   0            -0             = 
+   449 BeforeDeadline[11,5]
+                                   0            -0             = 
+   450 BeforeDeadline[11,6]
+                                   0            -0             = 
+   451 BeforeDeadline[11,7]
+                                   0            -0             = 
+   452 BeforeDeadline[11,8]
+                                   0            -0             = 
+   453 BeforeDeadline[12,7]
+                                   0            -0             = 
+   454 BeforeDeadline[12,8]
+                                   0            -0             = 
+   455 BeforeDeadline[13,7]
+                                   0            -0             = 
+   456 BeforeDeadline[13,8]
+                                   0            -0             = 
+   457 BeforeDeadline[14,6]
+                                   0            -0             = 
+   458 BeforeDeadline[14,7]
+                                   0            -0             = 
+   459 BeforeDeadline[14,8]
+                                   0            -0             = 
+   460 BeforeDeadline[15,7]
+                                   0            -0             = 
+   461 BeforeDeadline[15,8]
+                                   0            -0             = 
+   462 BeforeDeadline[16,3]
+                                   0            -0             = 
+   463 BeforeDeadline[16,4]
+                                   0            -0             = 
+   464 BeforeDeadline[16,5]
+                                   0            -0             = 
+   465 BeforeDeadline[16,6]
+                                   0            -0             = 
+   466 BeforeDeadline[16,7]
+                                   0            -0             = 
+   467 BeforeDeadline[16,8]
+                                   0            -0             = 
+   468 BeforeDeadline[17,5]
+                                   0            -0             = 
+   469 BeforeDeadline[17,6]
+                                   0            -0             = 
+   470 BeforeDeadline[17,7]
+                                   0            -0             = 
+   471 BeforeDeadline[17,8]
+                                   0            -0             = 
+   472 BeforeDeadline[18,2]
+                                   0            -0             = 
+   473 BeforeDeadline[18,3]
+                                   0            -0             = 
+   474 BeforeDeadline[18,4]
+                                   0            -0             = 
+   475 BeforeDeadline[18,5]
+                                   0            -0             = 
+   476 BeforeDeadline[18,6]
+                                   0            -0             = 
+   477 BeforeDeadline[18,7]
+                                   0            -0             = 
+   478 BeforeDeadline[18,8]
+                                   0            -0             = 
+   479 BeforeDeadline[19,4]
+                                   0            -0             = 
+   480 BeforeDeadline[19,5]
+                                   0            -0             = 
+   481 BeforeDeadline[19,6]
+                                   0            -0             = 
+   482 BeforeDeadline[19,7]
+                                   0            -0             = 
+   483 BeforeDeadline[19,8]
+                                   0            -0             = 
+   484 BeforeDeadline[20,5]
+                                   0            -0             = 
+   485 BeforeDeadline[20,6]
+                                   0            -0             = 
+   486 BeforeDeadline[20,7]
+                                   0            -0             = 
+   487 BeforeDeadline[20,8]
+                                   0            -0             = 
+   488 BeforeDeadline[21,1]
+                                   0            -0             = 
+   489 BeforeDeadline[21,2]
+                                   0            -0             = 
+   490 BeforeDeadline[21,3]
+                                   0            -0             = 
+   491 BeforeDeadline[21,4]
+                                   0            -0             = 
+   492 BeforeDeadline[21,5]
+                                   0            -0             = 
+   493 BeforeDeadline[21,6]
+                                   0            -0             = 
+   494 BeforeDeadline[21,7]
+                                   0            -0             = 
+   495 BeforeDeadline[21,8]
+                                   0            -0             = 
+   496 BeforeDeadline[22,7]
+                                   0            -0             = 
+   497 BeforeDeadline[22,8]
+                                   0            -0             = 
+   498 BeforeDeadline[23,3]
+                                   0            -0             = 
+   499 BeforeDeadline[23,4]
+                                   0            -0             = 
+   500 BeforeDeadline[23,5]
+                                   0            -0             = 
+   501 BeforeDeadline[23,6]
+                                   0            -0             = 
+   502 BeforeDeadline[23,7]
+                                   0            -0             = 
+   503 BeforeDeadline[23,8]
+                                   0            -0             = 
+   504 BeforeDeadline[24,6]
+                                   0            -0             = 
+   505 BeforeDeadline[24,7]
+                                   0            -0             = 
+   506 BeforeDeadline[24,8]
+                                   0            -0             = 
+   507 BeforeDeadline[25,2]
+                                   0            -0             = 
+   508 BeforeDeadline[25,3]
+                                   0            -0             = 
+   509 BeforeDeadline[25,4]
+                                   0            -0             = 
+   510 BeforeDeadline[25,5]
+                                   0            -0             = 
+   511 BeforeDeadline[25,6]
+                                   0            -0             = 
+   512 BeforeDeadline[25,7]
+                                   0            -0             = 
+   513 BeforeDeadline[25,8]
+                                   0            -0             = 
+   514 BeforeDeadline[26,7]
+                                   0            -0             = 
+   515 BeforeDeadline[26,8]
+                                   0            -0             = 
+   516 BeforeDeadline[27,1]
+                                   0            -0             = 
+   517 BeforeDeadline[27,2]
+                                   0            -0             = 
+   518 BeforeDeadline[27,3]
+                                   0            -0             = 
+   519 BeforeDeadline[27,4]
+                                   0            -0             = 
+   520 BeforeDeadline[27,5]
+                                   0            -0             = 
+   521 BeforeDeadline[27,6]
+                                   0            -0             = 
+   522 BeforeDeadline[27,7]
+                                   0            -0             = 
+   523 BeforeDeadline[27,8]
+                                   0            -0             = 
+   524 BeforeDeadline[28,2]
+                                   0            -0             = 
+   525 BeforeDeadline[28,3]
+                                   0            -0             = 
+   526 BeforeDeadline[28,4]
+                                   0            -0             = 
+   527 BeforeDeadline[28,5]
+                                   0            -0             = 
+   528 BeforeDeadline[28,6]
+                                   0            -0             = 
+   529 BeforeDeadline[28,7]
+                                   0            -0             = 
+   530 BeforeDeadline[28,8]
+                                   0            -0             = 
+   531 BeforeDeadline[29,5]
+                                   0            -0             = 
+   532 BeforeDeadline[29,6]
+                                   0            -0             = 
+   533 BeforeDeadline[29,7]
+                                   0            -0             = 
+   534 BeforeDeadline[29,8]
+                                   0            -0             = 
+   535 BeforeDeadline[30,1]
+                                   0            -0             = 
+   536 BeforeDeadline[30,2]
+                                   0            -0             = 
+   537 BeforeDeadline[30,3]
+                                   0            -0             = 
+   538 BeforeDeadline[30,4]
+                                   0            -0             = 
+   539 BeforeDeadline[30,5]
+                                   0            -0             = 
+   540 BeforeDeadline[30,6]
+                                   0            -0             = 
+   541 BeforeDeadline[30,7]
+                                   0            -0             = 
+   542 BeforeDeadline[30,8]
+                                   0            -0             = 
+   543 BeforeDeadline[31,5]
+                                   0            -0             = 
+   544 BeforeDeadline[31,6]
+                                   0            -0             = 
+   545 BeforeDeadline[31,7]
+                                   0            -0             = 
+   546 BeforeDeadline[31,8]
+                                   0            -0             = 
+   547 BeforeDeadline[32,5]
+                                   0            -0             = 
+   548 BeforeDeadline[32,6]
+                                   0            -0             = 
+   549 BeforeDeadline[32,7]
+                                   0            -0             = 
+   550 BeforeDeadline[32,8]
+                                   0            -0             = 
+   551 BeforeDeadline[33,2]
+                                   0            -0             = 
+   552 BeforeDeadline[33,3]
+                                   0            -0             = 
+   553 BeforeDeadline[33,4]
+                                   0            -0             = 
+   554 BeforeDeadline[33,5]
+                                   0            -0             = 
+   555 BeforeDeadline[33,6]
+                                   0            -0             = 
+   556 BeforeDeadline[33,7]
+                                   0            -0             = 
+   557 BeforeDeadline[33,8]
+                                   0            -0             = 
+   558 BeforeDeadline[34,6]
+                                   0            -0             = 
+   559 BeforeDeadline[34,7]
+                                   0            -0             = 
+   560 BeforeDeadline[34,8]
+                                   0            -0             = 
+   561 BeforeDeadline[35,5]
+                                   0            -0             = 
+   562 BeforeDeadline[35,6]
+                                   0            -0             = 
+   563 BeforeDeadline[35,7]
+                                   0            -0             = 
+   564 BeforeDeadline[35,8]
+                                   0            -0             = 
+   565 BeforeDeadline[36,2]
+                                   0            -0             = 
+   566 BeforeDeadline[36,3]
+                                   0            -0             = 
+   567 BeforeDeadline[36,4]
+                                   0            -0             = 
+   568 BeforeDeadline[36,5]
+                                   0            -0             = 
+   569 BeforeDeadline[36,6]
+                                   0            -0             = 
+   570 BeforeDeadline[36,7]
+                                   0            -0             = 
+   571 BeforeDeadline[36,8]
+                                   0            -0             = 
+   572 BeforeDeadline[37,2]
+                                   0            -0             = 
+   573 BeforeDeadline[37,3]
+                                   0            -0             = 
+   574 BeforeDeadline[37,4]
+                                   0            -0             = 
+   575 BeforeDeadline[37,5]
+                                   0            -0             = 
+   576 BeforeDeadline[37,6]
+                                   0            -0             = 
+   577 BeforeDeadline[37,7]
+                                   0            -0             = 
+   578 BeforeDeadline[37,8]
+                                   0            -0             = 
+   579 BeforeDeadline[38,1]
+                                   0            -0             = 
+   580 BeforeDeadline[38,2]
+                                   0            -0             = 
+   581 BeforeDeadline[38,3]
+                                   0            -0             = 
+   582 BeforeDeadline[38,4]
+                                   0            -0             = 
+   583 BeforeDeadline[38,5]
+                                   0            -0             = 
+   584 BeforeDeadline[38,6]
+                                   0            -0             = 
+   585 BeforeDeadline[38,7]
+                                   0            -0             = 
+   586 BeforeDeadline[38,8]
+                                   0            -0             = 
+   587 BeforeDeadline[39,6]
+                                   0            -0             = 
+   588 BeforeDeadline[39,7]
+                                   0            -0             = 
+   589 BeforeDeadline[39,8]
+                                   0            -0             = 
+   590 BeforeDeadline[40,5]
+                                   0            -0             = 
+   591 BeforeDeadline[40,6]
+                                   0            -0             = 
+   592 BeforeDeadline[40,7]
+                                   0            -0             = 
+   593 BeforeDeadline[40,8]
+                                   0            -0             = 
+   594 BeforeDeadline[41,3]
+                                   0            -0             = 
+   595 BeforeDeadline[41,4]
+                                   0            -0             = 
+   596 BeforeDeadline[41,5]
+                                   0            -0             = 
+   597 BeforeDeadline[41,6]
+                                   0            -0             = 
+   598 BeforeDeadline[41,7]
+                                   0            -0             = 
+   599 BeforeDeadline[41,8]
+                                   0            -0             = 
+   600 BeforeDeadline[42,4]
+                                   0            -0             = 
+   601 BeforeDeadline[42,5]
+                                   0            -0             = 
+   602 BeforeDeadline[42,6]
+                                   0            -0             = 
+   603 BeforeDeadline[42,7]
+                                   0            -0             = 
+   604 BeforeDeadline[42,8]
+                                   0            -0             = 
+   605 MaxCapacity[1]
+                                9.71                          10 
+   606 MaxCapacity[2]
+                                9.78                          10 
+   607 MaxCapacity[3]
+                                8.74                          10 
+   608 MaxCapacity[4]
+                                9.15                          10 
+   609 MaxCapacity[5]
+                                8.37                          10 
+   610 MaxCapacity[6]
+                                6.46                          10 
+   611 MaxCapacity[7]
+                                   0                          10 
+   612 MaxCapacity[8]
+                                   0                          10 
+   613 MaxSlotCount[1]
+                                   3                           5 
+   614 MaxSlotCount[2]
+                                   2                           5 
+   615 MaxSlotCount[3]
+                                   2                           5 
+   616 MaxSlotCount[4]
+                                   2                           5 
+   617 MaxSlotCount[5]
+                                   2                           5 
+   618 MaxSlotCount[6]
+                                   1                           5 
+   619 MaxSlotCount[7]
+                                   0                           5 
+   620 MaxSlotCount[8]
+                                   0                           5 
+   621 deliveredOrders
+                                  12                             
+
+   No. Column name       Activity     Lower bound   Upper bound
+------ ------------    ------------- ------------- -------------
+     1 select[1,North]
+                    *              0             0             1 
+     2 select[1,East]
+                    *              0             0             1 
+     3 select[1,South]
+                    *              1             0             1 
+     4 select[2,North]
+                    *              1             0             1 
+     5 select[2,East]
+                    *              0             0             1 
+     6 select[2,South]
+                    *              0             0             1 
+     7 select[3,North]
+                    *              0             0             1 
+     8 select[3,East]
+                    *              1             0             1 
+     9 select[3,South]
+                    *              0             0             1 
+    10 select[4,North]
+                    *              0             0             1 
+    11 select[4,East]
+                    *              0             0             1 
+    12 select[4,South]
+                    *              1             0             1 
+    13 select[5,North]
+                    *              1             0             1 
+    14 select[5,East]
+                    *              0             0             1 
+    15 select[5,South]
+                    *              0             0             1 
+    16 select[6,North]
+                    *              1             0             1 
+    17 select[6,East]
+                    *              0             0             1 
+    18 select[6,South]
+                    *              0             0             1 
+    19 select[7,North]
+                    *              0             0             1 
+    20 select[7,East]
+                    *              0             0             1 
+    21 select[7,South]
+                    *              1             0             1 
+    22 select[8,North]
+                    *              0             0             1 
+    23 select[8,East]
+                    *              0             0             1 
+    24 select[8,South]
+                    *              1             0             1 
+    25 deliver[1,1] *              0             0             1 
+    26 deliver[2,1] *              0             0             1 
+    27 deliver[3,1] *              0             0             1 
+    28 deliver[4,1] *              0             0             1 
+    29 deliver[5,1] *              0             0             1 
+    30 deliver[6,1] *              0             0             1 
+    31 deliver[7,1] *              0             0             1 
+    32 deliver[8,1] *              0             0             1 
+    33 deliver[1,2] *              0             0             1 
+    34 deliver[2,2] *              0             0             1 
+    35 deliver[3,2] *              0             0             1 
+    36 deliver[4,2] *              0             0             1 
+    37 deliver[5,2] *              0             0             1 
+    38 deliver[6,2] *              0             0             1 
+    39 deliver[7,2] *              0             0             1 
+    40 deliver[8,2] *              0             0             1 
+    41 deliver[1,3] *              0             0             1 
+    42 deliver[2,3] *              0             0             1 
+    43 deliver[3,3] *              0             0             1 
+    44 deliver[4,3] *              0             0             1 
+    45 deliver[5,3] *              0             0             1 
+    46 deliver[6,3] *              0             0             1 
+    47 deliver[7,3] *              0             0             1 
+    48 deliver[8,3] *              0             0             1 
+    49 deliver[1,4] *              0             0             1 
+    50 deliver[2,4] *              0             0             1 
+    51 deliver[3,4] *              0             0             1 
+    52 deliver[4,4] *              0             0             1 
+    53 deliver[5,4] *              0             0             1 
+    54 deliver[6,4] *              0             0             1 
+    55 deliver[7,4] *              0             0             1 
+    56 deliver[8,4] *              0             0             1 
+    57 deliver[1,5] *              0             0             1 
+    58 deliver[2,5] *              0             0             1 
+    59 deliver[3,5] *              0             0             1 
+    60 deliver[4,5] *              0             0             1 
+    61 deliver[5,5] *              0             0             1 
+    62 deliver[6,5] *              0             0             1 
+    63 deliver[7,5] *              0             0             1 
+    64 deliver[8,5] *              0             0             1 
+    65 deliver[1,6] *              0             0             1 
+    66 deliver[2,6] *              0             0             1 
+    67 deliver[3,6] *              0             0             1 
+    68 deliver[4,6] *              0             0             1 
+    69 deliver[5,6] *              0             0             1 
+    70 deliver[6,6] *              0             0             1 
+    71 deliver[7,6] *              0             0             1 
+    72 deliver[8,6] *              0             0             1 
+    73 deliver[1,7] *              0             0             1 
+    74 deliver[2,7] *              0             0             1 
+    75 deliver[3,7] *              0             0             1 
+    76 deliver[4,7] *              0             0             1 
+    77 deliver[5,7] *              0             0             1 
+    78 deliver[6,7] *              0             0             1 
+    79 deliver[7,7] *              0             0             1 
+    80 deliver[8,7] *              0             0             1 
+    81 deliver[1,8] *              0             0             1 
+    82 deliver[2,8] *              0             0             1 
+    83 deliver[3,8] *              0             0             1 
+    84 deliver[4,8] *              0             0             1 
+    85 deliver[5,8] *              0             0             1 
+    86 deliver[6,8] *              0             0             1 
+    87 deliver[7,8] *              0             0             1 
+    88 deliver[8,8] *              0             0             1 
+    89 deliver[1,9] *              0             0             1 
+    90 deliver[2,9] *              0             0             1 
+    91 deliver[3,9] *              1             0             1 
+    92 deliver[4,9] *              0             0             1 
+    93 deliver[5,9] *              0             0             1 
+    94 deliver[6,9] *              0             0             1 
+    95 deliver[7,9] *              0             0             1 
+    96 deliver[8,9] *              0             0             1 
+    97 deliver[1,10]
+                    *              1             0             1 
+    98 deliver[2,10]
+                    *              0             0             1 
+    99 deliver[3,10]
+                    *              0             0             1 
+   100 deliver[4,10]
+                    *              0             0             1 
+   101 deliver[5,10]
+                    *              0             0             1 
+   102 deliver[6,10]
+                    *              0             0             1 
+   103 deliver[7,10]
+                    *              0             0             1 
+   104 deliver[8,10]
+                    *              0             0             1 
+   105 deliver[1,11]
+                    *              0             0             1 
+   106 deliver[2,11]
+                    *              0             0             1 
+   107 deliver[3,11]
+                    *              0             0             1 
+   108 deliver[4,11]
+                    *              0             0             1 
+   109 deliver[5,11]
+                    *              0             0             1 
+   110 deliver[6,11]
+                    *              0             0             1 
+   111 deliver[7,11]
+                    *              0             0             1 
+   112 deliver[8,11]
+                    *              0             0             1 
+   113 deliver[1,12]
+                    *              0             0             1 
+   114 deliver[2,12]
+                    *              0             0             1 
+   115 deliver[3,12]
+                    *              0             0             1 
+   116 deliver[4,12]
+                    *              0             0             1 
+   117 deliver[5,12]
+                    *              0             0             1 
+   118 deliver[6,12]
+                    *              0             0             1 
+   119 deliver[7,12]
+                    *              0             0             1 
+   120 deliver[8,12]
+                    *              0             0             1 
+   121 deliver[1,13]
+                    *              0             0             1 
+   122 deliver[2,13]
+                    *              1             0             1 
+   123 deliver[3,13]
+                    *              0             0             1 
+   124 deliver[4,13]
+                    *              0             0             1 
+   125 deliver[5,13]
+                    *              0             0             1 
+   126 deliver[6,13]
+                    *              0             0             1 
+   127 deliver[7,13]
+                    *              0             0             1 
+   128 deliver[8,13]
+                    *              0             0             1 
+   129 deliver[1,14]
+                    *              0             0             1 
+   130 deliver[2,14]
+                    *              0             0             1 
+   131 deliver[3,14]
+                    *              0             0             1 
+   132 deliver[4,14]
+                    *              0             0             1 
+   133 deliver[5,14]
+                    *              1             0             1 
+   134 deliver[6,14]
+                    *              0             0             1 
+   135 deliver[7,14]
+                    *              0             0             1 
+   136 deliver[8,14]
+                    *              0             0             1 
+   137 deliver[1,15]
+                    *              0             0             1 
+   138 deliver[2,15]
+                    *              0             0             1 
+   139 deliver[3,15]
+                    *              0             0             1 
+   140 deliver[4,15]
+                    *              0             0             1 
+   141 deliver[5,15]
+                    *              0             0             1 
+   142 deliver[6,15]
+                    *              1             0             1 
+   143 deliver[7,15]
+                    *              0             0             1 
+   144 deliver[8,15]
+                    *              0             0             1 
+   145 deliver[1,16]
+                    *              0             0             1 
+   146 deliver[2,16]
+                    *              1             0             1 
+   147 deliver[3,16]
+                    *              0             0             1 
+   148 deliver[4,16]
+                    *              0             0             1 
+   149 deliver[5,16]
+                    *              0             0             1 
+   150 deliver[6,16]
+                    *              0             0             1 
+   151 deliver[7,16]
+                    *              0             0             1 
+   152 deliver[8,16]
+                    *              0             0             1 
+   153 deliver[1,17]
+                    *              0             0             1 
+   154 deliver[2,17]
+                    *              0             0             1 
+   155 deliver[3,17]
+                    *              0             0             1 
+   156 deliver[4,17]
+                    *              1             0             1 
+   157 deliver[5,17]
+                    *              0             0             1 
+   158 deliver[6,17]
+                    *              0             0             1 
+   159 deliver[7,17]
+                    *              0             0             1 
+   160 deliver[8,17]
+                    *              0             0             1 
+   161 deliver[1,18]
+                    *              0             0             1 
+   162 deliver[2,18]
+                    *              0             0             1 
+   163 deliver[3,18]
+                    *              0             0             1 
+   164 deliver[4,18]
+                    *              0             0             1 
+   165 deliver[5,18]
+                    *              0             0             1 
+   166 deliver[6,18]
+                    *              0             0             1 
+   167 deliver[7,18]
+                    *              0             0             1 
+   168 deliver[8,18]
+                    *              0             0             1 
+   169 deliver[1,19]
+                    *              1             0             1 
+   170 deliver[2,19]
+                    *              0             0             1 
+   171 deliver[3,19]
+                    *              0             0             1 
+   172 deliver[4,19]
+                    *              0             0             1 
+   173 deliver[5,19]
+                    *              0             0             1 
+   174 deliver[6,19]
+                    *              0             0             1 
+   175 deliver[7,19]
+                    *              0             0             1 
+   176 deliver[8,19]
+                    *              0             0             1 
+   177 deliver[1,20]
+                    *              0             0             1 
+   178 deliver[2,20]
+                    *              0             0             1 
+   179 deliver[3,20]
+                    *              0             0             1 
+   180 deliver[4,20]
+                    *              0             0             1 
+   181 deliver[5,20]
+                    *              0             0             1 
+   182 deliver[6,20]
+                    *              0             0             1 
+   183 deliver[7,20]
+                    *              0             0             1 
+   184 deliver[8,20]
+                    *              0             0             1 
+   185 deliver[1,21]
+                    *              0             0             1 
+   186 deliver[2,21]
+                    *              0             0             1 
+   187 deliver[3,21]
+                    *              0             0             1 
+   188 deliver[4,21]
+                    *              0             0             1 
+   189 deliver[5,21]
+                    *              0             0             1 
+   190 deliver[6,21]
+                    *              0             0             1 
+   191 deliver[7,21]
+                    *              0             0             1 
+   192 deliver[8,21]
+                    *              0             0             1 
+   193 deliver[1,22]
+                    *              0             0             1 
+   194 deliver[2,22]
+                    *              0             0             1 
+   195 deliver[3,22]
+                    *              0             0             1 
+   196 deliver[4,22]
+                    *              0             0             1 
+   197 deliver[5,22]
+                    *              0             0             1 
+   198 deliver[6,22]
+                    *              0             0             1 
+   199 deliver[7,22]
+                    *              0             0             1 
+   200 deliver[8,22]
+                    *              0             0             1 
+   201 deliver[1,23]
+                    *              0             0             1 
+   202 deliver[2,23]
+                    *              0             0             1 
+   203 deliver[3,23]
+                    *              0             0             1 
+   204 deliver[4,23]
+                    *              0             0             1 
+   205 deliver[5,23]
+                    *              0             0             1 
+   206 deliver[6,23]
+                    *              0             0             1 
+   207 deliver[7,23]
+                    *              0             0             1 
+   208 deliver[8,23]
+                    *              0             0             1 
+   209 deliver[1,24]
+                    *              0             0             1 
+   210 deliver[2,24]
+                    *              0             0             1 
+   211 deliver[3,24]
+                    *              0             0             1 
+   212 deliver[4,24]
+                    *              0             0             1 
+   213 deliver[5,24]
+                    *              1             0             1 
+   214 deliver[6,24]
+                    *              0             0             1 
+   215 deliver[7,24]
+                    *              0             0             1 
+   216 deliver[8,24]
+                    *              0             0             1 
+   217 deliver[1,25]
+                    *              0             0             1 
+   218 deliver[2,25]
+                    *              0             0             1 
+   219 deliver[3,25]
+                    *              0             0             1 
+   220 deliver[4,25]
+                    *              0             0             1 
+   221 deliver[5,25]
+                    *              0             0             1 
+   222 deliver[6,25]
+                    *              0             0             1 
+   223 deliver[7,25]
+                    *              0             0             1 
+   224 deliver[8,25]
+                    *              0             0             1 
+   225 deliver[1,26]
+                    *              0             0             1 
+   226 deliver[2,26]
+                    *              0             0             1 
+   227 deliver[3,26]
+                    *              1             0             1 
+   228 deliver[4,26]
+                    *              0             0             1 
+   229 deliver[5,26]
+                    *              0             0             1 
+   230 deliver[6,26]
+                    *              0             0             1 
+   231 deliver[7,26]
+                    *              0             0             1 
+   232 deliver[8,26]
+                    *              0             0             1 
+   233 deliver[1,27]
+                    *              0             0             1 
+   234 deliver[2,27]
+                    *              0             0             1 
+   235 deliver[3,27]
+                    *              0             0             1 
+   236 deliver[4,27]
+                    *              0             0             1 
+   237 deliver[5,27]
+                    *              0             0             1 
+   238 deliver[6,27]
+                    *              0             0             1 
+   239 deliver[7,27]
+                    *              0             0             1 
+   240 deliver[8,27]
+                    *              0             0             1 
+   241 deliver[1,28]
+                    *              0             0             1 
+   242 deliver[2,28]
+                    *              0             0             1 
+   243 deliver[3,28]
+                    *              0             0             1 
+   244 deliver[4,28]
+                    *              0             0             1 
+   245 deliver[5,28]
+                    *              0             0             1 
+   246 deliver[6,28]
+                    *              0             0             1 
+   247 deliver[7,28]
+                    *              0             0             1 
+   248 deliver[8,28]
+                    *              0             0             1 
+   249 deliver[1,29]
+                    *              0             0             1 
+   250 deliver[2,29]
+                    *              0             0             1 
+   251 deliver[3,29]
+                    *              0             0             1 
+   252 deliver[4,29]
+                    *              0             0             1 
+   253 deliver[5,29]
+                    *              0             0             1 
+   254 deliver[6,29]
+                    *              0             0             1 
+   255 deliver[7,29]
+                    *              0             0             1 
+   256 deliver[8,29]
+                    *              0             0             1 
+   257 deliver[1,30]
+                    *              0             0             1 
+   258 deliver[2,30]
+                    *              0             0             1 
+   259 deliver[3,30]
+                    *              0             0             1 
+   260 deliver[4,30]
+                    *              0             0             1 
+   261 deliver[5,30]
+                    *              0             0             1 
+   262 deliver[6,30]
+                    *              0             0             1 
+   263 deliver[7,30]
+                    *              0             0             1 
+   264 deliver[8,30]
+                    *              0             0             1 
+   265 deliver[1,31]
+                    *              0             0             1 
+   266 deliver[2,31]
+                    *              0             0             1 
+   267 deliver[3,31]
+                    *              0             0             1 
+   268 deliver[4,31]
+                    *              0             0             1 
+   269 deliver[5,31]
+                    *              0             0             1 
+   270 deliver[6,31]
+                    *              0             0             1 
+   271 deliver[7,31]
+                    *              0             0             1 
+   272 deliver[8,31]
+                    *              0             0             1 
+   273 deliver[1,32]
+                    *              0             0             1 
+   274 deliver[2,32]
+                    *              0             0             1 
+   275 deliver[3,32]
+                    *              0             0             1 
+   276 deliver[4,32]
+                    *              1             0             1 
+   277 deliver[5,32]
+                    *              0             0             1 
+   278 deliver[6,32]
+                    *              0             0             1 
+   279 deliver[7,32]
+                    *              0             0             1 
+   280 deliver[8,32]
+                    *              0             0             1 
+   281 deliver[1,33]
+                    *              1             0             1 
+   282 deliver[2,33]
+                    *              0             0             1 
+   283 deliver[3,33]
+                    *              0             0             1 
+   284 deliver[4,33]
+                    *              0             0             1 
+   285 deliver[5,33]
+                    *              0             0             1 
+   286 deliver[6,33]
+                    *              0             0             1 
+   287 deliver[7,33]
+                    *              0             0             1 
+   288 deliver[8,33]
+                    *              0             0             1 
+   289 deliver[1,34]
+                    *              0             0             1 
+   290 deliver[2,34]
+                    *              0             0             1 
+   291 deliver[3,34]
+                    *              0             0             1 
+   292 deliver[4,34]
+                    *              0             0             1 
+   293 deliver[5,34]
+                    *              0             0             1 
+   294 deliver[6,34]
+                    *              0             0             1 
+   295 deliver[7,34]
+                    *              0             0             1 
+   296 deliver[8,34]
+                    *              0             0             1 
+   297 deliver[1,35]
+                    *              0             0             1 
+   298 deliver[2,35]
+                    *              0             0             1 
+   299 deliver[3,35]
+                    *              0             0             1 
+   300 deliver[4,35]
+                    *              0             0             1 
+   301 deliver[5,35]
+                    *              0             0             1 
+   302 deliver[6,35]
+                    *              0             0             1 
+   303 deliver[7,35]
+                    *              0             0             1 
+   304 deliver[8,35]
+                    *              0             0             1 
+   305 deliver[1,36]
+                    *              0             0             1 
+   306 deliver[2,36]
+                    *              0             0             1 
+   307 deliver[3,36]
+                    *              0             0             1 
+   308 deliver[4,36]
+                    *              0             0             1 
+   309 deliver[5,36]
+                    *              0             0             1 
+   310 deliver[6,36]
+                    *              0             0             1 
+   311 deliver[7,36]
+                    *              0             0             1 
+   312 deliver[8,36]
+                    *              0             0             1 
+   313 deliver[1,37]
+                    *              0             0             1 
+   314 deliver[2,37]
+                    *              0             0             1 
+   315 deliver[3,37]
+                    *              0             0             1 
+   316 deliver[4,37]
+                    *              0             0             1 
+   317 deliver[5,37]
+                    *              0             0             1 
+   318 deliver[6,37]
+                    *              0             0             1 
+   319 deliver[7,37]
+                    *              0             0             1 
+   320 deliver[8,37]
+                    *              0             0             1 
+   321 deliver[1,38]
+                    *              0             0             1 
+   322 deliver[2,38]
+                    *              0             0             1 
+   323 deliver[3,38]
+                    *              0             0             1 
+   324 deliver[4,38]
+                    *              0             0             1 
+   325 deliver[5,38]
+                    *              0             0             1 
+   326 deliver[6,38]
+                    *              0             0             1 
+   327 deliver[7,38]
+                    *              0             0             1 
+   328 deliver[8,38]
+                    *              0             0             1 
+   329 deliver[1,39]
+                    *              0             0             1 
+   330 deliver[2,39]
+                    *              0             0             1 
+   331 deliver[3,39]
+                    *              0             0             1 
+   332 deliver[4,39]
+                    *              0             0             1 
+   333 deliver[5,39]
+                    *              0             0             1 
+   334 deliver[6,39]
+                    *              0             0             1 
+   335 deliver[7,39]
+                    *              0             0             1 
+   336 deliver[8,39]
+                    *              0             0             1 
+   337 deliver[1,40]
+                    *              0             0             1 
+   338 deliver[2,40]
+                    *              0             0             1 
+   339 deliver[3,40]
+                    *              0             0             1 
+   340 deliver[4,40]
+                    *              0             0             1 
+   341 deliver[5,40]
+                    *              0             0             1 
+   342 deliver[6,40]
+                    *              0             0             1 
+   343 deliver[7,40]
+                    *              0             0             1 
+   344 deliver[8,40]
+                    *              0             0             1 
+   345 deliver[1,41]
+                    *              0             0             1 
+   346 deliver[2,41]
+                    *              0             0             1 
+   347 deliver[3,41]
+                    *              0             0             1 
+   348 deliver[4,41]
+                    *              0             0             1 
+   349 deliver[5,41]
+                    *              0             0             1 
+   350 deliver[6,41]
+                    *              0             0             1 
+   351 deliver[7,41]
+                    *              0             0             1 
+   352 deliver[8,41]
+                    *              0             0             1 
+   353 deliver[1,42]
+                    *              0             0             1 
+   354 deliver[2,42]
+                    *              0             0             1 
+   355 deliver[3,42]
+                    *              0             0             1 
+   356 deliver[4,42]
+                    *              0             0             1 
+   357 deliver[5,42]
+                    *              0             0             1 
+   358 deliver[6,42]
+                    *              0             0             1 
+   359 deliver[7,42]
+                    *              0             0             1 
+   360 deliver[8,42]
+                    *              0             0             1 
+
+Integer feasibility conditions:
+
+KKT.PE: max.abs.err = 0.00e+00 on row 0
+        max.rel.err = 0.00e+00 on row 0
+        High quality
+
+KKT.PB: max.abs.err = 0.00e+00 on row 0
+        max.rel.err = 0.00e+00 on row 0
+        High quality
+
+End of output

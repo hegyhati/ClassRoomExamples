@@ -1,0 +1,658 @@
+Problem:    bike_2
+Rows:       185
+Columns:    142 (142 integer, 142 binary)
+Non-zeros:  810
+Status:     INTEGER OPTIMAL
+Objective:  deliveredOrders = 12 (MAXimum)
+
+   No.   Row name        Activity     Lower bound   Upper bound
+------ ------------    ------------- ------------- -------------
+     1 RouteSelection[1]
+                                   1             1             = 
+     2 RouteSelection[2]
+                                   1             1             = 
+     3 RouteSelection[3]
+                                   1             1             = 
+     4 RouteSelection[4]
+                                   1             1             = 
+     5 RouteSelection[5]
+                                   1             1             = 
+     6 RouteSelection[6]
+                                   1             1             = 
+     7 RouteSelection[7]
+                                   1             1             = 
+     8 RouteSelection[8]
+                                   1             1             = 
+     9 OnlyDeliverOnRoute[1,1]
+                                   1                           1 
+    10 OnlyDeliverOnRoute[1,2]
+                                   1                           1 
+    11 OnlyDeliverOnRoute[1,3]
+                                   1                           1 
+    12 OnlyDeliverOnRoute[1,4]
+                                   1                           1 
+    13 OnlyDeliverOnRoute[1,5]
+                                   1                           1 
+    14 OnlyDeliverOnRoute[1,7]
+                                   1                           1 
+    15 OnlyDeliverOnRoute[1,8]
+                                   0                           1 
+    16 OnlyDeliverOnRoute[1,9]
+                                   0                           1 
+    17 OnlyDeliverOnRoute[1,10]
+                                   0                           1 
+    18 OnlyDeliverOnRoute[1,12]
+                                   1                           1 
+    19 OnlyDeliverOnRoute[1,13]
+                                   1                           1 
+    20 OnlyDeliverOnRoute[1,14]
+                                   1                           1 
+    21 OnlyDeliverOnRoute[1,15]
+                                   1                           1 
+    22 OnlyDeliverOnRoute[1,16]
+                                   1                           1 
+    23 OnlyDeliverOnRoute[1,17]
+                                   1                           1 
+    24 OnlyDeliverOnRoute[1,18]
+                                   1                           1 
+    25 OnlyDeliverOnRoute[1,19]
+                                   1                           1 
+    26 OnlyDeliverOnRoute[1,20]
+                                   0                           1 
+    27 OnlyDeliverOnRoute[1,22]
+                                   0                           1 
+    28 OnlyDeliverOnRoute[1,23]
+                                   1                           1 
+    29 OnlyDeliverOnRoute[1,24]
+                                   1                           1 
+    30 OnlyDeliverOnRoute[1,25]
+                                   1                           1 
+    31 OnlyDeliverOnRoute[1,26]
+                                   0                           1 
+    32 OnlyDeliverOnRoute[1,28]
+                                   1                           1 
+    33 OnlyDeliverOnRoute[1,29]
+                                   0                           1 
+    34 OnlyDeliverOnRoute[1,31]
+                                   1                           1 
+    35 OnlyDeliverOnRoute[1,32]
+                                   1                           1 
+    36 OnlyDeliverOnRoute[1,33]
+                                   1                           1 
+    37 OnlyDeliverOnRoute[1,34]
+                                   0                           1 
+    38 OnlyDeliverOnRoute[1,35]
+                                   0                           1 
+    39 OnlyDeliverOnRoute[1,36]
+                                   1                           1 
+    40 OnlyDeliverOnRoute[1,37]
+                                   1                           1 
+    41 OnlyDeliverOnRoute[1,39]
+                                   1                           1 
+    42 OnlyDeliverOnRoute[1,40]
+                                   1                           1 
+    43 OnlyDeliverOnRoute[1,41]
+                                   1                           1 
+    44 OnlyDeliverOnRoute[1,42]
+                                   1                           1 
+    45 OnlyDeliverOnRoute[2,1]
+                                   1                           1 
+    46 OnlyDeliverOnRoute[2,2]
+                                   1                           1 
+    47 OnlyDeliverOnRoute[2,3]
+                                   1                           1 
+    48 OnlyDeliverOnRoute[2,4]
+                                   1                           1 
+    49 OnlyDeliverOnRoute[2,5]
+                                   1                           1 
+    50 OnlyDeliverOnRoute[2,9]
+                                   1                           1 
+    51 OnlyDeliverOnRoute[2,10]
+                                   1                           1 
+    52 OnlyDeliverOnRoute[2,12]
+                                   1                           1 
+    53 OnlyDeliverOnRoute[2,13]
+                                   1                           1 
+    54 OnlyDeliverOnRoute[2,14]
+                                   0                           1 
+    55 OnlyDeliverOnRoute[2,15]
+                                   1                           1 
+    56 OnlyDeliverOnRoute[2,16]
+                                   1                           1 
+    57 OnlyDeliverOnRoute[2,17]
+                                   0                           1 
+    58 OnlyDeliverOnRoute[2,19]
+                                   0                           1 
+    59 OnlyDeliverOnRoute[2,20]
+                                   1                           1 
+    60 OnlyDeliverOnRoute[2,22]
+                                   1                           1 
+    61 OnlyDeliverOnRoute[2,23]
+                                   1                           1 
+    62 OnlyDeliverOnRoute[2,24]
+                                   0                           1 
+    63 OnlyDeliverOnRoute[2,26]
+                                   0                           1 
+    64 OnlyDeliverOnRoute[2,29]
+                                   0                           1 
+    65 OnlyDeliverOnRoute[2,31]
+                                   0                           1 
+    66 OnlyDeliverOnRoute[2,32]
+                                   1                           1 
+    67 OnlyDeliverOnRoute[2,34]
+                                   1                           1 
+    68 OnlyDeliverOnRoute[2,35]
+                                   1                           1 
+    69 OnlyDeliverOnRoute[2,39]
+                                   1                           1 
+    70 OnlyDeliverOnRoute[2,40]
+                                   1                           1 
+    71 OnlyDeliverOnRoute[2,41]
+                                   0                           1 
+    72 OnlyDeliverOnRoute[2,42]
+                                   0                           1 
+    73 OnlyDeliverOnRoute[3,1]
+                                   0                           1 
+    74 OnlyDeliverOnRoute[3,2]
+                                   0                           1 
+    75 OnlyDeliverOnRoute[3,3]
+                                   0                           1 
+    76 OnlyDeliverOnRoute[3,9]
+                                   1                           1 
+    77 OnlyDeliverOnRoute[3,12]
+                                   0                           1 
+    78 OnlyDeliverOnRoute[3,13]
+                                   1                           1 
+    79 OnlyDeliverOnRoute[3,14]
+                                   0                           1 
+    80 OnlyDeliverOnRoute[3,15]
+                                   0                           1 
+    81 OnlyDeliverOnRoute[3,17]
+                                   1                           1 
+    82 OnlyDeliverOnRoute[3,19]
+                                   1                           1 
+    83 OnlyDeliverOnRoute[3,20]
+                                   1                           1 
+    84 OnlyDeliverOnRoute[3,22]
+                                   1                           1 
+    85 OnlyDeliverOnRoute[3,24]
+                                   0                           1 
+    86 OnlyDeliverOnRoute[3,26]
+                                   1                           1 
+    87 OnlyDeliverOnRoute[3,29]
+                                   1                           1 
+    88 OnlyDeliverOnRoute[3,31]
+                                   0                           1 
+    89 OnlyDeliverOnRoute[3,32]
+                                   1                           1 
+    90 OnlyDeliverOnRoute[3,34]
+                                   1                           1 
+    91 OnlyDeliverOnRoute[3,35]
+                                   1                           1 
+    92 OnlyDeliverOnRoute[3,39]
+                                   0                           1 
+    93 OnlyDeliverOnRoute[3,40]
+                                   0                           1 
+    94 OnlyDeliverOnRoute[3,42]
+                                   0                           1 
+    95 OnlyDeliverOnRoute[4,1]
+                                   1                           1 
+    96 OnlyDeliverOnRoute[4,2]
+                                   1                           1 
+    97 OnlyDeliverOnRoute[4,12]
+                                   1                           1 
+    98 OnlyDeliverOnRoute[4,13]
+                                   1                           1 
+    99 OnlyDeliverOnRoute[4,14]
+                                   1                           1 
+   100 OnlyDeliverOnRoute[4,15]
+                                   1                           1 
+   101 OnlyDeliverOnRoute[4,17]
+                                   1                           1 
+   102 OnlyDeliverOnRoute[4,20]
+                                   0                           1 
+   103 OnlyDeliverOnRoute[4,22]
+                                   0                           1 
+   104 OnlyDeliverOnRoute[4,24]
+                                   1                           1 
+   105 OnlyDeliverOnRoute[4,26]
+                                   1                           1 
+   106 OnlyDeliverOnRoute[4,29]
+                                   1                           1 
+   107 OnlyDeliverOnRoute[4,31]
+                                   1                           1 
+   108 OnlyDeliverOnRoute[4,32]
+                                   1                           1 
+   109 OnlyDeliverOnRoute[4,34]
+                                   0                           1 
+   110 OnlyDeliverOnRoute[4,35]
+                                   0                           1 
+   111 OnlyDeliverOnRoute[4,39]
+                                   1                           1 
+   112 OnlyDeliverOnRoute[4,40]
+                                   1                           1 
+   113 OnlyDeliverOnRoute[5,12]
+                                   0                           1 
+   114 OnlyDeliverOnRoute[5,13]
+                                   0                           1 
+   115 OnlyDeliverOnRoute[5,14]
+                                   0                           1 
+   116 OnlyDeliverOnRoute[5,15]
+                                   1                           1 
+   117 OnlyDeliverOnRoute[5,22]
+                                   1                           1 
+   118 OnlyDeliverOnRoute[5,24]
+                                   1                           1 
+   119 OnlyDeliverOnRoute[5,26]
+                                   1                           1 
+   120 OnlyDeliverOnRoute[5,34]
+                                   1                           1 
+   121 OnlyDeliverOnRoute[5,39]
+                                   0                           1 
+   122 OnlyDeliverOnRoute[6,12]
+                                   1                           1 
+   123 OnlyDeliverOnRoute[6,13]
+                                   1                           1 
+   124 OnlyDeliverOnRoute[6,15]
+                                   1                           1 
+   125 OnlyDeliverOnRoute[6,22]
+                                   1                           1 
+   126 OnlyDeliverOnRoute[6,26]
+                                   0                           1 
+   127 OrderDelivery[1]
+                                   0                           1 
+   128 OrderDelivery[2]
+                                   0                           1 
+   129 OrderDelivery[3]
+                                   0                           1 
+   130 OrderDelivery[4]
+                                   0                           1 
+   131 OrderDelivery[5]
+                                   0                           1 
+   132 OrderDelivery[6]
+                                   0                           1 
+   133 OrderDelivery[7]
+                                   1                           1 
+   134 OrderDelivery[8]
+                                   0                           1 
+   135 OrderDelivery[9]
+                                   0                           1 
+   136 OrderDelivery[10]
+                                   1                           1 
+   137 OrderDelivery[11]
+                                   0                           1 
+   138 OrderDelivery[12]
+                                   0                           1 
+   139 OrderDelivery[13]
+                                   1                           1 
+   140 OrderDelivery[14]
+                                   0                           1 
+   141 OrderDelivery[15]
+                                   1                           1 
+   142 OrderDelivery[16]
+                                   0                           1 
+   143 OrderDelivery[17]
+                                   1                           1 
+   144 OrderDelivery[18]
+                                   0                           1 
+   145 OrderDelivery[19]
+                                   1                           1 
+   146 OrderDelivery[20]
+                                   0                           1 
+   147 OrderDelivery[21]
+                                   0                           1 
+   148 OrderDelivery[22]
+                                   1                           1 
+   149 OrderDelivery[23]
+                                   0                           1 
+   150 OrderDelivery[24]
+                                   1                           1 
+   151 OrderDelivery[25]
+                                   0                           1 
+   152 OrderDelivery[26]
+                                   1                           1 
+   153 OrderDelivery[27]
+                                   0                           1 
+   154 OrderDelivery[28]
+                                   0                           1 
+   155 OrderDelivery[29]
+                                   1                           1 
+   156 OrderDelivery[30]
+                                   0                           1 
+   157 OrderDelivery[31]
+                                   0                           1 
+   158 OrderDelivery[32]
+                                   1                           1 
+   159 OrderDelivery[33]
+                                   1                           1 
+   160 OrderDelivery[34]
+                                   0                           1 
+   161 OrderDelivery[35]
+                                   0                           1 
+   162 OrderDelivery[36]
+                                   0                           1 
+   163 OrderDelivery[37]
+                                   0                           1 
+   164 OrderDelivery[38]
+                                   0                           1 
+   165 OrderDelivery[39]
+                                   0                           1 
+   166 OrderDelivery[40]
+                                   0                           1 
+   167 OrderDelivery[41]
+                                   0                           1 
+   168 OrderDelivery[42]
+                                   0                           1 
+   169 MaxCapacity[1]
+                                8.49                          10 
+   170 MaxCapacity[2]
+                                8.19                          10 
+   171 MaxCapacity[3]
+                                 9.9                          10 
+   172 MaxCapacity[4]
+                                7.89                          10 
+   173 MaxCapacity[5]
+                                8.55                          10 
+   174 MaxCapacity[6]
+                                6.37                          10 
+   175 MaxCapacity[7]
+                                   0                          10 
+   176 MaxCapacity[8]
+                                   0                          10 
+   177 MaxSlotCount[1]
+                                   3                           5 
+   178 MaxSlotCount[2]
+                                   2                           5 
+   179 MaxSlotCount[3]
+                                   2                           5 
+   180 MaxSlotCount[4]
+                                   2                           5 
+   181 MaxSlotCount[5]
+                                   2                           5 
+   182 MaxSlotCount[6]
+                                   1                           5 
+   183 MaxSlotCount[7]
+                                   0                           5 
+   184 MaxSlotCount[8]
+                                   0                           5 
+   185 deliveredOrders
+                                  12                             
+
+   No. Column name       Activity     Lower bound   Upper bound
+------ ------------    ------------- ------------- -------------
+     1 select[1,North]
+                    *              0             0             1 
+     2 select[1,East]
+                    *              1             0             1 
+     3 select[1,South]
+                    *              0             0             1 
+     4 select[2,North]
+                    *              0             0             1 
+     5 select[2,East]
+                    *              0             0             1 
+     6 select[2,South]
+                    *              1             0             1 
+     7 select[3,North]
+                    *              1             0             1 
+     8 select[3,East]
+                    *              0             0             1 
+     9 select[3,South]
+                    *              0             0             1 
+    10 select[4,North]
+                    *              0             0             1 
+    11 select[4,East]
+                    *              1             0             1 
+    12 select[4,South]
+                    *              0             0             1 
+    13 select[5,North]
+                    *              1             0             1 
+    14 select[5,East]
+                    *              0             0             1 
+    15 select[5,South]
+                    *              0             0             1 
+    16 select[6,North]
+                    *              0             0             1 
+    17 select[6,East]
+                    *              1             0             1 
+    18 select[6,South]
+                    *              0             0             1 
+    19 select[7,North]
+                    *              0             0             1 
+    20 select[7,East]
+                    *              0             0             1 
+    21 select[7,South]
+                    *              1             0             1 
+    22 select[8,North]
+                    *              0             0             1 
+    23 select[8,East]
+                    *              0             0             1 
+    24 select[8,South]
+                    *              1             0             1 
+    25 deliver[1,1] *              0             0             1 
+    26 deliver[1,2] *              0             0             1 
+    27 deliver[1,3] *              0             0             1 
+    28 deliver[1,4] *              0             0             1 
+    29 deliver[1,5] *              0             0             1 
+    30 deliver[1,7] *              1             0             1 
+    31 deliver[1,8] *              0             0             1 
+    32 deliver[1,9] *              0             0             1 
+    33 deliver[1,10]
+                    *              0             0             1 
+    34 deliver[1,12]
+                    *              0             0             1 
+    35 deliver[1,13]
+                    *              0             0             1 
+    36 deliver[1,14]
+                    *              0             0             1 
+    37 deliver[1,15]
+                    *              0             0             1 
+    38 deliver[1,16]
+                    *              0             0             1 
+    39 deliver[1,17]
+                    *              0             0             1 
+    40 deliver[1,18]
+                    *              0             0             1 
+    41 deliver[1,19]
+                    *              1             0             1 
+    42 deliver[1,20]
+                    *              0             0             1 
+    43 deliver[1,22]
+                    *              0             0             1 
+    44 deliver[1,23]
+                    *              0             0             1 
+    45 deliver[1,24]
+                    *              0             0             1 
+    46 deliver[1,25]
+                    *              0             0             1 
+    47 deliver[1,26]
+                    *              0             0             1 
+    48 deliver[1,28]
+                    *              0             0             1 
+    49 deliver[1,29]
+                    *              0             0             1 
+    50 deliver[1,31]
+                    *              0             0             1 
+    51 deliver[1,32]
+                    *              0             0             1 
+    52 deliver[1,33]
+                    *              1             0             1 
+    53 deliver[1,34]
+                    *              0             0             1 
+    54 deliver[1,35]
+                    *              0             0             1 
+    55 deliver[1,36]
+                    *              0             0             1 
+    56 deliver[1,37]
+                    *              0             0             1 
+    57 deliver[1,39]
+                    *              0             0             1 
+    58 deliver[1,40]
+                    *              0             0             1 
+    59 deliver[1,41]
+                    *              0             0             1 
+    60 deliver[1,42]
+                    *              0             0             1 
+    61 deliver[2,1] *              0             0             1 
+    62 deliver[2,2] *              0             0             1 
+    63 deliver[2,3] *              0             0             1 
+    64 deliver[2,4] *              0             0             1 
+    65 deliver[2,5] *              0             0             1 
+    66 deliver[2,9] *              0             0             1 
+    67 deliver[2,10]
+                    *              1             0             1 
+    68 deliver[2,12]
+                    *              0             0             1 
+    69 deliver[2,13]
+                    *              0             0             1 
+    70 deliver[2,14]
+                    *              0             0             1 
+    71 deliver[2,15]
+                    *              0             0             1 
+    72 deliver[2,16]
+                    *              0             0             1 
+    73 deliver[2,17]
+                    *              0             0             1 
+    74 deliver[2,19]
+                    *              0             0             1 
+    75 deliver[2,20]
+                    *              0             0             1 
+    76 deliver[2,22]
+                    *              0             0             1 
+    77 deliver[2,23]
+                    *              0             0             1 
+    78 deliver[2,24]
+                    *              0             0             1 
+    79 deliver[2,26]
+                    *              0             0             1 
+    80 deliver[2,29]
+                    *              0             0             1 
+    81 deliver[2,31]
+                    *              0             0             1 
+    82 deliver[2,32]
+                    *              1             0             1 
+    83 deliver[2,34]
+                    *              0             0             1 
+    84 deliver[2,35]
+                    *              0             0             1 
+    85 deliver[2,39]
+                    *              0             0             1 
+    86 deliver[2,40]
+                    *              0             0             1 
+    87 deliver[2,41]
+                    *              0             0             1 
+    88 deliver[2,42]
+                    *              0             0             1 
+    89 deliver[3,1] *              0             0             1 
+    90 deliver[3,2] *              0             0             1 
+    91 deliver[3,3] *              0             0             1 
+    92 deliver[3,9] *              0             0             1 
+    93 deliver[3,12]
+                    *              0             0             1 
+    94 deliver[3,13]
+                    *              1             0             1 
+    95 deliver[3,14]
+                    *              0             0             1 
+    96 deliver[3,15]
+                    *              0             0             1 
+    97 deliver[3,17]
+                    *              1             0             1 
+    98 deliver[3,19]
+                    *              0             0             1 
+    99 deliver[3,20]
+                    *              0             0             1 
+   100 deliver[3,22]
+                    *              0             0             1 
+   101 deliver[3,24]
+                    *              0             0             1 
+   102 deliver[3,26]
+                    *              0             0             1 
+   103 deliver[3,29]
+                    *              0             0             1 
+   104 deliver[3,31]
+                    *              0             0             1 
+   105 deliver[3,32]
+                    *              0             0             1 
+   106 deliver[3,34]
+                    *              0             0             1 
+   107 deliver[3,35]
+                    *              0             0             1 
+   108 deliver[3,39]
+                    *              0             0             1 
+   109 deliver[3,40]
+                    *              0             0             1 
+   110 deliver[3,42]
+                    *              0             0             1 
+   111 deliver[4,1] *              0             0             1 
+   112 deliver[4,2] *              0             0             1 
+   113 deliver[4,12]
+                    *              0             0             1 
+   114 deliver[4,13]
+                    *              0             0             1 
+   115 deliver[4,14]
+                    *              0             0             1 
+   116 deliver[4,15]
+                    *              0             0             1 
+   117 deliver[4,17]
+                    *              0             0             1 
+   118 deliver[4,20]
+                    *              0             0             1 
+   119 deliver[4,22]
+                    *              0             0             1 
+   120 deliver[4,24]
+                    *              0             0             1 
+   121 deliver[4,26]
+                    *              1             0             1 
+   122 deliver[4,29]
+                    *              1             0             1 
+   123 deliver[4,31]
+                    *              0             0             1 
+   124 deliver[4,32]
+                    *              0             0             1 
+   125 deliver[4,34]
+                    *              0             0             1 
+   126 deliver[4,35]
+                    *              0             0             1 
+   127 deliver[4,39]
+                    *              0             0             1 
+   128 deliver[4,40]
+                    *              0             0             1 
+   129 deliver[5,12]
+                    *              0             0             1 
+   130 deliver[5,13]
+                    *              0             0             1 
+   131 deliver[5,14]
+                    *              0             0             1 
+   132 deliver[5,15]
+                    *              1             0             1 
+   133 deliver[5,22]
+                    *              0             0             1 
+   134 deliver[5,24]
+                    *              1             0             1 
+   135 deliver[5,26]
+                    *              0             0             1 
+   136 deliver[5,34]
+                    *              0             0             1 
+   137 deliver[5,39]
+                    *              0             0             1 
+   138 deliver[6,12]
+                    *              0             0             1 
+   139 deliver[6,13]
+                    *              0             0             1 
+   140 deliver[6,15]
+                    *              0             0             1 
+   141 deliver[6,22]
+                    *              1             0             1 
+   142 deliver[6,26]
+                    *              0             0             1 
+
+Integer feasibility conditions:
+
+KKT.PE: max.abs.err = 0.00e+00 on row 0
+        max.rel.err = 0.00e+00 on row 0
+        High quality
+
+KKT.PB: max.abs.err = 0.00e+00 on row 0
+        max.rel.err = 0.00e+00 on row 0
+        High quality
+
+End of output

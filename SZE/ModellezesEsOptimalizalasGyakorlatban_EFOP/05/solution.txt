@@ -1,0 +1,335 @@
+Problem:    books
+Rows:       99
+Columns:    85 (70 integer, 70 binary)
+Non-zeros:  311
+Status:     INTEGER OPTIMAL
+Objective:  topShelfHeight = 181 (MINimum)
+
+   No.   Row name        Activity     Lower bound   Upper bound
+------ ------------    ------------- ------------- -------------
+     1 ShelfUsage[2]
+                                   0                          -0 
+     2 ShelfUsage[3]
+                                   0                          -0 
+     3 ShelfUsage[4]
+                                   0                          -0 
+     4 ShelfUsage[5]
+                                   0                          -0 
+     5 ShelfUsage[6]
+                                  -1                          -0 
+     6 ShelfUsage[7]
+                                   0                          -0 
+     7 MaxBookHeightSetter[Math,1]
+                                  20            -0               
+     8 MaxBookHeightSetter[Math,2]
+                                   0            -0               
+     9 MaxBookHeightSetter[Math,3]
+                                  30            -0               
+    10 MaxBookHeightSetter[Math,4]
+                                  25            -0               
+    11 MaxBookHeightSetter[Math,5]
+                                  40            -0               
+    12 MaxBookHeightSetter[Math,6]
+                                   0            -0               
+    13 MaxBookHeightSetter[Math,7]
+                                   0            -0               
+    14 MaxBookHeightSetter[IT,1]
+                                  20            -0               
+    15 MaxBookHeightSetter[IT,2]
+                                  20            -0               
+    16 MaxBookHeightSetter[IT,3]
+                                   5            -0               
+    17 MaxBookHeightSetter[IT,4]
+                                  25            -0               
+    18 MaxBookHeightSetter[IT,5]
+                                  40            -0               
+    19 MaxBookHeightSetter[IT,6]
+                                   0            -0               
+    20 MaxBookHeightSetter[IT,7]
+                                   0            -0               
+    21 MaxBookHeightSetter[Sport,1]
+                                  20            -0               
+    22 MaxBookHeightSetter[Sport,2]
+                                  20            -0               
+    23 MaxBookHeightSetter[Sport,3]
+                                   0            -0               
+    24 MaxBookHeightSetter[Sport,4]
+                                  25            -0               
+    25 MaxBookHeightSetter[Sport,5]
+                                  40            -0               
+    26 MaxBookHeightSetter[Sport,6]
+                                   0            -0               
+    27 MaxBookHeightSetter[Sport,7]
+                                   0            -0               
+    28 MaxBookHeightSetter[Music,1]
+                                  20            -0               
+    29 MaxBookHeightSetter[Music,2]
+                                  20            -0               
+    30 MaxBookHeightSetter[Music,3]
+                                  30            -0               
+    31 MaxBookHeightSetter[Music,4]
+                                  25            -0               
+    32 MaxBookHeightSetter[Music,5]
+                                  10            -0               
+    33 MaxBookHeightSetter[Music,6]
+                                   0            -0               
+    34 MaxBookHeightSetter[Music,7]
+                                   0            -0               
+    35 MaxBookHeightSetter[Novel,1]
+                                   0            -0               
+    36 MaxBookHeightSetter[Novel,2]
+                                  20            -0               
+    37 MaxBookHeightSetter[Novel,3]
+                                  30            -0               
+    38 MaxBookHeightSetter[Novel,4]
+                                  25            -0               
+    39 MaxBookHeightSetter[Novel,5]
+                                  40            -0               
+    40 MaxBookHeightSetter[Novel,6]
+                                   0            -0               
+    41 MaxBookHeightSetter[Novel,7]
+                                   0            -0               
+    42 MaxBookHeightSetter[Tolkien,1]
+                                  20            -0               
+    43 MaxBookHeightSetter[Tolkien,2]
+                                  20            -0               
+    44 MaxBookHeightSetter[Tolkien,3]
+                                  30            -0               
+    45 MaxBookHeightSetter[Tolkien,4]
+                                   0            -0               
+    46 MaxBookHeightSetter[Tolkien,5]
+                                  40            -0               
+    47 MaxBookHeightSetter[Tolkien,6]
+                                   0            -0               
+    48 MaxBookHeightSetter[Tolkien,7]
+                                   0            -0               
+    49 MaxBookHeightSetter[Feist,1]
+                                   0            -0               
+    50 MaxBookHeightSetter[Feist,2]
+                                  20            -0               
+    51 MaxBookHeightSetter[Feist,3]
+                                  30            -0               
+    52 MaxBookHeightSetter[Feist,4]
+                                  25            -0               
+    53 MaxBookHeightSetter[Feist,5]
+                                  40            -0               
+    54 MaxBookHeightSetter[Feist,6]
+                                   0            -0               
+    55 MaxBookHeightSetter[Feist,7]
+                                   0            -0               
+    56 MaxBookHeightSetter[HarryPotter,1]
+                                  20            -0               
+    57 MaxBookHeightSetter[HarryPotter,2]
+                                  20            -0               
+    58 MaxBookHeightSetter[HarryPotter,3]
+                                  30            -0               
+    59 MaxBookHeightSetter[HarryPotter,4]
+                                   0            -0               
+    60 MaxBookHeightSetter[HarryPotter,5]
+                                  40            -0               
+    61 MaxBookHeightSetter[HarryPotter,6]
+                                   0            -0               
+    62 MaxBookHeightSetter[HarryPotter,7]
+                                   0            -0               
+    63 MaxBookHeightSetter[Diplom,1]
+                                  20            -0               
+    64 MaxBookHeightSetter[Diplom,2]
+                                  20            -0               
+    65 MaxBookHeightSetter[Diplom,3]
+                                  30            -0               
+    66 MaxBookHeightSetter[Diplom,4]
+                                  25            -0               
+    67 MaxBookHeightSetter[Diplom,5]
+                                   0            -0               
+    68 MaxBookHeightSetter[Diplom,6]
+                                   0            -0               
+    69 MaxBookHeightSetter[Diplom,7]
+                                   0            -0               
+    70 ShelfPositioning[2]
+                                   9             9               
+    71 ShelfPositioning[3]
+                                   9             9               
+    72 ShelfPositioning[4]
+                                   9             9               
+    73 ShelfPositioning[5]
+                                   9             9               
+    74 ShelfPositioning[6]
+                                   9             9               
+    75 ShelfPositioning[7]
+                                   9             9               
+    76 ShelfCapacity[1]
+                                 -30                          -0 
+    77 ShelfCapacity[2]
+                                 -20                          -0 
+    78 ShelfCapacity[3]
+                                 -10                          -0 
+    79 ShelfCapacity[4]
+                                   0                          -0 
+    80 ShelfCapacity[5]
+                                   0                          -0 
+    81 ShelfCapacity[6]
+                                   0                          -0 
+    82 ShelfCapacity[7]
+                                   0                          -0 
+    83 BookSetAssignment[Math]
+                                   1             1             = 
+    84 BookSetAssignment[IT]
+                                   1             1             = 
+    85 BookSetAssignment[Sport]
+                                   1             1             = 
+    86 BookSetAssignment[Music]
+                                   1             1             = 
+    87 BookSetAssignment[Novel]
+                                   1             1             = 
+    88 BookSetAssignment[Tolkien]
+                                   1             1             = 
+    89 BookSetAssignment[Feist]
+                                   1             1             = 
+    90 BookSetAssignment[HarryPotter]
+                                   1             1             = 
+    91 BookSetAssignment[Diplom]
+                                   1             1             = 
+    92 MaxUsedShelf[1]
+                                -369          -500               
+    93 MaxUsedShelf[2]
+                                -398          -500               
+    94 MaxUsedShelf[3]
+                                -427          -500               
+    95 MaxUsedShelf[4]
+                                -466          -500               
+    96 MaxUsedShelf[5]
+                                -500          -500               
+    97 MaxUsedShelf[6]
+                                 -49          -500               
+    98 MaxUsedShelf[7]
+                                 -58          -500               
+    99 topShelfHeight
+                                 181                             
+
+   No. Column name       Activity     Lower bound   Upper bound
+------ ------------    ------------- ------------- -------------
+     1 use[2]       *              1             0             1 
+     2 use[1]       *              1             0             1 
+     3 use[3]       *              1             0             1 
+     4 use[4]       *              1             0             1 
+     5 use[5]       *              1             0             1 
+     6 use[6]       *              0             0             1 
+     7 use[7]       *              0             0             1 
+     8 position[2]                79            50               
+     9 position[1]                50            50               
+    10 position[3]               108            50               
+    11 position[4]               147            50               
+    12 position[5]               181            50               
+    13 position[6]               230            50               
+    14 position[7]               239            50               
+    15 put[Math,1]  *              0             0             1 
+    16 put[Math,2]  *              1             0             1 
+    17 put[Math,3]  *              0             0             1 
+    18 put[Math,4]  *              0             0             1 
+    19 put[Math,5]  *              0             0             1 
+    20 put[Math,6]  *              0             0             1 
+    21 put[Math,7]  *              0             0             1 
+    22 put[IT,1]    *              0             0             1 
+    23 put[IT,2]    *              0             0             1 
+    24 put[IT,3]    *              1             0             1 
+    25 put[IT,4]    *              0             0             1 
+    26 put[IT,5]    *              0             0             1 
+    27 put[IT,6]    *              0             0             1 
+    28 put[IT,7]    *              0             0             1 
+    29 put[Sport,1] *              0             0             1 
+    30 put[Sport,2] *              0             0             1 
+    31 put[Sport,3] *              1             0             1 
+    32 put[Sport,4] *              0             0             1 
+    33 put[Sport,5] *              0             0             1 
+    34 put[Sport,6] *              0             0             1 
+    35 put[Sport,7] *              0             0             1 
+    36 put[Music,1] *              0             0             1 
+    37 put[Music,2] *              0             0             1 
+    38 put[Music,3] *              0             0             1 
+    39 put[Music,4] *              0             0             1 
+    40 put[Music,5] *              1             0             1 
+    41 put[Music,6] *              0             0             1 
+    42 put[Music,7] *              0             0             1 
+    43 put[Novel,1] *              1             0             1 
+    44 put[Novel,2] *              0             0             1 
+    45 put[Novel,3] *              0             0             1 
+    46 put[Novel,4] *              0             0             1 
+    47 put[Novel,5] *              0             0             1 
+    48 put[Novel,6] *              0             0             1 
+    49 put[Novel,7] *              0             0             1 
+    50 put[Tolkien,1]
+                    *              0             0             1 
+    51 put[Tolkien,2]
+                    *              0             0             1 
+    52 put[Tolkien,3]
+                    *              0             0             1 
+    53 put[Tolkien,4]
+                    *              1             0             1 
+    54 put[Tolkien,5]
+                    *              0             0             1 
+    55 put[Tolkien,6]
+                    *              0             0             1 
+    56 put[Tolkien,7]
+                    *              0             0             1 
+    57 put[Feist,1] *              1             0             1 
+    58 put[Feist,2] *              0             0             1 
+    59 put[Feist,3] *              0             0             1 
+    60 put[Feist,4] *              0             0             1 
+    61 put[Feist,5] *              0             0             1 
+    62 put[Feist,6] *              0             0             1 
+    63 put[Feist,7] *              0             0             1 
+    64 put[HarryPotter,1]
+                    *              0             0             1 
+    65 put[HarryPotter,2]
+                    *              0             0             1 
+    66 put[HarryPotter,3]
+                    *              0             0             1 
+    67 put[HarryPotter,4]
+                    *              1             0             1 
+    68 put[HarryPotter,5]
+                    *              0             0             1 
+    69 put[HarryPotter,6]
+                    *              0             0             1 
+    70 put[HarryPotter,7]
+                    *              0             0             1 
+    71 put[Diplom,1]
+                    *              0             0             1 
+    72 put[Diplom,2]
+                    *              0             0             1 
+    73 put[Diplom,3]
+                    *              0             0             1 
+    74 put[Diplom,4]
+                    *              0             0             1 
+    75 put[Diplom,5]
+                    *              1             0             1 
+    76 put[Diplom,6]
+                    *              0             0             1 
+    77 put[Diplom,7]
+                    *              0             0             1 
+    78 maxbookheight[1]
+                                  20             0               
+    79 maxbookheight[2]
+                                  20             0               
+    80 maxbookheight[3]
+                                  30             0               
+    81 maxbookheight[4]
+                                  25             0               
+    82 maxbookheight[5]
+                                  40             0               
+    83 maxbookheight[6]
+                                   0             0               
+    84 maxbookheight[7]
+                                   0             0               
+    85 maxusedshelf              181                             
+
+Integer feasibility conditions:
+
+KKT.PE: max.abs.err = 0.00e+00 on row 0
+        max.rel.err = 0.00e+00 on row 0
+        High quality
+
+KKT.PB: max.abs.err = 3.55e-15 on row 73
+        max.rel.err = 3.55e-16 on row 73
+        High quality
+
+End of output

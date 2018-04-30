@@ -1,0 +1,28 @@
+Hour 1: Route South [ CarseJonril Tulan Lan Bordon]
+	Orders: Totalweight: 9.71
+		Order 10 (Bordon)
+		Order 19 (Lan)
+		Order 33 (Lan)
+Hour 2: Route North [ Crydee Moraelin Elvandar CarseJonril]
+	Orders: Totalweight: 9.78
+		Order 13 (Elvandar)
+		Order 16 (Elvandar)
+Hour 3: Route East [ Lan Walinor Hush Natal Bordon]
+	Orders: Totalweight: 8.74
+		Order 9 (Natal)
+		Order 26 (Lan)
+Hour 4: Route South [ CarseJonril Tulan Lan Bordon]
+	Orders: Totalweight: 9.15
+		Order 17 (CarseJonril)
+		Order 32 (Tulan)
+Hour 5: Route North [ Crydee Moraelin Elvandar CarseJonril]
+	Orders: Totalweight: 8.37
+		Order 14 (CarseJonril)
+		Order 24 (CarseJonril)
+Hour 6: Route North [ Crydee Moraelin Elvandar CarseJonril]
+	Orders: Totalweight: 6.46
+		Order 15 (Moraelin)
+Hour 7: Route South [ CarseJonril Tulan Lan Bordon]
+	Orders: Totalweight: 0
+Hour 8: Route South [ CarseJonril Tulan Lan Bordon]
+	Orders: Totalweight: 0
