@@ -1,0 +1,331 @@
+Problem:    multiproduct
+Rows:       126
+Columns:    56 (25 integer, 25 binary)
+Non-zeros:  326
+Status:     INTEGER OPTIMAL
+Objective:  Makespan = 19.97 (MINimum)
+
+   No.   Row name        Activity     Lower bound   Upper bound
+------ ------------    ------------- ------------- -------------
+     1 ProcessingTime[1,1]
+                                0.61          0.61             = 
+     2 ProcessingTime[1,2]
+                                4.31          4.31             = 
+     3 ProcessingTime[1,3]
+                                2.39          2.39             = 
+     4 ProcessingTime[2,1]
+                                2.37          2.37             = 
+     5 ProcessingTime[2,2]
+                                3.32          3.32             = 
+     6 ProcessingTime[2,3]
+                                 4.7           4.7             = 
+     7 ProcessingTime[3,1]
+                                2.08          2.08             = 
+     8 ProcessingTime[3,2]
+                                1.85          1.85             = 
+     9 ProcessingTime[3,3]
+                                4.98          4.98             = 
+    10 ProcessingTime[4,1]
+                                3.72          3.72             = 
+    11 ProcessingTime[4,2]
+                                3.76          3.76             = 
+    12 ProcessingTime[4,3]
+                                1.12          1.12             = 
+    13 ProcessingTime[5,1]
+                                4.27          4.27             = 
+    14 ProcessingTime[5,2]
+                                 0.3           0.3             = 
+    15 ProcessingTime[5,3]
+                                2.85          2.85             = 
+    16 Precedences[1,2]
+                                1.24            -0               
+    17 Precedences[1,3]
+                                0.67            -0               
+    18 Precedences[2,2]
+                                 1.5            -0               
+    19 Precedences[2,3]
+                                   0            -0               
+    20 Precedences[3,2]
+                                   0            -0               
+    21 Precedences[3,3]
+                                   0            -0               
+    22 Precedences[4,2]
+                                2.04            -0               
+    23 Precedences[4,3]
+                                   0            -0               
+    24 Precedences[5,2]
+                                1.28            -0               
+    25 Precedences[5,3]
+                                2.76            -0               
+    26 Sequencing[1,1,1]
+                               -0.61          -100               
+    27 Sequencing[1,1,2]
+                               -4.31          -100               
+    28 Sequencing[1,1,3]
+                               -2.39          -100               
+    29 Sequencing[1,2,1]
+                              -95.73          -100               
+    30 Sequencing[1,2,2]
+                              -97.41          -100               
+    31 Sequencing[1,2,3]
+                              -97.15          -100               
+    32 Sequencing[1,3,1]
+                               -2.69          -100               
+    33 Sequencing[1,3,2]
+                               -6.16          -100               
+    34 Sequencing[1,3,3]
+                               -7.37          -100               
+    35 Sequencing[1,4,1]
+                              -93.36          -100               
+    36 Sequencing[1,4,2]
+                              -93.15          -100               
+    37 Sequencing[1,4,3]
+                              -92.45          -100               
+    38 Sequencing[1,5,1]
+                                -100          -100               
+    39 Sequencing[1,5,2]
+                                -100          -100               
+    40 Sequencing[1,5,3]
+                                -100          -100               
+    41 Sequencing[2,1,1]
+                               -7.25          -100               
+    42 Sequencing[2,1,2]
+                              -10.22          -100               
+    43 Sequencing[2,1,3]
+                               -9.94          -100               
+    44 Sequencing[2,2,1]
+                               -2.37          -100               
+    45 Sequencing[2,2,2]
+                               -3.32          -100               
+    46 Sequencing[2,2,3]
+                                -4.7          -100               
+    47 Sequencing[2,3,1]
+                               -9.33          -100               
+    48 Sequencing[2,3,2]
+                              -12.07          -100               
+    49 Sequencing[2,3,3]
+                              -14.92          -100               
+    50 Sequencing[2,4,1]
+                                -100          -100               
+    51 Sequencing[2,4,2]
+                              -99.06          -100               
+    52 Sequencing[2,4,3]
+                                -100          -100               
+    53 Sequencing[2,5,1]
+                               -6.64          -100               
+    54 Sequencing[2,5,2]
+                               -5.91          -100               
+    55 Sequencing[2,5,3]
+                               -7.55          -100               
+    56 Sequencing[3,1,1]
+                                -100          -100               
+    57 Sequencing[3,1,2]
+                                -100          -100               
+    58 Sequencing[3,1,3]
+                                -100          -100               
+    59 Sequencing[3,2,1]
+                              -95.12          -100               
+    60 Sequencing[3,2,2]
+                               -93.1          -100               
+    61 Sequencing[3,2,3]
+                              -94.76          -100               
+    62 Sequencing[3,3,1]
+                               -2.08          -100               
+    63 Sequencing[3,3,2]
+                               -1.85          -100               
+    64 Sequencing[3,3,3]
+                               -4.98          -100               
+    65 Sequencing[3,4,1]
+                              -92.75          -100               
+    66 Sequencing[3,4,2]
+                              -88.84          -100               
+    67 Sequencing[3,4,3]
+                              -90.06          -100               
+    68 Sequencing[3,5,1]
+                              -99.39          -100               
+    69 Sequencing[3,5,2]
+                              -95.69          -100               
+    70 Sequencing[3,5,3]
+                              -97.61          -100               
+    71 Sequencing[4,1,1]
+                              -10.97          -100               
+    72 Sequencing[4,1,2]
+                              -14.92          -100               
+    73 Sequencing[4,1,3]
+                              -11.06          -100               
+    74 Sequencing[4,2,1]
+                               -6.09          -100               
+    75 Sequencing[4,2,2]
+                               -8.02          -100               
+    76 Sequencing[4,2,3]
+                               -5.82          -100               
+    77 Sequencing[4,3,1]
+                              -13.05          -100               
+    78 Sequencing[4,3,2]
+                              -16.77          -100               
+    79 Sequencing[4,3,3]
+                              -16.04          -100               
+    80 Sequencing[4,4,1]
+                               -3.72          -100               
+    81 Sequencing[4,4,2]
+                               -3.76          -100               
+    82 Sequencing[4,4,3]
+                               -1.12          -100               
+    83 Sequencing[4,5,1]
+                              -10.36          -100               
+    84 Sequencing[4,5,2]
+                              -10.61          -100               
+    85 Sequencing[4,5,3]
+                               -8.67          -100               
+    86 Sequencing[5,1,1]
+                               -4.88          -100               
+    87 Sequencing[5,1,2]
+                               -4.61          -100               
+    88 Sequencing[5,1,3]
+                               -5.24          -100               
+    89 Sequencing[5,2,1]
+                                -100          -100               
+    90 Sequencing[5,2,2]
+                              -97.71          -100               
+    91 Sequencing[5,2,3]
+                                -100          -100               
+    92 Sequencing[5,3,1]
+                               -6.96          -100               
+    93 Sequencing[5,3,2]
+                               -6.46          -100               
+    94 Sequencing[5,3,3]
+                              -10.22          -100               
+    95 Sequencing[5,4,1]
+                              -97.63          -100               
+    96 Sequencing[5,4,2]
+                              -93.45          -100               
+    97 Sequencing[5,4,3]
+                               -95.3          -100               
+    98 Sequencing[5,5,1]
+                               -4.27          -100               
+    99 Sequencing[5,5,2]
+                                -0.3          -100               
+   100 Sequencing[5,5,3]
+                               -2.85          -100               
+   101 Sequencing2[1,2]
+                                   1             1             = 
+   102 Sequencing2[1,3]
+                                   1             1             = 
+   103 Sequencing2[1,4]
+                                   1             1             = 
+   104 Sequencing2[1,5]
+                                   1             1             = 
+   105 Sequencing2[2,1]
+                                   1             1             = 
+   106 Sequencing2[2,3]
+                                   1             1             = 
+   107 Sequencing2[2,4]
+                                   1             1             = 
+   108 Sequencing2[2,5]
+                                   1             1             = 
+   109 Sequencing2[3,1]
+                                   1             1             = 
+   110 Sequencing2[3,2]
+                                   1             1             = 
+   111 Sequencing2[3,4]
+                                   1             1             = 
+   112 Sequencing2[3,5]
+                                   1             1             = 
+   113 Sequencing2[4,1]
+                                   1             1             = 
+   114 Sequencing2[4,2]
+                                   1             1             = 
+   115 Sequencing2[4,3]
+                                   1             1             = 
+   116 Sequencing2[4,5]
+                                   1             1             = 
+   117 Sequencing2[5,1]
+                                   1             1             = 
+   118 Sequencing2[5,2]
+                                   1             1             = 
+   119 Sequencing2[5,3]
+                                   1             1             = 
+   120 Sequencing2[5,4]
+                                   1             1             = 
+   121 MakespanSetter[1]
+                                8.67            -0               
+   122 MakespanSetter[2]
+                                1.12            -0               
+   123 MakespanSetter[3]
+                               11.06            -0               
+   124 MakespanSetter[4]
+                                   0            -0               
+   125 MakespanSetter[5]
+                                5.82            -0               
+   126 Makespan                19.97                             
+
+   No. Column name       Activity     Lower bound   Upper bound
+------ ------------    ------------- ------------- -------------
+     1 start[1,1]               2.08             0               
+     2 start[1,2]               3.93             0               
+     3 start[1,3]               8.91             0               
+     4 start[2,1]               6.96             0               
+     5 start[2,2]              10.83             0               
+     6 start[2,3]              14.15             0               
+     7 start[3,1]                  0             0               
+     8 start[3,2]               2.08             0               
+     9 start[3,3]               3.93             0               
+    10 start[4,1]               9.33             0               
+    11 start[4,2]              15.09             0               
+    12 start[4,3]              18.85             0               
+    13 start[5,1]               2.69             0               
+    14 start[5,2]               8.24             0               
+    15 start[5,3]               11.3             0               
+    16 finish[1,1]              2.69             0               
+    17 finish[1,2]              8.24             0               
+    18 finish[1,3]              11.3             0               
+    19 finish[2,1]              9.33             0               
+    20 finish[2,2]             14.15             0               
+    21 finish[2,3]             18.85             0               
+    22 finish[3,1]              2.08             0               
+    23 finish[3,2]              3.93             0               
+    24 finish[3,3]              8.91             0               
+    25 finish[4,1]             13.05             0               
+    26 finish[4,2]             18.85             0               
+    27 finish[4,3]             19.97             0               
+    28 finish[5,1]              6.96             0               
+    29 finish[5,2]              8.54             0               
+    30 finish[5,3]             14.15             0               
+    31 before[1,1]  *              0             0             1 
+    32 before[1,2]  *              1             0             1 
+    33 before[1,3]  *              0             0             1 
+    34 before[1,4]  *              1             0             1 
+    35 before[1,5]  *              1             0             1 
+    36 before[2,1]  *              0             0             1 
+    37 before[2,2]  *              0             0             1 
+    38 before[2,3]  *              0             0             1 
+    39 before[2,4]  *              1             0             1 
+    40 before[2,5]  *              0             0             1 
+    41 before[3,1]  *              1             0             1 
+    42 before[3,2]  *              1             0             1 
+    43 before[3,3]  *              0             0             1 
+    44 before[3,4]  *              1             0             1 
+    45 before[3,5]  *              1             0             1 
+    46 before[4,1]  *              0             0             1 
+    47 before[4,2]  *              0             0             1 
+    48 before[4,3]  *              0             0             1 
+    49 before[4,4]  *              0             0             1 
+    50 before[4,5]  *              0             0             1 
+    51 before[5,1]  *              0             0             1 
+    52 before[5,2]  *              1             0             1 
+    53 before[5,3]  *              0             0             1 
+    54 before[5,4]  *              1             0             1 
+    55 before[5,5]  *              0             0             1 
+    56 makespan                19.97                             
+
+Integer feasibility conditions:
+
+KKT.PE: max.abs.err = 1.42e-14 on row 66
+        max.rel.err = 9.18e-17 on row 78
+        High quality
+
+KKT.PB: max.abs.err = 8.88e-16 on row 2
+        max.rel.err = 5.55e-16 on row 14
+        High quality
+
+End of output

@@ -1,0 +1,645 @@
+Problem:    trainingplan
+Rows:       191
+Columns:    120 (120 integer, 120 binary)
+Non-zeros:  541
+Status:     INTEGER OPTIMAL
+Objective:  RunningDays = 14 (MAXimum)
+
+   No.   Row name        Activity     Lower bound   Upper bound
+------ ------------    ------------- ------------- -------------
+     1 SportSelection[1]
+                                   1                           1 
+     2 SportSelection[2]
+                                   1                           1 
+     3 SportSelection[3]
+                                   1                           1 
+     4 SportSelection[4]
+                                   1                           1 
+     5 SportSelection[5]
+                                   1                           1 
+     6 SportSelection[6]
+                                   1                           1 
+     7 SportSelection[7]
+                                   0                           1 
+     8 SportSelection[8]
+                                   1                           1 
+     9 SportSelection[9]
+                                   1                           1 
+    10 SportSelection[10]
+                                   1                           1 
+    11 SportSelection[11]
+                                   1                           1 
+    12 SportSelection[12]
+                                   0                           1 
+    13 SportSelection[13]
+                                   1                           1 
+    14 SportSelection[14]
+                                   1                           1 
+    15 SportSelection[15]
+                                   1                           1 
+    16 SportSelection[16]
+                                   1                           1 
+    17 SportSelection[17]
+                                   1                           1 
+    18 SportSelection[18]
+                                   1                           1 
+    19 SportSelection[19]
+                                   1                           1 
+    20 SportSelection[20]
+                                   1                           1 
+    21 SportSelection[21]
+                                   1                           1 
+    22 SportSelection[22]
+                                   0                           1 
+    23 SportSelection[23]
+                                   1                           1 
+    24 SportSelection[24]
+                                   0                           1 
+    25 SportSelection[25]
+                                   1                           1 
+    26 SportSelection[26]
+                                   0                           1 
+    27 SportSelection[27]
+                                   1                           1 
+    28 SportSelection[28]
+                                   1                           1 
+    29 SportSelection[29]
+                                   0                           1 
+    30 SportSelection[30]
+                                   1                           1 
+    31 SportSelection2[7,Running]
+                                   0            -0             = 
+    32 SportSelection2[7,Cycling]
+                                   0            -0             = 
+    33 SportSelection2[7,Skating]
+                                   0            -0             = 
+    34 SportSelection2[7,Swimming]
+                                   0            -0             = 
+    35 SportSelection2[12,Running]
+                                   0            -0             = 
+    36 SportSelection2[12,Cycling]
+                                   0            -0             = 
+    37 SportSelection2[12,Skating]
+                                   0            -0             = 
+    38 SportSelection2[12,Swimming]
+                                   0            -0             = 
+    39 SportSelection2[22,Running]
+                                   0            -0             = 
+    40 SportSelection2[22,Cycling]
+                                   0            -0             = 
+    41 SportSelection2[22,Skating]
+                                   0            -0             = 
+    42 SportSelection2[22,Swimming]
+                                   0            -0             = 
+    43 SportSelection2[24,Running]
+                                   0            -0             = 
+    44 SportSelection2[24,Cycling]
+                                   0            -0             = 
+    45 SportSelection2[24,Skating]
+                                   0            -0             = 
+    46 SportSelection2[24,Swimming]
+                                   0            -0             = 
+    47 SportSelection2[26,Running]
+                                   0            -0             = 
+    48 SportSelection2[26,Cycling]
+                                   0            -0             = 
+    49 SportSelection2[26,Skating]
+                                   0            -0             = 
+    50 SportSelection2[26,Swimming]
+                                   0            -0             = 
+    51 SportSelection2[29,Running]
+                                   0            -0             = 
+    52 SportSelection2[29,Cycling]
+                                   0            -0             = 
+    53 SportSelection2[29,Skating]
+                                   0            -0             = 
+    54 SportSelection2[29,Swimming]
+                                   0            -0             = 
+    55 NoDrysportsOnRainyDay[1,Skating]
+                                   0            -0             = 
+    56 NoDrysportsOnRainyDay[4,Skating]
+                                   0            -0             = 
+    57 NoDrysportsOnRainyDay[7,Skating]
+                                   0            -0             = 
+    58 NoDrysportsOnRainyDay[8,Skating]
+                                   0            -0             = 
+    59 NoDrysportsOnRainyDay[9,Skating]
+                                   0            -0             = 
+    60 NoDrysportsOnRainyDay[11,Skating]
+                                   0            -0             = 
+    61 NoDrysportsOnRainyDay[13,Skating]
+                                   0            -0             = 
+    62 NoDrysportsOnRainyDay[15,Skating]
+                                   0            -0             = 
+    63 NoDrysportsOnRainyDay[18,Skating]
+                                   0            -0             = 
+    64 NoDrysportsOnRainyDay[19,Skating]
+                                   0            -0             = 
+    65 NoDrysportsOnRainyDay[21,Skating]
+                                   0            -0             = 
+    66 NoDrysportsOnRainyDay[22,Skating]
+                                   0            -0             = 
+    67 NoDrysportsOnRainyDay[24,Skating]
+                                   0            -0             = 
+    68 NoDrysportsOnRainyDay[25,Skating]
+                                   0            -0             = 
+    69 NoDrysportsOnRainyDay[28,Skating]
+                                   0            -0             = 
+    70 NoDrysportsOnRainyDay[30,Skating]
+                                   0            -0             = 
+    71 Variety[Running,2]
+                                   1                           1 
+    72 Variety[Running,3]
+                                   0                           1 
+    73 Variety[Running,4]
+                                   1                           1 
+    74 Variety[Running,5]
+                                   1                           1 
+    75 Variety[Running,6]
+                                   1                           1 
+    76 Variety[Running,7]
+                                   1                           1 
+    77 Variety[Running,8]
+                                   0                           1 
+    78 Variety[Running,9]
+                                   1                           1 
+    79 Variety[Running,10]
+                                   1                           1 
+    80 Variety[Running,11]
+                                   1                           1 
+    81 Variety[Running,12]
+                                   1                           1 
+    82 Variety[Running,13]
+                                   1                           1 
+    83 Variety[Running,14]
+                                   1                           1 
+    84 Variety[Running,15]
+                                   1                           1 
+    85 Variety[Running,16]
+                                   1                           1 
+    86 Variety[Running,17]
+                                   1                           1 
+    87 Variety[Running,18]
+                                   1                           1 
+    88 Variety[Running,19]
+                                   1                           1 
+    89 Variety[Running,20]
+                                   1                           1 
+    90 Variety[Running,21]
+                                   1                           1 
+    91 Variety[Running,22]
+                                   1                           1 
+    92 Variety[Running,23]
+                                   1                           1 
+    93 Variety[Running,24]
+                                   1                           1 
+    94 Variety[Running,25]
+                                   1                           1 
+    95 Variety[Running,26]
+                                   1                           1 
+    96 Variety[Running,27]
+                                   1                           1 
+    97 Variety[Running,28]
+                                   1                           1 
+    98 Variety[Running,29]
+                                   0                           1 
+    99 Variety[Running,30]
+                                   1                           1 
+   100 Variety[Cycling,2]
+                                   1                           1 
+   101 Variety[Cycling,3]
+                                   1                           1 
+   102 Variety[Cycling,4]
+                                   0                           1 
+   103 Variety[Cycling,5]
+                                   1                           1 
+   104 Variety[Cycling,6]
+                                   1                           1 
+   105 Variety[Cycling,7]
+                                   0                           1 
+   106 Variety[Cycling,8]
+                                   1                           1 
+   107 Variety[Cycling,9]
+                                   1                           1 
+   108 Variety[Cycling,10]
+                                   0                           1 
+   109 Variety[Cycling,11]
+                                   0                           1 
+   110 Variety[Cycling,12]
+                                   0                           1 
+   111 Variety[Cycling,13]
+                                   0                           1 
+   112 Variety[Cycling,14]
+                                   1                           1 
+   113 Variety[Cycling,15]
+                                   1                           1 
+   114 Variety[Cycling,16]
+                                   0                           1 
+   115 Variety[Cycling,17]
+                                   0                           1 
+   116 Variety[Cycling,18]
+                                   1                           1 
+   117 Variety[Cycling,19]
+                                   1                           1 
+   118 Variety[Cycling,20]
+                                   1                           1 
+   119 Variety[Cycling,21]
+                                   1                           1 
+   120 Variety[Cycling,22]
+                                   0                           1 
+   121 Variety[Cycling,23]
+                                   0                           1 
+   122 Variety[Cycling,24]
+                                   0                           1 
+   123 Variety[Cycling,25]
+                                   0                           1 
+   124 Variety[Cycling,26]
+                                   0                           1 
+   125 Variety[Cycling,27]
+                                   0                           1 
+   126 Variety[Cycling,28]
+                                   1                           1 
+   127 Variety[Cycling,29]
+                                   1                           1 
+   128 Variety[Cycling,30]
+                                   0                           1 
+   129 Variety[Skating,2]
+                                   0                           1 
+   130 Variety[Skating,3]
+                                   0                           1 
+   131 Variety[Skating,4]
+                                   0                           1 
+   132 Variety[Skating,5]
+                                   0                           1 
+   133 Variety[Skating,6]
+                                   0                           1 
+   134 Variety[Skating,7]
+                                   0                           1 
+   135 Variety[Skating,8]
+                                   0                           1 
+   136 Variety[Skating,9]
+                                   0                           1 
+   137 Variety[Skating,10]
+                                   1                           1 
+   138 Variety[Skating,11]
+                                   1                           1 
+   139 Variety[Skating,12]
+                                   0                           1 
+   140 Variety[Skating,13]
+                                   0                           1 
+   141 Variety[Skating,14]
+                                   0                           1 
+   142 Variety[Skating,15]
+                                   0                           1 
+   143 Variety[Skating,16]
+                                   1                           1 
+   144 Variety[Skating,17]
+                                   1                           1 
+   145 Variety[Skating,18]
+                                   0                           1 
+   146 Variety[Skating,19]
+                                   0                           1 
+   147 Variety[Skating,20]
+                                   0                           1 
+   148 Variety[Skating,21]
+                                   0                           1 
+   149 Variety[Skating,22]
+                                   0                           1 
+   150 Variety[Skating,23]
+                                   0                           1 
+   151 Variety[Skating,24]
+                                   0                           1 
+   152 Variety[Skating,25]
+                                   0                           1 
+   153 Variety[Skating,26]
+                                   0                           1 
+   154 Variety[Skating,27]
+                                   0                           1 
+   155 Variety[Skating,28]
+                                   0                           1 
+   156 Variety[Skating,29]
+                                   0                           1 
+   157 Variety[Skating,30]
+                                   0                           1 
+   158 Variety[Swimming,2]
+                                   0                           1 
+   159 Variety[Swimming,3]
+                                   1                           1 
+   160 Variety[Swimming,4]
+                                   1                           1 
+   161 Variety[Swimming,5]
+                                   0                           1 
+   162 Variety[Swimming,6]
+                                   0                           1 
+   163 Variety[Swimming,7]
+                                   0                           1 
+   164 Variety[Swimming,8]
+                                   0                           1 
+   165 Variety[Swimming,9]
+                                   0                           1 
+   166 Variety[Swimming,10]
+                                   0                           1 
+   167 Variety[Swimming,11]
+                                   0                           1 
+   168 Variety[Swimming,12]
+                                   0                           1 
+   169 Variety[Swimming,13]
+                                   0                           1 
+   170 Variety[Swimming,14]
+                                   0                           1 
+   171 Variety[Swimming,15]
+                                   0                           1 
+   172 Variety[Swimming,16]
+                                   0                           1 
+   173 Variety[Swimming,17]
+                                   0                           1 
+   174 Variety[Swimming,18]
+                                   0                           1 
+   175 Variety[Swimming,19]
+                                   0                           1 
+   176 Variety[Swimming,20]
+                                   0                           1 
+   177 Variety[Swimming,21]
+                                   0                           1 
+   178 Variety[Swimming,22]
+                                   0                           1 
+   179 Variety[Swimming,23]
+                                   0                           1 
+   180 Variety[Swimming,24]
+                                   0                           1 
+   181 Variety[Swimming,25]
+                                   0                           1 
+   182 Variety[Swimming,26]
+                                   0                           1 
+   183 Variety[Swimming,27]
+                                   0                           1 
+   184 Variety[Swimming,28]
+                                   0                           1 
+   185 Variety[Swimming,29]
+                                   0                           1 
+   186 Variety[Swimming,30]
+                                   0                           1 
+   187 MinimumDistance[Running]
+                               710.4           150               
+   188 MinimumDistance[Cycling]
+                                 610           600               
+   189 MinimumDistance[Skating]
+                               104.4           100               
+   190 MinimumDistance[Swimming]
+                               11.88            10               
+   191 RunningDays                14                             
+
+   No. Column name       Activity     Lower bound   Upper bound
+------ ------------    ------------- ------------- -------------
+     1 train[1,Running]
+                    *              1             0             1 
+     2 train[1,Cycling]
+                    *              0             0             1 
+     3 train[1,Skating]
+                    *              0             0             1 
+     4 train[1,Swimming]
+                    *              0             0             1 
+     5 train[2,Running]
+                    *              0             0             1 
+     6 train[2,Cycling]
+                    *              1             0             1 
+     7 train[2,Skating]
+                    *              0             0             1 
+     8 train[2,Swimming]
+                    *              0             0             1 
+     9 train[3,Running]
+                    *              0             0             1 
+    10 train[3,Cycling]
+                    *              0             0             1 
+    11 train[3,Skating]
+                    *              0             0             1 
+    12 train[3,Swimming]
+                    *              1             0             1 
+    13 train[4,Running]
+                    *              1             0             1 
+    14 train[4,Cycling]
+                    *              0             0             1 
+    15 train[4,Skating]
+                    *              0             0             1 
+    16 train[4,Swimming]
+                    *              0             0             1 
+    17 train[5,Running]
+                    *              0             0             1 
+    18 train[5,Cycling]
+                    *              1             0             1 
+    19 train[5,Skating]
+                    *              0             0             1 
+    20 train[5,Swimming]
+                    *              0             0             1 
+    21 train[6,Running]
+                    *              1             0             1 
+    22 train[6,Cycling]
+                    *              0             0             1 
+    23 train[6,Skating]
+                    *              0             0             1 
+    24 train[6,Swimming]
+                    *              0             0             1 
+    25 train[7,Running]
+                    *              0             0             1 
+    26 train[7,Cycling]
+                    *              0             0             1 
+    27 train[7,Skating]
+                    *              0             0             1 
+    28 train[7,Swimming]
+                    *              0             0             1 
+    29 train[8,Running]
+                    *              0             0             1 
+    30 train[8,Cycling]
+                    *              1             0             1 
+    31 train[8,Skating]
+                    *              0             0             1 
+    32 train[8,Swimming]
+                    *              0             0             1 
+    33 train[9,Running]
+                    *              1             0             1 
+    34 train[9,Cycling]
+                    *              0             0             1 
+    35 train[9,Skating]
+                    *              0             0             1 
+    36 train[9,Swimming]
+                    *              0             0             1 
+    37 train[10,Running]
+                    *              0             0             1 
+    38 train[10,Cycling]
+                    *              0             0             1 
+    39 train[10,Skating]
+                    *              1             0             1 
+    40 train[10,Swimming]
+                    *              0             0             1 
+    41 train[11,Running]
+                    *              1             0             1 
+    42 train[11,Cycling]
+                    *              0             0             1 
+    43 train[11,Skating]
+                    *              0             0             1 
+    44 train[11,Swimming]
+                    *              0             0             1 
+    45 train[12,Running]
+                    *              0             0             1 
+    46 train[12,Cycling]
+                    *              0             0             1 
+    47 train[12,Skating]
+                    *              0             0             1 
+    48 train[12,Swimming]
+                    *              0             0             1 
+    49 train[13,Running]
+                    *              1             0             1 
+    50 train[13,Cycling]
+                    *              0             0             1 
+    51 train[13,Skating]
+                    *              0             0             1 
+    52 train[13,Swimming]
+                    *              0             0             1 
+    53 train[14,Running]
+                    *              0             0             1 
+    54 train[14,Cycling]
+                    *              1             0             1 
+    55 train[14,Skating]
+                    *              0             0             1 
+    56 train[14,Swimming]
+                    *              0             0             1 
+    57 train[15,Running]
+                    *              1             0             1 
+    58 train[15,Cycling]
+                    *              0             0             1 
+    59 train[15,Skating]
+                    *              0             0             1 
+    60 train[15,Swimming]
+                    *              0             0             1 
+    61 train[16,Running]
+                    *              0             0             1 
+    62 train[16,Cycling]
+                    *              0             0             1 
+    63 train[16,Skating]
+                    *              1             0             1 
+    64 train[16,Swimming]
+                    *              0             0             1 
+    65 train[17,Running]
+                    *              1             0             1 
+    66 train[17,Cycling]
+                    *              0             0             1 
+    67 train[17,Skating]
+                    *              0             0             1 
+    68 train[17,Swimming]
+                    *              0             0             1 
+    69 train[18,Running]
+                    *              0             0             1 
+    70 train[18,Cycling]
+                    *              1             0             1 
+    71 train[18,Skating]
+                    *              0             0             1 
+    72 train[18,Swimming]
+                    *              0             0             1 
+    73 train[19,Running]
+                    *              1             0             1 
+    74 train[19,Cycling]
+                    *              0             0             1 
+    75 train[19,Skating]
+                    *              0             0             1 
+    76 train[19,Swimming]
+                    *              0             0             1 
+    77 train[20,Running]
+                    *              0             0             1 
+    78 train[20,Cycling]
+                    *              1             0             1 
+    79 train[20,Skating]
+                    *              0             0             1 
+    80 train[20,Swimming]
+                    *              0             0             1 
+    81 train[21,Running]
+                    *              1             0             1 
+    82 train[21,Cycling]
+                    *              0             0             1 
+    83 train[21,Skating]
+                    *              0             0             1 
+    84 train[21,Swimming]
+                    *              0             0             1 
+    85 train[22,Running]
+                    *              0             0             1 
+    86 train[22,Cycling]
+                    *              0             0             1 
+    87 train[22,Skating]
+                    *              0             0             1 
+    88 train[22,Swimming]
+                    *              0             0             1 
+    89 train[23,Running]
+                    *              1             0             1 
+    90 train[23,Cycling]
+                    *              0             0             1 
+    91 train[23,Skating]
+                    *              0             0             1 
+    92 train[23,Swimming]
+                    *              0             0             1 
+    93 train[24,Running]
+                    *              0             0             1 
+    94 train[24,Cycling]
+                    *              0             0             1 
+    95 train[24,Skating]
+                    *              0             0             1 
+    96 train[24,Swimming]
+                    *              0             0             1 
+    97 train[25,Running]
+                    *              1             0             1 
+    98 train[25,Cycling]
+                    *              0             0             1 
+    99 train[25,Skating]
+                    *              0             0             1 
+   100 train[25,Swimming]
+                    *              0             0             1 
+   101 train[26,Running]
+                    *              0             0             1 
+   102 train[26,Cycling]
+                    *              0             0             1 
+   103 train[26,Skating]
+                    *              0             0             1 
+   104 train[26,Swimming]
+                    *              0             0             1 
+   105 train[27,Running]
+                    *              1             0             1 
+   106 train[27,Cycling]
+                    *              0             0             1 
+   107 train[27,Skating]
+                    *              0             0             1 
+   108 train[27,Swimming]
+                    *              0             0             1 
+   109 train[28,Running]
+                    *              0             0             1 
+   110 train[28,Cycling]
+                    *              1             0             1 
+   111 train[28,Skating]
+                    *              0             0             1 
+   112 train[28,Swimming]
+                    *              0             0             1 
+   113 train[29,Running]
+                    *              0             0             1 
+   114 train[29,Cycling]
+                    *              0             0             1 
+   115 train[29,Skating]
+                    *              0             0             1 
+   116 train[29,Swimming]
+                    *              0             0             1 
+   117 train[30,Running]
+                    *              1             0             1 
+   118 train[30,Cycling]
+                    *              0             0             1 
+   119 train[30,Skating]
+                    *              0             0             1 
+   120 train[30,Swimming]
+                    *              0             0             1 
+
+Integer feasibility conditions:
+
+KKT.PE: max.abs.err = 0.00e+00 on row 0
+        max.rel.err = 0.00e+00 on row 0
+        High quality
+
+KKT.PB: max.abs.err = 0.00e+00 on row 0
+        max.rel.err = 0.00e+00 on row 0
+        High quality
+
+End of output

@@ -1,0 +1,31 @@
+Day  1: Running 	1.6 hours 	19.2 km
+Day  2: Cycling 	0.8 hours 	20 km
+Day  3: Swimming 	5.4 hours 	11.88 km
+Day  4: Running 	1.9 hours 	22.8 km
+Day  5: Cycling 	0.9 hours 	22.5 km
+Day  6: Running 	5.1 hours 	61.2 km
+Day  8: Cycling 	5.4 hours 	135 km
+Day  9: Running 	4.3 hours 	51.6 km
+Day 10: Skating 	4.2 hours 	75.6 km
+Day 11: Running 	2.2 hours 	26.4 km
+Day 13: Running 	4.3 hours 	51.6 km
+Day 14: Cycling 	5.3 hours 	132.5 km
+Day 15: Running 	6.5 hours 	78 km
+Day 16: Skating 	1.6 hours 	28.8 km
+Day 17: Running 	7.2 hours 	86.4 km
+Day 18: Cycling 	3.8 hours 	95 km
+Day 19: Running 	7.5 hours 	90 km
+Day 20: Cycling 	1 hours 	25 km
+Day 21: Running 	3.7 hours 	44.4 km
+Day 23: Running 	5.9 hours 	70.8 km
+Day 25: Running 	1 hours 	12 km
+Day 27: Running 	5.9 hours 	70.8 km
+Day 28: Cycling 	7.2 hours 	180 km
+Day 30: Running 	2.1 hours 	25.2 km
+
+
+     Sport	Days	Total km
+   Running	14	710.4
+   Cycling	 7	610
+   Skating	 2	104.4
+  Swimming	 1	11.88
