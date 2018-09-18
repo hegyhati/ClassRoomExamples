@@ -6,6 +6,25 @@
 
 using namespace std;
 
+
+  
+class Position{
+  public:
+    int r;
+    int c;
+    Position(int r, int c):r(r),c(c){}
+    bool good() const {return r>=0 && r<4 && c>=0 && c<4;}
+    Position operator+ (char direction) const {
+      switch(direction){
+        case 'u': return Position(r-1,c);
+        case 'd': return Position(r+1,c);
+        case 'l': return Position(r,c-1);
+        case 'r': return Position(r,c+1);
+      }
+      return Position(r,c);
+    }
+};
+
 void Game2048::insertnewrandom(){
   unsigned seed = static_cast<int> (chrono::system_clock::now().time_since_epoch().count());
   default_random_engine generator(seed);
@@ -60,69 +79,81 @@ void Game2048::print() const{
 
 
 
-bool Game2048::moveormerge(int& from, int& to){
+bool Game2048::move(int& from, int& to){
   if(to==EMPTY) {
     to=from;
     from=EMPTY;
     return true;
-  } else if (from == to) {
+  } else return false;
+}
+
+bool Game2048::merge(int& from, int& to){
+  if(from==to) {
     from=EMPTY;
     to*=2;
-    return false;
-  } else {
-    return false;
-  }
+    return true;
+  } else return false;
 }
 
-void Game2048::up() { // TODO: check if a move really changes something
-  for(int r=1;r<4;r++){
-    for(int c=0;c<4;c++){
-      if(table[r][c]!=EMPTY) {
-        for(int m=0; r-m-1>=0 && moveormerge(table[r-m][c],table[r-m-1][c]); m++);
-      }
-    }
+bool Game2048::shift(int r, int c, char direction){
+  if(table[r][c]==EMPTY) return false;
+  bool change=false;
+  Position p(r,c);
+  Position pn=p+direction;
+  while(pn.good()){
+    if (move(table[p.r][p.c],table[pn.r][pn.c])) {
+      change = true;
+      p=pn;
+      pn=p+direction;
+    } else break;
   }
-  insertnewrandom();
+  if(pn.good() && merge(table[p.r][p.c],table[pn.r][pn.c])) change=true;
+  return change;
 }
 
-void Game2048::down() {
-  for(int r=2;r>=0;r--){
-    for(int c=0;c<4;c++){
-      if(table[r][c]!=EMPTY) {
-        for(int m=0; r+m+1<4 && moveormerge(table[r+m][c],table[r+m+1][c]); m++);
-      }
-    }
+bool Game2048::shift(char direction){
+  bool change=false;
+  switch(direction){
+    case 'u': 
+      for(int r=1; r<4; r++) for (int c=0; c<4;c++) 
+        if(shift(r,c,direction)) change=true; 
+      break;
+    case 'd': 
+      for(int r=2; r>=0; r--) for (int c=0; c<4;c++)
+        if(shift(r,c,direction)) change=true; 
+      break;
+    case 'l': 
+      for(int c=1; c<4; c++) for (int r=0; r<4;r++) 
+        if(shift(r,c,direction)) change=true; 
+      break;
+    case 'r': 
+      for(int c=2; c>=0; c--) for (int r=0; r<4;r++)
+        if(shift(r,c,direction)) change=true; 
+      break;
   }
-  insertnewrandom();
+  return change;  
 }
-
-
-void Game2048::left() {
-  for(int c=1;c<4;c++){
-    for(int r=0;r<4;r++){
-      if(table[r][c]!=EMPTY) {
-        for(int m=0; c-m-1>=0 && moveormerge(table[r][c-m],table[r][c-m-1]); m++);
-      }
-    }
-  }
-  insertnewrandom();
-}
-
-void Game2048::right() {
-  for(int c=2;c>=0;c--){
-    for(int r=0;r<4;r++){
-      if(table[r][c]!=EMPTY) {
-        for(int m=0; c+m+1<4 && moveormerge(table[r][c+m],table[r][c+m+1]); m++);
-      }
-    }
-  }
-  insertnewrandom();
-}
-
 
 bool Game2048::win() const {
   for(int r=0;r<4;r++)
     for(int c=0;c<4;c++)
       if(table[r][c]>=2048) return true;
   return false;
+}
+
+void Game2048::play(){ 
+  char dir;
+  while(!gameover()){
+    print();
+    do {
+      cout<<"Which direction?"<<endl;
+      cin>>dir;
+    } while(!shift(dir));
+    insertnewrandom();
+  }
+  if(win()){
+    cout<<"Yeeppeeeeeee!!!!"<<endl;
+  } else {
+    cout<<"Loser...."<<endl;
+  }
 }
