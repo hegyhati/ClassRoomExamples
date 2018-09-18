@@ -7,7 +7,7 @@ int main(){
   char dir;
   while(! test.gameover()){
     test.print();
-    cout<<"Merre?"<<endl;
+    cout<<"Which direction?"<<endl;
     cin>>dir;
     switch(dir){
       case 'u': test.up();break;
