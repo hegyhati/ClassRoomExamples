@@ -1,0 +1,73 @@
+Problem:    puska3
+Rows:       10
+Columns:    20 (20 integer, 20 binary)
+Non-zeros:  59
+Status:     INTEGER OPTIMAL
+Objective:  OsszesPenz = 9 (MINimum)
+
+   No.   Row name        Activity     Lower bound   Upper bound
+------ ------------    ------------- ------------- -------------
+     1 LegalabbEgyJegyzet[OS]
+                                   1             1               
+     2 LegalabbEgyJegyzet[Halo]
+                                   1             1               
+     3 LegalabbEgyJegyzet[AI]
+                                   1             1               
+     4 LegalabbEgyJegyzet[Donteselokeszites]
+                                   1             1               
+     5 MindenkiMaxEgyet[Ancsi]
+                                   1                           1 
+     6 MindenkiMaxEgyet[Joska]
+                                   0                           1 
+     7 MindenkiMaxEgyet[Pisti]
+                                   1                           1 
+     8 MindenkiMaxEgyet[Zsuzsi]
+                                   1                           1 
+     9 MindenkiMaxEgyet[Sanyi]
+                                   1                           1 
+    10 OsszesPenz                  9                             
+
+   No. Column name       Activity     Lower bound   Upper bound
+------ ------------    ------------- ------------- -------------
+     1 y[Ancsi,OS]  *              0             0             1 
+     2 y[Joska,OS]  *              0             0             1 
+     3 y[Pisti,OS]  *              1             0             1 
+     4 y[Zsuzsi,OS] *              0             0             1 
+     5 y[Sanyi,OS]  *              0             0             1 
+     6 y[Ancsi,Halo]
+                    *              1             0             1 
+     7 y[Joska,Halo]
+                    *              0             0             1 
+     8 y[Pisti,Halo]
+                    *              0             0             1 
+     9 y[Zsuzsi,Halo]
+                    *              0             0             1 
+    10 y[Sanyi,Halo]
+                    *              0             0             1 
+    11 y[Ancsi,AI]  *              0             0             1 
+    12 y[Joska,AI]  *              0             0             1 
+    13 y[Pisti,AI]  *              0             0             1 
+    14 y[Zsuzsi,AI] *              1             0             1 
+    15 y[Sanyi,AI]  *              0             0             1 
+    16 y[Ancsi,Donteselokeszites]
+                    *              0             0             1 
+    17 y[Joska,Donteselokeszites]
+                    *              0             0             1 
+    18 y[Pisti,Donteselokeszites]
+                    *              0             0             1 
+    19 y[Zsuzsi,Donteselokeszites]
+                    *              0             0             1 
+    20 y[Sanyi,Donteselokeszites]
+                    *              1             0             1 
+
+Integer feasibility conditions:
+
+KKT.PE: max.abs.err = 0.00e+00 on row 0
+        max.rel.err = 0.00e+00 on row 0
+        High quality
+
+KKT.PB: max.abs.err = 0.00e+00 on row 0
+        max.rel.err = 0.00e+00 on row 0
+        High quality
+
+End of output

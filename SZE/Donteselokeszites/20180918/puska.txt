@@ -1,0 +1,46 @@
+Problem:    puska
+Rows:       8
+Columns:    12 (12 integer, 12 binary)
+Non-zeros:  36
+Status:     INTEGER OPTIMAL
+Objective:  Puskapenz = 9 (MINimum)
+
+   No.   Row name        Activity     Lower bound   Upper bound
+------ ------------    ------------- ------------- -------------
+     1 AnyagIsmeret                1             1               
+     2 SzamitogepHalozatok
+                                   1             1               
+     3 OperaciosRendszerek
+                                   1             1               
+     4 Dani                        1                           1 
+     5 Kristof                     0                           1 
+     6 Isti                        1                           1 
+     7 Niki                        1                           1 
+     8 Puskapenz                   9                             
+
+   No. Column name       Activity     Lower bound   Upper bound
+------ ------------    ------------- ------------- -------------
+     1 yDA          *              0             0             1 
+     2 yDH          *              0             0             1 
+     3 yDO          *              1             0             1 
+     4 yKA          *              0             0             1 
+     5 yKH          *              0             0             1 
+     6 yKO          *              0             0             1 
+     7 yIA          *              1             0             1 
+     8 yIH          *              0             0             1 
+     9 yIO          *              0             0             1 
+    10 yNA          *              0             0             1 
+    11 yNH          *              1             0             1 
+    12 yNO          *              0             0             1 
+
+Integer feasibility conditions:
+
+KKT.PE: max.abs.err = 0.00e+00 on row 0
+        max.rel.err = 0.00e+00 on row 0
+        High quality
+
+KKT.PB: max.abs.err = 0.00e+00 on row 0
+        max.rel.err = 0.00e+00 on row 0
+        High quality
+
+End of output
