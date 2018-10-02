@@ -1,0 +1,548 @@
+Problem:    exams1
+Rows:       48
+Columns:    210
+Non-zeros:  526
+Status:     UNDEFINED
+Objective:  TotalStudyHours = 0 (MINimum)
+
+   No.   Row name   St   Activity     Lower bound   Upper bound    Marginal
+------ ------------ -- ------------- ------------- ------------- -------------
+     1 FreeTimeConstraint[1]
+                    B              0                         5.3 
+     2 FreeTimeConstraint[2]
+                    B              0                         3.8 
+     3 FreeTimeConstraint[3]
+                    B              0                           8 
+     4 FreeTimeConstraint[4]
+                    B              0                         5.5 
+     5 FreeTimeConstraint[5]
+                    B              0                         4.7 
+     6 FreeTimeConstraint[6]
+                    B              0                         4.8 
+     7 FreeTimeConstraint[7]
+                    B              0                         4.5 
+     8 FreeTimeConstraint[8]
+                    B              0                           4 
+     9 FreeTimeConstraint[9]
+                    B              0                         6.8 
+    10 FreeTimeConstraint[10]
+                    B              0                         9.5 
+    11 FreeTimeConstraint[11]
+                    B              0                         0.9 
+    12 FreeTimeConstraint[12]
+                    B              0                         0.2 
+    13 FreeTimeConstraint[13]
+                    B              0                         0.8 
+    14 FreeTimeConstraint[14]
+                    B              0                         9.5 
+    15 FreeTimeConstraint[15]
+                    B              0                         5.7 
+    16 FreeTimeConstraint[16]
+                    B              0                         3.5 
+    17 FreeTimeConstraint[17]
+                    B              0                          10 
+    18 FreeTimeConstraint[18]
+                    B              0                         2.9 
+    19 FreeTimeConstraint[19]
+                    B              0                         0.3 
+    20 FreeTimeConstraint[20]
+                    B              0                         7.7 
+    21 FreeTimeConstraint[21]
+                    B              0                         0.5 
+    22 FreeTimeConstraint[22]
+                    B              0                         7.3 
+    23 FreeTimeConstraint[23]
+                    B              0                         5.9 
+    24 FreeTimeConstraint[24]
+                    B              0                         7.8 
+    25 FreeTimeConstraint[25]
+                    B              0                         2.2 
+    26 FreeTimeConstraint[26]
+                    B              0                         9.7 
+    27 FreeTimeConstraint[27]
+                    B              0                          -0 
+    28 FreeTimeConstraint[28]
+                    B              0                         4.3 
+    29 FreeTimeConstraint[29]
+                    B              0                         7.1 
+    30 FreeTimeConstraint[30]
+                    B              0                         3.4 
+    31 FreeTimeConstraint[31]
+                    B              0                         1.6 
+    32 FreeTimeConstraint[32]
+                    B              0                         7.1 
+    33 FreeTimeConstraint[33]
+                    B              0                           6 
+    34 FreeTimeConstraint[34]
+                    B              0                         4.6 
+    35 FreeTimeConstraint[35]
+                    B              0                           6 
+    36 FreeTimeConstraint[36]
+                    B              0                         6.2 
+    37 FreeTimeConstraint[37]
+                    B              0                         3.1 
+    38 FreeTimeConstraint[38]
+                    B              0                         2.5 
+    39 FreeTimeConstraint[39]
+                    B              0                         4.3 
+    40 FreeTimeConstraint[40]
+                    B              0                         8.7 
+    41 FreeTimeConstraint[41]
+                    B              0                         3.6 
+    42 FreeTimeConstraint[42]
+                    B              0                         5.3 
+    43 RequiredTimeConstraint[ExpertSystems]
+                    B              0            40               
+    44 RequiredTimeConstraint[ComputerNetworks]
+                    B              0            20               
+    45 RequiredTimeConstraint[Programming]
+                    B              0            40               
+    46 RequiredTimeConstraint[Finance]
+                    B              0            30               
+    47 RequiredTimeConstraint[DeceisonSupport]
+                    B              0            50               
+    48 TotalStudyHours
+                    B              0                             
+
+   No. Column name  St   Activity     Lower bound   Upper bound    Marginal
+------ ------------ -- ------------- ------------- ------------- -------------
+     1 study[1,ExpertSystems]
+                    NL             0             0                       < eps
+     2 study[1,ComputerNetworks]
+                    NL             0             0                       < eps
+     3 study[1,Programming]
+                    NL             0             0                       < eps
+     4 study[1,Finance]
+                    NL             0             0                       < eps
+     5 study[1,DeceisonSupport]
+                    NL             0             0                       < eps
+     6 study[2,ExpertSystems]
+                    NL             0             0                       < eps
+     7 study[2,ComputerNetworks]
+                    NL             0             0                       < eps
+     8 study[2,Programming]
+                    NL             0             0                       < eps
+     9 study[2,Finance]
+                    NL             0             0                       < eps
+    10 study[2,DeceisonSupport]
+                    NL             0             0                       < eps
+    11 study[3,ExpertSystems]
+                    NL             0             0                       < eps
+    12 study[3,ComputerNetworks]
+                    NL             0             0                       < eps
+    13 study[3,Programming]
+                    NL             0             0                       < eps
+    14 study[3,Finance]
+                    NL             0             0                       < eps
+    15 study[3,DeceisonSupport]
+                    NL             0             0                       < eps
+    16 study[4,ExpertSystems]
+                    NL             0             0                       < eps
+    17 study[4,ComputerNetworks]
+                    NL             0             0                       < eps
+    18 study[4,Programming]
+                    NL             0             0                       < eps
+    19 study[4,Finance]
+                    NL             0             0                       < eps
+    20 study[4,DeceisonSupport]
+                    NL             0             0                       < eps
+    21 study[5,ExpertSystems]
+                    NL             0             0                       < eps
+    22 study[5,ComputerNetworks]
+                    NL             0             0                       < eps
+    23 study[5,Programming]
+                    NL             0             0                       < eps
+    24 study[5,Finance]
+                    NL             0             0                       < eps
+    25 study[5,DeceisonSupport]
+                    NL             0             0                       < eps
+    26 study[6,ExpertSystems]
+                    NL             0             0                       < eps
+    27 study[6,ComputerNetworks]
+                    NL             0             0                       < eps
+    28 study[6,Programming]
+                    NL             0             0                       < eps
+    29 study[6,Finance]
+                    NL             0             0                       < eps
+    30 study[6,DeceisonSupport]
+                    NL             0             0                       < eps
+    31 study[7,ExpertSystems]
+                    NL             0             0                       < eps
+    32 study[7,ComputerNetworks]
+                    NL             0             0                       < eps
+    33 study[7,Programming]
+                    NL             0             0                       < eps
+    34 study[7,Finance]
+                    NL             0             0                       < eps
+    35 study[7,DeceisonSupport]
+                    NL             0             0                       < eps
+    36 study[8,ExpertSystems]
+                    NL             0             0                       < eps
+    37 study[8,ComputerNetworks]
+                    NL             0             0                       < eps
+    38 study[8,Programming]
+                    NL             0             0                       < eps
+    39 study[8,Finance]
+                    NL             0             0                       < eps
+    40 study[8,DeceisonSupport]
+                    NL             0             0                       < eps
+    41 study[9,ExpertSystems]
+                    NL             0             0                       < eps
+    42 study[9,ComputerNetworks]
+                    NL             0             0                       < eps
+    43 study[9,Programming]
+                    NL             0             0                       < eps
+    44 study[9,Finance]
+                    NL             0             0                       < eps
+    45 study[9,DeceisonSupport]
+                    NL             0             0                       < eps
+    46 study[10,ExpertSystems]
+                    NL             0             0                       < eps
+    47 study[10,ComputerNetworks]
+                    NL             0             0                       < eps
+    48 study[10,Programming]
+                    NL             0             0                       < eps
+    49 study[10,Finance]
+                    NL             0             0                       < eps
+    50 study[10,DeceisonSupport]
+                    NL             0             0                       < eps
+    51 study[11,ExpertSystems]
+                    NL             0             0                       < eps
+    52 study[11,ComputerNetworks]
+                    NL             0             0                       < eps
+    53 study[11,Programming]
+                    NL             0             0                       < eps
+    54 study[11,Finance]
+                    NL             0             0                       < eps
+    55 study[11,DeceisonSupport]
+                    NL             0             0                       < eps
+    56 study[12,ExpertSystems]
+                    NL             0             0                       < eps
+    57 study[12,ComputerNetworks]
+                    NL             0             0                       < eps
+    58 study[12,Programming]
+                    NL             0             0                       < eps
+    59 study[12,Finance]
+                    NL             0             0                       < eps
+    60 study[12,DeceisonSupport]
+                    NL             0             0                       < eps
+    61 study[13,ExpertSystems]
+                    NL             0             0                       < eps
+    62 study[13,ComputerNetworks]
+                    NL             0             0                       < eps
+    63 study[13,Programming]
+                    NL             0             0                       < eps
+    64 study[13,Finance]
+                    NL             0             0                       < eps
+    65 study[13,DeceisonSupport]
+                    NL             0             0                       < eps
+    66 study[14,ExpertSystems]
+                    NL             0             0                       < eps
+    67 study[14,ComputerNetworks]
+                    NL             0             0                       < eps
+    68 study[14,Programming]
+                    NL             0             0                       < eps
+    69 study[14,Finance]
+                    NL             0             0                       < eps
+    70 study[14,DeceisonSupport]
+                    NL             0             0                       < eps
+    71 study[15,ExpertSystems]
+                    NL             0             0                       < eps
+    72 study[15,ComputerNetworks]
+                    NL             0             0                       < eps
+    73 study[15,Programming]
+                    NL             0             0                       < eps
+    74 study[15,Finance]
+                    NL             0             0                       < eps
+    75 study[15,DeceisonSupport]
+                    NL             0             0                       < eps
+    76 study[16,ExpertSystems]
+                    NL             0             0                       < eps
+    77 study[16,ComputerNetworks]
+                    NL             0             0                       < eps
+    78 study[16,Programming]
+                    NL             0             0                       < eps
+    79 study[16,Finance]
+                    NL             0             0                       < eps
+    80 study[16,DeceisonSupport]
+                    NL             0             0                       < eps
+    81 study[17,ExpertSystems]
+                    NL             0             0                       < eps
+    82 study[17,ComputerNetworks]
+                    NL             0             0                       < eps
+    83 study[17,Programming]
+                    NL             0             0                       < eps
+    84 study[17,Finance]
+                    NL             0             0                       < eps
+    85 study[17,DeceisonSupport]
+                    NL             0             0                       < eps
+    86 study[18,ExpertSystems]
+                    NL             0             0                       < eps
+    87 study[18,ComputerNetworks]
+                    NL             0             0                       < eps
+    88 study[18,Programming]
+                    NL             0             0                       < eps
+    89 study[18,Finance]
+                    NL             0             0                       < eps
+    90 study[18,DeceisonSupport]
+                    NL             0             0                       < eps
+    91 study[19,ExpertSystems]
+                    NL             0             0                       < eps
+    92 study[19,ComputerNetworks]
+                    NL             0             0                       < eps
+    93 study[19,Programming]
+                    NL             0             0                       < eps
+    94 study[19,Finance]
+                    NL             0             0                       < eps
+    95 study[19,DeceisonSupport]
+                    NL             0             0                       < eps
+    96 study[20,ExpertSystems]
+                    NL             0             0                       < eps
+    97 study[20,ComputerNetworks]
+                    NL             0             0                       < eps
+    98 study[20,Programming]
+                    NL             0             0                       < eps
+    99 study[20,Finance]
+                    NL             0             0                       < eps
+   100 study[20,DeceisonSupport]
+                    NL             0             0                       < eps
+   101 study[21,ExpertSystems]
+                    NL             0             0                       < eps
+   102 study[21,ComputerNetworks]
+                    NL             0             0                       < eps
+   103 study[21,Programming]
+                    NL             0             0                       < eps
+   104 study[21,Finance]
+                    NL             0             0                       < eps
+   105 study[21,DeceisonSupport]
+                    NL             0             0                       < eps
+   106 study[22,ExpertSystems]
+                    NL             0             0                       < eps
+   107 study[22,ComputerNetworks]
+                    NL             0             0                       < eps
+   108 study[22,Programming]
+                    NL             0             0                       < eps
+   109 study[22,Finance]
+                    NL             0             0                       < eps
+   110 study[22,DeceisonSupport]
+                    NL             0             0                       < eps
+   111 study[23,ExpertSystems]
+                    NL             0             0                       < eps
+   112 study[23,ComputerNetworks]
+                    NL             0             0                       < eps
+   113 study[23,Programming]
+                    NL             0             0                       < eps
+   114 study[23,Finance]
+                    NL             0             0                       < eps
+   115 study[23,DeceisonSupport]
+                    NL             0             0                       < eps
+   116 study[24,ExpertSystems]
+                    NL             0             0                       < eps
+   117 study[24,ComputerNetworks]
+                    NL             0             0                       < eps
+   118 study[24,Programming]
+                    NL             0             0                       < eps
+   119 study[24,Finance]
+                    NL             0             0                       < eps
+   120 study[24,DeceisonSupport]
+                    NL             0             0                       < eps
+   121 study[25,ExpertSystems]
+                    NL             0             0                       < eps
+   122 study[25,ComputerNetworks]
+                    NL             0             0                       < eps
+   123 study[25,Programming]
+                    NL             0             0                       < eps
+   124 study[25,Finance]
+                    NL             0             0                       < eps
+   125 study[25,DeceisonSupport]
+                    NL             0             0                       < eps
+   126 study[26,ExpertSystems]
+                    NL             0             0                       < eps
+   127 study[26,ComputerNetworks]
+                    NL             0             0                       < eps
+   128 study[26,Programming]
+                    NL             0             0                       < eps
+   129 study[26,Finance]
+                    NL             0             0                       < eps
+   130 study[26,DeceisonSupport]
+                    NL             0             0                       < eps
+   131 study[27,ExpertSystems]
+                    NL             0             0                       < eps
+   132 study[27,ComputerNetworks]
+                    NL             0             0                       < eps
+   133 study[27,Programming]
+                    NL             0             0                       < eps
+   134 study[27,Finance]
+                    NL             0             0                       < eps
+   135 study[27,DeceisonSupport]
+                    NL             0             0                       < eps
+   136 study[28,ExpertSystems]
+                    NL             0             0                       < eps
+   137 study[28,ComputerNetworks]
+                    NL             0             0                       < eps
+   138 study[28,Programming]
+                    NL             0             0                       < eps
+   139 study[28,Finance]
+                    NL             0             0                       < eps
+   140 study[28,DeceisonSupport]
+                    NL             0             0                       < eps
+   141 study[29,ExpertSystems]
+                    NL             0             0                       < eps
+   142 study[29,ComputerNetworks]
+                    NL             0             0                       < eps
+   143 study[29,Programming]
+                    NL             0             0                       < eps
+   144 study[29,Finance]
+                    NL             0             0                       < eps
+   145 study[29,DeceisonSupport]
+                    NL             0             0                       < eps
+   146 study[30,ExpertSystems]
+                    NL             0             0                       < eps
+   147 study[30,ComputerNetworks]
+                    NL             0             0                       < eps
+   148 study[30,Programming]
+                    NL             0             0                       < eps
+   149 study[30,Finance]
+                    NL             0             0                       < eps
+   150 study[30,DeceisonSupport]
+                    NL             0             0                       < eps
+   151 study[31,ExpertSystems]
+                    NL             0             0                       < eps
+   152 study[31,ComputerNetworks]
+                    NL             0             0                       < eps
+   153 study[31,Programming]
+                    NL             0             0                       < eps
+   154 study[31,Finance]
+                    NL             0             0                       < eps
+   155 study[31,DeceisonSupport]
+                    NL             0             0                       < eps
+   156 study[32,ExpertSystems]
+                    NL             0             0                       < eps
+   157 study[32,ComputerNetworks]
+                    NL             0             0                       < eps
+   158 study[32,Programming]
+                    NL             0             0                       < eps
+   159 study[32,Finance]
+                    NL             0             0                       < eps
+   160 study[32,DeceisonSupport]
+                    NL             0             0                       < eps
+   161 study[33,ExpertSystems]
+                    NL             0             0                       < eps
+   162 study[33,ComputerNetworks]
+                    NL             0             0                       < eps
+   163 study[33,Programming]
+                    NL             0             0                       < eps
+   164 study[33,Finance]
+                    NL             0             0                       < eps
+   165 study[33,DeceisonSupport]
+                    NL             0             0                       < eps
+   166 study[34,ExpertSystems]
+                    NL             0             0                       < eps
+   167 study[34,ComputerNetworks]
+                    NL             0             0                       < eps
+   168 study[34,Programming]
+                    NL             0             0                       < eps
+   169 study[34,Finance]
+                    NL             0             0                       < eps
+   170 study[34,DeceisonSupport]
+                    NL             0             0                       < eps
+   171 study[35,ExpertSystems]
+                    NL             0             0                       < eps
+   172 study[35,ComputerNetworks]
+                    NL             0             0                       < eps
+   173 study[35,Programming]
+                    NL             0             0                       < eps
+   174 study[35,Finance]
+                    NL             0             0                       < eps
+   175 study[35,DeceisonSupport]
+                    NL             0             0                       < eps
+   176 study[36,ExpertSystems]
+                    NL             0             0                       < eps
+   177 study[36,ComputerNetworks]
+                    NL             0             0                       < eps
+   178 study[36,Programming]
+                    NL             0             0                       < eps
+   179 study[36,Finance]
+                    NL             0             0                       < eps
+   180 study[36,DeceisonSupport]
+                    NL             0             0                       < eps
+   181 study[37,ExpertSystems]
+                    NL             0             0                       < eps
+   182 study[37,ComputerNetworks]
+                    NL             0             0                       < eps
+   183 study[37,Programming]
+                    NL             0             0                       < eps
+   184 study[37,Finance]
+                    NL             0             0                       < eps
+   185 study[37,DeceisonSupport]
+                    NL             0             0                       < eps
+   186 study[38,ExpertSystems]
+                    NL             0             0                       < eps
+   187 study[38,ComputerNetworks]
+                    NL             0             0                       < eps
+   188 study[38,Programming]
+                    NL             0             0                       < eps
+   189 study[38,Finance]
+                    NL             0             0                       < eps
+   190 study[38,DeceisonSupport]
+                    NL             0             0                       < eps
+   191 study[39,ExpertSystems]
+                    NL             0             0                       < eps
+   192 study[39,ComputerNetworks]
+                    NL             0             0                       < eps
+   193 study[39,Programming]
+                    NL             0             0                       < eps
+   194 study[39,Finance]
+                    NL             0             0                       < eps
+   195 study[39,DeceisonSupport]
+                    NL             0             0                       < eps
+   196 study[40,ExpertSystems]
+                    NL             0             0                       < eps
+   197 study[40,ComputerNetworks]
+                    NL             0             0                       < eps
+   198 study[40,Programming]
+                    NL             0             0                       < eps
+   199 study[40,Finance]
+                    NL             0             0                       < eps
+   200 study[40,DeceisonSupport]
+                    NL             0             0                       < eps
+   201 study[41,ExpertSystems]
+                    NL             0             0                       < eps
+   202 study[41,ComputerNetworks]
+                    NL             0             0                       < eps
+   203 study[41,Programming]
+                    NL             0             0                       < eps
+   204 study[41,Finance]
+                    NL             0             0                       < eps
+   205 study[41,DeceisonSupport]
+                    NL             0             0                       < eps
+   206 study[42,ExpertSystems]
+                    NL             0             0                       < eps
+   207 study[42,ComputerNetworks]
+                    NL             0             0                       < eps
+   208 study[42,Programming]
+                    NL             0             0                       < eps
+   209 study[42,Finance]
+                    NL             0             0                       < eps
+   210 study[42,DeceisonSupport]
+                    NL             0             0                       < eps
+
+Karush-Kuhn-Tucker optimality conditions:
+
+KKT.PE: max.abs.err = 0.00e+00 on row 0
+        max.rel.err = 0.00e+00 on row 0
+        High quality
+
+KKT.PB: max.abs.err = 5.00e+01 on row 47
+        max.rel.err = 9.80e-01 on row 47
+        PRIMAL SOLUTION IS INFEASIBLE
+
+KKT.DE: max.abs.err = 1.00e+00 on column 1
+        max.rel.err = 5.00e-01 on column 1
+        DUAL SOLUTION IS WRONG
+
+KKT.DB: max.abs.err = 0.00e+00 on row 0
+        max.rel.err = 0.00e+00 on row 0
+        High quality
+
+End of output
