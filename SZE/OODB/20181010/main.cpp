@@ -1,9 +1,9 @@
 #include "PostManager.hpp"
-#include "View.hpp"
+#include "HtmlView.hpp"
 
 int main(){
   PostManager posts_model("Posts.txt");
-  View simpleview(posts_model);
+  HtmlView simpleview(posts_model,"index.html");
   simpleview.printAll();
   simpleview.printBy("T-800");
   
