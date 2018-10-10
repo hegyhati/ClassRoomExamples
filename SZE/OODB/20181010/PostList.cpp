@@ -18,14 +18,17 @@ PostList::PostList(string filename) {
 
 void PostList::printAll() const {
   cout<<"List of posts:\n";
-  for(list<Post>::const_iterator it=posts.cbegin(); it!= posts.cend(); ++it)
+  for(auto it=posts.cbegin(); it!= posts.cend(); ++it)
     it->print();
 }
 
 
 void PostList::printBy(string author)const {
   cout<<"Posts by "<<author<<":\n";
-  for(list<Post>::const_iterator it=posts.cbegin(); it!= posts.cend(); ++it)
+  for(auto it=posts.cbegin(); it!= posts.cend(); ++it)
     if(it->getAuthor()==author)
       cout<<"\t- "<<it->getContent()<<endl;
 }
+
+
+
