@@ -1,7 +1,10 @@
 #include "PostManager.hpp"
+#include "View.hpp"
 
 int main(){
-  PostManager postlist("Posts.txt");
-  postlist.printAll();
-  postlist.printBy("T-800");
+  PostManager posts_model("Posts.txt");
+  View simpleview(posts_model);
+  simpleview.printAll();
+  simpleview.printBy("T-800");
+  
 }

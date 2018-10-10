@@ -14,9 +14,9 @@ class PostManager{
   public:
   
     PostManager(string filename);
-    
-    void printAll() const;
-    void printBy(string author) const;
+
+    list<Post> getAllPosts() const;
+    list<Post> getPostsBy(string author) const;
   
 };
 

@@ -16,18 +16,17 @@ PostManager::PostManager(string filename) {
   }
 }
 
-void PostManager::printAll() const {
-  cout<<"List of posts:\n";
-  for(auto it=posts.cbegin(); it!= posts.cend(); ++it)
-    it->print();
+list<Post> PostManager::getAllPosts() const {
+  return posts;
 }
 
 
-void PostManager::printBy(string author)const {
-  cout<<"Posts by "<<author<<":\n";
+list<Post> PostManager::getPostsBy(string author) const {
+  list<Post> toReturn;
   for(auto it=posts.cbegin(); it!= posts.cend(); ++it)
     if(it->getAuthor()==author)
-      cout<<"\t- "<<it->getContent()<<endl;
+      toReturn.push_back(*it);
+  return toReturn;
 }
 
 
