@@ -12,7 +12,6 @@ class Post {
     Post(string author="", string content="");
     Post(ifstream& file);
     
-    void print() const;
     string getAuthor() const;
     string getContent() const;
     
