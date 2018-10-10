@@ -1,5 +1,5 @@
-#ifndef POSTLIST_HPP
-#define POSTLIST_HPP
+#ifndef PostManager_HPP
+#define PostManager_HPP
 
 #include <list>
 #include <string>
@@ -7,13 +7,13 @@ using namespace std;
 
 #include "Post.hpp"
 
-class PostList{
+class PostManager{
     
     list<Post> posts;
   
   public:
   
-    PostList(string filename);
+    PostManager(string filename);
     
     void printAll() const;
     void printBy(string author) const;

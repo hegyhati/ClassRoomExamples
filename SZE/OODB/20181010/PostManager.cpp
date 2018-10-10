@@ -1,10 +1,10 @@
-#include "PostList.hpp"
+#include "PostManager.hpp"
 #include <fstream>
 #include <iostream>
 
 
 
-PostList::PostList(string filename) {
+PostManager::PostManager(string filename) {
   ifstream postfile(filename);
   while(! postfile.eof()){
     try{      
@@ -16,14 +16,14 @@ PostList::PostList(string filename) {
   }
 }
 
-void PostList::printAll() const {
+void PostManager::printAll() const {
   cout<<"List of posts:\n";
   for(auto it=posts.cbegin(); it!= posts.cend(); ++it)
     it->print();
 }
 
 
-void PostList::printBy(string author)const {
+void PostManager::printBy(string author)const {
   cout<<"Posts by "<<author<<":\n";
   for(auto it=posts.cbegin(); it!= posts.cend(); ++it)
     if(it->getAuthor()==author)

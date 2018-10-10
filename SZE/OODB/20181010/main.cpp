@@ -1,7 +1,7 @@
-#include "PostList.hpp"
+#include "PostManager.hpp"
 
 int main(){
-  PostList postlist("Posts.txt");
+  PostManager postlist("Posts.txt");
   postlist.printAll();
   postlist.printBy("T-800");
 }
