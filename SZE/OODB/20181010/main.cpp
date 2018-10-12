@@ -1,18 +1,20 @@
 #include "PostManager.hpp"
 #include "HtmlView.hpp"
+#include "SimpleView.hpp"
 #include "View.hpp"
+
 
 int main(int argc, char** argv){
   PostManager posts_model("Posts.txt");
-  
-  View simpleview(posts_model);
-  simpleview.printAll();
-  simpleview.printBy("T-800");
 
-  if(argc>1){
-    HtmlView htmlview(posts_model,argv[1]);
-    htmlview.printAll();
-    htmlview.printBy("T-800");
+  list<View*> views;
+  views.push_back(new SimpleView(posts_model));
+  if(argc>1) views.push_back(new HtmlView(posts_model,argv[1]));
+
+  for(auto& pview : views) {
+    pview->printPosts();
+    pview->printPosts("T-800");
+    delete pview;
   }
   
 }

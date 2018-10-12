@@ -1,19 +1,21 @@
 #ifndef HTMLVIEW_HPP
 #define HTMLVIEW_HPP
 
-#include "PostManager.hpp"
+#include "View.hpp"
+#include <string>
 
-class HtmlView{
+class HtmlView : public View{
   
-    PostManager& post_model;
     mutable ofstream file;
+    
+  protected:
 
+    virtual void printPosts(list<Post> posts) const;
+    
   public:
 
     HtmlView(PostManager& post_model, string filename);
     ~HtmlView();
-    void printAll() const;
-    void printBy(string author) const;
 };
 
 

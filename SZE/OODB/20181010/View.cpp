@@ -6,17 +6,10 @@ using namespace std;
 View::View(PostManager& post_model)
   :post_model(post_model) {}
 
-void View::printAll() const {
-  list<Post> allposts = post_model.getAllPosts();
-  cout<<"List of posts:\n";
-  for(auto it=allposts.cbegin(); it!= allposts.cend(); ++it)
-    cout<<it->getAuthor()<<":"<<it->getContent()<<endl<<endl;
-}
+View::~View(){}
 
-void View::printBy(string author) const {
-  list<Post> posts = post_model.getPostsBy(author);
-  cout<<"Posts by "<<author<<":\n";
-  for(auto it=posts.cbegin(); it!= posts.cend(); ++it)
-      cout<<"\t- "<<it->getContent()<<endl;
+void View::printPosts(string author) const {
+  if(author=="") printPosts(post_model.getAllPosts());
+  else printPosts(post_model.getPostsBy(author));
 }
 
