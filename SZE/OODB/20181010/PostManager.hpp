@@ -10,6 +10,7 @@ using namespace std;
 class PostManager{
     
     list<Post> posts;
+    int nextid;
   
   public:
   

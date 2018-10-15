@@ -15,6 +15,7 @@ class Post {
     
     string getAuthor() const;
     string getContent() const;
+    int getId() const;
     
 };
 
