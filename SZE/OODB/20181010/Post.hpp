@@ -6,10 +6,11 @@
 using namespace std;
 
 class Post {
-    string author;
-    string content;
+    const int id;
+    const string author;
+    const string content;
   public:
-    Post(string author="", string content="");
+    Post(int id, string author="", string content="");
     Post(ifstream& file);
     
     string getAuthor() const;

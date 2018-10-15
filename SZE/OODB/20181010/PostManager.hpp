@@ -15,8 +15,8 @@ class PostManager{
   
     PostManager(string filename);
 
-    list<Post> getAllPosts() const;
-    list<Post> getPostsBy(string author) const;
+    const list<Post> getAllPosts() const;
+    const list<Post> getPostsBy(string author) const;
   
 };
 

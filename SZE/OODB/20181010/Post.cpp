@@ -2,24 +2,33 @@
 #include <iostream>
 
 
-Post::Post(string author, string content)
-  :author(author),content(content) {}
-  
+Post::Post(int id, string author, string content)
+  :id(id),author(author),content(content) {}
 
-string fetchstring(ifstream& file){
-  string temp;
-  
-  getline(file,temp,'"');
-  getline(file,temp,'"');
+
+void checkFileStatus(ifstream& file){
   if (file.rdstate() != std::ios_base::goodbit)
   throw string("End of file reached");
-  
+}
+
+int fetchid(ifstream& file){
+  int toReturn;
+  file>>toReturn;
+  checkFileStatus(file);
+  return toReturn;
+}
+
+string fetchstring(ifstream& file){
+  string temp;  
+  getline(file,temp,'"');
+  getline(file,temp,'"');
+  checkFileStatus(file);  
   return temp;
 }
 
 
 Post::Post(ifstream& file)
-  :author(fetchstring(file)),content(fetchstring(file)) {}
+  :id(fetchid(file)),author(fetchstring(file)),content(fetchstring(file)) {}
 
 string Post::getAuthor() const {return author;}
 

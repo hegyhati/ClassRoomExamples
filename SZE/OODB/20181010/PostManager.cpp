@@ -16,12 +16,12 @@ PostManager::PostManager(string filename) {
   }
 }
 
-list<Post> PostManager::getAllPosts() const {
+const list<Post> PostManager::getAllPosts() const {
   return posts;
 }
 
 
-list<Post> PostManager::getPostsBy(string author) const {
+const list<Post> PostManager::getPostsBy(string author) const {
   list<Post> toReturn;
   for(auto it=posts.cbegin(); it!= posts.cend(); ++it)
     if(it->getAuthor()==author)
