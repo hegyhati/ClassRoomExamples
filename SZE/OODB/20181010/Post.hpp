@@ -15,9 +15,11 @@ class Post {
     
     string getAuthor() const;
     string getContent() const;
-    int getId() const;
-    
+    int getId() const;    
 };
+
+
+ostream& operator<<(ostream& file, const Post& post);
 
 
 

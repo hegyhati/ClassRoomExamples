@@ -11,3 +11,4 @@
 11 "Darth Vader"     "I am your father."
 12 "Samuel"          "English motherfucker, do you speak it?!"
 13 "Samuel"          "I dare you, I double dare you!"
+14 "Grut" "I am Grut."

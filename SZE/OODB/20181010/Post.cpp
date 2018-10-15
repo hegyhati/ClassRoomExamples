@@ -35,3 +35,11 @@ string Post::getAuthor() const {return author;}
 string Post::getContent() const {return content;}
 
 int Post::getId() const {return id;}
+
+ostream& operator<<(ostream& file, const Post& post){
+  file<<post.getId()<<" "
+      <<"\""<<post.getAuthor()<<"\" "
+      <<"\""<<post.getContent()<<"\""
+      <<endl;
+  return file;
+}

@@ -8,7 +8,8 @@ using namespace std;
 #include "Post.hpp"
 
 class PostManager{
-    
+  
+    const string filename;
     list<Post> posts;
     int nextid;
   
@@ -18,6 +19,7 @@ class PostManager{
 
     const list<Post> getAllPosts() const;
     const list<Post> getPostsBy(string author) const;
+    int newPost(string author, string content);
   
 };
 

@@ -4,12 +4,12 @@
 
 
 
-PostManager::PostManager(string filename) : nextid (0){
+PostManager::PostManager(string filename) : filename(filename),nextid(0){
   ifstream postfile(filename);
   while(! postfile.eof()){
     try{      
       posts.push_back(Post(postfile));
-      if(posts.last().getId()>=nextid) nextid = posts.last().getId()+1;
+      if(posts.back().getId()>=nextid) nextid = posts.back().getId()+1;
     } catch (string e) {
       cerr << "Sorry, reading post was unsuccessful...\n";
       cerr << "Error message: "<<e<<endl;
@@ -30,5 +30,11 @@ const list<Post> PostManager::getPostsBy(string author) const {
   return toReturn;
 }
 
-
+int PostManager::newPost(string author, string content) {
+  posts.push_back(Post(nextid,author,content));
+  ofstream file(filename, ofstream::app);
+  file<<posts.back();
+  file.close();
+  return nextid++;  
+}
 

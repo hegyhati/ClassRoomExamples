@@ -11,9 +11,13 @@ int main(int argc, char** argv){
   views.push_back(new SimpleView(posts_model));
   if(argc>1) views.push_back(new HtmlView(posts_model,argv[1]));
 
+
+  
+  posts_model.newPost("Grut","I am Grut.");
+  
   for(auto& pview : views) {
     pview->printPosts();
-    pview->printPosts("T-800");
+    pview->printPosts("Grut");
     delete pview;
   }
   
