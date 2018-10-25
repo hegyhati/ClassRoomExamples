@@ -10,17 +10,16 @@ struct CarState{
 
 
 
-CarState& getleader(CarState cars[4]){
+int getleader(CarState cars[4]){
   int max=0;
   for(int c=1;c<4;c++)
     if(cars[c].s > cars[max].s)
       max=c;
-  return cars[max];
+  return max;
 }
 
 void leaderboard(CarState cars[4]){
-  CarState bestcar=getleader(cars);
-  cout<<"The leader is: Car "<< getleader(cars).name<<endl;
+  cout<<"The leader is: Car "<< getleader(cars)<<endl;
   for(int c=0; c<4; c++)
       cout<<"Car "<<c<<": "<< cars[c].s <<"\t";
   cout<<endl; 
