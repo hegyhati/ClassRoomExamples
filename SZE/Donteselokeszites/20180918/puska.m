@@ -1,4 +1,11 @@
-/*      AI  Halo  OS  
+/*
+  Három tárgyból szeretnénk puskát csinálni.
+  Van 4 haver, akit be lehet vonni, mindegyikőjük legfeljebb egy puskát vállal, mert annyi fér bele, és megvan, hogy melyiket hány sörért.
+
+  Mi a legkevevesebb befektetés, amiből az összes holnapi ZH-ra el tud készülni a puska?
+
+
+        AI  Halo  OS  
 Dani    10  4     4   
 Kristof 8   5     9
 Isti    2   3     15

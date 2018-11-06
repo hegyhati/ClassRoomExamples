@@ -1,3 +1,12 @@
+/*
+  Néhány tárgyból szeretnénk puskát csinálni.
+  Van pár haver, akit be lehet vonni, mindegyikőjük legfeljebb egy puskát vállal, mert annyi fér bele, és megvan, hogy melyiket hány sörért.
+
+  Mi a legkevevesebb befektetés, amiből az összes holnapi ZH-ra el tud készülni a puska?
+
+*/
+
+
 set Targyak;
 set Emberek;
 

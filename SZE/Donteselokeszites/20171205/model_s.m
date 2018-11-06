@@ -1,3 +1,12 @@
+/*
+Egy bringás futárcégnek dolgozunk be szabadúszóként. 8 órát tervezünk tekerni, méghozzá olyan módon, hogy minden órában néhány jól bejáratott kör egyikére megyünk el, miközben az útvonalhoz közel eső helyekre kézbesítünk csomagokat. A futárcég egy csomaglistát bocsát rendelkezésünktre, amiből mi eldönthetjük, hogy melyikeket vállaljuk el, és melyikeket nem. Minden csomaghoz adott egy kézbesítési határidő, valamint a kiszállítás címe, ami vagy rajta van valamelyik útvonalunkon, vagy nincs. Ismert továbbá a csomagok tömege.
+
+Hogy semmiképp ne csússzunk meg, sosem viszünk el egy körre 5-nél több csomagot, vagy tekerünk 10 kilónál több teherrel. Mindemellett, hogy tényleg biztosra menjünk, csak akkor viszünk el egy körre egy csomagot, ha annak a kézbesítési határideje később van, minthogy azt a kört befejeznénk. A késő kézbesítésekért ugyanis a futárcégnek díjat kell fizetnie, amit aztán rajtunk ver le kamatostul.
+
+Célunk az, hogy ez alatt a 8 óra alatt maximalizáljuk  a kiszállított csomagok számát.
+
+*/
+
 set Routes;
 
 param ordercount >=0, integer;
