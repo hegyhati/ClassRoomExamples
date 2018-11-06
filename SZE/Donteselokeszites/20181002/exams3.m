@@ -1,3 +1,11 @@
+/*
+
+We would like to get the best weighted grade for our exam period.
+We know for each Course, when we can get the exam done, and how much time does it require to prepare to get graded as 2 (sarisfactory).
+Each day, we have a given amount of free time, that we can decide to use for studying.
+
+*/
+
 set Courses;
 param nDays;
 set Days:=1..nDays;
@@ -19,14 +27,14 @@ s.t. RequiredTimeConstraint{c in Courses}:
 
     
 
-maximize PassedCourses:
+maximize WeightedGrade:
   (sum{c in Courses} 2*pass[c]*credits[c])
   /
   (sum{c in Courses} credits[c])
   ;
 
 solve;
-printf "Objective: %g\n\n", PassedCourses;
+printf "Objective: %g\n\n", WeightedGrade;
 
 printf "Failed courses: ";
 for{c in Courses : pass[c]==0}

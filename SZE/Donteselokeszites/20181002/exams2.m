@@ -1,3 +1,12 @@
+/*
+
+We would like to maximize the courses passed within an exam period.
+We know for each Course, when we can get the exam done, and how much time does it require to prepare to get graded as 2 (sarisfactory).
+Each day, we have a given amount of free time, that we can decide to use for studying.
+
+*/
+
+
 set Courses;
 param nDays;
 set Days:=1..nDays;
