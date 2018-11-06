@@ -1,3 +1,5 @@
+# Adott a het ot napja, valamit 5 autofajta. Minden nap pontosan egy autot szeretnenk megvenni, hogy hetvegere mindegyik tipusbol legyen egy. Adott minden napra minden tipusnak az ara. Hogy vasarolgassunk, hogy minimalis koltseggel megusszuk a dolgot?
+
 var HW binary; var HL binary; var HF binary; var HT binary; var HS binary;
 var KW binary; var KL binary; var KF binary; var KT binary; var KS binary;
 var SW binary; var SL binary; var SF binary; var ST binary; var SS binary;

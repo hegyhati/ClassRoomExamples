@@ -1,3 +1,8 @@
+# Adott nehany hely, ahol geotermal kutat furhatunk.
+# Adott tovabba, hogy melyik hely melyik hazhoz van eleg kozel ahhoz, hogy a futeset biztositsa, ha kiepitik.
+# Tudjuk minden kuthoz a kiepitesi, es a fenntartasi koltseget
+# Mi a minimalis beruhazasi koltseg ugy, hogy adott egy felso korlat a fenttartasi koltsegre?
+
 set Kutak;
 set Hazak;
 

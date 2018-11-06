@@ -1,3 +1,10 @@
+# We want to maximize our profit/wealth over the span of a given number of days by buying and selling different car types.
+# Known are:
+# - the car types, and the price of each of them for each day
+# - the number of days when we can trade
+# - our initial budget
+# - the number of garage spaces, that we can (and must) use to keep the bought cars safe from one day to another
+
 param startbudget; # HUF 
 param garagecapacity; #pieces
 param nDays;

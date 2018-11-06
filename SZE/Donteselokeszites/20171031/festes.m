@@ -1,3 +1,39 @@
+/*
+A Közép-Dunántúli piros sáv turistajelzést jelzést szeretnénk minél hosszabb szakaszon
+felújítani. Szombaton reggel 6-kor hatan érkezünk meg Zircre vonattal: Pygmea,
+Repkény, Droid, Bubu, Gethe, Galád.
+
+A jelzések felújításának a folyamata a következő:
+1. régi jelzés, fakéreg lehántása
+2. fehér alap felfestése
+3. jelzésminta felfestése
+4. lakkozás
+
+Adott hogy melyik túrázó melyik folyamatban mennyire ügyes, azaz egy óra alatt hány
+kilométernyi szakaszt tud megcsinálni.
+
+A cél, hogy este 10-ig minél hosszabb szakaszon legyen kész a lakkozott új jelzés. A
+munkát két órás szakaszokban koordináljuk, amiből 100 percet keményen dolgozunk,
+majd 20 perc szünetet tartunk, amikor összegyűlünk, eszegetünk, megbeszéljük, hogy a
+következő két órában ki-mit csináljon, átadjuk az eszközöket, stb.
+
+Szabályok:
+• Ha többen dolgoznak ugyanazon a folyamaton, akkor a sebességük összeadódik.
+• Egyik folyamat sem előzheti meg az azt megelőzőt. Azaz ha például a fehér alapot
+festő ember utoléri a hántást végzőt, akkor nem előzi meg, hanem az ő
+sebességével halad tovább.
+• Mivel mindegyik feladathoz külön eszközök kellenek, amit nem szeretnénk
+magukra hagyni az erdőben, ezért minden órában mindegyik munkafolyamaton
+legalább egy embernek dolgoznia kell.
+• Azért, hogy a 20 perc elég legyen az összeröffenésre, a hántó(k) és lakkozó(k)
+közötti távolság nem nőhet 1.5 km fölé. Ha így lenne, akkor a hántók
+visszavesznek a sebességükből.
+• Nem szükséges foglalkozni azzal, hogy hol sötétedik ránk, és onnét hogy utazunk
+haza, stb.
+
+*/
+
+
 set Emberek;
 set Munkak;
 

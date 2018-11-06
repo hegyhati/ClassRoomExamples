@@ -1,3 +1,9 @@
+# Gyakorlati feladat
+# Feladatunk az éjszakai zenei felhozatal optimális megtervezése a 25. Jubileumi Veszprémi Egyetemi Napok 1-es csapatának, a Luck'VEN'Roll-nak a kocsmájában. A csapat diákrektor jelöltje, Őkoboldsága Vadpocok meghívott néhány prominens vendéget, akiket célunk minél tovább szórakoztatni, ezért a csapat stílusához illő zenék közül gondosan válogatjuk meg a lejátszási listára kerülő számokat. Minden vendégnek ismerjük a zenei ízlését, hogy melyik számot szereti, és melyiket nem.
+# A party kezdete előtt mindenkit meghívunk egy kobold sörre, melynek hatására a zenei palettával kapcsolatos viselkedésük a következő lesz: Amennyiben olyan számot hallanak, amit szeretnek, akkor jókedvűen szórakoznak. Ha jön egy szám, amit nem szeretnek, akkor  a söntéspulthoz mennek, és inkább kikérnek egy kobold sört, amit a szám alatt komótosan eliszogatnak, bízva abban, hogy a következő szám jó lesz, és visszamehessenek táncikálni. Ha még ezek után sem játszunk be számukra kedves zenét, elhagyják a kocsmát és elmennek aludni.
+# Célunk ezúttal 30 szám lejátszásával a söntéspult bevételét maximalizálni.
+# Nincs megkötve, hogy senki se hagyja el a kocsmát, azonban ha valaki elment, többet már nem tér be hozzánk.
+
 set Emberek;
 set Szamok;
 
