@@ -1,0 +1,31 @@
+
+
+Final weighed grade: 4.16667
+
+
+Course T1: Grade 5 (4 hours), exam on day 8
+	 - Day  3: 1.5 hours
+	 - Day  7: 2.5 hours
+
+
+Course T2: Grade 3 (8 hours), exam on day 5
+	 - Day  1: 2.5 hours
+	 - Day  2: 4.5 hours
+	 - Day  4:   1 hours
+
+
+Course T3: Grade 4 (6 hours), exam on day 9
+	 - Day  4:   6 hours
+	 - Day  6: 0.5 hours
+
+
+
+Day  1 (  3 hours):  T2(2.5 h)
+Day  2 (  5 hours):  T2(4.5 h)
+Day  3 (  2 hours):  T1(1.5 h)
+Day  4 (  8 hours):  T2(1 h) T3(6 h)
+Day  5 (  4 hours): Takes exam from T2
+Day  6 (  1 hours):  T3(0.5 h)
+Day  7 (  3 hours):  T1(2.5 h)
+Day  8 (  9 hours): Takes exam from T1
+Day  9 (  0 hours): Takes exam from T3
