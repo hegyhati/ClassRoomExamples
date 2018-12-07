@@ -4,6 +4,12 @@
 #include <fstream>
 
 template <class Foo>
+class Lista;
+
+template <class Foo>
+std::ostream& operator<<(std::ostream& s, const Lista<Foo>& tl);
+
+template <class Foo>
 class Lista {
     struct Elem {
         Foo adat;
@@ -54,8 +60,7 @@ class Lista {
       // TODO throw exception
     }
 
-    template<class T>
-    friend std::ostream& operator<<(std::ostream& s, const Lista<T>& tl);
+    friend std::ostream& operator<< <Foo>(std::ostream& s, const Lista<Foo>& tl);
 };
 
 
