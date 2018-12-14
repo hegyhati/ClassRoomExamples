@@ -1,6 +1,10 @@
 #include "Konyvtar.h"
 #include <algorithm>
 
+#ifdef _MSC_VER
+#include <ciso646>
+#endif
+
 unsigned int Konyvtar::db(std::string szerzo, std::string cim) const {
   unsigned int darab=0;
   for(auto k:konyvek)
