@@ -1,0 +1,6 @@
+ 2018 8 11 Korinthosz	81	27000
+ 2016 2 6 Shortrun	5	1800
+ 2017 4 5 Longrun	15	5000
+ 2005 8 14 Marathon	42.2	12000
+ 2010 7 23 Halfmarathon	21.1	5000
+ 1998 12 31 6h_run	56.6	21600

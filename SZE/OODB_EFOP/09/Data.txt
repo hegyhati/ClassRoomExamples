@@ -1,0 +1,6 @@
+Korinthosz	81	27000
+Shortrun	5	1800
+Longrun	15	5000
+Marathon	42.2	12000
+Halfmarathon	21.1	5000
+6h_run	56.6	21600

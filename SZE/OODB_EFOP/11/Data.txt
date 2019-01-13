@@ -1,0 +1,8 @@
+ g  2017 4 3 	Pertret	test01.gpx
+ m  2018 8 11 Korinthosz	81	27000
+ m  2016 2 6 Shortrun	5	1800
+ m  2017 4 5 Longrun	15	5000
+ m  2005 8 14 Marathon	42.2	12000
+ g  2015 12 31 	Test02	test02.gpx
+ m  2010 7 23 Halfmarathon	21.1	5000
+ m  1998 12 31 6h_run	56.6	21600
