@@ -1,0 +1,56 @@
+class ***FOO***Array {
+    unsigned int _size;
+    ***FOO*** * data;
+
+    // TODO initialize new values
+    void resize (unsigned int newsize) {
+      ***FOO*** * tmp = new ***FOO*** [newsize];
+      for(unsigned int i=0;i<_size && i<newsize;i++)
+        tmp[i]=data[i];
+      delete [] data;
+      data = tmp;
+      _size = newsize;
+    }
+    
+  public:
+    ***FOO***Array(unsigned int size=1, ***FOO*** defaultvalue=0)
+      : _size(size), data(new ***FOO***[size]) {
+      for(unsigned int i=0; i<_size; i++)
+        data[i]=defaultvalue;
+    }
+
+    ***FOO***Array(const ***FOO***Array& other)
+      : _size(other._size){
+        data = new ***FOO***[_size];
+        for(unsigned int i=0;i<_size;i++)
+          data[i]=other.at(i);
+    }
+
+    void operator=(const ***FOO***Array& other){
+      delete [] data;
+      _size=other._size;
+      data = new ***FOO***[_size];
+      for(unsigned int i=0;i<_size;i++)
+        data[i]=other.at(i);
+    }
+
+    ~***FOO***Array(){ delete [] data;}
+    
+    unsigned int size() const { return _size; }
+    
+    ***FOO***& operator[](unsigned int idx) {
+      if (idx >= _size) resize(idx+1);
+      return data[idx];
+    }
+
+    ***FOO*** at(unsigned int idx) const {
+      if (idx >= _size) return 0;
+      return data[idx];
+    }
+};
+
+ostream& operator << (ostream& s, const ***FOO***Array& a){
+  for(unsigned int i=0;i<a.size();i++)
+    s << a.at(i) << " ";
+  return s;
+}
