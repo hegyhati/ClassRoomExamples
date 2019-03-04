@@ -1,0 +1,107 @@
+Problem:    CheatSheets
+Rows:       12
+Columns:    30 (30 integer, 30 binary)
+Non-zeros:  90
+Status:     INTEGER OPTIMAL
+Objective:  TotalBeers = 14 (MINimum)
+
+   No.   Row name        Activity     Lower bound   Upper bound
+------ ------------    ------------- ------------- -------------
+     1 Class_constraint[Energy]
+                                   1             1             = 
+     2 Class_constraint[Const]
+                                   1             1             = 
+     3 Class_constraint[Auto]
+                                   1             1             = 
+     4 Class_constraint[Fabr]
+                                   1             1             = 
+     5 Class_constraint[OM]
+                                   1             1             = 
+     6 Student_constraint[Miguel]
+                                   0                           1 
+     7 Student_constraint[Quim]
+                                   1                           1 
+     8 Student_constraint[Ferran]
+                                   1                           1 
+     9 Student_constraint[Daniel]
+                                   1                           1 
+    10 Student_constraint[Marta]
+                                   1                           1 
+    11 Student_constraint[Ivan]
+                                   1                           1 
+    12 TotalBeers                 14                             
+
+   No. Column name       Activity     Lower bound   Upper bound
+------ ------------    ------------- ------------- -------------
+     1 prepare[Miguel,Energy]
+                    *              0             0             1 
+     2 prepare[Quim,Energy]
+                    *              0             0             1 
+     3 prepare[Ferran,Energy]
+                    *              0             0             1 
+     4 prepare[Daniel,Energy]
+                    *              0             0             1 
+     5 prepare[Marta,Energy]
+                    *              1             0             1 
+     6 prepare[Ivan,Energy]
+                    *              0             0             1 
+     7 prepare[Miguel,Const]
+                    *              0             0             1 
+     8 prepare[Quim,Const]
+                    *              0             0             1 
+     9 prepare[Ferran,Const]
+                    *              0             0             1 
+    10 prepare[Daniel,Const]
+                    *              1             0             1 
+    11 prepare[Marta,Const]
+                    *              0             0             1 
+    12 prepare[Ivan,Const]
+                    *              0             0             1 
+    13 prepare[Miguel,Auto]
+                    *              0             0             1 
+    14 prepare[Quim,Auto]
+                    *              1             0             1 
+    15 prepare[Ferran,Auto]
+                    *              0             0             1 
+    16 prepare[Daniel,Auto]
+                    *              0             0             1 
+    17 prepare[Marta,Auto]
+                    *              0             0             1 
+    18 prepare[Ivan,Auto]
+                    *              0             0             1 
+    19 prepare[Miguel,Fabr]
+                    *              0             0             1 
+    20 prepare[Quim,Fabr]
+                    *              0             0             1 
+    21 prepare[Ferran,Fabr]
+                    *              1             0             1 
+    22 prepare[Daniel,Fabr]
+                    *              0             0             1 
+    23 prepare[Marta,Fabr]
+                    *              0             0             1 
+    24 prepare[Ivan,Fabr]
+                    *              0             0             1 
+    25 prepare[Miguel,OM]
+                    *              0             0             1 
+    26 prepare[Quim,OM]
+                    *              0             0             1 
+    27 prepare[Ferran,OM]
+                    *              0             0             1 
+    28 prepare[Daniel,OM]
+                    *              0             0             1 
+    29 prepare[Marta,OM]
+                    *              0             0             1 
+    30 prepare[Ivan,OM]
+                    *              1             0             1 
+
+Integer feasibility conditions:
+
+KKT.PE: max.abs.err = 0.00e+00 on row 0
+        max.rel.err = 0.00e+00 on row 0
+        High quality
+
+KKT.PB: max.abs.err = 0.00e+00 on row 0
+        max.rel.err = 0.00e+00 on row 0
+        High quality
+
+End of output
