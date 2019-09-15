@@ -2,6 +2,7 @@ cmake_minimum_required(VERSION 3.5)
 project(TriangleCalc)
 
 add_executable(TriangleAreaCalc src/main.cpp src/triangle.cpp)
+add_executable(TriangleAreaCalcFile src/main_file.cpp src/triangle.cpp)
 
 # If you want to test, then go ahead with it
 configure_file(./../../CMakeLists.txt.in googletest-download/CMakeLists.txt)
