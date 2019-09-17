@@ -9,12 +9,11 @@ class Job {
     int start;
     int finish;
   public:
-    Job();
-    Job(string client, int start, int finish);
-    string getClient();
-    int getStart();
-    int getFinish();
-    bool overlaps(Job otherjob);
+    Job(string client="", int start=0, int finish=0);
+    string getClient() const;
+    int getStart() const;
+    int getFinish() const;
+    bool overlaps(const Job& otherjob);
 };
 
 #endif

@@ -1,21 +1,15 @@
 #include "Job.h"
 
-Job::Job() {
-  this->client = "";
-  this->start = 0;
-  this->finish = 0;
+
+Job::Job(string client, int start, int finish)
+  : client(client), start(start), finish(finish){
+  if(finish<start) this->finish=start;
 }
 
-Job::Job(string client, int start, int finish) {
-  this->client = client;
-  this->start = start;
-  this->finish = finish;
-}
-
-bool Job::overlaps(Job otherjob) {
+bool Job::overlaps(const Job& otherjob) {
   return otherjob.start <= finish && otherjob.finish>=start;
 }
 
-string Job::getClient(){ return client; }
-int Job::getStart(){ return start; }
-int Job::getFinish(){ return finish; }
+string Job::getClient() const { return client; }
+int Job::getStart() const { return start; }
+int Job::getFinish() const { return finish; }

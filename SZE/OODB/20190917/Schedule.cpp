@@ -1,6 +1,6 @@
 #include "Schedule.h"
 
-void Schedule::debug(){
+void Schedule::debug() const{
   cerr << "\n\nOsszesen "<<count<<" megrendeles erkezett:"<<endl;
   for(int i=0; i< count; ++i)
     cerr << "\t"<<jobs[i].getClient()<<": "<<jobs[i].getStart()<<"-"<<jobs[i].getFinish()<<endl;
@@ -17,7 +17,7 @@ void Schedule::load(string databaseFileName){
   }
 }
 
-void Schedule::save(string databaseFileName){
+void Schedule::save(string databaseFileName) const{
   ofstream file(databaseFileName);
   file << count << endl;
   for(int j=0;j<count; j++)
@@ -26,7 +26,7 @@ void Schedule::save(string databaseFileName){
          << jobs[j].getFinish() << endl;
 }
 
-bool Schedule::feasible(Job newJob) {
+bool Schedule::feasible(Job newJob) const {
   for(int j=0; j<count; ++j)
     if(newJob.overlaps(jobs[j])) return false;
   return true;

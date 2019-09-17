@@ -11,10 +11,10 @@ class Schedule {
     Job jobs[100];
     int count;
   public:
-    void debug();
+    void debug() const;
     void load(string databaseFileName);
-    void save(string databaseFileName);
-    bool feasible(Job newJob);
+    void save(string databaseFileName) const ;
+    bool feasible(Job newJob)const;
     void insert(Job newJob);
 };
 
