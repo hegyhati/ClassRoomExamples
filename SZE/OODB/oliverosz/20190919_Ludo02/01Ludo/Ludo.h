@@ -1,14 +1,7 @@
 #pragma once
 
+#include "Board.h"
 #include "Player.h"
-
-struct Board {
-	int boardSize;
-	int gardenLength;
-	Board(int size, int gLength) : boardSize(size), gardenLength(gLength)
-	{
-	}
-};
 
 class Ludo {
 public:

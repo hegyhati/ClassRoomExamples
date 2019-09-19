@@ -1,6 +1,6 @@
 #pragma once
 
-#include "Ludo.h"
+#include "Board.h"
 
 class Player {
 public:
