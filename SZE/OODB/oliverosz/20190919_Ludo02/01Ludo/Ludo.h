@@ -2,6 +2,14 @@
 
 #include "Player.h"
 
+struct Board {
+	int boardSize;
+	int gardenLength;
+	Board(int size, int gLength) : boardSize(size), gardenLength(gLength)
+	{
+	}
+};
+
 class Ludo {
 public:
 	Ludo(int size = 48, int gardenLength = 6);
@@ -9,10 +17,11 @@ public:
 private:
 	Player players[4];
 	int currentPlayer;
-	int boardSize;
-	int gardenLength;
+	const Board board;
 
 	void display();
 	bool turn();
 	int roll();
+	// distance between player start fields
+	int offset() { return board.boardSize / 4; }
 };

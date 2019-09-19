@@ -1,6 +1,10 @@
 #include "Player.h"
 
-bool Player::hasWon()
+#include <iostream>
+
+using namespace std;
+
+bool Player::hasWon() const
 {
 	int i = 0;
 	while (i < 4 && pieces[i].getRegion() == Piece::HOUSE)
@@ -8,7 +12,25 @@ bool Player::hasWon()
 	return i == 4;
 }
 
-inline void Player::Piece::move(int length, int regionSize) {
+int Player::decide(int rolled)
+{
+	cout << "You rolled " << rolled << ", choose a piece!\n";
+	int chosen;
+	bool valid;
+	do {
+		cin >> chosen;
+
+		Piece copy = pieces[chosen];
+		//copy.move(rolled, );
+		for (int i = 0; valid && i < 4; ++i)
+			if (pieces[i].getRegion() == copy.getRegion() && pieces[i].getRegion() != Piece::HOUSE
+				&& pieces[i].getIndex() == copy.getIndex())
+				valid = false;
+	} while (!valid);
+	return 0;
+}
+
+void Player::Piece::move(int length, int regionSize) {
 	switch (region)
 	{
 	case Player::Piece::START:
