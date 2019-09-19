@@ -19,9 +19,9 @@ int Player::decide(int rolled)
 	bool valid;
 	do {
 		cin >> chosen;
-
+		valid = true;
 		Piece copy = pieces[chosen];
-		//copy.move(rolled, );
+		copy.move(rolled);
 		for (int i = 0; valid && i < 4; ++i)
 			if (pieces[i].getRegion() == copy.getRegion() && pieces[i].getRegion() != Piece::HOUSE
 				&& pieces[i].getIndex() == copy.getIndex())
@@ -30,7 +30,7 @@ int Player::decide(int rolled)
 	return 0;
 }
 
-void Player::Piece::move(int length, int regionSize) {
+void Player::Piece::move(int length) {
 	switch (region)
 	{
 	case Player::Piece::START:
@@ -39,16 +39,16 @@ void Player::Piece::move(int length, int regionSize) {
 		break;
 	case Player::Piece::BOARD:
 		index += length;
-		if (index >= regionSize) {
+		if (index >= board->boardSize) {
 			region = GARDEN;
-			index -= regionSize;
+			index -= board->boardSize;
 		}
 		break;
 	case Player::Piece::GARDEN:
 		index += length;
-		if (index >= regionSize) {
+		if (index >= board->gardenLength) {
 			region = HOUSE;
-			index -= regionSize;
+			index -= board->gardenLength;
 		}
 		break;
 	default:

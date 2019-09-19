@@ -4,7 +4,6 @@
 
 class Player {
 public:
-	class Piece;
 	Player(int index, const Board* board) :
 		pieces { Piece(board), Piece(board), Piece(board), Piece(board) },
 		color('A' + index), board(board) {
@@ -25,7 +24,7 @@ public:
 		Region getRegion() const { return region; }
 		void setRegion(Region r) { region = r; }
 		int getIndex() const { return index; }
-		void move(int length, int regionSize);
+		void move(int length);
 	private:
 		Region region;
 		int index;

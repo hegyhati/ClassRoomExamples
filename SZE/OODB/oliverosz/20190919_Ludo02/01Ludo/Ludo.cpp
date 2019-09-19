@@ -34,7 +34,7 @@ bool Ludo::turn()
 	int rolled = roll();
 	int chosenPiece = players[currentPlayer].decide(rolled);
 	Player::Piece& piece = players[currentPlayer].getPiece(chosenPiece);
-	piece.move(rolled, piece.getRegion() == Player::Piece::BOARD ? board.boardSize : board.gardenLength);
+	piece.move(rolled);
 	// check if another player piece is there
 	// if there is one, send it back to start
 	for (int opponent = 0; opponent < 4; ++opponent) {
