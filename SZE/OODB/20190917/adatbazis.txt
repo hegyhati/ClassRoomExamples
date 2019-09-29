@@ -1,0 +1,10 @@
+9
+Sanyi 3 12
+Bela 15 20
+Cili 36 40
+Kata 21 25
+Attila 100 201
+Laci 300 500
+Agi 1 2
+kjashkajh 1000 1010
+qwe 220 230
