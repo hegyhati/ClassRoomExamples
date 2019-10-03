@@ -1,0 +1,4 @@
+Chips	280	6
+Soda	250	8
+Bread	350	4
+Milk	330	3
