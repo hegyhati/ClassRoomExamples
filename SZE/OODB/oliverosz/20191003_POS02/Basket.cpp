@@ -12,6 +12,30 @@ Basket::Basket() :
 {
 }
 
+Basket::Basket(const Basket& other) :
+	contents(new ProductQty[other.size]),
+	count(other.count),
+	size(other.size)
+{
+	for (int i = 0; i < count; ++i)
+		contents[i] = other.contents[i];
+	cout << "**Basket copy constructor**\n";
+}
+
+Basket & Basket::operator=(const Basket & other)
+{
+	if (size < other.count) {
+		delete[] contents;
+		contents = new ProductQty[other.size];
+		size = other.size;
+	}
+	count = other.count;
+	for (int i = 0; i < count; ++i)
+		contents[i] = other.contents[i];
+	cout << "**Basket assignment operator**\n";
+	return *this;
+}
+
 Basket::~Basket()
 {
 	delete[] contents;
@@ -36,6 +60,25 @@ void Basket::add(const ProductQty& toAdd)
 	}
 	contents[count] = toAdd;
 	++count;
+}
+
+int Basket::remove(const std::string & productName)
+{
+	// search productName
+	int i = 0;
+	while (i < count && contents[i].name != productName)
+		++i;
+	if (i < count) {
+		// remove element and shift others from higher index
+		int qty = contents[i].quantity;
+		while (i+1 < count) {
+			contents[i] = contents[i + 1];
+			++i;
+		}
+		count--;
+		return qty;
+	}
+	return 0;
 }
 
 void Basket::print() const

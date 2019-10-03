@@ -49,11 +49,11 @@ void Shop::printInventory() const
 	}
 }
 
-bool Shop::addToBasket(std::string productName, int qty)
+bool Shop::addToBasket(const std::string& productName, int qty)
 {
 	// could be binary search if sort() is implemented
 	int i = 0;
-	while (i < invSize && inventory[i].name != productName)
+	while (i < invSize && !(inventory[i] == productName))
 		++i;
 	if (i < invSize) { // product found
 		if (inventory[i].quantity < qty)
@@ -61,6 +61,23 @@ bool Shop::addToBasket(std::string productName, int qty)
 		inventory[i].quantity -= qty;
 		ProductQty toAdd = { inventory[i].name, inventory[i].unitPrice, qty };
 		basket.add(toAdd);
+		return true;
+	}
+	return false;
+}
+
+bool Shop::removeFromBasket(const std::string& productName)
+{
+	// try to remove product from basket
+	int quantity = basket.remove(productName);
+	// if successful, increase inventory
+	if (quantity > 0) {
+		int i = 0;
+		while (i < invSize && inventory[i].name != productName)
+			++i;
+		if (i < invSize) {
+			inventory[i].quantity += quantity;
+		}
 		return true;
 	}
 	return false;
