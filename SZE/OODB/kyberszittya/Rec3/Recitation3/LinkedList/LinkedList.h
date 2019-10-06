@@ -30,9 +30,8 @@ std::ostream& operator<<(std::ostream& os, const Position& pos)
 struct LinkedListElement
 {
 	Position element;
-	LinkedListElement* next_element;
 	LinkedListElement* prev_element;
-	
+	LinkedListElement* next_element;	
 };
 
 class LinkedList
