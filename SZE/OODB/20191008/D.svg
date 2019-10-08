@@ -1,0 +1,7 @@
+<svg  viewBox="-52 -40 122 102">
+<circle cx='10' cy='10' r='10' stroke='black' stroke_width='1' fill='none'/>
+<circle cx='-10' cy='20' r='32' stroke='black' stroke_width='1' fill='none'/>
+<circle cx='40' cy='-10' r='20' stroke='black' stroke_width='1' fill='none'/>
+<rect x='0' y='0' width='10' height='10' stroke='red' stroke_width='2' fill='none'/>
+<rect x='-50' y='-50' width='100' height='100' stroke='red' stroke_width='2' fill='none'/>
+</svg> 
