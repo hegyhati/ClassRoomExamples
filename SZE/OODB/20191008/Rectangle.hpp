@@ -11,7 +11,7 @@ class Rectangle :public Shape {
     double height;
   public:
     Rectangle(double tlx, double tly, double w, double h, std::string sc="black",int sw=1,bool f=false);    
-    std::string toSVG() const;
+    virtual std::string toSVG() const override;
 };
 
 

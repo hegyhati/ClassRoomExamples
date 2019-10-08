@@ -11,6 +11,7 @@ class Shape {
     std::string getSVGStyle() const;
   public:
     Shape(std::string sc="black",int sw=1,bool f=false);
+    virtual std::string toSVG() const {return "";}
 };
 
 

@@ -11,6 +11,8 @@ Shape::Shape(std::string sc,int sw,bool f)
 
 std::string Shape::getSVGStyle() const {
   std::stringstream ss;
-  ss << " stroke='"<< stroke_color << "' stroke_width='"<< stroke_width <<"' fill='"<< (fill?stroke_color:"none") << "'";
+  ss << " stroke='"<< stroke_color << "' stroke-width='"<< stroke_width <<"' fill='"<< (fill?stroke_color:"none") << "'";
   return ss.str();
 }
+
+

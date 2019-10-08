@@ -7,6 +7,7 @@
 Rectangle::Rectangle(double tlx, double tly, double w, double h, std::string sc,int sw,bool f)
   : Shape(sc,sw,f), topleftcorner(tlx,tly), width(w>=0?w:0), height(h>=0?h:0){}
 
+
 std::string Rectangle::toSVG() const {
   std::stringstream ss;
   ss << "<rect x='"<<topleftcorner.getX()<<"' y='"<<topleftcorner.getY()<<"' width='"<<width<<"' height='"<<height<< "'" <<getSVGStyle() << "/>";
