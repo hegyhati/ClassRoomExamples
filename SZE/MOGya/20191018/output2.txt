@@ -1,0 +1,34 @@
+Worker 1:	0/42
+
+Worker 2:	31/31
+ - Job 4	13
+ - Job 10	9
+ - Job 19	9
+
+Worker 3:	52/52
+ - Job 1	5
+ - Job 3	15
+ - Job 11	11
+ - Job 15	11
+ - Job 17	10
+
+Worker 4:	31/32
+ - Job 6	7
+ - Job 7	8
+ - Job 9	8
+ - Job 18	8
+
+Worker 5:	51/51
+ - Job 2	12
+ - Job 8	13
+ - Job 12	12
+ - Job 13	5
+ - Job 16	9
+
+Worker 6:	22/22
+ - Job 5	9
+ - Job 20	13
+
+Worker 7:	10/11
+ - Job 14	10
+
