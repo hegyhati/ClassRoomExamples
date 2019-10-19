@@ -33,12 +33,12 @@ public:
 
 	}
 
-	double getCircumfere() const
+	virtual double getCircumfere() const
 	{
 		return 0.0;
 	}
 
-	double getArea() const
+	virtual double getArea() const
 	{
 		return 0.0;
 	}
@@ -97,6 +97,7 @@ public:
 		return 2 * (a + b);
 	}
 };
+
 
 class Triangle : public Shape
 {
