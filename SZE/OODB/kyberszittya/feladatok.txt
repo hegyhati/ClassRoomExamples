@@ -1,0 +1,14 @@
+Feladat #1: STL tárolók: bank nyilvántartás
+- Ügyfelek: név, születési dátum, letét év, betett összeg    kamatláb.
+- Kérdezzük le a nyilvántartott ügyfelekre: átlag letét,    maximális letét, mnimális letét
+- Lehessen lekérdezni név szerint az ügyfeleket. MAP!
+
+Feladat #2: Vasúti menetrend
+- Vonalaink vannak
+- Tárold el az vonalon érintett állomásokat: város, kapacitas. 
+   Háromféle állomás lehet: teherállomás, személyállomás és    központi
+- Egy állomást több vonal is érinthet. Hogyan érdemes ezt    tárolni? MUTATÓK!
+- Egy állomásból elérhetõ-e egy másik állomás közvetlenül. Azon    az állomáson személyként leszállhatunk-e?
+- Legyen három vonalunk, vonalanként 5-6 állomással
+- Tároljuk el az állomásokat és a vonalakat is fájlban.
+- Szeretnénk azt megtudni, miképp érhetõ el átszállásokkal egyik    állomásból egy másik állomás
