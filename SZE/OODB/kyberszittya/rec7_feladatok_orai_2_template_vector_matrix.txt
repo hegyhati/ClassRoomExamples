@@ -1,0 +1,15 @@
+2. órai feladat
+
+Készíts egy programot, ami definiálja a 3 dimenziós vectorokat (Vector3) és 3x3-as mátrixokat (Matrix3):
+1. Template-ket használj! Mûködjön double-re és float-ra egyaránt!
+2. A következõ operátorok legyenek túlterhelve a Vector3 osztályon más Vector3 osztályokon: +=, +,-,*,/, ==, !=, []
+3. A követekzõ operátorok Matrix3 és Matrix3 között: +, *
+4. A következõ operátorok Matrix3 és Vector3 között: *
+
+BÓNUSZ: Származtass egy RotZ mátrixot a Matrix3 mátrixból!
+Emlékeztetõ, RotZ:
+[ cos(theta)  sin(theta) 0]
+[ -sin(tehta) cos(theta) 0]
+[ 0	      0		 1]
+
+Fókusz: template, operátor túlterhelés

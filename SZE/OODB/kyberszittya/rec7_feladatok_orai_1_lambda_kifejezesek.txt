@@ -1,0 +1,14 @@
+Órai feladat
+1. Legyen egy fájl amiben a következõ formátumban vannak tárolva az emberek:
+Keresztnév Családnév Nem Nemzetiség Foglalkozás
+
+Készíts programot, ami beolvassa az embereket a fájlból és eltárolja egy std::vector-ban! TIPP: érdemes stringstream-et használni
+
+2. A beolvasott vectorban keress rá az std::count_if segítségével egy adott foglalkozásra (pl.: Engineer, Medic) és számold össze õket.
+
+3. A beolvasott vectorban rendezd családnév szerint az embereket az std::sort függvény segítségével!
+
+A következõ include-ok kellenek: algorithm, sstream, fstream
+
+A következõ függvények, fogalmak használata van fókuszban:
+lambda kifejezés, algorithm könyvtár, std::sort, std::count_if
