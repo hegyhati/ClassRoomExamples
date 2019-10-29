@@ -34,6 +34,5 @@ void SafeArray::deleteDynamicArrays() {
     std::cerr<<" - at "<<dynamic_arrays.front()<<"... ";
     delete dynamic_arrays.front();
   }
-  dynamic_arrays.clear();
 }
  
