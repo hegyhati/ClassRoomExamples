@@ -64,5 +64,9 @@ template<typename T0> Vector3<T0> operator*(const Matrix3<T0>& m0, Vector3<T0>& 
 template<class T> class RotationYaw : public Matrix3<T>
 {
 public:
-	//RotationYaw<T>(double yaw) : Matrix3<T>({})
+	RotationYaw<T>(T yaw) : Matrix3<T>({
+		cos(yaw),  sin(yaw), 0,
+		-sin(yaw), cos(yaw), 0,
+		0, 0, 1
+		}) {}
 };

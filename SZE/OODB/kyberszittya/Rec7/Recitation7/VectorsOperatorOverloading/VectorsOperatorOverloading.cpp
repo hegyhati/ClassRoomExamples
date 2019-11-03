@@ -36,6 +36,8 @@ int main()
 	std::cout << vec0 << '\n';
 	auto n = vec0 + vec1;
 	std::cout << n << '\n';
+	RotationYaw<double> yaw0(0.12566);
+	std::cout << yaw0 << '\n';
 }
 
 // Run program: Ctrl + F5 or Debug > Start Without Debugging menu
