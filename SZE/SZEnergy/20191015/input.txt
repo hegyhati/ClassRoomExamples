@@ -1,0 +1,4 @@
+new oktatas 1 10
+new mentoralas 3 50
+new nemtudom 20 78
+exit
