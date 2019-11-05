@@ -1,0 +1,4 @@
+LL template-et kiegesziteni par fuggvennyel
+A "fokounkban" a Schedule-ban hasznalni LL<Job>-ot, ha kell ott valami az LL-be, akkor beleirni.
+Megcsinalni a "vector" template-et ugyanazokkal a fuggvenyekkel, amiket az LL tud.
+
