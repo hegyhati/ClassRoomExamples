@@ -54,26 +54,26 @@ Plusz jegyekert feladatok:
 #include <map>
 #include <string>
 #include "MonthlyPhoneLog.hpp"
-#include "RealMonthlyPhoneLog"
+//#include "RealMonthlyPhoneLog.hpp"
 #include "Tariff.hpp"
 #include "SimpleTariff.hpp"
-#include "FixBaseTariff.hpp"
-#include "PrePaid.hpp"
+#include "FixBasedTariff.hpp"
+//#include "PrePaid.hpp"
 
 void myTest();
 
 void testEssential(){
   const MonthlyPhoneLog january(1234 /* s */, 56 /* SMS */);
   std::map< std::string, const Tariff*> options;
-  options["Simple, second based"] = new SimpleTariff(30 /* HUF/min */, 20 /* HUF/SMS */)); 
-  options["Simple, minute based"] = new SimpleTariff(25 /* HUF/min */, 20 /* HUF/SMS */, 60 /* s */));
-  options["FixBase-1000"] = new  FixBaseTariff(1000 /* HUF */, 20 /* HUF/min */, 30 /* HUF/min */, 20/* HUF/SMS */);   
-  options["FixBase-2000"] = new  FixBaseTariff(2000 /* HUF */, 15 /* HUF/min */, 25 /* HUF/min */, 15/* HUF/SMS */));
+  options["Simple, second based"] = new SimpleTariff(30 /* HUF/min */, 20 /* HUF/SMS */); 
+  options["Simple, minute based"] = new SimpleTariff(25 /* HUF/min */, 20 /* HUF/SMS */, 60 /* s */);
+  options["FixBase-1000"] = new  FixBasedTariff(1000 /* HUF */, 20 /* HUF/min */, 30 /* HUF/min */, 20/* HUF/SMS */);   
+  options["FixBase-2000"] = new  FixBasedTariff(2000 /* HUF */, 15 /* HUF/min */, 25 /* HUF/min */, 15/* HUF/SMS */);
   
   std::cout<<"January would cost me:"<<std::endl;
-  for (const auto option&: options) {
-    std::cout << " - " << options.second->calculateBill(january) << "HUF with " << options.first << std::endl;
-    delete options.second;
+  for (const auto& option: options) {
+    std::cout << " - " << option.second->calculateBill(january) << " HUF with " << option.first << std::endl;
+    delete option.second;
   }
 }
 
