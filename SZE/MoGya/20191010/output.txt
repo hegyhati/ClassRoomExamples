@@ -1,0 +1,114 @@
+Problem:    vizsga
+Rows:       17
+Columns:    33 (3 integer, 3 binary)
+Non-zeros:  81
+Status:     INTEGER OPTIMAL
+Objective:  eredm = 8 (MAXimum)
+
+   No.   Row name        Activity     Lower bound   Upper bound
+------ ------------    ------------- ------------- -------------
+     1 eredm                       8                             
+     2 Szabadido[1]                0            -4               
+     3 Szabadido[2]               -4            -4               
+     4 Szabadido[3]               -4            -4               
+     5 Szabadido[4]               -7            -7               
+     6 Szabadido[5]                0            -8               
+     7 Szabadido[6]               -3            -4               
+     8 Szabadido[7]               -4            -4               
+     9 Szabadido[8]               -4            -4               
+    10 Szabadido[9]               -4            -4               
+    11 Szabadido[10]
+                                   0            -4               
+    12 SzuksegesIdo[Prog]
+                                 -15           -15               
+    13 SzuksegesIdo[Kozgaz]
+                                   0           -15               
+    14 SzuksegesIdo[Angol]
+                                 -15           -15               
+    15 CsakSikeresVizsga[Prog]
+                                   0                          -0 
+    16 CsakSikeresVizsga[Kozgaz]
+                                   0                          -0 
+    17 CsakSikeresVizsga[Angol]
+                                   0                          -0 
+
+   No. Column name       Activity     Lower bound   Upper bound
+------ ------------    ------------- ------------- -------------
+     1 tanulas[1,Prog]
+                                   0             0               
+     2 tanulas[1,Kozgaz]
+                                   0             0               
+     3 tanulas[1,Angol]
+                                   0             0               
+     4 tanulas[2,Prog]
+                                   4             0               
+     5 tanulas[2,Kozgaz]
+                                   0             0               
+     6 tanulas[2,Angol]
+                                   0             0               
+     7 tanulas[3,Prog]
+                                   4             0               
+     8 tanulas[3,Kozgaz]
+                                   0             0               
+     9 tanulas[3,Angol]
+                                   0             0               
+    10 tanulas[4,Prog]
+                                   7             0               
+    11 tanulas[4,Kozgaz]
+                                   0             0               
+    12 tanulas[4,Angol]
+                                   0             0               
+    13 tanulas[5,Prog]
+                                   0             0               
+    14 tanulas[5,Kozgaz]
+                                   0             0               
+    15 tanulas[5,Angol]
+                                   0             0               
+    16 tanulas[6,Prog]
+                                   0             0               
+    17 tanulas[6,Kozgaz]
+                                   0             0               
+    18 tanulas[6,Angol]
+                                   3             0               
+    19 tanulas[7,Prog]
+                                   0             0               
+    20 tanulas[7,Kozgaz]
+                                   0             0               
+    21 tanulas[7,Angol]
+                                   4             0               
+    22 tanulas[8,Prog]
+                                   0             0               
+    23 tanulas[8,Kozgaz]
+                                   0             0               
+    24 tanulas[8,Angol]
+                                   4             0               
+    25 tanulas[9,Prog]
+                                   0             0               
+    26 tanulas[9,Kozgaz]
+                                   0             0               
+    27 tanulas[9,Angol]
+                                   4             0               
+    28 tanulas[10,Prog]
+                                   0             0               
+    29 tanulas[10,Kozgaz]
+                                   0             0               
+    30 tanulas[10,Angol]
+                                   0             0               
+    31 elmegyunk[Prog]
+                    *              1             0             1 
+    32 elmegyunk[Kozgaz]
+                    *              0             0             1 
+    33 elmegyunk[Angol]
+                    *              1             0             1 
+
+Integer feasibility conditions:
+
+KKT.PE: max.abs.err = 0.00e+00 on row 0
+        max.rel.err = 0.00e+00 on row 0
+        High quality
+
+KKT.PB: max.abs.err = 8.88e-16 on row 4
+        max.rel.err = 1.78e-16 on row 4
+        High quality
+
+End of output
