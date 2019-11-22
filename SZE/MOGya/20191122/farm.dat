@@ -1,0 +1,46 @@
+# Igaz-Hamis kérdések, 6/8 kell a beugró terljesítéséhez.
+#
+# 1. Minden MILP feladatnak van legalább egy optimális megoldása.
+# 2. A preprocessing a MILP megoldóban az, amikor memóriát foglal a paramétereknek, és kiszámolja az értéküket.
+# 3. LP modellben nem megengedett két folytonos változó összeszorzása, de MILP modellekben igen.
+# 4. Egy változónak legfeljebb két alsó indexe lehet.
+# 5. Halmazok leszükítésében (kapcsoson belül a kettőspont utáni rész) használhatók a paraméterek.
+# 6. Lehet a modellben olyan korlátozás, melyben a modell összes változója szerepel nem 0 együtthatóval.
+# 7. A szimplex algoritmus önmagában nem tud MILP feladatokat megoldani.
+# 8. Maximalizálási feladat esetében a B&B algoritmus korlátozó függvénye felső korlátod ad.  
+
+
+# Modellezési feladat:
+# Egy körökre osztott építkezős játékban célunk minél gyorsabb fejlődést elérni. 
+# A feladatban csak a "farmoló" egységekre koncentrálunk. 
+# Ezek minden nap végére megtermelnek valamennyi nyersanyagot.
+# Ezekből a nyersanyagokból vásárolhatunk újabb farmoló egységeket, másnap termelnek először.
+# Reggel annyi nyersanyagunk van, mint előző nap este, majd ebből valamennyit elhasználunk gyártásra, és estére érkezik meg a termelés.
+# A cél, hogy az utolsó napon reggel minél több nyersanyagunk legyen.
+#
+# A legegyszerűbb farmoló egység a paraszt, mely 10 nyersibe kerül, és naponta 2-t farmol. 
+# Az ekés földműves 30-ba kerül, és 10-et farmol, a kombájn pedig 100-ba kerül, és 30-at termel naponta.
+# Kezdetben 20 nyersanyagunk van, és 25 napot szeretnénk optimalizálni.
+#
+# Elégséges szint:  A modell adja meg az optimális megoldást, valamint a kimenetre irja ki minden napról külön-külön sorba, hogy mennyi volt a reggeli egyenleg, mit vásároltunk, mennyi lett utána az egyenleg, majd hogy mik, mennyit termeltek, és estére mennyi nyersanyag lett így.
+#
+# Megajánlott 3-as szint: Az ekés földműves nem másnapra, hanem hanem negyednapra készül el, a kombájn-nak pedig még két nappal több kell. 
+#
+# Javaslat: az elején érdemes kevesebb nappal tesztelni.
+
+
+set Farmers := Peasant Plower Harvester;
+
+param:
+                price   farm    ready :=
+    Peasant     10      2       1
+    Plower      30      10      3
+    Harvester   100     30      5
+;
+
+
+param initial := 20;
+param nDays := 25;
+
+
+
