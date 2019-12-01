@@ -1,0 +1,55 @@
+set Components := GPS HR ACC BT WIFI;
+set Groups :=  G1	G2	G3	G4	G5	G6	G7	G8	G9	G10	G11	G12	G13	G14	G15	G16;
+
+param price :=
+    GPS 	10
+    HR	    20
+    ACC 	5
+    BT	    25
+    WIFI	30
+    ;
+
+# Az olcsobb oraba peldaul nem fer bele egyutt a WIFI meg a BT, a dragabba igen.
+
+param needs (tr) :
+            G1	G2	G3	G4	G5	G6	G7	G8	G9	G10	G11	G12	G13	G14	G15	G16 :=
+    GPS	    1	1	1	0	1	1	0	0	1	1	1	0	0	1	0	1	
+    HR	    1	1	1	0	1	1	0	1	1	1	1	1	0	1	0	0	
+    ACC	    0	1	1	1	1	1	1	0	1	0	0	1	1	1	1	1	
+    BT	    1	1	1	0	0	1	1	0	1	0	1	1	1	1	1	1	
+    WIFI	1	1	1	1	1	1	0	1	0	0	1	1	1	1	1	1	
+    ;
+
+# A masodik csoport csak akkro veszi meg az orat, ha minden benne van, a 7.-nek eleg a BT es az ACC
+
+
+param : 
+        maxpay  population := 
+    G1	167     1234
+    G2	102     2345
+    G3	430     3456
+    G4	145     4576
+    G5	434     5678
+    G6	225     7689
+    G7	342     4311
+    G8	126     4563
+    G9	414     2347
+    G10	333     8426
+    G11	318     3585
+    G12	370     2478
+    G13	388     2137
+    G14	363     2458
+    G15	272     4568
+    G16	69      2348
+    ; 
+
+# A G1-es csoport legfeljebb az olcsobbik orat fogja megvenni
+
+
+set Watches := cheap expensive; 
+
+param :
+                sellprice   maxcomponentprice :=
+    cheap       150         50
+    expensive   250         80
+    ;
