@@ -1,0 +1,28 @@
+set Friends := Athos Porthos Aramis DArtagnan;
+
+param budget :=
+  Athos     100
+  Porthos   30
+  Aramis    80
+  DArtagnan 20
+  ;
+
+
+set Items := Hat Wine Sword Horse;
+
+param price :=
+  Hat   10
+  Wine  20
+  Sword 40
+  Horse 90
+  ;
+
+param likes :
+	            Hat   Wine    Sword     Horse := 
+  Athos       1     1       1         0
+  Porthos     0     1       1         1
+  Aramis      1     1       0         0
+  DArtagnan   1     0       1         1
+  ;
+
+

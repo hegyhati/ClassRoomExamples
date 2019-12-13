@@ -1,0 +1,58 @@
+# Ebben a feladatban a karácsonyi angyalkának / jótündérnek / akárminek kell segítséget nyújtanunk. 
+# Adott egy baráti kör, amiben szokás szerint mindenki bedobja a nevét egy cetlin egy kalapba, majd megkeverés után húz valakit, és annak vesz ajándékot karácsonyra.
+# A baráti társaság előzetesen megeggyezett potenciális ajándékok egy lehetséges listájáról, ebből választhat mindenki ajándékot a kihúzottjának.
+# Minden ajándéknak ismert az ára, valamint tudjuk, hogy ki melyik ajándékokat tartja jónak. 
+# Mindenki csak egy ajándékot vesz, és tudjuk, hogy kinek mekkora a költségkerete, amit szívesen szánna az ajándékozásra. 
+# A mi feladatunk, hogy megbűvöljük a cetliket a kalapban úgy (=eldöntsük, ki kit húz), hogy a teljes költekezés minimális legyen.
+# Természetesen senki sem boldog, ha saját magát húzza ki, vagy ha olyan ajándékot kap, ami szerinte nem jó.
+# Olyat sem ajándékozna senki jó szívvel, ami szerinte rossz, még akkor sem, ha a kih]zott barát örülne neki.
+
+# Megajánlott jegy: 
+# Ha valaki olyat húz, akinek nem tud semmit venni a megadott feltételek mellett, akkor az is lehetséges, hogy minden erre szánt pénzét odaadja az illetőnek. Aki boldog is lesz, ha ez legalább annyi, mint a fele annak, amit ő szánt volna a vásárlásra.
+
+
+# Az elvárt kimenet az alábbi adatokkal történő futtatáskor:
+# Total expenses: 78
+# Luffy (budget: 23) gifts O (7) to Jinbei
+# Zoro (budget: 42) gifts S (2) to Sanji
+# Nami (budget: 10) gifts O (7) to Luffy
+# Usopp (budget: 75) gifts U (2) to Robin
+# Sanji (budget: 98) gifts S (2) to Zoro
+# Chopper (budget: 77) gifts Y (29) to Brook
+# Robin (budget: 84) gifts U (2) to Usopp
+# Brook (budget: 100) gifts F (25) to Nami
+# Jinbei (budget: 48) gifts S (2) to Chopper
+
+
+
+set Friends := Luffy Zoro Nami Usopp Sanji Chopper Robin Brook Jinbei;
+
+param budget :=
+  Luffy 23  Zoro  42  Nami    10  
+  Usopp 75  Sanji 98  Chopper 77  
+  Robin 84  Brook 100 Jinbei  48
+  ;
+
+
+set Items := Q W E R T Y U I O P A S D F G H J K L Z X C V B N M;
+
+param price :=
+  Q	10  W	31  E	76  R	57  T	48  Y	29  U	 2  I	71  O	7   
+  P	30  A	32  S	2   D	8   F	25  G	33  H	88  J	28  K	78  
+  L	71  Z	9   X	5   C	64  V	68  B	92  N	96  M	20
+  ;
+
+param likes :
+	        Q	W	E	R	T	Y	U	I	O	P	A	S	D	F	G	H	J	K	L	Z	X	C	V	B	N	M := 
+  Luffy	  1	0	0	0	0	0 0 0	1	0	0 0 0 1	0	1	0	0 0 0	0	1	0	0 1	0
+  Zoro	  0	0	0	0	0 1	0	0	0 0 0	1	0	0	0	0	0	0	0 0 1	0	0	0 0 0
+  Nami	  0	0	0 0 0	1	0	0 1	0	0 0 0 1	0	0	0	0	0 0 0 1	0	0 0 1
+  Usopp	  0	1	0	0	0 0 1	0	0	0 1	0	0	0	0	1	0	0 1	0	0	0	0 0 0	1
+  Sanji	  0	0	0 0 0	0	0	0 0 1	0	1	0	0	0	0	1	0	0	0 0 0 1	0	0	1
+  Chopper	0	0	0	0	0 1	0	0 0 0	0	1	0	0	0 0 0	0	1	0	0 0 0 1	0	0
+  Robin	  0 0 0	0	0 0 1	0	0	0	0	0 1	0	0 0 0	0	1	0	0 0 0 1	0	0
+  Brook	  0	0 0 0	0 1	0	0	0 0 1	0	0 1	0	0 0 0	0 1	0	0 0 0	0	0
+  Jinbei	0	0 0 1	0	0	0 0 1	0	0	1	0	0	0	0 0 0	1	0	0	1	0	0	1	0
+  ;
+
+
