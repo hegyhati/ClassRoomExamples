@@ -26,3 +26,8 @@
 *.exe
 *.out
 *.app
+
+
+# Java files
+*.class
+*.jar
