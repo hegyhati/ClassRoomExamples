@@ -1,0 +1,9 @@
+Halfling        3       2
+Boar            15      3
+Iron_Golem      30      4
+Steel_Golem     35      5
+Roc             40      6
+Mage            30      8
+Archmage        35      8
+Giant           150     25
+Titan           300     25
