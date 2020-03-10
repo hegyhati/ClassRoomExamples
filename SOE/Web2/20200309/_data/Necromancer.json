@@ -1,0 +1,14 @@
+{
+    "units"  : [
+        "Skeleton",
+        "Zombie",
+        "Mutant zombie",
+        "Mummy",
+        "Royal mummy",
+        "Vampire",
+        "Vampire lord",
+        "Lich",
+        "Power lich",
+        "Bone dragon",
+    ]
+}

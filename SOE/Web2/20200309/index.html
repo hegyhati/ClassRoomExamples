@@ -1,0 +1,20 @@
+---
+  layout: basic
+---
+
+<img src="assets/titlepageheader.jpeg" class="img-fluid  mx-auto d-block">
+<hr />
+{{site.description}}
+
+<h1>Castles</h1>
+<div class="list-group">
+{% for castle in site.data.castles %}
+  <a  type="button" 
+      class="list-group-item  list-group-item-action {% if castle.team == "evil" %} list-group-item-dark {% endif %}"
+      href="Castles/{{castle.name}}.html">
+    {{castle.name}}
+  </a>
+{% endfor %}
+</div>
+
+

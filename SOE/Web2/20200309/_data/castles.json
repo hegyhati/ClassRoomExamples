@@ -1,0 +1,27 @@
+[
+    {
+        "name" : "Knight",
+        "team" : "good",
+    }, 
+    {
+        "name" : "Sorceress",
+        "team" : "good",
+    }, 
+    {
+        "name" : "Wizard",
+        "team" : "good",
+    }, 
+
+    {
+        "name" : "Warlock",
+        "team" : "evil",
+    }, 
+    {
+        "name" : "Barbarian",
+        "team" : "evil",
+    }, 
+    {
+        "name" : "Necromancer",
+        "team" : "evil",
+    }, 
+]

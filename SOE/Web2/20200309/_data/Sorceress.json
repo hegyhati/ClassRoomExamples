@@ -1,0 +1,13 @@
+{
+    "units"  : [
+        "Sprite",
+        "Dwarf",
+        "Battle Dwarf",
+        "Elf",
+        "Grand elf",
+        "Druid",
+        "Greater druid",
+        "Unicord",
+        "Phoenix"
+    ]
+}

@@ -1,0 +1,13 @@
+{
+    "units"  : [
+        "Halfling",
+        "Boar",
+        "Iron Golem",
+        "Steel Golem",
+        "Roc",
+        "Mage",
+        "Archmage",
+        "Giant",
+        "Titan"
+    ]
+}

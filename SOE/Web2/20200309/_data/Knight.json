@@ -1,0 +1,15 @@
+{
+    "units"  : [
+        "Peasant",
+        "Archer",
+        "Ranger",
+        "Pikeman",
+        "Veteran pikeman",
+        "Swordsman",
+        "Master swordsman",
+        "Cavalry",
+        "Champion",
+        "Paladin",
+        "Crusader"
+    ]
+}
