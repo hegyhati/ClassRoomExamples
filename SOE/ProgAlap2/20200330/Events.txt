@@ -1,0 +1,88 @@
+interface TimedEvent {
+    public DateTime getStartTime();
+    public String getShortTitle();
+
+}
+
+interface FullyTimedEvent extends TimedEvent {
+    public DateTime getEndTime();
+    public Time getDuration();
+}
+
+interface Locationsomething {
+    public GPS getLocation();
+}
+
+class Training implements FullyTimedEvent, Locationsomething{
+    private DateTime starttime;
+    private Route route;
+    private double plannedaveragespeed;
+    private String type;
+    public getLocation() {return route.getStartLocation();}
+
+}
+
+
+
+class ConferenceCall implements FullyTimedEvent {
+    private DateTime starttime;
+    private Time duration;
+    private String topic;
+    private Person admin;
+    private ArrayList<Person> participants;
+    private String url;
+
+    // Konstruktor
+    public DateTime getStartTime();{return starttime;}
+    public DateTime getEndTime();{return starttime+duration;}
+    public Time getDuration();{return duration;}
+    public Person getOrganizer();
+    public void addParticipant(Person p);
+    public int getParticipantCount();
+    public String getURL();
+    public String getTopic();
+    public getShortTitle() {return "Meeting: "+topic;}
+}
+
+class HotelBooking implements TimedEvent, Locationsomething {
+    private DateTime starttime;
+    private DateTime endtime;
+    private DateTime canceluntil;
+    private POI hotel;
+    private Person booker;
+    private ArrayList<Person> company;
+    private Payment p;
+    private String bookingidentifier;
+
+    // Konstruktor
+    public DateTime getStartTime();{return starttime;}
+    public DateTime getEndTime();{return endtime;}
+    public Time getDuration();{return endtime-starttime;}
+    public Person getREsponsibleContact();
+    public int getkfjdklhCount();
+    public POI getPOI();
+    public String getBookingID();
+    public getShortTitle() {return "Booking at: "+hotel;}
+    public getLocation(){return hotel.getLocation()}
+}
+
+
+class FavoriteLocation implements Locationsomething{
+    GPS location;
+    String note;
+    @Override
+    public GPS getLocation() {return location;}
+
+}
+
+ArrayList<TimedEvent> list =new ArrayList<TimedEvent>();
+list.add(new HotelBooking(....));
+list.add(new HotelBooking(....));
+list.add(new ConferenceCall(....));
+...
+
+void printAgenda(ArraList<? extends TimedEvent> eventlist){
+    for(TimedEvent e: eventlist){
+        sysout e.getStartTime()+" - " + e.getEndTime() + " : " + e.getShortTitle();
+    }
+}

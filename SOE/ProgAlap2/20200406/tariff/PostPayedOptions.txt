@@ -1,0 +1,3 @@
+PostPayedOption1     1500    20  10
+PostPayedOption2     2000    15  10
+PostPayedOption3     2500    10  5
