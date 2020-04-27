@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<form xmlns="http://www.intellij.com/uidesigner/form/" version="1" bind-to-class="MMGUI">
+  <grid id="27dc6" binding="mainpanel" layout-manager="GridLayoutManager" row-count="3" column-count="1" same-size-horizontally="false" same-size-vertically="false" hgap="-1" vgap="-1">
+    <margin top="0" left="0" bottom="0" right="0"/>
+    <constraints>
+      <xy x="20" y="20" width="794" height="400"/>
+    </constraints>
+    <properties/>
+    <border type="none"/>
+    <children>
+      <component id="d0b03" class="javax.swing.JButton" binding="button1" default-binding="true">
+        <constraints>
+          <grid row="1" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
+        </constraints>
+        <properties>
+          <text value="Button"/>
+        </properties>
+      </component>
+      <grid id="484f7" layout-manager="FlowLayout" hgap="5" vgap="5" flow-align="1">
+        <constraints>
+          <grid row="0" column="0" row-span="1" col-span="1" vsize-policy="3" hsize-policy="3" anchor="0" fill="3" indent="0" use-parent-layout="false"/>
+        </constraints>
+        <properties/>
+        <border type="none"/>
+        <children>
+          <component id="dae8f" class="javax.swing.JLabel">
+            <constraints/>
+            <properties>
+              <text value="Your guess"/>
+            </properties>
+          </component>
+          <component id="fcd38" class="javax.swing.JComboBox" binding="comboBox1" default-binding="true">
+            <constraints/>
+            <properties/>
+          </component>
+          <component id="3b6a5" class="javax.swing.JComboBox" binding="comboBox2" default-binding="true">
+            <constraints/>
+            <properties/>
+          </component>
+          <component id="75907" class="javax.swing.JComboBox" binding="comboBox3" default-binding="true">
+            <constraints/>
+            <properties/>
+          </component>
+          <component id="3a237" class="javax.swing.JComboBox" binding="comboBox4" default-binding="true">
+            <constraints/>
+            <properties/>
+          </component>
+        </children>
+      </grid>
+      <scrollpane id="c127f">
+        <constraints>
+          <grid row="2" column="0" row-span="1" col-span="1" vsize-policy="7" hsize-policy="7" anchor="0" fill="3" indent="0" use-parent-layout="false"/>
+        </constraints>
+        <properties/>
+        <border type="none"/>
+        <children>
+          <component id="2e656" class="javax.swing.JList" binding="list1" default-binding="true">
+            <constraints/>
+            <properties/>
+          </component>
+        </children>
+      </scrollpane>
+    </children>
+  </grid>
+</form>
