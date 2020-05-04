@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<form xmlns="http://www.intellij.com/uidesigner/form/" version="1" bind-to-class="MainWindow">
+  <grid id="27dc6" binding="mainPanel" layout-manager="BorderLayout" hgap="0" vgap="0">
+    <constraints>
+      <xy x="20" y="20" width="500" height="400"/>
+    </constraints>
+    <properties/>
+    <border type="none"/>
+    <children>
+      <component id="b9582" class="javax.swing.JButton" binding="UPButton" default-binding="true">
+        <constraints border-constraint="North"/>
+        <properties>
+          <text value="UP"/>
+        </properties>
+      </component>
+      <component id="ff6a5" class="javax.swing.JButton" binding="DOWNButton" default-binding="true">
+        <constraints border-constraint="South"/>
+        <properties>
+          <text value="DOWN"/>
+        </properties>
+      </component>
+      <component id="f6fa7" class="javax.swing.JButton" binding="RIGHTButton" default-binding="true">
+        <constraints border-constraint="East"/>
+        <properties>
+          <text value="RIGHT"/>
+        </properties>
+      </component>
+      <component id="c5f6a" class="javax.swing.JButton" binding="LEFTButton" default-binding="true">
+        <constraints border-constraint="West"/>
+        <properties>
+          <text value="LEFT"/>
+        </properties>
+      </component>
+      <grid id="832b" binding="gamePanel" custom-create="true" layout-manager="GridLayoutManager" row-count="1" column-count="1" same-size-horizontally="false" same-size-vertically="false" hgap="-1" vgap="-1">
+        <margin top="0" left="0" bottom="0" right="0"/>
+        <constraints border-constraint="Center"/>
+        <properties/>
+        <border type="none" title=""/>
+        <children/>
+      </grid>
+    </children>
+  </grid>
+</form>
