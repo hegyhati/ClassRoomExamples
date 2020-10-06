@@ -5,8 +5,9 @@ using namespace std;
 
 int main(){
     Warrior w1, w2;
-
-    cin >> w1.name >> w1.hp >> w1.dmg >> w2.name >> w2.hp >> w2.dmg;
+    
+    inputFromTerminal(w1);
+    inputFromTerminal(w2);
 
     while ( isAlive(w1) && isAlive(w2))
     {

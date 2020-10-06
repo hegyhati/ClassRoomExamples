@@ -9,6 +9,7 @@ struct Warrior {
     int dmg;
 };
 
+void inputFromTerminal(Warrior& w);
 bool isAlive(const Warrior& w);
 std::string toString(const Warrior& w);
 void attack(const Warrior& attacker, Warrior& defender);

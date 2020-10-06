@@ -1,6 +1,10 @@
 #include "Warrior.hpp"
 #include <iostream>
 
+void inputFromTerminal(Warrior& w){
+    std::cin >> w.name >> w.hp >> w.dmg;
+}
+
 bool isAlive(const Warrior& w){
     return w.hp > 0;
 }
