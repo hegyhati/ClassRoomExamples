@@ -1,0 +1,2 @@
+Batman 1000 56
+Superman 700 95
