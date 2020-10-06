@@ -6,7 +6,7 @@ bool isAlive(const Warrior& w){
 }
 
 std::string toString(const Warrior& w){
-    return w.name + "(" + toString(w.hp) + "), DMG="+ toString(w.dmg);
+    return w.name + "(" + std::to_string(w.hp) + "), DMG="+ std::to_string(w.dmg);
 }
 
 void attack(const Warrior& attacker, Warrior& defender){

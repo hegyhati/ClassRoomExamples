@@ -3,8 +3,6 @@
 
 #include <string>
 
-#include "itoa.hpp"
-
 struct Warrior {
     std::string name;
     int hp;
