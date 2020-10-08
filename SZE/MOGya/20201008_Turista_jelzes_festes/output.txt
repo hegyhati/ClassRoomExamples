@@ -3,952 +3,952 @@ Rows:       141
 Columns:    324 (288 integer, 288 binary)
 Non-zeros:  693
 Status:     INTEGER NON-OPTIMAL
-Objective:  Teljesenmegvan = 106.952 (MAXimum)
+Objective:  CompleteProgress = 110.336 (MAXimum)
 
    No.   Row name        Activity     Lower bound   Upper bound
 ------ ------------    ------------- ------------- -------------
-     1 EgySzerreEgyDolgotCsinal[Andi,1]
+     1 OneTaskPerPerson[Andi,1]
                                    1                           1 
-     2 EgySzerreEgyDolgotCsinal[Andi,2]
+     2 OneTaskPerPerson[Andi,2]
                                    1                           1 
-     3 EgySzerreEgyDolgotCsinal[Andi,3]
+     3 OneTaskPerPerson[Andi,3]
                                    1                           1 
-     4 EgySzerreEgyDolgotCsinal[Andi,4]
+     4 OneTaskPerPerson[Andi,4]
                                    1                           1 
-     5 EgySzerreEgyDolgotCsinal[Andi,5]
+     5 OneTaskPerPerson[Andi,5]
                                    1                           1 
-     6 EgySzerreEgyDolgotCsinal[Andi,6]
+     6 OneTaskPerPerson[Andi,6]
                                    1                           1 
-     7 EgySzerreEgyDolgotCsinal[Andi,7]
+     7 OneTaskPerPerson[Andi,7]
                                    1                           1 
-     8 EgySzerreEgyDolgotCsinal[Andi,8]
+     8 OneTaskPerPerson[Andi,8]
                                    1                           1 
-     9 EgySzerreEgyDolgotCsinal[Bela,1]
+     9 OneTaskPerPerson[Bela,1]
                                    1                           1 
-    10 EgySzerreEgyDolgotCsinal[Bela,2]
+    10 OneTaskPerPerson[Bela,2]
                                    1                           1 
-    11 EgySzerreEgyDolgotCsinal[Bela,3]
+    11 OneTaskPerPerson[Bela,3]
                                    1                           1 
-    12 EgySzerreEgyDolgotCsinal[Bela,4]
+    12 OneTaskPerPerson[Bela,4]
                                    1                           1 
-    13 EgySzerreEgyDolgotCsinal[Bela,5]
+    13 OneTaskPerPerson[Bela,5]
                                    1                           1 
-    14 EgySzerreEgyDolgotCsinal[Bela,6]
+    14 OneTaskPerPerson[Bela,6]
                                    1                           1 
-    15 EgySzerreEgyDolgotCsinal[Bela,7]
+    15 OneTaskPerPerson[Bela,7]
                                    1                           1 
-    16 EgySzerreEgyDolgotCsinal[Bela,8]
+    16 OneTaskPerPerson[Bela,8]
                                    1                           1 
-    17 EgySzerreEgyDolgotCsinal[Cili,1]
+    17 OneTaskPerPerson[Cili,1]
                                    1                           1 
-    18 EgySzerreEgyDolgotCsinal[Cili,2]
+    18 OneTaskPerPerson[Cili,2]
                                    1                           1 
-    19 EgySzerreEgyDolgotCsinal[Cili,3]
+    19 OneTaskPerPerson[Cili,3]
                                    1                           1 
-    20 EgySzerreEgyDolgotCsinal[Cili,4]
+    20 OneTaskPerPerson[Cili,4]
                                    1                           1 
-    21 EgySzerreEgyDolgotCsinal[Cili,5]
+    21 OneTaskPerPerson[Cili,5]
                                    1                           1 
-    22 EgySzerreEgyDolgotCsinal[Cili,6]
+    22 OneTaskPerPerson[Cili,6]
                                    1                           1 
-    23 EgySzerreEgyDolgotCsinal[Cili,7]
+    23 OneTaskPerPerson[Cili,7]
                                    1                           1 
-    24 EgySzerreEgyDolgotCsinal[Cili,8]
+    24 OneTaskPerPerson[Cili,8]
                                    1                           1 
-    25 EgySzerreEgyDolgotCsinal[Dani,1]
+    25 OneTaskPerPerson[Dani,1]
                                    1                           1 
-    26 EgySzerreEgyDolgotCsinal[Dani,2]
+    26 OneTaskPerPerson[Dani,2]
                                    1                           1 
-    27 EgySzerreEgyDolgotCsinal[Dani,3]
+    27 OneTaskPerPerson[Dani,3]
                                    1                           1 
-    28 EgySzerreEgyDolgotCsinal[Dani,4]
+    28 OneTaskPerPerson[Dani,4]
                                    1                           1 
-    29 EgySzerreEgyDolgotCsinal[Dani,5]
+    29 OneTaskPerPerson[Dani,5]
                                    1                           1 
-    30 EgySzerreEgyDolgotCsinal[Dani,6]
+    30 OneTaskPerPerson[Dani,6]
                                    1                           1 
-    31 EgySzerreEgyDolgotCsinal[Dani,7]
+    31 OneTaskPerPerson[Dani,7]
                                    1                           1 
-    32 EgySzerreEgyDolgotCsinal[Dani,8]
+    32 OneTaskPerPerson[Dani,8]
                                    1                           1 
-    33 EgySzerreEgyDolgotCsinal[Elek,1]
+    33 OneTaskPerPerson[Elek,1]
                                    1                           1 
-    34 EgySzerreEgyDolgotCsinal[Elek,2]
+    34 OneTaskPerPerson[Elek,2]
                                    1                           1 
-    35 EgySzerreEgyDolgotCsinal[Elek,3]
+    35 OneTaskPerPerson[Elek,3]
                                    1                           1 
-    36 EgySzerreEgyDolgotCsinal[Elek,4]
+    36 OneTaskPerPerson[Elek,4]
                                    1                           1 
-    37 EgySzerreEgyDolgotCsinal[Elek,5]
+    37 OneTaskPerPerson[Elek,5]
                                    1                           1 
-    38 EgySzerreEgyDolgotCsinal[Elek,6]
+    38 OneTaskPerPerson[Elek,6]
                                    1                           1 
-    39 EgySzerreEgyDolgotCsinal[Elek,7]
+    39 OneTaskPerPerson[Elek,7]
                                    1                           1 
-    40 EgySzerreEgyDolgotCsinal[Elek,8]
+    40 OneTaskPerPerson[Elek,8]
                                    1                           1 
-    41 EgySzerreEgyDolgotCsinal[Feri,1]
+    41 OneTaskPerPerson[Feri,1]
                                    1                           1 
-    42 EgySzerreEgyDolgotCsinal[Feri,2]
+    42 OneTaskPerPerson[Feri,2]
                                    1                           1 
-    43 EgySzerreEgyDolgotCsinal[Feri,3]
+    43 OneTaskPerPerson[Feri,3]
                                    1                           1 
-    44 EgySzerreEgyDolgotCsinal[Feri,4]
+    44 OneTaskPerPerson[Feri,4]
                                    1                           1 
-    45 EgySzerreEgyDolgotCsinal[Feri,5]
+    45 OneTaskPerPerson[Feri,5]
                                    1                           1 
-    46 EgySzerreEgyDolgotCsinal[Feri,6]
+    46 OneTaskPerPerson[Feri,6]
                                    1                           1 
-    47 EgySzerreEgyDolgotCsinal[Feri,7]
+    47 OneTaskPerPerson[Feri,7]
                                    1                           1 
-    48 EgySzerreEgyDolgotCsinal[Feri,8]
+    48 OneTaskPerPerson[Feri,8]
                                    1                           1 
-    49 EgySzerreEgyDolgotCsinal[Gabi,1]
+    49 OneTaskPerPerson[Gabi,1]
                                    1                           1 
-    50 EgySzerreEgyDolgotCsinal[Gabi,2]
+    50 OneTaskPerPerson[Gabi,2]
                                    1                           1 
-    51 EgySzerreEgyDolgotCsinal[Gabi,3]
+    51 OneTaskPerPerson[Gabi,3]
                                    1                           1 
-    52 EgySzerreEgyDolgotCsinal[Gabi,4]
+    52 OneTaskPerPerson[Gabi,4]
                                    1                           1 
-    53 EgySzerreEgyDolgotCsinal[Gabi,5]
+    53 OneTaskPerPerson[Gabi,5]
                                    1                           1 
-    54 EgySzerreEgyDolgotCsinal[Gabi,6]
+    54 OneTaskPerPerson[Gabi,6]
                                    1                           1 
-    55 EgySzerreEgyDolgotCsinal[Gabi,7]
+    55 OneTaskPerPerson[Gabi,7]
                                    1                           1 
-    56 EgySzerreEgyDolgotCsinal[Gabi,8]
+    56 OneTaskPerPerson[Gabi,8]
                                    1                           1 
-    57 EgySzerreEgyDolgotCsinal[Heni,1]
+    57 OneTaskPerPerson[Heni,1]
                                    1                           1 
-    58 EgySzerreEgyDolgotCsinal[Heni,2]
+    58 OneTaskPerPerson[Heni,2]
                                    1                           1 
-    59 EgySzerreEgyDolgotCsinal[Heni,3]
+    59 OneTaskPerPerson[Heni,3]
                                    1                           1 
-    60 EgySzerreEgyDolgotCsinal[Heni,4]
+    60 OneTaskPerPerson[Heni,4]
                                    1                           1 
-    61 EgySzerreEgyDolgotCsinal[Heni,5]
+    61 OneTaskPerPerson[Heni,5]
                                    1                           1 
-    62 EgySzerreEgyDolgotCsinal[Heni,6]
+    62 OneTaskPerPerson[Heni,6]
                                    1                           1 
-    63 EgySzerreEgyDolgotCsinal[Heni,7]
+    63 OneTaskPerPerson[Heni,7]
                                    1                           1 
-    64 EgySzerreEgyDolgotCsinal[Heni,8]
+    64 OneTaskPerPerson[Heni,8]
                                    1                           1 
-    65 EgySzerreEgyDolgotCsinal[Ili,1]
+    65 OneTaskPerPerson[Ili,1]
                                    1                           1 
-    66 EgySzerreEgyDolgotCsinal[Ili,2]
+    66 OneTaskPerPerson[Ili,2]
                                    1                           1 
-    67 EgySzerreEgyDolgotCsinal[Ili,3]
+    67 OneTaskPerPerson[Ili,3]
                                    1                           1 
-    68 EgySzerreEgyDolgotCsinal[Ili,4]
+    68 OneTaskPerPerson[Ili,4]
                                    1                           1 
-    69 EgySzerreEgyDolgotCsinal[Ili,5]
+    69 OneTaskPerPerson[Ili,5]
                                    1                           1 
-    70 EgySzerreEgyDolgotCsinal[Ili,6]
+    70 OneTaskPerPerson[Ili,6]
                                    1                           1 
-    71 EgySzerreEgyDolgotCsinal[Ili,7]
+    71 OneTaskPerPerson[Ili,7]
                                    1                           1 
-    72 EgySzerreEgyDolgotCsinal[Ili,8]
+    72 OneTaskPerPerson[Ili,8]
                                    1                           1 
-    73 ElejenNullarolIndulMind[hantas]
+    73 ProgressIsZeroAtStart[hantas]
                                    0            -0             = 
-    74 ElejenNullarolIndulMind[alapfestes]
+    74 ProgressIsZeroAtStart[alapfestes]
                                    0            -0             = 
-    75 ElejenNullarolIndulMind[jelzesfestes]
+    75 ProgressIsZeroAtStart[jelzesfestes]
                                    0            -0             = 
-    76 ElejenNullarolIndulMind[lakkozas]
+    76 ProgressIsZeroAtStart[lakkozas]
                                    0            -0             = 
-    77 MeddigJutottEl[1,hantas]
+    77 Progress[1,hantas]
+                              -0.088                          -0 
+    78 Progress[1,alapfestes]
                                    0                          -0 
-    78 MeddigJutottEl[1,alapfestes]
-                              -2.104                          -0 
-    79 MeddigJutottEl[1,jelzesfestes]
+    79 Progress[1,jelzesfestes]
+                              -0.328                          -0 
+    80 Progress[1,lakkozas]
                                    0                          -0 
-    80 MeddigJutottEl[1,lakkozas]
-                              -2.472                          -0 
-    81 MeddigJutottEl[2,hantas]
+    81 Progress[2,hantas]
                                    0                          -0 
-    82 MeddigJutottEl[2,alapfestes]
+    82 Progress[2,alapfestes]
                                    0                          -0 
-    83 MeddigJutottEl[2,jelzesfestes]
+    83 Progress[2,jelzesfestes]
                                    0                          -0 
-    84 MeddigJutottEl[2,lakkozas]
+    84 Progress[2,lakkozas]
+                              -0.152                          -0 
+    85 Progress[3,hantas]
+                               -0.88                          -0 
+    86 Progress[3,alapfestes]
                                    0                          -0 
-    85 MeddigJutottEl[3,hantas]
-                              -2.448                          -0 
-    86 MeddigJutottEl[3,alapfestes]
+    87 Progress[3,jelzesfestes]
                                    0                          -0 
-    87 MeddigJutottEl[3,jelzesfestes]
+    88 Progress[3,lakkozas]
                                    0                          -0 
-    88 MeddigJutottEl[3,lakkozas]
-                              -0.176                          -0 
-    89 MeddigJutottEl[4,hantas]
-                               -0.52                          -0 
-    90 MeddigJutottEl[4,alapfestes]
+    89 Progress[4,hantas]
                                    0                          -0 
-    91 MeddigJutottEl[4,jelzesfestes]
+    90 Progress[4,alapfestes]
                                    0                          -0 
-    92 MeddigJutottEl[4,lakkozas]
+    91 Progress[4,jelzesfestes]
                                    0                          -0 
-    93 MeddigJutottEl[5,hantas]
+    92 Progress[4,lakkozas]
                                    0                          -0 
-    94 MeddigJutottEl[5,alapfestes]
+    93 Progress[5,hantas]
                                    0                          -0 
-    95 MeddigJutottEl[5,jelzesfestes]
+    94 Progress[5,alapfestes]
                                    0                          -0 
-    96 MeddigJutottEl[5,lakkozas]
+    95 Progress[5,jelzesfestes]
                                    0                          -0 
-    97 MeddigJutottEl[6,hantas]
+    96 Progress[5,lakkozas]
                                    0                          -0 
-    98 MeddigJutottEl[6,alapfestes]
+    97 Progress[6,hantas]
                                    0                          -0 
-    99 MeddigJutottEl[6,jelzesfestes]
+    98 Progress[6,alapfestes]
                                    0                          -0 
-   100 MeddigJutottEl[6,lakkozas]
+    99 Progress[6,jelzesfestes]
                                    0                          -0 
-   101 MeddigJutottEl[7,hantas]
+   100 Progress[6,lakkozas]
                                    0                          -0 
-   102 MeddigJutottEl[7,alapfestes]
+   101 Progress[7,hantas]
                                    0                          -0 
-   103 MeddigJutottEl[7,jelzesfestes]
+   102 Progress[7,alapfestes]
                                    0                          -0 
-   104 MeddigJutottEl[7,lakkozas]
+   103 Progress[7,jelzesfestes]
                                    0                          -0 
-   105 MeddigJutottEl[8,hantas]
+   104 Progress[7,lakkozas]
+                                   0                          -0 
+   105 Progress[8,hantas]
                                -0.24                          -0 
-   106 MeddigJutottEl[8,alapfestes]
+   106 Progress[8,alapfestes]
                                    0                          -0 
-   107 MeddigJutottEl[8,jelzesfestes]
+   107 Progress[8,jelzesfestes]
                                    0                          -0 
-   108 MeddigJutottEl[8,lakkozas]
+   108 Progress[8,lakkozas]
                                    0                          -0 
-   109 NeElozzekBeEgymast[1,hantas]
+   109 TaskPrecedence[1,hantas]
                                    0                          -0 
-   110 NeElozzekBeEgymast[1,alapfestes]
-                              -2.424                          -0 
-   111 NeElozzekBeEgymast[1,jelzesfestes]
-                              -1.992                          -0 
-   112 NeElozzekBeEgymast[1,lakkozas]
-                              -8.568                          -0 
-   113 NeElozzekBeEgymast[2,hantas]
+   110 TaskPrecedence[1,alapfestes]
+                              -0.232                          -0 
+   111 TaskPrecedence[1,jelzesfestes]
+                              -4.424                          -0 
+   112 TaskPrecedence[1,lakkozas]
+                              -5.768                          -0 
+   113 TaskPrecedence[2,hantas]
                                    0                          -0 
-   114 NeElozzekBeEgymast[2,alapfestes]
-                              -2.128                          -0 
-   115 NeElozzekBeEgymast[2,jelzesfestes]
-                              -1.872                          -0 
-   116 NeElozzekBeEgymast[2,lakkozas]
+   114 TaskPrecedence[2,alapfestes]
                                    0                          -0 
-   117 NeElozzekBeEgymast[3,hantas]
+   115 TaskPrecedence[2,jelzesfestes]
+                               -3.16                          -0 
+   116 TaskPrecedence[2,lakkozas]
+                              -1.152                          -0 
+   117 TaskPrecedence[3,hantas]
                                    0                          -0 
-   118 NeElozzekBeEgymast[3,alapfestes]
+   118 TaskPrecedence[3,alapfestes]
+                              -5.272                          -0 
+   119 TaskPrecedence[3,jelzesfestes]
+                              -1.424                          -0 
+   120 TaskPrecedence[3,lakkozas]
+                              -1.088                          -0 
+   121 TaskPrecedence[4,hantas]
                                    0                          -0 
-   119 NeElozzekBeEgymast[3,jelzesfestes]
-                              -5.968                          -0 
-   120 NeElozzekBeEgymast[3,lakkozas]
-                              -6.272                          -0 
-   121 NeElozzekBeEgymast[4,hantas]
+   122 TaskPrecedence[4,alapfestes]
+                              -5.544                          -0 
+   123 TaskPrecedence[4,jelzesfestes]
+                               -5.48                          -0 
+   124 TaskPrecedence[4,lakkozas]
+                              -7.184                          -0 
+   125 TaskPrecedence[5,hantas]
                                    0                          -0 
-   122 NeElozzekBeEgymast[4,alapfestes]
-                              -5.304                          -0 
-   123 NeElozzekBeEgymast[4,jelzesfestes]
-                              -10.44                          -0 
-   124 NeElozzekBeEgymast[4,lakkozas]
-                             -19.512                          -0 
-   125 NeElozzekBeEgymast[5,hantas]
+   126 TaskPrecedence[5,alapfestes]
+                              -5.488                          -0 
+   127 TaskPrecedence[5,jelzesfestes]
+                              -9.952                          -0 
+   128 TaskPrecedence[5,lakkozas]
+                             -14.264                          -0 
+   129 TaskPrecedence[6,hantas]
                                    0                          -0 
-   126 NeElozzekBeEgymast[5,alapfestes]
-                             -11.456                          -0 
-   127 NeElozzekBeEgymast[5,jelzesfestes]
-                              -4.048                          -0 
-   128 NeElozzekBeEgymast[5,lakkozas]
-                             -31.248                          -0 
-   129 NeElozzekBeEgymast[6,hantas]
-                                   0                          -0 
-   130 NeElozzekBeEgymast[6,alapfestes]
+   130 TaskPrecedence[6,alapfestes]
                               -5.728                          -0 
-   131 NeElozzekBeEgymast[6,jelzesfestes]
-                              -2.312                          -0 
-   132 NeElozzekBeEgymast[6,lakkozas]
-                             -19.344                          -0 
-   133 NeElozzekBeEgymast[7,hantas]
+   131 TaskPrecedence[6,jelzesfestes]
+                              -8.216                          -0 
+   132 TaskPrecedence[6,lakkozas]
+                              -8.056                          -0 
+   133 TaskPrecedence[7,hantas]
                                    0                          -0 
-   134 NeElozzekBeEgymast[7,alapfestes]
+   134 TaskPrecedence[7,alapfestes]
                                    0                          -0 
-   135 NeElozzekBeEgymast[7,jelzesfestes]
-                              -1.736                          -0 
-   136 NeElozzekBeEgymast[7,lakkozas]
-                              -6.208                          -0 
-   137 NeElozzekBeEgymast[8,hantas]
+   135 TaskPrecedence[7,jelzesfestes]
+                              -0.872                          -0 
+   136 TaskPrecedence[7,lakkozas]
+                               -7.92                          -0 
+   137 TaskPrecedence[8,hantas]
                                    0                          -0 
-   138 NeElozzekBeEgymast[8,alapfestes]
+   138 TaskPrecedence[8,alapfestes]
                                    0                          -0 
-   139 NeElozzekBeEgymast[8,jelzesfestes]
+   139 TaskPrecedence[8,jelzesfestes]
                                    0                          -0 
-   140 NeElozzekBeEgymast[8,lakkozas]
+   140 TaskPrecedence[8,lakkozas]
                                    0                          -0 
-   141 Teljesenmegvan
-                             106.952                             
+   141 CompleteProgress
+                             110.336                             
 
    No. Column name       Activity     Lower bound   Upper bound
 ------ ------------    ------------- ------------- -------------
-     1 csinal[1,Andi,hantas]
+     1 do[1,Andi,hantas]
                     *              0             0             1 
-     2 csinal[1,Andi,alapfestes]
+     2 do[1,Andi,alapfestes]
                     *              0             0             1 
-     3 csinal[1,Andi,jelzesfestes]
+     3 do[1,Andi,jelzesfestes]
                     *              1             0             1 
-     4 csinal[1,Andi,lakkozas]
+     4 do[1,Andi,lakkozas]
                     *              0             0             1 
-     5 csinal[2,Andi,hantas]
-                    *              1             0             1 
-     6 csinal[2,Andi,alapfestes]
+     5 do[2,Andi,hantas]
                     *              0             0             1 
-     7 csinal[2,Andi,jelzesfestes]
+     6 do[2,Andi,alapfestes]
                     *              0             0             1 
-     8 csinal[2,Andi,lakkozas]
+     7 do[2,Andi,jelzesfestes]
+                    *              1             0             1 
+     8 do[2,Andi,lakkozas]
                     *              0             0             1 
-     9 csinal[3,Andi,hantas]
+     9 do[3,Andi,hantas]
                     *              0             0             1 
-    10 csinal[3,Andi,alapfestes]
+    10 do[3,Andi,alapfestes]
                     *              0             0             1 
-    11 csinal[3,Andi,jelzesfestes]
+    11 do[3,Andi,jelzesfestes]
                     *              1             0             1 
-    12 csinal[3,Andi,lakkozas]
+    12 do[3,Andi,lakkozas]
                     *              0             0             1 
-    13 csinal[4,Andi,hantas]
+    13 do[4,Andi,hantas]
                     *              0             0             1 
-    14 csinal[4,Andi,alapfestes]
+    14 do[4,Andi,alapfestes]
                     *              0             0             1 
-    15 csinal[4,Andi,jelzesfestes]
+    15 do[4,Andi,jelzesfestes]
                     *              1             0             1 
-    16 csinal[4,Andi,lakkozas]
+    16 do[4,Andi,lakkozas]
                     *              0             0             1 
-    17 csinal[5,Andi,hantas]
+    17 do[5,Andi,hantas]
                     *              0             0             1 
-    18 csinal[5,Andi,alapfestes]
+    18 do[5,Andi,alapfestes]
                     *              0             0             1 
-    19 csinal[5,Andi,jelzesfestes]
+    19 do[5,Andi,jelzesfestes]
                     *              1             0             1 
-    20 csinal[5,Andi,lakkozas]
+    20 do[5,Andi,lakkozas]
                     *              0             0             1 
-    21 csinal[6,Andi,hantas]
+    21 do[6,Andi,hantas]
                     *              0             0             1 
-    22 csinal[6,Andi,alapfestes]
+    22 do[6,Andi,alapfestes]
                     *              0             0             1 
-    23 csinal[6,Andi,jelzesfestes]
+    23 do[6,Andi,jelzesfestes]
                     *              1             0             1 
-    24 csinal[6,Andi,lakkozas]
-                    *              0             0             1 
-    25 csinal[7,Andi,hantas]
+    24 do[6,Andi,lakkozas]
                     *              0             0             1 
-    26 csinal[7,Andi,alapfestes]
+    25 do[7,Andi,hantas]
                     *              0             0             1 
-    27 csinal[7,Andi,jelzesfestes]
+    26 do[7,Andi,alapfestes]
                     *              0             0             1 
-    28 csinal[7,Andi,lakkozas]
+    27 do[7,Andi,jelzesfestes]
                     *              1             0             1 
-    29 csinal[8,Andi,hantas]
+    28 do[7,Andi,lakkozas]
                     *              0             0             1 
-    30 csinal[8,Andi,alapfestes]
+    29 do[8,Andi,hantas]
                     *              0             0             1 
-    31 csinal[8,Andi,jelzesfestes]
+    30 do[8,Andi,alapfestes]
+                    *              0             0             1 
+    31 do[8,Andi,jelzesfestes]
                     *              1             0             1 
-    32 csinal[8,Andi,lakkozas]
+    32 do[8,Andi,lakkozas]
                     *              0             0             1 
-    33 csinal[1,Bela,hantas]
+    33 do[1,Bela,hantas]
                     *              0             0             1 
-    34 csinal[1,Bela,alapfestes]
+    34 do[1,Bela,alapfestes]
                     *              0             0             1 
-    35 csinal[1,Bela,jelzesfestes]
+    35 do[1,Bela,jelzesfestes]
                     *              0             0             1 
-    36 csinal[1,Bela,lakkozas]
+    36 do[1,Bela,lakkozas]
                     *              1             0             1 
-    37 csinal[2,Bela,hantas]
+    37 do[2,Bela,hantas]
                     *              0             0             1 
-    38 csinal[2,Bela,alapfestes]
+    38 do[2,Bela,alapfestes]
                     *              0             0             1 
-    39 csinal[2,Bela,jelzesfestes]
+    39 do[2,Bela,jelzesfestes]
                     *              0             0             1 
-    40 csinal[2,Bela,lakkozas]
+    40 do[2,Bela,lakkozas]
                     *              1             0             1 
-    41 csinal[3,Bela,hantas]
-                    *              0             0             1 
-    42 csinal[3,Bela,alapfestes]
+    41 do[3,Bela,hantas]
                     *              0             0             1 
-    43 csinal[3,Bela,jelzesfestes]
+    42 do[3,Bela,alapfestes]
                     *              0             0             1 
-    44 csinal[3,Bela,lakkozas]
-                    *              1             0             1 
-    45 csinal[4,Bela,hantas]
+    43 do[3,Bela,jelzesfestes]
                     *              0             0             1 
-    46 csinal[4,Bela,alapfestes]
+    44 do[3,Bela,lakkozas]
                     *              1             0             1 
-    47 csinal[4,Bela,jelzesfestes]
+    45 do[4,Bela,hantas]
                     *              0             0             1 
-    48 csinal[4,Bela,lakkozas]
+    46 do[4,Bela,alapfestes]
                     *              0             0             1 
-    49 csinal[5,Bela,hantas]
+    47 do[4,Bela,jelzesfestes]
                     *              0             0             1 
-    50 csinal[5,Bela,alapfestes]
+    48 do[4,Bela,lakkozas]
+                    *              1             0             1 
+    49 do[5,Bela,hantas]
                     *              0             0             1 
-    51 csinal[5,Bela,jelzesfestes]
+    50 do[5,Bela,alapfestes]
                     *              1             0             1 
-    52 csinal[5,Bela,lakkozas]
+    51 do[5,Bela,jelzesfestes]
                     *              0             0             1 
-    53 csinal[6,Bela,hantas]
+    52 do[5,Bela,lakkozas]
                     *              0             0             1 
-    54 csinal[6,Bela,alapfestes]
+    53 do[6,Bela,hantas]
                     *              0             0             1 
-    55 csinal[6,Bela,jelzesfestes]
+    54 do[6,Bela,alapfestes]
                     *              0             0             1 
-    56 csinal[6,Bela,lakkozas]
+    55 do[6,Bela,jelzesfestes]
+                    *              0             0             1 
+    56 do[6,Bela,lakkozas]
                     *              1             0             1 
-    57 csinal[7,Bela,hantas]
+    57 do[7,Bela,hantas]
                     *              0             0             1 
-    58 csinal[7,Bela,alapfestes]
+    58 do[7,Bela,alapfestes]
                     *              0             0             1 
-    59 csinal[7,Bela,jelzesfestes]
+    59 do[7,Bela,jelzesfestes]
                     *              0             0             1 
-    60 csinal[7,Bela,lakkozas]
+    60 do[7,Bela,lakkozas]
                     *              1             0             1 
-    61 csinal[8,Bela,hantas]
+    61 do[8,Bela,hantas]
                     *              0             0             1 
-    62 csinal[8,Bela,alapfestes]
+    62 do[8,Bela,alapfestes]
                     *              0             0             1 
-    63 csinal[8,Bela,jelzesfestes]
+    63 do[8,Bela,jelzesfestes]
                     *              0             0             1 
-    64 csinal[8,Bela,lakkozas]
+    64 do[8,Bela,lakkozas]
                     *              1             0             1 
-    65 csinal[1,Cili,hantas]
+    65 do[1,Cili,hantas]
                     *              0             0             1 
-    66 csinal[1,Cili,alapfestes]
+    66 do[1,Cili,alapfestes]
                     *              1             0             1 
-    67 csinal[1,Cili,jelzesfestes]
+    67 do[1,Cili,jelzesfestes]
                     *              0             0             1 
-    68 csinal[1,Cili,lakkozas]
+    68 do[1,Cili,lakkozas]
                     *              0             0             1 
-    69 csinal[2,Cili,hantas]
+    69 do[2,Cili,hantas]
                     *              0             0             1 
-    70 csinal[2,Cili,alapfestes]
+    70 do[2,Cili,alapfestes]
+                    *              1             0             1 
+    71 do[2,Cili,jelzesfestes]
                     *              0             0             1 
-    71 csinal[2,Cili,jelzesfestes]
+    72 do[2,Cili,lakkozas]
                     *              0             0             1 
-    72 csinal[2,Cili,lakkozas]
-                    *              1             0             1 
-    73 csinal[3,Cili,hantas]
+    73 do[3,Cili,hantas]
                     *              0             0             1 
-    74 csinal[3,Cili,alapfestes]
+    74 do[3,Cili,alapfestes]
                     *              1             0             1 
-    75 csinal[3,Cili,jelzesfestes]
+    75 do[3,Cili,jelzesfestes]
                     *              0             0             1 
-    76 csinal[3,Cili,lakkozas]
+    76 do[3,Cili,lakkozas]
                     *              0             0             1 
-    77 csinal[4,Cili,hantas]
+    77 do[4,Cili,hantas]
                     *              0             0             1 
-    78 csinal[4,Cili,alapfestes]
+    78 do[4,Cili,alapfestes]
                     *              1             0             1 
-    79 csinal[4,Cili,jelzesfestes]
+    79 do[4,Cili,jelzesfestes]
                     *              0             0             1 
-    80 csinal[4,Cili,lakkozas]
+    80 do[4,Cili,lakkozas]
                     *              0             0             1 
-    81 csinal[5,Cili,hantas]
+    81 do[5,Cili,hantas]
                     *              0             0             1 
-    82 csinal[5,Cili,alapfestes]
+    82 do[5,Cili,alapfestes]
                     *              1             0             1 
-    83 csinal[5,Cili,jelzesfestes]
+    83 do[5,Cili,jelzesfestes]
                     *              0             0             1 
-    84 csinal[5,Cili,lakkozas]
+    84 do[5,Cili,lakkozas]
                     *              0             0             1 
-    85 csinal[6,Cili,hantas]
+    85 do[6,Cili,hantas]
                     *              0             0             1 
-    86 csinal[6,Cili,alapfestes]
+    86 do[6,Cili,alapfestes]
                     *              1             0             1 
-    87 csinal[6,Cili,jelzesfestes]
+    87 do[6,Cili,jelzesfestes]
                     *              0             0             1 
-    88 csinal[6,Cili,lakkozas]
+    88 do[6,Cili,lakkozas]
                     *              0             0             1 
-    89 csinal[7,Cili,hantas]
+    89 do[7,Cili,hantas]
                     *              0             0             1 
-    90 csinal[7,Cili,alapfestes]
+    90 do[7,Cili,alapfestes]
                     *              1             0             1 
-    91 csinal[7,Cili,jelzesfestes]
+    91 do[7,Cili,jelzesfestes]
                     *              0             0             1 
-    92 csinal[7,Cili,lakkozas]
+    92 do[7,Cili,lakkozas]
                     *              0             0             1 
-    93 csinal[8,Cili,hantas]
+    93 do[8,Cili,hantas]
                     *              0             0             1 
-    94 csinal[8,Cili,alapfestes]
+    94 do[8,Cili,alapfestes]
                     *              1             0             1 
-    95 csinal[8,Cili,jelzesfestes]
+    95 do[8,Cili,jelzesfestes]
                     *              0             0             1 
-    96 csinal[8,Cili,lakkozas]
+    96 do[8,Cili,lakkozas]
                     *              0             0             1 
-    97 csinal[1,Dani,hantas]
+    97 do[1,Dani,hantas]
                     *              0             0             1 
-    98 csinal[1,Dani,alapfestes]
+    98 do[1,Dani,alapfestes]
                     *              0             0             1 
-    99 csinal[1,Dani,jelzesfestes]
+    99 do[1,Dani,jelzesfestes]
                     *              1             0             1 
-   100 csinal[1,Dani,lakkozas]
+   100 do[1,Dani,lakkozas]
                     *              0             0             1 
-   101 csinal[2,Dani,hantas]
+   101 do[2,Dani,hantas]
                     *              0             0             1 
-   102 csinal[2,Dani,alapfestes]
+   102 do[2,Dani,alapfestes]
                     *              0             0             1 
-   103 csinal[2,Dani,jelzesfestes]
+   103 do[2,Dani,jelzesfestes]
                     *              1             0             1 
-   104 csinal[2,Dani,lakkozas]
+   104 do[2,Dani,lakkozas]
                     *              0             0             1 
-   105 csinal[3,Dani,hantas]
+   105 do[3,Dani,hantas]
                     *              0             0             1 
-   106 csinal[3,Dani,alapfestes]
+   106 do[3,Dani,alapfestes]
                     *              0             0             1 
-   107 csinal[3,Dani,jelzesfestes]
+   107 do[3,Dani,jelzesfestes]
                     *              1             0             1 
-   108 csinal[3,Dani,lakkozas]
+   108 do[3,Dani,lakkozas]
                     *              0             0             1 
-   109 csinal[4,Dani,hantas]
+   109 do[4,Dani,hantas]
                     *              0             0             1 
-   110 csinal[4,Dani,alapfestes]
+   110 do[4,Dani,alapfestes]
                     *              0             0             1 
-   111 csinal[4,Dani,jelzesfestes]
+   111 do[4,Dani,jelzesfestes]
                     *              1             0             1 
-   112 csinal[4,Dani,lakkozas]
+   112 do[4,Dani,lakkozas]
                     *              0             0             1 
-   113 csinal[5,Dani,hantas]
+   113 do[5,Dani,hantas]
                     *              0             0             1 
-   114 csinal[5,Dani,alapfestes]
+   114 do[5,Dani,alapfestes]
                     *              0             0             1 
-   115 csinal[5,Dani,jelzesfestes]
+   115 do[5,Dani,jelzesfestes]
                     *              1             0             1 
-   116 csinal[5,Dani,lakkozas]
+   116 do[5,Dani,lakkozas]
                     *              0             0             1 
-   117 csinal[6,Dani,hantas]
+   117 do[6,Dani,hantas]
                     *              0             0             1 
-   118 csinal[6,Dani,alapfestes]
+   118 do[6,Dani,alapfestes]
                     *              0             0             1 
-   119 csinal[6,Dani,jelzesfestes]
+   119 do[6,Dani,jelzesfestes]
                     *              1             0             1 
-   120 csinal[6,Dani,lakkozas]
+   120 do[6,Dani,lakkozas]
                     *              0             0             1 
-   121 csinal[7,Dani,hantas]
+   121 do[7,Dani,hantas]
                     *              0             0             1 
-   122 csinal[7,Dani,alapfestes]
+   122 do[7,Dani,alapfestes]
                     *              0             0             1 
-   123 csinal[7,Dani,jelzesfestes]
+   123 do[7,Dani,jelzesfestes]
                     *              1             0             1 
-   124 csinal[7,Dani,lakkozas]
+   124 do[7,Dani,lakkozas]
                     *              0             0             1 
-   125 csinal[8,Dani,hantas]
+   125 do[8,Dani,hantas]
                     *              0             0             1 
-   126 csinal[8,Dani,alapfestes]
+   126 do[8,Dani,alapfestes]
                     *              0             0             1 
-   127 csinal[8,Dani,jelzesfestes]
-                    *              1             0             1 
-   128 csinal[8,Dani,lakkozas]
+   127 do[8,Dani,jelzesfestes]
                     *              0             0             1 
-   129 csinal[1,Elek,hantas]
+   128 do[8,Dani,lakkozas]
+                    *              1             0             1 
+   129 do[1,Elek,hantas]
                     *              1             0             1 
-   130 csinal[1,Elek,alapfestes]
+   130 do[1,Elek,alapfestes]
                     *              0             0             1 
-   131 csinal[1,Elek,jelzesfestes]
+   131 do[1,Elek,jelzesfestes]
                     *              0             0             1 
-   132 csinal[1,Elek,lakkozas]
+   132 do[1,Elek,lakkozas]
                     *              0             0             1 
-   133 csinal[2,Elek,hantas]
+   133 do[2,Elek,hantas]
                     *              0             0             1 
-   134 csinal[2,Elek,alapfestes]
-                    *              1             0             1 
-   135 csinal[2,Elek,jelzesfestes]
+   134 do[2,Elek,alapfestes]
                     *              0             0             1 
-   136 csinal[2,Elek,lakkozas]
+   135 do[2,Elek,jelzesfestes]
                     *              0             0             1 
-   137 csinal[3,Elek,hantas]
+   136 do[2,Elek,lakkozas]
+                    *              1             0             1 
+   137 do[3,Elek,hantas]
                     *              1             0             1 
-   138 csinal[3,Elek,alapfestes]
+   138 do[3,Elek,alapfestes]
                     *              0             0             1 
-   139 csinal[3,Elek,jelzesfestes]
+   139 do[3,Elek,jelzesfestes]
                     *              0             0             1 
-   140 csinal[3,Elek,lakkozas]
+   140 do[3,Elek,lakkozas]
                     *              0             0             1 
-   141 csinal[4,Elek,hantas]
+   141 do[4,Elek,hantas]
                     *              1             0             1 
-   142 csinal[4,Elek,alapfestes]
+   142 do[4,Elek,alapfestes]
                     *              0             0             1 
-   143 csinal[4,Elek,jelzesfestes]
+   143 do[4,Elek,jelzesfestes]
                     *              0             0             1 
-   144 csinal[4,Elek,lakkozas]
+   144 do[4,Elek,lakkozas]
                     *              0             0             1 
-   145 csinal[5,Elek,hantas]
+   145 do[5,Elek,hantas]
                     *              1             0             1 
-   146 csinal[5,Elek,alapfestes]
+   146 do[5,Elek,alapfestes]
                     *              0             0             1 
-   147 csinal[5,Elek,jelzesfestes]
+   147 do[5,Elek,jelzesfestes]
                     *              0             0             1 
-   148 csinal[5,Elek,lakkozas]
+   148 do[5,Elek,lakkozas]
                     *              0             0             1 
-   149 csinal[6,Elek,hantas]
+   149 do[6,Elek,hantas]
                     *              0             0             1 
-   150 csinal[6,Elek,alapfestes]
+   150 do[6,Elek,alapfestes]
                     *              0             0             1 
-   151 csinal[6,Elek,jelzesfestes]
+   151 do[6,Elek,jelzesfestes]
                     *              0             0             1 
-   152 csinal[6,Elek,lakkozas]
+   152 do[6,Elek,lakkozas]
                     *              1             0             1 
-   153 csinal[7,Elek,hantas]
+   153 do[7,Elek,hantas]
                     *              0             0             1 
-   154 csinal[7,Elek,alapfestes]
+   154 do[7,Elek,alapfestes]
                     *              0             0             1 
-   155 csinal[7,Elek,jelzesfestes]
+   155 do[7,Elek,jelzesfestes]
                     *              0             0             1 
-   156 csinal[7,Elek,lakkozas]
+   156 do[7,Elek,lakkozas]
                     *              1             0             1 
-   157 csinal[8,Elek,hantas]
+   157 do[8,Elek,hantas]
                     *              0             0             1 
-   158 csinal[8,Elek,alapfestes]
+   158 do[8,Elek,alapfestes]
                     *              0             0             1 
-   159 csinal[8,Elek,jelzesfestes]
+   159 do[8,Elek,jelzesfestes]
                     *              0             0             1 
-   160 csinal[8,Elek,lakkozas]
+   160 do[8,Elek,lakkozas]
                     *              1             0             1 
-   161 csinal[1,Feri,hantas]
+   161 do[1,Feri,hantas]
                     *              0             0             1 
-   162 csinal[1,Feri,alapfestes]
+   162 do[1,Feri,alapfestes]
                     *              1             0             1 
-   163 csinal[1,Feri,jelzesfestes]
+   163 do[1,Feri,jelzesfestes]
                     *              0             0             1 
-   164 csinal[1,Feri,lakkozas]
+   164 do[1,Feri,lakkozas]
                     *              0             0             1 
-   165 csinal[2,Feri,hantas]
+   165 do[2,Feri,hantas]
                     *              0             0             1 
-   166 csinal[2,Feri,alapfestes]
-                    *              1             0             1 
-   167 csinal[2,Feri,jelzesfestes]
+   166 do[2,Feri,alapfestes]
                     *              0             0             1 
-   168 csinal[2,Feri,lakkozas]
+   167 do[2,Feri,jelzesfestes]
                     *              0             0             1 
-   169 csinal[3,Feri,hantas]
+   168 do[2,Feri,lakkozas]
+                    *              1             0             1 
+   169 do[3,Feri,hantas]
                     *              0             0             1 
-   170 csinal[3,Feri,alapfestes]
+   170 do[3,Feri,alapfestes]
                     *              1             0             1 
-   171 csinal[3,Feri,jelzesfestes]
+   171 do[3,Feri,jelzesfestes]
                     *              0             0             1 
-   172 csinal[3,Feri,lakkozas]
+   172 do[3,Feri,lakkozas]
                     *              0             0             1 
-   173 csinal[4,Feri,hantas]
+   173 do[4,Feri,hantas]
                     *              0             0             1 
-   174 csinal[4,Feri,alapfestes]
+   174 do[4,Feri,alapfestes]
                     *              1             0             1 
-   175 csinal[4,Feri,jelzesfestes]
+   175 do[4,Feri,jelzesfestes]
                     *              0             0             1 
-   176 csinal[4,Feri,lakkozas]
+   176 do[4,Feri,lakkozas]
                     *              0             0             1 
-   177 csinal[5,Feri,hantas]
+   177 do[5,Feri,hantas]
                     *              0             0             1 
-   178 csinal[5,Feri,alapfestes]
+   178 do[5,Feri,alapfestes]
                     *              1             0             1 
-   179 csinal[5,Feri,jelzesfestes]
+   179 do[5,Feri,jelzesfestes]
                     *              0             0             1 
-   180 csinal[5,Feri,lakkozas]
+   180 do[5,Feri,lakkozas]
                     *              0             0             1 
-   181 csinal[6,Feri,hantas]
+   181 do[6,Feri,hantas]
                     *              0             0             1 
-   182 csinal[6,Feri,alapfestes]
+   182 do[6,Feri,alapfestes]
                     *              1             0             1 
-   183 csinal[6,Feri,jelzesfestes]
+   183 do[6,Feri,jelzesfestes]
                     *              0             0             1 
-   184 csinal[6,Feri,lakkozas]
+   184 do[6,Feri,lakkozas]
                     *              0             0             1 
-   185 csinal[7,Feri,hantas]
+   185 do[7,Feri,hantas]
                     *              0             0             1 
-   186 csinal[7,Feri,alapfestes]
+   186 do[7,Feri,alapfestes]
                     *              1             0             1 
-   187 csinal[7,Feri,jelzesfestes]
+   187 do[7,Feri,jelzesfestes]
                     *              0             0             1 
-   188 csinal[7,Feri,lakkozas]
+   188 do[7,Feri,lakkozas]
                     *              0             0             1 
-   189 csinal[8,Feri,hantas]
+   189 do[8,Feri,hantas]
                     *              0             0             1 
-   190 csinal[8,Feri,alapfestes]
+   190 do[8,Feri,alapfestes]
                     *              1             0             1 
-   191 csinal[8,Feri,jelzesfestes]
+   191 do[8,Feri,jelzesfestes]
                     *              0             0             1 
-   192 csinal[8,Feri,lakkozas]
+   192 do[8,Feri,lakkozas]
                     *              0             0             1 
-   193 csinal[1,Gabi,hantas]
+   193 do[1,Gabi,hantas]
                     *              1             0             1 
-   194 csinal[1,Gabi,alapfestes]
+   194 do[1,Gabi,alapfestes]
                     *              0             0             1 
-   195 csinal[1,Gabi,jelzesfestes]
+   195 do[1,Gabi,jelzesfestes]
                     *              0             0             1 
-   196 csinal[1,Gabi,lakkozas]
+   196 do[1,Gabi,lakkozas]
                     *              0             0             1 
-   197 csinal[2,Gabi,hantas]
+   197 do[2,Gabi,hantas]
                     *              1             0             1 
-   198 csinal[2,Gabi,alapfestes]
+   198 do[2,Gabi,alapfestes]
                     *              0             0             1 
-   199 csinal[2,Gabi,jelzesfestes]
+   199 do[2,Gabi,jelzesfestes]
                     *              0             0             1 
-   200 csinal[2,Gabi,lakkozas]
+   200 do[2,Gabi,lakkozas]
                     *              0             0             1 
-   201 csinal[3,Gabi,hantas]
+   201 do[3,Gabi,hantas]
                     *              1             0             1 
-   202 csinal[3,Gabi,alapfestes]
+   202 do[3,Gabi,alapfestes]
                     *              0             0             1 
-   203 csinal[3,Gabi,jelzesfestes]
+   203 do[3,Gabi,jelzesfestes]
                     *              0             0             1 
-   204 csinal[3,Gabi,lakkozas]
+   204 do[3,Gabi,lakkozas]
                     *              0             0             1 
-   205 csinal[4,Gabi,hantas]
-                    *              1             0             1 
-   206 csinal[4,Gabi,alapfestes]
+   205 do[4,Gabi,hantas]
                     *              0             0             1 
-   207 csinal[4,Gabi,jelzesfestes]
+   206 do[4,Gabi,alapfestes]
+                    *              1             0             1 
+   207 do[4,Gabi,jelzesfestes]
                     *              0             0             1 
-   208 csinal[4,Gabi,lakkozas]
+   208 do[4,Gabi,lakkozas]
                     *              0             0             1 
-   209 csinal[5,Gabi,hantas]
+   209 do[5,Gabi,hantas]
                     *              1             0             1 
-   210 csinal[5,Gabi,alapfestes]
+   210 do[5,Gabi,alapfestes]
                     *              0             0             1 
-   211 csinal[5,Gabi,jelzesfestes]
+   211 do[5,Gabi,jelzesfestes]
                     *              0             0             1 
-   212 csinal[5,Gabi,lakkozas]
+   212 do[5,Gabi,lakkozas]
                     *              0             0             1 
-   213 csinal[6,Gabi,hantas]
+   213 do[6,Gabi,hantas]
+                    *              1             0             1 
+   214 do[6,Gabi,alapfestes]
                     *              0             0             1 
-   214 csinal[6,Gabi,alapfestes]
+   215 do[6,Gabi,jelzesfestes]
                     *              0             0             1 
-   215 csinal[6,Gabi,jelzesfestes]
+   216 do[6,Gabi,lakkozas]
                     *              0             0             1 
-   216 csinal[6,Gabi,lakkozas]
-                    *              1             0             1 
-   217 csinal[7,Gabi,hantas]
+   217 do[7,Gabi,hantas]
                     *              0             0             1 
-   218 csinal[7,Gabi,alapfestes]
+   218 do[7,Gabi,alapfestes]
                     *              0             0             1 
-   219 csinal[7,Gabi,jelzesfestes]
+   219 do[7,Gabi,jelzesfestes]
                     *              0             0             1 
-   220 csinal[7,Gabi,lakkozas]
+   220 do[7,Gabi,lakkozas]
                     *              1             0             1 
-   221 csinal[8,Gabi,hantas]
+   221 do[8,Gabi,hantas]
                     *              1             0             1 
-   222 csinal[8,Gabi,alapfestes]
+   222 do[8,Gabi,alapfestes]
                     *              0             0             1 
-   223 csinal[8,Gabi,jelzesfestes]
+   223 do[8,Gabi,jelzesfestes]
                     *              0             0             1 
-   224 csinal[8,Gabi,lakkozas]
+   224 do[8,Gabi,lakkozas]
                     *              0             0             1 
-   225 csinal[1,Heni,hantas]
+   225 do[1,Heni,hantas]
                     *              0             0             1 
-   226 csinal[1,Heni,alapfestes]
+   226 do[1,Heni,alapfestes]
                     *              1             0             1 
-   227 csinal[1,Heni,jelzesfestes]
+   227 do[1,Heni,jelzesfestes]
                     *              0             0             1 
-   228 csinal[1,Heni,lakkozas]
+   228 do[1,Heni,lakkozas]
                     *              0             0             1 
-   229 csinal[2,Heni,hantas]
+   229 do[2,Heni,hantas]
                     *              0             0             1 
-   230 csinal[2,Heni,alapfestes]
+   230 do[2,Heni,alapfestes]
+                    *              1             0             1 
+   231 do[2,Heni,jelzesfestes]
                     *              0             0             1 
-   231 csinal[2,Heni,jelzesfestes]
+   232 do[2,Heni,lakkozas]
                     *              0             0             1 
-   232 csinal[2,Heni,lakkozas]
-                    *              1             0             1 
-   233 csinal[3,Heni,hantas]
+   233 do[3,Heni,hantas]
                     *              0             0             1 
-   234 csinal[3,Heni,alapfestes]
-                    *              1             0             1 
-   235 csinal[3,Heni,jelzesfestes]
+   234 do[3,Heni,alapfestes]
                     *              0             0             1 
-   236 csinal[3,Heni,lakkozas]
+   235 do[3,Heni,jelzesfestes]
                     *              0             0             1 
-   237 csinal[4,Heni,hantas]
+   236 do[3,Heni,lakkozas]
+                    *              1             0             1 
+   237 do[4,Heni,hantas]
                     *              1             0             1 
-   238 csinal[4,Heni,alapfestes]
+   238 do[4,Heni,alapfestes]
                     *              0             0             1 
-   239 csinal[4,Heni,jelzesfestes]
+   239 do[4,Heni,jelzesfestes]
                     *              0             0             1 
-   240 csinal[4,Heni,lakkozas]
+   240 do[4,Heni,lakkozas]
                     *              0             0             1 
-   241 csinal[5,Heni,hantas]
+   241 do[5,Heni,hantas]
                     *              0             0             1 
-   242 csinal[5,Heni,alapfestes]
+   242 do[5,Heni,alapfestes]
                     *              0             0             1 
-   243 csinal[5,Heni,jelzesfestes]
+   243 do[5,Heni,jelzesfestes]
                     *              0             0             1 
-   244 csinal[5,Heni,lakkozas]
+   244 do[5,Heni,lakkozas]
                     *              1             0             1 
-   245 csinal[6,Heni,hantas]
+   245 do[6,Heni,hantas]
                     *              0             0             1 
-   246 csinal[6,Heni,alapfestes]
+   246 do[6,Heni,alapfestes]
                     *              0             0             1 
-   247 csinal[6,Heni,jelzesfestes]
+   247 do[6,Heni,jelzesfestes]
                     *              0             0             1 
-   248 csinal[6,Heni,lakkozas]
+   248 do[6,Heni,lakkozas]
                     *              1             0             1 
-   249 csinal[7,Heni,hantas]
+   249 do[7,Heni,hantas]
                     *              0             0             1 
-   250 csinal[7,Heni,alapfestes]
+   250 do[7,Heni,alapfestes]
                     *              0             0             1 
-   251 csinal[7,Heni,jelzesfestes]
+   251 do[7,Heni,jelzesfestes]
                     *              1             0             1 
-   252 csinal[7,Heni,lakkozas]
+   252 do[7,Heni,lakkozas]
                     *              0             0             1 
-   253 csinal[8,Heni,hantas]
+   253 do[8,Heni,hantas]
                     *              0             0             1 
-   254 csinal[8,Heni,alapfestes]
+   254 do[8,Heni,alapfestes]
                     *              0             0             1 
-   255 csinal[8,Heni,jelzesfestes]
-                    *              0             0             1 
-   256 csinal[8,Heni,lakkozas]
+   255 do[8,Heni,jelzesfestes]
                     *              1             0             1 
-   257 csinal[1,Ili,hantas]
+   256 do[8,Heni,lakkozas]
+                    *              0             0             1 
+   257 do[1,Ili,hantas]
                     *              1             0             1 
-   258 csinal[1,Ili,alapfestes]
+   258 do[1,Ili,alapfestes]
                     *              0             0             1 
-   259 csinal[1,Ili,jelzesfestes]
+   259 do[1,Ili,jelzesfestes]
                     *              0             0             1 
-   260 csinal[1,Ili,lakkozas]
+   260 do[1,Ili,lakkozas]
                     *              0             0             1 
-   261 csinal[2,Ili,hantas]
+   261 do[2,Ili,hantas]
+                    *              1             0             1 
+   262 do[2,Ili,alapfestes]
                     *              0             0             1 
-   262 csinal[2,Ili,alapfestes]
+   263 do[2,Ili,jelzesfestes]
                     *              0             0             1 
-   263 csinal[2,Ili,jelzesfestes]
-                    *              1             0             1 
-   264 csinal[2,Ili,lakkozas]
+   264 do[2,Ili,lakkozas]
                     *              0             0             1 
-   265 csinal[3,Ili,hantas]
+   265 do[3,Ili,hantas]
                     *              1             0             1 
-   266 csinal[3,Ili,alapfestes]
+   266 do[3,Ili,alapfestes]
                     *              0             0             1 
-   267 csinal[3,Ili,jelzesfestes]
+   267 do[3,Ili,jelzesfestes]
                     *              0             0             1 
-   268 csinal[3,Ili,lakkozas]
+   268 do[3,Ili,lakkozas]
                     *              0             0             1 
-   269 csinal[4,Ili,hantas]
+   269 do[4,Ili,hantas]
                     *              1             0             1 
-   270 csinal[4,Ili,alapfestes]
+   270 do[4,Ili,alapfestes]
                     *              0             0             1 
-   271 csinal[4,Ili,jelzesfestes]
+   271 do[4,Ili,jelzesfestes]
                     *              0             0             1 
-   272 csinal[4,Ili,lakkozas]
+   272 do[4,Ili,lakkozas]
                     *              0             0             1 
-   273 csinal[5,Ili,hantas]
+   273 do[5,Ili,hantas]
                     *              1             0             1 
-   274 csinal[5,Ili,alapfestes]
+   274 do[5,Ili,alapfestes]
                     *              0             0             1 
-   275 csinal[5,Ili,jelzesfestes]
+   275 do[5,Ili,jelzesfestes]
                     *              0             0             1 
-   276 csinal[5,Ili,lakkozas]
+   276 do[5,Ili,lakkozas]
                     *              0             0             1 
-   277 csinal[6,Ili,hantas]
+   277 do[6,Ili,hantas]
                     *              1             0             1 
-   278 csinal[6,Ili,alapfestes]
+   278 do[6,Ili,alapfestes]
                     *              0             0             1 
-   279 csinal[6,Ili,jelzesfestes]
+   279 do[6,Ili,jelzesfestes]
                     *              0             0             1 
-   280 csinal[6,Ili,lakkozas]
+   280 do[6,Ili,lakkozas]
                     *              0             0             1 
-   281 csinal[7,Ili,hantas]
+   281 do[7,Ili,hantas]
                     *              1             0             1 
-   282 csinal[7,Ili,alapfestes]
+   282 do[7,Ili,alapfestes]
                     *              0             0             1 
-   283 csinal[7,Ili,jelzesfestes]
+   283 do[7,Ili,jelzesfestes]
                     *              0             0             1 
-   284 csinal[7,Ili,lakkozas]
+   284 do[7,Ili,lakkozas]
                     *              0             0             1 
-   285 csinal[8,Ili,hantas]
+   285 do[8,Ili,hantas]
                     *              1             0             1 
-   286 csinal[8,Ili,alapfestes]
+   286 do[8,Ili,alapfestes]
                     *              0             0             1 
-   287 csinal[8,Ili,jelzesfestes]
+   287 do[8,Ili,jelzesfestes]
                     *              0             0             1 
-   288 csinal[8,Ili,lakkozas]
+   288 do[8,Ili,lakkozas]
                     *              0             0             1 
-   289 meddig[0,hantas]
+   289 progress[0,hantas]
                                    0             0               
-   290 meddig[0,alapfestes]
+   290 progress[0,alapfestes]
                                    0             0               
-   291 meddig[0,jelzesfestes]
+   291 progress[0,jelzesfestes]
                                    0             0               
-   292 meddig[0,lakkozas]
+   292 progress[0,lakkozas]
                                    0             0               
-   293 meddig[1,hantas]
-                              17.656             0               
-   294 meddig[1,alapfestes]
-                              15.232             0               
-   295 meddig[1,jelzesfestes]
-                               13.24             0               
-   296 meddig[1,lakkozas]
-                               4.672             0               
-   297 meddig[2,hantas]
-                              28.016             0               
-   298 meddig[2,alapfestes]
-                              25.888             0               
-   299 meddig[2,jelzesfestes]
-                              24.016             0               
-   300 meddig[2,lakkozas]
-                              24.016             0               
-   301 meddig[3,hantas]
-                              43.224             0               
-   302 meddig[3,alapfestes]
-                              43.224             0               
-   303 meddig[3,jelzesfestes]
-                              37.256             0               
-   304 meddig[3,lakkozas]
-                              30.984             0               
-   305 meddig[4,hantas]
-                               66.24             0               
-   306 meddig[4,alapfestes]
-                              60.936             0               
-   307 meddig[4,jelzesfestes]
-                              50.496             0               
-   308 meddig[4,lakkozas]
-                              30.984             0               
-   309 meddig[5,hantas]
-                              83.896             0               
-   310 meddig[5,alapfestes]
-                               72.44             0               
-   311 meddig[5,jelzesfestes]
-                              68.392             0               
-   312 meddig[5,lakkozas]
-                              37.144             0               
-   313 meddig[6,hantas]
-                              89.672             0               
-   314 meddig[6,alapfestes]
-                              83.944             0               
-   315 meddig[6,jelzesfestes]
-                              81.632             0               
-   316 meddig[6,lakkozas]
-                              62.288             0               
-   317 meddig[7,hantas]
-                              95.448             0               
-   318 meddig[7,alapfestes]
-                              95.448             0               
-   319 meddig[7,jelzesfestes]
-                              93.712             0               
-   320 meddig[7,lakkozas]
-                              87.504             0               
-   321 meddig[8,hantas]
-                             106.952             0               
-   322 meddig[8,alapfestes]
-                             106.952             0               
-   323 meddig[8,jelzesfestes]
-                             106.952             0               
-   324 meddig[8,lakkozas]
-                             106.952             0               
+   293 progress[1,hantas]
+                              17.568             0               
+   294 progress[1,alapfestes]
+                              17.336             0               
+   295 progress[1,jelzesfestes]
+                              12.912             0               
+   296 progress[1,lakkozas]
+                               7.144             0               
+   297 progress[2,hantas]
+                              29.312             0               
+   298 progress[2,alapfestes]
+                              29.312             0               
+   299 progress[2,jelzesfestes]
+                              26.152             0               
+   300 progress[2,lakkozas]
+                                  25             0               
+   301 progress[3,hantas]
+                              46.088             0               
+   302 progress[3,alapfestes]
+                              40.816             0               
+   303 progress[3,jelzesfestes]
+                              39.392             0               
+   304 progress[3,lakkozas]
+                              38.304             0               
+   305 progress[4,hantas]
+                              63.656             0               
+   306 progress[4,alapfestes]
+                              58.112             0               
+   307 progress[4,jelzesfestes]
+                              52.632             0               
+   308 progress[4,lakkozas]
+                              45.448             0               
+   309 progress[5,hantas]
+                              81.312             0               
+   310 progress[5,alapfestes]
+                              75.824             0               
+   311 progress[5,jelzesfestes]
+                              65.872             0               
+   312 progress[5,lakkozas]
+                              51.608             0               
+   313 progress[6,hantas]
+                              93.056             0               
+   314 progress[6,alapfestes]
+                              87.328             0               
+   315 progress[6,jelzesfestes]
+                              79.112             0               
+   316 progress[6,lakkozas]
+                              71.056             0               
+   317 progress[7,hantas]
+                              98.832             0               
+   318 progress[7,alapfestes]
+                              98.832             0               
+   319 progress[7,jelzesfestes]
+                               97.96             0               
+   320 progress[7,lakkozas]
+                               90.04             0               
+   321 progress[8,hantas]
+                             110.336             0               
+   322 progress[8,alapfestes]
+                             110.336             0               
+   323 progress[8,jelzesfestes]
+                             110.336             0               
+   324 progress[8,lakkozas]
+                             110.336             0               
 
 Integer feasibility conditions:
 
-KKT.PE: max.abs.err = 1.42e-14 on row 93
-        max.rel.err = 8.42e-17 on row 93
+KKT.PE: max.abs.err = 1.42e-14 on row 99
+        max.rel.err = 8.93e-17 on row 99
         High quality
 
-KKT.PB: max.abs.err = 1.42e-14 on row 93
-        max.rel.err = 1.42e-14 on row 93
+KKT.PB: max.abs.err = 1.42e-14 on row 99
+        max.rel.err = 1.42e-14 on row 99
         High quality
 
 End of output

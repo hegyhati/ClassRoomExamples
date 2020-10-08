@@ -1,44 +1,41 @@
-set Emberek;
-set Feladatok;
-param megelozo{Feladatok} symbolic within Feladatok;
-param utolsofeladat symbolic within Feladatok;
+set People;
+set Tasks;
+param previous{Tasks} symbolic in Tasks;
+param lasttask symbolic in Tasks;
 
-param oraszam;
-set Orak := 1..oraszam;
+param nHours;
+set Hours := 1..nHours;
 
-param sebesseg{Emberek,Feladatok} >= 0; # km/h
-param hasznosarany <=1 >=0;
+param speed{People,Tasks} >= 0; # km/h
+param efficiency <=1 >=0;
 
-var csinal{Orak,Emberek,Feladatok} binary;
-var meddig{Orak union {0},Feladatok} >= 0; # redundans / fixed, km
+var do{Hours,People,Tasks} binary;
+var progress{Hours union {0},Tasks} >= 0; # redundans / fixed, km
 
-# 2. Egy ember egy adott oraban csak egy dolgot vegezhet
-s.t. EgySzerreEgyDolgotCsinal{e in Emberek, o in Orak}:
-    sum{f in Feladatok} csinal[o,e,f] <= 1;
+# A person can do only one task at a time
+s.t. OneTaskPerPerson{e in People, o in Hours}:
+    sum{f in Tasks} do[o,e,f] <= 1;
 
-# 4. redundans valtozok kiszamolasa
-s.t. ElejenNullarolIndulMind{f in Feladatok}:
-    meddig[0,f]=0;
+# Connect redundant variables
+s.t. ProgressIsZeroAtStart{f in Tasks}:
+    progress[0,f]=0;
 
-s.t. MeddigJutottEl{o in Orak, f in Feladatok}:
-    meddig[o,f]<=meddig[o-1,f]+sum{e in Emberek} csinal[o,e,f]*sebesseg[e,f]*hasznosarany;
+s.t. Progress{o in Hours, f in Tasks}:
+    progress[o,f]<=progress[o-1,f]+sum{e in People} do[o,e,f]*speed[e,f]*efficiency;
 
-# 1. Feladatok nem elozhetik be egymast
-s.t. NeElozzekBeEgymast{o in Orak, f in Feladatok}:
-    meddig[o,f] <= meddig[o,megelozo[f]];
+# Task progress can not overtake its prerequisite
+s.t. TaskPrecedence{o in Hours, f in Tasks}:
+    progress[o,f] <= progress[o,previous[f]];
     
-# 5. Vege meg eleje kozott nem lehet 1 km-nel tobb
-# 6. Mindent mindig csinaljon valaki
-
-maximize Teljesenmegvan: meddig[oraszam,utolsofeladat];
+maximize CompleteProgress: progress[nHours,lasttask];
 
 solve;
 
-for{ o in Orak} {
+for{ o in Hours} {
     printf "%d. ora:\n",o;
-    for{f in Feladatok}{
-        printf "\t%14s (%.2f -> %.2f):",f,meddig[o-1,f],meddig[o,f];
-        for{e in Emberek : csinal[o,e,f]==1}
+    for{f in Tasks}{
+        printf "\t%14s (%.2f -> %.2f):",f,progress[o-1,f],progress[o,f];
+        for{e in People : do[o,e,f]==1}
             printf " %s",e;
         printf "\n";
     }
@@ -48,24 +45,24 @@ for{ o in Orak} {
 
 data;
 
-set Emberek :=  Andi Bela Cili Dani Elek Feri Gabi Heni Ili;
+set People :=  Andi Bela Cili Dani Elek Feri Gabi Heni Ili;
 
-set Feladatok :=  hantas alapfestes jelzesfestes lakkozas;
+set Tasks :=  hantas alapfestes jelzesfestes lakkozas;
 
-param megelozo :=
+param previous :=
     hantas       hantas # UGLY FIX LATER
     alapfestes   hantas
     jelzesfestes alapfestes
     lakkozas     jelzesfestes
 ;
 
-param utolsofeladat := lakkozas;
+param lasttask := lakkozas;
 
-param oraszam := 8;
+param nHours := 8;
 
-param hasznosarany := 0.8;
+param efficiency := 0.8;
 
-param sebesseg: 
+param speed: 
 	    hantas	alapfestes	jelzesfestes	lakkozas:=
 Andi	5.49	8.14	    8.46    	    7.79
 Bela	5.84	7.76	    5.82    	    8.93
