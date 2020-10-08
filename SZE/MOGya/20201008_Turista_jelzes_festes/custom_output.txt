@@ -1,0 +1,48 @@
+1. ora:
+	        hantas (0.00 -> 17.66): Elek Gabi Ili
+	    alapfestes (0.00 -> 15.23): Cili Feri Heni
+	  jelzesfestes (0.00 -> 13.24): Andi Dani
+	      lakkozas (0.00 -> 4.67): Bela
+
+2. ora:
+	        hantas (17.66 -> 28.02): Andi Gabi
+	    alapfestes (15.23 -> 25.89): Elek Feri
+	  jelzesfestes (13.24 -> 24.02): Dani Ili
+	      lakkozas (4.67 -> 24.02): Bela Cili Heni
+
+3. ora:
+	        hantas (28.02 -> 43.22): Elek Gabi Ili
+	    alapfestes (25.89 -> 43.22): Cili Feri Heni
+	  jelzesfestes (24.02 -> 37.26): Andi Dani
+	      lakkozas (24.02 -> 30.98): Bela
+
+4. ora:
+	        hantas (43.22 -> 66.24): Elek Gabi Heni Ili
+	    alapfestes (43.22 -> 60.94): Bela Cili Feri
+	  jelzesfestes (37.26 -> 50.50): Andi Dani
+	      lakkozas (30.98 -> 30.98):
+
+5. ora:
+	        hantas (66.24 -> 83.90): Elek Gabi Ili
+	    alapfestes (60.94 -> 72.44): Cili Feri
+	  jelzesfestes (50.50 -> 68.39): Andi Bela Dani
+	      lakkozas (30.98 -> 37.14): Heni
+
+6. ora:
+	        hantas (83.90 -> 89.67): Ili
+	    alapfestes (72.44 -> 83.94): Cili Feri
+	  jelzesfestes (68.39 -> 81.63): Andi Dani
+	      lakkozas (37.14 -> 62.29): Bela Elek Gabi Heni
+
+7. ora:
+	        hantas (89.67 -> 95.45): Ili
+	    alapfestes (83.94 -> 95.45): Cili Feri
+	  jelzesfestes (81.63 -> 93.71): Dani Heni
+	      lakkozas (62.29 -> 87.50): Andi Bela Elek Gabi
+
+8. ora:
+	        hantas (95.45 -> 106.95): Gabi Ili
+	    alapfestes (95.45 -> 106.95): Cili Feri
+	  jelzesfestes (93.71 -> 106.95): Andi Dani
+	      lakkozas (87.50 -> 106.95): Bela Elek Heni
+
