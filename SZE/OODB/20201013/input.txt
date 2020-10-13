@@ -1,0 +1,9 @@
+Batman 1000 56
+Hulk 230 59
+Spiderman 100 2
+Ironman 150 20
+Vision  300 50
+Mantis  10 1
+CaptainAmerica 400 35
+Catwoman    10000 10000
+
