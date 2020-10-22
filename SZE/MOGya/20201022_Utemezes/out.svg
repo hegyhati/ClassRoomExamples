@@ -1,0 +1,8 @@
+<svg height='100' width='580'>
+<line x1='10' y1='90' x2='570' y2='90' style='stroke:rgb(0,0,0);stroke-width:5' /><line x1='10' y1='90' x2='10' y2='10' style='stroke:rgb(0,0,0);stroke-width:5' />	<rect x='330' y='15' width='120' height='30' style='fill:rgb(0,50,30);stroke:black;stroke-width:1'/>
+<text x='333' y='42' fill='white;bold'>A: 8-11</text>	<rect x='10' y='55' width='160' height='30' style='fill:rgb(17,58,47);stroke:black;stroke-width:1'/>
+<text x='13' y='82' fill='white;bold'>B: 0-4</text>	<rect x='370' y='55' width='200' height='30' style='fill:rgb(33,67,63);stroke:black;stroke-width:1'/>
+<text x='373' y='82' fill='white;bold'>C: 9-14</text>	<rect x='290' y='55' width='80' height='30' style='fill:rgb(50,75,80);stroke:black;stroke-width:1'/>
+<text x='293' y='82' fill='white;bold'>D: 7-9</text>	<rect x='450' y='15' width='120' height='30' style='fill:rgb(67,83,97);stroke:black;stroke-width:1'/>
+<text x='453' y='42' fill='white;bold'>E: 11-14</text>	<rect x='130' y='15' width='200' height='30' style='fill:rgb(83,92,113);stroke:black;stroke-width:1'/>
+<text x='133' y='42' fill='white;bold'>F: 3-8</text></svg>

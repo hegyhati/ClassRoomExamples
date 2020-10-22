@@ -1,0 +1,12 @@
+set Tasks := A B C D E F;
+
+param:
+        processing_time arrival_time :=
+    A   3               0
+    B   4               0
+    C   5               9
+    D   2               7
+    E   3               10
+    F   5               3
+    ;
+    
