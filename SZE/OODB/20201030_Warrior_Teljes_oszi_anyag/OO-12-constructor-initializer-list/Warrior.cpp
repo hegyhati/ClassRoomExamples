@@ -1,25 +1,20 @@
 #include "Warrior.hpp"
 #include <fstream>
 
-int Warrior::alive=0;
-
 Warrior::Warrior(const std::string& team, const std::string& name, int health_points, int damage, int defense) 
-  : team(team), name(name), health_points(health_points), damage(damage), defense(defense) {++alive;}
+  : team(team), name(name), health_points(health_points), damage(damage), defense(defense) {}
 
-Warrior Warrior::parseFromFile(const std::string& team, const std::string& filename){  
-  if(std::ifstream file(filename); file.is_open()){
-    std::string name;
-    int health_points, damage, defense;
+Warrior::Warrior(const std::string& team, const std::string& filename) : team(team) {
+  std::ifstream file(filename);
+  if(file.is_open()){
     file >> name >> health_points >> damage >> defense;
-    if(file.fail()) throw BadFileFormatException{filename}; 
     file.close();
-    return Warrior(team,name,health_points,damage,defense);
-  } else throw FileNotFoundException{filename};
+  }
 }
 
 std::string Warrior::toString() const {
   return
-    name  + (isAlive()?"":" DEAD ") + "(" + team + ") "
+    name  + "(" + team + ") "
     + " ["
     + " HP:  " + std::to_string(health_points)
     + " DMG: " + std::to_string(damage)
@@ -31,7 +26,7 @@ void Warrior::die(){
   health_points=0;
   damage=0;
   defense=0;
-  --alive;
+  name += " DEAD ";
 }
 
 void Warrior::attack(Warrior& defender) const {  

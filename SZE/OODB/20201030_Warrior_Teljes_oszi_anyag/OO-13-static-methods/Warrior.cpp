@@ -6,15 +6,16 @@ int Warrior::alive=0;
 Warrior::Warrior(const std::string& team, const std::string& name, int health_points, int damage, int defense) 
   : team(team), name(name), health_points(health_points), damage(damage), defense(defense) {++alive;}
 
-Warrior Warrior::parseFromFile(const std::string& team, const std::string& filename){  
-  if(std::ifstream file(filename); file.is_open()){
+Warrior Warrior::parseFromFile(const std::string& team, const std::string& filename){
+  std::ifstream file(filename);
+  if(file.is_open()){
     std::string name;
     int health_points, damage, defense;
     file >> name >> health_points >> damage >> defense;
-    if(file.fail()) throw BadFileFormatException{filename}; 
     file.close();
     return Warrior(team,name,health_points,damage,defense);
-  } else throw FileNotFoundException{filename};
+  }
+  return Warrior(team,"Anonymus",1);
 }
 
 std::string Warrior::toString() const {
