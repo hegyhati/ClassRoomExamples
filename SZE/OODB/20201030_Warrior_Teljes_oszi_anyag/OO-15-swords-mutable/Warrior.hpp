@@ -3,6 +3,7 @@
 
 #include <string>
 #include "FileNotFoundException.hpp"
+#include "Sword.hpp"
 
 class Warrior {
   public:
@@ -11,14 +12,14 @@ class Warrior {
       std::string filename;
     };
 
-    Warrior(const std::string& team, const std::string& name, int health_points, int damage=0, int defense=0);
+    Warrior(const std::string& team, const std::string& name, int health_points, int damage=0, int defense=0, Sword sword=Sword(0,0));
     std::string toString() const;
     void attack(Warrior& defender) const;
     bool isAlive() const;
     std::string getTeam() const;
     
     static int getAliveWarriorCount() {return alive;}
-    static Warrior parseFromFile(const std::string& team, const std::string& filename);
+    static Warrior parseFromFile(const std::string& team, const std::string& filename, Sword sword=Sword(0,0));
 
   private:
     static int alive;
@@ -27,6 +28,8 @@ class Warrior {
     int health_points;
     int damage;
     int defense;
+
+    mutable Sword sword;
 
     void die();
 };
