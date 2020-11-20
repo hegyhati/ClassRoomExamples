@@ -1,0 +1,50 @@
+param nRows        :=   4;
+param cachierCount :=   2;
+param cachierWidth := 4.5;
+
+set ProductGroups := Group1 Group2 Group3 Group4 Group5 Group6 Group7 Group8 Group9 Group10 Group11 Group12 Group13 Group14 Group15 Group16 Group17 Group18 Group19 Group20 Group21 Group22 Group23 Group24 Group25 Group26 Group27 Group28 Group29 Group30 Group31 Group32 Group33 Group34 Group35 Group36 Group37 Group38 Group39 Group40 Group41 Group42;
+
+param space :=
+Group1	0.30
+Group2	0.48
+Group3	0.97
+Group4	0.13
+Group5	1.92
+Group6	1.81
+Group7	1.34
+Group8	1.34
+Group9	0.45
+Group10	1.85
+Group11	0.55
+Group12	1.09
+Group13	1.25
+Group14	1.98
+Group15	0.14
+Group16	1.94
+Group17	0.80
+Group18	1.48
+Group19	0.85
+Group20	0.53
+Group21	0.56
+Group22	1.68
+Group23	1.41
+Group24	1.14
+Group25	1.97
+Group26	2.03
+Group27	1.14
+Group28	1.78
+Group29	1.73
+Group30	1.13
+Group31	0.14
+Group32	0.46
+Group33	0.15
+Group34	0.41
+Group35	1.64
+Group36	1.35
+Group37	1.14
+Group38	1.13
+Group39	0.18
+Group40	0.93
+Group41	0.09
+Group42	1.57
+;

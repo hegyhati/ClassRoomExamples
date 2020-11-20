@@ -1,0 +1,72 @@
+param nRows        :=   6;
+param cachierCount :=   1;
+param cachierWidth := 2.5;
+param maxRowLength :=   4;
+
+set ProductGroups := Group1	Group2	Group3	Group4	Group5	Group6	Group7	Group8	Group9	Group10	Group11	Group12	Group13	Group14	Group15	Group16	Group17	Group18	Group19	Group20;
+
+param: 
+                space   averagePrice:=
+    Group1	    0.94	282.00
+    Group2	    1.12	108.00
+    Group3	    0.21	226.00
+    Group4	    1.99	264.00
+    Group5	    0.70	103.00
+    Group6	    0.47	180.00
+    Group7	    0.32	219.00
+    Group8	    0.86	140.00
+    Group9	    1.10	262.00
+    Group10	    1.86	127.00
+    Group11	    0.18	146.00
+    Group12	    0.07	142.00
+    Group13	    0.23	152.00
+    Group14	    1.55	228.00
+    Group15	    1.23	231.00
+    Group16	    1.97	123.00
+    Group17	    0.68	208.00
+    Group18	    1.31	94.00
+    Group19	    0.38	93.00
+    Group20	    0.56	268.00
+;   
+
+set MustBeTogether := (Group1,Group2) , (Group12,Group8), (Group9,Group6), (Group3,Group2);
+set MustBeSeparated := (Group19,Group20), (Group18,Group16), (Group13,Group11);
+
+set CustomerGroups := CGroup1 CGroup2 CGroup3 CGroup4 CGroup5 CGroup6 CGroup7 CGroup8;
+
+param :
+            count   probabilityToBuy :=
+    CGroup1	32234	0.171868755564931
+    CGroup2	54057	0.006530116263574
+    CGroup3	57460	0.296577903833505
+    CGroup4	28400	0.218939432473207
+    CGroup5	25697	0.235654179732287
+    CGroup6	39766	0.239887826996717
+    CGroup7	34504	0.032609542717186
+    CGroup8	28175	0.165773679595818
+;
+
+
+param buys (tr) :
+            CGroup1	CGroup2	CGroup3	CGroup4	CGroup5	CGroup6	CGroup7	CGroup8 :=
+    Group1	0	    1	    0	    1	    0	    0	    0	    0
+    Group2	0	    0	    0	    0	    0	    0	    0	    0
+    Group3	1	    1	    0	    0	    0	    0	    1	    1
+    Group4	1	    1	    0	    0	    0	    0	    0	    0
+    Group5	1	    0	    0	    0	    0	    1	    0	    0
+    Group6	0	    0	    1	    0	    0	    0	    0	    0
+    Group7	0	    1	    1	    1	    0	    0	    0	    0
+    Group8	1	    1	    0	    0	    0	    0	    0	    0
+    Group9	0	    0	    0	    1	    1	    0	    0	    1
+    Group10	0	    1	    0	    0	    1	    0	    1	    1
+    Group11	0	    1	    1	    0	    0	    1	    0	    0
+    Group12	1	    1	    1	    0	    0	    0	    0	    0
+    Group13	0	    1	    1	    0	    1	    0	    0	    0
+    Group14	0	    1	    1	    0	    1	    0	    0	    0
+    Group15	1	    0	    1	    0	    1	    1	    0	    0
+    Group16	0	    1	    0	    0	    1	    0	    0	    1
+    Group17	0	    1	    0	    0	    1	    0	    0	    0
+    Group18	0	    0	    1	    0	    1	    0	    0	    1
+    Group19	0	    0	    0	    0	    1	    0	    0	    0
+    Group20	0	    1	    0	    0	    0	    0	    1	    0
+;
