@@ -1,7 +1,8 @@
 #include "Sword.hpp"
 
+
 Sword::Sword(int damage, int durability, double weight) 
-: Wearable(durability,weight), damage(damage) {} 
+: Wearable(durability,weight), damage(damage) {}
 
 int Sword::attack() {
   if (isUsable()) {

@@ -8,7 +8,7 @@ class Sword : public Wearable {
   public:
     Sword(int damage, int durability, double weight);
     int attack();
-    std::string toString() const override;
+    std::string toString() const;
   
   private:
     const int damage;
