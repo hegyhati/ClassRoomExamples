@@ -43,9 +43,9 @@ Az inicializáló függvény dobjon kivételt, ha:
 Készüljün egy `Training` osztály, mely egy egész edzést modellez. Az inicializálás paraméter nélkül történik.
 
 Legyen az osztálynak egy `add_step` függvénye, melynek egy ugyanúgy 4 argumentumot kell megadni, mint a fenti inicializálónak. 
-Ha rossz adatokat adunk meg, ne dobjon exception-t, hanem írjon ki egy hibaúzenetet, és szimplán ne adja hozzá az edzéshez a lépést.
+Ha rossz adatokat adunk meg, ne dobjon kivételt, hanem írjon ki egy hibaúzenetet, és szimplán ne adja hozzá az edzéshez a lépést.
 
-Legyen egy `repeat` metódusa az osztálynak, mely 2 paramétert vár: az első, hogy a legutóbbi hány lépést tegye be az edzés végére, a második, hogy hányszor. 
+Legyen egy `repeat` metódusa az osztálynak, mely 2 paramétert vár: az első, hogy a legutóbbi hány lépést tegye be az edzés végére újra, a második, hogy hányszor. 
 Legyen tesztelve, hogy értelmes adatokat kapunk-e, és ha nem, akkor írjon ki egy hibaüzenetet, és ne adjon hozzá semmit az edzéshez.
 Rosszak az argumentumok, ha:
  - a lépések száma nem pozitív vagy több, mint az eddigi lépések száma
@@ -69,11 +69,10 @@ thursday.add_step("Cool down", 300, 140, 148)
 ```
 
 Legyen egy egyszerű `print` metódus az osztálynak, ami valahogy kiírja az edzéstervet.
-Pl.: 
+Például így: 
 
 ```python
 >>> thursday.print()
-The training plan:
              Warm up ( 300 s): 144-144 bpm
      Comfortable run (1200 s): 149-149 bpm
        Energetic run ( 180 s): 158-158 bpm
@@ -113,11 +112,12 @@ None
 Legyen az osztálynak egy `examine` függvénye, mely egy  argumentumot vár, ami megadja egy fájlnak a nevét, amiben az edzésen mért pulzusadatok találhatók. 
 Minden sor egy másodpercnek az adata. 
 Példa fájl a [`run_hr.txt`](run_hr.txt)-ben található.
-Ha a fájl nem létezik, akkor adjon a metódus hibaüzenetet, és térjen vissza `None`-nal.
+Nem garantált, hogy pontosan annyi adat van a fájlban, mint amilyen hosszú az edzés, de feltételezhető, hogy legalább annyi.
+Ha a fájl nem létezik, akkor írjon ki hibaüzenetet, és térjen vissza `None`-nal.
 
 A függvény két dolgot csinál:
- - visszaadja, hogy az edsést hány százalékban tartottuk be (egészre kerekítve)
- - ugyanazzal a névvel, de `png` kiterjesztéssel csinál egy diagrammot, amin látszódik idő függvényében a zóna alja, teteje, valamint a ténylegesen pulzus. Egy példa a [`run_hr.png`](run_hr.png)-ben látható.
+ - visszaadja, hogy az edzést hány százalékban tartottuk be (egészre kerekítve)
+ - ugyanazzal a névvel, de `png` kiterjesztéssel csinál egy diagrammot, amin látszódik idő függvényében a zóna alja, teteje, valamint a tényleges pulzus. Egy példa a [`run_hr.png`](run_hr.png)-ben látható:
 
 ![example diagram](run_hr.png)
 
@@ -132,7 +132,7 @@ A [`main.py`](main.py)-ban található kódra ez a várt kimenet:
 ```
 Could not add step, invalid data provided.
 
-The training plan:
+The training:
              Warm up ( 300 s): 144-151 bpm
      Comfortable run (1200 s): 149-157 bpm
        Energetic run ( 180 s): 158-166 bpm
@@ -153,9 +153,9 @@ HR zones:
  - At 1234 s : (149, 157)
  - At 12345 s : None
 
-Examine none-existant run.txt
+Examine none-existent run.txt
 Wrong filename.
 
 Examine run_hr.txt
-49% of the time the hr zones were met.
+49% of the time the HR zones were met.
 ```

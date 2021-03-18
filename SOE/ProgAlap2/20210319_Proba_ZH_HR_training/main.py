@@ -14,7 +14,7 @@ thursday.add_step("Comfortable run", 900, 149, 157)
 thursday.add_step("Cool down", 300, 140, 148)
 
 print()
-print("The training plan:")
+print("The training:")
 thursday.print()
 
 print()
@@ -27,10 +27,10 @@ for time in [0,1234,12345]:
 
 
 print()
-print("Examine none-existant run.txt")
+print("Examine none-existent run.txt")
 thursday.examine("run.txt")
 
 print()
 print("Examine run_hr.txt")
 good = thursday.examine("run_hr.txt")
-print("{}% of the time the hr zones were met.".format(good))
+print("{}% of the time the HR zones were met.".format(good))
