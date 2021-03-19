@@ -73,18 +73,18 @@ Például így:
 
 ```python
 >>> thursday.print()
-             Warm up ( 300 s): 144-144 bpm
-     Comfortable run (1200 s): 149-149 bpm
-       Energetic run ( 180 s): 158-158 bpm
-            Recovery ( 120 s): 146-146 bpm
-       Energetic run ( 180 s): 158-158 bpm
-            Recovery ( 120 s): 146-146 bpm
-       Energetic run ( 180 s): 158-158 bpm
-            Recovery ( 120 s): 146-146 bpm
-       Intensive run ( 180 s): 167-167 bpm
-            Recovery ( 120 s): 146-146 bpm
-     Comfortable run ( 900 s): 149-149 bpm
-           Cool down ( 300 s): 140-140 bpm
+             Warm up ( 300 s): 144-151 bpm
+     Comfortable run (1200 s): 149-157 bpm
+       Energetic run ( 180 s): 158-166 bpm
+            Recovery ( 120 s): 146-153 bpm
+       Energetic run ( 180 s): 158-166 bpm
+            Recovery ( 120 s): 146-153 bpm
+       Energetic run ( 180 s): 158-166 bpm
+            Recovery ( 120 s): 146-153 bpm
+       Intensive run ( 180 s): 167-175 bpm
+            Recovery ( 120 s): 146-153 bpm
+     Comfortable run ( 900 s): 149-157 bpm
+           Cool down ( 300 s): 140-148 bpm
 
 ```
 
