@@ -50,7 +50,7 @@ board._free_field(30)   # False
 board._free_field(42)   # False
 ```
 
-Ezen a ponton egy `board_free_field(3)` még `True`-t adna vissza, hiszen még egyetlen létrát, kígyót sem adtunk hozzá a táblához. 
+Ezen a ponton egy `board._free_field(3)` még `True`-t adna vissza, hiszen még egyetlen létrát, kígyót sem adtunk hozzá a táblához. 
 
 Ezt a hozzáadást az `add_jump` függvény valósítja meg. 
 Vegyük észre, hogy az egyetlen különbség egy kígyó és egy létra között, hogy az egyiken visszafele, a másikon előrefele ugrunk, de ugyanúgy egy ugrást jelent mindkettő, így kezelhetjük őket egyformán.
@@ -81,7 +81,7 @@ board.add_jump(0,10)  # Not a valid source field
 ```
 
 Az utolsó metódusa a `Board` osztálynak egy `move`, mely egy bábu mozgatását oldja meg.
-Vár egy mezőt (feltételezheti, hogy értelmes mező) ahol a bábyu most áll, dob egyet a 6 oldalú dobókockával (random), lép (a végén visszafele, ha kell), ugrik (ha kell), majd visszaadja, hogy ezután hol landolna a bábu.
+Vár egy mezőt (feltételezheti, hogy értelmes mező) ahol a bábu most áll, dob egyet a 6 oldalú dobókockával (random), lép (a végén visszafele, ha kell), ugrik (ha kell), majd visszaadja, hogy ezután hol landolna a bábu.
 
 Mivel véletlenszerűen dob, tesztelő kimenet-benet párokat nem lehet adni, de a fenti példát alkalmazva, a `board.move(28)` __ha__ belül ötöt dobna, akkor `1`-gyel térne vissza.
 
@@ -136,9 +136,9 @@ except Exception as e:
     print(e)
 board.draw_statistics("1_game.png")
 ```
-Aminek nálam `Reiner` lett a kimenete, és így néz ki az [1_game.png`](1_game.png)
+Aminek nálam `Reiner` lett a kimenete, és így néz ki az [`1_game.png`](1_game.png)
 
-![1_game.png`](1_game.png)
+![`1_game.png`](1_game.png)
 
 A következő kódrészlet 9999 játékot futtat le ugyanazzal a 4 játékossal:
 ```python
@@ -150,9 +150,9 @@ for _ in range(9999):
         pass
 board.draw_statistics("9999_games.png")
 ```
-A [9999_games.png`](9999_games.png) pedig így néz ki:
+A [`9999_games.png`](9999_games.png) pedig így néz ki:
 
-![9999_games.png`](9999_games.png)
+![`9999_games.png`](9999_games.png)
 
 Ez alapján jól látható, hogy se a kígyók, sem a létrák nem egyenlők, vannak amelyikekre sokkal nagyobb eséllyel lép rá valaki, mint másikakra.
 
