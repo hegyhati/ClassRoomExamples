@@ -31,3 +31,6 @@
 # Java files
 *.class
 *.jar
+
+
+*__pycache__*
