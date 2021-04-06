@@ -1,0 +1,23 @@
+{
+    "K" : ["semmi","van b", "van ba", "volt bab"],
+    "s" : "semmi",
+    "F" : [ "volt bab"],
+    "delta" : {
+        "semmi" : {
+            "b" : "van b",
+            "_" : "semmi"
+        },
+        "van b" : {
+            "a" : "van ba",
+            "b" : "van b",
+            "_" : "semmi"
+        },
+        "van ba" : {
+            "b" : "volt bab",
+            "_" : "semmi"
+        },
+        "volt bab" : {
+            "_" : "volt bab"
+        }
+    } 
+}
