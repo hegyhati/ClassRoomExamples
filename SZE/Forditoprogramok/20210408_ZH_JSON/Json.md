@@ -12,7 +12,7 @@ pairs : /* nothing */
       ;
 
 _pairs : /* nothing */
-       | ',' STRING ':' JSON _pairs
+       | ',' STRING ':' json _pairs
        ;
 
 array : '[' ']' 
