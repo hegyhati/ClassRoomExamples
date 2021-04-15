@@ -1,0 +1,9 @@
+{
+  "name": "The wizard",
+  "icon": "🧙",
+  "position": {
+    "x": 1,
+    "y": 1
+  },
+  "vision": 2
+}
