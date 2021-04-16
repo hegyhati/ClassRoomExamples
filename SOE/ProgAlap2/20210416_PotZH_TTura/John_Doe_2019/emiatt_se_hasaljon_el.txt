@@ -1,0 +1,1 @@
+A json fajlok mindegyikerol feltetelezheto, hogy ertelmes adatokat tartalmaz, de a tobbi kiterjesztesu fajlokra ninc semmilyen megkotes.
