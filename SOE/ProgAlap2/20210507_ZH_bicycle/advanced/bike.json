@@ -1,0 +1,6 @@
+{
+  "name" : "Shimano ultegra",
+  "chainring" : [39, 53],
+  "cassette" : [11,12,13,14,15,16,17,19,21,23,25],
+  "wheel_radius" : 31.1
+}
