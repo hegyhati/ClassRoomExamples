@@ -1,0 +1,16 @@
+{
+    "states" : ["q1","q2","q3"],
+    "alphabet" : ["a","b","c"],
+    "transitions" : [
+      {"from": "q1", "with": "a", "to": "q2"},  
+      {"from": "q1", "with": "ab", "to": "q3"},
+      {"from": "q2", "with": "b", "to": "q1"},
+      {"from": "q2", "with": "", "to": "q1"},
+      {"from": "q2", "with": "b", "to": "q3"},
+      {"from": "q2", "with": "", "to": "q3"},
+      {"from": "q3", "with": "b", "to": "q1"},
+      {"from": "q3", "with": "a", "to": "q3"}
+    ],
+    "initial_state" : "q1",
+    "accepting_states" : []
+}

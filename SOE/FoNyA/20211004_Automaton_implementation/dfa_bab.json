@@ -1,0 +1,20 @@
+{
+    "states" : [0,1,2,3],
+    "alphabet" : ["a","b","c"],
+    "transitions" : [
+      {"from": 0, "with": "a", "to": 0},  
+      {"from": 0, "with": "b", "to": 1},  
+      {"from": 0, "with": "c", "to": 0}, 
+      {"from": 1, "with": "a", "to": 2},  
+      {"from": 1, "with": "b", "to": 1},  
+      {"from": 1, "with": "c", "to": 0}, 
+      {"from": 2, "with": "a", "to": 0},  
+      {"from": 2, "with": "b", "to": 3},  
+      {"from": 2, "with": "c", "to": 0}, 
+      {"from": 3, "with": "a", "to": 3},  
+      {"from": 3, "with": "b", "to": 3},  
+      {"from": 3, "with": "c", "to": 3}
+    ],
+    "initial_state" : 0,
+    "accepting_states" : [3]
+}
