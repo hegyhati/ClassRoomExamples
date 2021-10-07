@@ -1,0 +1,29 @@
+{
+    "students" : ["Klau", "Dia", "Gellert"],
+    "subjects" : ["Vallalatiranyirasi_rendszerek_1", "Vallalatiranyitasi_rendszerek_2", "Termelesinformatika", "Dontestamogato_rendszerek", "Vallalati_gazdasagtan"],
+    "price" : {
+        "Dia" : {
+            "Vallalatiranyirasi_rendszerek_1" : 12,
+            "Vallalatiranyitasi_rendszerek_2" : 23,
+            "Termelesinformatika" : 8,
+            "Vallalati_gazdasagtan" : 34,
+            "Dontestamogato_rendszerek" : 9
+        },
+        "Klau" : {
+            "Vallalatiranyirasi_rendszerek_1" : 22,
+            "Vallalatiranyitasi_rendszerek_2" : 13,
+            "Termelesinformatika" : 9,
+            "Vallalati_gazdasagtan" : 24,
+            "Dontestamogato_rendszerek" : 11
+        },
+        "Gellert" : {
+            "Vallalatiranyirasi_rendszerek_1" : 19,
+            "Vallalatiranyitasi_rendszerek_2" : 4,
+            "Termelesinformatika" : 18,
+            "Vallalati_gazdasagtan" : 14,
+            "Dontestamogato_rendszerek" : 19
+        }
+    },
+    "min" : 1,
+    "max" : 2
+}
