@@ -4,7 +4,6 @@
  - `len(mylist)`
  - `mylist.append(44)`
  - `for item in mylist: print(item)`
- - `if item in mylist: ...`
 
 # Orai feladatok
  0. Szamokat bekerni amig 0-t nem kapunk.
