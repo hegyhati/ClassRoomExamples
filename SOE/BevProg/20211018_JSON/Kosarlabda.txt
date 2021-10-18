@@ -1,0 +1,29 @@
+ZTE KK
+Soproni Tigrisek
+Soproni Sportiskola
+Soproni Darazsak
+Budapesti Honved
+Falco
+
+ZTE KK:
+ - Zalaegerszegi Kosarlabda Klub
+ - Szekhely: Zalaegerszeg
+ - Csapattagok :
+    - Kiss Jozsef
+    - Szabo Laszlo
+    - Nemeth Valentin
+    - Makkos David
+    - Kiss Barnabas
+    - James Kinney
+
+Makkos David:
+  - pozicio: center
+  - mezszam: 15
+  - szerzett ponok:
+      2021: 13
+      2020: 50
+      ...
+  - Szuldatum: 1992.2.45.]
+  - Magassag: 134 cm
+
+

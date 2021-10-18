@@ -1,0 +1,31 @@
+{
+    "ZTE KK" : {
+        "short name" : "ZTE KK",
+        "full name" : "Zalaegerszegi Kosarlabda Klub",
+        "hometown" : "Zalaegerszeg",
+        "champion years": [2005,2009,2011,2015], 
+        "players" : {
+            "Kiss Jozsef" :{},
+            "Szabo Laszlo":{},
+            "Nemeth Valentin":{},
+            "Makkos David" :{ 
+                "position" : "center",
+                "number" : 15,
+                "points" : {
+                    "2021": 23,
+                    "2020" : 43,
+                    "2019" : 123
+                },
+                "birthdate": "1992.02.45.",
+                "height": 134.5
+            },
+            "Kiss Barnabas":{},
+            "James Kinney":{}
+        }
+    },
+    "Soproni Tigrisek" : {},
+    "Soproni Sportiskola" : {},
+    "Soproni Darazsak" : {},
+    "Budapesti Honved" :{},
+    "Falco" : {}
+}
