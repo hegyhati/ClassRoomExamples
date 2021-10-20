@@ -14,7 +14,7 @@
  0. Kerjunk be ket szamot. Csinaljunk listat a ket szam kozotti szamookbol novekvo sorrendben. Pl.: `6 11` ⟶ `[6, 7, 8, 9, 10, 11]`
  1. Kerjunk be egy szamot, irjuk ki az osztoit. Pl.: `12` ⟶ `1 2 3 4 6 12`
  2. Osztoparokat irjunk ki a bekert szamhoz, mindegyiket csak egyszer.
- 3. Csinaljunkn egy programot, melynek az elejen kezzel beegetunk ket listat. A program irja ki azokat a szamokat, amik mind a ket listaban benne vannak.
+ 3. Csinaljunk egy programot, melynek az elejen kezzel beegetunk ket listat. A program irja ki azokat a szamokat, amik mind a ket listaban benne vannak.
 
 # Forrasok
 
