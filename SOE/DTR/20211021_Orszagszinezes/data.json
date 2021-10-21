@@ -1,0 +1,16 @@
+{
+    "countries" : [
+        "HU", "CZ", "SK", "AT", "DE", "CH"
+    ], 
+    "connections" : [
+        ["HU" , "SK"],
+        ["HU" , "AT"],
+        ["CZ" , "SK"],
+        ["CZ" , "AT"],
+        ["CZ" , "DE"],
+        ["SK" , "AT"],
+        ["AT" , "DE"],
+        ["AT" , "CH"],
+        ["DE" , "CH"]        
+    ]
+}

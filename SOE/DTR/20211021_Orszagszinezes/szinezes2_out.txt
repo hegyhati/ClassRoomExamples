@@ -1,0 +1,6 @@
+{
+ "red" : [ "HU", "CZ", ],
+ "green" : [ "UA", "SB", "AT", ],
+ "blue" : [ "CR", "DE", ],
+ "black" : [ "RO", "SL", "SK", "CH", ],
+}

@@ -1,0 +1,9 @@
+set Students := Klau Dia Gellert;
+set Classes := VIR1 VIR2 TermInfo VallGazd DTR OpttAlg KozGaz;
+
+param hours :
+            VIR1    VIR2    TermInfo    VallGazd    DTR OpttAlg KozGaz :=
+    Klau    10      12      43          23          12  3       7  
+    Dia     12      13      14          15          16  17      18    
+    Gellert 21      31      41          51          61  71      81 
+    ;

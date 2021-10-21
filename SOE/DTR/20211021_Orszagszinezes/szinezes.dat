@@ -1,0 +1,10 @@
+set Countries := CR SL HU AT SK CZ DE CH;
+set Borders := 
+    (HU,AT) (HU,SK)
+    (AT,SK) (AT,CZ) (AT,DE) (AT,CH)
+    (SK,CZ) 
+    (CZ,DE)
+    (DE,CH)
+    (SL,AT) (SL,HU)
+    (CR,SL) (CR,HU)
+;

@@ -1,0 +1,155 @@
+Problem:    szinezes
+Rows:       52
+Columns:    28 (28 integer, 28 binary)
+Non-zeros:  116
+Status:     INTEGER OPTIMAL
+Objective:  Placeholder = 1 (MINimum)
+
+   No.   Row name        Activity     Lower bound   Upper bound
+------ ------------    ------------- ------------- -------------
+     1 Minden_orszgnak_legyen_szine[SL]
+                                   1             1             = 
+     2 Minden_orszgnak_legyen_szine[HU]
+                                   1             1             = 
+     3 Minden_orszgnak_legyen_szine[AT]
+                                   1             1             = 
+     4 Minden_orszgnak_legyen_szine[SK]
+                                   1             1             = 
+     5 Minden_orszgnak_legyen_szine[CZ]
+                                   1             1             = 
+     6 Minden_orszgnak_legyen_szine[DE]
+                                   1             1             = 
+     7 Minden_orszgnak_legyen_szine[CH]
+                                   1             1             = 
+     8 Nem_lehetnek_piros_szomszedok[HU,AT]
+                                   1                           1 
+     9 Nem_lehetnek_piros_szomszedok[HU,SK]
+                                   0                           1 
+    10 Nem_lehetnek_piros_szomszedok[AT,SK]
+                                   1                           1 
+    11 Nem_lehetnek_piros_szomszedok[AT,CZ]
+                                   1                           1 
+    12 Nem_lehetnek_piros_szomszedok[AT,DE]
+                                   1                           1 
+    13 Nem_lehetnek_piros_szomszedok[AT,CH]
+                                   1                           1 
+    14 Nem_lehetnek_piros_szomszedok[SK,CZ]
+                                   0                           1 
+    15 Nem_lehetnek_piros_szomszedok[CZ,DE]
+                                   0                           1 
+    16 Nem_lehetnek_piros_szomszedok[DE,CH]
+                                   0                           1 
+    17 Nem_lehetnek_piros_szomszedok[SL,AT]
+                                   1                           1 
+    18 Nem_lehetnek_piros_szomszedok[SL,HU]
+                                   0                           1 
+    19 Nem_lehetnek_zold_szomszedok[HU,AT]
+                                   0                           1 
+    20 Nem_lehetnek_zold_szomszedok[HU,SK]
+                                   0                           1 
+    21 Nem_lehetnek_zold_szomszedok[AT,SK]
+                                   0                           1 
+    22 Nem_lehetnek_zold_szomszedok[AT,CZ]
+                                   0                           1 
+    23 Nem_lehetnek_zold_szomszedok[AT,DE]
+                                   0                           1 
+    24 Nem_lehetnek_zold_szomszedok[AT,CH]
+                                   0                           1 
+    25 Nem_lehetnek_zold_szomszedok[SK,CZ]
+                                   0                           1 
+    26 Nem_lehetnek_zold_szomszedok[CZ,DE]
+                                   0                           1 
+    27 Nem_lehetnek_zold_szomszedok[DE,CH]
+                                   0                           1 
+    28 Nem_lehetnek_zold_szomszedok[SL,AT]
+                                   0                           1 
+    29 Nem_lehetnek_zold_szomszedok[SL,HU]
+                                   0                           1 
+    30 Nem_lehetnek_kek_szomszedok[HU,AT]
+                                   0                           1 
+    31 Nem_lehetnek_kek_szomszedok[HU,SK]
+                                   1                           1 
+    32 Nem_lehetnek_kek_szomszedok[AT,SK]
+                                   1                           1 
+    33 Nem_lehetnek_kek_szomszedok[AT,CZ]
+                                   0                           1 
+    34 Nem_lehetnek_kek_szomszedok[AT,DE]
+                                   1                           1 
+    35 Nem_lehetnek_kek_szomszedok[AT,CH]
+                                   0                           1 
+    36 Nem_lehetnek_kek_szomszedok[SK,CZ]
+                                   1                           1 
+    37 Nem_lehetnek_kek_szomszedok[CZ,DE]
+                                   1                           1 
+    38 Nem_lehetnek_kek_szomszedok[DE,CH]
+                                   1                           1 
+    39 Nem_lehetnek_kek_szomszedok[SL,AT]
+                                   1                           1 
+    40 Nem_lehetnek_kek_szomszedok[SL,HU]
+                                   1                           1 
+    41 Nem_lehetnek_fekete_szomszedok[HU,AT]
+                                   1                           1 
+    42 Nem_lehetnek_fekete_szomszedok[HU,SK]
+                                   1                           1 
+    43 Nem_lehetnek_fekete_szomszedok[AT,SK]
+                                   0                           1 
+    44 Nem_lehetnek_fekete_szomszedok[AT,CZ]
+                                   1                           1 
+    45 Nem_lehetnek_fekete_szomszedok[AT,DE]
+                                   0                           1 
+    46 Nem_lehetnek_fekete_szomszedok[AT,CH]
+                                   1                           1 
+    47 Nem_lehetnek_fekete_szomszedok[SK,CZ]
+                                   1                           1 
+    48 Nem_lehetnek_fekete_szomszedok[CZ,DE]
+                                   1                           1 
+    49 Nem_lehetnek_fekete_szomszedok[DE,CH]
+                                   1                           1 
+    50 Nem_lehetnek_fekete_szomszedok[SL,AT]
+                                   0                           1 
+    51 Nem_lehetnek_fekete_szomszedok[SL,HU]
+                                   1                           1 
+    52 Placeholder                 0                             
+
+   No. Column name       Activity     Lower bound   Upper bound
+------ ------------    ------------- ------------- -------------
+     1 K[SL]        *              1             0             1 
+     2 K[HU]        *              0             0             1 
+     3 K[AT]        *              0             0             1 
+     4 K[SK]        *              1             0             1 
+     5 K[CZ]        *              0             0             1 
+     6 K[DE]        *              1             0             1 
+     7 K[CH]        *              0             0             1 
+     8 P[SL]        *              0             0             1 
+     9 P[HU]        *              0             0             1 
+    10 P[AT]        *              1             0             1 
+    11 P[SK]        *              0             0             1 
+    12 P[CZ]        *              0             0             1 
+    13 P[DE]        *              0             0             1 
+    14 P[CH]        *              0             0             1 
+    15 Z[SL]        *              0             0             1 
+    16 Z[HU]        *              0             0             1 
+    17 Z[AT]        *              0             0             1 
+    18 Z[SK]        *              0             0             1 
+    19 Z[CZ]        *              0             0             1 
+    20 Z[DE]        *              0             0             1 
+    21 Z[CH]        *              0             0             1 
+    22 F[SL]        *              0             0             1 
+    23 F[HU]        *              1             0             1 
+    24 F[AT]        *              0             0             1 
+    25 F[SK]        *              0             0             1 
+    26 F[CZ]        *              1             0             1 
+    27 F[DE]        *              0             0             1 
+    28 F[CH]        *              1             0             1 
+
+Integer feasibility conditions:
+
+KKT.PE: max.abs.err = 0.00e+00 on row 0
+        max.rel.err = 0.00e+00 on row 0
+        High quality
+
+KKT.PB: max.abs.err = 0.00e+00 on row 0
+        max.rel.err = 0.00e+00 on row 0
+        High quality
+
+End of output

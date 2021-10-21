@@ -1,0 +1,273 @@
+Problem:    szinezes2
+Rows:       92
+Columns:    44 (44 integer, 44 binary)
+Non-zeros:  204
+Status:     INTEGER OPTIMAL
+Objective:  Placeholder = 1 (MINimum)
+
+   No.   Row name        Activity     Lower bound   Upper bound
+------ ------------    ------------- ------------- -------------
+     1 Minden_orszgnak_legyen_szine[UA]
+                                   1             1             = 
+     2 Minden_orszgnak_legyen_szine[SB]
+                                   1             1             = 
+     3 Minden_orszgnak_legyen_szine[RO]
+                                   1             1             = 
+     4 Minden_orszgnak_legyen_szine[CR]
+                                   1             1             = 
+     5 Minden_orszgnak_legyen_szine[SL]
+                                   1             1             = 
+     6 Minden_orszgnak_legyen_szine[HU]
+                                   1             1             = 
+     7 Minden_orszgnak_legyen_szine[AT]
+                                   1             1             = 
+     8 Minden_orszgnak_legyen_szine[SK]
+                                   1             1             = 
+     9 Minden_orszgnak_legyen_szine[CZ]
+                                   1             1             = 
+    10 Minden_orszgnak_legyen_szine[DE]
+                                   1             1             = 
+    11 Minden_orszgnak_legyen_szine[CH]
+                                   1             1             = 
+    12 Nem_lehetnek_azonos_szinu_szomszedok[HU,AT,red]
+                                   1                           1 
+    13 Nem_lehetnek_azonos_szinu_szomszedok[HU,AT,green]
+                                   1                           1 
+    14 Nem_lehetnek_azonos_szinu_szomszedok[HU,AT,blue]
+                                   0                           1 
+    15 Nem_lehetnek_azonos_szinu_szomszedok[HU,AT,black]
+                                   0                           1 
+    16 Nem_lehetnek_azonos_szinu_szomszedok[HU,SK,red]
+                                   1                           1 
+    17 Nem_lehetnek_azonos_szinu_szomszedok[HU,SK,green]
+                                   0                           1 
+    18 Nem_lehetnek_azonos_szinu_szomszedok[HU,SK,blue]
+                                   0                           1 
+    19 Nem_lehetnek_azonos_szinu_szomszedok[HU,SK,black]
+                                   1                           1 
+    20 Nem_lehetnek_azonos_szinu_szomszedok[AT,SK,red]
+                                   0                           1 
+    21 Nem_lehetnek_azonos_szinu_szomszedok[AT,SK,green]
+                                   1                           1 
+    22 Nem_lehetnek_azonos_szinu_szomszedok[AT,SK,blue]
+                                   0                           1 
+    23 Nem_lehetnek_azonos_szinu_szomszedok[AT,SK,black]
+                                   1                           1 
+    24 Nem_lehetnek_azonos_szinu_szomszedok[AT,CZ,red]
+                                   1                           1 
+    25 Nem_lehetnek_azonos_szinu_szomszedok[AT,CZ,green]
+                                   1                           1 
+    26 Nem_lehetnek_azonos_szinu_szomszedok[AT,CZ,blue]
+                                   0                           1 
+    27 Nem_lehetnek_azonos_szinu_szomszedok[AT,CZ,black]
+                                   0                           1 
+    28 Nem_lehetnek_azonos_szinu_szomszedok[AT,DE,red]
+                                   0                           1 
+    29 Nem_lehetnek_azonos_szinu_szomszedok[AT,DE,green]
+                                   1                           1 
+    30 Nem_lehetnek_azonos_szinu_szomszedok[AT,DE,blue]
+                                   1                           1 
+    31 Nem_lehetnek_azonos_szinu_szomszedok[AT,DE,black]
+                                   0                           1 
+    32 Nem_lehetnek_azonos_szinu_szomszedok[AT,CH,red]
+                                   0                           1 
+    33 Nem_lehetnek_azonos_szinu_szomszedok[AT,CH,green]
+                                   1                           1 
+    34 Nem_lehetnek_azonos_szinu_szomszedok[AT,CH,blue]
+                                   0                           1 
+    35 Nem_lehetnek_azonos_szinu_szomszedok[AT,CH,black]
+                                   1                           1 
+    36 Nem_lehetnek_azonos_szinu_szomszedok[SK,CZ,red]
+                                   1                           1 
+    37 Nem_lehetnek_azonos_szinu_szomszedok[SK,CZ,green]
+                                   0                           1 
+    38 Nem_lehetnek_azonos_szinu_szomszedok[SK,CZ,blue]
+                                   0                           1 
+    39 Nem_lehetnek_azonos_szinu_szomszedok[SK,CZ,black]
+                                   1                           1 
+    40 Nem_lehetnek_azonos_szinu_szomszedok[CZ,DE,red]
+                                   1                           1 
+    41 Nem_lehetnek_azonos_szinu_szomszedok[CZ,DE,green]
+                                   0                           1 
+    42 Nem_lehetnek_azonos_szinu_szomszedok[CZ,DE,blue]
+                                   1                           1 
+    43 Nem_lehetnek_azonos_szinu_szomszedok[CZ,DE,black]
+                                   0                           1 
+    44 Nem_lehetnek_azonos_szinu_szomszedok[DE,CH,red]
+                                   0                           1 
+    45 Nem_lehetnek_azonos_szinu_szomszedok[DE,CH,green]
+                                   0                           1 
+    46 Nem_lehetnek_azonos_szinu_szomszedok[DE,CH,blue]
+                                   1                           1 
+    47 Nem_lehetnek_azonos_szinu_szomszedok[DE,CH,black]
+                                   1                           1 
+    48 Nem_lehetnek_azonos_szinu_szomszedok[SL,AT,red]
+                                   0                           1 
+    49 Nem_lehetnek_azonos_szinu_szomszedok[SL,AT,green]
+                                   1                           1 
+    50 Nem_lehetnek_azonos_szinu_szomszedok[SL,AT,blue]
+                                   0                           1 
+    51 Nem_lehetnek_azonos_szinu_szomszedok[SL,AT,black]
+                                   1                           1 
+    52 Nem_lehetnek_azonos_szinu_szomszedok[SL,HU,red]
+                                   1                           1 
+    53 Nem_lehetnek_azonos_szinu_szomszedok[SL,HU,green]
+                                   0                           1 
+    54 Nem_lehetnek_azonos_szinu_szomszedok[SL,HU,blue]
+                                   0                           1 
+    55 Nem_lehetnek_azonos_szinu_szomszedok[SL,HU,black]
+                                   1                           1 
+    56 Nem_lehetnek_azonos_szinu_szomszedok[CR,SL,red]
+                                   0                           1 
+    57 Nem_lehetnek_azonos_szinu_szomszedok[CR,SL,green]
+                                   0                           1 
+    58 Nem_lehetnek_azonos_szinu_szomszedok[CR,SL,blue]
+                                   1                           1 
+    59 Nem_lehetnek_azonos_szinu_szomszedok[CR,SL,black]
+                                   1                           1 
+    60 Nem_lehetnek_azonos_szinu_szomszedok[CR,HU,red]
+                                   1                           1 
+    61 Nem_lehetnek_azonos_szinu_szomszedok[CR,HU,green]
+                                   0                           1 
+    62 Nem_lehetnek_azonos_szinu_szomszedok[CR,HU,blue]
+                                   1                           1 
+    63 Nem_lehetnek_azonos_szinu_szomszedok[CR,HU,black]
+                                   0                           1 
+    64 Nem_lehetnek_azonos_szinu_szomszedok[SB,CR,red]
+                                   0                           1 
+    65 Nem_lehetnek_azonos_szinu_szomszedok[SB,CR,green]
+                                   1                           1 
+    66 Nem_lehetnek_azonos_szinu_szomszedok[SB,CR,blue]
+                                   1                           1 
+    67 Nem_lehetnek_azonos_szinu_szomszedok[SB,CR,black]
+                                   0                           1 
+    68 Nem_lehetnek_azonos_szinu_szomszedok[SB,HU,red]
+                                   1                           1 
+    69 Nem_lehetnek_azonos_szinu_szomszedok[SB,HU,green]
+                                   1                           1 
+    70 Nem_lehetnek_azonos_szinu_szomszedok[SB,HU,blue]
+                                   0                           1 
+    71 Nem_lehetnek_azonos_szinu_szomszedok[SB,HU,black]
+                                   0                           1 
+    72 Nem_lehetnek_azonos_szinu_szomszedok[RO,SB,red]
+                                   0                           1 
+    73 Nem_lehetnek_azonos_szinu_szomszedok[RO,SB,green]
+                                   1                           1 
+    74 Nem_lehetnek_azonos_szinu_szomszedok[RO,SB,blue]
+                                   0                           1 
+    75 Nem_lehetnek_azonos_szinu_szomszedok[RO,SB,black]
+                                   1                           1 
+    76 Nem_lehetnek_azonos_szinu_szomszedok[RO,HU,red]
+                                   1                           1 
+    77 Nem_lehetnek_azonos_szinu_szomszedok[RO,HU,green]
+                                   0                           1 
+    78 Nem_lehetnek_azonos_szinu_szomszedok[RO,HU,blue]
+                                   0                           1 
+    79 Nem_lehetnek_azonos_szinu_szomszedok[RO,HU,black]
+                                   1                           1 
+    80 Nem_lehetnek_azonos_szinu_szomszedok[UA,RO,red]
+                                   0                           1 
+    81 Nem_lehetnek_azonos_szinu_szomszedok[UA,RO,green]
+                                   1                           1 
+    82 Nem_lehetnek_azonos_szinu_szomszedok[UA,RO,blue]
+                                   0                           1 
+    83 Nem_lehetnek_azonos_szinu_szomszedok[UA,RO,black]
+                                   1                           1 
+    84 Nem_lehetnek_azonos_szinu_szomszedok[UA,HU,red]
+                                   1                           1 
+    85 Nem_lehetnek_azonos_szinu_szomszedok[UA,HU,green]
+                                   1                           1 
+    86 Nem_lehetnek_azonos_szinu_szomszedok[UA,HU,blue]
+                                   0                           1 
+    87 Nem_lehetnek_azonos_szinu_szomszedok[UA,HU,black]
+                                   0                           1 
+    88 Nem_lehetnek_azonos_szinu_szomszedok[UA,SK,red]
+                                   0                           1 
+    89 Nem_lehetnek_azonos_szinu_szomszedok[UA,SK,green]
+                                   1                           1 
+    90 Nem_lehetnek_azonos_szinu_szomszedok[UA,SK,blue]
+                                   0                           1 
+    91 Nem_lehetnek_azonos_szinu_szomszedok[UA,SK,black]
+                                   1                           1 
+    92 Placeholder                 0                             
+
+   No. Column name       Activity     Lower bound   Upper bound
+------ ------------    ------------- ------------- -------------
+     1 use[UA,red]  *              0             0             1 
+     2 use[UA,green]
+                    *              1             0             1 
+     3 use[UA,blue] *              0             0             1 
+     4 use[UA,black]
+                    *              0             0             1 
+     5 use[SB,red]  *              0             0             1 
+     6 use[SB,green]
+                    *              1             0             1 
+     7 use[SB,blue] *              0             0             1 
+     8 use[SB,black]
+                    *              0             0             1 
+     9 use[RO,red]  *              0             0             1 
+    10 use[RO,green]
+                    *              0             0             1 
+    11 use[RO,blue] *              0             0             1 
+    12 use[RO,black]
+                    *              1             0             1 
+    13 use[CR,red]  *              0             0             1 
+    14 use[CR,green]
+                    *              0             0             1 
+    15 use[CR,blue] *              1             0             1 
+    16 use[CR,black]
+                    *              0             0             1 
+    17 use[SL,red]  *              0             0             1 
+    18 use[SL,green]
+                    *              0             0             1 
+    19 use[SL,blue] *              0             0             1 
+    20 use[SL,black]
+                    *              1             0             1 
+    21 use[HU,red]  *              1             0             1 
+    22 use[HU,green]
+                    *              0             0             1 
+    23 use[HU,blue] *              0             0             1 
+    24 use[HU,black]
+                    *              0             0             1 
+    25 use[AT,red]  *              0             0             1 
+    26 use[AT,green]
+                    *              1             0             1 
+    27 use[AT,blue] *              0             0             1 
+    28 use[AT,black]
+                    *              0             0             1 
+    29 use[SK,red]  *              0             0             1 
+    30 use[SK,green]
+                    *              0             0             1 
+    31 use[SK,blue] *              0             0             1 
+    32 use[SK,black]
+                    *              1             0             1 
+    33 use[CZ,red]  *              1             0             1 
+    34 use[CZ,green]
+                    *              0             0             1 
+    35 use[CZ,blue] *              0             0             1 
+    36 use[CZ,black]
+                    *              0             0             1 
+    37 use[DE,red]  *              0             0             1 
+    38 use[DE,green]
+                    *              0             0             1 
+    39 use[DE,blue] *              1             0             1 
+    40 use[DE,black]
+                    *              0             0             1 
+    41 use[CH,red]  *              0             0             1 
+    42 use[CH,green]
+                    *              0             0             1 
+    43 use[CH,blue] *              0             0             1 
+    44 use[CH,black]
+                    *              1             0             1 
+
+Integer feasibility conditions:
+
+KKT.PE: max.abs.err = 0.00e+00 on row 0
+        max.rel.err = 0.00e+00 on row 0
+        High quality
+
+KKT.PB: max.abs.err = 0.00e+00 on row 0
+        max.rel.err = 0.00e+00 on row 0
+        High quality
+
+End of output
