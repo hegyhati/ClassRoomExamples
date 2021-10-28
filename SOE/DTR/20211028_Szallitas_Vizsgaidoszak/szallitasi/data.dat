@@ -1,0 +1,24 @@
+set Gyarak := Sopron Tata Puski Rabapordany;
+set Kocsmak := Szekesfehervar Koszeg Papa;
+
+param igeny:=
+    Koszeg          350
+    Papa            450
+    Szekesfehervar  600
+    ;
+
+param keszlet := 
+    Sopron      1000
+    Tata        150
+    Puski       200
+    Rabapordany 400
+    ;
+
+param uthossz (tr):
+            Sopron  Tata    Puski   Rabapordany :=
+    Koszeg  60      350     70      90
+    Papa    150     200     80      45
+    Szekesfehervar 300  80  140     120
+    ;
+
+

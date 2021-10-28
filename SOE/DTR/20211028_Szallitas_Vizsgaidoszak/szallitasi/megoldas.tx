@@ -1,0 +1,72 @@
+Problem:    modell_2
+Rows:       8
+Columns:    12
+Non-zeros:  36
+Status:     OPTIMAL
+Objective:  Szallitasi_koltseg = 142750 (MINimum)
+
+   No.   Row name   St   Activity     Lower bound   Upper bound    Marginal
+------ ------------ -- ------------- ------------- ------------- -------------
+     1 Keszlet_korlatozas[Sopron]
+                    B            650                        1000 
+     2 Keszlet_korlatozas[Tata]
+                    NU           150                         150          -145 
+     3 Keszlet_korlatozas[Puski]
+                    NU           200                         200           -85 
+     4 Keszlet_korlatozas[Rabapordany]
+                    NU           400                         400          -105 
+     5 Igeny_korlatozas[Szekesfehervar]
+                    NL           600           600                         225 
+     6 Igeny_korlatozas[Koszeg]
+                    NL           350           350                          60 
+     7 Igeny_korlatozas[Papa]
+                    NL           450           450                         150 
+     8 Szallitasi_koltseg
+                    B         142750                             
+
+   No. Column name  St   Activity     Lower bound   Upper bound    Marginal
+------ ------------ -- ------------- ------------- ------------- -------------
+     1 szallit[Sopron,Szekesfehervar]
+                    NL             0             0                          75 
+     2 szallit[Sopron,Koszeg]
+                    B            350             0               
+     3 szallit[Sopron,Papa]
+                    B            300             0               
+     4 szallit[Tata,Szekesfehervar]
+                    B            150             0               
+     5 szallit[Tata,Koszeg]
+                    NL             0             0                         435 
+     6 szallit[Tata,Papa]
+                    NL             0             0                         195 
+     7 szallit[Puski,Szekesfehervar]
+                    B            200             0               
+     8 szallit[Puski,Koszeg]
+                    NL             0             0                          95 
+     9 szallit[Puski,Papa]
+                    NL             0             0                          15 
+    10 szallit[Rabapordany,Szekesfehervar]
+                    B            250             0               
+    11 szallit[Rabapordany,Koszeg]
+                    NL             0             0                         135 
+    12 szallit[Rabapordany,Papa]
+                    B            150             0               
+
+Karush-Kuhn-Tucker optimality conditions:
+
+KKT.PE: max.abs.err = 0.00e+00 on row 0
+        max.rel.err = 0.00e+00 on row 0
+        High quality
+
+KKT.PB: max.abs.err = 0.00e+00 on row 0
+        max.rel.err = 0.00e+00 on row 0
+        High quality
+
+KKT.DE: max.abs.err = 0.00e+00 on column 0
+        max.rel.err = 0.00e+00 on column 0
+        High quality
+
+KKT.DB: max.abs.err = 0.00e+00 on row 0
+        max.rel.err = 0.00e+00 on row 0
+        High quality
+
+End of output
