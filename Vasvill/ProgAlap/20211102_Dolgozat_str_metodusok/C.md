@@ -1,4 +1,4 @@
-## Dolgozat - 2021.10.19.
+## Dolgozat - 2021.11.02.
 
 ### Kifejezések, operátorok (9p)
 Mi az alábbi kifejezések értéke? Típusra figyeljen.
