@@ -1,0 +1,83 @@
+# Feladatunk megtervezni az sportorakat gyarto cegunk kovetkezo  termeket ugy, hogy a bevetelunk minel nagyobb legyen. 
+# Az orat 250 dollarert tervezzuk arulni. 
+# Amit el kell dontenunk, az az, hogy milyen funkciokat, hardware-t tegyunk bele. 
+# Ismert ezeknek az opcioknak a darabonkenti beepitesi koltsege / liszenszdija, stb. 
+# Az ezekre szant keret nem lepheti at a 80 dollart.
+# Felfogadtunk egy kozvelemenykutato ceget, aki azonositott szamunkra nehany (diszjunkt) vevokort az igenyeikkel, valamint a maximalis penzzel, amit egy ilyen okosorara szannanak.
+# A megbizott ceg megsaccolta azt is, hogy ezek a korok hany vasarlot jelentenek. 
+
+# Az alabbi adatok alapjan keszitsen modellt, mely megmondja, hogy hogyan tervezzuk meg az orankat, hogy maximalis legyen a bevetelunk. 
+# Megjegyzesek:
+#  - Bevetelt maximalizalunk, nem profitot, igy nem kell foglalkozni azzal, hogy mennyibe kerulnek a komponensek egy oraban, csak a megadott limitbe ferjenek bele.
+#  - A megodlas rendelkezzen valami egyszeru kimenettel, ami leirja, hogy miket teszunk bele az oraba, ezzel melyik vasarlokorok lesznek "megfogva", es osszesen mekkora bevetelt fog ez generalni.
+#  - A data resz nem modosithato
+
+# Pelda kimenet:
+#
+#Included components:  GPS HR ACC BT
+#Targeted groups:
+#	Group  G7, population: 4311
+#	Group  G9, population: 2347
+#	Group G10, population: 8426
+#Sold to a total of 15084 people, making 3771000 income
+
+
+
+set Components := GPS HR ACC BT WIFI;
+set Groups :=  G1	G2	G3	G4	G5	G6	G7	G8	G9	G10	G11	G12	G13	G14	G15	G16;
+
+param price :=
+    GPS 	10
+    HR	    20
+    ACC 	5
+    BT	    25
+    WIFI	30
+    ;
+
+# Mindegyik egyszerre nem fer bele a 80 dollaros keretbe.
+
+param needs (tr) :
+            G1	G2	G3	G4	G5	G6	G7	G8	G9	G10	G11	G12	G13	G14	G15	G16 :=
+    GPS	    1	1	1	0	1	1	0	0	1	1	1	0	0	1	0	1	
+    HR	    1	1	1	0	1	1	0	1	1	1	1	1	0	1	0	0	
+    ACC	    0	1	1	1	1	1	1	0	1	0	0	1	1	1	1	1	
+    BT	    1	1	1	0	0	1	1	0	1	0	1	1	1	1	1	1	
+    WIFI	1	1	1	1	1	1	0	1	0	0	1	1	1	1	1	1	
+    ;
+
+# A masodik csoport csak akkro veszi meg az orat, ha minden benne van, a 7.-nek eleg a BT es az ACC
+
+
+param : 
+        maxpay  population := 
+    G1	167     1234
+    G2	102     2345
+    G3	430     3456
+    G4	145     4576
+    G5	434     5678
+    G6	225     7689
+    G7	342     4311
+    G8	126     4563
+    G9	414     2347
+    G10	333     8426
+    G11	318     3585
+    G12	370     2478
+    G13	388     2137
+    G14	363     2458
+    G15	272     4568
+    G16	69      2348
+    ; 
+
+# A G1-es csoport pl biztosan nem fogja tudni megvenni az orankat
+
+
+
+param  sellprice := 250;
+param maxcomponentprice := 80;
+
+
+# Feladatok megajanlott jegyekert:
+#  - Gyartunk egy olcsobb modellt is, amit 150-ert tervezunke ertekesiteni, es legfejlebb 50 dollarnyi komponenst tehetunk bele. Ha egy csoportnak mindketto megfelel, akkor feltetelezhetjuk, hogy megveszi a dragabbikat.
+#  - Ha egy csoportnak mindket ora megfelel, akkor nem a dragabbikat, hanem az olcsobbat vegye meg.
+#  - Az ar ne legyen lefixalva, legyen a dontes resze az is.
+#  - Ne bevetelt, hanem profitot maximalizaljunk.

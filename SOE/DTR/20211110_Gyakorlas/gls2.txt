@@ -1,0 +1,22 @@
+1. kor: North
+ - 24. rendeles (CarseJonril, 2.09 kg, 2 Ft)
+ - 27. rendeles (CarseJonril, 3.87 kg, 2 Ft)
+ - 36. rendeles (Elvandar, 3.57 kg, 2 Ft)
+2. kor: East
+ - 10. rendeles (Bordon, 4.23 kg, 2 Ft)
+ - 19. rendeles (Lan, 2.01 kg, 2 Ft)
+ - 33. rendeles (Lan, 3.47 kg, 2 Ft)
+3. kor: North
+ - 13. rendeles (Elvandar, 4.71 kg, 2 Ft)
+ - 16. rendeles (Elvandar, 5.07 kg, 2 Ft)
+4. kor: East
+ - 9. rendeles (Natal, 4.84 kg, 2 Ft)
+ - 29. rendeles (Lan, 3.99 kg, 2 Ft)
+5. kor: South
+ - 31. rendeles (CarseJonril, 6.03 kg, 2 Ft)
+ - 32. rendeles (Tulan, 3.96 kg, 2 Ft)
+6. kor: East
+ - 26. rendeles (Lan, 3.9 kg, 2 Ft)
+ - 34. rendeles (Walinor, 5.72 kg, 2 Ft)
+7. kor: North
+ - 15. rendeles (Moraelin, 6.46 kg, 2 Ft)
