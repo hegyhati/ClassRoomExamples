@@ -1,0 +1,35 @@
+set Runners := Tomi Livi Balazs Kriszti Ricsi Csabi;
+
+param max_distance :=
+    Tomi    21 
+    Livi    9
+    Balazs  24
+    Kriszti 8
+    Ricsi   13
+    Csabi   2
+    ;
+
+param weeks := 5;
+
+param attendance :
+            1   2   3   4   5 :=
+    Tomi    1   .   1   .   1
+    Livi    .   1   .   1   1
+    Balazs  1   1   .   .   1
+    Kriszti .   1   .   1   .
+    Ricsi   .   .   1   1   .
+    Csabi   .   .   .   .   .
+;
+
+
+set Routes := Lover Muck Benchmark HaromAKaroly Ojtozi;
+
+param distance :=
+    Lover           5.3
+    Muck            9.5
+    Benchmark       13
+    HaromAKaroly    21
+    Ojtozi          6
+    ;
+
+param max_occurence := 2;
