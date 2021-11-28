@@ -1,0 +1,22 @@
+[
+    {
+        "subject": "DTR",
+        "date": 5,
+        "hours": 20
+    },
+    {
+        "subject": "ProgI",
+        "date": 8,
+        "hours": 300
+    },
+    {
+        "subject": "OS",
+        "date": 9,
+        "hours": 3
+    },
+    {
+        "subject": "qwert",
+        "date": 123,
+        "hours": 123.0
+    }
+]
