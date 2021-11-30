@@ -3,9 +3,9 @@
 ### Kerjen be egy sebesseget km/h-ban, majd irja ki m/s-ban.
 
 ### Kerjen be egy sebesseget km/h-ban, majd irja ki a tempot perc/km-ben.
-A tempo a sebesseg reciproka, 4:25 p/km azt jelenti, hogy egy perc megtetelehez 4 perc 25 masodpercre van szukseg.
+A tempo a sebesseg reciproka, 4:25 p/km azt jelenti, hogy egy kilometer megtetelehez 4 perc 25 masodpercre van szukseg.
 
-### Kerjen be egy szamot, es irja ki a szmjegyeinek osszeget (tizes szamrendszerben).
+### Kerjen be egy szamot, es irja ki a szamjegyeinek osszeget (tizes szamrendszerben).
 
 ### Kerjen be egy szot es irja ki, hogy palindrom-e?
 Palindrom = ugyanaz visszafele olvasva, pl: retipipiter, magam, mentegetnem, stb. 
