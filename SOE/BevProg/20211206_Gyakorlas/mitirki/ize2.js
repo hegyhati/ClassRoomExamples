@@ -6,3 +6,4 @@ while (m < 30) {
     l[m%5] += 1
     m += k
 }
+console.log(l)
