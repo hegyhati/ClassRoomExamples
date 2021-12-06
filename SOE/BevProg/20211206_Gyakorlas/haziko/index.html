@@ -1,0 +1,30 @@
+<html>
+    <head>
+        <script src="haziko.js"></script>
+    </head>
+    <body>
+        <input id="nev" type="text" >
+        <input id="szelesseg" type="number">
+        X
+        <input id="hosszusag" type="number">
+        <button onclick="hozzaad()">Hozzaad</button>
+        <hr />
+        <ul id="lista">
+            
+        </ul>
+        Teljes terulet: <span id="osszterulet">0</span>.
+        <hr />
+        Lehetseges meretek:
+        <table border="1">
+            <thead>
+                <tr style="background:red;">
+                    <td>Szelesseg</td>
+                    <td>Hosszusag</td>
+                </tr>
+            </thead>
+            <tbody id = "meretek">
+                <tr><td>0</td><td>0</td></tr>
+            </tbody>
+        </table>
+    </body>
+</html>

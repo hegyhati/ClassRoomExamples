@@ -1,3 +1,7 @@
+# Uj anyag
+
+ - `print("Valami" if feltetel else "Mas valami")`
+
 # Gyakorlofeladatok
 
 ### Kerjen be egy sebesseget km/h-ban, majd irja ki m/s-ban.
