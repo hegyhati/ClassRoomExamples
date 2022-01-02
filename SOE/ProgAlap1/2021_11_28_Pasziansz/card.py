@@ -6,13 +6,44 @@ CardDeck = NewType('CardDeck', List[Card])
 
 card_type = ['♠', '♣', '♡', '♢']
 card_value = ['A', '2', '3', '4', '5', '6', '7', '8', '9', '10', 'J', 'D', 'K']
+# card_value = ['A', '2', '3']
 
 
 def to_string(card: Card) -> str:
+    """Returns the textual representation of a card
+    Doesn't do safety checks on the input.
+
+    Args:
+        card (Card): The card in the form of a type-value int-int tuple.
+
+    Returns:
+        str: The textual representation: a pipe followed by the value then the type of the card.
+
+    >>> to_string((0,0))
+    '|A♠'
+    >>> to_string((1,2))
+    '|3♣'
+    >>> to_string((3,10))
+    '|J♢'
+    """
     return '|' + card_value[card[1]] + card_type[card[0]]
 
 
 def is_same_color(card1: Card, card2: Card) -> bool:
+    """Returns whether the two cards are both red or black.
+
+    Args:
+        card1 (Card): the first card
+        card2 (Card): the second card
+
+    Returns:
+        bool: True if they share the same color, False otherwise
+
+    >>> is_same_color((0,0),(1,2))
+    True
+    >>> is_same_color((0,5),(2,9))
+    False
+    """
     return card1[0]//2 == card2[0]//2
 
 
@@ -29,7 +60,7 @@ def has_one_greater_value(card1: Card, card2: Card) -> bool:
 
 
 def get_shuffled_card_deck() -> CardDeck:
-    deck = [(ctype, cvalue) for ctype in range(4) for cvalue in range(13)]
+    deck:CardDeck = [(ctype, cvalue) for ctype in range(len(card_type)) for cvalue in range(len(card_value))]
     shuffle(deck)
     return deck
 
@@ -55,8 +86,9 @@ def pop_top_card(deck: CardDeck) -> Card:
     del deck[-1]
     return card
 
-def top_card(deck: CardDeck) -> Card:
-    return deck[-1]
+def top_card(deck: CardDeck, count:int = 1) -> Card:
+    return deck[-count]
+
 
 
 def push_card_to_deck(card: Card, deck: CardDeck, top:bool = True) -> None:
@@ -65,6 +97,13 @@ def push_card_to_deck(card: Card, deck: CardDeck, top:bool = True) -> None:
     else:
         deck.insert(0,card)
 
+def is_largest(card:Card)-> bool:
+    return card[1] == len(card_value)-1
+def is_smallest(card:Card)-> bool:
+    return card[1] == 0
+
+def get_type(card:Card) -> int:
+    return card_type[card[0]] 
 
 if __name__ == '__main__':
     l = get_shuffled_card_deck()
