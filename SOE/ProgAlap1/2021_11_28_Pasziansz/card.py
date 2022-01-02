@@ -60,7 +60,7 @@ def has_one_greater_value(card1: Card, card2: Card) -> bool:
 
 
 def get_shuffled_card_deck() -> CardDeck:
-    deck:CardDeck = [(ctype, cvalue) for ctype in range(len(card_type)) for cvalue in range(len(card_value))]
+    deck:CardDeck = CardDeck([Card((ctype, cvalue)) for ctype in range(len(card_type)) for cvalue in range(len(card_value))])
     shuffle(deck)
     return deck
 
@@ -70,7 +70,7 @@ def is_empty(deck: CardDeck) -> bool:
 
 
 def get_empty_deck() -> CardDeck:
-    return []
+    return CardDeck([])
 
 
 def print_deck(deck: CardDeck, visible: int = 1) -> None:
@@ -102,7 +102,7 @@ def is_largest(card:Card)-> bool:
 def is_smallest(card:Card)-> bool:
     return card[1] == 0
 
-def get_type(card:Card) -> int:
+def get_type(card:Card) -> str:
     return card_type[card[0]] 
 
 if __name__ == '__main__':
