@@ -14,6 +14,7 @@
 
 Irj programot, mely:
 
+0. beolvassa a fajlt es kiirja a tartalmat
 1. beolvassa a `naplo.json`-t es kiirja a diakok listajat.
 2. kiirja, hogy ki az, aki bukasra all (atlag < 1.5)
 3. mely megkerdezi egy diak nevet, ha benne talalja a naploban, kiirja az eddigi jegyeit es az atlagat.
