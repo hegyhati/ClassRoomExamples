@@ -1,0 +1,42 @@
+[
+    {
+        "nev": "Kiss Geza",
+        "jegyek": [
+            1,
+            3,
+            4,
+            2,
+            3
+        ]
+    },
+    {
+        "nev": "Nagy Aladar",
+        "jegyek": [
+            4,
+            4, 
+            5
+        ]
+    },
+    {
+        "nev": "Toth Zsofia",
+        "jegyek": [
+            5,
+            3,
+            3,
+            4
+        ]
+    },
+    {
+        "nev": "Horvath Andrea",
+        "jegyek": [
+            5,
+            3,
+            5,
+            5
+        ]
+    },
+    {
+        "nev": "Varga Valeria",
+        "jegyek": [1,1,2,1]
+    }
+]
