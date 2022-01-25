@@ -1,0 +1,17 @@
+[
+    {
+        "name" : "Hód",
+        "attack" : 2,
+        "life" : 2
+    },
+    {
+        "name" : "Hangya",
+        "attack" : 2,
+        "life" : 1
+    },
+    {
+        "name" : "Tücsök",
+        "attack" : 1,
+        "life" : 2
+    }
+]
