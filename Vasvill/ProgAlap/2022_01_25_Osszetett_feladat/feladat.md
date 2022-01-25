@@ -6,7 +6,7 @@ Ha minden csapat jól csinálta a dolgát, a végén tudtok játszani a játékk
 
 # Az alapot adó játék
 
-Az elkészítendő program alapötletét a [Crazy Auto Pets](https://teamwood.itch.io/super-auto-pets) nevű játék adja. 
+Az elkészítendő program alapötletét a [Super Auto Pets](https://teamwood.itch.io/super-auto-pets) nevű játék adja. 
 Mi ennek egy nagyon lebutított változatát fogjuk közösen megcsinálni. 
 Hogy a játéklogikát megértsétek, játszatok 1-2 kört vendégként (Play as Guest, Arena Mode).
 
