@@ -4,19 +4,19 @@
 ```python
 n = int(input("Mekkora legyen a matrix? "))
 matrix = matrix_letrehoz(n)
-print(n)
+print(matrix)
 ```
 3. Írj függvényt, mely argumentumként egy ilyen mátrixot kap, és olvashatóan kiírja.
 ```python
 n = int(input("Mekkora legyen a matrix? "))
 matrix = matrix_letrehoz(n)
-szepen_kiir(n)
+szepen_kiir(matrix)
 ```
 4. Írj függvényt, mely bekér egy sor és egy oszlop koordinát, valamint egy számot, és ezt beírja a megfelelő pozícióba. 
 ```python
 n = int(input("Mekkora legyen a matrix? "))
 matrix = matrix_letrehoz(n)
-szepen_kiir(n)
+szepen_kiir(matrix)
 while input("Szeretnel beirni elemet? ") == "igen":
     uj_elemet_beir(matrix)
     szepen_kiir(matrix)
@@ -29,7 +29,7 @@ if input("Uj matrixot szeretnel? ") == "igen":
     matrix = matrix_letrehoz(n)
 else:
     matrix = matrix_betolt("matrix.json")
-szepen_kiir(n)
+szepen_kiir(matrix)
 while input("Szeretnel beirni elemet? ") == "igen":
     uj_elemet_beir(matrix)
     szepen_kiir(matrix)
