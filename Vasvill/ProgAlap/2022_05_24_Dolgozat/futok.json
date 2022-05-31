@@ -1,0 +1,80 @@
+[{"date": "2018.11.27", "runners": ["Adam", "Bela", "X", "C"], "distance": 14}, {"date": "2018.12.04", "runners": ["D", "A", "B", "X", "E"], "distance": 6}, {"date": "2018.12.11", "runners": ["F", "B", "X", "G"], "distance": 17}, {"date": "2018.12.18", "runners": ["D", "A", "F", "C"], "distance": 11}, {"date": "2018.12.25", "runners": ["H", "I"], "distance": 16}, {"date": "2019.01.01", "runners": ["D", "A", "B", "X", "J", "H"], "distance": 13}, {"date": "2019.01.08", "runners": ["D", "K", "A", "L", "F", "B", "X", "J", "C", "M", "H"], "distance": 19}, {"date": "2019.01.15", "runners": ["D", "L", "B", "X", "J", "C"], "distance": 5}, {"date": "2019.01.22", "runners": ["D", "K", "A", "L", "B", "X", "H"], "distance": 7}, {"date": "2019.01.29", "runners": ["K", "A", "B", "X", "J", "C", "N"], "distance": 16}, {"date": "2019.02.05", "runners": ["D", "A", "L", "F", "B", "X", "J", "E", "C", "M", "O"], "distance": 12}]",
+            "X",
+            "J",
+            "H"
+        ],
+        "distance": 14
+    },
+    {
+        "date": "2019.01.08",
+        "runners": [
+            "D",
+            "K",
+            "A",
+            "L",
+            "F",
+            "B",
+            "X",
+            "J",
+            "C",
+            "M",
+            "H"
+        ],
+        "distance": 13
+    },
+    {
+        "date": "2019.01.15",
+        "runners": [
+            "D",
+            "L",
+            "B",
+            "X",
+            "J",
+            "C"
+        ],
+        "distance": 13
+    },
+    {
+        "date": "2019.01.22",
+        "runners": [
+            "D",
+            "K",
+            "A",
+            "L",
+            "B",
+            "X",
+            "H"
+        ],
+        "distance": 17
+    },
+    {
+        "date": "2019.01.29",
+        "runners": [
+            "K",
+            "A",
+            "B",
+            "X",
+            "J",
+            "C",
+            "N"
+        ],
+        "distance": 15
+    },
+    {
+        "date": "2019.02.05",
+        "runners": [
+            "D",
+            "A",
+            "L",
+            "F",
+            "B",
+            "X",
+            "J",
+            "E",
+            "C",
+            "M",
+            "O"
+        ],
+        "distance": 18
+    }
+]

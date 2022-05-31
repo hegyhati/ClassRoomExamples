@@ -1,0 +1,12 @@
+[
+    {
+        "title" : "Harry Potter and the Philosopher's Stone",
+        "year"  : 2001,
+        "characters" : [ "Harry Potter", "The Fat Lady", "Marcus Flint"]
+    },
+    {
+        "title" : "Harry Potter and the Chamber of Secrets",
+        "year"  : 2002,
+        "characters" : ["Harry Potter",  "Dobby", "Gilderoy Lockhart"]
+    }
+]
