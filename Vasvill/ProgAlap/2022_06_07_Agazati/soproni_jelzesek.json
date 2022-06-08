@@ -1,0 +1,50 @@
+[
+    {
+        "jelzes" : "Z",
+        "POI" : ["Erzsébet kert", "Lőver uszoda", "Deák kút", "Trianon emlékmű", "Nándor magaslat"]
+    },
+    {
+        "jelzes" : "Z",
+        "POI" : ["Gyermektábor", "Erdő Háza", "Pedagógus forrás", "Szívszanatórium"]
+    },
+    {
+        "jelzes" : "Z+",
+        "POI" : ["Erzsébet kert", "Vas-hegyi páholy"]
+    },
+    {
+        "jelzes" : "Z△",
+        "POI" : ["Sörházdombi kilátó", "Károly kilátó"]
+    },
+    {
+        "jelzes" : "Z△",
+        "POI" : ["Gloriette kilátó"]
+    },
+    {
+        "jelzes" : "K",
+        "POI" : ["Szívszanatórium", "Ojtozi fasor", "Bögre forrás", "Hétbükkfa", "Bella Lajos pihenő", "Erdő Háza", "Fehér Dániel Forrás", "Hősi emlékmű, Ágfalva", "Valéta", "Erzsébet kert"]
+    },
+    {
+        "jelzes" : "K+",
+        "POI" : ["Dalos-kő", "Trianon emlékmű"]
+    },
+    {
+        "jelzes" : "K+",
+        "POI" : ["Szívszanatórium", "Bögre forrás"]
+    },
+    {
+        "jelzes" : "K+",
+        "POI" : ["Hétbükkfa", "Postás forrás", "Tolvaj árki pihenő", "Gyermektábor"]
+    },
+    {
+        "jelzes" : "K△",
+        "POI" : ["Szívszanatórium", "Dalos-kő", "Károly kilátó", "Trianon emlékmű"]
+    },
+    {
+        "jelzes" : "S",
+        "POI" : ["Szívszanatórium", "Trianon emlékmű", "Hétbükkfa", "Szalamandra tó", "Erdei iskola", "Valéta", "Fehér Dániel Forrás"]
+    },
+    {
+        "jelzes" : "S△",
+        "POI" : ["Szívszanatórium", "Károly kilátó"]
+    }
+]
