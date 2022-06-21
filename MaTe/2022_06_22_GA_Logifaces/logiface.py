@@ -222,6 +222,74 @@ class Solution:
     
     def improve(self):
         return self.improve_by_rotation() or self.improve_by_swap()
+    
+    def memetic_improve(self):
+        while self.improve():
+            continue
+    
+    def _clone(self):
+        return Solution(self.exercise, self.selection[:], self.rotation[:])
+
+    def get_mutated(self) -> "Solution":
+        mutated = self._clone()
+        for _ in range(random.randrange(5)):
+            if random.randrange(10) <  6:
+                mutated._mutate_by_rotation()
+            else:
+                mutated._mutate_by_swap()
+        return mutated
+
+    
+    def _mutate_by_rotation(self) -> None:
+        position = random.randrange(self.exercise.place_count)
+        self.rotation[position] += random.randint(1,2)
+        self.rotation[position] %= 3
+        
+    
+    def _mutate_by_swap(self) -> None: 
+        position = random.randrange(self.exercise.place_count)
+        logiface = random.randrange(self.exercise.logiface_count)
+        if logiface in self.selection:
+            position2 = self.selection.index(logiface)
+            self._swap_placing(position,position2)
+        else:
+            self.selection[position] = logiface
+    
+    def crossover(solution1:"Solution", solution2:"Solution") -> "Solution":
+        child = solution1._clone()
+        split = random.randrange(solution1.exercise.place_count//4, 3*solution1.exercise.place_count//4)
+        for i in range(split,solution1.exercise.place_count):
+            if solution2.selection[i] not in child.selection[:i]:
+                child.selection[i] = solution2.selection[i]
+            else: 
+                child.selection[i] = None
+        unused_logifaces = set(range(solution1.exercise.logiface_count))
+        unused_logifaces.difference_update(child.selection)
+        
+        while None in child.selection:
+            idx = child.selection.index(None)
+            child.selection[idx] = unused_logifaces.pop()
+        return child
+
+    def _to_tuple(self):
+        return ( *self.selection, *self.rotation )
+
+    def __hash__(self) -> int:
+        return hash(self._to_tuple())
+
+    def __eq__(self, __o: object) -> bool:
+        if not isinstance(__o, Solution):
+            return False
+        return self._to_tuple() == __o._to_tuple()
+    
+    def __ne__(self, __o: object) -> bool:
+        return not self.__eq__(__o)
+        
+            
+
+
+    
+
 
 
 
