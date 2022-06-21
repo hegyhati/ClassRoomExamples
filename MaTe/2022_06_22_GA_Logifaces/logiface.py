@@ -188,6 +188,41 @@ class Solution:
     def rotate(self, position, rotation=1):
         self.rotation[position] += rotation
         self.rotation[position] %= 3
+    
+    def improve_by_rotation(self) -> bool:
+        current = self.fitness()
+        for i in range(self.exercise.place_count):
+            for r in range(2):
+                self.rotate(i)
+                if self.fitness() < current:
+                    return True
+            self.rotate(i)
+        return False
+    
+    def _swap_placing(self, idx1, idx2):
+        self.selection[idx1], self.selection[idx2] = self.selection[idx2], self.selection[idx1]
+    
+    def improve_by_swap(self) -> bool:
+        current = self.fitness()
+        for i in range(self.exercise.place_count):
+            for j in range(i+1,self.exercise.place_count):
+                cri = self.rotation[i]
+                crj = self.rotation[j]
+                self._swap_placing(i,j)
+                for ri in range(3):
+                    self.rotation[i] = ri   
+                    for rj in range(3):
+                        self.rotation[j] = rj
+                        if self.fitness() < current:
+                            return True                
+                self._swap_placing(i,j)
+                self.rotation[i] = cri
+                self.rotation[j] = crj
+        return False
+    
+    def improve(self):
+        return self.improve_by_rotation() or self.improve_by_swap()
+
 
 
 

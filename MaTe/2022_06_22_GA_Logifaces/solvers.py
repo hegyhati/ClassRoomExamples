@@ -57,33 +57,12 @@ class LocalSearchSolver(tkinter.Tk):
 
     
     def _improve(self):
-        current = int(self.fitness.get())
-        for i in range(self.exercise.place_count):
-            for r in range(2):
-                self.solution.rotate(i)
-                if self.solution.fitness() < current:
-                    self._update_canvas()
-                    return True
-            self.solution.rotate(i)
-        
-        for i in range(self.exercise.place_count):
-            for j in range(i+1,self.exercise.place_count):
-                cri = self.solution.rotation[i]
-                crj = self.solution.rotation[j]
-                self.solution.selection[i], self.solution.selection[j] = self.solution.selection[j], self.solution.selection[i]
-                for ri in range(3):
-                    self.solution.rotation[i] = ri   
-                    for rj in range(3):
-                        self.solution.rotation[j] = rj
-                        if self.solution.fitness() < current:
-                            self._update_canvas()
-                            return True                
-                self.solution.selection[i], self.solution.selection[j] = self.solution.selection[j], self.solution.selection[i]
-                self.solution.rotation[i] = cri
-                self.solution.rotation[j] = crj
-
-
+        if self.solution.improve():
+            self._update_canvas()
+            return True
         return False
+        
+        
 
     def _greedy_improve(self):
         while self._improve():
