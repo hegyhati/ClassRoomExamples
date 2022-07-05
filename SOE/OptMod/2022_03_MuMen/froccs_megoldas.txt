@@ -1,0 +1,46 @@
+Problem:    model
+Rows:       3
+Columns:    9
+Non-zeros:  27
+Status:     OPTIMAL
+Objective:  Bevetel = 105000 (MAXimum)
+
+   No.   Row name   St   Activity     Lower bound   Upper bound    Marginal
+------ ------------ -- ------------- ------------- ------------- -------------
+     1 Bor_keszlet_korlatozas
+                    NU          1000                        1000            90 
+     2 Szoda_keszlet_korlatozas
+                    NU          1500                        1500            10 
+     3 Bevetel      B         105000                             
+
+   No. Column name  St   Activity     Lower bound   Upper bound    Marginal
+------ ------------ -- ------------- ------------- ------------- -------------
+     1 KF           B            750             0               
+     2 NF           NL             0             0                         -10 
+     3 HL           NL             0             0                       < eps
+     4 HM           NL             0             0                         -30 
+     5 VH           NL             0             0                         -10 
+     6 PF           NL             0             0                         -50 
+     7 KR           NL             0             0                         -20 
+     8 SF           NL             0             0                         -30 
+     9 HF           B            250             0               
+
+Karush-Kuhn-Tucker optimality conditions:
+
+KKT.PE: max.abs.err = 1.14e-13 on row 1
+        max.rel.err = 5.68e-17 on row 1
+        High quality
+
+KKT.PB: max.abs.err = 0.00e+00 on row 0
+        max.rel.err = 0.00e+00 on row 0
+        High quality
+
+KKT.DE: max.abs.err = 0.00e+00 on column 0
+        max.rel.err = 0.00e+00 on column 0
+        High quality
+
+KKT.DB: max.abs.err = 0.00e+00 on row 0
+        max.rel.err = 0.00e+00 on row 0
+        High quality
+
+End of output

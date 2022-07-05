@@ -1,0 +1,77 @@
+Problem:    allamvizsga
+Rows:       10
+Columns:    18 (18 integer, 18 binary)
+Non-zeros:  53
+Status:     INTEGER OPTIMAL
+Objective:  Sorok_szama = 14 (MINimum)
+
+   No.   Row name        Activity     Lower bound   Upper bound
+------ ------------    ------------- ------------- -------------
+     1 Kincso_munkamennyiseg
+                                   2             2             = 
+     2 Halu_munkamennyiseg
+                                   2             2             = 
+     3 Akos_munkamennyiseg
+                                   2             2             = 
+     4 Pontosan_egyszer_Optimalizalas
+                                   1             1             = 
+     5 Pontosan_egyszer_Prognyelvek
+                                   1             1             = 
+     6 Pontosan_egyszer_Webvizualizalas
+                                   1             1             = 
+     7 Pontosan_egyszer_PowerBI
+                                   1             1             = 
+     8 Pontosan_egyszer_Coursera
+                                   1             1             = 
+     9 Pontosan_egyszer_DataAkarmi
+                                   1             1             = 
+    10 Sorok_szama                14                             
+
+   No. Column name       Activity     Lower bound   Upper bound
+------ ------------    ------------- ------------- -------------
+     1 Kincso_Optimalizalas
+                    *              0             0             1 
+     2 Kincso_Prognyelvek
+                    *              1             0             1 
+     3 Kincso_Webvizualizalas
+                    *              0             0             1 
+     4 Kincso_PowerBI
+                    *              0             0             1 
+     5 Kincso_Coursera
+                    *              1             0             1 
+     6 Kincso_DataAkarmi
+                    *              0             0             1 
+     7 Halu_Optimalizalas
+                    *              1             0             1 
+     8 Halu_Prognyelvek
+                    *              0             0             1 
+     9 Halu_Webvizualizalas
+                    *              1             0             1 
+    10 Halu_PowerBI *              0             0             1 
+    11 Halu_Coursera
+                    *              0             0             1 
+    12 Halu_DataAkarmi
+                    *              0             0             1 
+    13 Akos_Optimalizalas
+                    *              0             0             1 
+    14 Akos_Prognyelvek
+                    *              0             0             1 
+    15 Akos_Webvizualizalas
+                    *              0             0             1 
+    16 Akos_PowerBI *              1             0             1 
+    17 Akos_Coursera
+                    *              0             0             1 
+    18 Akos_DataAkarmi
+                    *              1             0             1 
+
+Integer feasibility conditions:
+
+KKT.PE: max.abs.err = 0.00e+00 on row 0
+        max.rel.err = 0.00e+00 on row 0
+        High quality
+
+KKT.PB: max.abs.err = 0.00e+00 on row 0
+        max.rel.err = 0.00e+00 on row 0
+        High quality
+
+End of output

@@ -1,0 +1,12 @@
+set People := Kincso Halu Akos;
+set Courses := Optimalizalas Prognyelvek Webvizualizalas PowerBI Coursera DataAkarmi;
+
+param beer (tr):
+	                Kincso	Halu	Akos :=
+    Optimalizalas   5	    0	    6
+    Prognyelvek 	2	    6	    4
+    Webvizualizalas 3	    2	    6
+    PowerBI 	    6	    12	    4
+    Coursera    	4	    34	    23
+    DataAkarmi  	10	    5	    2
+;

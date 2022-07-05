@@ -1,0 +1,13 @@
+set Emberek := Sari Pista Gizi Laci Mari Jozsi;
+
+set Targyak := Matek Vallgazd MinBizt VIR Dontes Valszam;
+
+param sor:
+            Matek	Vallgazd	MinBizt	VIR	    Dontes	Valszam :=
+    Sari	25	    21	        8	    16	    13	    16
+    Pista	6	    9	        8	    7	    22	    11
+    Gizi	19	    12	        18	    6	    10	    12
+    Laci	11	    15	        18	    8	    18	    14
+    Mari	23	    8	        25	    11	    8	    11
+    Jozsi	25	    14	        21	    7	    22	    13
+;

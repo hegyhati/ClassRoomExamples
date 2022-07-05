@@ -1,0 +1,35 @@
+[
+    {
+        "id" : "112",
+        "people" : [
+            "Mate Hegyhati"
+        ],
+        "size" : 17.5
+    }, 
+    {
+        "id" : "111",
+        "people" : [
+            "Adrienn Koncz",
+            "Henriett Takacs"
+        ],
+        "size" : 17.5
+    },
+    {
+        "id" : "110",
+        "people" : [
+            "Erno Kulcsar",
+            "Laszlo Szabo"
+        ],
+        "size" : 17.5
+    },
+    {
+        "id" : "109",
+        "people" : [
+            "Oliver Osz",
+            "Tamas Szabo",
+            "Tamas Stockert",
+            "Jozsef Smidla"
+        ],
+        "size" : 17.5
+    }
+]

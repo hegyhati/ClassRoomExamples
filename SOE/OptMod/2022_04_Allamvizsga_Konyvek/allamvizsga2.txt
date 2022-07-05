@@ -1,0 +1,79 @@
+Problem:    allamvizsga2
+Rows:       10
+Columns:    18 (18 integer, 18 binary)
+Non-zeros:  53
+Status:     INTEGER OPTIMAL
+Objective:  Beer_cost = 14 (MINimum)
+
+   No.   Row name        Activity     Lower bound   Upper bound
+------ ------------    ------------- ------------- -------------
+     1 Do_each_course_once[Optimalizalas]
+                                   1             1             = 
+     2 Do_each_course_once[Prognyelvek]
+                                   1             1             = 
+     3 Do_each_course_once[Webvizualizalas]
+                                   1             1             = 
+     4 Do_each_course_once[PowerBI]
+                                   1             1             = 
+     5 Do_each_course_once[Coursera]
+                                   1             1             = 
+     6 Do_each_course_once[DataAkarmi]
+                                   1             1             = 
+     7 Everyone_does_2_courses[Kincso]
+                                   2             2             = 
+     8 Everyone_does_2_courses[Halu]
+                                   2             2             = 
+     9 Everyone_does_2_courses[Akos]
+                                   2             2             = 
+    10 Beer_cost                  14                             
+
+   No. Column name       Activity     Lower bound   Upper bound
+------ ------------    ------------- ------------- -------------
+     1 do[Kincso,Optimalizalas]
+                    *              0             0             1 
+     2 do[Halu,Optimalizalas]
+                    *              1             0             1 
+     3 do[Akos,Optimalizalas]
+                    *              0             0             1 
+     4 do[Kincso,Prognyelvek]
+                    *              1             0             1 
+     5 do[Halu,Prognyelvek]
+                    *              0             0             1 
+     6 do[Akos,Prognyelvek]
+                    *              0             0             1 
+     7 do[Kincso,Webvizualizalas]
+                    *              0             0             1 
+     8 do[Halu,Webvizualizalas]
+                    *              1             0             1 
+     9 do[Akos,Webvizualizalas]
+                    *              0             0             1 
+    10 do[Kincso,PowerBI]
+                    *              0             0             1 
+    11 do[Halu,PowerBI]
+                    *              0             0             1 
+    12 do[Akos,PowerBI]
+                    *              1             0             1 
+    13 do[Kincso,Coursera]
+                    *              1             0             1 
+    14 do[Halu,Coursera]
+                    *              0             0             1 
+    15 do[Akos,Coursera]
+                    *              0             0             1 
+    16 do[Kincso,DataAkarmi]
+                    *              0             0             1 
+    17 do[Halu,DataAkarmi]
+                    *              0             0             1 
+    18 do[Akos,DataAkarmi]
+                    *              1             0             1 
+
+Integer feasibility conditions:
+
+KKT.PE: max.abs.err = 0.00e+00 on row 0
+        max.rel.err = 0.00e+00 on row 0
+        High quality
+
+KKT.PB: max.abs.err = 0.00e+00 on row 0
+        max.rel.err = 0.00e+00 on row 0
+        High quality
+
+End of output

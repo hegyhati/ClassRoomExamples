@@ -1,0 +1,475 @@
+Problem:    books
+Rows:       169
+Columns:    85 (70 integer, 70 binary)
+Non-zeros:  500
+Status:     INTEGER OPTIMAL
+Objective:  max_reach = 181 (MINimum)
+
+   No.   Row name        Activity     Lower bound   Upper bound
+------ ------------    ------------- ------------- -------------
+     1 Shelf_capacity[1]
+                                 120                         120 
+     2 Shelf_capacity[2]
+                                 100                         120 
+     3 Shelf_capacity[3]
+                                  90                         120 
+     4 Shelf_capacity[4]
+                                 110                         120 
+     5 Shelf_capacity[5]
+                                 120                         120 
+     6 Shelf_capacity[6]
+                                   0                         120 
+     7 Shelf_capacity[7]
+                                   0                         120 
+     8 Shelf_min_position[2]
+                                   9             9               
+     9 Shelf_min_position[3]
+                                   9             9               
+    10 Shelf_min_position[4]
+                                   9             9               
+    11 Shelf_min_position[5]
+                                   9             9               
+    12 Shelf_min_position[6]
+                                   9             9               
+    13 Shelf_min_position[7]
+                                   9             9               
+    14 Highest_Book_Constraint[1,Math]
+                                  25            -0               
+    15 Highest_Book_Constraint[1,IT]
+                                  25            -0               
+    16 Highest_Book_Constraint[1,Sport]
+                                  25            -0               
+    17 Highest_Book_Constraint[1,Music]
+                                  25            -0               
+    18 Highest_Book_Constraint[1,Novel]
+                                  25            -0               
+    19 Highest_Book_Constraint[1,Tolkien]
+                                   0            -0               
+    20 Highest_Book_Constraint[1,Feist]
+                                  25            -0               
+    21 Highest_Book_Constraint[1,HarryPotter]
+                                   0            -0               
+    22 Highest_Book_Constraint[1,Diplom]
+                                  25            -0               
+    23 Highest_Book_Constraint[2,Math]
+                                   0            -0               
+    24 Highest_Book_Constraint[2,IT]
+                                  20            -0               
+    25 Highest_Book_Constraint[2,Sport]
+                                  20            -0               
+    26 Highest_Book_Constraint[2,Music]
+                                  20            -0               
+    27 Highest_Book_Constraint[2,Novel]
+                                  20            -0               
+    28 Highest_Book_Constraint[2,Tolkien]
+                                  20            -0               
+    29 Highest_Book_Constraint[2,Feist]
+                                  20            -0               
+    30 Highest_Book_Constraint[2,HarryPotter]
+                                  20            -0               
+    31 Highest_Book_Constraint[2,Diplom]
+                                  20            -0               
+    32 Highest_Book_Constraint[3,Math]
+                                  20            -0               
+    33 Highest_Book_Constraint[3,IT]
+                                  20            -0               
+    34 Highest_Book_Constraint[3,Sport]
+                                  20            -0               
+    35 Highest_Book_Constraint[3,Music]
+                                  20            -0               
+    36 Highest_Book_Constraint[3,Novel]
+                                   0            -0               
+    37 Highest_Book_Constraint[3,Tolkien]
+                                  20            -0               
+    38 Highest_Book_Constraint[3,Feist]
+                                   0            -0               
+    39 Highest_Book_Constraint[3,HarryPotter]
+                                  20            -0               
+    40 Highest_Book_Constraint[3,Diplom]
+                                  20            -0               
+    41 Highest_Book_Constraint[4,Math]
+                                  30            -0               
+    42 Highest_Book_Constraint[4,IT]
+                                   5            -0               
+    43 Highest_Book_Constraint[4,Sport]
+                                   0            -0               
+    44 Highest_Book_Constraint[4,Music]
+                                  30            -0               
+    45 Highest_Book_Constraint[4,Novel]
+                                  30            -0               
+    46 Highest_Book_Constraint[4,Tolkien]
+                                  30            -0               
+    47 Highest_Book_Constraint[4,Feist]
+                                  30            -0               
+    48 Highest_Book_Constraint[4,HarryPotter]
+                                  30            -0               
+    49 Highest_Book_Constraint[4,Diplom]
+                                  30            -0               
+    50 Highest_Book_Constraint[5,Math]
+                                  40            -0               
+    51 Highest_Book_Constraint[5,IT]
+                                  40            -0               
+    52 Highest_Book_Constraint[5,Sport]
+                                  40            -0               
+    53 Highest_Book_Constraint[5,Music]
+                                  10            -0               
+    54 Highest_Book_Constraint[5,Novel]
+                                  40            -0               
+    55 Highest_Book_Constraint[5,Tolkien]
+                                  40            -0               
+    56 Highest_Book_Constraint[5,Feist]
+                                  40            -0               
+    57 Highest_Book_Constraint[5,HarryPotter]
+                                  40            -0               
+    58 Highest_Book_Constraint[5,Diplom]
+                                   0            -0               
+    59 Highest_Book_Constraint[6,Math]
+                                   0            -0               
+    60 Highest_Book_Constraint[6,IT]
+                                   0            -0               
+    61 Highest_Book_Constraint[6,Sport]
+                                   0            -0               
+    62 Highest_Book_Constraint[6,Music]
+                                   0            -0               
+    63 Highest_Book_Constraint[6,Novel]
+                                   0            -0               
+    64 Highest_Book_Constraint[6,Tolkien]
+                                   0            -0               
+    65 Highest_Book_Constraint[6,Feist]
+                                   0            -0               
+    66 Highest_Book_Constraint[6,HarryPotter]
+                                   0            -0               
+    67 Highest_Book_Constraint[6,Diplom]
+                                   0            -0               
+    68 Highest_Book_Constraint[7,Math]
+                                   0            -0               
+    69 Highest_Book_Constraint[7,IT]
+                                   0            -0               
+    70 Highest_Book_Constraint[7,Sport]
+                                   0            -0               
+    71 Highest_Book_Constraint[7,Music]
+                                   0            -0               
+    72 Highest_Book_Constraint[7,Novel]
+                                   0            -0               
+    73 Highest_Book_Constraint[7,Tolkien]
+                                   0            -0               
+    74 Highest_Book_Constraint[7,Feist]
+                                   0            -0               
+    75 Highest_Book_Constraint[7,HarryPotter]
+                                   0            -0               
+    76 Highest_Book_Constraint[7,Diplom]
+                                   0            -0               
+    77 Books_must_be_put_on_a_shelf[Math]
+                                   1             1             = 
+    78 Books_must_be_put_on_a_shelf[IT]
+                                   1             1             = 
+    79 Books_must_be_put_on_a_shelf[Sport]
+                                   1             1             = 
+    80 Books_must_be_put_on_a_shelf[Music]
+                                   1             1             = 
+    81 Books_must_be_put_on_a_shelf[Novel]
+                                   1             1             = 
+    82 Books_must_be_put_on_a_shelf[Tolkien]
+                                   1             1             = 
+    83 Books_must_be_put_on_a_shelf[Feist]
+                                   1             1             = 
+    84 Books_must_be_put_on_a_shelf[HarryPotter]
+                                   1             1             = 
+    85 Books_must_be_put_on_a_shelf[Diplom]
+                                   1             1             = 
+    86 Dont_put_books_on_unused_shelf[1,Math]
+                                  -1                          -0 
+    87 Dont_put_books_on_unused_shelf[1,IT]
+                                  -1                          -0 
+    88 Dont_put_books_on_unused_shelf[1,Sport]
+                                  -1                          -0 
+    89 Dont_put_books_on_unused_shelf[1,Music]
+                                  -1                          -0 
+    90 Dont_put_books_on_unused_shelf[1,Novel]
+                                  -1                          -0 
+    91 Dont_put_books_on_unused_shelf[1,Tolkien]
+                                   0                          -0 
+    92 Dont_put_books_on_unused_shelf[1,Feist]
+                                  -1                          -0 
+    93 Dont_put_books_on_unused_shelf[1,HarryPotter]
+                                   0                          -0 
+    94 Dont_put_books_on_unused_shelf[1,Diplom]
+                                  -1                          -0 
+    95 Dont_put_books_on_unused_shelf[2,Math]
+                                   0                          -0 
+    96 Dont_put_books_on_unused_shelf[2,IT]
+                                  -1                          -0 
+    97 Dont_put_books_on_unused_shelf[2,Sport]
+                                  -1                          -0 
+    98 Dont_put_books_on_unused_shelf[2,Music]
+                                  -1                          -0 
+    99 Dont_put_books_on_unused_shelf[2,Novel]
+                                  -1                          -0 
+   100 Dont_put_books_on_unused_shelf[2,Tolkien]
+                                  -1                          -0 
+   101 Dont_put_books_on_unused_shelf[2,Feist]
+                                  -1                          -0 
+   102 Dont_put_books_on_unused_shelf[2,HarryPotter]
+                                  -1                          -0 
+   103 Dont_put_books_on_unused_shelf[2,Diplom]
+                                  -1                          -0 
+   104 Dont_put_books_on_unused_shelf[3,Math]
+                                  -1                          -0 
+   105 Dont_put_books_on_unused_shelf[3,IT]
+                                  -1                          -0 
+   106 Dont_put_books_on_unused_shelf[3,Sport]
+                                  -1                          -0 
+   107 Dont_put_books_on_unused_shelf[3,Music]
+                                  -1                          -0 
+   108 Dont_put_books_on_unused_shelf[3,Novel]
+                                   0                          -0 
+   109 Dont_put_books_on_unused_shelf[3,Tolkien]
+                                  -1                          -0 
+   110 Dont_put_books_on_unused_shelf[3,Feist]
+                                   0                          -0 
+   111 Dont_put_books_on_unused_shelf[3,HarryPotter]
+                                  -1                          -0 
+   112 Dont_put_books_on_unused_shelf[3,Diplom]
+                                  -1                          -0 
+   113 Dont_put_books_on_unused_shelf[4,Math]
+                                  -1                          -0 
+   114 Dont_put_books_on_unused_shelf[4,IT]
+                                   0                          -0 
+   115 Dont_put_books_on_unused_shelf[4,Sport]
+                                   0                          -0 
+   116 Dont_put_books_on_unused_shelf[4,Music]
+                                  -1                          -0 
+   117 Dont_put_books_on_unused_shelf[4,Novel]
+                                  -1                          -0 
+   118 Dont_put_books_on_unused_shelf[4,Tolkien]
+                                  -1                          -0 
+   119 Dont_put_books_on_unused_shelf[4,Feist]
+                                  -1                          -0 
+   120 Dont_put_books_on_unused_shelf[4,HarryPotter]
+                                  -1                          -0 
+   121 Dont_put_books_on_unused_shelf[4,Diplom]
+                                  -1                          -0 
+   122 Dont_put_books_on_unused_shelf[5,Math]
+                                  -1                          -0 
+   123 Dont_put_books_on_unused_shelf[5,IT]
+                                  -1                          -0 
+   124 Dont_put_books_on_unused_shelf[5,Sport]
+                                  -1                          -0 
+   125 Dont_put_books_on_unused_shelf[5,Music]
+                                   0                          -0 
+   126 Dont_put_books_on_unused_shelf[5,Novel]
+                                  -1                          -0 
+   127 Dont_put_books_on_unused_shelf[5,Tolkien]
+                                  -1                          -0 
+   128 Dont_put_books_on_unused_shelf[5,Feist]
+                                  -1                          -0 
+   129 Dont_put_books_on_unused_shelf[5,HarryPotter]
+                                  -1                          -0 
+   130 Dont_put_books_on_unused_shelf[5,Diplom]
+                                   0                          -0 
+   131 Dont_put_books_on_unused_shelf[6,Math]
+                                   0                          -0 
+   132 Dont_put_books_on_unused_shelf[6,IT]
+                                   0                          -0 
+   133 Dont_put_books_on_unused_shelf[6,Sport]
+                                   0                          -0 
+   134 Dont_put_books_on_unused_shelf[6,Music]
+                                   0                          -0 
+   135 Dont_put_books_on_unused_shelf[6,Novel]
+                                   0                          -0 
+   136 Dont_put_books_on_unused_shelf[6,Tolkien]
+                                   0                          -0 
+   137 Dont_put_books_on_unused_shelf[6,Feist]
+                                   0                          -0 
+   138 Dont_put_books_on_unused_shelf[6,HarryPotter]
+                                   0                          -0 
+   139 Dont_put_books_on_unused_shelf[6,Diplom]
+                                   0                          -0 
+   140 Dont_put_books_on_unused_shelf[7,Math]
+                                   0                          -0 
+   141 Dont_put_books_on_unused_shelf[7,IT]
+                                   0                          -0 
+   142 Dont_put_books_on_unused_shelf[7,Sport]
+                                   0                          -0 
+   143 Dont_put_books_on_unused_shelf[7,Music]
+                                   0                          -0 
+   144 Dont_put_books_on_unused_shelf[7,Novel]
+                                   0                          -0 
+   145 Dont_put_books_on_unused_shelf[7,Tolkien]
+                                   0                          -0 
+   146 Dont_put_books_on_unused_shelf[7,Feist]
+                                   0                          -0 
+   147 Dont_put_books_on_unused_shelf[7,HarryPotter]
+                                   0                          -0 
+   148 Dont_put_books_on_unused_shelf[7,Diplom]
+                                   0                          -0 
+   149 Dont_put_books_on_unused_shelf_2[1]
+                                  -7                          -0 
+   150 Dont_put_books_on_unused_shelf_2[2]
+                                  -8                          -0 
+   151 Dont_put_books_on_unused_shelf_2[3]
+                                  -7                          -0 
+   152 Dont_put_books_on_unused_shelf_2[4]
+                                  -7                          -0 
+   153 Dont_put_books_on_unused_shelf_2[5]
+                                  -7                          -0 
+   154 Dont_put_books_on_unused_shelf_2[6]
+                                   0                          -0 
+   155 Dont_put_books_on_unused_shelf_2[7]
+                                   0                          -0 
+   156 Highest_shelf_constraint[1]
+                                -163          -294               
+   157 Highest_shelf_constraint[2]
+                                -197          -294               
+   158 Highest_shelf_constraint[3]
+                                -226          -294               
+   159 Highest_shelf_constraint[4]
+                                -255          -294               
+   160 Highest_shelf_constraint[5]
+                                -294          -294               
+   161 Highest_shelf_constraint[6]
+                                 -49          -294               
+   162 Highest_shelf_constraint[7]
+                                 -58          -294               
+   163 Shelf_usage[2]
+                                   0            -0               
+   164 Shelf_usage[3]
+                                   0            -0               
+   165 Shelf_usage[4]
+                                   0            -0               
+   166 Shelf_usage[5]
+                                   0            -0               
+   167 Shelf_usage[6]
+                                   1            -0               
+   168 Shelf_usage[7]
+                                   0            -0               
+   169 max_reach                 181                             
+
+   No. Column name       Activity     Lower bound   Upper bound
+------ ------------    ------------- ------------- -------------
+     1 use[1]       *              1             0             1 
+     2 use[2]       *              1             0             1 
+     3 use[3]       *              1             0             1 
+     4 use[4]       *              1             0             1 
+     5 use[5]       *              1             0             1 
+     6 use[6]       *              0             0             1 
+     7 use[7]       *              0             0             1 
+     8 position[2]                84            50               
+     9 position[1]                50            50               
+    10 position[3]               113            50               
+    11 position[4]               142            50               
+    12 position[5]               181            50               
+    13 position[6]               230            50               
+    14 position[7]               239            50               
+    15 put[Math,1]  *              0             0             1 
+    16 put[IT,1]    *              0             0             1 
+    17 put[Sport,1] *              0             0             1 
+    18 put[Music,1] *              0             0             1 
+    19 put[Novel,1] *              0             0             1 
+    20 put[Tolkien,1]
+                    *              1             0             1 
+    21 put[Feist,1] *              0             0             1 
+    22 put[HarryPotter,1]
+                    *              1             0             1 
+    23 put[Diplom,1]
+                    *              0             0             1 
+    24 put[Math,2]  *              1             0             1 
+    25 put[IT,2]    *              0             0             1 
+    26 put[Sport,2] *              0             0             1 
+    27 put[Music,2] *              0             0             1 
+    28 put[Novel,2] *              0             0             1 
+    29 put[Tolkien,2]
+                    *              0             0             1 
+    30 put[Feist,2] *              0             0             1 
+    31 put[HarryPotter,2]
+                    *              0             0             1 
+    32 put[Diplom,2]
+                    *              0             0             1 
+    33 put[Math,3]  *              0             0             1 
+    34 put[IT,3]    *              0             0             1 
+    35 put[Sport,3] *              0             0             1 
+    36 put[Music,3] *              0             0             1 
+    37 put[Novel,3] *              1             0             1 
+    38 put[Tolkien,3]
+                    *              0             0             1 
+    39 put[Feist,3] *              1             0             1 
+    40 put[HarryPotter,3]
+                    *              0             0             1 
+    41 put[Diplom,3]
+                    *              0             0             1 
+    42 put[Math,4]  *              0             0             1 
+    43 put[IT,4]    *              1             0             1 
+    44 put[Sport,4] *              1             0             1 
+    45 put[Music,4] *              0             0             1 
+    46 put[Novel,4] *              0             0             1 
+    47 put[Tolkien,4]
+                    *              0             0             1 
+    48 put[Feist,4] *              0             0             1 
+    49 put[HarryPotter,4]
+                    *              0             0             1 
+    50 put[Diplom,4]
+                    *              0             0             1 
+    51 put[Math,5]  *              0             0             1 
+    52 put[IT,5]    *              0             0             1 
+    53 put[Sport,5] *              0             0             1 
+    54 put[Music,5] *              1             0             1 
+    55 put[Novel,5] *              0             0             1 
+    56 put[Tolkien,5]
+                    *              0             0             1 
+    57 put[Feist,5] *              0             0             1 
+    58 put[HarryPotter,5]
+                    *              0             0             1 
+    59 put[Diplom,5]
+                    *              1             0             1 
+    60 put[Math,6]  *              0             0             1 
+    61 put[IT,6]    *              0             0             1 
+    62 put[Sport,6] *              0             0             1 
+    63 put[Music,6] *              0             0             1 
+    64 put[Novel,6] *              0             0             1 
+    65 put[Tolkien,6]
+                    *              0             0             1 
+    66 put[Feist,6] *              0             0             1 
+    67 put[HarryPotter,6]
+                    *              0             0             1 
+    68 put[Diplom,6]
+                    *              0             0             1 
+    69 put[Math,7]  *              0             0             1 
+    70 put[IT,7]    *              0             0             1 
+    71 put[Sport,7] *              0             0             1 
+    72 put[Music,7] *              0             0             1 
+    73 put[Novel,7] *              0             0             1 
+    74 put[Tolkien,7]
+                    *              0             0             1 
+    75 put[Feist,7] *              0             0             1 
+    76 put[HarryPotter,7]
+                    *              0             0             1 
+    77 put[Diplom,7]
+                    *              0             0             1 
+    78 highest_book[1]
+                                  25             0               
+    79 highest_book[2]
+                                  20             0               
+    80 highest_book[3]
+                                  20             0               
+    81 highest_book[4]
+                                  30             0               
+    82 highest_book[5]
+                                  40             0               
+    83 highest_book[6]
+                                   0             0               
+    84 highest_book[7]
+                                   0             0               
+    85 highest_shelf
+                                 181            50               
+
+Integer feasibility conditions:
+
+KKT.PE: max.abs.err = 0.00e+00 on row 0
+        max.rel.err = 0.00e+00 on row 0
+        High quality
+
+KKT.PB: max.abs.err = 0.00e+00 on row 0
+        max.rel.err = 0.00e+00 on row 0
+        High quality
+
+End of output

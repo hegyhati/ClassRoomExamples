@@ -1,0 +1,22 @@
+set Froccs :=  Krudy_froccs Soherfroccs Horgaszfroccs;
+
+param borkeszlet := 500;
+param szodakeszlet := 1000;
+
+param borhasznalat :=
+    Krudy_froccs    9
+    Soherfroccs     1
+    Horgaszfroccs   1
+;
+
+param szodahasznalat :=
+    Krudy_froccs    1
+    Soherfroccs     9
+    Horgaszfroccs   3
+;
+
+param ar :=
+    Krudy_froccs    900
+    Soherfroccs     200
+    Horgaszfroccs   150
+;

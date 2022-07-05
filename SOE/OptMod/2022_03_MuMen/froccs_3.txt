@@ -1,0 +1,43 @@
+Problem:    froccs_2
+Rows:       3
+Columns:    3
+Non-zeros:  9
+Status:     OPTIMAL
+Objective:  Bevetel = 66346.15385 (MAXimum)
+
+   No.   Row name   St   Activity     Lower bound   Upper bound    Marginal
+------ ------------ -- ------------- ------------- ------------- -------------
+     1 Bor_keszlet_korlatozas
+                    NU           500                         500       98.0769 
+     2 Szoda_keszlet_korlatozas
+                    NU          1000                        1000       17.3077 
+     3 Bevetel      B        66346.2                             
+
+   No. Column name  St   Activity     Lower bound   Upper bound    Marginal
+------ ------------ -- ------------- ------------- ------------- -------------
+     1 adag[Krudy_froccs]
+                    B        19.2308             0               
+     2 adag[Soherfroccs]
+                    NL             0             0                    -53.8462 
+     3 adag[Horgaszfroccs]
+                    B        326.923             0               
+
+Karush-Kuhn-Tucker optimality conditions:
+
+KKT.PE: max.abs.err = 0.00e+00 on row 0
+        max.rel.err = 0.00e+00 on row 0
+        High quality
+
+KKT.PB: max.abs.err = 0.00e+00 on row 0
+        max.rel.err = 0.00e+00 on row 0
+        High quality
+
+KKT.DE: max.abs.err = 0.00e+00 on column 0
+        max.rel.err = 0.00e+00 on column 0
+        High quality
+
+KKT.DB: max.abs.err = 0.00e+00 on row 0
+        max.rel.err = 0.00e+00 on row 0
+        High quality
+
+End of output

@@ -1,0 +1,40 @@
+set Froccs := Kisfroccs Nagyfroccs Hosszulepes Hazmester Vicehazmester Puskas_froccs Krudy_froccs Soherfroccs Horgaszfroccs;
+
+param borkeszlet := 1000;
+param szodakeszlet := 1500;
+
+param borhasznalat :=
+    Kisfroccs       1
+    Nagyfroccs      2
+    Hosszulepes     1
+    Hazmester       3
+    Vicehazmester   2
+    Puskas_froccs   6
+    Krudy_froccs    9
+    Soherfroccs     1
+    Horgaszfroccs   1
+;
+
+param szodahasznalat :=
+    Kisfroccs       1
+    Nagyfroccs      1
+    Hosszulepes     2
+    Hazmester       2
+    Vicehazmester   3
+    Puskas_froccs   3
+    Krudy_froccs    1
+    Soherfroccs     9
+    Horgaszfroccs   3
+;
+
+param ar :=
+    Kisfroccs       100
+    Nagyfroccs      180
+    Hosszulepes     110
+    Hazmester       260
+    Vicehazmester   200
+    Puskas_froccs   520
+    Krudy_froccs    800
+    Soherfroccs     150
+    Horgaszfroccs   120
+;
