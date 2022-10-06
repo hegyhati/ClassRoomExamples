@@ -1,0 +1,21 @@
+set Sources := A B C;
+param capacity := 
+    A   50
+    B   150
+    C   250
+;
+
+set Destinations := D E F G;
+param demand:=
+    D   75
+    E   125
+    F   130
+    G   120
+;
+
+param distance : 
+        D   E   F   G :=
+    A	129	37	116	108
+    B	40	47	127	117
+    C	110	126	83	94
+    ;

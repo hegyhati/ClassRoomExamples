@@ -1,0 +1,48 @@
+{
+    "sources": [
+        {
+            "name": "A",
+            "capacity": 50
+        },
+        {
+            "name": "B",
+            "capacity": 150
+        },
+        {
+            "name": "C",
+            "capacity": 250
+        }
+    ],
+    "destinations": [
+        {
+            "name": "D",
+            "demand": 75
+        },
+        {
+            "name": "E",
+            "demand": 125
+        },
+        {
+            "name": "F",
+            "demand": 130
+        },
+        {
+            "name": "G",
+            "demand": 120
+        }
+    ],
+    "distances": {
+        "A-D": 129,
+        "A-E": 37,
+        "A-F": 116,
+        "A-G": 108,
+        "B-D": 40,
+        "B-E": 47,
+        "B-F": 127,
+        "B-G": 117,
+        "C-D": 110,
+        "C-E": 126,
+        "C-F": 83,
+        "C-G": 94
+    }
+}

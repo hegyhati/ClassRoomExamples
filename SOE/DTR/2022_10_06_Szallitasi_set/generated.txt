@@ -1,0 +1,59 @@
+Problem:    generated
+Rows:       8
+Columns:    12
+Non-zeros:  36
+Status:     OPTIMAL
+Objective:  Cost = 30445 (MINimum)
+
+   No.   Row name   St   Activity     Lower bound   Upper bound    Marginal
+------ ------------ -- ------------- ------------- ------------- -------------
+     1 A_capacity_constraint
+                    NU            50                          50           -10 
+     2 B_capacity_constraint
+                    B            150                         150 
+     3 C_capacity_constraint
+                    B            250                         250 
+     4 D_demand_constraint
+                    NL            75            75                          40 
+     5 E_demand_constraint
+                    NL           125           125                          47 
+     6 F_demand_constraint
+                    NL           130           130                          83 
+     7 G_demand_constraint
+                    NL           120           120                          94 
+     8 Cost         B          30445                             
+
+   No. Column name  St   Activity     Lower bound   Upper bound    Marginal
+------ ------------ -- ------------- ------------- ------------- -------------
+     1 from_A_to_D  NL             0             0                          99 
+     2 from_A_to_E  B             50             0               
+     3 from_A_to_F  NL             0             0                          43 
+     4 from_A_to_G  NL             0             0                          24 
+     5 from_B_to_D  B             75             0               
+     6 from_B_to_E  B             75             0               
+     7 from_B_to_F  NL             0             0                          44 
+     8 from_B_to_G  NL             0             0                          23 
+     9 from_C_to_D  NL             0             0                          70 
+    10 from_C_to_E  NL             0             0                          79 
+    11 from_C_to_F  B            130             0               
+    12 from_C_to_G  B            120             0               
+
+Karush-Kuhn-Tucker optimality conditions:
+
+KKT.PE: max.abs.err = 0.00e+00 on row 0
+        max.rel.err = 0.00e+00 on row 0
+        High quality
+
+KKT.PB: max.abs.err = 0.00e+00 on row 0
+        max.rel.err = 0.00e+00 on row 0
+        High quality
+
+KKT.DE: max.abs.err = 0.00e+00 on column 0
+        max.rel.err = 0.00e+00 on column 0
+        High quality
+
+KKT.DB: max.abs.err = 0.00e+00 on row 0
+        max.rel.err = 0.00e+00 on row 0
+        High quality
+
+End of output

@@ -1,0 +1,65 @@
+Problem:    clever
+Rows:       8
+Columns:    12
+Non-zeros:  36
+Status:     OPTIMAL
+Objective:  TransportCost = 35700 (MINimum)
+
+   No.   Row name   St   Activity     Lower bound   Upper bound    Marginal
+------ ------------ -- ------------- ------------- ------------- -------------
+     1 Capacity[A]  NU            50                          50           -81 
+     2 Capacity[B]  NU           150                         150           -70 
+     3 Capacity[C]  B            250                         250 
+     4 Demand[D]    NL            75            75                         110 
+     5 Demand[E]    NL           125           125                         118 
+     6 Demand[F]    NL           130           130                         197 
+     7 Demand[G]    NL           120           120                         187 
+     8 TransportCost
+                    B          35700                             
+
+   No. Column name  St   Activity     Lower bound   Upper bound    Marginal
+------ ------------ -- ------------- ------------- ------------- -------------
+     1 transport[A,D]
+                    NL             0             0           100           100 
+     2 transport[A,E]
+                    B             25             0           100 
+     3 transport[A,F]
+                    B             25             0           100 
+     4 transport[A,G]
+                    NL             0             0           100             2 
+     5 transport[B,D]
+                    B             25             0           100 
+     6 transport[B,E]
+                    NU           100             0           100            -1 
+     7 transport[B,F]
+                    B              5             0           100 
+     8 transport[B,G]
+                    B             20             0           100 
+     9 transport[C,D]
+                    B             50             0           100 
+    10 transport[C,E]
+                    NL             0             0           100             8 
+    11 transport[C,F]
+                    NU           100             0           100          -114 
+    12 transport[C,G]
+                    NU           100             0           100           -93 
+
+Karush-Kuhn-Tucker optimality conditions:
+
+KKT.PE: max.abs.err = 0.00e+00 on row 0
+        max.rel.err = 0.00e+00 on row 0
+        High quality
+
+KKT.PB: max.abs.err = 0.00e+00 on row 0
+        max.rel.err = 0.00e+00 on row 0
+        High quality
+
+KKT.DE: max.abs.err = 0.00e+00 on column 0
+        max.rel.err = 0.00e+00 on column 0
+        High quality
+
+KKT.DB: max.abs.err = 0.00e+00 on row 0
+        max.rel.err = 0.00e+00 on row 0
+        High quality
+
+End of output
