@@ -1,0 +1,6 @@
+\select@language {magyar} \contentsline {chapter}{\numberline {1}The Boy Who Lived}{3}%
+\select@language {magyar} \contentsline {section}{\numberline {1.1}About the Dursleys}{3}%
+\select@language {magyar} \contentsline {section}{\numberline {1.2}Dumbledores arrival}{4}%
+\select@language {magyar} \contentsline {section}{\numberline {1.3}Tea}{6}%
+\select@language {magyar} \contentsline {chapter}{\numberline {2}Whatever}{8}%
+\select@language {magyar} \contentsline {chapter}{\numberline {3}Clever Ravenclaws}{10}%
