@@ -1,0 +1,26 @@
+[
+    {
+        "name": "Harry Potter",
+        "house": "Griffendor",
+        "material": "plastic",
+        "size": 12
+    },
+    {
+        "name": "Luna Lovegood",
+        "house": "Ravenclaw",
+        "material": "wood",
+        "size": 20
+    },
+    {
+        "name": "Draco Malfoy",
+        "house": "Slytherin",
+        "material": "metal",
+        "size": 8
+    },
+    {
+        "name": "Cedric Diggory",
+        "house": "Ravenclaw",
+        "material": "wood",
+        "size": 16
+    }
+]
