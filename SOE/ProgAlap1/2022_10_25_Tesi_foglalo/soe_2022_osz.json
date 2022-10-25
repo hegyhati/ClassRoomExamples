@@ -1,0 +1,23 @@
+[
+    {
+        "sport" : "Kosar",
+        "day" : 3,
+        "start" : 19,
+        "duration" : 1.5,
+        "people" : ["Balazs", "Gergo", "Vivi"]
+    },
+    {
+        "sport" : "Terepfutas",
+        "day" : 1,
+        "start" : 18.5,
+        "duration" : 1,
+        "people" : ["Vivi", "Erik", "Mate"]
+    },
+    {
+        "sport" : "Foci",
+        "day" : 4,
+        "start" : 9,
+        "duration" : 2,
+        "people" : ["Adam"]
+    }
+]
