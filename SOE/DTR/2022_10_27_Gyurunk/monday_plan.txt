@@ -1,0 +1,46 @@
+Problem:    gyuras2
+Rows:       5
+Columns:    6 (6 integer, 0 binary)
+Non-zeros:  30
+Status:     INTEGER OPTIMAL
+Objective:  TotalTrainingTime = 311 (MINimum)
+
+   No.   Row name        Activity     Lower bound   Upper bound
+------ ------------    ------------- ------------- -------------
+     1 Effect_bounds_for_musclegroups[chest]
+                                 242           100           500 
+     2 Effect_bounds_for_musclegroups[abdomen]
+                              200.18           200           400 
+     3 Effect_bounds_for_musclegroups[biceps]
+                               300.2           300           600 
+     4 Effect_bounds_for_musclegroups[back]
+                              258.81           200           300 
+     5 TotalTrainingTime
+                                 311                             
+
+   No. Column name       Activity     Lower bound   Upper bound
+------ ------------    ------------- ------------- -------------
+     1 repetition[curl]
+                    *              0             0               
+     2 repetition[benchpress]
+                    *              0             0               
+     3 repetition[squat]
+                    *            129             0               
+     4 repetition[plank]
+                    *              0             0               
+     5 repetition[latpull]
+                    *              0             0               
+     6 repetition[legpress]
+                    *            130             0               
+
+Integer feasibility conditions:
+
+KKT.PE: max.abs.err = 0.00e+00 on row 0
+        max.rel.err = 0.00e+00 on row 0
+        High quality
+
+KKT.PB: max.abs.err = 0.00e+00 on row 0
+        max.rel.err = 0.00e+00 on row 0
+        High quality
+
+End of output

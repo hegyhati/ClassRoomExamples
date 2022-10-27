@@ -1,0 +1,36 @@
+set Musclegroup := chest	abdomen	biceps	back;
+set Exercise :=  curl benchpress squat plank latpull legpress;
+
+param effect:
+                chest	abdomen	biceps	back :=
+    curl	    1.29	0.55	0.23	1.96
+    benchpress	1.13	1.77	1.01	1.13
+    squat	    1.10	0.02	1.40	1.19
+    plank	    1.50	1.14	0.24	0.85
+    latpull	    0.27	0.24	1.05	1.62
+    legpress	0.77	1.52	0.92	0.81
+;
+
+
+param duration :=
+    curl        0.5
+    benchpress  2
+    squat       1
+    plank       1
+    latpull     1.2
+    legpress    1.4
+;
+
+param min_effect :=
+    chest	100
+    abdomen	200
+    biceps	300
+    back	200
+;
+
+param max_effect :=
+    chest		500
+    abdomen		400
+    biceps		600
+    back		300
+;
