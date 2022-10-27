@@ -1,0 +1,8 @@
+J ava
+S cript
+O bject
+N otation
+
+
+Array - Object 
+(List) - (Dictionary)
