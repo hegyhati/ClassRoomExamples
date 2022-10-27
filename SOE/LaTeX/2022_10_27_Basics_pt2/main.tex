@@ -1,0 +1,167 @@
+\documentclass[]{article}
+
+\usepackage{graphicx}
+\usepackage[]{amssymb}
+
+\counterwithin{figure}{subsection}
+
+
+\newcommand{\twowaydef}[4]{
+    \begin{equation}
+        \label{eq_branch}
+        #1 = \left\{
+            \begin{array}[]{cl}
+                #2 & \mbox{if $#3$} \\
+                #4      & \mbox{otherwise}
+            \end{array}
+        \right.
+    \end{equation}
+}
+
+
+\begin{document}
+
+\section{Introduction}
+Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Purus in massa tempor nec. Egestas integer eget aliquet nibh praesent tristique. Pretium quam vulputate dignissim suspendisse in est. Neque sodales ut etiam sit. Cursus vitae congue mauris rhoncus. Fermentum iaculis eu non diam phasellus vestibulum. Faucibus pulvinar elementum integer enim neque volutpat ac. Nisl condimentum id venenatis a. Egestas egestas fringilla phasellus faucibus scelerisque eleifend. Dignissim sodales ut eu sem. Tincidunt lobortis feugiat vivamus at augue eget arcu.
+
+Varius sit amet mattis vulputate enim nulla aliquet porttitor. Morbi tempus iaculis urna id volutpat lacus laoreet non curabitur. Nisl condimentum id venenatis a condimentum vitae sapien. Amet dictum sit amet justo. Sit amet cursus sit amet dictum sit. Aliquam nulla facilisi cras fermentum odio eu. Dolor sed viverra ipsum nunc. Nisl nisi scelerisque eu ultrices. Etiam dignissim diam quis enim lobortis. Amet mauris commodo quis imperdiet massa tincidunt. Proin nibh nisl condimentum id venenatis. Sed cras ornare arcu dui vivamus. Ullamcorper eget nulla facilisi etiam dignissim. Ullamcorper sit amet risus nullam eget felis eget nunc.
+
+\begin{figure}[htpb]
+    \begin{center}
+        \includegraphics[width=0.5\textwidth]{example1.png}   
+    \end{center}
+    \caption{My smaller example}
+    \label{fig_example_small}
+\end{figure}
+
+\section{New section with figure}
+
+\subsection{subsec with figure}
+
+Rhoncus urna neque viverra justo. Facilisi nullam vehicula ipsum a arcu cursus vitae congue. Arcu ac tortor dignissim convallis aenean et. Massa placerat duis ultricies lacus sed turpis. Ac turpis egestas sed tempus urna et pharetra. Velocity is defined as... \label{def_velocity} Aenean et tortor at risus viverra adipiscing at in tellus. Ante metus dictum at tempor commodo ullamcorper a lacus. Euismod elementum nisi quis eleifend. Auctor urna nunc id cursus metus.\footnote{this is my footnote} Et netus et malesuada fames ac. Sit amet aliquam id diam maecenas ultricies mi eget mauris.
+As shown in the Figure \ref{fig_example1}.
+
+\begin{figure}[htpb]
+    \begin{center}
+        \includegraphics[width=0.8\textwidth]{example1.png}   
+    \end{center}
+    \caption{My example}
+    \label{fig_example1}
+\end{figure}
+
+\subsection{subsec with table}
+Turpis tincidunt id aliquet risus. Aliquam etiam erat velit scelerisque in dictum non consectetur. Tellus molestie nunc non blandit massa enim. Ultrices gravida dictum fusce ut placerat orci nulla pellentesque dignissim. Pharetra vel turpis nunc eget lorem. Rhoncus est pellentesque elit ullamcorper dignissim cras tincidunt lobortis feugiat.
+
+\begin{table}
+    \caption{my first table}
+    \label{tab_mytable}
+    \centering
+    \begin{tabular}{r|ccc|l}
+            & Weight & Price & Color \\
+        \hline \hline
+        P1  & 12     & 65    & red   & out of stock \\
+        P2  & 2      & 65    & blue  &  \\
+        P3  & 132    & 65    & green & 5 days shipping\\
+    \end{tabular}
+\end{table}
+
+Nulla at volutpat diam ut venenatis tellus in metus. Molestie nunc non blandit massa enim nec dui nunc. Et molestie ac feugiat sed lectus vestibulum mattis. Lacus vestibulum sed arcu non odio euismod lacinia at quis. Malesuada nunc vel risus commodo viverra maecenas accumsan. Phasellus egestas tellus rutrum tellus pellentesque. Tincidunt nunc pulvinar sapien et ligula ullamcorper malesuada. Pretium aenean pharetra magna ac placerat vestibulum. Nam at lectus urna duis convallis convallis tellus. Egestas tellus rutrum tellus pellentesque eu tincidunt tortor aliquam.
+AS shown in table \ref{tab_mytable}.
+
+\subsection{just text}
+Nisl vel pretium lectus quam id leo in vitae. Aenean vel elit scelerisque mauris pellentesque. Viverra vitae congue eu consequat ac. Mattis molestie a iaculis at erat pellentesque adipiscing commodo. Neque volutpat ac tincidunt vitae. Mauris rhoncus aenean vel elit scelerisque mauris. Ultrices gravida dictum fusce ut placerat orci nulla pellentesque dignissim. Praesent tristique magna sit amet purus gravida. Urna nunc id cursus metus. Ut eu sem integer vitae justo eget magna fermentum iaculis. Nisi scelerisque eu ultrices vitae auctor.
+
+Hac habitasse platea dictumst vestibulum rhoncus est. Mauris ultrices eros in cursus turpis. Placerat in egestas erat imperdiet sed. Fermentum odio eu feugiat pretium nibh ipsum. At quis risus sed vulputate odio. Elementum sagittis vitae et leo. Sem nulla pharetra diam sit amet. Sed vulputate mi sit amet mauris. Augue ut lectus arcu bibendum. Iaculis urna id volutpat lacus laoreet non curabitur gravida arcu. Donec ultrices tincidunt arcu non sodales neque sodales ut etiam. Mi in nulla posuere sollicitudin. Pulvinar pellentesque habitant morbi tristique senectus. Nulla aliquet porttitor lacus luctus accumsan tortor. Eget nunc scelerisque viverra mauris in aliquam sem fringilla ut. Congue nisi vitae suscipit tellus mauris a diam maecenas sed. Pharetra massa massa ultricies mi quis. Nullam non nisi est sit amet facilisis magna.
+
+\section{last section}
+Turpis nunc eget lorem dolor sed viverra. Interdum velit laoreet id donec ultrices tincidunt arcu non. Libero volutpat sed cras ornare arcu dui. Tempor orci dapibus ultrices in iaculis nunc sed. Maecenas pharetra convallis posuere morbi leo. Vitae et leo duis ut diam quam nulla porttitor. Massa eget egestas purus viverra. Diam quam nulla porttitor massa id neque aliquam. Enim praesent elementum facilisis leo vel fringilla. Imperdiet dui accumsan sit amet nulla facilisi morbi tempus iaculis. Ullamcorper morbi tincidunt ornare massa. Est sit amet facilisis magna. Rutrum tellus pellentesque eu tincidunt tortor. Eget est lorem ipsum dolor sit amet consectetur adipiscing. Sapien pellentesque habitant morbi tristique senectus et.
+
+\subsection{Math formulas}
+
+Sodales ut eu sem integer vitae justo. In massa tempor nec feugiat nisl pretium fusce id velit. Elit pellentesque habitant morbi tristique senectus et netus. $a = b_{cp} + f^p$ Ultricies mi quis hendrerit dolor. Ut etiam sit amet nisl purus in mollis nunc. 
+
+\[
+    a^{mytext^c_{subscript_{subsubscript}}}
+\]
+
+Nunc consequat interdum varius sit amet mattis vulputate. Sed odio morbi quis commodo odio aenean sed adipiscing diam. $a^p_{j,i_k}$ Sed lectus vestibulum mattis ullamcorper. Est velit egestas dui id ornare arcu odio ut sem.
+
+\begin{equation}
+    \label{eq_fraction}
+    a = \frac{b}{\sum_{i=1,\dots,n} \frac{p(n)}{2}}
+\end{equation}
+
+Tristique senectus et netus et malesuada fames ac. Duis ultricies lacus sed turpis tincidunt id aliquet risus feugiat. Volutpat sed cras ornare arcu. Tellus integer feugiat scelerisque varius. Sit amet porttitor eget dolor morbi non.
+
+\begin{equation}
+    \label{eq_branch}
+    f(x) = \left\{
+        \begin{array}[]{cl}
+            sin(x) & \mbox{if $x\ge 0$} \\
+            0      & \mbox{otherwise}
+        \end{array}
+    \right.
+\end{equation}
+
+\twowaydef{f(x)}{sin(x)}{x\ge 0}{0}
+\twowaydef{g(x)}{x^2}{x \in  \mathbb{Z}}{-x}
+
+Euismod lacinia at quis risus. Vestibulum lorem sed risus ultricies tristique. Erat nam at lectus urna duis convallis convallis. Tellus orci ac auctor augue mauris. As expressed in Equation \ref{eq_weight}, $w_i$ is the sum of ...
+
+\begin{equation}
+    \label{eq_weight}
+    w_i = \sum_{p \in P} x_p o_p - K
+    \qquad
+    \forall i \in I
+\end{equation}
+
+At elementum eu facilisis sed odio morbi. 
+
+Set operations:
+\begin{enumerate}
+    \item Intersection: $\cap$
+    \item Union: $\cup$
+    \item Product: $\times$
+    \item Set difference: $\setminus$
+\end{enumerate}
+
+We also can have relations between sets : $\emptyset \subseteq A \subset P \subseteq R$, and also $x \in P$ but $x \not\in R$. If $x \to \infty$ then $\frac{1}{x} \to 0$, which means, that $\lim_{x\to\infty}\frac{1}{x}=0$
+
+At erat pellentesque adipiscing commodo elit at imperdiet dui accumsan. Eget magna fermentum iaculis eu non. Commodo odio aenean sed adipiscing diam donec adipiscing. Enim sed faucibus turpis in eu mi bibendum. Cursus mattis molestie a iaculis at erat. Neque vitae tempus quam pellentesque nec. Nulla facilisi cras fermentum odio eu feugiat pretium nibh ipsum. Nunc faucibus a pellentesque sit amet porttitor eget. Neque convallis a cras semper auctor. Lectus arcu bibendum at varius vel pharetra vel turpis nunc.
+
+You can also use greek letters easily. 
+
+\[
+    \rho = \frac{m}{V}
+\]
+
+There are the small letters: $\alpha, \beta, \gamma$ and also the capital ones: $\Delta, \Phi, \Xi, \Gamma $
+Leo duis ut diam quam nulla porttitor massa id neque. Massa ultricies mi quis hendrerit dolor. Molestie nunc non blandit massa enim nec dui nunc mattis. Vel fringilla est ullamcorper eget nulla facilisi etiam dignissim diam.
+\begin{itemize}
+    \item Simple small letters: $a,b,c$
+    \item Capital letters: $A,B,C$
+    \item Boldface letters: $\mathbf{A}, \mathbf{B}, \mathbf{C}$
+    \item Caligraphic letters: $\cal A,B,C$
+    \item Fraktur letters: $\mathfrak{A} \mathfrak{B}, \mathfrak{C}$
+\end{itemize}
+
+\newcommand{\CC}{{\cal C}^{col}}
+
+Etiam sit amet nisl $\CC = a$ purus in mollis nunc sed id. Odio pellentesque diam volutpat commodo. Ligula ullamcorper malesuada proin libero nunc consequat interdum. Sollicitudin aliquam ultrices sagittis orci a scelerisque purus semper eget. 
+
+\begin{eqnarray}
+    x &=& 1 + 2 + 3 \\    
+    y &=& x + 2 + 4 + 7    
+\end{eqnarray}
+
+
+
+Urna neque viverra justo nec. Lectus magna fringilla urna porttitor rhoncus dolor purus. Tempus egestas sed sed risus. Libero nunc consequat interdum varius sit amet mattis vulputate. Aenean $\CC = a$ pharetra magna ac placerat vestibulum lectus mauris ultrices. Cras sed felis eget velit aliquet. Eget nunc scelerisque viverra mauris in aliquam. Ipsum faucibus vitae aliquet nec ullamcorper sit amet $\CC = a$ risus. Suspendisse interdum consectetur libero id faucibus nisl tincidunt. Morbi tincidunt ornare massa eget egestas purus viverra.
+
+As shown in the Figure \ref{fig_example1} on page \pageref{fig_example1}. 
+The set of all real numbers is $\mathbb{R}$, and we know that: $\mathbb{N} \subset \mathbb{Z} \subset \mathbb{Q} \subset \mathbb {R}$.
+
+\tableofcontents
+\listoffigures
+\listoftables
+\end{document}
