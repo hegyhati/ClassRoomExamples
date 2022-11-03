@@ -1,0 +1,15 @@
+set Currencies := USD BTC HUF;
+set Days := 1 2 3 4 5;
+
+param initial_money :=
+    USD 10
+    HUF 0
+    BTC 0
+    ;
+
+param dollar_value :
+            1   2   3   4   5   :=
+    USD     1   1   1   1   1
+    HUF     350 380 420 410 415
+    BTC     49  200 120 180 60
+    ;

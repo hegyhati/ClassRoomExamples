@@ -1,0 +1,187 @@
+Problem:    model_plus
+Rows:       31
+Columns:    51 (3 integer, 3 binary)
+Non-zeros:  229
+Status:     INTEGER OPTIMAL
+Objective:  Dollars = 30 (MAXimum)
+
+   No.   Row name        Activity     Lower bound   Upper bound
+------ ------------    ------------- ------------- -------------
+     1 set_initial_balance[USD]
+                                  10            10             = 
+     2 set_initial_balance[BTC]
+                                   0            -0             = 
+     3 set_initial_balance[HUF]
+                                   0            -0             = 
+     4 set_balance_other_days[USD,1]
+                                   0            -0             = 
+     5 set_balance_other_days[USD,2]
+                                   0            -0             = 
+     6 set_balance_other_days[USD,3]
+                                   0            -0             = 
+     7 set_balance_other_days[USD,4]
+                                   0            -0             = 
+     8 set_balance_other_days[USD,5]
+                                   0            -0             = 
+     9 set_balance_other_days[BTC,1]
+                                   0            -0             = 
+    10 set_balance_other_days[BTC,2]
+                                   0            -0             = 
+    11 set_balance_other_days[BTC,3]
+                                   0            -0             = 
+    12 set_balance_other_days[BTC,4]
+                                   0            -0             = 
+    13 set_balance_other_days[BTC,5]
+                                   0            -0             = 
+    14 set_balance_other_days[HUF,1]
+                                   0            -0             = 
+    15 set_balance_other_days[HUF,2]
+                                   0            -0             = 
+    16 set_balance_other_days[HUF,3]
+                                   0            -0             = 
+    17 set_balance_other_days[HUF,4]
+                                   0            -0             = 
+    18 set_balance_other_days[HUF,5]
+                                   0            -0             = 
+    19 only_use_open_accounts_1[USD,BTC]
+                                   0                          -0 
+    20 only_use_open_accounts_1[USD,HUF]
+                              -99999                          -0 
+    21 only_use_open_accounts_1[BTC,USD]
+                                   0                          -0 
+    22 only_use_open_accounts_1[BTC,HUF]
+                              -99999                          -0 
+    23 only_use_open_accounts_1[HUF,USD]
+                                   0                          -0 
+    24 only_use_open_accounts_1[HUF,BTC]
+                                   0                          -0 
+    25 only_use_open_accounts_2[USD,BTC]
+                                   0                          -0 
+    26 only_use_open_accounts_2[USD,HUF]
+                                   0                          -0 
+    27 only_use_open_accounts_2[BTC,USD]
+                                   0                          -0 
+    28 only_use_open_accounts_2[BTC,HUF]
+                                   0                          -0 
+    29 only_use_open_accounts_2[HUF,USD]
+                              -99999                          -0 
+    30 only_use_open_accounts_2[HUF,BTC]
+                              -99999                          -0 
+    31 Dollars                    30                             
+
+   No. Column name       Activity     Lower bound   Upper bound
+------ ------------    ------------- ------------- -------------
+     1 exchange[USD,BTC,1]
+                                   0             0               
+     2 exchange[USD,HUF,1]
+                                   0             0               
+     3 exchange[BTC,USD,1]
+                                   0             0               
+     4 exchange[HUF,USD,1]
+                                   0             0               
+     5 exchange[USD,BTC,2]
+                                  10             0               
+     6 exchange[USD,HUF,2]
+                                   0             0               
+     7 exchange[BTC,USD,2]
+                                   0             0               
+     8 exchange[HUF,USD,2]
+                                   0             0               
+     9 exchange[USD,BTC,3]
+                             784.895             0               
+    10 exchange[USD,HUF,3]
+                                   0             0               
+    11 exchange[BTC,USD,3]
+                             96187.4             0               
+    12 exchange[HUF,USD,3]
+                                   0             0               
+    13 exchange[USD,BTC,4]
+                             16.6667             0               
+    14 exchange[USD,HUF,4]
+                                   0             0               
+    15 exchange[BTC,USD,4]
+                                   0             0               
+    16 exchange[HUF,USD,4]
+                                   0             0               
+    17 exchange[USD,BTC,5]
+                                   0             0               
+    18 exchange[USD,HUF,5]
+                                   0             0               
+    19 exchange[BTC,USD,5]
+                                3000             0               
+    20 exchange[HUF,USD,5]
+                                   0             0               
+    21 exchange[BTC,HUF,1]
+                                   0             0               
+    22 exchange[HUF,BTC,1]
+                                   0             0               
+    23 exchange[BTC,HUF,2]
+                                   0             0               
+    24 exchange[HUF,BTC,2]
+                                   0             0               
+    25 exchange[BTC,HUF,3]
+                                   0             0               
+    26 exchange[HUF,BTC,3]
+                                   0             0               
+    27 exchange[BTC,HUF,4]
+                                   0             0               
+    28 exchange[HUF,BTC,4]
+                                   0             0               
+    29 exchange[BTC,HUF,5]
+                                   0             0               
+    30 exchange[HUF,BTC,5]
+                                   0             0               
+    31 balance[USD,0]
+                                  10             0               
+    32 balance[BTC,0]
+                                   0             0               
+    33 balance[HUF,0]
+                                   0             0               
+    34 balance[USD,1]
+                                  10             0               
+    35 balance[USD,2]
+                                   0             0               
+    36 balance[USD,3]
+                             16.6667             0               
+    37 balance[USD,4]
+                                   0             0               
+    38 balance[USD,5]
+                                  50             0               
+    39 balance[BTC,1]
+                                   0             0               
+    40 balance[BTC,2]
+                                2000             0               
+    41 balance[BTC,3]
+                                   0             0               
+    42 balance[BTC,4]
+                                3000             0               
+    43 balance[BTC,5]
+                                   0             0               
+    44 balance[HUF,1]
+                                   0             0               
+    45 balance[HUF,2]
+                                   0             0               
+    46 balance[HUF,3]
+                                   0             0               
+    47 balance[HUF,4]
+                                   0             0               
+    48 balance[HUF,5]
+                                   0             0               
+    49 open_account[USD]
+                    *              1             0             1 
+    50 open_account[BTC]
+                    *              1             0             1 
+    51 open_account[HUF]
+                    *              0             0             1 
+
+Integer feasibility conditions:
+
+KKT.PE: max.abs.err = 0.00e+00 on row 0
+        max.rel.err = 0.00e+00 on row 0
+        High quality
+
+KKT.PB: max.abs.err = 2.38e-11 on row 24
+        max.rel.err = 2.38e-11 on row 24
+        High quality
+
+End of output

@@ -1,0 +1,30 @@
+Day 1:
+
+ - USD: 10
+ - BTC: 0
+ - HUF: 0
+Day 2:
+ 10 USD -> 2000 BTC
+
+ - USD: 0
+ - BTC: 2000
+ - HUF: 0
+Day 3:
+ 784.895 USD -> 94187.4 BTC
+ 96187.4 BTC -> 801.562 USD
+
+ - USD: 16.6667
+ - BTC: 0
+ - HUF: 0
+Day 4:
+ 16.6667 USD -> 3000 BTC
+
+ - USD: 0
+ - BTC: 3000
+ - HUF: 0
+Day 5:
+ 3000 BTC -> 50 USD
+
+ - USD: 50
+ - BTC: 0
+ - HUF: 0

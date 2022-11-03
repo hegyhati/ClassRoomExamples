@@ -1,0 +1,165 @@
+Problem:    model_5
+Rows:       19
+Columns:    48
+Non-zeros:  94
+Status:     OPTIMAL
+Objective:  Dollars = 51.2195122 (MAXimum)
+
+   No.   Row name   St   Activity     Lower bound   Upper bound    Marginal
+------ ------------ -- ------------- ------------- ------------- -------------
+     1 set_initial_balance[USD]
+                    NS            10            10             =       5.12195 
+     2 set_initial_balance[BTC]
+                    NS             0            -0             =       0.10453 
+     3 set_initial_balance[HUF]
+                    NS             0            -0             =     0.0146341 
+     4 set_balance_other_days[USD,1]
+                    NS             0            -0             =       5.12195 
+     5 set_balance_other_days[USD,2]
+                    NS             0            -0             =       5.12195 
+     6 set_balance_other_days[USD,3]
+                    NS             0            -0             =       3.07317 
+     7 set_balance_other_days[USD,4]
+                    NS             0            -0             =             3 
+     8 set_balance_other_days[USD,5]
+                    NS             0            -0             =             1 
+     9 set_balance_other_days[BTC,1]
+                    NS             0            -0             =       0.10453 
+    10 set_balance_other_days[BTC,2]
+                    NS             0            -0             =     0.0256098 
+    11 set_balance_other_days[BTC,3]
+                    NS             0            -0             =     0.0256098 
+    12 set_balance_other_days[BTC,4]
+                    NS             0            -0             =     0.0166667 
+    13 set_balance_other_days[BTC,5]
+                    NS             0            -0             =     0.0166667 
+    14 set_balance_other_days[HUF,1]
+                    NS             0            -0             =     0.0146341 
+    15 set_balance_other_days[HUF,2]
+                    NS             0            -0             =     0.0134788 
+    16 set_balance_other_days[HUF,3]
+                    NS             0            -0             =    0.00731707 
+    17 set_balance_other_days[HUF,4]
+                    NS             0            -0             =    0.00731707 
+    18 set_balance_other_days[HUF,5]
+                    NS             0            -0             =    0.00240964 
+    19 Dollars      B        51.2195                             
+
+   No. Column name  St   Activity     Lower bound   Upper bound    Marginal
+------ ------------ -- ------------- ------------- ------------- -------------
+     1 exchange[USD,BTC,1]
+                    NL             0             0                       < eps
+     2 exchange[USD,HUF,1]
+                    NL             0             0                       < eps
+     3 exchange[BTC,USD,1]
+                    B              0             0               
+     4 exchange[HUF,USD,1]
+                    B              0             0               
+     5 exchange[USD,BTC,2]
+                    B             10             0               
+     6 exchange[USD,HUF,2]
+                    NL             0             0                       < eps
+     7 exchange[BTC,USD,2]
+                    NL             0             0                       < eps
+     8 exchange[HUF,USD,2]
+                    NL             0             0                       < eps
+     9 exchange[USD,BTC,3]
+                    NL             0             0                       < eps
+    10 exchange[USD,HUF,3]
+                    B        16.6667             0               
+    11 exchange[BTC,USD,3]
+                    B           2000             0               
+    12 exchange[HUF,USD,3]
+                    NL             0             0                       < eps
+    13 exchange[USD,BTC,4]
+                    NL             0             0                       < eps
+    14 exchange[USD,HUF,4]
+                    NL             0             0                       < eps
+    15 exchange[BTC,USD,4]
+                    NL             0             0                       < eps
+    16 exchange[HUF,USD,4]
+                    B              0             0               
+    17 exchange[USD,BTC,5]
+                    NL             0             0                       < eps
+    18 exchange[USD,HUF,5]
+                    NL             0             0                       < eps
+    19 exchange[BTC,USD,5]
+                    B        3073.17             0               
+    20 exchange[HUF,USD,5]
+                    B              0             0               
+    21 exchange[BTC,HUF,1]
+                    NL             0             0                       < eps
+    22 exchange[HUF,BTC,1]
+                    NL             0             0                       < eps
+    23 exchange[BTC,HUF,2]
+                    NL             0             0                       < eps
+    24 exchange[HUF,BTC,2]
+                    B              0             0               
+    25 exchange[BTC,HUF,3]
+                    NL             0             0                       < eps
+    26 exchange[HUF,BTC,3]
+                    NL             0             0                       < eps
+    27 exchange[BTC,HUF,4]
+                    NL             0             0                       < eps
+    28 exchange[HUF,BTC,4]
+                    B           7000             0               
+    29 exchange[BTC,HUF,5]
+                    NL             0             0                       < eps
+    30 exchange[HUF,BTC,5]
+                    NL             0             0                       < eps
+    31 balance[USD,0]
+                    B             10             0               
+    32 balance[BTC,0]
+                    B              0             0               
+    33 balance[HUF,0]
+                    B              0             0               
+    34 balance[USD,1]
+                    B             10             0               
+    35 balance[USD,2]
+                    NL             0             0                    -2.04878 
+    36 balance[USD,3]
+                    NL             0             0                  -0.0731707 
+    37 balance[USD,4]
+                    NL             0             0                          -2 
+    38 balance[USD,5]
+                    B        51.2195             0               
+    39 balance[BTC,1]
+                    NL             0             0                  -0.0789199 
+    40 balance[BTC,2]
+                    B           2000             0               
+    41 balance[BTC,3]
+                    NL             0             0                 -0.00894309 
+    42 balance[BTC,4]
+                    B        3073.17             0               
+    43 balance[BTC,5]
+                    NL             0             0                  -0.0166667 
+    44 balance[HUF,1]
+                    NL             0             0                 -0.00115533 
+    45 balance[HUF,2]
+                    NL             0             0                 -0.00616175 
+    46 balance[HUF,3]
+                    B           7000             0               
+    47 balance[HUF,4]
+                    NL             0             0                 -0.00490743 
+    48 balance[HUF,5]
+                    NL             0             0                 -0.00240964 
+
+Karush-Kuhn-Tucker optimality conditions:
+
+KKT.PE: max.abs.err = 1.82e-12 on row 17
+        max.rel.err = 3.05e-15 on row 7
+        High quality
+
+KKT.PB: max.abs.err = 0.00e+00 on row 0
+        max.rel.err = 0.00e+00 on row 0
+        High quality
+
+KKT.DE: max.abs.err = 3.55e-15 on column 5
+        max.rel.err = 3.16e-16 on column 5
+        High quality
+
+KKT.DB: max.abs.err = 3.11e-15 on column 9
+        max.rel.err = 3.11e-15 on column 9
+        High quality
+
+End of output
