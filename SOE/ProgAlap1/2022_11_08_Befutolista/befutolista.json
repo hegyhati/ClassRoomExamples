@@ -1,0 +1,531 @@
+{
+    "veszprun": {
+        "Bazsi": {
+            "21k": {
+                "time": "1:44:01",
+                "race": "5. Watchman Pápa Félmaraton",
+                "year": 2020
+            }
+        },
+        "BKÉ": {
+            "21k": {
+                "time": "1:44:31",
+                "race": "K&H mozdulj! Balaton félmaraton",
+                "year": 2018
+            },
+            "42k": {
+                "time": "3:53:08",
+                "race": "Volkswagen Prague Marathon",
+                "year": 2019
+            }
+        },
+        "Dagi": {
+            "21k": {
+                "time": "1:28:25",
+                "race": "14. Nike Budapest Félmaraton",
+                "year": 1999
+            },
+            "42k": {
+                "time": "3:29:00",
+                "race": "14. Kaiser's Plus Budapest Maraton",
+                "year": 1999
+            }
+        },
+        "Jgr": {
+            "21k": {
+                "time": "1:29:29",
+                "race": "34. Wizz Air Budapest Félmaraton",
+                "year": 2019
+            },
+            "42k": {
+                "time": "3:27:35",
+                "race": "33. SPAR Budapest Maraton",
+                "year": 2018
+            }
+        },
+        "Linetti": {
+            "21k": {
+                "time": "1:54:07",
+                "race": "???",
+                "year": 2021
+            }
+        }
+    },
+    "futokalandorok": {
+        "Anita": {
+            "5k": {
+                "time": "20:47",
+                "race": "Tüdőlebeny futóverseny",
+                "year": 2021
+            },
+            "10k": {
+                "time": "0:44:13",
+                "race": "19. Szigetköz Nolato 10km",
+                "year": 2022
+            },
+            "21k": {
+                "time": "1:42:29",
+                "race": "Pápai Sport CentRUN",
+                "year": 2022
+            },
+            "42k": {
+                "time": "3:52:19",
+                "race": "3. Szeged Maraton",
+                "year": 2020
+            }
+        },
+        "Balázs": {
+            "5k": {
+                "time": "19:43",
+                "race": "Karácsonyi rohanás rövidtáv",
+                "year": 2012
+            },
+            "21k": {
+                "time": "1:30:22",
+                "race": "K&H Balaton Félmaraton",
+                "year": 2015
+            },
+            "42k": {
+                "time": "3:43:40",
+                "race": "27. SPAR Budapest Maraton",
+                "year": 2012
+            }
+        },
+        "Betty": {
+            "5k": {
+                "time": "29:52",
+                "race": "III. Tüdőlébény Futóverseny",
+                "year": 2022
+            }
+        },
+        "Bogyó": {
+            "42k": {
+                "time": "3:53:13",
+                "race": "Athens Marathon",
+                "year": 2021
+            }
+        },
+        "Boldi": {
+            "5k": {
+                "time": "22:57",
+                "race": "Tüdőlebeny futóverseny",
+                "year": 2021
+            },
+            "10k": {
+                "time": "0:57:17",
+                "race": "5. Gátőrfutás",
+                "year": 2019
+            },
+            "21k": {
+                "time": "1:43:05",
+                "race": "19. Motherson Szigetköz Félmaraton",
+                "year": 2022
+            },
+            "42k": {
+                "time": "4:13:20",
+                "race": "36. SPAR Budapest Maraton",
+                "year": 2020
+            }
+        },
+        "Borsodi": {
+            "5k": {
+                "time": "26:28",
+                "race": "III. Tüdőlébény Futóverseny",
+                "year": 2022
+            },
+            "10k": {
+                "time": "0:51:14",
+                "race": "Nagymegyeri futás",
+                "year": 2022
+            }
+        },
+        "Captain Morgen": {
+            "5k": {
+                "time": "21:31",
+                "race": "IV. Tüdőlébény Futóverseny",
+                "year": 2022
+            },
+            "10k": {
+                "time": "0:48:22",
+                "race": "19. Szigetköz Nolato 10km",
+                "year": 2022
+            },
+            "21k": {
+                "time": "1:51:10",
+                "race": "V. Újház Napfelkelte Félmaraton",
+                "year": 2022
+            }
+        },
+        "Casablanca": {
+            "21k": {
+                "time": "1:43:57",
+                "race": "Vivicitta félmaraton",
+                "year": 2018
+            }
+        },
+        "CookieFairy": {
+            "21k": {
+                "time": "1:59:31",
+                "race": "16. K&H mozdulj! Balaton Maraton és Félmaraton",
+                "year": 2019
+            }
+        },
+        "Csefa": {
+            "10k": {
+                "time": "0:43:59",
+                "race": "5. Gátőrfutás",
+                "year": 2019
+            },
+            "21k": {
+                "time": "1:44:59",
+                "race": "Sry Chinmoy Félmaraton",
+                "year": 2016
+            },
+            "42k": {
+                "time": "3:57:59",
+                "race": "31. SPAR Budapest Maraton",
+                "year": 2016
+            }
+        },
+        "Daniella": {
+            "10k": {
+                "time": "0:54:33",
+                "race": "Agrovirt Szigetköz 10km",
+                "year": 2019
+            },
+            "21k": {
+                "time": "1:54:22",
+                "race": "15. Greiner Szigetköz félmaraton",
+                "year": 2018
+            }
+        },
+        "DJGyőző": {
+            "5k": {
+                "time": "19:58",
+                "race": "III. Tüdőlébény Futóverseny",
+                "year": 2022
+            },
+            "21k": {
+                "time": "1:36:40",
+                "race": "XX. Büchl Éjszakai Félmaraton",
+                "year": 2022
+            }
+        },
+        "Futókor": {
+            "21k": {
+                "time": "2:01:53",
+                "race": "34. Budapest Wizz Air Félmaraton",
+                "year": 2019
+            }
+        },
+        "Geri": {
+            "10k": {
+                "time": "0:53:59",
+                "race": "Agrovirt Szigetköz 10km",
+                "year": 2019
+            },
+            "21k": {
+                "time": "1:57:52",
+                "race": "14. Greiner Szigetköz félmaraton",
+                "year": 2017
+            }
+        },
+        "Gyuri": {
+            "5k": {
+                "time": "22:20",
+                "race": "19. Szigetköz Aranyossziget Villapark 5km",
+                "year": 2022
+            },
+            "10k": {
+                "time": "0:46:17",
+                "race": "VI. Szegedi Jótékonysági félmaraton",
+                "year": 2021
+            },
+            "21k": {
+                "time": "1:43:04",
+                "race": "Pápai Sport CentRUN",
+                "year": 2022
+            },
+            "42k": {
+                "time": "3:59:09",
+                "race": "37. SPAR Budapest Maraton",
+                "year": 2022
+            }
+        },
+        "HungarianStallion": {
+            "5k": {
+                "time": "26:39",
+                "race": "Katowice 5 km",
+                "year": 2018
+            },
+            "10k": {
+                "time": "0:55:04",
+                "race": "Agrovirt Szigetköz 10km",
+                "year": 2019
+            }
+        },
+        "István": {
+            "5k": {
+                "time": "24:45",
+                "race": "19. Szigetköz Aranyossziget Villapartk 5km",
+                "year": 2022
+            }
+        },
+        "Katka": {
+            "10k": {
+                "time": "0:53:36",
+                "race": "Agrovirt Szigetköz 10km",
+                "year": 2019
+            },
+            "21k": {
+                "time": "1:52:59",
+                "race": "14. Greiner Szigetköz félmaraton",
+                "year": 2017
+            }
+        },
+        "Klaudia": {
+            "5k": {
+                "time": "40:37",
+                "race": "III. Tüdőlébény Futóverseny",
+                "year": 2022
+            }
+        },
+        "Laci": {
+            "21k": {
+                "time": "1:34:26",
+                "race": "Spártai félmaraton",
+                "year": 2016
+            }
+        },
+        "Miki": {
+            "5k": {
+                "time": "22:27",
+                "race": "Audi 25 km váltófutás",
+                "year": 2018
+            },
+            "21k": {
+                "time": "1:47:55",
+                "race": "Pápai Sport CentRUN",
+                "year": 2022
+            }
+        },
+        "Nárcisz": {
+            "10k": {
+                "time": "0:52:03",
+                "race": "Motherson Szigetköz 10km",
+                "year": 2021
+            },
+            "21k": {
+                "time": "2:09:16",
+                "race": "35. Wizz Air Budapest Félmaraton",
+                "year": 2020
+            },
+            "7k": {
+                "time": "43:27",
+                "race": "Földalatti futás",
+                "year": 2019
+            }
+        },
+        "RunningDad": {
+            "5k": {
+                "time": "21:19",
+                "race": "Tüdőlebeny futóverseny",
+                "year": 2020
+            },
+            "10k": {
+                "time": "0:46:27",
+                "race": "Nagymegyeri futás",
+                "year": 2022
+            },
+            "21k": {
+                "time": "1:39:28",
+                "race": "17. Motherson Szigetköz Félmaraton",
+                "year": 2020
+            },
+            "42k": {
+                "time": "5:01:48",
+                "race": "37. SPAR Budapest Maraton",
+                "year": 2022
+            }
+        },
+        "Réka": {
+            "5k": {
+                "time": "29:10",
+                "race": "Nemzeti futóverseny",
+                "year": 2019
+            },
+            "10k": {
+                "time": "0:49:06",
+                "race": "19. Szigetköz Nolato 10km",
+                "year": 2022
+            },
+            "21k": {
+                "time": "1:54:06",
+                "race": "Pápai Sport CentRUN",
+                "year": 2022
+            }
+        },
+        "SiemensPerMeter": {
+            "21k": {
+                "time": "2:03:14",
+                "race": "Sri Chimnoy Félmaraton",
+                "year": 2019
+            },
+            "42k": {
+                "time": "4:14:28",
+                "race": "30. SPAR Budapest Maraton",
+                "year": 2015
+            }
+        },
+        "Smidlus Maximus": {
+            "5k": {
+                "time": "23:07",
+                "race": "Tüdőlebeny futóverseny",
+                "year": 2020
+            },
+            "10k": {
+                "time": "0:59:56",
+                "race": "Landliebe Budapest Maraton 10 km",
+                "year": 2018
+            },
+            "21k": {
+                "time": "1:45:45",
+                "race": "37. Wizz Air Budapest Félmaraton",
+                "year": 2022
+            },
+            "42k": {
+                "time": "4:02:38",
+                "race": "36. SPAR Budapest Maraton",
+                "year": 2021
+            }
+        },
+        "Speedy Gonzalez": {
+            "21k": {
+                "time": "1:35:49",
+                "race": "Spuri Öböl Félmaraton",
+                "year": 2020
+            }
+        },
+        "Szőlő": {
+            "5k": {
+                "time": "22:21",
+                "race": "Villapark 5km",
+                "year": 2020
+            }
+        },
+        "Terminator": {
+            "5k": {
+                "time": "28:08",
+                "race": "Riska minimaraton",
+                "year": 2020
+            },
+            "10k": {
+                "time": "0:57:06",
+                "race": "SPAR Verde 10 km",
+                "year": 2020
+            },
+            "21k": {
+                "time": "2:08:39",
+                "race": "19. Motherson Szigetköz félmaraton",
+                "year": 2022
+            }
+        },
+        "Zsu": {
+            "21k": {
+                "time": "1:52:53",
+                "race": "Sri Chimnoy Félmaraton",
+                "year": 2019
+            }
+        }
+    },
+    "loholoduhajok": {
+        "Aranycikesz": {
+            "5k": {
+                "time": "36:23",
+                "race": "MóváRun Night - 5k",
+                "year": 2021
+            }
+        },
+        "Csabinomiális": {
+            "10k": {
+                "time": "1:08:19",
+                "race": "19. Szigetköz Nolato 10k",
+                "year": 2022
+            },
+            "21k": {
+                "time": "2:32:43",
+                "race": "36. Wizz Air Budapest Félmaraton",
+                "year": 2021
+            }
+        },
+        "Fesztivállapot": {
+            "42k": {
+                "time": "4:55:35",
+                "race": "36. SPAR Budapest Maraton",
+                "year": 2021
+            }
+        },
+        "Fruzsófi": {
+            "21k": {
+                "time": "2:26:29",
+                "race": "Keszthelyi Kilométerek Félmaraton",
+                "year": 2017
+            }
+        },
+        "Kisasszony": {
+            "10k": {
+                "time": "1:08:21",
+                "race": "19. Szigetköz Nolato 10k",
+                "year": 2022
+            }
+        },
+        "Livi": {
+            "10k": {
+                "time": "0:55:52",
+                "race": "19. Szigetköz Nolato 10k",
+                "year": 2022
+            }
+        },
+        "MrAbstinent": {
+            "42k": {
+                "time": "4:36:02",
+                "race": "37. SPAR Budapest Maraton",
+                "year": 2022
+            }
+        },
+        "PARTYzán!": {
+            "21k": {
+                "time": "2:01:17",
+                "race": "19. Motherson Szigetköz Félmaraton",
+                "year": 2022
+            },
+            "42k": {
+                "time": "4:58:42",
+                "race": "37. SPAR Budapest Maraton",
+                "year": 2022
+            }
+        },
+        "RunnerMate": {
+            "5k": {
+                "time": "22:10",
+                "race": "5. ÚjHáz Szigetszentmártoni Futónap",
+                "year": 2022
+            },
+            "10k": {
+                "time": "0:46:47",
+                "race": "33. Telekom Vivicittá Városvédő Futás 10 km",
+                "year": 2018
+            },
+            "21k": {
+                "time": "1:28:01",
+                "race": "19. Motherson Szigetköz Félmaraton",
+                "year": 2022
+            },
+            "42k": {
+                "time": "3:16:33",
+                "race": "Gyulai Várfürdő Maraton'",
+                "year": 2015
+            }
+        }
+    }
+}
