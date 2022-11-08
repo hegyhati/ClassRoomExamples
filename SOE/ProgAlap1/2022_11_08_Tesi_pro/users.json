@@ -1,0 +1,12 @@
+{
+    "horvathj": {
+        "realname": "Horvath Jozsef",
+        "password": "adminadmin",
+        "role": "admin"
+    },
+    "a": {
+        "realname": "Lusta Mate",
+        "password": "a",
+        "role": "admin"
+    }
+}
