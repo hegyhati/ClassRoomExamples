@@ -1,0 +1,65 @@
+data;
+
+set Helyek := 
+    DunakapuTer
+    Egyetem
+    HonvedLiget
+    Viragpiac
+    Bercsenyi
+    Furdo
+    Sportpark
+    Zsinagoga
+;
+
+set Hidak :=
+    JedlikHid
+    KettosHid
+    PetofiHid
+;
+
+param jaratszam := 10;
+
+param start :=
+    1  DunakapuTer
+    2  DunakapuTer
+    3  Egyetem
+    4  Egyetem
+    5  Egyetem
+    6  HonvedLiget
+    7  HonvedLiget
+    8  HonvedLiget
+    9  Viragpiac
+    10 Viragpiac
+;
+
+param cel :=
+    1  Furdo
+    2  Sportpark
+    3  Bercsenyi
+    4  Sportpark
+    5  Zsinagoga
+    6  Bercsenyi
+    7  Furdo
+    8  Zsinagoga
+    9  Bercsenyi
+    10 Sportpark
+;
+
+param kapacitas :=
+    JedlikHid   7
+    KettosHid   3
+    PetofiHid   3
+;
+
+param tav :     JedlikHid   KettosHid   PetofiHid :=
+    DunakapuTer 4           2           6
+    Egyetem     1           8           11
+    HonvedLiget 12          4           4
+    Viragpiac   5           1           2
+    Bercsenyi   10          8           7
+    Furdo       2           2           5
+    Sportpark   9           10          9
+    Zsinagoga   6           3           1
+;
+
+end;

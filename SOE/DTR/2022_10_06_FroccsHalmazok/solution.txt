@@ -1,0 +1,32 @@
+Problem:    froccs2
+Rows:       3
+Columns:    3 (3 integer, 0 binary)
+Non-zeros:  9
+Status:     INTEGER OPTIMAL
+Objective:  Profit = 210000 (MAXimum)
+
+   No.   Row name        Activity     Lower bound   Upper bound
+------ ------------    ------------- ------------- -------------
+     1 Keszletkorlat[bor]
+                                1000                        1000 
+     2 Keszletkorlat[szoda]
+                                1500                        1500 
+     3 Profit                 210000                             
+
+   No. Column name       Activity     Lower bound   Upper bound
+------ ------------    ------------- ------------- -------------
+     1 mennyit[KF]  *              2             0               
+     2 mennyit[NF]  *            166             0               
+     3 mennyit[HL]  *            666             0               
+
+Integer feasibility conditions:
+
+KKT.PE: max.abs.err = 0.00e+00 on row 0
+        max.rel.err = 0.00e+00 on row 0
+        High quality
+
+KKT.PB: max.abs.err = 0.00e+00 on row 0
+        max.rel.err = 0.00e+00 on row 0
+        High quality
+
+End of output

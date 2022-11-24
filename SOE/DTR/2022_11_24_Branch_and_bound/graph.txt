@@ -1,0 +1,10 @@
+Sopron Sarvar 50
+Sopron Papa 60
+Sopron Gyor 70
+Sarvar Szombathely 20
+Sarvar Papa 40
+Papa Veszprem 40
+Gyor Tatabanya 60
+Veszprem Szekesfehervar 50
+Szekesfehervar Budapest 60
+Tatabanya Budapest 60

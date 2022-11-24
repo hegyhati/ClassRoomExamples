@@ -1,0 +1,9 @@
+Sopron 180
+Sarvar 140
+Szombathely 150
+Gyor 110
+Papa 130
+Veszprem 105
+Tatabanya 60
+Szekesfehervar 60
+Budapest 0
