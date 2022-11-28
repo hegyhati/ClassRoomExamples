@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Házi Feladat 2022.11.28.</title>
+    
+    <script src="script.js"></script>
+  </head>
+  <body>
+    <main>
+      <div class="calculate">
+        <h1>Mennyi pénzed van?</h1>
+
+        <input type = "number" id="forint5" placeholder="5 forint" />
+        <input type = "number" id="forint10" placeholder="10 forint" />
+        <input type = "number" id="forint20" placeholder="20 forint" />
+        <input type = "number" id="forint50" placeholder="50 forint" />
+        <input type = "number" id="forint100" placeholder="100 forint" />
+        <input type = "number" id="forint200" placeholder="200 forint" />
+        <div class="row">
+          <button id="btn" type="button" onclick="szamol()">Számol</button>
+          <button id="reset" type="button" onclick="torol()">Reset</button>
+        </div>
+        <div>
+          <p>Összesen: <span id="final-result"></span></p>
+        </div>
+      </div>
+    </main>
+  </body>
+</html>

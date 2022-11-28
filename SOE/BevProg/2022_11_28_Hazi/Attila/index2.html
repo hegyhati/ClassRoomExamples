@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <script src="szepsegverseny.js">  </script>
+  <style>
+    img {
+      width: 50%;
+      height: 100%;
+    }
+  </style>
+  <style>
+    table {
+      font-family: arial, sans-serif;
+      border-collapse: collapse;
+      width: 100%;
+    }
+
+    td,
+    th {
+      border: 1px solid #dddddd;
+      text-align: left;
+      padding: 8px;
+    }
+
+    tr:nth-child(even) {
+      background-color: #dddddd;
+    }
+  </style>
+
+
+</head>
+
+
+<body>
+  <h1>
+    <center>Szépségverseny szavazás</center>
+  </h1>
+
+
+  <h2>Az induló szépségek:</h2>
+
+  <table>
+    <tr>
+      <th>Bogi</th>
+      <th>Ági</th>
+      <th>Réka</th>
+    </tr>
+    <tr>
+      <td><img src="ora.png" alt="Bogi" width="70" height="128"></td>
+      <td><img src="ora2.jpg" alt="Ági" width="70" height="128"></td>
+      <td><img src="ora3.png" alt="Réka" width="70" height="128"></td>
+    </tr>
+    <tr>
+      <td>
+        <center><button onclick="szvb()">Szavazok </button></center>
+      </td>
+      <td>
+        <center><button onclick="szva()">Szavazok </button></center>
+      </td>
+      <td>
+        <center><button onclick="szvr()">Szavazok </button></center>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <p> Bogi eddigi szavazatai: </p>
+      </td>
+      <td>
+        <p> Ági eddigi szavazatai: </p>
+      </td>
+      <td>
+        <p> Réka eddigi szavazatai: </p>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <p id="bogicount"> 0 </p>
+      </td>
+      <td>
+        <p id="agicount"> 0 </p>
+      </td>
+      <td>
+        <p id="rekacount"> 0 </p>
+      </td>
+    </tr>
+  </table>
+  <h3>
+    <center><button onclick="kivezet()">Aktuális nyertes számítása </button></center>
+  </h3>
+
+
+</body>
+
+</html>
