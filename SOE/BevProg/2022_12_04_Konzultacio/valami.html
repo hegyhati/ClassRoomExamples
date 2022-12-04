@@ -1,0 +1,38 @@
+<html>
+    <head>
+        <script>
+            sajatlista = []
+
+            function sayhello(nev){
+                alert("hello "+nev+"!")
+            }
+            
+            function ize() {
+                let beviteliertek = document.getElementById("bevitelimezo").value
+
+                if (sajatlista.indexOf(beviteliertek) == -1) {
+                    sajatlista.push(beviteliertek)
+
+                    let listaelem = "<li>"+beviteliertek+"</li>"
+                    document.getElementById("osszeselem").innerHTML += listaelem
+                }
+
+                document.getElementById("felkoverresz").innerHTML = beviteliertek
+                document.getElementById("bevitelimezo").value = ""
+            }
+        </script>
+    </head>
+
+    <body>
+        <img src="http://t0.gstatic.com/licensed-image?q=tbn:ANd9GcRqMbXvdztEAKJMI7MtP0RuM6rYlOQ1TmLL8vBIGj_PLM0hgE_4ua7_Tw9rtFaBQSAEPXcZEyuYrniOmuA" width="200" height="200">
+        <b id="felkoverresz">alma</b>
+        <br />
+        <input id = "bevitelimezo">        
+        <br />
+        <button onclick="ize()">SET</button> <button onclick="sayhello(document.getElementById('bevitelimezo').value)">Koszonj nekem!</button>
+        <br />
+        <ul id="osszeselem">
+
+        </ul>
+    </body>
+</html>
