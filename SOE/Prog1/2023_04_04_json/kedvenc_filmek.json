@@ -1,0 +1,44 @@
+[
+  {
+    "person": "Medard",
+    "movie": "Titanic",
+    "character": "Leo",
+    "watched_in_theatre": false
+  },
+  {
+    "person": "Gergo",
+    "movie": "Szerelmunk napjai",
+    "character": "Ricardo",
+    "watched_in_theatre": false
+  },
+  {
+    "person": "Iza",
+    "movie": "Furesz",
+    "character": "Furesz",
+    "watched_in_theatre": false
+  },
+  {
+    "person": "Kitti",
+    "movie": "La la land",
+    "character": "Mia",
+    "watched_in_theatre": false
+  },
+  {
+    "person": "Mate",
+    "movie": "A tokeletes trukk",
+    "character": "Batman",
+    "watched_in_theatre": false
+  },
+  {
+    "person": "Joco",
+    "movie": "Beepitett szepseg",
+    "character": "Kiskutya",
+    "watched_in_theatre": true
+  },
+  {
+    "person": "Tomi",
+    "movie": "One Piece Red",
+    "character": "Luffy",
+    "watched_in_theatre": true
+  }
+]
