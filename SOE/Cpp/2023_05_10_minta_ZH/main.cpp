@@ -2,11 +2,15 @@
 #include <cmath>
 #include <fstream>
 #include <iostream>
-#include <ostream>
 #include <vector>
 
 constexpr double pi = 3.14159265358979323846;
 
+
+#define PRECISION 100.0
+double round(double number) {
+  return  ( (int) (number * PRECISION) ) / PRECISION;
+}
 
 union Point2D {
   struct {
@@ -46,15 +50,15 @@ public:
                  bool mirror = true) {
     std::ofstream svgFile(filename);
     svgFile << "<svg xmlns=\"http://www.w3.org/2000/svg\" viewbox=\""
-            << min_x() - border << " " << min_y() - border << " "
-            << max_x() - min_x() + 2 * border << " "
-            << max_y() - min_y() + 2 * border << "\">\n";
+            << round(min_x() - border) << " " << round(min_y() - border) << " "
+            << round(max_x() - min_x() + 2 * border) << " "
+            << round(max_y() - min_y() + 2 * border) << "\">\n";
     for (unsigned int i = 1; i < size(); ++i) {
       svgFile << "\t<line "
-              << "x1=\"" << at(i - 1).x << "\" y1=\""
-              << (mirror ? max_y() - at(i - 1).y : at(i - 1).y) << "\" "
-              << "x2=\"" << at(i).x << "\" y2=\""
-              << (mirror ? max_y() - at(i).y : at(i).y) << "\" "
+              << "x1=\"" << round(at(i - 1).x) << "\" y1=\""
+              << round((mirror ? max_y() - at(i - 1).y : at(i - 1).y)) << "\" "
+              << "x2=\"" << round(at(i).x) << "\" y2=\""
+              << round((mirror ? max_y() - at(i).y : at(i).y)) << "\" "
               << "stroke=\"black\" />\n";
     }
     svgFile << "</svg>\n";
