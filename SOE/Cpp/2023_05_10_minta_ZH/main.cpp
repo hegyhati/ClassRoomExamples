@@ -19,7 +19,7 @@ union Point2D {
   }
 };
 
-class PolyLine : public std::vector<Point2D> {
+class PolyLine : private std::vector<Point2D> {
   double select_extrema(bool smaller, unsigned int dimension) const {
     return std::min_element(begin(), end(),
                             [=](const Point2D &p1, const Point2D &p2) {
