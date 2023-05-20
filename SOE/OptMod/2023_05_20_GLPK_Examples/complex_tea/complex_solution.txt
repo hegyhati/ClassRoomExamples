@@ -1,0 +1,136 @@
+Problem:    complex_tea
+Rows:       20
+Columns:    36 (24 integer, 0 binary)
+Non-zeros:  96
+Status:     INTEGER OPTIMAL
+Objective:  Transportation_cost = 3450 (MINimum)
+
+   No.   Row name        Activity     Lower bound   Upper bound
+------ ------------    ------------- ------------- -------------
+     1 Supply_can_not_be_overreached[Kapuvar]
+                                   0                          75 
+     2 Supply_can_not_be_overreached[Sarvar]
+                                 120                         125 
+     3 Supply_can_not_be_overreached[Kaposvar]
+                                 130                         150 
+     4 Demand_must_be_met[Sopron]
+                                  30            30               
+     5 Demand_must_be_met[Gyor]
+                                  60            60               
+     6 Demand_must_be_met[Budapest]
+                                 120           120               
+     7 Demand_must_be_met[Nagykanizsa]
+                                  40            40               
+     8 Vehicle_capacity[Kapuvar,Sopron]
+                                   0                          -0 
+     9 Vehicle_capacity[Kapuvar,Gyor]
+                                   0                          -0 
+    10 Vehicle_capacity[Kapuvar,Budapest]
+                                   0                          -0 
+    11 Vehicle_capacity[Kapuvar,Nagykanizsa]
+                                   0                          -0 
+    12 Vehicle_capacity[Sarvar,Sopron]
+                                   0                          -0 
+    13 Vehicle_capacity[Sarvar,Gyor]
+                                   0                          -0 
+    14 Vehicle_capacity[Sarvar,Budapest]
+                                 -80                          -0 
+    15 Vehicle_capacity[Sarvar,Nagykanizsa]
+                                   0                          -0 
+    16 Vehicle_capacity[Kaposvar,Sopron]
+                                 -20                          -0 
+    17 Vehicle_capacity[Kaposvar,Gyor]
+                                -140                          -0 
+    18 Vehicle_capacity[Kaposvar,Budapest]
+                                   0                          -0 
+    19 Vehicle_capacity[Kaposvar,Nagykanizsa]
+                                 -10                          -0 
+    20 Transportation_cost
+                                3450                             
+
+   No. Column name       Activity     Lower bound   Upper bound
+------ ------------    ------------- ------------- -------------
+     1 travel[Kapuvar,Sopron,minivan]
+                    *              0             0               
+     2 travel[Kapuvar,Sopron,truck]
+                    *              0             0               
+     3 travel[Kapuvar,Gyor,minivan]
+                    *              0             0               
+     4 travel[Kapuvar,Gyor,truck]
+                    *              0             0               
+     5 travel[Kapuvar,Budapest,minivan]
+                    *              0             0               
+     6 travel[Kapuvar,Budapest,truck]
+                    *              0             0               
+     7 travel[Kapuvar,Nagykanizsa,minivan]
+                    *              0             0               
+     8 travel[Kapuvar,Nagykanizsa,truck]
+                    *              0             0               
+     9 travel[Sarvar,Sopron,minivan]
+                    *              0             0               
+    10 travel[Sarvar,Sopron,truck]
+                    *              0             0               
+    11 travel[Sarvar,Gyor,minivan]
+                    *              0             0               
+    12 travel[Sarvar,Gyor,truck]
+                    *              0             0               
+    13 travel[Sarvar,Budapest,minivan]
+                    *              0             0               
+    14 travel[Sarvar,Budapest,truck]
+                    *              1             0               
+    15 travel[Sarvar,Nagykanizsa,minivan]
+                    *              0             0               
+    16 travel[Sarvar,Nagykanizsa,truck]
+                    *              0             0               
+    17 travel[Kaposvar,Sopron,minivan]
+                    *              1             0               
+    18 travel[Kaposvar,Sopron,truck]
+                    *              0             0               
+    19 travel[Kaposvar,Gyor,minivan]
+                    *              0             0               
+    20 travel[Kaposvar,Gyor,truck]
+                    *              1             0               
+    21 travel[Kaposvar,Budapest,minivan]
+                    *              0             0               
+    22 travel[Kaposvar,Budapest,truck]
+                    *              0             0               
+    23 travel[Kaposvar,Nagykanizsa,minivan]
+                    *              1             0               
+    24 travel[Kaposvar,Nagykanizsa,truck]
+                    *              0             0               
+    25 transport[Kapuvar,Sopron]
+                                   0             0               
+    26 transport[Kapuvar,Gyor]
+                                   0             0               
+    27 transport[Kapuvar,Budapest]
+                                   0             0               
+    28 transport[Kapuvar,Nagykanizsa]
+                                   0             0               
+    29 transport[Sarvar,Sopron]
+                                   0             0               
+    30 transport[Sarvar,Gyor]
+                                   0             0               
+    31 transport[Sarvar,Budapest]
+                                 120             0               
+    32 transport[Sarvar,Nagykanizsa]
+                                   0             0               
+    33 transport[Kaposvar,Sopron]
+                                  30             0               
+    34 transport[Kaposvar,Gyor]
+                                  60             0               
+    35 transport[Kaposvar,Budapest]
+                                   0             0               
+    36 transport[Kaposvar,Nagykanizsa]
+                                  40             0               
+
+Integer feasibility conditions:
+
+KKT.PE: max.abs.err = 0.00e+00 on row 0
+        max.rel.err = 0.00e+00 on row 0
+        High quality
+
+KKT.PB: max.abs.err = 0.00e+00 on row 0
+        max.rel.err = 0.00e+00 on row 0
+        High quality
+
+End of output

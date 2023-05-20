@@ -1,0 +1,21 @@
+set Farms := Kapuvar Sarvar Kaposvar;
+param supply := 
+    Kapuvar 75
+    Sarvar 125
+    Kaposvar 150
+;
+
+set Markets := Sopron Gyor Budapest Nagykanizsa;
+param demand :=
+    Sopron 30
+    Gyor 60
+    Budapest 120,
+    Nagykanizsa 40
+;
+
+param distance:
+        Sopron Gyor Budapest Nagykanizsa :=
+Kapuvar 30 40 170 150            
+Sarvar 80 100 200 111
+Kaposvar 240 210 180 70
+;

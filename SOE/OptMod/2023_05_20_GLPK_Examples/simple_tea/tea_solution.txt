@@ -1,0 +1,71 @@
+Problem:    tea
+Rows:       8
+Columns:    12
+Non-zeros:  36
+Status:     OPTIMAL
+Objective:  Transportation_cost = 28650 (MINimum)
+
+   No.   Row name   St   Activity     Lower bound   Upper bound    Marginal
+------ ------------ -- ------------- ------------- ------------- -------------
+     1 Kapuvar_supply
+                    NU            75                          75           -50 
+     2 Sarvar_supply
+                    B             25                         125 
+     3 Kaposvar_supply
+                    NU           150                         150           -20 
+     4 Sopron_demand
+                    NL            30            30                          80 
+     5 Gyor_demand  NL            60            60                          90 
+     6 Budapest_demand
+                    NL           120           120                         200 
+     7 Nagykanizsa_demand
+                    NL            40            40                          90 
+     8 Transportation_cost
+                    B          28650                             
+
+   No. Column name  St   Activity     Lower bound   Upper bound    Marginal
+------ ------------ -- ------------- ------------- ------------- -------------
+     1 Kapuvar_to_Sopron
+                    B             15             0               
+     2 Kapuvar_to_Gyor
+                    B             60             0               
+     3 Kapuvar_to_Budapest
+                    NL             0             0                          20 
+     4 Kapuvar_to_Nagykanizsa
+                    NL             0             0                         110 
+     5 Sarvar_to_Sopron
+                    B             15             0               
+     6 Sarvar_to_Gyor
+                    NL             0             0                          10 
+     7 Sarvar_to_Budapest
+                    B             10             0               
+     8 Sarvar_to_Nagykanizsa
+                    NL             0             0                          20 
+     9 Kaposvar_to_Sopron
+                    NL             0             0                         180 
+    10 Kaposvar_to_Gyor
+                    NL             0             0                         140 
+    11 Kaposvar_to_Budapest
+                    B            110             0               
+    12 Kaposvar_to_Nagykanizsa
+                    B             40             0               
+
+Karush-Kuhn-Tucker optimality conditions:
+
+KKT.PE: max.abs.err = 0.00e+00 on row 0
+        max.rel.err = 0.00e+00 on row 0
+        High quality
+
+KKT.PB: max.abs.err = 0.00e+00 on row 0
+        max.rel.err = 0.00e+00 on row 0
+        High quality
+
+KKT.DE: max.abs.err = 0.00e+00 on column 0
+        max.rel.err = 0.00e+00 on column 0
+        High quality
+
+KKT.DB: max.abs.err = 0.00e+00 on row 0
+        max.rel.err = 0.00e+00 on row 0
+        High quality
+
+End of output

@@ -1,0 +1,33 @@
+{
+    "farms" : {
+        "Kapuvar" : 75,
+        "Sarvar" : 125,
+        "Kaposvar" : 150
+    },
+    "markets" : {
+        "Sopron" : 30,
+        "Gyor" : 60,
+        "Budapest": 120, 
+        "Nagykanizsa" : 40
+    },
+    "distances" : {
+        "Kapuvar" : {
+            "Sopron" : 30,
+            "Gyor" : 40,
+            "Budapest": 170, 
+            "Nagykanizsa" : 150            
+        },
+        "Sarvar" : {
+            "Sopron" : 80,
+            "Gyor" : 100,
+            "Budapest": 200, 
+            "Nagykanizsa" : 110            
+        },
+        "Kaposvar" : {
+            "Sopron" : 240,
+            "Gyor" : 210,
+            "Budapest": 180, 
+            "Nagykanizsa" : 70            
+        }
+    }
+}

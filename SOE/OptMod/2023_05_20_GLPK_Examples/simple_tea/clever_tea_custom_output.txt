@@ -1,0 +1,6 @@
+Kapuvar -> Sopron : 15 
+Kapuvar -> Gyor : 60 
+Sarvar -> Sopron : 15 
+Sarvar -> Budapest : 10 
+Kaposvar -> Budapest : 110 
+Kaposvar -> Nagykanizsa : 40 

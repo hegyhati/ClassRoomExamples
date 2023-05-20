@@ -1,0 +1,8 @@
+set Vehicles := minivan truck;
+
+param:
+            weight  capacity :=
+    minivan 300     50
+    truck   500     200
+; #         kg      kg
+

@@ -1,0 +1,4 @@
+Sarvar -> Budapest : 120  with 1 truck 
+Kaposvar -> Sopron : 30  with 1 minivan 
+Kaposvar -> Gyor : 60  with 1 truck 
+Kaposvar -> Nagykanizsa : 40  with 1 minivan 
