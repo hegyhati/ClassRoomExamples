@@ -29,7 +29,7 @@ void leibniz() {
         fractions.push_back(Fraction( (i%2)?-4:4, 2*i+1) );
     
     for (int p = 1; p<n ; ++p) {
-        Fraction f(0);
+        Fraction sum(0);
         for (int i=0; i<p; ++i) {
             if (i) std::cout << " + ";
             std::cout << fractions[i];
@@ -41,5 +41,6 @@ void leibniz() {
 
 int main() {
     simple_test();
-    leibniz();    
+    leibniz();  
+    return 0;  
 }
