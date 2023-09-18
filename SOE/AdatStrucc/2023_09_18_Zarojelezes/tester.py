@@ -14,18 +14,11 @@ class Stack_with_List(Stack_Interface):
 class Stack_with_Deque(Stack_Interface):
     pass
 
-class Brace_Checker:
-    def __init__(self, stack_cls) -> None:
-        self._checker = stack_cls()
-    def is_correct(input:str) -> bool:
-        pass
+def check_braces(input:str, stack:Stack_Interface) -> bool:
+    pass
+    # implement brace correctness checking with the provided stack object
 
-checkers = {
-    "List checker" : Brace_Checker(Stack_with_List),
-    "Deque checker" : Brace_Checker(Stack_with_Deque)
-}
 
-for (name, checker) in checkers.items():
-    # Iterate over all example files
-    # Check the correctness of the input
+# Iterate over all example files
+    # Check the correctness of the input with both stack implementation
     # log the output and execution time in "testresults_{datetime}.[json|csv]"
