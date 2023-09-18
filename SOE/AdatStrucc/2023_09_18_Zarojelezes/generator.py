@@ -1,15 +1,15 @@
-from random import choice, randrange
-from typing import Tuple
+from random import choice, randint
 
 import sys
-sys.setrecursionlimit(550000)
+sys.setrecursionlimit(10000000)
 
 def genereate_braces(n:int, max:int = 10) -> str:
     def do_subtree():
         nonlocal n
+        nonlocal sequence
         brace = choice(["()","{}","[]"])
         sequence.append(brace[0])
-        count = randrange(min(max,n))
+        count = randint(0 if n==0 else 1, min(max,n))
         n -= count
         for _ in range(count):
             do_subtree()
@@ -18,7 +18,7 @@ def genereate_braces(n:int, max:int = 10) -> str:
     do_subtree()
     return " ".join(sequence)
 
-for size in range(7):
+for size in range(1,7):
     size = 10 ** size
     print(f"Generating datasets with size {size}", end="")
     for count in range(10):
