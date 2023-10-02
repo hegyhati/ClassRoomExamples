@@ -9,7 +9,8 @@ setrecursionlimit(10**5)
 sorts = [
     "max_selection_sort", 
     "bubble_sort", "not_so_clever_bubble_sort", "not_so_genius_bubble_sort",
-    "lazy_quick_sort", "quick_sort"
+    "lazy_quick_sort", "quick_sort",
+    "merge_sort", "merge_sort_clever"
 ]
 t = list(range(size))
 shuffle(t) 
@@ -19,7 +20,7 @@ testcases = {
         "decreasing": list(range(size))[::-1]
 }
 
-for s in sorts:
+for s in sorts[-2:]:
     for n,t in testcases.items():
         print(
             f"{s} on {size} elements with {n} order: ",

@@ -76,6 +76,49 @@ def quick_sort(t, start=0, end=None):
     quick_sort(t,start,last_smaller_idx-1)
     quick_sort(t,first_larger_idx,end)
 
+def merge_sort(t):
+    if len(t) <= 1 : return t
+    left = merge_sort(t[:len(t)//2])
+    right = merge_sort(t[len(t)//2:])
+    lidx=0
+    ridx=0
+    result = []
+    while lidx<len(left) and ridx<len(right):
+        if left[lidx] < right[ridx]:
+            result.append(left[lidx])
+            lidx+=1
+        else:
+            result.append(right[ridx])
+            ridx+=1
+    if lidx == len(left):
+        return result + right[ridx:]
+    else:
+        return result + left[lidx:]
+    
+def merge_sort_clever(t):
+    if len(t) <= 1 : return t
+    left = merge_sort(t[:len(t)//2])
+    right = merge_sort(t[len(t)//2:])
+    lidx=0
+    ridx=0
+    while lidx<len(left) and ridx<len(right):
+        if left[lidx] < right[ridx]:
+            t[lidx+ridx] = left[lidx]
+            lidx+=1
+        else:
+            t[lidx+ridx] = right[ridx]
+            ridx+=1
+    if lidx == len(left):
+        while ridx < len(right):
+            t[lidx+ridx] = right[ridx]
+            ridx+=1
+    else:
+        while lidx < len(left):
+            t[lidx+ridx] = left[lidx]
+            lidx+=1
+
+
+
 
 if __name__ == "__main__":
     #from random import shuffle
