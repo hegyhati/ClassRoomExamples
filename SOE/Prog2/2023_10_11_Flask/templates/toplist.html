@@ -1,0 +1,15 @@
+{% extends 'page.html' %}
+
+{% block title %}
+    {% if count is not none %}
+        Sortabla az utolso {{count}} alkalomra
+    {% else %}
+        All time sortabla!
+    {% endif %}
+{% endblock %}
+
+{% block content %}
+    {% for runner in data %}
+        <progress value="{{runner['count']}}" max="{{max}}"> </progress> {{runner['name']}} <br />
+    {% endfor %}
+{% endblock %}
