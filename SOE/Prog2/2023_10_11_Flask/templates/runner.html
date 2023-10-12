@@ -1,0 +1,14 @@
+{% extends 'page.html' %}
+
+{% block title %}
+    {{ runner }} adatlapja
+{% endblock %}
+
+{% block content %}
+    Osszesen {{ runs | length }} alkalommal futott:
+    <ol reversed>
+        {% for run in runs %}
+            <li>{{run}}</li>
+        {% endfor %}
+    </ol>
+{% endblock %}

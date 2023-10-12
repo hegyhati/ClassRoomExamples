@@ -1,0 +1,22 @@
+{% extends 'page.html' %}
+
+{% block title %}
+   Loholo Duhajok statisztikak
+{% endblock %}
+
+{% block content %}
+    <div>
+        <h2>Sortabla generalas</h2>
+        <form action="/toplist" method="POST">
+            <label for="run_count">Alkalmak:</label>
+            <input type="number" id="run_count" name="run_count">
+            <input type="submit" value="GENERALD!">
+          </form> 
+    </div>
+    <div>
+        <h2>Futok</h2>
+        {% for runner in runners %}
+            <a href="{{ url_for('runner', id=runner) }}" >{{runner}}</a>
+        {% endfor %}
+    </div>
+{% endblock %}
