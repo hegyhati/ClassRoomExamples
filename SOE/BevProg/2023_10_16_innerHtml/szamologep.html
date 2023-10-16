@@ -1,0 +1,26 @@
+<html>
+    <head>
+        <script>
+            function osztas() {
+                let sz1 = Number(document.getElementById("szam1").value)
+                let sz2 = Number(document.getElementById("szam2").value)
+                if (sz2 == 0 ){
+                    alert("Nullaval nem osztunk.")
+                } else {
+                    //alert(`${sz1}/${sz2}=${sz1/sz2}`)
+                    document.getElementById("eredmeny").innerHTML = sz1/sz2
+                    document.getElementById("elozmenyek").innerHTML += `<li>${sz1}/${sz2}=${sz1/sz2}</li>`
+                }
+            }
+        </script>            
+    </head>
+    <body>
+        <input id="szam1"> / <input id="szam2"> <button onclick="osztas()">=</button> <span id="eredmeny">EREDMENY</span>
+        <h2>Elozmenyek</h2>
+        <ul id="elozmenyek">
+        </ul>
+    </body>
+</html>
+
+
+
