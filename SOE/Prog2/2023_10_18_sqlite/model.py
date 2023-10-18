@@ -1,5 +1,6 @@
 from dataclasses import dataclass
-from manager import Persistable
+from typing import List
+from persistable import Persistable
 
 @dataclass
 class Team (Persistable):
@@ -8,14 +9,17 @@ class Team (Persistable):
     color: str
     year : int
 
-    def __sql_scheme(cls) -> str : return """
+    @classmethod
+    def _sql_scheme(cls) -> str : 
+        return """
             name  TEXT PRIMARY KEY,
             city  TEXT NOT NULL,
             color TEXT NOT NULL,
             year  INTEGER
         """
     
-    def _sql_fields(cls)->list[str]:
+    @classmethod
+    def _sql_fields(cls)->List[str]:
         return ["name", "city", "color", "year"]
     
     def _sql_values(self) -> list:
@@ -27,13 +31,15 @@ class Runner (Persistable):
     nickname : str
     team : str
 
-    def __sql_scheme(cls) -> str : return """
+    @classmethod
+    def _sql_scheme(cls) -> str : return """
             nickname TEXT PRIMARY KEY,
             team     TEXT NOT NULL,
-            FOREIGN KEY(team) REFERENCES team(name)
+            FOREIGN KEY(team) REFERENCES Team(name)
         """
     
-    def _sql_fields(cls)->list[str]:
+    @classmethod
+    def _sql_fields(cls)->List[str]:
         return ["nickname", "team"]
     
     def _sql_values(self) -> list:
