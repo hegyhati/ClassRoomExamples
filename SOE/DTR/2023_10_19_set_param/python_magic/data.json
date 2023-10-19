@@ -1,0 +1,37 @@
+{
+    "supply" : {
+        "Sopron" : 1000,
+        "Pecs" : 500,
+        "Nagykanizsa" : 200
+    },
+    "demand" : {
+        "Sopron" : 250,
+        "Veszprem" : 350,
+        "Gyor" : 500,
+        "Pecs" : 500,
+        "Szombathely" : 100
+    },
+    "distance" : {
+        "Sopron" : {
+            "Sopron" : 0,
+            "Veszprem" : 150,
+            "Gyor" : 80,
+            "Pecs" : 380,
+            "Szombathely" : 70
+        },
+        "Pecs" : {
+            "Sopron" : 350,
+            "Veszprem" : 250,
+            "Gyor" : 300,
+            "Pecs" : 0,
+            "Szombathely" : 280
+        },
+        "Nagykanizsa" : {
+            "Sopron" : 200,
+            "Veszprem" : 140,
+            "Gyor" : 220,
+            "Pecs" : 150,
+            "Szombathely" : 90
+        }
+    }
+}

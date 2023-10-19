@@ -1,0 +1,9 @@
+Transport from Sopron:
+	-> Sopron : 250
+	-> Veszprem : 150
+	-> Gyor : 500
+	-> Szombathely : 100
+Transport from Pecs:
+	-> Pecs : 500
+Transport from Nagykanizsa:
+	-> Veszprem : 200
