@@ -1,0 +1,61 @@
+<html>
+    <head>
+        <script>
+            let bevasarlolista = []
+            let megvettek = []
+            
+            function listaAktualizalas() {
+                document.getElementById("meg").innerHTML = ""
+                for (cucola of bevasarlolista) {
+                    document.getElementById("meg").innerHTML += `<li>${cucola}</li>`
+                }
+                document.getElementById("mar").innerHTML = ""
+                for (cucola of megvettek) {
+                    document.getElementById("mar").innerHTML += `<li>${cucola}</li>`
+                }
+            }
+
+            function cuccNeve() {
+                return document.getElementById("cucc").value
+            }
+
+            function listanVanE(cucli) {
+                return bevasarlolista.indexOf(cucli) != -1
+            }
+
+            function megvettemE(cucli) {
+                return megvettek.indexOf(cucli) != -1
+            }
+
+            function ujcucc() {
+                let cucli = cuccNeve()
+                if (listanVanE(cucli)  ||  megvettemE(cucli)) {
+                    alert("Mar ott a listan, vagy megvetted")
+                } else {
+                    bevasarlolista.push(cucli)
+                    listaAktualizalas()
+                }
+            }
+
+            function megvettem() {
+                let cucli = cuccNeve()
+                if (listanVanE(cucli)) {
+                    bevasarlolista.splice(bevasarlolista.indexOf(cucli), 1)
+                    megvettek.push(cucli)
+                    listaAktualizalas()
+                } else {
+                    alert("Nincs ilyen a bevasarlolistadon")
+                }
+            }
+        </script>
+    </head>
+    <body>
+        Cucc: <input id="cucc"> 
+        <button onclick="ujcucc()">Listahoz hozzaad</button> 
+        <button onclick="megvettem()">Megvesz</button>
+        <h4>Meg meg kell venni:</h4>
+        <ul id="meg"></ul>
+        <h4>Mar megvettem:</h4>
+        <ul id="mar"></ul>
+    </body>
+</html>
