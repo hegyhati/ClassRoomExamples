@@ -1,0 +1,17 @@
+<html>
+    <head>
+        <script>
+            function utazas(){
+                let benzinmennyiseg = document.getElementById("tank").innerHTML
+                benzinmennyiseg -= 10
+                document.getElementById("tank").innerHTML = benzinmennyiseg
+            }
+        </script>
+    </head>
+    <body>
+        Tank: <b id="tank">40</b>l
+        <br />
+        <input> km 
+        <button onclick="utazas()">Utazzunk!!</button>
+    </body>
+</html>

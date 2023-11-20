@@ -193,6 +193,7 @@ Hasonló a kód, ha egy nem `input` elemből akarunk kiolvasni, hanem pl egy `sp
 
 ### Új érték kiírása
 
+```html
 <html>
     <head>
         <script>
