@@ -1,0 +1,177 @@
+[
+    {
+        "name" : "ProgAlap",
+        "prerequisites": [],
+        "autumn" : true
+    },
+    {
+        "name" : "BevMat",
+        "prerequisites": [],
+        "autumn" : true
+    },
+    {
+        "name" : "Vallalkozastan",
+        "prerequisites": [],
+        "autumn" : true
+    },
+    {
+        "name" : "OS & Arch",
+        "prerequisites": [],
+        "autumn" : true
+    },
+    {
+        "name" : "InfoMatekTori",
+        "prerequisites": [],
+        "autumn" : true
+    },
+    {
+        "name" : "Hackathon 0",
+        "prerequisites": [],
+        "autumn" : true
+    },
+    {
+        "name" : "InfoAlap",
+        "prerequisites": [],
+        "autumn" : true
+    },
+    {
+        "name" : "Anal & LinAlg",
+        "prerequisites": ["BevMat"],
+        "autumn" : false
+    },
+    {
+        "name" : "SzamTudAlap",
+        "prerequisites": ["BevMat"],
+        "autumn" : false
+    },
+    {
+        "name" : "Prog1",
+        "prerequisites": ["ProgAlap"],
+        "autumn" : false
+    },
+    {
+        "name" : "SzamgepHalo",
+        "prerequisites": [],
+        "autumn" : false
+    },
+    {
+        "name" : "VezSzerv",
+        "prerequisites": [],
+        "autumn" : false
+    },
+    {
+        "name" : "Hackathon 1",
+        "prerequisites": ["Hackathon 0"],
+        "autumn" : false
+    },
+    {
+        "name" : "ValSzam",
+        "prerequisites": ["Anal & LinAlg"],
+        "autumn" : true
+    },
+    {
+        "name" : "AdatStrucc",
+        "prerequisites": ["SzamTudAlap", "ProgAlap"],
+        "autumn" : true
+    },
+    {
+        "name" : "Web",
+        "prerequisites": ["Prog1"],
+        "autumn" : true
+    },
+    {
+        "name" : "Prog2",
+        "prerequisites": ["Prog1"],
+        "autumn" : true
+    },
+    {
+        "name" : "AdatBazis",
+        "prerequisites": [],
+        "autumn" : true
+    },
+    {
+        "name" : "Hackathon 2",
+        "prerequisites": ["Hackathon 1"],
+        "autumn" : true
+    },
+    {
+        "name" : "PuSzu",
+        "prerequisites": [],
+        "autumn" : true
+    },
+    {
+        "name" : "VIR",
+        "prerequisites": ["PuSzu"],
+        "autumn" : false
+    },
+    {
+        "name" : "MI",
+        "prerequisites": ["AdatStrucc"],
+        "autumn" : false
+    },
+    {
+        "name" : "SzoftTech",
+        "prerequisites": ["Prog1"],
+        "autumn" : false
+    },
+    {
+        "name" : "DA",
+        "prerequisites": ["Prog1", "AdatBazis"],
+        "autumn" : false
+    },
+    {
+        "name" : "Marketing",
+        "prerequisites": [],
+        "autumn" : false
+    },
+    {
+        "name" : "Hackathon 3",
+        "prerequisites": ["Hackathon 2"],
+        "autumn" : false
+    },
+    {
+        "name" : "Projekt",
+        "prerequisites": ["SzoftTech","Prog2"],
+        "autumn" : true
+    },
+    {
+        "name" : "DevOps",
+        "prerequisites": ["SzoftTech","Prog2"],
+        "autumn" : true
+    },
+    {
+        "name" : "Optimalizalas",
+        "prerequisites": ["Anal & LinAlg"],
+        "autumn" : true
+    },
+    {
+        "name" : "InfoBizt",
+        "prerequisites": ["AdatBazis", "SzamgepHalo", "ValSzam"],
+        "autumn" : true
+    },
+    {
+        "name" : "Hackathon 4",
+        "prerequisites": ["Hackathon 3"],
+        "autumn" : true
+    },
+    {
+        "name" : "Brand",
+        "prerequisites": [],
+        "autumn" : false
+    },
+    {
+        "name" : "SzakDogaTerv",
+        "prerequisites": [],
+        "autumn" : false
+    },
+    {
+        "name" : "SzakDoga",
+        "prerequisites": ["SzakDogaTerv"],
+        "autumn" : true
+    },
+    {
+        "name" : "UzletiTervGyak",
+        "prerequisites": [],
+        "autumn" : true
+    }
+]
