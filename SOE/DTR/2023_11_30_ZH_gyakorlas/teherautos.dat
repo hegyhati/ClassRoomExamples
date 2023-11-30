@@ -1,0 +1,50 @@
+set Szallitok := 
+	Sopron
+	Pecs
+	Nagykanizsa
+;
+
+set Varosok :=
+	Sopron
+	Veszprem
+	Gyor
+	Pecs
+	Szombathely
+;
+
+set Teherauto :=
+	Kicsi
+	Kozepes
+	Nagy
+;
+
+param supply :=
+	Sopron		1000
+	Pecs		500
+	Nagykanizsa	200
+	;
+
+param demand :=
+	Sopron			250
+	Veszprem		350
+	Gyor			500
+	Pecs			500
+	Szombathely		100
+;
+
+param Tavolsag:
+				Sopron	Veszprem	Gyor	Pecs	Szombathely :=
+Sopron			0		150			80		350		70
+Pecs			350		250			300		0		250
+Nagykanizsa		200		140			220		150		90
+;
+
+param: 
+                TeherautoTomeg  TeherautoKapacitas:=
+	Kicsi		800             110
+	Kozepes	    1000            330
+    Nagy		1200            550
+;
+
+
+param suruseg:= 1.015;

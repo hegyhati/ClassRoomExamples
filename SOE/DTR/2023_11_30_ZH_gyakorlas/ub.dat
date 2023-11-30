@@ -1,0 +1,21 @@
+set Futok := Kriszti Gergo Mate;
+set Szakaszok := q w e r t y u i o;
+
+param:
+            min_tav max_tav sebesseg :=
+Kriszti     1       10      12
+Gergo       3       20      11
+Mate        20      100     9
+;
+
+param tavolsag :=
+    q   1
+    w   2
+    e   3
+    r   4
+    t   5
+    y   6
+    u   7
+    i   8
+    o   9
+    ;

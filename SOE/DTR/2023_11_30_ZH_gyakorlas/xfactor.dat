@@ -1,0 +1,10 @@
+set Versenyzok := Gergo Kriszti Mate Jozsi Vera Zsuzsi;
+
+param sms :=
+Gergo 800
+Kriszti 1000
+Mate 3
+Jozsi 50
+Vera 900
+Zsuzsi 1500
+;
