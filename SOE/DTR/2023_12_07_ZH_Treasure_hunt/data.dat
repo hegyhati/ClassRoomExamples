@@ -1,0 +1,42 @@
+set ChallengeTypes := decypher nonogram puzzle einstein wordsearch;
+
+param challengeCount := 8;
+
+param :
+        type        distanceToNext :=
+    1   decypher    0.3
+    2   nonogram    0.5
+    3   puzzle      0.4
+    4   einstein    2.6
+    5   decypher    1.0
+    6   nonogram    1.5
+    7   wordsearch  1.8
+    8   puzzle      1.5
+;
+
+param timeLimit := 5;
+
+set Students :=  Andras Bela Cili Dani Eszter Fanni Gabor Hanna;
+
+param speed :=
+    Andras  4.0
+    Bela    5.0
+    Cili    4.5
+    Dani    5.5
+    Eszter  4.5
+    Fanni   5.0
+    Gabor   5.5
+    Hanna   4
+;
+
+param solutionTime :
+            decypher    nonogram    puzzle  einstein    wordsearch :=
+    Andras  5           10          15      20          25               
+    Bela    10          15          20      25          30               
+    Cili    15          20          25      30          35               
+    Dani    10          5           20      25          15               
+    Eszter  5           20          15      15          25               
+    Fanni   10          15          20      25          30               
+    Gabor   15          20          25      30          35               
+    Hanna   15          10          15      20          10
+;
