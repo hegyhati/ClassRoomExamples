@@ -1,0 +1,44 @@
+<html>
+    <head>
+        <script>
+            let darab = 0
+
+            function allat_hozzaad() {
+                let nev = document.getElementById("nev").value
+                let faj = document.getElementById("faj").value
+
+                let lista_id = "egyeballat"
+                if (faj=="kutya" || faj=="macska") {
+                    lista_id = "hazikedvenc"
+                } else if (faj=="nyul" || faj=="barany") {
+                    lista_id = "haszonallat"
+                } 
+
+                document.getElementById(lista_id).innerHTML += `<li>${nev} (${faj})</li>`
+
+                darab++
+                document.getElementById("szamlalo").innerHTML = darab
+            }
+        </script>
+    </head>
+    <body>
+        Nev: <input id="nev"> 
+        Faj: <input id="faj">
+        <button onclick="allat_hozzaad()">Hozzaad</button>
+
+        <p>Osszesen <b id="szamlalo">0</b> allatunk van.</p>
+
+        <h3>Hazikedvenc</h3>
+        <ul id="hazikedvenc">
+        </ul>
+
+        <h3>Haszonallat</h3>
+        <ul id="haszonallat">            
+        </ul>
+
+        <h3>Egyeb</h3>
+        <ul id="egyeballat">
+        </ul>
+        
+    </body>
+</html>

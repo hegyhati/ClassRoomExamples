@@ -1,0 +1,17 @@
+Keszitsunk egy weboldalt, ahol az allatainkat tarthatjuk szamon:
+
+
+Egy allatnak meg lehet adni a nevet es azt, hogy mifajta allat
+Attol fuggoen, hogy milyen allat, kulonbozo listakhoz fuzi hozza:
+
+   
+Ha kutya/macska akkor a hazikedvenc listahoz    
+Ha barany/tyuk, akkor a haszonallathoz    
+Ha egyeb, akkor az "egyeb allatok" listahoz
+
+Valahol az oldalon az is jelenjen meg, hogy osszesen hany allatunk van.
+
+Plusz feladatok (elegseges szint utan):	
+    Ket azonos nevu allatot ne engedjen hozzaadni
+    Bovitheto legyen a feluleten a hazikedvenc/haszonallat fajok listaja (es nyilvan nem fedhetnek at). Korabban hozzaadott allatokat az "egyeb" listabol nem kell ennek megfeleloen attenni.
+    Legyen egy olyan felulet, ahol az allat nevet lehet megadni, es hogy "elszokott", es ez esetben lekerul a listarol.

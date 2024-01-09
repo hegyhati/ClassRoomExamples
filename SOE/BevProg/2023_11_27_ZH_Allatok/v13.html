@@ -1,0 +1,80 @@
+<html>
+    <head>
+        <script>
+            let hazikedvencek = ["kutya", "macska", "horcsog", "teknos"]
+            let haszonallatok = ["nyul", "barany", "tyuk", "diszno"]
+            let darab = 0
+            let eddigi_nevek = []
+
+
+            function allat_hozzaad() {
+                let nev = document.getElementById("nev").value
+
+                if (eddigi_nevek.indexOf(nev) != -1) {
+                    alert(`${nev} nevvel mar van allat a listaban`)
+                } else {
+                    eddigi_nevek.push(nev)
+                    let faj = document.getElementById("faj").value
+
+                    let lista_id = "egyeballat"
+                    if (hazikedvencek.indexOf(faj) != -1) {
+                        lista_id = "hazikedvenc"
+                    } else if (haszonallatok.indexOf(faj) != -1) {
+                        lista_id = "haszonallat"
+                    } 
+
+                    document.getElementById(lista_id).innerHTML += `<li>${nev} (${faj})</li>`
+
+                    darab++
+                    document.getElementById("szamlalo").innerHTML = darab
+                }                
+            }
+
+            function hazikedvenc_bovites(){
+                let ujfaj = document.getElementById("ujfaj").value
+                if (hazikedvencek.indexOf(ujfaj) == -1 && haszonallatok.indexOf(ujfaj) == -1) {
+                    hazikedvencek.push(ujfaj)
+                    alert(`A ${ujfaj}-ok mostantol hazikedvencek`)
+                } else {
+                    alert(`${ujfaj}-ok mar rendszerezve lettek`)
+                }
+                document.getElementById("ujfaj").value = ""
+            }
+
+            function haszonallat_bovites(){
+                let ujfaj = document.getElementById("ujfaj").value
+                if (hazikedvencek.indexOf(ujfaj) == -1 && haszonallatok.indexOf(ujfaj) == -1) {
+                    haszonallatok.push(ujfaj)
+                    alert(`A ${ujfaj}-ok mostantol haszonallatok`)
+                } else {
+                    alert(`${ujfaj}-ok mar rendszerezve lettek`)
+                }
+                document.getElementById("ujfaj").value = ""
+            }
+        </script>
+    </head>
+    <body>
+        Uj faj: <input id="ujfaj">
+        <button onclick="hazikedvenc_bovites()">Hazikedvencnek nyilvanit</button>
+        <button onclick="haszonallat_bovites()">Haszonallatnak nyilvanit</button>
+        <hr />
+        Nev: <input id="nev"> 
+        Faj: <input id="faj">
+        <button onclick="allat_hozzaad()">Hozzaad</button>
+
+        <p>Osszesen <b id="szamlalo">0</b> allatunk van.</p>
+
+        <h3>Hazikedvenc</h3>
+        <ul id="hazikedvenc">
+        </ul>
+
+        <h3>Haszonallat</h3>
+        <ul id="haszonallat">            
+        </ul>
+
+        <h3>Egyeb</h3>
+        <ul id="egyeballat">
+        </ul>
+        
+    </body>
+</html>
