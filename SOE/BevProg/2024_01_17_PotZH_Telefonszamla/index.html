@@ -1,0 +1,35 @@
+<html>
+    <head>
+        <title>Telefonszamla</title>
+        <script>
+            var szamla = 0;
+            function hivas() {
+                var hivashossz = document.getElementById("hivashossz").value;
+                szamla += hivashossz * 10;
+                document.getElementById("hivaslista").innerHTML += `<li>${hivashossz} perc</li>`; 
+                document.getElementById("szamla").innerHTML = szamla;  
+            }
+            function smskuldes() {
+                szamla += 5;
+                document.getElementById("sms").innerHTML = 1 + Number(document.getElementById("sms").innerHTML);
+                document.getElementById("szamla").innerHTML = szamla;
+            }
+
+        </script>
+    </head>
+    <body>
+        Hivashossz: 
+        <input type="number" id="hivashossz" value="0">
+        <button onclick="hivas()">Hivas</button>
+        <br>
+        <button onclick="smskuldes()">SMS</button>
+        <hr>
+        Szamla: <b id="szamla"></b> Ft
+        <br>
+        SMS: <b id="sms">0</b> db
+        <br>
+        Hivaslista:
+        <ul id="hivaslista">
+        </ul>
+    </body>
+</html>
