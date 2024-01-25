@@ -1,0 +1,447 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1" />
+<meta name="generator" content="pdoc 0.9.2" />
+<title>akasztofa API documentation</title>
+<meta name="description" content="" />
+<link rel="preload stylesheet" as="style" href="https://cdnjs.cloudflare.com/ajax/libs/10up-sanitize.css/11.0.1/sanitize.min.css" integrity="sha256-PK9q560IAAa6WVRRh76LtCaI8pjTJ2z11v0miyNNjrs=" crossorigin>
+<link rel="preload stylesheet" as="style" href="https://cdnjs.cloudflare.com/ajax/libs/10up-sanitize.css/11.0.1/typography.min.css" integrity="sha256-7l/o7C8jubJiy74VsKTidCy1yBkRtiUGbVkYBylBqUg=" crossorigin>
+<link rel="stylesheet preload" as="style" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.1.1/styles/github.min.css" crossorigin>
+<style>:root{--highlight-color:#fe9}.flex{display:flex !important}body{line-height:1.5em}#content{padding:20px}#sidebar{padding:30px;overflow:hidden}#sidebar > *:last-child{margin-bottom:2cm}.http-server-breadcrumbs{font-size:130%;margin:0 0 15px 0}#footer{font-size:.75em;padding:5px 30px;border-top:1px solid #ddd;text-align:right}#footer p{margin:0 0 0 1em;display:inline-block}#footer p:last-child{margin-right:30px}h1,h2,h3,h4,h5{font-weight:300}h1{font-size:2.5em;line-height:1.1em}h2{font-size:1.75em;margin:1em 0 .50em 0}h3{font-size:1.4em;margin:25px 0 10px 0}h4{margin:0;font-size:105%}h1:target,h2:target,h3:target,h4:target,h5:target,h6:target{background:var(--highlight-color);padding:.2em 0}a{color:#058;text-decoration:none;transition:color .3s ease-in-out}a:hover{color:#e82}.title code{font-weight:bold}h2[id^="header-"]{margin-top:2em}.ident{color:#900}pre code{background:#f8f8f8;font-size:.8em;line-height:1.4em}code{background:#f2f2f1;padding:1px 4px;overflow-wrap:break-word}h1 code{background:transparent}pre{background:#f8f8f8;border:0;border-top:1px solid #ccc;border-bottom:1px solid #ccc;margin:1em 0;padding:1ex}#http-server-module-list{display:flex;flex-flow:column}#http-server-module-list div{display:flex}#http-server-module-list dt{min-width:10%}#http-server-module-list p{margin-top:0}.toc ul,#index{list-style-type:none;margin:0;padding:0}#index code{background:transparent}#index h3{border-bottom:1px solid #ddd}#index ul{padding:0}#index h4{margin-top:.6em;font-weight:bold}@media (min-width:200ex){#index .two-column{column-count:2}}@media (min-width:300ex){#index .two-column{column-count:3}}dl{margin-bottom:2em}dl dl:last-child{margin-bottom:4em}dd{margin:0 0 1em 3em}#header-classes + dl > dd{margin-bottom:3em}dd dd{margin-left:2em}dd p{margin:10px 0}.name{background:#eee;font-weight:bold;font-size:.85em;padding:5px 10px;display:inline-block;min-width:40%}.name:hover{background:#e0e0e0}dt:target .name{background:var(--highlight-color)}.name > span:first-child{white-space:nowrap}.name.class > span:nth-child(2){margin-left:.4em}.inherited{color:#999;border-left:5px solid #eee;padding-left:1em}.inheritance em{font-style:normal;font-weight:bold}.desc h2{font-weight:400;font-size:1.25em}.desc h3{font-size:1em}.desc dt code{background:inherit}.source summary,.git-link-div{color:#666;text-align:right;font-weight:400;font-size:.8em;text-transform:uppercase}.source summary > *{white-space:nowrap;cursor:pointer}.git-link{color:inherit;margin-left:1em}.source pre{max-height:500px;overflow:auto;margin:0}.source pre code{font-size:12px;overflow:visible}.hlist{list-style:none}.hlist li{display:inline}.hlist li:after{content:',\2002'}.hlist li:last-child:after{content:none}.hlist .hlist{display:inline;padding-left:1em}img{max-width:100%}td{padding:0 .5em}.admonition{padding:.1em .5em;margin-bottom:1em}.admonition-title{font-weight:bold}.admonition.note,.admonition.info,.admonition.important{background:#aef}.admonition.todo,.admonition.versionadded,.admonition.tip,.admonition.hint{background:#dfd}.admonition.warning,.admonition.versionchanged,.admonition.deprecated{background:#fd4}.admonition.error,.admonition.danger,.admonition.caution{background:lightpink}</style>
+<style media="screen and (min-width: 700px)">@media screen and (min-width:700px){#sidebar{width:30%;height:100vh;overflow:auto;position:sticky;top:0}#content{width:70%;max-width:100ch;padding:3em 4em;border-left:1px solid #ddd}pre code{font-size:1em}.item .name{font-size:1em}main{display:flex;flex-direction:row-reverse;justify-content:flex-end}.toc ul ul,#index ul{padding-left:1.5em}.toc > ul > li{margin-top:.5em}}</style>
+<style media="print">@media print{#sidebar h1{page-break-before:always}.source{display:none}}@media print{*{background:transparent !important;color:#000 !important;box-shadow:none !important;text-shadow:none !important}a[href]:after{content:" (" attr(href) ")";font-size:90%}a[href][title]:after{content:none}abbr[title]:after{content:" (" attr(title) ")"}.ir a:after,a[href^="javascript:"]:after,a[href^="#"]:after{content:""}pre,blockquote{border:1px solid #999;page-break-inside:avoid}thead{display:table-header-group}tr,img{page-break-inside:avoid}img{max-width:100% !important}@page{margin:0.5cm}p,h2,h3{orphans:3;widows:3}h1,h2,h3,h4,h5,h6{page-break-after:avoid}}</style>
+<script defer src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.1.1/highlight.min.js" integrity="sha256-Uv3H6lx7dJmRfRvH8TH6kJD1TSK1aFcwgx+mdg3epi8=" crossorigin></script>
+<script>window.addEventListener('DOMContentLoaded', () => hljs.initHighlighting())</script>
+</head>
+<body>
+<main>
+<article id="content">
+<header>
+<h1 class="title">Module <code>akasztofa</code></h1>
+</header>
+<section id="section-intro">
+<details class="source">
+<summary>
+<span>Expand source code</span>
+</summary>
+<pre><code class="python">from typing import Dict, List
+
+Tippek=List[str]
+&#34;&#34;&#34;Leadott tippek, azaz betűk listájának típusa.&#34;&#34;&#34;
+
+def kozte_van(betu:str, betuk:Tippek) -&gt; bool:
+    &#34;&#34;&#34;Megadja, hogy a listában már benne van-e a megadott betű, vagy sem.
+
+    Args:
+        betu (str): a keresett betű
+        betuk (Tippek): betűk listája
+
+    Returns:
+        bool: `True` ha benne van, `False` ha nincsen.
+    &#34;&#34;&#34;
+    pass
+
+specialis_karakterek=[&#39; &#39;,&#39;.&#39;,&#39;,&#39;,&#39;!&#39;,&#39;?&#39;,&#39;:&#39;,&#39;-&#39;]
+
+def megjelenites(szo:str, betuk:Tippek) -&gt; str:
+    &#34;&#34;&#34;Visszaad egy olyan szót, amiben a `betuk`-ben lévő betűk látszanak, minden más helyére `_` kerül, kivéve néhány speciális karaktert, amik megjelennek változtatás nélkül. Ezen karakterek listája a `specialis_karakterek` globális listában adott.
+
+    Kis és nagy betűket megkülönbözteti a függvény.
+
+    Args:
+        szo (str): a szó, aminek megjelenített változatát meg szeretnénk kapni. 
+        betuk (Tippek): Egy karakterből, betűkből álló lista, amit már tippeltünk
+
+    Returns:
+        str: a megjelenített változata a szónak
+    &#34;&#34;&#34;
+    pass
+
+def megfejtett(szo:str, betuk:Tippek) -&gt; bool:
+    &#34;&#34;&#34;Megadja, hogy sikerült-e már megfejtenünk a szót, azaz minden benne levő betű már a tippjeink között van.
+
+    Args:
+        szo (str): a kitalálandó szó
+        betuk (Tippek): az eddig tippelt betűk
+
+    Returns:
+        bool: `True` ha teljesen megfejtettük a szót, `False` különben
+    &#34;&#34;&#34;
+    pass
+
+def tartalmazza(szo:str, betu:str) -&gt; bool:
+    &#34;&#34;&#34;Megadja, hogy a megaadott betű szerepel-e a megadott szóban.
+
+    Args:
+        szo (str): a szó
+        betu (str): a betű, amit keresünk, feltételezhető, hogy 1 karakter hosszú
+
+    Returns:
+        bool: `True` ha szerepel, `False` ha nem    
+    &#34;&#34;&#34;
+    pass
+
+def rossz_tippek(szo:str, betuk:Tippek) -&gt; int:
+    &#34;&#34;&#34;Megadja, hogy hány rossz betűt tippeltünk eddig.
+
+    Args:
+        szo (str): a kitalálandó szó
+        betuk (Tippek): az eddigi betű tippjeink
+
+    Returns:
+        int: a rossz tippek száma
+    &#34;&#34;&#34;
+    pass
+
+def eletek(osszes:int,elhasznalt:int)-&gt;str:
+    &#34;&#34;&#34;Visszaad egy olyan szöveget, ami egy indikátor arra, hány életünk van még.
+
+    A szöveg elején van annyi 😄 ahány életünk még maradt, majd annyi 💀 ahányat már &#34;eljátszottunk&#34;.
+
+    Args:
+        osszes (int): az összes életünk száma
+        elhasznalt (int): az eljátszott életek (rossz betű tippek) száma
+
+    Returns:
+        str: 😄😄😄💀💀 formátumú indikátor (a példa adatai: 5 összes, 2 elhasznált)
+    &#34;&#34;&#34;
+    pass
+
+def akasztofa(szo:str,osszes_elet:int) -&gt; None:
+    &#34;&#34;&#34;Végigvisz egy akasztófa játékot, ahol a megadott szót kell kitalálni, és `osszes_elet` rossz tipp után vesztettünk.
+
+    A játék minden körben először írja ki, hogy mit látunk a megfejtendő szóból, alá egy indikátort arról, hogy hány életünk van még, majd végül a tippelt karakterek listáját a tippek sorrendjében.
+
+    Ezt követően az &#34;Adja meg a kovetkezo betut: &#34; kiírással kérjünk be egy betűt. Ellenőrzés nem szükséges se arra, hogy egyetlen betűt adtunk-e meg, se arra, hogy volt-e már korábban ez a betű. A megadott betűt irassuk is rögtön ki. (Szimplán, egymagában. Ennek pusztán annyi célja van, hogy nyomon követhetőbbek legyenek az out fájlok.)
+
+    Más kiiratás nem történik, a játék logikája egyértelmű: addig adunk le tippeket betűkre, amíg vagy meg nem fejtődik a szó, vagy el nem fogynak az életeink. Többször leadhatjuk ugyanazt a tippet, de ez rossz, akkor több életet is vesz el. A kiíratott listában is jelenjen meg duplán akkor ez a betű.
+
+    Ha nyertünk, még kerüljön kiírásra a megfejtett szó, valamint alá egy olyan szöveg, hogy &#34;Gratulalok, nyertel, es meg X eleted maradt!&#34;, ahol X értelemszerűen a megmaradt életek száma.
+
+    Ha vesztettünk, akkor egy &#34;Sajnalom, nem nyertel, ez lett volna a megoldas: MEGOLDAS&#34;.
+
+    Példakimenetek adottak.
+    
+
+    Args:
+        szo (str): a megfejtendő szó
+        osszes_elet (int): az életeink száma, azaz hány rossz tipp után vesztettünk
+    &#34;&#34;&#34;
+    pass
+    
+
+
+
+# Ez alatt ne tessek modositani.
+
+#szo=input()
+#maxelet=int(input())
+#akasztofa(szo,maxelet)</code></pre>
+</details>
+</section>
+<section>
+</section>
+<section>
+<h2 class="section-title" id="header-variables">Global variables</h2>
+<dl>
+<dt id="akasztofa.Tippek"><code class="name">var <span class="ident">Tippek</span></code></dt>
+<dd>
+<div class="desc"><p>Leadott tippek, azaz betűk listájának típusa.</p></div>
+</dd>
+</dl>
+</section>
+<section>
+<h2 class="section-title" id="header-functions">Functions</h2>
+<dl>
+<dt id="akasztofa.akasztofa"><code class="name flex">
+<span>def <span class="ident">akasztofa</span></span>(<span>szo: str, osszes_elet: int) ‑> NoneType</span>
+</code></dt>
+<dd>
+<div class="desc"><p>Végigvisz egy akasztófa játékot, ahol a megadott szót kell kitalálni, és <code>osszes_elet</code> rossz tipp után vesztettünk.</p>
+<p>A játék minden körben először írja ki, hogy mit látunk a megfejtendő szóból, alá egy indikátort arról, hogy hány életünk van még, majd végül a tippelt karakterek listáját a tippek sorrendjében.</p>
+<p>Ezt követően az "Adja meg a kovetkezo betut: " kiírással kérjünk be egy betűt. Ellenőrzés nem szükséges se arra, hogy egyetlen betűt adtunk-e meg, se arra, hogy volt-e már korábban ez a betű. A megadott betűt irassuk is rögtön ki. (Szimplán, egymagában. Ennek pusztán annyi célja van, hogy nyomon követhetőbbek legyenek az out fájlok.)</p>
+<p>Más kiiratás nem történik, a játék logikája egyértelmű: addig adunk le tippeket betűkre, amíg vagy meg nem fejtődik a szó, vagy el nem fogynak az életeink. Többször leadhatjuk ugyanazt a tippet, de ez rossz, akkor több életet is vesz el. A kiíratott listában is jelenjen meg duplán akkor ez a betű.</p>
+<p>Ha nyertünk, még kerüljön kiírásra a megfejtett szó, valamint alá egy olyan szöveg, hogy "Gratulalok, nyertel, es meg X eleted maradt!", ahol X értelemszerűen a megmaradt életek száma.</p>
+<p>Ha vesztettünk, akkor egy "Sajnalom, nem nyertel, ez lett volna a megoldas: MEGOLDAS".</p>
+<p>Példakimenetek adottak.</p>
+<h2 id="args">Args</h2>
+<dl>
+<dt><strong><code>szo</code></strong> :&ensp;<code>str</code></dt>
+<dd>a megfejtendő szó</dd>
+<dt><strong><code>osszes_elet</code></strong> :&ensp;<code>int</code></dt>
+<dd>az életeink száma, azaz hány rossz tipp után vesztettünk</dd>
+</dl></div>
+<details class="source">
+<summary>
+<span>Expand source code</span>
+</summary>
+<pre><code class="python">def akasztofa(szo:str,osszes_elet:int) -&gt; None:
+    &#34;&#34;&#34;Végigvisz egy akasztófa játékot, ahol a megadott szót kell kitalálni, és `osszes_elet` rossz tipp után vesztettünk.
+
+    A játék minden körben először írja ki, hogy mit látunk a megfejtendő szóból, alá egy indikátort arról, hogy hány életünk van még, majd végül a tippelt karakterek listáját a tippek sorrendjében.
+
+    Ezt követően az &#34;Adja meg a kovetkezo betut: &#34; kiírással kérjünk be egy betűt. Ellenőrzés nem szükséges se arra, hogy egyetlen betűt adtunk-e meg, se arra, hogy volt-e már korábban ez a betű. A megadott betűt irassuk is rögtön ki. (Szimplán, egymagában. Ennek pusztán annyi célja van, hogy nyomon követhetőbbek legyenek az out fájlok.)
+
+    Más kiiratás nem történik, a játék logikája egyértelmű: addig adunk le tippeket betűkre, amíg vagy meg nem fejtődik a szó, vagy el nem fogynak az életeink. Többször leadhatjuk ugyanazt a tippet, de ez rossz, akkor több életet is vesz el. A kiíratott listában is jelenjen meg duplán akkor ez a betű.
+
+    Ha nyertünk, még kerüljön kiírásra a megfejtett szó, valamint alá egy olyan szöveg, hogy &#34;Gratulalok, nyertel, es meg X eleted maradt!&#34;, ahol X értelemszerűen a megmaradt életek száma.
+
+    Ha vesztettünk, akkor egy &#34;Sajnalom, nem nyertel, ez lett volna a megoldas: MEGOLDAS&#34;.
+
+    Példakimenetek adottak.
+    
+
+    Args:
+        szo (str): a megfejtendő szó
+        osszes_elet (int): az életeink száma, azaz hány rossz tipp után vesztettünk
+    &#34;&#34;&#34;
+    pass</code></pre>
+</details>
+</dd>
+<dt id="akasztofa.eletek"><code class="name flex">
+<span>def <span class="ident">eletek</span></span>(<span>osszes: int, elhasznalt: int) ‑> str</span>
+</code></dt>
+<dd>
+<div class="desc"><p>Visszaad egy olyan szöveget, ami egy indikátor arra, hány életünk van még.</p>
+<p>A szöveg elején van annyi 😄 ahány életünk még maradt, majd annyi 💀 ahányat már "eljátszottunk".</p>
+<h2 id="args">Args</h2>
+<dl>
+<dt><strong><code>osszes</code></strong> :&ensp;<code>int</code></dt>
+<dd>az összes életünk száma</dd>
+<dt><strong><code>elhasznalt</code></strong> :&ensp;<code>int</code></dt>
+<dd>az eljátszott életek (rossz betű tippek) száma</dd>
+</dl>
+<h2 id="returns">Returns</h2>
+<dl>
+<dt><code>str</code></dt>
+<dd>😄😄😄💀💀 formátumú indikátor (a példa adatai: 5 összes, 2 elhasznált)</dd>
+</dl></div>
+<details class="source">
+<summary>
+<span>Expand source code</span>
+</summary>
+<pre><code class="python">def eletek(osszes:int,elhasznalt:int)-&gt;str:
+    &#34;&#34;&#34;Visszaad egy olyan szöveget, ami egy indikátor arra, hány életünk van még.
+
+    A szöveg elején van annyi 😄 ahány életünk még maradt, majd annyi 💀 ahányat már &#34;eljátszottunk&#34;.
+
+    Args:
+        osszes (int): az összes életünk száma
+        elhasznalt (int): az eljátszott életek (rossz betű tippek) száma
+
+    Returns:
+        str: 😄😄😄💀💀 formátumú indikátor (a példa adatai: 5 összes, 2 elhasznált)
+    &#34;&#34;&#34;
+    pass</code></pre>
+</details>
+</dd>
+<dt id="akasztofa.kozte_van"><code class="name flex">
+<span>def <span class="ident">kozte_van</span></span>(<span>betu: str, betuk: List[str]) ‑> bool</span>
+</code></dt>
+<dd>
+<div class="desc"><p>Megadja, hogy a listában már benne van-e a megadott betű, vagy sem.</p>
+<h2 id="args">Args</h2>
+<dl>
+<dt><strong><code>betu</code></strong> :&ensp;<code>str</code></dt>
+<dd>a keresett betű</dd>
+<dt><strong><code>betuk</code></strong> :&ensp;<code><a title="akasztofa.Tippek" href="#akasztofa.Tippek">Tippek</a></code></dt>
+<dd>betűk listája</dd>
+</dl>
+<h2 id="returns">Returns</h2>
+<dl>
+<dt><code>bool</code></dt>
+<dd><code>True</code> ha benne van, <code>False</code> ha nincsen.</dd>
+</dl></div>
+<details class="source">
+<summary>
+<span>Expand source code</span>
+</summary>
+<pre><code class="python">def kozte_van(betu:str, betuk:Tippek) -&gt; bool:
+    &#34;&#34;&#34;Megadja, hogy a listában már benne van-e a megadott betű, vagy sem.
+
+    Args:
+        betu (str): a keresett betű
+        betuk (Tippek): betűk listája
+
+    Returns:
+        bool: `True` ha benne van, `False` ha nincsen.
+    &#34;&#34;&#34;
+    pass</code></pre>
+</details>
+</dd>
+<dt id="akasztofa.megfejtett"><code class="name flex">
+<span>def <span class="ident">megfejtett</span></span>(<span>szo: str, betuk: List[str]) ‑> bool</span>
+</code></dt>
+<dd>
+<div class="desc"><p>Megadja, hogy sikerült-e már megfejtenünk a szót, azaz minden benne levő betű már a tippjeink között van.</p>
+<h2 id="args">Args</h2>
+<dl>
+<dt><strong><code>szo</code></strong> :&ensp;<code>str</code></dt>
+<dd>a kitalálandó szó</dd>
+<dt><strong><code>betuk</code></strong> :&ensp;<code><a title="akasztofa.Tippek" href="#akasztofa.Tippek">Tippek</a></code></dt>
+<dd>az eddig tippelt betűk</dd>
+</dl>
+<h2 id="returns">Returns</h2>
+<dl>
+<dt><code>bool</code></dt>
+<dd><code>True</code> ha teljesen megfejtettük a szót, <code>False</code> különben</dd>
+</dl></div>
+<details class="source">
+<summary>
+<span>Expand source code</span>
+</summary>
+<pre><code class="python">def megfejtett(szo:str, betuk:Tippek) -&gt; bool:
+    &#34;&#34;&#34;Megadja, hogy sikerült-e már megfejtenünk a szót, azaz minden benne levő betű már a tippjeink között van.
+
+    Args:
+        szo (str): a kitalálandó szó
+        betuk (Tippek): az eddig tippelt betűk
+
+    Returns:
+        bool: `True` ha teljesen megfejtettük a szót, `False` különben
+    &#34;&#34;&#34;
+    pass</code></pre>
+</details>
+</dd>
+<dt id="akasztofa.megjelenites"><code class="name flex">
+<span>def <span class="ident">megjelenites</span></span>(<span>szo: str, betuk: List[str]) ‑> str</span>
+</code></dt>
+<dd>
+<div class="desc"><p>Visszaad egy olyan szót, amiben a <code>betuk</code>-ben lévő betűk látszanak, minden más helyére <code>_</code> kerül, kivéve néhány speciális karaktert, amik megjelennek változtatás nélkül. Ezen karakterek listája a <code>specialis_karakterek</code> globális listában adott.</p>
+<p>Kis és nagy betűket megkülönbözteti a függvény.</p>
+<h2 id="args">Args</h2>
+<dl>
+<dt><strong><code>szo</code></strong> :&ensp;<code>str</code></dt>
+<dd>a szó, aminek megjelenített változatát meg szeretnénk kapni. </dd>
+<dt><strong><code>betuk</code></strong> :&ensp;<code><a title="akasztofa.Tippek" href="#akasztofa.Tippek">Tippek</a></code></dt>
+<dd>Egy karakterből, betűkből álló lista, amit már tippeltünk</dd>
+</dl>
+<h2 id="returns">Returns</h2>
+<dl>
+<dt><code>str</code></dt>
+<dd>a megjelenített változata a szónak</dd>
+</dl></div>
+<details class="source">
+<summary>
+<span>Expand source code</span>
+</summary>
+<pre><code class="python">def megjelenites(szo:str, betuk:Tippek) -&gt; str:
+    &#34;&#34;&#34;Visszaad egy olyan szót, amiben a `betuk`-ben lévő betűk látszanak, minden más helyére `_` kerül, kivéve néhány speciális karaktert, amik megjelennek változtatás nélkül. Ezen karakterek listája a `specialis_karakterek` globális listában adott.
+
+    Kis és nagy betűket megkülönbözteti a függvény.
+
+    Args:
+        szo (str): a szó, aminek megjelenített változatát meg szeretnénk kapni. 
+        betuk (Tippek): Egy karakterből, betűkből álló lista, amit már tippeltünk
+
+    Returns:
+        str: a megjelenített változata a szónak
+    &#34;&#34;&#34;
+    pass</code></pre>
+</details>
+</dd>
+<dt id="akasztofa.rossz_tippek"><code class="name flex">
+<span>def <span class="ident">rossz_tippek</span></span>(<span>szo: str, betuk: List[str]) ‑> int</span>
+</code></dt>
+<dd>
+<div class="desc"><p>Megadja, hogy hány rossz betűt tippeltünk eddig.</p>
+<h2 id="args">Args</h2>
+<dl>
+<dt><strong><code>szo</code></strong> :&ensp;<code>str</code></dt>
+<dd>a kitalálandó szó</dd>
+<dt><strong><code>betuk</code></strong> :&ensp;<code><a title="akasztofa.Tippek" href="#akasztofa.Tippek">Tippek</a></code></dt>
+<dd>az eddigi betű tippjeink</dd>
+</dl>
+<h2 id="returns">Returns</h2>
+<dl>
+<dt><code>int</code></dt>
+<dd>a rossz tippek száma</dd>
+</dl></div>
+<details class="source">
+<summary>
+<span>Expand source code</span>
+</summary>
+<pre><code class="python">def rossz_tippek(szo:str, betuk:Tippek) -&gt; int:
+    &#34;&#34;&#34;Megadja, hogy hány rossz betűt tippeltünk eddig.
+
+    Args:
+        szo (str): a kitalálandó szó
+        betuk (Tippek): az eddigi betű tippjeink
+
+    Returns:
+        int: a rossz tippek száma
+    &#34;&#34;&#34;
+    pass</code></pre>
+</details>
+</dd>
+<dt id="akasztofa.tartalmazza"><code class="name flex">
+<span>def <span class="ident">tartalmazza</span></span>(<span>szo: str, betu: str) ‑> bool</span>
+</code></dt>
+<dd>
+<div class="desc"><p>Megadja, hogy a megaadott betű szerepel-e a megadott szóban.</p>
+<h2 id="args">Args</h2>
+<dl>
+<dt><strong><code>szo</code></strong> :&ensp;<code>str</code></dt>
+<dd>a szó</dd>
+<dt><strong><code>betu</code></strong> :&ensp;<code>str</code></dt>
+<dd>a betű, amit keresünk, feltételezhető, hogy 1 karakter hosszú</dd>
+</dl>
+<h2 id="returns">Returns</h2>
+<dl>
+<dt><code>bool</code></dt>
+<dd><code>True</code> ha szerepel, <code>False</code> ha nem</dd>
+</dl></div>
+<details class="source">
+<summary>
+<span>Expand source code</span>
+</summary>
+<pre><code class="python">def tartalmazza(szo:str, betu:str) -&gt; bool:
+    &#34;&#34;&#34;Megadja, hogy a megaadott betű szerepel-e a megadott szóban.
+
+    Args:
+        szo (str): a szó
+        betu (str): a betű, amit keresünk, feltételezhető, hogy 1 karakter hosszú
+
+    Returns:
+        bool: `True` ha szerepel, `False` ha nem    
+    &#34;&#34;&#34;
+    pass</code></pre>
+</details>
+</dd>
+</dl>
+</section>
+<section>
+</section>
+</article>
+<nav id="sidebar">
+<h1>Index</h1>
+<div class="toc">
+<ul></ul>
+</div>
+<ul id="index">
+<li><h3><a href="#header-variables">Global variables</a></h3>
+<ul class="">
+<li><code><a title="akasztofa.Tippek" href="#akasztofa.Tippek">Tippek</a></code></li>
+</ul>
+</li>
+<li><h3><a href="#header-functions">Functions</a></h3>
+<ul class="two-column">
+<li><code><a title="akasztofa.akasztofa" href="#akasztofa.akasztofa">akasztofa</a></code></li>
+<li><code><a title="akasztofa.eletek" href="#akasztofa.eletek">eletek</a></code></li>
+<li><code><a title="akasztofa.kozte_van" href="#akasztofa.kozte_van">kozte_van</a></code></li>
+<li><code><a title="akasztofa.megfejtett" href="#akasztofa.megfejtett">megfejtett</a></code></li>
+<li><code><a title="akasztofa.megjelenites" href="#akasztofa.megjelenites">megjelenites</a></code></li>
+<li><code><a title="akasztofa.rossz_tippek" href="#akasztofa.rossz_tippek">rossz_tippek</a></code></li>
+<li><code><a title="akasztofa.tartalmazza" href="#akasztofa.tartalmazza">tartalmazza</a></code></li>
+</ul>
+</li>
+</ul>
+</nav>
+</main>
+<footer id="footer">
+<p>Generated by <a href="https://pdoc3.github.io/pdoc"><cite>pdoc</cite> 0.9.2</a>.</p>
+</footer>
+</body>
+</html>
