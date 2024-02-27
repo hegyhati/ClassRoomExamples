@@ -1,0 +1,22 @@
+elsohallgato = input("Ki jott be elsonek? ")
+masodikhallgato = input("Ki jott be masodiknak?")
+harmadikhallgato = input("Ki jott be harmadiknak?")
+negyedikhallgato = input("Ki jott be negyediknek?")
+otodikhallgato = input("Ki jott be otodiknek?")
+hatodikhallgato = input("Ki jott be hatodiknek?")
+hetedikhallgato = input("Ki jott be hetediknek?")
+nyolcadikhallgato = input("Ki jott be nyolcadiknek?")
+kilencedikhallgato = input("Ki jott be kilencediknek?")
+tizedikhallgato = input("Ki jott be tizediknek?")
+tizenegyedikhallgato = input("Ki jott be tizenegyediknek?")
+tizenkettedikhallgato = input("Ki jott be tizenkettediknek?")
+tizenharmadikhallgato = input("Ki jott be tizenharmadiknek?")
+tizennegyedikhallgato = input("Ki jott be tizennegyediknek?")
+
+print("Ezek a hallgatok jottek be:")
+print(elsohallgato)
+print(masodikhallgato)
+print(harmadikhallgato)
+print(negyedikhallgato)
+
+    

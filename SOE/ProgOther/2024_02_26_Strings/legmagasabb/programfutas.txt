@@ -1,0 +1,21 @@
+Van-e meg hallgato? IGEN
+Hogy hivjak? Adam
+Milyen magas? szazhetvennyolc
+Szamot adjal meg!
+Milyen magas? 178
+Van-e meg hallgato? igen
+Hogy hivjak?
+Nem adtal meg nevet.
+Hogy hivjak?             SZAFfi
+Milyen magas? -4
+Nem lehet negativ.
+Milyen magas? 167
+Van-e meg hallgato? mittudomen
+Csak igen/nem-et ertek
+Van-e meg hallgato? nem
+A legmagasabb: Adam, 178 cm.
+
+1. Kerdezgessen addig, amig nem-et nem mondok.
+2. Fogadja el a nem-et szokozokkel, meg nagybetuvel is.
+3. Fogadja el a nem-et mindenfele szleng valtozatban is.
+4. Reklamaljon ha nem igen/nem/egyeb elfogadott dolgot kapunk.
