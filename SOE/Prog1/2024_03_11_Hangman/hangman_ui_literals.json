@@ -1,0 +1,22 @@
+{
+    "en" : {
+        "GAME OVER" : "Game over 😭",
+        "CONGRATS" : "Congrats! 🎉 👏",
+        "GOOD GUESS" : "Good guess! 👍",
+        "BAD GUESS" : "Not a good guess... 👎",
+        "HISTORY" : "Previous guesses",
+        "LIFE" : "Lives",
+        "NEXT GUESS" : "What is your next guess?",
+        "INVALID GUESS" : "Invalid guess... 😮‍💨"
+    },
+    "hu" : {
+        "GAME OVER" : "Vesztettél 😭",
+        "CONGRATS" : "Nyertél! 🎉 👏",
+        "GOOD GUESS" : "Jó betű! 👍",
+        "BAD GUESS" : "Nem jó betű... 👎",
+        "HISTORY" : "Felhasznált betűk",
+        "LIFE" : "Életek",
+        "NEXT GUESS" : "Melyik legyen a következő betű?",
+        "INVALID GUESS" : "Érvénytelen karakter... 😮‍💨"
+    }
+}
