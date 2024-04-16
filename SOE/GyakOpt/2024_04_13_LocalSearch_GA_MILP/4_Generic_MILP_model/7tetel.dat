@@ -1,0 +1,9 @@
+set People := Benedek Kakas Andras;
+set Tasks := T0 T1 T2 T3 T4 T5 T6;
+
+param time:
+                T0 T1 T2 T3 T4 T5 T6 :=
+    Benedek     6  2  9  7  4  2  4
+    Kakas       7  2  3  9  3  10  7
+    Andras      3  9  4  4  6  4  9
+;
