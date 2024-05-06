@@ -1,0 +1,20 @@
+{
+    "meta": {
+        "description" : "SzamTudAlap felkeszultseg felmeres",
+        "creation_date" : "2024-05-06 09:20:00"
+    },
+    "question": [
+        {
+            "type": "text",
+            "text": "Mi a neved?"
+        },
+        {
+            "type": "number",
+            "text": "Hany orat keszultel a SzamTudAlap ZH-ra?"
+        }
+    ],
+    "answer": [
+        [ "Akos", 0 ],
+        [ "Dorina", 987 ]
+    ]       
+}

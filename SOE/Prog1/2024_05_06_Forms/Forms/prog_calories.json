@@ -1,0 +1,32 @@
+{
+    "meta": {
+        "description": "Hany kaloriat vittel be Prog1 eloadas kozben?",
+        "creation_date": "2024-05-06 09:42:04.081651"
+    },
+    "questions": [
+        {
+            "type": "text",
+            "text": "Ki vagy?"
+        },
+        {
+            "type": "number",
+            "text": "Hany szendvicset ettel meg?"
+        },
+        {
+            "type": "number",
+            "text": "Hany energiaitalt ittal meg?"
+        }
+    ],
+    "answers": [
+        [
+            "Krisztian",
+            6,
+            1
+        ],
+        [
+            "Attila",
+            2,
+            6
+        ]
+    ]
+}
