@@ -19,7 +19,7 @@ Irj programot, mely 0-tol 10<sup>6</sup>-ig minden szamra vegrehajtja az 1. fela
 ## 3. Peti "blackjackezik"
 Peti egy blackjack szeru jatekot jatszik dobokockaval. A jatek lenyege, hogy a jatekos dobokockaval dob, es a dobott szamok osszege minel kozelebb kell legyen 11-hez, de alulrol. Ha tullepi, akkor automatikusan vesztett. 
 
-Peti strategiaja, hogy dob addig, amig az eddigi osszeg 7  vagy az alatt van, es akkor "megall". Nehany elofordulo scenario:
+Peti strategiaja, hogy dob addig, amig az eddigi osszeg 7 vagy az alatt van, es "megall" ha atlepte. Nehany elofordulo scenario:
  - Elso dobas 6, masodik dobas 2, Peti megall 8-cal.
  - Elso dobas 2, masodik dobas 5, harmadik dobas 3, Peti megall 10-zel.
  - Elso dobas 6, masodik dobas 6, Peti vesztett.
