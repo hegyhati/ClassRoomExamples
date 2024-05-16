@@ -90,7 +90,7 @@ https://www.kaggle.com/datasets/andrewmvd/okcupid-profiles
  - **d)** Csinalj meg egy szabadon valasztott kimutatast az adathalmaz alapjan.
 
 
-## 6. Money-Money-Money - 6 pont
+## 5. Money-Money-Money - 6 pont
 
 A feladat megoldasahoz az alabbi public API-t hasznald: 
 https://github.com/hakanensari/frankfurter/blob/main/README.md
@@ -99,6 +99,6 @@ https://github.com/hakanensari/frankfurter/blob/main/README.md
  - **b)** Szamold ki, hogyha minden evben januar 1-en 100000 Ft-ot eurora valtottunk volna 2000-tol 2023-ig, majd 2024 januar 1-en visszavaltottuk volna forintra, akkor a befektetett 2.4 millio Ft-bol mennyi penzunk lett volna. *BONUSZ*  Egy diagrammon abrazold, hogy mikent valtozott volna a penzunk erteke, ha atvaltjuk/nem vatljuk at a penzunket. 
 
 
-## BONUSZ: 7. Petofi szinhaz programja - 6 pont
+## BONUSZ: 6. Petofi szinhaz munkatarsai - 6 pont
 
 Irj programot, mely a Petofi szinhaz oldalarol (https://www.soproniszinhaz.hu/) kigyujti, es 1-2 listaban kiirja a szinmuveszeket, tancmuveszeket es eloadomuveszeket.
