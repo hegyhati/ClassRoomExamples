@@ -1,0 +1,38 @@
+{
+    "social": [
+        "Facebook",
+        "Messenger",
+        "Instagram",
+        "Teams",
+        "X",
+        "WhatsApp"
+    ],
+    "multimedia": [
+        "Spotify",
+        "TikTok",
+        "Twitch",
+        "YouTube"
+    ],
+    "finance": [
+        "OTP",
+        "Revolut",
+        "Simple"
+    ],
+    "gaming": [
+        "Dead Cells",
+        "Goat Simulator",
+        "Stardew Valley",
+        "Terraria"
+    ],
+    "navigation": [
+        "Maps",
+        "Waze"
+    ],
+    "other": [
+        "Camera",
+        "Chrome",
+        "Gmail",
+        "Phone",
+        "PlayStore"
+    ]
+}

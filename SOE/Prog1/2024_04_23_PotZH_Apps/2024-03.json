@@ -1,0 +1,368 @@
+[
+    {
+        "date": "2024-03-01",
+        "weekday": 4,
+        "usage": {
+            "X": 46,
+            "Twitch": 15,
+            "YouTube": 63,
+            "OTP": 20,
+            "Terraria": 32,
+            "Dead Cells": 33,
+            "Gmail": 42,
+            "Phone": 16,
+            "Camera": 10
+        }
+    },
+    {
+        "date": "2024-03-02",
+        "weekday": 5,
+        "usage": {
+            "WhatsApp": 16,
+            "Twitch": 42,
+            "YouTube": 40,
+            "Stardew Valley": 47,
+            "PlayStore": 45
+        }
+    },
+    {
+        "date": "2024-03-03",
+        "weekday": 6,
+        "usage": {
+            "YouTube": 18,
+            "Stardew Valley": 33,
+            "Terraria": 12,
+            "Gmail": 68,
+            "Camera": 33
+        }
+    },
+    {
+        "date": "2024-03-04",
+        "weekday": 0,
+        "usage": {
+            "Instagram": 20,
+            "X": 10,
+            "WhatsApp": 3,
+            "Gmail": 51
+        }
+    },
+    {
+        "date": "2024-03-05",
+        "weekday": 1,
+        "usage": {
+            "Instagram": 14,
+            "Twitch": 42,
+            "Spotify": 27,
+            "Simple": 3
+        }
+    },
+    {
+        "date": "2024-03-06",
+        "weekday": 2,
+        "usage": {
+            "Facebook": 24,
+            "WhatsApp": 46,
+            "X": 53,
+            "Simple": 9,
+            "Terraria": 60
+        }
+    },
+    {
+        "date": "2024-03-07",
+        "weekday": 3,
+        "usage": {
+            "Teams": 3,
+            "X": 43,
+            "Spotify": 53,
+            "Simple": 15,
+            "Terraria": 3
+        }
+    },
+    {
+        "date": "2024-03-08",
+        "weekday": 4,
+        "usage": {
+            "X": 13,
+            "Teams": 36,
+            "WhatsApp": 21,
+            "Spotify": 32,
+            "Revolut": 57,
+            "Terraria": 28,
+            "Chrome": 40,
+            "PlayStore": 47
+        }
+    },
+    {
+        "date": "2024-03-09",
+        "weekday": 5,
+        "usage": {
+            "Facebook": 15,
+            "Goat Simulator": 26,
+            "Stardew Valley": 62,
+            "Chrome": 20
+        }
+    },
+    {
+        "date": "2024-03-10",
+        "weekday": 6,
+        "usage": {
+            "TikTok": 26,
+            "Twitch": 31,
+            "OTP": 47
+        }
+    },
+    {
+        "date": "2024-03-11",
+        "weekday": 0,
+        "usage": {
+            "Facebook": 57,
+            "Teams": 20,
+            "Spotify": 17,
+            "Goat Simulator": 3,
+            "Camera": 3,
+            "Phone": 37,
+            "Gmail": 22
+        }
+    },
+    {
+        "date": "2024-03-12",
+        "weekday": 1,
+        "usage": {
+            "Messenger": 50,
+            "WhatsApp": 51,
+            "Spotify": 22,
+            "TikTok": 43,
+            "Terraria": 70,
+            "Camera": 3,
+            "Phone": 36,
+            "Chrome": 11
+        }
+    },
+    {
+        "date": "2024-03-13",
+        "weekday": 2,
+        "usage": {
+            "X": 28,
+            "Goat Simulator": 35,
+            "Dead Cells": 17,
+            "Phone": 54
+        }
+    },
+    {
+        "date": "2024-03-14",
+        "weekday": 3,
+        "usage": {
+            "Messenger": 63,
+            "YouTube": 3,
+            "Spotify": 34,
+            "Revolut": 64,
+            "Dead Cells": 42,
+            "Stardew Valley": 76
+        }
+    },
+    {
+        "date": "2024-03-15",
+        "weekday": 4,
+        "usage": {
+            "Instagram": 8,
+            "Facebook": 13,
+            "Dead Cells": 29,
+            "PlayStore": 4,
+            "Chrome": 38
+        }
+    },
+    {
+        "date": "2024-03-16",
+        "weekday": 5,
+        "usage": {
+            "WhatsApp": 3,
+            "Terraria": 68
+        }
+    },
+    {
+        "date": "2024-03-17",
+        "weekday": 6,
+        "usage": {
+            "Messenger": 14,
+            "Instagram": 57,
+            "Facebook": 13,
+            "Revolut": 64,
+            "Stardew Valley": 49,
+            "PlayStore": 47
+        }
+    },
+    {
+        "date": "2024-03-18",
+        "weekday": 0,
+        "usage": {
+            "Teams": 3,
+            "X": 63,
+            "Stardew Valley": 19,
+            "Camera": 42,
+            "Gmail": 3,
+            "PlayStore": 53
+        }
+    },
+    {
+        "date": "2024-03-19",
+        "weekday": 1,
+        "usage": {
+            "Instagram": 35,
+            "WhatsApp": 4,
+            "Terraria": 3,
+            "Dead Cells": 4,
+            "Phone": 14,
+            "Camera": 3,
+            "Chrome": 34
+        }
+    },
+    {
+        "date": "2024-03-20",
+        "weekday": 2,
+        "usage": {
+            "TikTok": 22,
+            "Twitch": 7,
+            "OTP": 44,
+            "Dead Cells": 67,
+            "Terraria": 55,
+            "Phone": 26
+        }
+    },
+    {
+        "date": "2024-03-21",
+        "weekday": 3,
+        "usage": {
+            "Messenger": 65,
+            "WhatsApp": 4,
+            "YouTube": 19,
+            "Twitch": 30,
+            "OTP": 43,
+            "Camera": 48,
+            "Phone": 61,
+            "Chrome": 23
+        }
+    },
+    {
+        "date": "2024-03-22",
+        "weekday": 4,
+        "usage": {
+            "YouTube": 26,
+            "Revolut": 23,
+            "Terraria": 36,
+            "Camera": 23,
+            "PlayStore": 63,
+            "Gmail": 61
+        }
+    },
+    {
+        "date": "2024-03-23",
+        "weekday": 5,
+        "usage": {
+            "Teams": 27,
+            "Instagram": 15,
+            "WhatsApp": 36,
+            "Messenger": 25,
+            "Phone": 20
+        }
+    },
+    {
+        "date": "2024-03-24",
+        "weekday": 6,
+        "usage": {
+            "WhatsApp": 16,
+            "Instagram": 7,
+            "Messenger": 17,
+            "Teams": 8,
+            "Twitch": 28,
+            "Simple": 37,
+            "Dead Cells": 29,
+            "Terraria": 42
+        }
+    },
+    {
+        "date": "2024-03-25",
+        "weekday": 0,
+        "usage": {
+            "Facebook": 63,
+            "X": 42,
+            "WhatsApp": 47,
+            "Messenger": 13,
+            "Terraria": 44
+        }
+    },
+    {
+        "date": "2024-03-26",
+        "weekday": 1,
+        "usage": {
+            "X": 17,
+            "WhatsApp": 3,
+            "Instagram": 19,
+            "Twitch": 21,
+            "OTP": 11,
+            "Goat Simulator": 16,
+            "PlayStore": 45
+        }
+    },
+    {
+        "date": "2024-03-27",
+        "weekday": 2,
+        "usage": {
+            "Spotify": 66,
+            "TikTok": 30,
+            "Simple": 30,
+            "Dead Cells": 16
+        }
+    },
+    {
+        "date": "2024-03-28",
+        "weekday": 3,
+        "usage": {
+            "WhatsApp": 59,
+            "Instagram": 5,
+            "Twitch": 60,
+            "Dead Cells": 25,
+            "Stardew Valley": 3,
+            "PlayStore": 21,
+            "Chrome": 48,
+            "Phone": 17
+        }
+    },
+    {
+        "date": "2024-03-29",
+        "weekday": 4,
+        "usage": {
+            "Teams": 25,
+            "Instagram": 23,
+            "WhatsApp": 38,
+            "TikTok": 26,
+            "YouTube": 29,
+            "Goat Simulator": 55,
+            "Gmail": 3
+        }
+    },
+    {
+        "date": "2024-03-30",
+        "weekday": 5,
+        "usage": {
+            "WhatsApp": 18,
+            "Teams": 48,
+            "Messenger": 18,
+            "YouTube": 64,
+            "Twitch": 8,
+            "Phone": 41
+        }
+    },
+    {
+        "date": "2024-03-31",
+        "weekday": 6,
+        "usage": {
+            "WhatsApp": 33,
+            "Instagram": 3,
+            "X": 24,
+            "Facebook": 37,
+            "Twitch": 26,
+            "YouTube": 20,
+            "Goat Simulator": 70
+        }
+    }
+]
