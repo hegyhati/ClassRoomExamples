@@ -40,7 +40,7 @@ def growth_plot(filename:str, git_history:list[dict]) -> None:
         for year in range(get_year(git_history[-1]), 2025)
     }
     for commit in git_history:
-        changes_by_year[int(commit["date"][:4])] += commit["changes"]
+        changes_by_year[get_year(commit)] += commit["changes"]
     fig, ax = plt.subplots()
     ax.plot(changes_by_year.keys(), changes_by_year.values())
     ax.set_xlabel("Year")
