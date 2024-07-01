@@ -1,0 +1,44 @@
+[
+  {
+    "id": "A",
+    "name": "Location A",
+    "products": {
+      "1": {
+        "name": "Product 1",
+        "amount": 100,
+        "color": "red"
+      },
+      "2": {
+        "name": "Sallalallala",
+        "amount": 128,
+        "color": "blue"
+      }
+    }
+  },
+  {
+    "id": "B",
+    "name": "Location B",
+    "products": {
+      "1": {
+        "name": "Product 1",
+        "amount": 200,
+        "color": "red"
+      },
+      "123": {
+        "name": "Foo",
+        "amount": 34,
+        "color": "green"
+      },
+      "124": {
+        "name": "Bar",
+        "amount": 45,
+        "color": "blue"
+      },
+      "2": {
+        "name": "Sallalallala",
+        "amount": 45,
+        "color": "blue"
+      }
+    }
+  }
+]
