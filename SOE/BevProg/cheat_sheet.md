@@ -1,4 +1,4 @@
-# BevProg cheat sheat
+# BevProg cheat sheet
 
 ## Skeleton 
 
