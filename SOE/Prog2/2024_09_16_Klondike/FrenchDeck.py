@@ -60,54 +60,54 @@ class Card:
         return card1.color() == card2.color()
 
 
-class Deck:
+class Pile:
     def __init__(self, full:bool = True, shuffled:bool = True) -> None:
-        self.__deck : list[Card] = []
+        self.__pile : list[Card] = []
         
     @staticmethod
-    def full_deck(shuffled:bool = True) -> "Deck":
-        fulldeck = Deck()
-        fulldeck.__deck = [ Card(suit,rank) for suit in Suit for rank in range(RANK_COUNT) ] 
+    def full_deck(shuffled:bool = True) -> "Pile":
+        fulldeck = Pile()
+        fulldeck.__pile = [ Card(suit,rank) for suit in Suit for rank in range(RANK_COUNT) ] 
         if shuffled: fulldeck.shuffle()
         return fulldeck
     
     @staticmethod
-    def deck_from_cards(cards: Iterable[Card], shuffled:bool = False) -> "Deck":
-        deck = Deck()
-        deck.__deck = list(cards)
+    def pile_from_cards(cards: Iterable[Card], shuffled:bool = False) -> "Pile":
+        deck = Pile()
+        deck.__pile = list(cards)
         if shuffled: deck.shuffle()
         return deck
     
     def shuffle(self) -> None:
-        random.shuffle(self.__deck)
+        random.shuffle(self.__pile)
     
     def is_empty(self):
-        return len(self.__deck) == 0
+        return len(self.__pile) == 0
     
     def is_full(self):
-        return len(self.__deck) == RANK_COUNT * len(Suit)
+        return len(self.__pile) == RANK_COUNT * len(Suit)
 
     def peek_top(self) -> Card:
-        return self.__deck[-1]
+        return self.__pile[-1]
     
     def peek_bottom(self) -> Card:
-        return self.__deck[0]
+        return self.__pile[0]
     
     def pick_top(self) -> Card:
-        return self.__deck.pop()
+        return self.__pile.pop()
     
     def put_top(self, card:Card) -> None:
-        self.__deck.append(card)
+        self.__pile.append(card)
     
     def size(self) -> int:
-        return len(self.__deck)
+        return len(self.__pile)
         
     def __str__(self):
-        return " ".join([ str(card) for card in self.__deck ])
+        return " ".join([ str(card) for card in self.__pile ])
     
     
 if __name__ == "__main__":
-    d = Deck.full_deck()
+    d = Pile.full_deck()
     print(d)
     for _ in range(42):
         print(f"Pop {d.pick_top()}")

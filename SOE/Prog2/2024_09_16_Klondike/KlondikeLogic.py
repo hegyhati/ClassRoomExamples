@@ -5,7 +5,7 @@ NO_CARD = "░░"
 class FoundationPile:
     def __init__(self, suit:FrenchDeck.Suit) -> None:
         self._suit = suit
-        self._pile = FrenchDeck.Deck()
+        self._pile = FrenchDeck.Pile()
     
     def push_card(self, card:FrenchDeck.Card) -> None:
         if card.get_suit() != self._suit: raise ValueError("Different suit.")
@@ -26,11 +26,11 @@ class FoundationPile:
         
 
 class TableauPile:
-    def __init__(self, size:int, source_deck:FrenchDeck.Deck) -> None:
+    def __init__(self, size:int, source_deck:FrenchDeck.Pile) -> None:
         if size < 0 : raise ValueError("Tableau pile size must be non-negative.")
         if size > source_deck.size() : raise ValueError(f"Not enough cards in source deck for tableau pile of size {size}.")
-        self._hidden  : FrenchDeck.Deck = FrenchDeck.Deck()
-        self._visible : FrenchDeck.Deck = FrenchDeck.Deck()
+        self._hidden  : FrenchDeck.Pile = FrenchDeck.Pile()
+        self._visible : FrenchDeck.Pile = FrenchDeck.Pile()
         for _ in range(size):
             self._hidden.put_top(source_deck.pick_top())
     
@@ -98,8 +98,8 @@ class KlondikeGame:
             suit: FoundationPile(suit)
             for suit in FrenchDeck.Suit
         }        
-        self._hand = FrenchDeck.Deck.full_deck()
-        self._waste = FrenchDeck.Deck()        
+        self._hand = FrenchDeck.Pile.full_deck()
+        self._waste = FrenchDeck.Pile()        
         self._tableau = [ TableauPile(size,self._hand) for size in range(1,tableau_count+1) ]
         
     def __str__(self) -> str:
