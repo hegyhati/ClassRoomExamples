@@ -1,0 +1,122 @@
+Problem:    data
+Rows:       13
+Columns:    32
+Non-zeros:  93
+Status:     OPTIMAL
+Objective:  Trasportation_cost = 3220000 (MINimum)
+
+   No.   Row name   St   Activity     Lower bound   Upper bound    Marginal
+------ ------------ -- ------------- ------------- ------------- -------------
+     1 Sopron_supply_constraint
+                    B           6000                        6000 
+     2 Kobanya_supply_constraint
+                    NU         12000                       12000          -220 
+     3 Pecs_supply_constraint
+                    NU          8000                        8000           -30 
+     4 Nagykanizsa_supply_constraint
+                    NU          1000                        1000           -15 
+     5 Sopron_demand_constraint
+                    NL           500           500                       < eps
+     6 Veszprem_demand_constraint
+                    NL          2000          2000                         145 
+     7 Gyor_demand_constraint
+                    NL          1500          1500                          90 
+     8 Pecs_demand_constraint
+                    NL          3000          3000                          30 
+     9 Budapest_demand_constraint
+                    NL         10000         10000                         220 
+    10 Szeged_demand_constraint
+                    NL          4000          4000                         215 
+    11 Debrecen_demand_constraint
+                    NL          3500          3500                         440 
+    12 Miskolc_demand_constraint
+                    NL          2500          2500                         400 
+    13 Trasportation_cost
+                    B       3.22e+06                             
+
+   No. Column name  St   Activity     Lower bound   Upper bound    Marginal
+------ ------------ -- ------------- ------------- ------------- -------------
+     1 transport_from_Sopron_to_Sopron
+                    B            500             0               
+     2 transport_from_Sopron_to_Veszprem
+                    B           1000             0               
+     3 transport_from_Sopron_to_Gyor
+                    B           1500             0               
+     4 transport_from_Sopron_to_Pecs
+                    NL             0             0                         245 
+     5 transport_from_Sopron_to_Budapest
+                    B           3000             0               
+     6 transport_from_Sopron_to_Szeged
+                    NL             0             0                         175 
+     7 transport_from_Sopron_to_Debrecen
+                    NL             0             0                          10 
+     8 transport_from_Sopron_to_Miskolc
+                    NL             0             0                       < eps
+     9 transport_from_Kobanya_to_Sopron
+                    NL             0             0                         440 
+    10 transport_from_Kobanya_to_Veszprem
+                    NL             0             0                         200 
+    11 transport_from_Kobanya_to_Gyor
+                    NL             0             0                         260 
+    12 transport_from_Kobanya_to_Pecs
+                    NL             0             0                         390 
+    13 transport_from_Kobanya_to_Budapest
+                    B           7000             0               
+    14 transport_from_Kobanya_to_Szeged
+                    NL             0             0                         175 
+    15 transport_from_Kobanya_to_Debrecen
+                    B           2500             0               
+    16 transport_from_Kobanya_to_Miskolc
+                    B           2500             0               
+    17 transport_from_Pecs_to_Sopron
+                    NL             0             0                         305 
+    18 transport_from_Pecs_to_Veszprem
+                    NL             0             0                          45 
+    19 transport_from_Pecs_to_Gyor
+                    NL             0             0                         190 
+    20 transport_from_Pecs_to_Pecs
+                    B           3000             0               
+    21 transport_from_Pecs_to_Budapest
+                    NL             0             0                          10 
+    22 transport_from_Pecs_to_Szeged
+                    B           4000             0               
+    23 transport_from_Pecs_to_Debrecen
+                    B           1000             0               
+    24 transport_from_Pecs_to_Miskolc
+                    NL             0             0                          55 
+    25 transport_from_Nagykanizsa_to_Sopron
+                    NL             0             0                         175 
+    26 transport_from_Nagykanizsa_to_Veszprem
+                    B           1000             0               
+    27 transport_from_Nagykanizsa_to_Gyor
+                    NL             0             0                         100 
+    28 transport_from_Nagykanizsa_to_Pecs
+                    NL             0             0                         125 
+    29 transport_from_Nagykanizsa_to_Budapest
+                    NL             0             0                           5 
+    30 transport_from_Nagykanizsa_to_Szeged
+                    NL             0             0                         110 
+    31 transport_from_Nagykanizsa_to_Debrecen
+                    NL             0             0                          15 
+    32 transport_from_Nagykanizsa_to_Miskolc
+                    NL             0             0                          35 
+
+Karush-Kuhn-Tucker optimality conditions:
+
+KKT.PE: max.abs.err = 0.00e+00 on row 0
+        max.rel.err = 0.00e+00 on row 0
+        High quality
+
+KKT.PB: max.abs.err = 0.00e+00 on row 0
+        max.rel.err = 0.00e+00 on row 0
+        High quality
+
+KKT.DE: max.abs.err = 0.00e+00 on column 0
+        max.rel.err = 0.00e+00 on column 0
+        High quality
+
+KKT.DB: max.abs.err = 0.00e+00 on row 0
+        max.rel.err = 0.00e+00 on row 0
+        High quality
+
+End of output

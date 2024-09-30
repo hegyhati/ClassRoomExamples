@@ -1,0 +1,33 @@
+set Factories := Sopron Kobanya Pecs Nagykanizsa;
+
+
+set Universities := Sopron	Veszprem	Gyor	Pecs	Budapest	Szeged	Debrecen	Miskolc;
+
+
+param supply :=
+    Sopron	        6000
+    Kobanya	        12000
+    Pecs	        8000
+    Nagykanizsa	    1000
+;
+
+param demand :=
+    Sopron      500
+    Veszprem    2000
+    Gyor        1500
+    Pecs        3000
+    Budapest          10000
+    Szeged      4000
+    Debrecen    3500
+    Miskolc     2500
+;
+
+param distance :
+            Sopron Veszprem Gyor Pecs Budapest Szeged Debrecen Miskolc :=
+Sopron	    0      145      90   275  220      390    450      400
+Kobanya	    220    125      130  200  0        170    220      180
+Pecs	    275    160      250  0	  200      185    410      425
+Nagykanizsa	160    130      175  140  210      310    440      420
+;
+
+

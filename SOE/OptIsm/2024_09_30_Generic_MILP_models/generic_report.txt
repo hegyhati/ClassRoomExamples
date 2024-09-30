@@ -1,0 +1,11 @@
+From Sopron to Sopron : 500
+From Sopron to Veszprem : 1000
+From Sopron to Gyor : 1500
+From Sopron to Budapest : 3000
+From Kobanya to Budapest : 7000
+From Kobanya to Debrecen : 2500
+From Kobanya to Miskolc : 2500
+From Pecs to Pecs : 3000
+From Pecs to Szeged : 4000
+From Pecs to Debrecen : 1000
+From Nagykanizsa to Veszprem : 1000
