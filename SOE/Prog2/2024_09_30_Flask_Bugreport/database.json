@@ -1,0 +1,94 @@
+[
+ {
+  "title": "qweqeq",
+  "description": "qweqew",
+  "id": 0,
+  "open": false,
+  "creation_date": "2024-10-05 15:39:59",
+  "comments": [
+   {
+    "date": "2024-10-05 16:19:51",
+    "text": "adsfa"
+   },
+   {
+    "date": "2024-10-05 16:19:54",
+    "text": "adfadsfasdf"
+   }
+  ],
+  "solution_idx": 0
+ },
+ {
+  "title": "aqew",
+  "description": "qewqr\r\nasfd\r\n\r\nasdf\r\nads\r\nfa\r\ndsf\r\nads\r\nfa\r\ndsf",
+  "id": 1,
+  "open": false,
+  "creation_date": "2024-10-05 15:58:03",
+  "comments": [
+   {
+    "date": "foo",
+    "text": "nyehehe"
+   },
+   {
+    "date": "2024-10-05 16:25:45",
+    "text": ""
+   },
+   {
+    "date": "2024-10-05 16:27:08",
+    "text": "nyehehe"
+   },
+   {
+    "date": "2024-10-05 16:27:17",
+    "text": "adsf as fd\r\nad \r\nfa\r\n fd\r\naf \r\na\r\nfds a\r\ndsf \r\nads\r\nfa\r\ndsf \r\nads\r\nf a\r\nsfd \r\nadsf\r\na \r\nsdf a"
+   }
+  ],
+  "solution_idx": 2
+ },
+ {
+  "title": "kesik a vonat",
+  "description": "Mar megint kesve ert be keletibe, ugyhogy kesobb is tudott visszaindulni.",
+  "id": 2,
+  "open": true,
+  "creation_date": "2024-10-06 19:55:36",
+  "comments": []
+ },
+ {
+  "title": "Missing Aron",
+  "description": "Ejj ejj Hollandia",
+  "id": 3,
+  "open": false,
+  "comments": [
+   {
+    "date": "2024-10-07 09:08:26",
+    "text": "Elmeletileg kedden visszajon."
+   },
+   {
+    "date": "2024-10-07 09:08:35",
+    "text": "Nem, szerintem szerdan."
+   },
+   {
+    "date": "2024-10-07 09:14:05",
+    "text": "NEm is hianyzik."
+   }
+  ],
+  "creation_date": "2024-10-07 09:07:50",
+  "solution_idx": 2
+ },
+ {
+  "title": "lksadjflksajfd",
+  "description": "ldkfjgldkjglkfdg",
+  "id": 4,
+  "open": false,
+  "comments": [
+   {
+    "date": "2024-10-07 09:59:28",
+    "text": "lskjdflskjfd"
+   },
+   {
+    "date": "2024-10-07 09:59:31",
+    "text": "lskdjflskjfd"
+   }
+  ],
+  "creation_date": "2024-10-07 09:59:23",
+  "solution_idx": 1
+ }
+]

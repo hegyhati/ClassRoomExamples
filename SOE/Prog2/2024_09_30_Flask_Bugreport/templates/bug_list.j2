@@ -1,0 +1,27 @@
+<h2>List of bugs</h2>
+<ul>
+    <table class="buglist">
+        <thead>
+            <th>State</th>
+            <th>Title</th>
+            <th>Date</th>
+            <th>Comments</th>
+        </thead>
+        <tbody>
+        {% for bug in bugs %}
+            {% if bug.open %}
+                {% set state = "open" %}
+            {% else %}
+                {% set state = "closed" %}
+            {% endif %}
+            <tr class = "{{state}}">
+                {% set url = url_for('bug_detail', id = bug.id) %}
+                <td><a class="button button-outline {{state}}" href="{{url}}">{{state|upper}}</a></td>
+                <td><a href="{{ url }}">{{ bug.title }}</a></td>
+                <td>{{ bug.creation_date }}</td>
+                <td>{{ bug.comments | length }}</td>
+            </tr>
+        {% endfor %}
+        </tbody>
+    </table>
+</ul>

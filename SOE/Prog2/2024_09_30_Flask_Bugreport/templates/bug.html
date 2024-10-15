@@ -1,0 +1,42 @@
+{% extends "default.html" %}
+{% block title %}{{bug.id}} - {{ bug.title }}{% endblock %}
+{% block content %}
+    <a href="{{url_for('main_page')}}" class="button" style="width: 100%;">Back to main page</a>
+    <h4>Bug details</h4>
+    <table>
+        <tbody>
+            <tr><th>ID</th><td>{{bug.id}}</td></tr>
+            <tr><th>Title</th><td><strong>{{bug.title}}</strong></td></tr>
+            <tr><th>Creation date</th><td>{{bug.creation_date}}</td></tr>
+            <tr><th>Status</th><td>{% if bug.open %}OPEN{% else %}CLOSED{% endif %}</td></tr>
+            <tr><th>Description</th><td>{{bug.description}}</td></tr>                        
+        </tbody>
+    </table>
+    {% if not bug.open %}
+        <div style="border: 10px solid rgb(46, 222, 67); padding: 5px; margin: 5px;">
+            {{bug.comments[bug.solution_idx].text}}
+        </div>
+    {% endif %}
+    <hr />
+    <h4>Comments</h4>
+    {% for comment in bug.comments %}
+        <div style="border: 1px solid black; padding: 5px; margin: 5px;">
+            {{comment.date}} - {{comment.text}}
+            {% if bug.open %}
+            <form action="{{url_for('mark_solution', bugid=bug.id, commentidx = loop.index0 ) }}", method="post">
+                <input type="hidden" id="bugid" name="bugid" value="{{bug.id}}">
+                <input type="hidden" id="commentid" name="commentidx" value="{{loop.index0}}">
+                <button class="button-primary" type="submit">Mark as solution</button>
+            </form>
+            {% endif %}
+        </div>
+    {% endfor %}
+    {% if bug.open %}
+        <hr />
+        <h4>Add new comment</h4>
+        <form action="{{ url_for('new_comment', bugid=bug.id) }}" method="post">
+            <textarea name="text" id="description"></textarea>
+            <button class="button-primary" type="submit" style="width: 100%">Comment</button>
+        </form>
+    {% endif %}
+{% endblock %}

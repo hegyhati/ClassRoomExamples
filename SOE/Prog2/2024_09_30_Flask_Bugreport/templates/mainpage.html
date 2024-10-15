@@ -1,0 +1,9 @@
+{% extends "default.html" %}
+{% block title %} Awesome bug report page {% endblock %}
+
+{% block content %}
+    <div class="row">
+        <div class="column column-33">{% include "new_bug_form.j2" %}</div>
+        <div class="column column-66">{% include "bug_list.j2" %}</div>
+    </div>
+{% endblock %}
