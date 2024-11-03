@@ -1,0 +1,10 @@
+{
+    "map_file": "test_maps/small_2p.txt",
+    "round_count": 50,
+    "team_count": 2,
+    "max_robots": 3,
+    "max_paint_level": 10,
+    "boom_range": 2,
+    "boom_timeout": 2,
+    "min_paint_for_boom": 2
+}

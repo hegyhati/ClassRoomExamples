@@ -1,0 +1,10 @@
+{
+    "map_file": "test_maps/arena_6p.txt",
+    "round_count": 100,
+    "team_count": 6,
+    "max_robots": 2,
+    "max_paint_level": 10,
+    "boom_range": 2,
+    "boom_timeout": 2,
+    "min_paint_for_boom": 2
+}

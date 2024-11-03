@@ -1,0 +1,10 @@
+{
+    "map_file": "test_maps/disjoint_4p.txt",
+    "round_count": 80,
+    "team_count": 4,
+    "max_robots": 3,
+    "max_paint_level": 10,
+    "boom_range": 2,
+    "boom_timeout": 2,
+    "min_paint_for_boom": 2
+}

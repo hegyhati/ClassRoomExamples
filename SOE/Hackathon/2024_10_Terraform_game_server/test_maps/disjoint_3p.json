@@ -1,0 +1,10 @@
+{
+    "map_file": "test_maps/disjoint_3p.txt",
+    "round_count": 60,
+    "team_count": 3,
+    "max_robots": 2,
+    "max_paint_level": 12,
+    "boom_range": 2,
+    "boom_timeout": 2,
+    "min_paint_for_boom": 2
+}

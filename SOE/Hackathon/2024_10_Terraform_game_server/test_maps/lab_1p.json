@@ -1,0 +1,10 @@
+{
+    "map_file": "test_maps/lab_1p.txt",
+    "round_count": 50,
+    "team_count": 1,
+    "max_robots": 2,
+    "max_paint_level": 12,
+    "boom_range": 2,
+    "boom_timeout": 3,
+    "min_paint_for_boom": 2
+}
