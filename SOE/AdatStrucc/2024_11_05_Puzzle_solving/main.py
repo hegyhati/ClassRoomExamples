@@ -72,7 +72,7 @@ while len(states_to_explore) != 0:
         if tries % report_interval == 0:
             print(f"{progress_text}Tries: {tries:9} feasible:{feasible:9} explored:{visited:9} solutions:{solution:2} to explore: {len(states_to_explore):9}")
         board_copy = deepcopy(board)
-        if board_copy.place_tetramino(tetramino):
+        if board_copy.place_tetramino(tetramino, revert_on_failure=False):
             feasible += 1
             states_to_explore.append( (next_tidx+1, board_copy) )
             
