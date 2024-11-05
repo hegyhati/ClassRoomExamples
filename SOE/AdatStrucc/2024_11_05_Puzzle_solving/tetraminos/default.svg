@@ -1,0 +1,34 @@
+<svg width="1700" height="800"><rect width="90" height="90" x="5" y="5" fill="aqua" stroke="aqua"  rx="10" ry="10" fill-opacity="0.8" stroke-width="5"  />
+<rect width="90" height="90" x="5" y="105" fill="aqua" stroke="aqua"  rx="10" ry="10" fill-opacity="0.8" stroke-width="5"  />
+<rect width="90" height="90" x="5" y="205" fill="aqua" stroke="aqua"  rx="10" ry="10" fill-opacity="0.8" stroke-width="5"  />
+<rect width="90" height="90" x="105" y="205" fill="aqua" stroke="aqua"  rx="10" ry="10" fill-opacity="0.8" stroke-width="5"  />
+<rect width="90" height="90" x="205" y="205" fill="aqua" stroke="aqua"  rx="10" ry="10" fill-opacity="0.8" stroke-width="5"  /><rect width="90" height="90" x="505" y="105" fill="coral" stroke="coral"  rx="10" ry="10" fill-opacity="0.8" stroke-width="5"  />
+<rect width="90" height="90" x="605" y="105" fill="coral" stroke="coral"  rx="10" ry="10" fill-opacity="0.8" stroke-width="5"  />
+<rect width="90" height="90" x="705" y="105" fill="coral" stroke="coral"  rx="10" ry="10" fill-opacity="0.8" stroke-width="5"  />
+<rect width="90" height="90" x="705" y="5" fill="coral" stroke="coral"  rx="10" ry="10" fill-opacity="0.8" stroke-width="5"  />
+<rect width="90" height="90" x="805" y="5" fill="coral" stroke="coral"  rx="10" ry="10" fill-opacity="0.8" stroke-width="5"  /><rect width="90" height="90" x="1005" y="205" fill="crimson" stroke="crimson"  rx="10" ry="10" fill-opacity="0.8" stroke-width="5"  />
+<rect width="90" height="90" x="1105" y="205" fill="crimson" stroke="crimson"  rx="10" ry="10" fill-opacity="0.8" stroke-width="5"  />
+<rect width="90" height="90" x="1105" y="105" fill="crimson" stroke="crimson"  rx="10" ry="10" fill-opacity="0.8" stroke-width="5"  />
+<rect width="90" height="90" x="1105" y="5" fill="crimson" stroke="crimson"  rx="10" ry="10" fill-opacity="0.8" stroke-width="5"  />
+<rect width="90" height="90" x="1205" y="5" fill="crimson" stroke="crimson"  rx="10" ry="10" fill-opacity="0.8" stroke-width="5"  /><rect width="90" height="90" x="1505" y="5" fill="darkorange" stroke="darkorange"  rx="10" ry="10" fill-opacity="0.8" stroke-width="5"  />
+<rect width="90" height="90" x="1505" y="105" fill="darkorange" stroke="darkorange"  rx="10" ry="10" fill-opacity="0.8" stroke-width="5"  />
+<rect width="90" height="90" x="1505" y="205" fill="darkorange" stroke="darkorange"  rx="10" ry="10" fill-opacity="0.8" stroke-width="5"  />
+<rect width="90" height="90" x="1605" y="205" fill="darkorange" stroke="darkorange"  rx="10" ry="10" fill-opacity="0.8" stroke-width="5"  />
+<rect width="90" height="90" x="1605" y="105" fill="darkorange" stroke="darkorange"  rx="10" ry="10" fill-opacity="0.8" stroke-width="5"  />
+<rect width="90" height="90" x="1605" y="5" fill="darkorange" stroke="darkorange"  rx="10" ry="10" fill-opacity="0.8" stroke-width="5"  /><rect width="90" height="90" x="5" y="505" fill="deepskyblue" stroke="deepskyblue"  rx="10" ry="10" fill-opacity="0.8" stroke-width="5"  />
+<rect width="90" height="90" x="5" y="605" fill="deepskyblue" stroke="deepskyblue"  rx="10" ry="10" fill-opacity="0.8" stroke-width="5"  />
+<rect width="90" height="90" x="105" y="605" fill="deepskyblue" stroke="deepskyblue"  rx="10" ry="10" fill-opacity="0.8" stroke-width="5"  />
+<rect width="90" height="90" x="205" y="605" fill="deepskyblue" stroke="deepskyblue"  rx="10" ry="10" fill-opacity="0.8" stroke-width="5"  />
+<rect width="90" height="90" x="305" y="605" fill="deepskyblue" stroke="deepskyblue"  rx="10" ry="10" fill-opacity="0.8" stroke-width="5"  /><rect width="90" height="90" x="505" y="505" fill="dodgerblue" stroke="dodgerblue"  rx="10" ry="10" fill-opacity="0.8" stroke-width="5"  />
+<rect width="90" height="90" x="605" y="505" fill="dodgerblue" stroke="dodgerblue"  rx="10" ry="10" fill-opacity="0.8" stroke-width="5"  />
+<rect width="90" height="90" x="705" y="505" fill="dodgerblue" stroke="dodgerblue"  rx="10" ry="10" fill-opacity="0.8" stroke-width="5"  />
+<rect width="90" height="90" x="705" y="605" fill="dodgerblue" stroke="dodgerblue"  rx="10" ry="10" fill-opacity="0.8" stroke-width="5"  />
+<rect width="90" height="90" x="805" y="505" fill="dodgerblue" stroke="dodgerblue"  rx="10" ry="10" fill-opacity="0.8" stroke-width="5"  /><rect width="90" height="90" x="1005" y="505" fill="firebrick" stroke="firebrick"  rx="10" ry="10" fill-opacity="0.8" stroke-width="5"  />
+<rect width="90" height="90" x="1005" y="705" fill="firebrick" stroke="firebrick"  rx="10" ry="10" fill-opacity="0.8" stroke-width="5"  />
+<rect width="90" height="90" x="1105" y="505" fill="firebrick" stroke="firebrick"  rx="10" ry="10" fill-opacity="0.8" stroke-width="5"  />
+<rect width="90" height="90" x="1105" y="605" fill="firebrick" stroke="firebrick"  rx="10" ry="10" fill-opacity="0.8" stroke-width="5"  />
+<rect width="90" height="90" x="1105" y="705" fill="firebrick" stroke="firebrick"  rx="10" ry="10" fill-opacity="0.8" stroke-width="5"  /><rect width="90" height="90" x="1505" y="505" fill="forestgreen" stroke="forestgreen"  rx="10" ry="10" fill-opacity="0.8" stroke-width="5"  />
+<rect width="90" height="90" x="1505" y="605" fill="forestgreen" stroke="forestgreen"  rx="10" ry="10" fill-opacity="0.8" stroke-width="5"  />
+<rect width="90" height="90" x="1505" y="705" fill="forestgreen" stroke="forestgreen"  rx="10" ry="10" fill-opacity="0.8" stroke-width="5"  />
+<rect width="90" height="90" x="1605" y="505" fill="forestgreen" stroke="forestgreen"  rx="10" ry="10" fill-opacity="0.8" stroke-width="5"  />
+<rect width="90" height="90" x="1605" y="605" fill="forestgreen" stroke="forestgreen"  rx="10" ry="10" fill-opacity="0.8" stroke-width="5"  /></svg>
