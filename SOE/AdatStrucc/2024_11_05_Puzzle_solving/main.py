@@ -3,7 +3,11 @@ from board import Board
 from tetramino import Tetramino
 from collections import deque
 from sys import argv
+from time import time
 
+
+EXPORT_SOLUTIONS = False
+EXPORT_STEPS = False
 
 
 # Load board and tetraminos
@@ -11,7 +15,8 @@ base_board:Board = Board("maps/nov5.txt")
 tetraminos_to_place:list[Tetramino] = Tetramino.load_tetraminos_from_json("tetraminos/default.json")
 tetramino_count = len(tetraminos_to_place)
 min_tetramino_size = min( len(tetramino.get_positions()) for tetramino in tetraminos_to_place )
-print(min_tetramino_size)
+
+start_time = time()
 
 # Precalculate all feasible placement of tetraminos and their variants considering FORBIDDEN squares
 tetramino_placements = [
@@ -20,7 +25,7 @@ tetramino_placements = [
         for v in t.get_variants()
         for dx in range(base_board.width - v.width() + 1)
         for dy in range(base_board.height - v.height() + 1)
-        if deepcopy(base_board).place_tetramino(deepcopy(v).shift(dx,dy))
+        if deepcopy(base_board).place_tetramino(deepcopy(v).shift(dx,dy), min_region_size=min_tetramino_size)
     ]
     for t in tetraminos_to_place
 ]
@@ -57,10 +62,10 @@ while len(states_to_explore) != 0:
     visited += 1
     next_tidx, board = next_state()
 
-
-    for count in range(30 if next_tidx == tetramino_count else 1):
-        with open(f"tmp/{visited:09}_{count:02}.svg", "w") as f:
-            f.write(board.to_svg(highlight=(count>0)))
+    if EXPORT_STEPS:
+        for count in range(30 if next_tidx == tetramino_count else 1):
+            with open(f"tmp/{visited:09}_{count:02}.svg", "w") as f:
+                f.write(board.to_svg(highlight=(count>0)))
 
     if next_tidx == 1 and print_progress:
         progress += progress_increase
@@ -68,8 +73,9 @@ while len(states_to_explore) != 0:
 
     if next_tidx == tetramino_count:
         solution += 1
-        with open(f"saves/nov5_default_{solution:09}.svg", "w") as f:
-            f.write(board.to_svg())
+        if EXPORT_SOLUTIONS:
+            with open(f"saves/nov5_default_{solution:09}.svg", "w") as f:
+                f.write(board.to_svg())
         continue
     for tetramino in tetramino_placements[next_tidx]:        
         tries += 1
@@ -84,6 +90,18 @@ while len(states_to_explore) != 0:
                     progress += progress_increase
                     progress_text = f"{progress:5.2f} % "
             else: states_to_explore.append( (next_tidx+1, board_copy) )
+
+print(f""" 
+      
+Final report:
+    Time elapsed: {time()-start_time} seconds
+
+    {tries:9} tetramino placement tried
+    {feasible:9} was feasible, from which 
+    {hopeless:9} resulted in too small disjoint regions, the remaining 
+    {visited:9} was explored, from which
+    {solution:9}  was a good solution
+""")
             
         
 

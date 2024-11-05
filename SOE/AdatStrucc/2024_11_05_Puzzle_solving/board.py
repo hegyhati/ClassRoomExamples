@@ -31,7 +31,7 @@ class Board:
             for y in range(self.height-1,-1,-1)
         ])
     
-    def place_tetramino(self, tetramino:Tetramino, revert_on_failure:bool = True) -> bool:
+    def place_tetramino(self, tetramino:Tetramino, revert_on_failure:bool = True, min_region_size:int|None = None) -> bool:
         if tetramino.min_x() < 0 or tetramino.max_x() > self.width or tetramino.min_y() < 0 or tetramino.max_y() > self.height: return False
         for x,y in tetramino.get_positions():
             if self.__map[x][y] != self.FREE:
@@ -41,7 +41,7 @@ class Board:
                         self.__map[x][y] = self.FREE
                 return False
             self.__map[x][y] = tetramino.get_color_id()
-        return True
+        return True if  min_region_size is None else not self.has_small_disjoint_region(min_region_size)
         
     def to_svg(self, debug:bool=False, highlight:bool = False) -> str:
         return f""" 
