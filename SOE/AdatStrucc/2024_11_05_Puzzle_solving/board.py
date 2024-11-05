@@ -1,5 +1,5 @@
 from tetramino import Tetramino
-from svg import color, BACKGROUND_OK, BACKGROUND_NOK, SVG_BLOCK_SIZE, RECT_BLOCK_STYLE, STROKE_WIDTH
+from svg import *
 import json
 
 class Board:
@@ -22,6 +22,15 @@ class Board:
             for x in range(self.width)
         ]
     
+    def __str__(self) -> str:
+        return "\n".join([
+            "".join([
+                "#" if self.__map[x][y] == self.FORBIDDEN else "_" if self.__map[x][y] == self.FREE else str(self.__map[x][y])
+                for x in range(self.width)
+            ])
+            for y in range(self.height-1,-1,-1)
+        ])
+    
     def place_tetramino(self, tetramino:Tetramino, revert_on_failure:bool = True) -> bool:
         if tetramino.min_x() < 0 or tetramino.max_x() > self.width or tetramino.min_y() < 0 or tetramino.max_y() > self.height: return False
         for x,y in tetramino.get_positions():
@@ -34,10 +43,10 @@ class Board:
             self.__map[x][y] = tetramino.get_color_id()
         return True
         
-    def to_svg(self, debug:bool=False) -> str:
+    def to_svg(self, debug:bool=False, highlight:bool = False) -> str:
         return f""" 
             <svg width="{self.width*SVG_BLOCK_SIZE}" height="{self.height * SVG_BLOCK_SIZE}">
-            <rect x="0" y="0" width="{self.width*SVG_BLOCK_SIZE}" height="{self.height * SVG_BLOCK_SIZE}" fill="{BACKGROUND_OK}" />
+            <rect x="0" y="0" width="{self.width*SVG_BLOCK_SIZE}" height="{self.height * SVG_BLOCK_SIZE}" fill="{BACKGROUND_HIGHLIGHT if highlight else BACKGROUND_OK}" />
             {"".join([
                 f'<rect width="{SVG_BLOCK_SIZE}" height="{SVG_BLOCK_SIZE}" x="{SVG_BLOCK_SIZE*x}" y="{SVG_BLOCK_SIZE*y}" fill="{BACKGROUND_NOK}" />'
                 for x in range(self.width)
@@ -45,7 +54,7 @@ class Board:
                 if self.__map[x][y] == self.FORBIDDEN
             ])}
             {"".join([
-                f'<rect width="{SVG_BLOCK_SIZE-2*STROKE_WIDTH}" height="{SVG_BLOCK_SIZE-2*STROKE_WIDTH}" x="{SVG_BLOCK_SIZE*x+STROKE_WIDTH}" y="{SVG_BLOCK_SIZE*y+STROKE_WIDTH}" fill="{color(self.__map[x][y])}" stroke="{color(self.__map[x][y])}" {RECT_BLOCK_STYLE}/>'
+                f'<rect width="{SVG_BLOCK_SIZE-2*STROKE_WIDTH}" height="{SVG_BLOCK_SIZE-2*STROKE_WIDTH}" x="{SVG_BLOCK_SIZE*x+STROKE_WIDTH}" y="{SVG_BLOCK_SIZE*y+STROKE_WIDTH}" fill="{color(self.__map[x][y])}" stroke="{BACKGROUND_NOK if highlight else color(self.__map[x][y])}" {RECT_BLOCK_HIGHLIGHT_STYLE if highlight else RECT_BLOCK_STYLE}/>'
                 for x in range(self.width)
                 for y in range(self.height)
                 if self.__map[x][y] not in  (self.FORBIDDEN, self.FREE)
@@ -65,6 +74,29 @@ class Board:
             ]) if debug else ""}
             </svg>
             """
+    
+    
+    def __get_free_neighbors(self, x, y) -> set[tuple[int,int]]:
+        return {
+            (nx, ny)
+            for nx, ny in ( (x,y+1), (x,y-1), (x+1,y), (x-1,y) )
+            if nx >= 0 and nx < self.width and ny >= 0 and ny < self.height and self.__map[nx][ny] == self.FREE
+        }
+
+    def has_small_disjoint_region(self, min_region_size:int) -> bool:
+        free_blocks = { (x,y) for x in range(self.width) for y in range(self.height) if self.__map[x][y] == self.FREE }
+        while len(free_blocks) != 0:
+            if len(free_blocks) < min_region_size: return True
+            blocks_to_investigate =  { free_blocks.pop() }
+            current_region = set()
+            while len(blocks_to_investigate) != 0:
+                current = blocks_to_investigate.pop()
+                current_region.add(current)
+                blocks_to_investigate.update( self.__get_free_neighbors(*current).difference(current_region))
+            if len(current_region) < min_region_size: return True
+            free_blocks.difference_update(current_region)
+        return False
+
 
 if __name__ == "__main__":
     b = Board("maps/nov5.txt")
