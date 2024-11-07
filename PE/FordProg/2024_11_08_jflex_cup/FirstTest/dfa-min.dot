@@ -1,0 +1,25 @@
+digraph DFA {
+rankdir = LR
+1 [shape = doublecircle]
+2 [shape = doublecircle]
+3 [shape = doublecircle]
+4 [shape = doublecircle]
+5 [shape = doublecircle]
+6 [shape = doublecircle]
+7 [shape = doublecircle]
+8 [shape = doublecircle]
+0 -> 1 [label="[0]"]
+0 -> 2 [label="[1]"]
+0 -> 1 [label="[2]"]
+0 -> 3 [label="[3]"]
+0 -> 1 [label="[4]"]
+0 -> 4 [label="[5]"]
+0 -> 1 [label="[6]"]
+0 -> 5 [label="[7]"]
+2 -> 2 [label="[1]"]
+2 -> 2 [label="[2]"]
+3 -> 6 [label="[4]"]
+4 -> 7 [label="[6]"]
+5 -> 8 [label="[6]"]
+}
+

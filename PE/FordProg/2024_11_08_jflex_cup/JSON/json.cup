@@ -1,0 +1,31 @@
+import java_cup.runtime.*;
+import java.io.EOFException; 
+
+terminal NULL, LBRACKET, RBRACKET, LBRACE, RBRACE, COLON, COMMA;
+
+
+terminal String STRING;
+terminal Float NUMBER;
+terminal Bool BOOL;
+
+non terminal foo, object, dict, pairs, array, items, scalar;
+
+foo  ::= object {:
+    System.out.println("Parsing done");
+:};
+
+object ::= dict | array | scalar ;
+
+scalar ::= NULL | STRING | NUMBER | BOOL ;
+
+array  ::=  LBRACKET RBRACKET |
+            LBRACKET items RBRACKET ;
+
+items  ::= object COMMA items | object ;
+
+dict   ::= LBRACE RBRACE |
+           LBRACE pairs RBRACE ;
+
+pairs  ::= STRING COLON object COMMA pairs | STRING COLON object ;
+
+
