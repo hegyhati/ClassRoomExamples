@@ -1,0 +1,41 @@
+import java_cup.runtime.*;
+
+parser code {:
+    Float lastDuration = null;
+    Float totalDuration = Float.valueOf(0);
+:};
+
+terminal Integer NOTE, OCTAVE, DURATION;
+
+non terminal Float foo, notes, note, octave, duration;
+
+foo ::= {: System.out.println("Start of piece"); :}  notes {: System.out.println("End of piece, duration:" + String.valueOf(totalDuration)); :};
+
+notes ::= note {: System.out.println("New note"); :} notes 
+        | 
+       ;
+
+note ::= NOTE octave duration:d
+{:
+    lastDuration = d.floatValue();
+    totalDuration += d.floatValue();
+:}
+;
+
+octave ::= OCTAVE | ;
+
+duration ::= DURATION:d 
+{: 
+    RESULT = 1 / d.floatValue();
+:}
+;
+
+duration ::= 
+{:
+    if (lastDuration == null) {
+        RESULT = 0.25f;
+    } else {
+        RESULT = lastDuration;
+    }
+:}
+;
