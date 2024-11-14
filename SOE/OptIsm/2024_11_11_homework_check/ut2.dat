@@ -1,0 +1,22 @@
+set dolgozok := Kitti Medard Gergo Balazs Iza ;
+param munkafolyamatok_szama := 4;
+
+
+param orak_szama := 8;
+param munkaora := 0.75;
+
+param sebesseg :
+1 2 3 4 :=
+Kitti 2 6 7 3
+Medard 7 5 4 2
+Gergo 5 2 5 4
+Balazs 6 3 2 8 
+Iza 3 4 8 6 ;
+
+
+param seta_sebesseg:=
+Kitti 3
+Medard 2
+Gergo 4
+Balazs 8 
+Iza 6 ;

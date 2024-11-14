@@ -1,0 +1,24 @@
+set dolgozok := Kitti Medard Gergo Balazs Iza ;
+set munkafolyamatok := Hantolas Alapozas Pirosfestes Lakkozas ;
+
+param elozo:=
+Alapozas Hantolas
+Pirosfestes Alapozas
+Lakkozas Pirosfestes ;
+
+param elsomunka := Hantolas;
+param utolsomunka := Lakkozas;
+
+param ora := 8;
+param munkaora := 0.75;
+
+param sebesseg :
+Hantolas Alapozas Pirosfestes Lakkozas :=
+Kitti 2 6 7 3
+Medard 7 5 4 2
+Gergo 5 2 5 4
+Balazs 6 3 2 8 
+Iza 3 4 8 6 ;
+
+
+
