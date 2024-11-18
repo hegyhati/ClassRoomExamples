@@ -1,0 +1,5 @@
+ - Csak akkor fordulhat elo, hogy egy LP modellnek nincs megoldasa, ha a valtozok szama kevesebb, mint a korlatozasok szama.
+ - A szimplex modszer masodik fazisanak feladata, hogy egy nem bazismegoldasbol bazimsegoldasba keruljunk.
+ - Tulzottan nagy M ertek megvalasztasa eseten a megoldok numberikus hibara futhatnak.
+ - GMPL nyelven egy set elemei csak szimbolikus ertekek lehetnek.
+ - Heurisztikanak az olyan modszereket nevezzuk, melyek a lehetseges donteseket moho modon hozzak meg.
