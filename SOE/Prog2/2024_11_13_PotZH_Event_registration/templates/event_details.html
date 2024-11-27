@@ -1,0 +1,44 @@
+{% extends "base.html" %}
+
+{% block title %}
+    {{ event.name }}
+{% endblock %}
+
+{% block content %}
+
+<h1>{{ event.name }}</h1>
+<p>{{ event.date }}</p>
+<p>{{ event.location }}</p>
+<p>Organizer: {{ event.organizer_name }} ({{event.organizer_email}})</p>
+<p>Registrations: {{ event.registration_count }}  / {{ event.registration_limit }}</p>
+
+
+{% if event.upcoming and event.registration_count < event.registration_limit %}
+    <form action="/event/{{ event.id }}/register" method="post">
+        <input type="text" name="attendee_name" placeholder="Your name">
+        <input type="email" name="attendee_email" placeholder="Your email">
+        <input type="submit" value="Register">
+    </form>
+{% endif %}
+
+<h2>Registrations</h2>
+
+<table border="1">
+    <thead>
+        <th>Name</th>
+        <th>Email</th>
+    </thead>
+    <tbody>
+        {% for registration in registrations %}
+            <tr>
+                <td>{{ registration.attendee_name }}</td>
+                <td>{{ registration.attendee_email }}</td>
+            </tr>
+        {% endfor %}
+    </tbody>
+</table>
+
+
+
+
+{% endblock %}

@@ -1,0 +1,16 @@
+{% extends "base.html" %}
+
+{% block title %}
+    Event List
+{% endblock %}
+
+{% block content %}
+    <h1>Future Events</h1>
+    {% with events=future_events %}
+        {% include "event_table.html" %}
+    {% endwith %}
+    <h2>Past Events</h2>
+    {% with events=past_events %}
+        {% include "event_table.html" %}
+    {% endwith %}
+{% endblock %}

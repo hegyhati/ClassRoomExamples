@@ -1,0 +1,23 @@
+<table border="1">
+    <thead>
+        <th>Event name</th>
+        <th>Organizer name</th>
+        <th>Organizer email</th>
+        <th>Location</th>
+        <th>Date</th>
+        <th>Registration</th>
+    </thead>
+    <tbody>
+        {% for event in events %}
+            <tr {% if event.registration_count == event.registration_limit %}style="color:gray;" {% endif %}>
+                <td><a href="/event/{{event.id}}">{{ event.name }}</a></td>
+                <td>{{ event.organizer_name }}</td>
+                <td>{{ event.organizer_email }}</td>
+                <td>{{ event.location }}</td>
+                <td>{{ event.date }}</td>
+                <td>{{ event.registration_count }} / {{ event.registration_limit }}</td>
+            </tr>
+        {% endfor %}
+    </tbody>
+</table>
+        

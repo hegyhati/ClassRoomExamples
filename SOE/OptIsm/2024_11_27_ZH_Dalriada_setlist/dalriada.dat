@@ -1,0 +1,70 @@
+set Musicians := Andras Laura Matyas Istvan Szog Adam;
+set Songs := 
+    A_walesi_bardok
+    Teli_enek
+    Hajdutanc
+    Taltosenek
+    Virraszto
+    Hamu_es_Gyasz
+    Agnes_asszony
+    Napisten_hava
+    Galamb
+    Taltosok_alma
+    Tavaszkoszonto
+    Tuzhozo
+    Kinizsi_mulatsaga
+    Hajnalpir
+    Borivok_eneke
+    Vilagfa
+    Betyar_altato
+    Huszaros
+    A_Dudas
+    Hazateres
+;
+param:
+                        duration    popularity := 
+    A_walesi_bardok     1120        61
+    Teli_enek           350         100
+    Hajdutanc           298         87
+    Taltosenek          295         55
+    Virraszto           290         70
+    Hamu_es_Gyasz       351         87
+    Agnes_asszony       801         58
+    Napisten_hava       404         58
+    Galamb              341         91
+    Taltosok_alma       452         71
+    Tavaszkoszonto      199         54
+    Tuzhozo             240         66
+    Kinizsi_mulatsaga   259         40
+    Hajnalpir           264         65
+    Borivok_eneke       273         57
+    Vilagfa             282         86
+    Betyar_altato       384         90
+    Huszaros            375         77
+    A_Dudas             332         87
+    Hazateres           283         56
+;
+
+param difficulty:
+                        Andras  Laura   Matyas  Istvan  Szog    Adam := 
+    A_walesi_bardok     1       0       0       1       0       1
+    Teli_enek           1       1       1       0       1       0
+    Hajdutanc           1       1       0       0       0       1
+    Taltosenek          0       0       0       0       0       1
+    Virraszto           0       1       1       0       0       0
+    Hamu_es_Gyasz       0       0       0       1       0       0
+    Agnes_asszony       0       0       0       0       1       0
+    Napisten_hava       0       0       0       1       0       0
+    Galamb              1       0       0       0       1       0
+    Taltosok_alma       1       0       1       1       0       0
+    Tavaszkoszonto      0       0       1       1       1       0
+    Tuzhozo             0       1       0       0       1       0
+    Kinizsi_mulatsaga   0       1       1       1       1       0
+    Hajnalpir           1       0       1       0       1       0
+    Borivok_eneke       0       1       0       0       0       0
+    Vilagfa             1       1       1       0       0       1
+    Betyar_altato       0       0       1       1       0       0
+    Huszaros            1       1       0       1       1       1
+    A_Dudas             0       0       0       1       1       1
+    Hazateres           0       1       1       0       0       0
+;

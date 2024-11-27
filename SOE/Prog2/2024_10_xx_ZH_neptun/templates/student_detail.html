@@ -1,0 +1,42 @@
+{% extends "base.html" %}
+
+{% block title %}{{student.neptun}} details{% endblock %}
+
+{% block content %}
+<a href="{{url_for('student_select')}}">Back to student selection</a>
+<h2>Student details</h2>
+Name: {{student.name}}<br>
+Neptun: {{student.neptun}}<br>
+
+{% if nameday %}
+    <hr />
+    Happy nameday! 🥳
+    <hr />
+{% endif %}
+
+
+<h3>Courses</h3>
+
+<table border="1">
+    <thead>
+        <tr>
+            <th>Course</th>
+            <th>Grade</th>
+        </tr>
+    </thead>
+    <tbody>
+        {% for course,grade in courses.items() %}
+            <tr>
+                <td>{{course}}</td>
+                {% if grade == None %}
+                    <td style="background-color: lightgray;">Not graded yet</td>
+                {% elif  grade > 1 %}
+                    <td style="background-color: green;">{{grade}}</td>
+                {% else %}
+                    <td style="background-color: red;">{{grade}}</td>
+                {% endif %}
+            </tr>
+        {% endfor %}
+</table>
+
+{% endblock %}

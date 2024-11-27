@@ -1,0 +1,18 @@
+{% extends "base.html" %}
+
+{% block title %}
+    New Event
+{% endblock %}
+
+{% block content %}
+    <h1>New Event</h1>
+    <form action="/new" method="post">
+        <input type="text" name="name" placeholder="Event name">
+        <input type="text" name="organizer_name" placeholder="Organizer name">
+        <input type="email" name="organizer_email" placeholder="Organizer email">
+        <input type="text" name="location" placeholder="Location">
+        <input type="date" name="date" placeholder="Date">
+        <input type="number" name="registration_limit" placeholder="Registration limit">
+        <input type="submit" value="Create">
+    </form>
+{% endblock %}
