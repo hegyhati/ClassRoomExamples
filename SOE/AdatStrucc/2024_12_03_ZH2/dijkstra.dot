@@ -1,0 +1,16 @@
+graph{
+    rankdir = "LR"
+    A -- B [label = "MM"]
+    A -- C [label = 56]
+    A -- D [label = 78]
+    B -- C [label = 34]
+    B -- D [label = 67]
+    C -- D [label = "DD"]
+    C -- E [label = 90]
+    D -- E [label = 45]
+    D -- F [label = 56]
+    E -- F [label = 78]
+    E -- G [label = 32]
+    F -- G [label = 21]
+
+}

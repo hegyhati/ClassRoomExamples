@@ -1,0 +1,62 @@
+{
+    "Supplies" : {
+		"Sopron": 6000,
+		"Kobanya": 12000,
+		"Pecs": 8000,
+		"Nagykanizsa": 1000
+    },
+	"Demands":{
+		"Sopron":	500,
+		"Veszprem":	2000,
+		"Gyor":	1500,
+		"Pecs":	3000,
+		"Budapest":	10000,
+		"Szeged":	4000,
+		"Debrecen":	3500,
+		"Miskolc":	2500		
+	},
+	"Distances": {
+		"Sopron" : {
+			"Sopron":	0,
+			"Veszprem":	145,
+			"Gyor":	90,
+			"Pecs":	275,
+			"Budapest":	220,
+			"Szeged":	390,
+			"Debrecen":	450,
+			"Miskolc":	400
+		},
+		"Kobanya":{
+			"Sopron":	220,
+			"Veszprem":	125,
+			"Gyor":	130,
+			"Pecs":	200,
+			"Budapest":	0,
+			"Szeged":	170,
+			"Debrecen":	220,
+			"Miskolc":	180			
+		},
+		"Pecs":{
+			"Sopron":	275,
+			"Veszprem":	160,
+			"Gyor":	250,
+			"Pecs":	0,
+			"Budapest":	200,
+			"Szeged":	185,
+			"Debrecen":	410,
+			"Miskolc":	425
+		},
+		"Nagykanizsa":{
+			"Sopron":	160,
+			"Veszprem":	130,
+			"Gyor":	175,
+			"Pecs":	140,
+			"Budapest":	210,
+			"Szeged":	310,
+			"Debrecen":	440,
+			"Miskolc":	420			
+		}
+	}
+}
+
+
