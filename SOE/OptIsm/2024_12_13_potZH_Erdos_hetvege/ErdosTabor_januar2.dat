@@ -1,0 +1,35 @@
+set Lecturers := Kubatov Sagmeister Kiss Katz Abraham Arki Hegyhati Meszaros Erdos Pinter Eles Fonyo Kocsis;
+
+set Groups := 9 10 11 12;
+
+param classes (tr) : 
+                9   10  11  12 := 
+Kubatov         1   0   0   1
+Sagmeister      1   0   2   0
+Kiss            1   1   1   0
+Katz            1   0   0   1
+Abraham         1   0   0   1
+Arki            1   0   0   1
+Hegyhati        1   0   1   0
+Meszaros        0   1   0   0
+Erdos           0   1   1   1
+Pinter          0   1   0   0
+Eles            0   1   1   0
+Fonyo           0   1   0   1
+Kocsis          0   1   1   1
+;
+
+
+param classCount := 7;
+
+param start :=
+1   14.5
+2   16.5
+3   32.5
+4   34.5
+5   40.5
+6   56
+7   57.75
+; 
+
+param classDuration := 1.5;
