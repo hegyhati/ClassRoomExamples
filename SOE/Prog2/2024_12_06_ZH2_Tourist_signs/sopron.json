@@ -1,0 +1,18 @@
+{
+    "POIs" : {
+        "Karoly parkolo" : "Nepszeru hely hetvegi kiranduloknak az auto lerakasahoz, innet indul a boszorkany tanosveny.",
+        "Deak kut" : "Egyetemistak kozkedvelt sutogetohelye.",
+        "Karoly kilato" : "Sopron jellegzees kokilatoja 360 fokos panoramaval. Belepodij.",
+        "Hetbukkfa" : "Turistajelzes gocpont a Tacsi arok / Faber ret folott. Vannak bukkfak.",
+        "Szivszanatorium" : "Buszfordulo az erdo szelen.",
+        "Sorhazdombi kilato" : "Belepodij nelkuli fabol keszult kilato panoramaval a varos szelen."
+    },
+    "routes": [
+        ["K", "-", 27, {"Szivszanatorium": 2.3, "Hetbukkfa": 10}],
+        ["Z", "-", 5.6, {"Deak kut": 2, "Karoly parkolo": 2.5} ],
+        ["S", "-", 11, {"Szivszanatorium": 1.5, "Karoly parkolo" : 5}],
+        ["S", "hszg", 1.3, {"Szivszanatorium": 0, "Karoly kilato": 1.3}],
+        ["K", "hszg", 2.5, {"Szivszanatorium": 0, "Karoly kilato": 1.6, "Karoly parkolo": 2.5}],
+        ["Z", "hszg", 1.4, {"Sorhazdombi kilato": 0, "Karoly kilato": 1.4}]
+    ]
+}
