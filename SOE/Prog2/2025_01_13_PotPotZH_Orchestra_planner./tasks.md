@@ -1,0 +1,3 @@
+ - /pieces Darabok listazasa -> /piece/id Darab reszletei
+ - /plan Hangszerenkent csoportozitva zeneszek kilistazasa, checkbox, submit -> annyi zenesszel eljatszhato darabok listazasa
+ - /musician -> zeneszek listazasa, uj zenesz hozzaadasa

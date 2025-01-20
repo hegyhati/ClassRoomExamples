@@ -1,0 +1,19 @@
+{
+    "violin": ["H. T. Tibor", "M. Lilla", "R. Maria", "S. Ivett", "Sz. Dora", "T. Eszter", "K. Zsofia", "K. Orsolya", "H. Agnes", "O. Eszter"],
+    "viola": ["Sz. Fanni", "P. Zsofia", "N. Fruzsina"],
+    "cello": ["K. Gergely", "S. Zsombor", "S. Zsuzsanna", "T. Benjamin", "R. Renata", "B. Katinka"],
+    "double bass": ["H. Kristof", "K. Kamilla"],
+    "french horn": ["B. Narcisz", "M. Peter", "K. David"],
+    "flute": ["J. Eszter", "M. Vivien", "S. Zsanett", "T. Tekla", "Z. Angelika", "G Monika", "F. Tunde"],
+    "recorder": ["T. Zsolt"],
+    "clarinet": ["B. Andras", "Cs. Eszter", "G. Bence", "H. Bettina", "T.Kitti", "L. Csaba", "Gy. Bence", "O. Gabor", "T. David"],
+    "saxophone": ["V. Julia", "H. Dora"],
+    "oboe": ["J. Klaudia", "N. Reka", "K. Benedek", "V. Franciska"],
+    "bassoon": ["D. Zsofia"],
+    "trumpet": ["D. David", "Sz. Adam", "S. Patrik", "T. Balint", "H. Tamas", "M. Norbert"],
+    "trombone": ["H. Adrian", "K. Gabor", "Sz. Gabor", "Sz. Roland"],
+    "bass trombone": ["J. Lajos"],
+    "tuba": ["K. Gergely"],
+    "piano": ["B. Krisztina", "W. Anita"],
+    "percussions" : ["H. Mate", "V. Marika", "D. Miklos", "K. Oliver"]
+}
