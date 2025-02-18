@@ -1,0 +1,38 @@
+{
+    "states" : ["s_", "s_a", "s_ab" , "s_abb", "s_abba"],
+    "alphabet" : ["a", "b", "c", "d"],
+    "transitions" : {
+        "s_" : {
+            "a" : "s_a",
+            "b" : "s_",
+            "c" : "s_",
+            "d" : "s_"
+        },
+        "s_a" : {
+            "a" : "s_a",
+            "b" : "s_ab",
+            "c" : "s_",
+            "d" : "s_"
+        },
+        "s_ab" : {
+            "a" : "s_a",
+            "b" : "s_abb",
+            "c" : "s_",
+            "d" : "s_"
+        },
+        "s_abb" : {
+            "a" : "s_abba",
+            "b" : "s_",
+            "c" : "s_",
+            "d" : "s_"
+        },
+        "s_abba" : {
+            "a" : "s_abba",
+            "b" : "s_abba",
+            "c" : "s_abba",
+            "d" : "s_abba"
+        }
+    },
+    "starting_state" : "s_",
+    "accepting_states" : ["s_abba"]
+}
