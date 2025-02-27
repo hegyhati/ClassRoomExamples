@@ -1,0 +1,58 @@
+to color :length
+    if :length < 10 [ setpencolor 10 ]
+    if :length >= 10 [ setpencolor 8 ]
+    setpensize int :length / 10 + 1
+end
+
+to tree :length :la :lm :ra :rm :rp
+    if :length > 1 [
+        make "length  :length * (1 + ((random :rp) - :rp / 2) / 100)
+        make "la  :la * (1 + ((random :rp) - :rp / 2) / 100)
+        make "ra  :ra * (1 + ((random :rp) - :rp / 2) / 100)
+        
+        color :length   
+        fd :length
+        lt :la
+        tree :length * :lm :la :lm :ra :rm :rp
+        rt :la + :ra
+        tree :length * :rm :la :lm :ra :rm :rp
+        lt :ra
+        rt 180
+        pu
+        fd :length
+        pd
+        rt 180
+    ]
+end
+
+to demo :rp
+    pu lt 90 fd 700 rt 90 pd
+    repeat 4 [  
+        tree 100 20 0.7 20 0.7 :rp
+        pu rt 90 fd 400 lt 90 pd
+    ]
+end
+
+to forest
+    pu setxy -800 400 pd
+    repeat 5 [
+        while [xcor < 700] [
+            pu fd random 20 pd
+            tree pick [80 90 100 110] pick [20 25 30] pick [0.6 0.65 0.75]  pick [20 30 35] pick [0.6 0.65 0.7] pick [0 10 20 30 40 50]
+            pu rt 180 fd random 20 lt 90 fd 100 + random 100 lt 90 pd
+        ]
+        pu setxy (random 100) - 900 ycor - 150 pd 
+    ]
+end
+
+
+to generate :count 
+    REPEAT :count [
+        cs
+        pu setxy 0 -200 pd
+        tree pick [100 110 120 130 140 150 160] pick [15 20 25 30 35] pick [0.6 0.65 0.7 0.75]  pick [15 20 30 35] pick [0.6 0.65 0.7 0.75] pick [0 10 20 30 40 50 60 70 80] 
+        WAIT 300
+    ]
+end
+
+
