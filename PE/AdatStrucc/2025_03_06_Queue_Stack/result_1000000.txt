@@ -1,0 +1,8 @@
+System.Collections.Generic.List`1[System.Int32] Push front: 57118 ms
+System.Collections.Generic.List`1[System.Int32] Pop front: 55853 ms
+System.Collections.Generic.List`1[System.Int32] Push back: 5 ms
+System.Collections.Generic.List`1[System.Int32] Pop back: 3 ms
+System.Collections.Generic.LinkedList`1[System.Int32] Push front: 39 ms
+System.Collections.Generic.LinkedList`1[System.Int32] Pop front: 7 ms
+System.Collections.Generic.LinkedList`1[System.Int32] Push back: 38 ms
+System.Collections.Generic.LinkedList`1[System.Int32] Pop back: 6 ms
