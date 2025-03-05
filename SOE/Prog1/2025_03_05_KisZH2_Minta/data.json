@@ -1,0 +1,1560 @@
+[
+  {
+    "train_id": 0,
+    "seat_resevation": false,
+    "departure": "17:27",
+    "stations": [
+      "A",
+      "G",
+      "H",
+      "J",
+      "K",
+      "L",
+      "P",
+      "Q",
+      "S",
+      "W",
+      "Y",
+      "Z"
+    ]
+  },
+  {
+    "train_id": 1,
+    "seat_resevation": false,
+    "departure": "11:42",
+    "stations": [
+      "A",
+      "C",
+      "D",
+      "E",
+      "F",
+      "H",
+      "J",
+      "P",
+      "Q",
+      "R",
+      "S",
+      "U",
+      "W",
+      "X"
+    ]
+  },
+  {
+    "train_id": 2,
+    "seat_resevation": true,
+    "departure": "22:44",
+    "stations": [
+      "F",
+      "L",
+      "R",
+      "T",
+      "Y"
+    ]
+  },
+  {
+    "train_id": 3,
+    "seat_resevation": false,
+    "departure": "20:40",
+    "stations": [
+      "A",
+      "C",
+      "F",
+      "G",
+      "R",
+      "T",
+      "U",
+      "W"
+    ]
+  },
+  {
+    "train_id": 4,
+    "seat_resevation": false,
+    "departure": "16:39",
+    "stations": [
+      "A",
+      "C",
+      "E",
+      "F",
+      "G",
+      "I",
+      "K",
+      "L",
+      "R",
+      "T",
+      "U",
+      "X",
+      "Z"
+    ]
+  },
+  {
+    "train_id": 5,
+    "seat_resevation": false,
+    "departure": "04:59",
+    "stations": [
+      "A",
+      "H",
+      "N",
+      "Q",
+      "U"
+    ]
+  },
+  {
+    "train_id": 6,
+    "seat_resevation": false,
+    "departure": "08:03",
+    "stations": [
+      "A",
+      "D",
+      "F",
+      "K",
+      "M",
+      "P",
+      "R",
+      "S"
+    ]
+  },
+  {
+    "train_id": 7,
+    "seat_resevation": true,
+    "departure": "06:58",
+    "stations": [
+      "A",
+      "B",
+      "C",
+      "D",
+      "E",
+      "F",
+      "G",
+      "I",
+      "J",
+      "O",
+      "Q",
+      "R",
+      "S",
+      "U",
+      "W"
+    ]
+  },
+  {
+    "train_id": 8,
+    "seat_resevation": false,
+    "departure": "13:53",
+    "stations": [
+      "A",
+      "C",
+      "D",
+      "G",
+      "H",
+      "I",
+      "O",
+      "P",
+      "U",
+      "V",
+      "X",
+      "Y",
+      "Z"
+    ]
+  },
+  {
+    "train_id": 9,
+    "seat_resevation": true,
+    "departure": "06:04",
+    "stations": [
+      "D",
+      "F",
+      "G",
+      "H",
+      "J",
+      "N",
+      "R",
+      "V",
+      "W",
+      "X",
+      "Y",
+      "Z"
+    ]
+  },
+  {
+    "train_id": 10,
+    "seat_resevation": true,
+    "departure": "19:02",
+    "stations": [
+      "D",
+      "G",
+      "H",
+      "N",
+      "O",
+      "W",
+      "X",
+      "Z"
+    ]
+  },
+  {
+    "train_id": 11,
+    "seat_resevation": true,
+    "departure": "13:58",
+    "stations": [
+      "G",
+      "I",
+      "J",
+      "O",
+      "Y"
+    ]
+  },
+  {
+    "train_id": 12,
+    "seat_resevation": false,
+    "departure": "09:29",
+    "stations": [
+      "D",
+      "E",
+      "G",
+      "H",
+      "J",
+      "N",
+      "O",
+      "P",
+      "Q",
+      "R",
+      "T",
+      "W",
+      "X",
+      "Z"
+    ]
+  },
+  {
+    "train_id": 13,
+    "seat_resevation": true,
+    "departure": "10:17",
+    "stations": [
+      "G",
+      "I",
+      "M",
+      "Q",
+      "T",
+      "X",
+      "Y"
+    ]
+  },
+  {
+    "train_id": 14,
+    "seat_resevation": false,
+    "departure": "13:35",
+    "stations": [
+      "C",
+      "E",
+      "F",
+      "I",
+      "J",
+      "K",
+      "L",
+      "N",
+      "R",
+      "W",
+      "Z"
+    ]
+  },
+  {
+    "train_id": 15,
+    "seat_resevation": true,
+    "departure": "06:42",
+    "stations": [
+      "B",
+      "F",
+      "H",
+      "J",
+      "R",
+      "S",
+      "U",
+      "V",
+      "W"
+    ]
+  },
+  {
+    "train_id": 16,
+    "seat_resevation": true,
+    "departure": "08:16",
+    "stations": [
+      "A",
+      "E",
+      "H",
+      "I",
+      "L",
+      "O",
+      "Y",
+      "Z"
+    ]
+  },
+  {
+    "train_id": 17,
+    "seat_resevation": true,
+    "departure": "03:14",
+    "stations": [
+      "G",
+      "I",
+      "P",
+      "T",
+      "U",
+      "W",
+      "Y"
+    ]
+  },
+  {
+    "train_id": 18,
+    "seat_resevation": false,
+    "departure": "01:07",
+    "stations": [
+      "C",
+      "F",
+      "G",
+      "I",
+      "J",
+      "L",
+      "M",
+      "P",
+      "T",
+      "V",
+      "W",
+      "Y",
+      "Z"
+    ]
+  },
+  {
+    "train_id": 19,
+    "seat_resevation": true,
+    "departure": "01:56",
+    "stations": [
+      "A",
+      "E",
+      "G",
+      "H",
+      "I",
+      "J",
+      "M",
+      "N",
+      "P",
+      "Q",
+      "U",
+      "V",
+      "W",
+      "X"
+    ]
+  },
+  {
+    "train_id": 20,
+    "seat_resevation": false,
+    "departure": "18:53",
+    "stations": [
+      "C",
+      "E",
+      "F",
+      "L",
+      "N",
+      "U",
+      "V",
+      "W",
+      "X",
+      "Z"
+    ]
+  },
+  {
+    "train_id": 21,
+    "seat_resevation": true,
+    "departure": "21:09",
+    "stations": [
+      "B",
+      "D",
+      "E",
+      "F",
+      "G",
+      "H",
+      "J",
+      "L",
+      "P",
+      "T",
+      "V",
+      "X",
+      "Y"
+    ]
+  },
+  {
+    "train_id": 22,
+    "seat_resevation": true,
+    "departure": "06:30",
+    "stations": [
+      "H",
+      "L",
+      "M",
+      "T",
+      "Y",
+      "Z"
+    ]
+  },
+  {
+    "train_id": 23,
+    "seat_resevation": true,
+    "departure": "12:21",
+    "stations": [
+      "A",
+      "B",
+      "C",
+      "D",
+      "H",
+      "M",
+      "N",
+      "Q",
+      "S",
+      "Y"
+    ]
+  },
+  {
+    "train_id": 24,
+    "seat_resevation": true,
+    "departure": "23:12",
+    "stations": [
+      "C",
+      "E",
+      "P",
+      "Q",
+      "S",
+      "T",
+      "V",
+      "X",
+      "Z"
+    ]
+  },
+  {
+    "train_id": 25,
+    "seat_resevation": true,
+    "departure": "04:21",
+    "stations": [
+      "C",
+      "O",
+      "P",
+      "S",
+      "T",
+      "Z"
+    ]
+  },
+  {
+    "train_id": 26,
+    "seat_resevation": false,
+    "departure": "08:44",
+    "stations": [
+      "C",
+      "D",
+      "M",
+      "O",
+      "P",
+      "Q",
+      "R",
+      "S",
+      "T",
+      "W",
+      "X",
+      "Z"
+    ]
+  },
+  {
+    "train_id": 27,
+    "seat_resevation": true,
+    "departure": "22:29",
+    "stations": [
+      "A",
+      "B",
+      "C",
+      "E",
+      "G",
+      "H",
+      "O",
+      "R",
+      "S",
+      "U",
+      "V",
+      "W"
+    ]
+  },
+  {
+    "train_id": 28,
+    "seat_resevation": false,
+    "departure": "13:25",
+    "stations": [
+      "A",
+      "C",
+      "F",
+      "G",
+      "I",
+      "J",
+      "K",
+      "L",
+      "N",
+      "O",
+      "Q",
+      "R",
+      "T",
+      "W",
+      "Y"
+    ]
+  },
+  {
+    "train_id": 29,
+    "seat_resevation": true,
+    "departure": "05:13",
+    "stations": [
+      "A",
+      "G",
+      "P",
+      "U",
+      "W",
+      "Y"
+    ]
+  },
+  {
+    "train_id": 30,
+    "seat_resevation": true,
+    "departure": "20:31",
+    "stations": [
+      "C",
+      "G",
+      "I",
+      "L",
+      "M",
+      "O",
+      "P",
+      "U",
+      "W",
+      "X"
+    ]
+  },
+  {
+    "train_id": 31,
+    "seat_resevation": true,
+    "departure": "00:34",
+    "stations": [
+      "A",
+      "B",
+      "E",
+      "H",
+      "I",
+      "J",
+      "M",
+      "P",
+      "S",
+      "U",
+      "X",
+      "Z"
+    ]
+  },
+  {
+    "train_id": 32,
+    "seat_resevation": true,
+    "departure": "05:20",
+    "stations": [
+      "C",
+      "F",
+      "J",
+      "L",
+      "M",
+      "P",
+      "S",
+      "X"
+    ]
+  },
+  {
+    "train_id": 33,
+    "seat_resevation": false,
+    "departure": "11:29",
+    "stations": [
+      "A",
+      "C",
+      "H",
+      "S",
+      "T",
+      "U",
+      "Z"
+    ]
+  },
+  {
+    "train_id": 34,
+    "seat_resevation": true,
+    "departure": "00:46",
+    "stations": [
+      "A",
+      "B",
+      "C",
+      "G",
+      "H",
+      "O",
+      "P"
+    ]
+  },
+  {
+    "train_id": 35,
+    "seat_resevation": true,
+    "departure": "11:53",
+    "stations": [
+      "E",
+      "I",
+      "J",
+      "K",
+      "Q",
+      "R",
+      "S",
+      "V"
+    ]
+  },
+  {
+    "train_id": 36,
+    "seat_resevation": false,
+    "departure": "10:38",
+    "stations": [
+      "B",
+      "D",
+      "E",
+      "G",
+      "H",
+      "I",
+      "J",
+      "O",
+      "P",
+      "R",
+      "S",
+      "U",
+      "W",
+      "Y",
+      "Z"
+    ]
+  },
+  {
+    "train_id": 37,
+    "seat_resevation": false,
+    "departure": "12:24",
+    "stations": [
+      "C",
+      "D",
+      "F",
+      "H",
+      "N",
+      "O",
+      "R",
+      "S"
+    ]
+  },
+  {
+    "train_id": 38,
+    "seat_resevation": false,
+    "departure": "08:30",
+    "stations": [
+      "D",
+      "E",
+      "I",
+      "K",
+      "L",
+      "Q",
+      "R",
+      "X",
+      "Y"
+    ]
+  },
+  {
+    "train_id": 39,
+    "seat_resevation": false,
+    "departure": "20:09",
+    "stations": [
+      "A",
+      "E",
+      "G",
+      "K",
+      "Q",
+      "Y"
+    ]
+  },
+  {
+    "train_id": 40,
+    "seat_resevation": true,
+    "departure": "12:10",
+    "stations": [
+      "E",
+      "I",
+      "J",
+      "N",
+      "Q",
+      "Y"
+    ]
+  },
+  {
+    "train_id": 41,
+    "seat_resevation": true,
+    "departure": "16:04",
+    "stations": [
+      "B",
+      "D",
+      "E",
+      "G",
+      "H",
+      "I",
+      "L",
+      "N",
+      "Q",
+      "W",
+      "X"
+    ]
+  },
+  {
+    "train_id": 42,
+    "seat_resevation": true,
+    "departure": "23:14",
+    "stations": [
+      "A",
+      "B",
+      "K",
+      "M",
+      "N",
+      "Q",
+      "S",
+      "U",
+      "X"
+    ]
+  },
+  {
+    "train_id": 43,
+    "seat_resevation": false,
+    "departure": "04:54",
+    "stations": [
+      "B",
+      "D",
+      "G",
+      "I",
+      "J",
+      "M",
+      "N",
+      "P",
+      "R",
+      "S",
+      "U",
+      "Y"
+    ]
+  },
+  {
+    "train_id": 44,
+    "seat_resevation": true,
+    "departure": "22:23",
+    "stations": [
+      "C",
+      "E",
+      "H",
+      "I",
+      "J",
+      "M",
+      "N",
+      "P",
+      "Q",
+      "R",
+      "S",
+      "T",
+      "U",
+      "V",
+      "Y"
+    ]
+  },
+  {
+    "train_id": 45,
+    "seat_resevation": true,
+    "departure": "07:26",
+    "stations": [
+      "A",
+      "E",
+      "G",
+      "H",
+      "J",
+      "M",
+      "O",
+      "Q",
+      "R",
+      "S",
+      "T",
+      "V"
+    ]
+  },
+  {
+    "train_id": 46,
+    "seat_resevation": true,
+    "departure": "02:29",
+    "stations": [
+      "A",
+      "B",
+      "H",
+      "J",
+      "K",
+      "L",
+      "S",
+      "U",
+      "X",
+      "Y",
+      "Z"
+    ]
+  },
+  {
+    "train_id": 47,
+    "seat_resevation": false,
+    "departure": "01:37",
+    "stations": [
+      "C",
+      "E",
+      "F",
+      "M",
+      "O",
+      "T",
+      "V",
+      "W",
+      "X"
+    ]
+  },
+  {
+    "train_id": 48,
+    "seat_resevation": true,
+    "departure": "10:26",
+    "stations": [
+      "A",
+      "C",
+      "F",
+      "I",
+      "K",
+      "N",
+      "V",
+      "W",
+      "Y",
+      "Z"
+    ]
+  },
+  {
+    "train_id": 49,
+    "seat_resevation": false,
+    "departure": "08:27",
+    "stations": [
+      "A",
+      "C",
+      "E",
+      "I",
+      "K",
+      "M",
+      "N",
+      "P",
+      "Q",
+      "R",
+      "U",
+      "Y",
+      "Z"
+    ]
+  },
+  {
+    "train_id": 50,
+    "seat_resevation": true,
+    "departure": "23:01",
+    "stations": [
+      "F",
+      "G",
+      "I",
+      "L",
+      "O",
+      "P",
+      "W",
+      "X",
+      "Z"
+    ]
+  },
+  {
+    "train_id": 51,
+    "seat_resevation": false,
+    "departure": "16:07",
+    "stations": [
+      "A",
+      "H",
+      "I",
+      "N",
+      "V",
+      "W"
+    ]
+  },
+  {
+    "train_id": 52,
+    "seat_resevation": false,
+    "departure": "13:43",
+    "stations": [
+      "E",
+      "H",
+      "J",
+      "P",
+      "Q",
+      "S",
+      "Z"
+    ]
+  },
+  {
+    "train_id": 53,
+    "seat_resevation": false,
+    "departure": "09:56",
+    "stations": [
+      "A",
+      "B",
+      "D",
+      "G",
+      "H",
+      "K",
+      "L",
+      "N",
+      "P",
+      "R",
+      "T",
+      "V",
+      "W",
+      "Z"
+    ]
+  },
+  {
+    "train_id": 54,
+    "seat_resevation": false,
+    "departure": "19:33",
+    "stations": [
+      "A",
+      "D",
+      "J",
+      "K",
+      "T",
+      "Y",
+      "Z"
+    ]
+  },
+  {
+    "train_id": 55,
+    "seat_resevation": true,
+    "departure": "04:02",
+    "stations": [
+      "A",
+      "D",
+      "F",
+      "I",
+      "J",
+      "L",
+      "O",
+      "Q",
+      "R",
+      "S",
+      "T",
+      "V",
+      "X"
+    ]
+  },
+  {
+    "train_id": 56,
+    "seat_resevation": false,
+    "departure": "22:34",
+    "stations": [
+      "A",
+      "E",
+      "F",
+      "L",
+      "Q",
+      "V",
+      "X"
+    ]
+  },
+  {
+    "train_id": 57,
+    "seat_resevation": false,
+    "departure": "02:16",
+    "stations": [
+      "F",
+      "J",
+      "K",
+      "L",
+      "S",
+      "W",
+      "Y",
+      "Z"
+    ]
+  },
+  {
+    "train_id": 58,
+    "seat_resevation": true,
+    "departure": "22:19",
+    "stations": [
+      "A",
+      "B",
+      "C",
+      "D",
+      "F",
+      "J",
+      "K",
+      "Q",
+      "R",
+      "V",
+      "W",
+      "X",
+      "Y"
+    ]
+  },
+  {
+    "train_id": 59,
+    "seat_resevation": false,
+    "departure": "12:21",
+    "stations": [
+      "A",
+      "B",
+      "E",
+      "G",
+      "H",
+      "M",
+      "Z"
+    ]
+  },
+  {
+    "train_id": 60,
+    "seat_resevation": false,
+    "departure": "05:22",
+    "stations": [
+      "A",
+      "D",
+      "G",
+      "H",
+      "I",
+      "J",
+      "K",
+      "L",
+      "N",
+      "R",
+      "T",
+      "U",
+      "X",
+      "Y"
+    ]
+  },
+  {
+    "train_id": 61,
+    "seat_resevation": false,
+    "departure": "07:49",
+    "stations": [
+      "F",
+      "M",
+      "O",
+      "Q",
+      "X"
+    ]
+  },
+  {
+    "train_id": 62,
+    "seat_resevation": true,
+    "departure": "13:58",
+    "stations": [
+      "D",
+      "H",
+      "J",
+      "K",
+      "Q",
+      "W",
+      "Z"
+    ]
+  },
+  {
+    "train_id": 63,
+    "seat_resevation": true,
+    "departure": "14:38",
+    "stations": [
+      "A",
+      "I",
+      "K",
+      "M",
+      "Q"
+    ]
+  },
+  {
+    "train_id": 64,
+    "seat_resevation": false,
+    "departure": "23:17",
+    "stations": [
+      "C",
+      "E",
+      "F",
+      "G",
+      "H",
+      "L",
+      "M",
+      "O",
+      "R",
+      "T",
+      "V",
+      "W",
+      "Y",
+      "Z"
+    ]
+  },
+  {
+    "train_id": 65,
+    "seat_resevation": false,
+    "departure": "13:06",
+    "stations": [
+      "D",
+      "H",
+      "M",
+      "P",
+      "X",
+      "Y",
+      "Z"
+    ]
+  },
+  {
+    "train_id": 66,
+    "seat_resevation": true,
+    "departure": "16:26",
+    "stations": [
+      "A",
+      "I",
+      "V",
+      "W",
+      "Z"
+    ]
+  },
+  {
+    "train_id": 67,
+    "seat_resevation": true,
+    "departure": "14:49",
+    "stations": [
+      "B",
+      "C",
+      "D",
+      "F",
+      "G",
+      "I",
+      "N",
+      "O",
+      "P",
+      "T",
+      "W",
+      "X",
+      "Y"
+    ]
+  },
+  {
+    "train_id": 68,
+    "seat_resevation": true,
+    "departure": "04:29",
+    "stations": [
+      "B",
+      "D",
+      "E",
+      "G",
+      "N",
+      "T",
+      "X"
+    ]
+  },
+  {
+    "train_id": 69,
+    "seat_resevation": false,
+    "departure": "04:01",
+    "stations": [
+      "D",
+      "F",
+      "G",
+      "I",
+      "M",
+      "O",
+      "W",
+      "Y",
+      "Z"
+    ]
+  },
+  {
+    "train_id": 70,
+    "seat_resevation": false,
+    "departure": "09:20",
+    "stations": [
+      "C",
+      "J",
+      "N",
+      "O",
+      "Q",
+      "U",
+      "Y"
+    ]
+  },
+  {
+    "train_id": 71,
+    "seat_resevation": false,
+    "departure": "16:25",
+    "stations": [
+      "B",
+      "C",
+      "D",
+      "E",
+      "H",
+      "K",
+      "N",
+      "P",
+      "Q",
+      "R",
+      "U",
+      "V",
+      "W",
+      "X"
+    ]
+  },
+  {
+    "train_id": 72,
+    "seat_resevation": true,
+    "departure": "18:29",
+    "stations": [
+      "B",
+      "E",
+      "H",
+      "Q",
+      "T",
+      "U"
+    ]
+  },
+  {
+    "train_id": 73,
+    "seat_resevation": true,
+    "departure": "02:44",
+    "stations": [
+      "C",
+      "D",
+      "F",
+      "L",
+      "Q",
+      "U",
+      "V",
+      "Y"
+    ]
+  },
+  {
+    "train_id": 74,
+    "seat_resevation": true,
+    "departure": "23:51",
+    "stations": [
+      "B",
+      "E",
+      "F",
+      "G",
+      "M",
+      "P",
+      "R",
+      "S",
+      "V"
+    ]
+  },
+  {
+    "train_id": 75,
+    "seat_resevation": true,
+    "departure": "00:43",
+    "stations": [
+      "A",
+      "B",
+      "E",
+      "H",
+      "K",
+      "N",
+      "P",
+      "Q",
+      "T",
+      "U",
+      "V",
+      "W",
+      "X",
+      "Y"
+    ]
+  },
+  {
+    "train_id": 76,
+    "seat_resevation": false,
+    "departure": "22:05",
+    "stations": [
+      "D",
+      "F",
+      "I",
+      "T",
+      "U",
+      "V"
+    ]
+  },
+  {
+    "train_id": 77,
+    "seat_resevation": false,
+    "departure": "08:51",
+    "stations": [
+      "B",
+      "C",
+      "D",
+      "F",
+      "G",
+      "H",
+      "I",
+      "J",
+      "N",
+      "O",
+      "R",
+      "W",
+      "X",
+      "Z"
+    ]
+  },
+  {
+    "train_id": 78,
+    "seat_resevation": false,
+    "departure": "09:51",
+    "stations": [
+      "A",
+      "E",
+      "G",
+      "J",
+      "L",
+      "N",
+      "O",
+      "P"
+    ]
+  },
+  {
+    "train_id": 79,
+    "seat_resevation": true,
+    "departure": "17:36",
+    "stations": [
+      "A",
+      "B",
+      "C",
+      "E",
+      "G",
+      "H",
+      "L",
+      "P",
+      "W",
+      "X",
+      "Y",
+      "Z"
+    ]
+  },
+  {
+    "train_id": 80,
+    "seat_resevation": false,
+    "departure": "19:21",
+    "stations": [
+      "A",
+      "E",
+      "G",
+      "H",
+      "I",
+      "M",
+      "N",
+      "O",
+      "P",
+      "R",
+      "V",
+      "X",
+      "Y",
+      "Z"
+    ]
+  },
+  {
+    "train_id": 81,
+    "seat_resevation": false,
+    "departure": "09:42",
+    "stations": [
+      "D",
+      "F",
+      "K",
+      "M",
+      "O",
+      "P",
+      "Q",
+      "R",
+      "V",
+      "W",
+      "X"
+    ]
+  },
+  {
+    "train_id": 82,
+    "seat_resevation": true,
+    "departure": "11:13",
+    "stations": [
+      "B",
+      "C",
+      "D",
+      "G",
+      "H",
+      "I",
+      "K",
+      "L",
+      "M",
+      "N",
+      "R",
+      "S",
+      "T",
+      "Z"
+    ]
+  },
+  {
+    "train_id": 83,
+    "seat_resevation": false,
+    "departure": "16:48",
+    "stations": [
+      "I",
+      "J",
+      "O",
+      "U",
+      "V"
+    ]
+  },
+  {
+    "train_id": 84,
+    "seat_resevation": false,
+    "departure": "03:53",
+    "stations": [
+      "A",
+      "B",
+      "E",
+      "F",
+      "G",
+      "I",
+      "P",
+      "S",
+      "T",
+      "U",
+      "V",
+      "W",
+      "X",
+      "Z"
+    ]
+  },
+  {
+    "train_id": 85,
+    "seat_resevation": false,
+    "departure": "21:36",
+    "stations": [
+      "A",
+      "E",
+      "F",
+      "I",
+      "J",
+      "K",
+      "L",
+      "R",
+      "V",
+      "W",
+      "Y"
+    ]
+  },
+  {
+    "train_id": 86,
+    "seat_resevation": false,
+    "departure": "04:12",
+    "stations": [
+      "I",
+      "K",
+      "L",
+      "R",
+      "U",
+      "Y",
+      "Z"
+    ]
+  },
+  {
+    "train_id": 87,
+    "seat_resevation": true,
+    "departure": "08:47",
+    "stations": [
+      "D",
+      "G",
+      "I",
+      "R",
+      "T",
+      "V"
+    ]
+  },
+  {
+    "train_id": 88,
+    "seat_resevation": false,
+    "departure": "06:13",
+    "stations": [
+      "A",
+      "C",
+      "G",
+      "H",
+      "J",
+      "M",
+      "N",
+      "P",
+      "Q",
+      "S",
+      "T",
+      "U",
+      "W"
+    ]
+  },
+  {
+    "train_id": 89,
+    "seat_resevation": true,
+    "departure": "16:32",
+    "stations": [
+      "B",
+      "C",
+      "E",
+      "J",
+      "K",
+      "M",
+      "P",
+      "R",
+      "T",
+      "V",
+      "W",
+      "X"
+    ]
+  },
+  {
+    "train_id": 90,
+    "seat_resevation": false,
+    "departure": "14:41",
+    "stations": [
+      "H",
+      "J",
+      "K",
+      "N",
+      "X",
+      "Z"
+    ]
+  },
+  {
+    "train_id": 91,
+    "seat_resevation": false,
+    "departure": "21:07",
+    "stations": [
+      "A",
+      "C",
+      "I",
+      "J",
+      "P",
+      "S",
+      "V",
+      "W",
+      "X"
+    ]
+  },
+  {
+    "train_id": 92,
+    "seat_resevation": true,
+    "departure": "04:48",
+    "stations": [
+      "E",
+      "H",
+      "L",
+      "N",
+      "O",
+      "Q",
+      "S",
+      "T",
+      "U",
+      "V",
+      "W",
+      "Z"
+    ]
+  }
+]
