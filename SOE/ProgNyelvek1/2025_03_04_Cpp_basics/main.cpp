@@ -11,10 +11,15 @@ int main() {
         pl.debug_list();
     } while (d!=0);
 
-    /*
-    while(!pl.is_empty()){
-        std::cout << pl.pop_front() << " ";
-    }*/
+    PrioList pl2(pl);
+    pl.push_increasing(45);
+    pl.debug_list();
+    pl2.debug_list();
+    pl2.pop_front();
+    pl.debug_list();
+    pl2.debug_list();
+    
+
 
     std::cout<<"\n";
     return 0;    

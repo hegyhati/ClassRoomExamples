@@ -7,6 +7,7 @@ struct PrioList{
     LL_item* head;
 
     PrioList();
+    PrioList(const PrioList& other);
     ~PrioList();
 
     void push_front(int value);

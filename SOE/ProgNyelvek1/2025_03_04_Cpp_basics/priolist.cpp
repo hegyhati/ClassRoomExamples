@@ -4,6 +4,14 @@ PrioList::PrioList(){
     head = nullptr;
 }
 
+PrioList::PrioList(const PrioList& other){
+    head = nullptr;
+    for (LL_item* tmp = other.head; tmp != nullptr; tmp = tmp -> next) {
+        push_front(tmp->value); // note: reverse
+    }
+}
+
+
 void PrioList::push_front(int value) {
     LL_item *pnew_item = new LL_item;  
     pnew_item->value = value;
