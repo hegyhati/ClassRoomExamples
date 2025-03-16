@@ -1,0 +1,495 @@
+[
+  {
+    "train_id": 0,
+    "seat_resevation": false,
+    "departure": "08:09",
+    "stations": [
+      "Bicske",
+      "Fertoszentmiklos",
+      "Sopron"
+    ]
+  },
+  {
+    "train_id": 1,
+    "seat_resevation": false,
+    "departure": "04:36",
+    "stations": [
+      "Sopron",
+      "Almasfuzito",
+      "Tata",
+      "Biatorbagy",
+      "Budapest-Kelenfold",
+      "Budapest-Deli"
+    ]
+  },
+  {
+    "train_id": 2,
+    "seat_resevation": true,
+    "departure": "12:16",
+    "stations": [
+      "Budapest-Kelenfold",
+      "Tatabanya",
+      "Almasfuzito",
+      "Sopron"
+    ]
+  },
+  {
+    "train_id": 3,
+    "seat_resevation": true,
+    "departure": "05:22",
+    "stations": [
+      "Budapest-Kelenfold",
+      "Bicske",
+      "Almasfuzito",
+      "Fertoszentmiklos"
+    ]
+  },
+  {
+    "train_id": 4,
+    "seat_resevation": true,
+    "departure": "07:35",
+    "stations": [
+      "Acs",
+      "Komarom",
+      "Tata",
+      "Tatabanya",
+      "Biatorbagy",
+      "Budapest-Kelenfold"
+    ]
+  },
+  {
+    "train_id": 5,
+    "seat_resevation": true,
+    "departure": "13:29",
+    "stations": [
+      "Budapest-Kelenfold",
+      "Csorna",
+      "Kapuvar",
+      "Sopron"
+    ]
+  },
+  {
+    "train_id": 6,
+    "seat_resevation": true,
+    "departure": "06:14",
+    "stations": [
+      "Fertoszentmiklos",
+      "Almasfuzito",
+      "Tatabanya",
+      "Biatorbagy"
+    ]
+  },
+  {
+    "train_id": 7,
+    "seat_resevation": true,
+    "departure": "17:38",
+    "stations": [
+      "Sopron",
+      "Csorna",
+      "Almasfuzito",
+      "Tatabanya",
+      "Bicske",
+      "Budapest-Deli"
+    ]
+  },
+  {
+    "train_id": 8,
+    "seat_resevation": true,
+    "departure": "20:06",
+    "stations": [
+      "Sopron",
+      "Fertoszentmiklos",
+      "Acs",
+      "Tata"
+    ]
+  },
+  {
+    "train_id": 9,
+    "seat_resevation": true,
+    "departure": "05:49",
+    "stations": [
+      "Budapest-Kelenfold",
+      "Biatorbagy",
+      "Tatabanya",
+      "Tata"
+    ]
+  },
+  {
+    "train_id": 10,
+    "seat_resevation": true,
+    "departure": "10:49",
+    "stations": [
+      "Fertoszentmiklos",
+      "Kapuvar",
+      "Tatabanya",
+      "Biatorbagy",
+      "Budapest-Kelenfold",
+      "Budapest-Deli"
+    ]
+  },
+  {
+    "train_id": 11,
+    "seat_resevation": true,
+    "departure": "15:58",
+    "stations": [
+      "Budapest-Kelenfold",
+      "Almasfuzito",
+      "Acs",
+      "Csorna",
+      "Kapuvar",
+      "Fertoszentmiklos"
+    ]
+  },
+  {
+    "train_id": 12,
+    "seat_resevation": false,
+    "departure": "22:57",
+    "stations": [
+      "Budapest-Kelenfold",
+      "Komarom",
+      "Gyor",
+      "Fertoszentmiklos",
+      "Sopron"
+    ]
+  },
+  {
+    "train_id": 13,
+    "seat_resevation": false,
+    "departure": "09:57",
+    "stations": [
+      "Komarom",
+      "Tatabanya",
+      "Budapest-Deli"
+    ]
+  },
+  {
+    "train_id": 14,
+    "seat_resevation": false,
+    "departure": "06:04",
+    "stations": [
+      "Almasfuzito",
+      "Gyor",
+      "Sopron"
+    ]
+  },
+  {
+    "train_id": 15,
+    "seat_resevation": true,
+    "departure": "13:46",
+    "stations": [
+      "Budapest-Kelenfold",
+      "Biatorbagy",
+      "Tata",
+      "Komarom",
+      "Gyor",
+      "Kapuvar"
+    ]
+  },
+  {
+    "train_id": 16,
+    "seat_resevation": false,
+    "departure": "17:53",
+    "stations": [
+      "Gyor",
+      "Komarom",
+      "Bicske",
+      "Budapest-Kelenfold"
+    ]
+  },
+  {
+    "train_id": 17,
+    "seat_resevation": false,
+    "departure": "05:39",
+    "stations": [
+      "Sopron",
+      "Almasfuzito",
+      "Biatorbagy",
+      "Budapest-Kelenfold",
+      "Budapest-Deli"
+    ]
+  },
+  {
+    "train_id": 18,
+    "seat_resevation": false,
+    "departure": "12:22",
+    "stations": [
+      "Tatabanya",
+      "Almasfuzito",
+      "Komarom",
+      "Acs",
+      "Fertoszentmiklos"
+    ]
+  },
+  {
+    "train_id": 19,
+    "seat_resevation": true,
+    "departure": "16:57",
+    "stations": [
+      "Biatorbagy",
+      "Bicske",
+      "Almasfuzito",
+      "Komarom",
+      "Acs",
+      "Kapuvar"
+    ]
+  },
+  {
+    "train_id": 20,
+    "seat_resevation": false,
+    "departure": "09:12",
+    "stations": [
+      "Budapest-Kelenfold",
+      "Bicske",
+      "Almasfuzito",
+      "Sopron"
+    ]
+  },
+  {
+    "train_id": 21,
+    "seat_resevation": false,
+    "departure": "11:24",
+    "stations": [
+      "Kapuvar",
+      "Almasfuzito",
+      "Tatabanya",
+      "Biatorbagy",
+      "Budapest-Kelenfold"
+    ]
+  },
+  {
+    "train_id": 22,
+    "seat_resevation": false,
+    "departure": "11:36",
+    "stations": [
+      "Bicske",
+      "Csorna",
+      "Kapuvar",
+      "Fertoszentmiklos",
+      "Sopron"
+    ]
+  },
+  {
+    "train_id": 23,
+    "seat_resevation": true,
+    "departure": "10:11",
+    "stations": [
+      "Biatorbagy",
+      "Almasfuzito",
+      "Csorna"
+    ]
+  },
+  {
+    "train_id": 24,
+    "seat_resevation": false,
+    "departure": "22:18",
+    "stations": [
+      "Biatorbagy",
+      "Almasfuzito",
+      "Gyor",
+      "Kapuvar",
+      "Fertoszentmiklos"
+    ]
+  },
+  {
+    "train_id": 25,
+    "seat_resevation": true,
+    "departure": "05:08",
+    "stations": [
+      "Budapest-Deli",
+      "Tatabanya",
+      "Komarom",
+      "Kapuvar",
+      "Fertoszentmiklos",
+      "Sopron"
+    ]
+  },
+  {
+    "train_id": 26,
+    "seat_resevation": true,
+    "departure": "06:45",
+    "stations": [
+      "Fertoszentmiklos",
+      "Kapuvar",
+      "Tatabanya",
+      "Budapest-Deli"
+    ]
+  },
+  {
+    "train_id": 27,
+    "seat_resevation": true,
+    "departure": "21:27",
+    "stations": [
+      "Kapuvar",
+      "Csorna",
+      "Gyor",
+      "Komarom",
+      "Almasfuzito",
+      "Budapest-Deli"
+    ]
+  },
+  {
+    "train_id": 28,
+    "seat_resevation": true,
+    "departure": "08:48",
+    "stations": [
+      "Fertoszentmiklos",
+      "Komarom",
+      "Tata"
+    ]
+  },
+  {
+    "train_id": 29,
+    "seat_resevation": false,
+    "departure": "12:14",
+    "stations": [
+      "Sopron",
+      "Fertoszentmiklos",
+      "Csorna",
+      "Acs",
+      "Tatabanya",
+      "Budapest-Deli"
+    ]
+  },
+  {
+    "train_id": 30,
+    "seat_resevation": false,
+    "departure": "10:13",
+    "stations": [
+      "Budapest-Deli",
+      "Bicske",
+      "Acs"
+    ]
+  },
+  {
+    "train_id": 31,
+    "seat_resevation": true,
+    "departure": "12:50",
+    "stations": [
+      "Bicske",
+      "Tata",
+      "Acs",
+      "Csorna",
+      "Fertoszentmiklos"
+    ]
+  },
+  {
+    "train_id": 32,
+    "seat_resevation": true,
+    "departure": "23:19",
+    "stations": [
+      "Kapuvar",
+      "Gyor",
+      "Komarom",
+      "Almasfuzito",
+      "Tatabanya",
+      "Budapest-Deli"
+    ]
+  },
+  {
+    "train_id": 33,
+    "seat_resevation": false,
+    "departure": "23:46",
+    "stations": [
+      "Budapest-Deli",
+      "Komarom",
+      "Gyor",
+      "Csorna",
+      "Kapuvar",
+      "Sopron"
+    ]
+  },
+  {
+    "train_id": 34,
+    "seat_resevation": false,
+    "departure": "15:12",
+    "stations": [
+      "Csorna",
+      "Komarom",
+      "Bicske",
+      "Biatorbagy",
+      "Budapest-Kelenfold"
+    ]
+  },
+  {
+    "train_id": 35,
+    "seat_resevation": false,
+    "departure": "06:24",
+    "stations": [
+      "Budapest-Kelenfold",
+      "Biatorbagy",
+      "Acs",
+      "Gyor",
+      "Kapuvar"
+    ]
+  },
+  {
+    "train_id": 36,
+    "seat_resevation": false,
+    "departure": "09:01",
+    "stations": [
+      "Budapest-Deli",
+      "Budapest-Kelenfold",
+      "Bicske",
+      "Tatabanya",
+      "Acs",
+      "Fertoszentmiklos"
+    ]
+  },
+  {
+    "train_id": 37,
+    "seat_resevation": true,
+    "departure": "07:56",
+    "stations": [
+      "Almasfuzito",
+      "Tata",
+      "Budapest-Deli"
+    ]
+  },
+  {
+    "train_id": 38,
+    "seat_resevation": false,
+    "departure": "07:42",
+    "stations": [
+      "Bicske",
+      "Acs",
+      "Kapuvar",
+      "Sopron"
+    ]
+  },
+  {
+    "train_id": 39,
+    "seat_resevation": false,
+    "departure": "04:52",
+    "stations": [
+      "Budapest-Deli",
+      "Biatorbagy",
+      "Tatabanya",
+      "Acs",
+      "Fertoszentmiklos",
+      "Sopron"
+    ]
+  },
+  {
+    "train_id": 40,
+    "seat_resevation": true,
+    "departure": "15:13",
+    "stations": [
+      "Budapest-Deli",
+      "Biatorbagy",
+      "Kapuvar",
+      "Sopron"
+    ]
+  },
+  {
+    "train_id": 41,
+    "seat_resevation": false,
+    "departure": "17:02",
+    "stations": [
+      "Tata",
+      "Almasfuzito",
+      "Komarom",
+      "Kapuvar",
+      "Sopron"
+    ]
+  }
+]
