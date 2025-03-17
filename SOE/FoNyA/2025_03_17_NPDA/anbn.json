@@ -1,0 +1,9 @@
+{
+    "terminals" : ["a", "b"],
+    "non-terminals" : ["S"],
+    "rules": [
+        ["S", ["a", "S", "b"]],
+        ["S", []]
+    ],
+    "starting-non-terminal" : "S"
+}
