@@ -1,0 +1,28 @@
+{
+    string : [
+        int, int, float, int, bool
+    ], 
+    string : int,
+    string : {
+        string : int,
+        string : {
+            string : [
+                int, int, float, int, bool
+            ], 
+            string : int,
+            string : {
+                string : int,
+                string : {
+                    string : [
+                        int, int, float, int, bool
+                    ], 
+                    string : int,
+                    string : {
+                        string : int,
+                        string : string
+                    }
+                }
+            }
+        }
+    }
+}
