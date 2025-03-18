@@ -12,7 +12,7 @@ Complex Complex::operator - () const { return Complex( - _real, - _imag ); }
 
 Complex Complex::operator + ( double r ) const {return Complex(*this)+=r; }
 Complex Complex::operator - ( double r ) const {return Complex(*this)-=r; }
-Complex Complex::operator * ( double r ) cs << c.real() onst {return Complex(*this)*=r; }
+Complex Complex::operator * ( double r ) const {return Complex(*this)*=r; }
 Complex Complex::operator / ( double r ) const {return Complex(*this)/=r; }
 
 Complex Complex::operator + ( const Complex& c ) const {
