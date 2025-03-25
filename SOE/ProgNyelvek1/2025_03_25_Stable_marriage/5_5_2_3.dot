@@ -1,0 +1,34 @@
+graph G {
+  rankdir=LR;
+  node [shape=circle];
+  "Lily" [color=pink];
+  "Ariana" [color=pink];
+  "Ivy" [color=pink];
+  "Grace" [color=pink];
+  "Paisley" [color=pink];
+  "David" [color=blue];
+  "Elijah" [color=blue];
+  "Lucas" [color=blue];
+  "Thomas" [color=blue];
+  "Samuel" [color=blue];
+  "Lily" -- "Lucas";
+  "Lily" -- "Samuel";
+  "Lily" -- "David";
+  "Ariana" -- "Thomas";
+  "Ariana" -- "Elijah";
+  "Ivy" -- "Lucas";
+  "Ivy" -- "David";
+  "Ivy" -- "Elijah";
+  "Ivy" -- "Thomas";
+  "Ivy" -- "Samuel";
+  "Grace" -- "Lucas";
+  "Grace" -- "Samuel";
+  "Grace" -- "David";
+  "Grace" -- "Elijah";
+  "Grace" -- "Thomas";
+  "Paisley" -- "Thomas";
+  "Paisley" -- "Lucas";
+  "Paisley" -- "Samuel";
+  "Paisley" -- "David";
+  "Paisley" -- "Elijah";
+}
