@@ -25,4 +25,7 @@ AdjacencyListGraph completeGraph(unsigned size);
 AdjacencyListGraph completeBipartiteGraph(unsigned size1, unsigned size2);
 AdjacencyListGraph randomGraph(unsigned size, unsigned edgecount);
 
+unsigned distance(AdjacencyListGraph graph, unsigned v1, unsigned v2);
+AdjacencyListGraph dfsTree(AdjacencyListGraph graph, unsigned v);
+
 #endif

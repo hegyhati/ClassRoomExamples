@@ -1,4 +1,5 @@
 #include "graph.h"
+#include "limits.h"
 #include "stdio.h"
 
 AdjacencyListGraph newGraph(unsigned size) {
@@ -73,8 +74,70 @@ AdjacencyListGraph randomGraph(unsigned size, unsigned edgecount) {
     AdjacencyListGraph graph = emptyGraph(size);
     unsigned v1, v2;
     while (edgecount > 0) {
-      v1 = rand() % size, v2 = rand() % size;
-      if (addEdge(graph, v1, v2)) --edgecount;
+        v1 = rand() % size, v2 = rand() % size;
+        if (addEdge(graph, v1, v2)) --edgecount;
     }
     return graph;
 }
+
+typedef enum {
+    WHITE,
+    GRAY,
+    BLACK
+} Color;
+
+unsigned distance(AdjacencyListGraph graph, unsigned v1, unsigned v2) {
+    if (v1 >= graph.vertex_count || v2 >= graph.vertex_count) return false;
+    if (v1 == v2) return 0;
+
+    unsigned distance[graph.vertex_count];
+    Color color[graph.vertex_count];
+    for (unsigned v = 0; v < graph.vertex_count; ++v) {
+        distance[v] = UINT_MAX;
+        color[v] = WHITE;
+    }
+    unsigned queue[graph.vertex_count];
+    unsigned next_push = 0, next_pop = 0;
+
+    queue[next_push++] = v1;
+    color[v1] = GRAY;
+    distance[v1] = 0;
+
+    while (next_pop < next_push) {
+        unsigned current = queue[next_pop++];
+        for (LLNode *tmp = graph.neighbor_list[current]; tmp != NULL; tmp = tmp->next)
+            if (tmp->item == v2)
+                return distance[current] + 1;
+            else if (color[tmp->item] == WHITE) {
+                distance[tmp->item] = distance[current] + 1;
+                color[tmp->item] = GRAY;
+                queue[next_push++] = tmp->item;
+            }
+        color[current] = BLACK;
+    }
+
+    return UINT_MAX;
+}
+
+void dfs(AdjacencyListGraph graph, unsigned current, Color* color, AdjacencyListGraph tree) {
+    color[current] = GRAY;
+    for (LLNode *tmp = graph.neighbor_list[current]; tmp != NULL; tmp = tmp->next)
+        if (color[tmp->item] == WHITE) {
+            addEdge(tree,current,tmp->item);
+            dfs(graph, tmp->item, color, tree);
+        }
+    color[current] = BLACK;
+}
+
+AdjacencyListGraph dfsTree(AdjacencyListGraph graph, unsigned v) {
+    AdjacencyListGraph tree = emptyGraph(graph.vertex_count);
+
+    Color color[graph.vertex_count];
+    for (unsigned v = 0; v < graph.vertex_count; ++v) color[v] = WHITE;
+
+    dfs(graph, v, color, tree);
+
+    return tree;
+}
+
+
