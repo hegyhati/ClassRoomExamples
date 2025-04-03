@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Quick sort partition</title>
+    <style>
+        .pivot {
+            background-color: aqua;
+        }
+
+        .smaller {
+            display: inline-block;
+            border: 2px dashed green;
+            background-color: lightgreen;
+            padding: 10px;
+        }
+
+        .larger {
+            display: inline-block;
+            border: 2px dashed red;
+            background-color: lightsalmon;
+            padding: 10px;
+        }
+
+        .nextsmaller {
+            background-color: rgba(144, 238, 144, 0.5);
+        }
+
+        .nextlarger {
+            background-color: rgba(250, 128, 114, 0.5);
+        }
+
+        .box {
+            display: inline-block;
+            margin: 5px;
+            padding: 5px;
+            border: 1px solid black;
+            width: 30px;
+            height: 30px;
+        }
+    </style>
+    <script>
+        let numbers = []
+        let i = -1
+        let j = 0
+        let x
+
+        function add_new_line() {
+            p = document.createElement("p")
+            smaller = document.createElement("span")
+            smaller.setAttribute("class", "smaller")
+            for (let idx = 0; idx <= i; idx++) {
+                num = document.createElement("b")
+                num.innerHTML = numbers[idx];
+                num.setAttribute("class", "box")
+                smaller.appendChild(num)
+            }
+            p.appendChild(smaller)
+            larger = document.createElement("span")
+            larger.setAttribute("class", "larger")
+            for (let idx = i + 1; idx < j; idx++) {
+                num = document.createElement("b")
+                num.innerHTML = numbers[idx];
+                num.setAttribute("class", "box")
+                larger.appendChild(num)
+            }
+            p.appendChild(larger)
+            unsorted = document.createElement("span")
+            for (let idx = j; idx < numbers.length - 1; idx++) {
+                num = document.createElement("i")
+                num.innerHTML = numbers[idx];
+
+                if (idx == j) {
+                    num.setAttribute("class", "box " + ((numbers[idx] < x) ? "nextsmaller" : "nextlarger"))
+                } else {
+                    num.setAttribute("class", "box")
+                }
+
+                unsorted.appendChild(num)
+            }
+            p.appendChild(unsorted)
+            num = document.createElement("b")
+            num.innerHTML = numbers[numbers.length - 1];
+            num.setAttribute("class", "pivot box")
+            p.appendChild(num)
+            let partition = document.getElementById("partition")
+            partition.insertBefore(p, partition.firstChild)
+        }
+
+        function add_last_line() {
+            p = document.createElement("p")
+            smaller = document.createElement("span")
+            smaller.setAttribute("class", "smaller")
+            for (let idx = 0; idx <= i; idx++) {
+                num = document.createElement("b")
+                num.innerHTML = numbers[idx];
+                num.setAttribute("class", "box")
+                smaller.appendChild(num)
+            }
+            p.appendChild(smaller)
+            num = document.createElement("b")
+            num.innerHTML = x;
+            num.setAttribute("class", "pivot box")
+            p.appendChild(num)
+            larger = document.createElement("span")
+            larger.setAttribute("class", "larger")
+            for (let idx = i + 2; idx < numbers.length; idx++) {
+                num = document.createElement("b")
+                num.innerHTML = numbers[idx];
+                num.setAttribute("class", "box")
+                larger.appendChild(num)
+            }
+            p.appendChild(larger)
+            let partition = document.getElementById("partition")
+            partition.insertBefore(p, partition.firstChild)
+        }
+
+        function start() {
+            let tnumbers = document.getElementById("numbers").value
+            numbers = tnumbers.split(",").map(x => Number(x))
+            document.getElementById("start").setAttribute("disabled", true)
+            document.getElementById("next").removeAttribute("disabled")
+            document.getElementById("numbers").setAttribute("disabled", true)
+            x = numbers[numbers.length - 1]
+            add_new_line()
+        }
+
+        function next() {
+            if (j < numbers.length - 1) {
+                if (numbers[j] < x) {
+                    i++
+                    let temp = numbers[i]
+                    numbers[i] = numbers[j]
+                    numbers[j] = temp
+                }
+                j++
+                add_new_line()
+            } else {
+                numbers[numbers.length - 1] = numbers[i + 1]
+                numbers[i + 1] = x
+
+                document.getElementById("next").setAttribute("disabled", true)
+                add_last_line()
+                return
+            }
+        }
+    </script>
+</head>
+
+<body>
+    <h1>Quick sort partition</h1>
+    <p>Enter numbers separated by commas. The last number is the pivot.</p>
+    <input id="numbers" style="width: 300px;" type="text" value="12,7,14,9,10,11,5,8,13,6,10">
+    <button id="start" onclick="start()">Do partition</button>
+    <button id="next" onclick="next()" disabled>Next</button>
+    <div id="partition">
+    </div>
+</body>
+
+</html>
