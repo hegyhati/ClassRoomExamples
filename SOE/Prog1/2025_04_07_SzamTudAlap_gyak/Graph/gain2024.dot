@@ -1,0 +1,13 @@
+graph {
+    "Miklos" -- "Zsolt"
+    "Miklos" -- "Marko"
+    "Miklos" -- "Peter"
+    "Zsolt" -- "Marko"
+    "Zsolt"  -- "Vili"
+    "Marko" -- "Levi"
+    "Virag" -- "Peter"
+    "Virag" -- "Vivi"
+    "Vivi" -- "Peter"
+    "Vili" -- "Levi"
+}
+

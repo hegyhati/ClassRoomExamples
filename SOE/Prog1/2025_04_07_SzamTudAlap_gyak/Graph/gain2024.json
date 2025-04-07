@@ -1,0 +1,11 @@
+{
+    "Miklos": ["Zsolt", "Marko", "Peter"],
+    "Zsolt": ["Miklos", "Marko", "Vili"],
+    "Marko": ["Miklos", "Zsolt", "Levi"],
+    "Virag": ["Peter", "Vivi"],
+    "Vivi": ["Peter", "Virag"],
+    "Peter": ["Miklos", "Virag", "Vivi"],
+    "Vili": ["Zsolt", "Levi"],
+    "Levi": ["Marko", "Vili"]
+}
+
