@@ -38,10 +38,10 @@ Készítsen max-kupacot az alábbi tömbből a tanult eljárással:
 ```
 [23, 11, 24, 51, 35, 19, 2, 16, 35]
 ```
-Rajzolja fel a kupac ezen állapotát, majd mindegyik alábbi lépés után is, majd háromszor törölje ki a legnagyobb elemet a kupacból, és rajzolja fel a kupac ezen állapotát.
+Rajzolja fel a kupac ezen állapotát, majd háromszor törölje ki a legnagyobb elemet a kupacból, és rajzolja fel a törlések utáni állapotokat.
 
 # Rendezések
-Nevezzen meg egy olyan rendező algoritmust, mely legrosszabb esetben $O(n^2)$ időben rendez.
+Nevezzen meg egy olyan algoritmust, mely legrosszabb esetben $O(n^2)$ időben rendez.
 
 Nevezzen meg egy **másik** rendező algoritmust, mely stabil.
 
