@@ -1,0 +1,22 @@
+graph G {
+    rankdir=LR;
+    A -- B [xlabel=1];
+    A -- C [xlabel=2];
+    A -- D [xlabel=3];
+    B -- E [xlabel=4];
+    B -- F [xlabel=5];
+    C -- G [xlabel=6];
+    C -- H [xlabel=7];
+    D -- I [xlabel=8];
+    D -- J [xlabel=9];
+    E -- F [xlabel=10];
+    E -- G [xlabel=11];
+    F -- H [xlabel=12];
+    G -- I [xlabel=13];
+    H -- J [xlabel=14];
+    I -- J [xlabel=15];
+    A -- E [xlabel=16];
+    B -- G [xlabel=17];
+    C -- I [xlabel=18];
+    D -- F [xlabel=19];
+}
