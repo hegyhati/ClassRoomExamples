@@ -1,7 +1,5 @@
 #include "game_state.hpp"
 #include <algorithm>
-#include <iterator>
-#include <functional>
 
 GameState::GameState() : boatleft(true) {
     std::fill(onleft.begin(), onleft.end(), true);
