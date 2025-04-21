@@ -1,0 +1,22 @@
+strict graph  {
+A [distance="0.00", fillcolor=black, fontcolor=white, height="1.1", label="A\n0.00", style=filled, width="1.1"];
+B [distance="3.45", fillcolor=black, fontcolor=white, height="1.1", label="B\n3.45", style=filled, width="1.1"];
+C [distance="7.89", fillcolor=gray, height="1.1", label="C\n7.89", style=filled, width="1.1"];
+D [distance="4.6", fillcolor=black, fontcolor=white, height="1.1", label="D\n4.6", style=filled, width="1.1"];
+E [distance="5.79", fillcolor=darkslategray3, height="1.1", label="E\n5.79", penwidth=4, style=filled, width="1.1"];
+F [distance="11.57", fillcolor=gray, height="1.1", label="F\n11.57", style=filled, width="1.1"];
+G [distance="7.02", fillcolor=gray, height="1.1", label="G\n7.02", style=filled, width="1.1"];
+H [distance=None, fillcolor=white, height="1.1", label="H\n∞", style=filled, width="1.1"];
+A -- B  [label="3.45"];
+A -- C  [label="7.89"];
+A -- D  [label="5.67"];
+B -- E  [label="2.34", penwidth=4];
+B -- F  [label="8.12"];
+B -- D  [label="1.11"];
+C -- G  [label="4.56"];
+C -- H  [label="6.78"];
+D -- E  [label="9.23", penwidth=4];
+E -- G  [label="1.23", penwidth=4];
+F -- G  [label="1.98"];
+G -- H  [label="3.21"];
+}

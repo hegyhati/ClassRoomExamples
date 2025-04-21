@@ -1,0 +1,15 @@
+graph G {
+    rankdir=LR;
+    A -- B [label="3.45"];
+    A -- C [label="7.89"];
+    A -- D [label="5.67"];
+    B -- E [label="2.34"];
+    B -- F [label="8.12"];
+    C -- G [label="4.56"];
+    C -- H [label="6.78"];
+    D -- E [label="9.23"];
+    F -- G [label="1.98"];
+    G -- H [label="3.21"];
+    B -- D [label="1.11"];
+    E -- G [label="1.23"];
+}
