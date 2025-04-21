@@ -8,15 +8,12 @@ using namespace std;
 
 #include "game_state.hpp"
 
-
-
 std::string_view trim(const std::string_view& str) {
     auto start = str.find_first_not_of(" ");
     if (start == std::string_view::npos) return "";
     auto end = str.find_last_not_of(" ");
     return str.substr(start, end - start + 1);
 }
-
 
 pair<optional<GameState::People>,optional<GameState::People>> fetch_people_from_string(const string_view& s) {
     const auto pos = s.find(",");
@@ -28,7 +25,6 @@ pair<optional<GameState::People>,optional<GameState::People>> fetch_people_from_
 }
 
 int main() {
-
     GameState game;
     string travellers;
     while (!game.isOver()) {

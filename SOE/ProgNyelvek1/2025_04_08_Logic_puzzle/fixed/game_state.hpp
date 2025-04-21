@@ -5,8 +5,6 @@
 #include <array>
 #include <string>
 
-
-
 class GameState {
     
 public:
