@@ -111,6 +111,7 @@ void foo(vector<int> list) {
 vector<int> myList = {1,2,3};
 foo(myList);
 magic_print(myList);
+```
 
 V4:
 ```c++
@@ -121,6 +122,7 @@ void foo(vector<int>& list) {
 vector<int> myList = {1,2,3};
 foo(myList);
 magic_print(myList);
+```
 
 V5:
 ```c++
@@ -185,7 +187,7 @@ int main() {
         for (const auto field : piece->nextFields()) {
             bool canMove = true;
             for (const auto piece2 : pieces) {
-                if (piece2.position == field && piece.color == piece2.color) canMove = false;
+                if (piece2->position == field && piece->color == piece2->color) canMove = false;
             }
             cout << "Piece can move to: " << field.column << field.row << "\n";
         }
