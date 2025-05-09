@@ -1,0 +1,33 @@
+digraph {
+    rankdir=LR;
+    B;
+    C;
+    D;
+    E;
+    F;
+    G;
+    H;
+    I;
+    J;
+    K;
+    L;
+    B -> C;
+    C -> D;
+    D -> E;
+    E -> F;
+    F -> G;
+    G -> H;
+    H -> I;
+    I -> J;
+    J -> K;
+    K -> L;
+    B -> D;
+    C -> F;
+    D -> H;
+    F -> K;
+    G -> L;
+    H -> B;
+    I -> C;
+    J -> E;
+    K -> G;
+}
