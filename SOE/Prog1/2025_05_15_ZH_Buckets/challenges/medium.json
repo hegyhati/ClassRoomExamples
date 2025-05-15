@@ -1,0 +1,5 @@
+{
+    "goal" : 10,
+    "capacities" : [22,6,9],
+    "steplimit" : 20
+}
