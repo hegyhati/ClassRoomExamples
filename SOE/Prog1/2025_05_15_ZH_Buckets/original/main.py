@@ -102,7 +102,7 @@ class Game:
 
 
     def run(self) -> bool:
-        self.__game_start = datetime.datetime.now().isoformat()
+        self.__game_start = datetime.datetime.now().isoformat().replace(":","-")
         os.makedirs(os.path.join(GAMEDIR,self.__game_start))
         self.__export_state()
         while self.__steps_remaining > 0:
