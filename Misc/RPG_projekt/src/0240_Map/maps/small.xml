@@ -1,0 +1,23 @@
+<game>
+    <map>
+##############################
+#_______________4_____2______#
+#_##################H##__###_#
+#_#_____1_________3____1111__#
+##############################
+    </map>
+    <hero name="Rosie" health="25" damage="1" defense="0" />
+    <monsters>
+        <monster type="1" name="Goblin" health="20" damage="1" defense="0" />
+        <monster type="2" name="Orc" health="30" damage="3" defense="0" />
+        <monster type="3" name="Uruk hai" health="40" damage="4" defense="2" />
+        <monster type="4" name="Wraith" health="200" damage="10" defense="5" title="Wraithslayer" />
+    </monsters>
+</game>
+
+
+
+
+
+
+

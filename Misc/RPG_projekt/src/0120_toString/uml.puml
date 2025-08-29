@@ -1,0 +1,20 @@
+@startuml
+
+class Unit {
+    - String name
+    - int health
+    - int damage
+    - int defense
+    
+    + Unit(String name, int health, int damage, int defense)
+    + boolean isAlive()
+    + void attack(Unit other)
+    + String toString()
+}
+
+class Main {
+    - static void printStatus(Unit unit1, Unit unit2)
+    + static void main(String[] args)
+}
+
+@enduml

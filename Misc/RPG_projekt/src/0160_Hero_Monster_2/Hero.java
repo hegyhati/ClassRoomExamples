@@ -1,0 +1,56 @@
+class Hero {
+    private String title = "";
+    final public String name;
+    private int health;
+    private int damage;
+    private int defense;
+    private int experience = 0;
+
+    public Hero(String name, int health, int damage, int defense) {
+        this.name = name;
+        this.health = health;
+        this.damage = damage;
+        this.defense = defense;
+    } 
+
+    public void setTitle(String newTitle) {
+        this.title = newTitle;
+    }
+
+    public String getOfficialName() {
+        return this.title.equals("") ? this.name : this.name + ", the " + this.title;
+    }
+
+    public int getHealth() {
+        return this.health;
+    }
+
+    public boolean isAlive() {
+        return this.health > 0;
+    }
+
+    public void attack(Monster monster) {
+        int damage = this.damage > monster.defense ? this.damage - monster.defense : 0;
+        monster.health -= damage;
+        if (monster.health < 0) {
+            monster.health = 0;
+        }
+        gainExperience();
+    }
+
+    private void gainExperience() {
+        this.experience++;
+        if (this.experience % 10 == 0) levelUp();
+    }
+
+    private void levelUp() {
+        this.damage++;
+        this.defense++;
+        this.health *= 1.5;
+    }
+    
+    @Override
+    public String toString() {
+        return String.format("%s (HP: %d, DMG: %d, DEF: %d)", this.name, this.health, this.damage, this.defense);
+    }
+}

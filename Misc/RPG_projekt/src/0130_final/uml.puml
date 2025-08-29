@@ -1,0 +1,24 @@
+@startuml
+
+class Unit {
+    - String title = ""
+    + final String name
+    - int health
+    - final int damage
+    - final int defense
+
+    + Unit(String name, int health, int damage, int defense)
+    + void setTitle(String newTitle)
+    + String getOfficialName()
+    + int getHealth()
+    + boolean isAlive()
+    + void attack(Unit other)
+    + String toString()
+}
+
+class Main {
+    - static void printStatus(Unit unit1, Unit unit2)
+    + static void main(String[] args)
+}
+
+@enduml

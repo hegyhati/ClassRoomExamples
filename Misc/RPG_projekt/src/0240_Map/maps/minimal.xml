@@ -1,0 +1,18 @@
+<game>
+    <map>
+########
+#_H__1_#
+########
+    </map>
+    <hero name="Rosie" health="25" damage="1" defense="0" />
+    <monsters>
+        <monster type="1" name="Goblin" health="20" damage="1" defense="0" />
+    </monsters>
+</game>
+
+
+
+
+
+
+
