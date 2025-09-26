@@ -105,7 +105,7 @@ CREATE TABLE Runners (
 ```
 Note: `RESTRICT` does not work on sqlite only PosgreSQL
 
-# 4 -> 5
+## 4 -> 5
 Each group has exactly one leader, and one person may only lead 1 group. 
 
 ```sql

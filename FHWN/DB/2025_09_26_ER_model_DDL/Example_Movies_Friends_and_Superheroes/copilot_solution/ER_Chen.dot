@@ -1,0 +1,32 @@
+
+digraph ER_Chen {
+  node [shape=box];
+  Users; Friendships; Pages; Follows; Movies; Actors; Roles; Costumes; Purchases; Offers;
+
+  node [shape=ellipse];
+  email; size; name; category; title; release_date; character_name; sent_at; expires_at; used; timestamp;
+
+  Users -> email;
+  Users -> size;
+  Pages -> name;
+  Pages -> category;
+  Movies -> title;
+  Movies -> release_date;
+  Roles -> character_name;
+  Offers -> sent_at;
+  Offers -> expires_at;
+  Offers -> used;
+  Purchases -> timestamp;
+
+  Friendships -> Users;
+  Friendships -> Users;
+  Follows -> Users;
+  Follows -> Pages;
+  Roles -> Actors;
+  Roles -> Movies;
+  Costumes -> Movies;
+  Purchases -> Users;
+  Purchases -> Costumes;
+  Offers -> Users;
+  Offers -> Costumes;
+}

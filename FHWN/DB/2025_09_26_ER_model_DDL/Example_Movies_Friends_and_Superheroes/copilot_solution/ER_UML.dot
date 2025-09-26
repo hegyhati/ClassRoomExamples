@@ -1,0 +1,27 @@
+
+digraph ER_UML {
+  node [shape=record];
+
+  Users [label="{Users|id: int\lemail: varchar\lsize: varchar\l}"];
+  Friendships [label="{Friendships|user_id: int\lfriend_id: int\l}"];
+  Pages [label="{Pages|id: int\lname: varchar\lcategory: varchar\l}"];
+  Follows [label="{Follows|user_id: int\lpage_id: int\l}"];
+  Movies [label="{Movies|id: int\ltitle: varchar\lrelease_date: date\l}"];
+  Actors [label="{Actors|id: int\lname: varchar\l}"];
+  Roles [label="{Roles|actor_id: int\lmovie_id: int\lcharacter_name: varchar\l}"];
+  Costumes [label="{Costumes|id: int\lname: varchar\lcharacter: varchar\lmovie_id: int\l}"];
+  Purchases [label="{Purchases|id: int\luser_id: int\lcostume_id: int\ltimestamp: timestamp\l}"];
+  Offers [label="{Offers|id: int\luser_id: int\lcostume_id: int\lsent_at: timestamp\lexpires_at: timestamp\lused: boolean\l}"];
+
+  Friendships -> Users;
+  Friendships -> Users;
+  Follows -> Users;
+  Follows -> Pages;
+  Roles -> Actors;
+  Roles -> Movies;
+  Costumes -> Movies;
+  Purchases -> Users;
+  Purchases -> Costumes;
+  Offers -> Users;
+  Offers -> Costumes;
+}
