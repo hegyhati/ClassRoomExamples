@@ -1,0 +1,9 @@
+Sopron --100--> Sopron 
+Pecs --40--> Pecs 
+Pecs --40--> Szeged 
+Nagykanizsa --30--> Sopron 
+Nagykanizsa --6--> Veszprem 
+Budapest --1--> Gyor 
+Budapest --170--> Budapest 
+Budapest --24--> Veszprem 
+Budapest --5--> Szeged 
