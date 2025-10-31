@@ -644,6 +644,71 @@ As with changing the PK, SQLite does not allow to add FKs in one step, one has t
 > [!IMPORTANT]
 > SQLite has another quirk... Unless the command `PRAGMA foreign_keys=ON;` is executed (per connection - we will talk about this later), it will still ignore FK contraints. 
 
-## ... 
+## Enums
 
+We still have tables, where 3NF is not violated, but still feel redundant in a way.
+There are columns, where the same *few* different (textual) values are repeated over and over. 
+They feel like *enum*s from programming languages:
+ - `status` in results
+ - `raceName` in races
 
+```sql
+SELECT COUNT(raceName) FROM races;              -- 797
+SELECT COUNT(DISTINCT raceName) FROM races;     -- 50 
+SELECT COUNT(status) FROM results;              -- 18832
+SELECT COUNT(DISTINCT status) FROM results;     -- 115
+```
+
+From the numbers it seems, that a racename is used around 16 times in average, and a status name around 150 times. 
+Similarly to the composite key issue, there is a potential to save space by moving these values to separate tables and just having an FK to them. 
+Additional benefits, reasons to do so:
+ - Maybe later we want to add other information to a status, like explanation, or additional info to a racename, etc. Then leaving them in their current tables would violate 3NF.
+ - If we later want to change the name, we only have to do it at one place. 
+ - If the same enum is used in multiple tables, it is a good idea to have a single source of truth.
+
+So, get down to it:
+
+```sql
+CREATE TABLE statuses (
+        id INTEGER PRIMARY KEY AUTOINCREMENT, 
+        name TEXT
+);
+
+INSERT INTO statuses (name)
+SELECT DISTINCT status FROM results;
+
+ALTER TABLE results ADD COLUMN status_id INTEGER;
+
+UPDATE results SET status_id = (SELECT id FROM statuses WHERE results.status = statuses.name);
+
+ALTER TABLE results DROP COLUMN status;
+```
+
+and: 
+
+```sql
+CREATE TABLE race_names (
+        id INTEGER PRIMARY KEY AUTOINCREMENT, 
+        name TEXT
+);
+
+INSERT INTO race_names (name)
+SELECT DISTINCT raceName from races;
+
+ALTER TABLE races ADD COLUMN raceName_id INTEGER;
+
+UPDATE races SET raceName_id = (SELECT id FROM race_names WHERE races.raceName = race_names.name);
+
+ALTER TABLE races DROP COLUMN raceName;
+```
+
+Again, the size decreased by a bit: 
+
+```
+bash$ ls -lh results_1980*
+3.5M results_1980.db
+1.9M results_1980_2NF.db
+1.8M results_1980_3NF.db
+1.4M results_1980_3NF_driver_id.db
+1.2M results_1980_3NF_driver_id_enums.db
+```
