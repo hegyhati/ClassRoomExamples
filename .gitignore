@@ -32,7 +32,11 @@
 *.class
 *.jar
 
+# Rust files
+target/
+Cargo.lock
 
 *__pycache__*
 
 *.vscode
+
