@@ -1,3 +1,7 @@
+<style>
+img { background-color: rgba(255, 255, 255, 0.85); padding:10px}
+</style>
+
 ## Kollatz conjecture
 
 1. Start with any (positive integer) number
@@ -412,25 +416,94 @@ Which we don't want to draw ever again, so... replace it with a gray box, and le
 
 ## But... which input to chose? 
 
-=> Again, a MUX
+So, until now we assumed that we simply have the input. 
+But life is not that easy, there are a few registers (4 in our case), and based on the bits that address the registers, we have to direct them to `INPUT1` or `INPUT2` of the ALU. 
+
+We can easily do that with our trusty MUXes, the only difference is that the variant with the 2-bit selector will be enough. 
+Two more things:
+  1. Just as we can do a 1-bit MUX with `n` selectors, we can do an 8-bit MUX as well. It is nothing else, just 8 1-bit MUX-es that are fed the same select signals. Just as we did in case of the output before. So, from now on, we allow ourselfes to use 8-bit MUX. 
+  2. Drawing 8 input lines all the time is tedious, so from this point onwards, a very wide line with a dark gray core will always denote 8 of them together.
+
+With these visualizations the inside of the ALU becomes much simpler to look at:
+
+![ALU inside simplified](./Circuits/ALU3.svg)
+
+So, selecting the register for inputs is rather easy this way:
+
+![CPU.. like thingy](./Circuits/CPU.svg)
+
+Hm... selectors got renamed to `I0`, `I1`, etc. 
+And we even have an `I7` that is not used at all.
+And all of them have a fancy gradient background... why?!
+
+Well, because those are exactly the 1 byte instructions that we planned ages ago. 
+So we are almost supporting 5 out of 8 instructions we planned. 
+We can even put the last 2 figures together and it would still not look (that) ugly:
+
+![CPU.. like thingy 2](./Circuits/CPU2.svg)
+
+## Registers?!
+
+The sharp eyed may have noticed that registers are the only gray shapes for which we actually did not provide internals based on simple logic gates. 
+
+Registers behave differently than gray boxes before in a very important way: **they hold the value**, and kind of constantly output it. 
+Nothing we have seen so far is capable of this.
+Everything had inputs and outputs, and things *flowed* in one direction. 
+If the input was changed, the output changed immediately (not really, propagation delay, but postpone this discussion.)
+
+If we look at any of our previous designs, we could order all the logic gates, boxes from left to right in such a way, that the information *flows* from left to right only. 
+This is about to change, as the output actually must be stored in the registers, so `O` in our last figure must be actually somehow (later..) connected to `DAR`, `ATH`, `POR` and `ARA`. 
+Which will make a loop.
+
+But then the question comes up: isn't this gonna cause problems?
+If we want to add `DAR` to `ATH` and store it in `ATH`, it will happen, but... then `ATH` will have a new value, so then the addition happens again, and... 
+
+If a programmer sees `x = x + 1` then accept it as an instruction, that happens **once**. 
+If a mathematician sees `x = x + 1`, that is an equation that has no solution.
+The mathematician thinks in a descriptive, static system, the programmer has a step-by-step procedural mindset. (in this case).
+
+And the sad truth is, that combinational networks (all what we did so far) are described by truth tables, logical functions and are exaclty that "mathy" static things. 
+So we would need something to move away from that, and introduce *timing* or *steps*, and this is where flip-flops and clock signals come to the rescue. 
+
+Surprisingly... they are implemented by making loops in our network:
+
+https://www.build-electronic-circuits.com/d-latch/
 
 ## And where does the output go? 
 
-=> Demux
+=> Decoder
 
-## Now, let's do the registers
 
-=> SR flip-flop, gates, transistors, and whatnot (https://www.build-electronic-circuits.com/d-latch/)
-=> D flip-flop
+## RAM?
 
-https://www.build-electronic-circuits.com/how-transistors-work/
+## Instruction counter and others.
 
+
+
+> [!Caution]
+> This is definitely NOT how a real CPU looks like on the inside. 
+> For one thing, AND and OR gates with CMOS transistors are more expensive than NOR or NAND gates.
+> Also, things are much more integrated, instruction pipelining, caches, etc. 
+
+The purpose of this whole journey was not to show how modern, highly tweaked CPUs look like based on decades of research and experience.
+The goal is to illustrate, that *there is no magic*, really everything can be built up from these small building blocks. 
+
+ 1. source code is just compiled (or interpreted) into machine code by tools you will learn about (or at least the basics) in the 4th semester. Until then, just trust us, that it is also not magic (jsut a lot of math, as usual).
+ 2. If we have a machine code, we can build a machine that actually executes that code based on logic gates, if we have them
+
+You might say, that logic gates are still just theoretical concepts on paper, they don't grow on trees. 
+And you are absolutely right.
+But logic gates can actually be realized physically with transistors: 
 https://www.allaboutelectronics.org/cmos-logic-gates-explained/
 
+But how do these things work?
+https://www.build-electronic-circuits.com/how-transistors-work/
 https://www.wevolver.com/article/how-do-mosfets-work
 
+These are already outside of the general scope of a CS program, but if you are interested, Electrical Engineer programs definitely have classes detailing this.
+
+And you could go further, inspecting things in a transistor on a material / atomic level, then maybe even ask how those things work, and you are on a good track to become a theoretical physicist. 
 
 
-
-
-
+> [!TIP]
+> A highly recommended channel if someone is interested in low level stuff like these: [Core Dumped](https://www.youtube.com/@CoreDumpped).
