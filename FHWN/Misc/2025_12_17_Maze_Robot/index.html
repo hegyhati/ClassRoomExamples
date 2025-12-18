@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Maze robot with gates</title>
+    <style>
+        #overview, #circuit {
+            width: 90%;        
+            max-width: 400px; 
+            height: auto;      
+            display: inline;  
+            border: 2px solid black;
+        }
+        #overview .wall {
+            width: 1px; 
+            height: 1px; 
+            fill: brown; 
+            stroke-width: 0.1;
+            stroke: black;
+        }
+        #overview .yes, #circuit rect.yes, #circuit circle.yes {
+            fill: red;
+        }
+        #overview .no, #circuit rect.no, #circuit circle.no {
+            fill: lightblue;
+        }
+        #circuit rect {
+            width: 10px;
+            height: 10px;
+        }
+        #circuit line, #circuit polyline {
+            stroke-width: 2;
+            fill: none;
+        }
+        #circuit circle.yes, #circuit circle.no {
+            r: 2.5px;
+        }
+        #circuit line.yes, #circuit polyline.yes  {
+            stroke: red;
+        }
+        #circuit line.no, #circuit polyline.no {
+            stroke: lightblue;
+        }
+        #circuit polygon, #circuit rect {
+            fill: white;
+            stroke: black;
+            stroke-width: 1;
+        }
+        #circuit text {
+             text-anchor: middle;
+             dominant-baseline: middle;
+             font-size: 6px;
+        }
+
+    </style>
+</head>
+<body>
+    <svg id="overview" viewbox="0 0 20 20">
+        <g id="robot">
+            <polygon id="front" points="0.4,-0.1 0.6,-0.1 0.5,0.5" stroke="blue" stroke-width="0.02"/>
+            <polygon id="right" points="1.1, 0.4 1.1,0.6 0.5,0.5" stroke="blue" stroke-width="0.02"/>
+            <polygon id="rightback" points="1.1, 1 1.1,1.6 0.5,0.5" stroke="blue" stroke-width="0.02"/>
+            <rect x="0.2" y="0.2" width="0.6" height="0.6" fill="black" rx="0.2" ry="0.2"/>
+            <polygon points="0.35,0.65 0.65,0.65 0.5,0.3" fill="white"/>
+        </g>
+    </svg>
+    <svg id="circuit" viewbox="-10 -10 160 100">
+        <polyline class="F no" points="5,15 15,15 15,20" /> <circle class="F no" cx="5" cy="15" /> 
+        <polyline class="R no" points="25,15 35,15 35,20" /> <circle class="R no" cx="25" cy="15" /> 
+        <polyline class="B no" points="45,15 55,15 55,20" /> <circle class="B no" cx="45" cy="15" />        
+        <line class="nF no" x1="15" y1="35" x2="70" y2="35" /> <circle class="nF no" cx="15" cy="35" /> 
+        <line class="R no" x1="25" y1="40" x2="70" y2="40" /> <circle class="R no" cx="25" cy="40" />
+        <polyline class="nF-and-R no" points="80,37.5 85,37.5 85,42.5 90,42.5" />
+        <line class="nF no" x1="15" y1="50" x2="70" y2="50" /> <circle class="nF no" cx="15" cy="50" /> 
+        <line class="nB no" x1="55" y1="55" x2="70" y2="55" /> <circle class="nB no" cx="55" cy="55" /> 
+        <polyline class="nF-and-nB no" points="80,52.5 85,52.5 85,47.5 90,47.5" />
+        <line class="nF-and-R-or-nF-and-nB no" x1="100" y1="45" x2="110" y2="45" />
+
+        <line class="F no" x1="5" y1="70" x2="90" y2="70" /> <circle class="F no" cx="5" cy="70" /> 
+        <line class="nR no" x1="35" y1="80" x2="70" y2="80" /> <circle class="nR no" cx="35" cy="80" /> 
+        <line class="B no" x1="45" y1="85" x2="70" y2="85" /> <circle class="B no" cx="45" cy="85" />   
+        <polyline class="nR-and-B no" points="80,82.5 85,82.5 85,75 90,75" />
+        <line class="F-or-nR-and-B no" x1="100" y1="72.5" x2="110" y2="72.5" /> 
+
+        <line class="F no" x1="5" y1="2" x2="5" y2="70" />
+        <line class="R no" x1="25" y1="2" x2="25" y2="40" />
+        <line class="B no" x1="45" y1="2" x2="45" y2="85" />
+        <line class="nF no" x1="15" y1="26" x2="15" y2="50" />
+        <line class="nR no" x1="35" y1="26" x2="35" y2="80" />
+        <line class="nB no" x1="55" y1="26" x2="55" y2="55" />        
+
+        <rect class="F no" x="0" y="0"/> <text x="5" y="5">F</text> 
+        <rect class="R no" x="20" y="0"/> <text x="25" y="5">R</text>
+        <rect class="B no" x="40" y="0"/> <text x="45" y="5">B</text>
+
+        <polygon points="11,20 19,20 15,25" /> <circle cx="15" cy="26" r="1" stroke="black" strokce-width="0.5" fill="white"/> 
+        <polygon points="31,20 39,20 35,25" /> <circle cx="35" cy="26" r="1" stroke="black" strokce-width="0.5" fill="white"/> 
+        <polygon points="51,20 59,20 55,25" /> <circle cx="55" cy="26" r="1" stroke="black" strokce-width="0.5" fill="white"/> 
+
+        <rect x="70" y="32.5" /> <text x="75" y="37.5">&</text>
+        <rect x="70" y="47.5" /> <text x="75" y="52.5">&</text>
+        <rect x="90" y="40" /> <text x="95" y="45">≥1</text>
+        <rect class="nF-and-R-or-nF-and-nB no" x="110" y="40"/> <text x="115" y="45">▶</text> 
+
+        <rect x="70" y="77.5" /> <text x="75" y="82.5">&</text>
+        <rect x="90" y="67.5" /> <text x="95" y="72.5">≥1</text>
+        <rect class="F-or-nR-and-B no" x="110" y="67.5"/> <text x="115" y="72.5">↷</text> 
+
+    </svg>
+
+    <button id = "yeppeee" onclick="yeppeee()">Yeppeee</button>
+    <script>
+        maze = {
+            map : [
+                "##FF################",  
+                "##  ##            ##",  
+                "##  ##            ##",  
+                "##  ############  ##",  
+                "##  ############  ##",  
+                "##                ##",  
+                "##                ##",  
+                "##############  ####",  
+                "##  ##########  ####",  
+                "##  ###         ####",  
+                "##  ###         ####",  
+                "##  ###  ###########",  
+                "##                ##",  
+                "##                ##",  
+                "##  ###########   ##",  
+                "##  ##   ######   ##",  
+                "##  ##   ######   ##",  
+                "##  ##            ##",  
+                "##  ##            ##",  
+                "## S################"  
+            ],
+            isWall(x,y) {
+                if (x < 0 || x > 19 || y < 0 || y > 19) return false;
+                return this.map[y][x] == "#";
+            }
+        }
+
+        robot = {
+            pos : {x: 0, y: 0},
+            rightturns : 0,
+            proximity : {
+                front: false,
+                right: false,
+                rightback: false
+            },
+            svg : document.getElementById("robot"),
+            svgSensors : {
+                front: document.getElementById("front"),
+                right: document.getElementById("right"),
+                rightback: document.getElementById("rightback")
+            },
+            setPosition(x,y,rightturns) {
+                this.pos = {x: x, y: y};
+                this.rightturns = rightturns;
+                this.update();
+            },
+            forward() {
+                switch(this.rightturns%4) {
+                    case 0: 
+                        this.pos.y--;
+                        break;
+                    case 1: 
+                        this.pos.x++;
+                        break;
+                    case 2: 
+                        this.pos.y++;
+                        break;
+                    case 3: 
+                        this.pos.x--;
+                        break;
+                }
+                this.update();
+            },
+            turn() { 
+                this.rightturns++; 
+                this.update();
+            },
+            autoinomousMove() {
+                F = this.proximity.front;
+                R = this.proximity.right;
+                B = this.proximity.rightback;
+                if ( !F && R || !F && !B) this.forward();
+                else if ( F || !R && B)   this.turn();
+                else console.log("Something is fishy around here.")
+            },
+            update() {
+                switch(this.rightturns%4) {
+                    case 0: 
+                        this.proximity.front     = maze.isWall(this.pos.x  , this.pos.y-1);
+                        this.proximity.right     = maze.isWall(this.pos.x+1, this.pos.y  );
+                        this.proximity.rightback = maze.isWall(this.pos.x+1, this.pos.y+1);
+                        break;
+                    case 1: 
+                        this.proximity.front     = maze.isWall(this.pos.x+1, this.pos.y  );
+                        this.proximity.right     = maze.isWall(this.pos.x  , this.pos.y+1);
+                        this.proximity.rightback = maze.isWall(this.pos.x-1, this.pos.y+1);
+                        break;
+                    case 2: 
+                        this.proximity.front     = maze.isWall(this.pos.x  , this.pos.y+1);
+                        this.proximity.right     = maze.isWall(this.pos.x-1, this.pos.y  );
+                        this.proximity.rightback = maze.isWall(this.pos.x-1, this.pos.y-1);
+                        break;
+                    case 3: 
+                        this.proximity.front     = maze.isWall(this.pos.x-1, this.pos.y  );
+                        this.proximity.right     = maze.isWall(this.pos.x  , this.pos.y-1);
+                        this.proximity.rightback = maze.isWall(this.pos.x+1, this.pos.y-1);
+                        break;
+                }
+                
+                transform = `translate(${this.pos.x},${this.pos.y}) rotate(${90*this.rightturns} 0.5 0.5)`                
+                this.svg.setAttribute("transform", transform);
+                this.svgSensors.front.removeAttribute("class");
+                this.svgSensors.front.setAttribute("class", this.proximity.front ? "yes" : "no");
+                this.svgSensors.right.removeAttribute("class");
+                this.svgSensors.right.setAttribute("class", this.proximity.right ? "yes" : "no");
+                this.svgSensors.rightback.removeAttribute("class");
+                this.svgSensors.rightback.setAttribute("class", this.proximity.rightback ? "yes" : "no");
+            },
+        }
+
+
+        const wall = document.createElementNS("http://www.w3.org/2000/svg", "rect");
+        wall.setAttribute("class", "wall");
+        for (const [r, line] of maze.map.entries()) {
+            for (const [c,v] of Array.from(line).entries()) {
+                if (v=="#") {
+                    w = wall.cloneNode();
+                    w.setAttribute("x", c);
+                    w.setAttribute("y", r);
+                    document.getElementById("overview").appendChild(w);
+                } else if (v=="S") {
+                    robot.setPosition(c,r,0);
+                } 
+            }
+        } 
+
+        function updateCircuit() {
+            function set(c, value) {
+                from = value ? "no" : "yes";
+                to = value ? "yes" : "no";
+                document.querySelectorAll(`#circuit .${c}`).forEach(e => e.classList.replace(from,to));
+            }
+            F = robot.proximity.front;
+            R = robot.proximity.right;
+            B = robot.proximity.rightback;
+
+            set("F",F); set("nF",!F);
+            set("R",R); set("nR",!R);
+            set("B",B); set("nB",!B);
+            set("nF-and-R", !F && R);
+            set("nF-and-nB", !F && !B);
+            set("nF-and-R-or-nF-and-nB", !F && R || !F && !B);
+            set("nR-and-B", !R && B);
+            set("F-or-nR-and-B", F || !R && B);
+
+        }
+        updateCircuit();
+
+        function yeppeee() {
+            robot.autoinomousMove();
+            updateCircuit();
+            if(maze.map[robot.pos.y][robot.pos.x]=="F") 
+                document.getElementById("yeppeee").setAttribute("disabled", null);
+
+        }
+
+    </script>
+</body>
+</html>
