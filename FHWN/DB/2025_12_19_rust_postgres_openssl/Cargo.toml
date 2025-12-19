@@ -1,0 +1,10 @@
+[package]
+name = "prust"
+version = "0.1.0"
+edition = "2024"
+
+[dependencies]
+postgres = { version = "0.19", features = ["with-chrono-0_4"] }
+postgres-openssl = "0.5" 
+openssl = "0.10"
+chrono = "0.4"
