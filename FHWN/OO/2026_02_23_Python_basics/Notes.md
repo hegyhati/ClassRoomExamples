@@ -57,7 +57,7 @@ Aber das ist nicht wirklich wichtig für uns jetzt, was wichtiger ist:
 
 ### 💬 Interpretierte Sprache?
 
-Als wir in der Klasse "Grundlage der Informatik" [gelernt haben](../../Misc/2025_11_05_GDI_Flipflops_CPU/notes.md) gelernt haben, dass der Computer Machinencode benötigt, um ausgeführt werden zu können. 
+Wie wir in der Klasse "Grundlage der Informatik" [gelernt haben](../../Misc/2025_11_05_GDI_Flipflops_CPU/notes.md), der Computer benötigt Machinencode, um ausgeführt werden zu können. 
 Wir haben gesehen, wie ein C-code in Machinencode umgewandelt wird.
 Dieser Prozess heißt Kompilierung, und das Program, das dies macht, nennt man Compiler.
 
@@ -118,7 +118,7 @@ Jedes Mal, wenn der Programmierer eine Anweisung gibt,
 
 ### 💬 Wie sieht das aus?
 
-Öffne ein Terminal, gib `python3` (oder `python` für Windows) ein und drücke die Eingabetaste.
+Öffne ein Terminal, gib `python3` (oder `python` für Windows) ein und drücke <kbd>Enter</kbd>.
 Du solltest etwas wie das hier sehen:
 
 ```
@@ -155,7 +155,7 @@ SyntaxError: invalid syntax
 >>>
 ```
 
-Die vierte anweisung führt zu einem syntaktischen Fehler, weil `int x = 3;` C-Code und kein Python ist. 
+Die vierte Anweisung führt zu einem syntaktischen Fehler, weil `int x = 3;` C-Code und kein Python ist. 
 Der Fehler wird erklärt, aber danach können wir mit einer anderen Anweisung fortfahren.
 
 ### 💬 Ist das so, wie wir Python benutzen werden?
@@ -168,7 +168,7 @@ REPL ist sehr nützlich und praktisch, wenn du etwas schnell ausprobieren möcht
 Es ist nicht nötig, eine ganze Quelldatei zu erstellen - öffne einfach schnell ein Terminal, gib den Code in und sieh, ob es (wie beabsichtigt) funktioniert oder nicht.
 
 > [!TIP]
-> Es ist gut, während des PRogrammierens eine REPL immer geöffnet zu haben, damit sie immer griffbereit ist. 
+> Es ist gut, während des Programmierens eine REPL immer geöffnet zu haben, damit sie immer griffbereit ist. 
 
 > [!NOTE]
 > Es gibt andere Situationen, in denen eine REPL sehr nützlich ist, und die von Dataanalysten verwendeten [Jupyter Notebooks](https://jupyter.org/) nutzen eine ähnliche Methodologie.
@@ -356,5 +356,18 @@ Um die Situation vollständig zu verstehen, sollten wir über den Elefant im Rau
 
 ## Typen in Python
 
+Wie C, Python hat einige grudnlegende Variabletypen:
+
+| Typname | Beschreibung | Beispielwerte | 
+| --- | --- | --- |
+| `int` | Ganze Zahlen | `0`, `1`, `-3548`, `9_999_999_999_999`, `0b01110`, `0xBAB3` | 
+| `float` | Fließkommazahlen |  `3.14`, `-4.2`, `.3`, `100.0`, `6.3E23` | 
+| `str` | Zeichenketten | `"foo"`, `'bar'` | 
+| `bool` | Logische Werte | `True`, `False` | 
+| `complex` | Komplexe Zahlen | `4+5j`, `1.2-4.5j` | 
+| `bytes` | Bytefolgen | `b"foobar"`, `b"\xcc\xa2"` |
+| `NoneType` | *Nulltyp* | `None` | 
+
+Es gibt noch andere, aber diese sind für uns im Moment genug.
 
 
