@@ -370,4 +370,138 @@ Wie C, Python hat einige grudnlegende Variabletypen:
 
 Es gibt noch andere, aber diese sind für uns im Moment genug.
 
+### 💬  Meistens ist es ähnlich wie in C. `int` / `float` / `bool` scheinen dasselbe zu sein. Gibt es `long` / `short` / `unsigned int` / `double` usw.?
 
+Nein, und z.B. `int` ist auch ein bißchen anders. 
+In Python kann man beliebig große Zahlen speichern.
+Es gibt andere Unterschiede, aber wir lassen das fürs spätere Lernen. 
+
+### 💬  Abgesehen von diesen Unterschieden scheint es immer noch ziemlich ähnlich zu C zu sein...
+
+Ja.... aber der Typ einer Variable ist dynamisch.
+
+### 💬  Dynamisch?
+
+Es bedeutet, daß der Typ bei jeder Zuweisung ge andert werden kann:
+
+```python
+>>> x = 3 
+>>> type(x)
+<class 'int'>
+>>> x = 2.5
+>>> type(x)
+<class 'float'>
+>>> x = "Now I'm a string"
+>>> type(x)
+<class 'str'>
+>>> 
+```
+
+> [!Tip] 
+> `type` ist eine Funktion, die den Typ der Variable (oder des Ausdrucks) zurückgibt.
+> Das kann oft praktisch sein.
+
+Da sich der Typ ändern kann, muss man den Typ (und die Variable) nicht zuerst wie in C deklarieren.
+
+### 💬  Muss nicht oder kann nicht?
+
+Mann kann den Typ annotieren:
+```python
+x : int = 3
+```
+
+Aber die Annotierung wird ähnlich wie Kommentare bei der Interpreter verworfen.
+Eine Annotierung ändert den Ablauf des Codes überhaupt nicht:
+
+```python
+>>> pi : int = 3.14
+>>> type(pi)
+<class 'float'>
+```
+
+### 💬  Dann welchen Sinn hat eine Annotation überhaupt?
+
+Man kann die Annotierung für statische Typprüfungen, zum Beispiel mit mypy, verwenden.
+Wir werden später darüber lernen, aber eine gute Faustregel:
+
+> [!Tip] 
+> Verwende immer die Typ-Annotierungen für Funktionargumente und Rückgabewerte.
+
+Nun lernen wir grundlegende Operationen auf diesen Basistypen.
+
+## Grundlegende Operationen
+
+### Operationen auf `int`
+
+Addition, Subtraktion und Multiplikation funktionieren wie gewohnt:
+
+```python
+>>> 3 + 3
+6
+>>> 4 - 5
+-1
+>>> 6 * 7
+42
+```
+
+Aber die Division (seit Python 3) ist ein bisschen anders:
+
+```python
+>>> 10 / 2
+5.0
+>>> 10 // 2
+5
+```
+
+`/` ist eine echte Division, die ein float zurückgibt. Für Ganzzahldivision muss man `//` verwenden.
+
+Es ist auch bequem, Potenzen (und damit Wurzeln) zu berechnen:
+
+```python
+>>> 2 ** 8
+256
+>>> 4 ** 0.5
+2.0
+```
+
+Potenzen mit Brüchen geben immer einen `float` zurück. 
+Wenn man das in Ganzzahlen umwandeln möchte, muss man die Funktion `int()` verwenden:
+
+```python
+>>> int(4 ** 0.5)
+2
+```
+
+Das Gegenstück zu `//` ist der Modulo-Operator:
+
+```python
+>>> 42 // 5
+8
+>>> 42 % 5
+2
+```
+
+Alle diese Operationen haben eine zugehörige Zuweisungsvariante, das heißt: Statt `variable = variable ⊙ nummer` kann man einfach `variable ⊙= nummer` für jede Operation schreiben:
+
+```python
+>>> x = 1
+>>> x *= 2
+>>> x
+2
+>>> x += 3
+>>> x
+5
+>>> x //= 2
+>>> x
+2
+>>> x %= 2
+>>> x
+0
+```
+
+> [!Important] 
+> Es gibt kein `x++` oder `++x` in Python. 
+> Man muss `x += 1` verwenden.
+> Der Grund dafür wird besprochen, wenn wir lernen, wie Python Variablen im Speicher verwaltet.
+
+### Operationen auf `float`
