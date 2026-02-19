@@ -361,7 +361,7 @@ Wie C, Python hat einige grudnlegende Variabletypen:
 | Typname | Beschreibung | Beispielwerte | 
 | --- | --- | --- |
 | `int` | Ganze Zahlen | `0`, `1`, `-3548`, `9_999_999_999_999`, `0b01110`, `0xBAB3` | 
-| `float` | Fließkommazahlen |  `3.14`, `-4.2`, `.3`, `100.0`, `6.3E23` | 
+| `float` | Fließkommazahlen |  `3.14`, `-4.2`, `.3`, `100.0`, `6.3E23`, `inf`, `nan` | 
 | `str` | Zeichenketten | `"foo"`, `'bar'` | 
 | `bool` | Logische Werte | `True`, `False` | 
 | `complex` | Komplexe Zahlen | `4+5j`, `1.2-4.5j` | 
@@ -504,4 +504,153 @@ Alle diese Operationen haben eine zugehörige Zuweisungsvariante, das heißt: St
 > Man muss `x += 1` verwenden.
 > Der Grund dafür wird besprochen, wenn wir lernen, wie Python Variablen im Speicher verwaltet.
 
+Nicht zuletzt, die Vergleiche <, >, <=, >=, == und != sind ebenfalls verfügbar, und geben ein `bool` zurück.
+
 ### Operationen auf `float`
+
+Die Operatoren `+`,`-`,`*`,`/`, und sogar `**` und `%` funktionieren genauso wie für Ganzzahlen.
+Die Zuweisungvarianten und die Vergleiche sind ebenfalls verfügbar. 
+
+> [!TIP]
+> Das Paket [`math`](https://docs.python.org/3/library/math.html) stellt nützliche zusätzliche Funktionen und Konstanten für Gleitkommazahlen (und einige für Ganzzahlen auch) bereit.
+
+### Operationen auf `str`
+
+Vielleicht ist die wichtigste String‑Operation die Konkatenation:
+
+```python
+>>> "lorem"+"ipsum"
+'loremipsum'
+>>> "2" + "3"
+'23'
+```
+
+Der Operator `*` kann verwendet werden, um Strings zu vervielfachen:
+
+```python
+>>> "=" * 10
+'=========='
+>>> 6 * " - "
+' -  -  -  -  -  - '
+>>> "na " * 7 + "Batman" + 3 * "!"
+'na na na na na na na Batman!!!'
+```
+
+`[idx]` kann verwendet werden, um auf einzelne Zeichen zuzugreifen:
+
+```python
+>>> "Donaudampfschifffahrtsgesellschaftskapitän"[0]
+'D'
+>>> "Donaudampfschifffahrtsgesellschaftskapitän"[1]
+'o'
+>>> "Donaudampfschifffahrtsgesellschaftskapitän"[2]
+'n'
+>>> "Donaudampfschifffahrtsgesellschaftskapitän"[50]
+Traceback (most recent call last):
+  File "<python-input-29>", line 1, in <module>
+    "Donaudampfschifffahrtsgesellschaftskapitän"[50]
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^
+IndexError: string index out of range
+```
+
+Eine nützliche Eigenschaft dieses Operators ist, dass man auch negative Indizes verwenden kann:
+
+```python
+>>> "zurück"[-1]
+'k'
+>>> "zurück"[-2]
+'c'
+>>> "zurück"[-42]
+Traceback (most recent call last):
+  File "<python-input-32>", line 1, in <module>
+    "zurück"[-42]
+    ~~~~~~~~^^^^^
+IndexError: string index out of range
+```
+
+Eckige Klammern sind mit String‑Slicing noch mächtiger:
+
+```python
+>>> "Zeichen ab dem fünften Index."[5:]
+'en ab dem fünften Index.'
+>>> "Die letzten fünf Zeichen."[-5:]
+'chen.'
+>>> "Die ersten fünf Zeichen."[:5]
+'Die e'
+>>> "Die Zeichen von Index 5 bis (exklusive) Index 30."[5:30]
+'eichen von Index 5 bis (e'
+>>> "Jedes zweite Zeichen."[::2]
+'Jdszet ece.'
+>>> "Denselben String rückwärts."[::-1]
+'.sträwkcür gnirtS neblesneD'
+>>> "Zuerst die Zeichen am Index 3, dann jeweils das Zeichen an den Indizes 3 + 4, 3 + 4 + 4, ..., bis der Index größer oder gleich 50 wird."[3:50:4]
+'rdZhan d e  '
+```
+
+Vergleiche funktionieren mit `==`, und die anderen liefern eine lexikografische Ordnung:
+
+```python
+>>> "foo" == 'foo'
+True
+>>> "fünf" != "5"
+True
+>>> "Eins" < "Zwei"
+True
+>>> "Zwei" <= "Drei"
+False
+>>> "19999" < "2"
+True
+```
+
+> [!CAUTION]
+> Dies ist ein häufiges Fallstrick bei dynamisch typisierten, interpretierten Sprachen. 
+> Der Code funktioniert zwar, aber die Typen sind nicht die angenommenen, und dadurch ändert sich die Logik stillschweigend.
+
+Der letzte bei uns erwähnte Operator ist `in`:
+
+```python
+>>> "e" in "letzte"
+True
+>>> "E" in "letzte"
+False
+>>> "meow" in "Homeowner"
+True
+>>> "cat" not in "box"
+True
+```
+
+`len` (kein Operator, eine Funktion) kann verwendet werden, um die Länge eines Strings zu erhalten:
+
+```python
+>>> len("Wie lang bin ich?")
+17
+>>> len("")
+0
+>>> len("+"*100)
+100
+```
+
+Die Klasse [`str`](https://docs.python.org/3/library/string.html) hat noch sehr nützliche Methoden; wir werden diese später lernen.
+
+### Operationen auf `bool`
+
+In Python sind logische Operationen ausgeschrieben, anstatt Symbole wie `&&`, `||`, usw. zu verwenden:
+
+```python
+>>> not True
+False
+>>> not False
+True
+>>> True or False
+True
+>>> True and False
+False
+```
+
+> [!Note]
+> `~`, `&`, `|`, `^` (xor), sind bitweise Operatoren auf `int`, nicht logische Operatoren auf `bool`.
+>  `<<`, `>>` 
+
+### Prezedenz und implizite Konvertierungen
+
+
