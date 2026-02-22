@@ -649,8 +649,42 @@ False
 
 > [!Note]
 > `~`, `&`, `|`, `^` (xor), sind bitweise Operatoren auf `int`, nicht logische Operatoren auf `bool`.
->  `<<`, `>>` 
+>  `<<`, `>>`, und alle die Zuweisungsvarienten sind ebenso verfügbar für `int`
+
+### `None`
+
+`None` ist ein specieller Wert.
+Wir verwenden ihn meist für Funktionsrückgabewerte oder Standardargumentwerte. 
+Wir werden später noch etwas mehr darüber entfahren, aber wichtig ist zu beachten, dass man die "`None`-heit" einer Variablen immer mit `x is None` statt `x == None` prüfen sollte. 
+Und entsprechend `x is not None` statt `x != None`. 
 
 ### Prezedenz und implizite Konvertierungen
 
+Python folgt einer logischen, gewohnten Operatorpräzedenz, aber...
+
+> [!TIP]
+> Verwende Klammern, wenn du unsicher bist, und/oder teste die Situation schnell im REPL. 
+
+Implizite Typumwandlungen können die Ursache vieler Kopfschmerzen sein. 
+Python ist in diesem Sinne ähnlich wie C (und [viel](https://youtu.be/et8xNAc2ic8?si=SxLkXrfTrSB9I0aS) [besser als JS](https://www.destroyallsoftware.com/talks/wat)), aber:
+
+```python
+>>> 1 + 2.0 
+3.0
+>>> True + 1
+2
+>>> True == 3
+False
+>>> False == 0
+True
+>>> 1 > False
+True
+>>> None != False
+True
+>>> None == True
+False
+```
+## Steuerstrukturen
+
+## `list`
 
