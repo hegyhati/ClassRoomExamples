@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<patients xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:noNamespaceSchemaLocation="patients.xsd">
+    <patient>
+        <name>Bilbo Baggins</name>
+        <SSN>1234</SSN>
+        <address>Bag End, Shire</address>
+        <visits>
+            <visit>
+                <date>2025-02-24</date>
+                <reason>hallucinations</reason>
+            </visit>
+            <visit>
+                <date>2025-02-24</date>
+                <reason>hallucinations</reason>
+            </visit>
+            <visit>
+                <date>2025-02-24</date>
+                <reason>hallucinations</reason>
+            </visit>
+        </visits>
+    </patient>
+    <patient>
+        <name>Frodo Baggins</name>
+        <SSN>5678</SSN>
+        <address>Bag End, Shire</address>
+        <visits>
+            <visit>
+                <date>2025-02-20</date>
+                <reason>anxiety</reason>
+            </visit>
+            <visit>
+                <date>2025-03-02</date>
+                <reason>headache</reason>
+            </visit>
+            <visit>
+                <date>2025-03-10</date>
+                <reason>check-up</reason>
+            </visit>
+        </visits>
+    </patient>
+    <patient>
+        <name>Gandalf the Grey</name>
+        <SSN>9012</SSN>
+        <address>Wizard Tower, Grey Mountains</address>
+        <visits>
+            <visit>
+                <date>2025-02-18</date>
+                <reason>fatigue</reason>
+            </visit>
+            <visit>
+                <date>2025-02-28</date>
+                <reason>arthritis pain</reason>
+            </visit>
+            <visit>
+                <date>2025-03-08</date>
+                <reason>follow-up</reason>
+            </visit>
+        </visits>
+    </patient>
+    <patient>
+        <name>Aragorn Strider</name>
+        <SSN>3456</SSN>
+        <address>Weathertop, Misty Mountains</address>
+        <visits>
+            <visit>
+                <date>2025-02-22</date>
+                <reason>wound care</reason>
+            </visit>
+            <visit>
+                <date>2025-03-04</date>
+                <reason>infection check</reason>
+            </visit>
+            <visit>
+                <date>2025-03-14</date>
+                <reason>physical therapy</reason>
+            </visit>
+        </visits>
+    </patient>
+    <patient>
+        <name>Legolas Greenleaf</name>
+        <SSN>7890</SSN>
+        <address>Mirkwood Forest, Woodland Realm</address>
+        <visits>
+            <visit>
+                <date>2025-02-25</date>
+                <reason>vision check</reason>
+            </visit>
+            <visit>
+                <date>2025-03-06</date>
+                <reason>eye strain</reason>
+            </visit>
+            <visit>
+                <date>2025-03-13</date>
+                <reason>glasses adjustment</reason>
+            </visit>
+        </visits>
+    </patient>
+    <patient>
+        <name>Gimli Lockbeard</name>
+        <SSN>1357</SSN>
+        <address>Khazad-dûm, Dwarf Kingdom</address>
+        <visits>
+            <visit>
+                <date>2025-02-19</date>
+                <reason>back injury</reason>
+            </visit>
+            <visit>
+                <date>2025-03-03</date>
+                <reason>physical therapy</reason>
+            </visit>
+            <visit>
+                <date>2025-03-11</date>
+                <reason>progress review</reason>
+            </visit>
+        </visits>
+    </patient>
+    <patient>
+        <name>Boromir of Gondor</name>
+        <SSN>2468</SSN>
+        <address>Minas Tirith, Gondor</address>
+        <visits>
+            <visit>
+                <date>2025-02-21</date>
+                <reason>muscle strain</reason>
+            </visit>
+            <visit>
+                <date>2025-02-29</date>
+                <reason>treatment</reason>
+            </visit>
+            <visit>
+                <date>2025-03-09</date>
+                <reason>follow-up</reason>
+            </visit>
+        </visits>
+    </patient>
+    <patient>
+        <name>Samwise Gamgee</name>
+        <SSN>3579</SSN>
+        <address>Hobbiton, Shire</address>
+        <visits></visits>
+    </patient>
+    <patient>
+        <name>Meriadoc Brandybuck</name>
+        <SSN>4680</SSN>
+        <address>Buckland, Shire</address>
+        <visits></visits>
+    </patient>
+    <patient>
+        <name>Peregrin Took</name>
+        <SSN>5791</SSN>
+        <address>Great Smials, Shire</address>
+        <visits></visits>
+    </patient>
+    <patient>
+        <name>Gollum Sméagol</name>
+        <SSN>6802</SSN>
+        <address>Misty Mountains, Goblin Tunnels</address>
+        <visits></visits>
+    </patient>
+</patients>

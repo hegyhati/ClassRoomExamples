@@ -1,0 +1,49 @@
+Bilbo Baggins, SSN: 1234, address: Bag End, Shire
+visits:
+  - 2025-02-24, reason: hallucinations
+  - 2025-03-01, reason: insomnia
+  - 2025-03-05, reason: back pain
+  - 2025-03-12, reason: follow-up consultation
+
+
+
+Frodo Baggins, SSN: 5678, address: Bag End, Shire
+visits:
+  - 2025-02-20, reason: anxiety
+  - 2025-03-02, reason: headache
+  - 2025-03-10, reason: check-up
+
+Gandalf the Grey, SSN: 9012, address: Wizard Tower, Grey Mountains
+visits:
+  - 2025-02-18, reason: fatigue
+  - 2025-02-28, reason: arthritis pain
+  - 2025-03-08, reason: follow-up
+
+Aragorn Strider, SSN: 3456, address: Weathertop, Misty Mountains
+visits:
+  - 2025-02-22, reason: wound care
+  - 2025-03-04, reason: infection check
+  - 2025-03-14, reason: physical therapy
+
+Legolas Greenleaf, SSN: 7890, address: Mirkwood Forest, Woodland Realm
+visits:
+  - 2025-02-25, reason: vision check
+  - 2025-03-06, reason: eye strain
+  - 2025-03-13, reason: glasses adjustment
+
+Gimli Lockbeard, SSN: 1357, address: Khazad-dûm, Dwarf Kingdom
+visits:
+  - 2025-02-19, reason: back injury
+  - 2025-03-03, reason: physical therapy
+  - 2025-03-11, reason: progress review
+
+Boromir of Gondor, SSN: 2468, address: Minas Tirith, Gondor
+visits:
+  - 2025-02-21, reason: muscle strain
+  - 2025-02-29, reason: treatment
+  - 2025-03-09, reason: follow-up
+Samwise Gamgee, SSN: 3579, address: Hobbiton, Shire
+Meriadoc Brandybuck, SSN: 4680, address: Buckland, Shire
+Peregrin Took, SSN: 5791, address: Great Smials, Shire
+Gollum Sméagol, SSN: 6802, address: Misty Mountains, Goblin Tunnels
+

@@ -1,0 +1,87 @@
+patients:
+  - name: Bilbo Baggins
+    SSN: "1234"
+    address: Bag End, Shire
+    visits:
+      - date: "2025-02-24"
+        reason: hallucinations
+      - date: "2025-02-24"
+        reason: hallucinations
+      - date: "2025-02-24"
+        reason: hallucinations
+  - name: Frodo Baggins
+    SSN: "5678"
+    address: Bag End, Shire
+    visits:
+      - date: "2025-02-20"
+        reason: anxiety
+      - date: "2025-03-02"
+        reason: headache
+      - date: "2025-03-10"
+        reason: check-up
+  - name: Gandalf the Grey
+    SSN: "9012"
+    address: Wizard Tower, Grey Mountains
+    visits:
+      - date: "2025-02-18"
+        reason: fatigue
+      - date: "2025-02-28"
+        reason: arthritis pain
+      - date: "2025-03-08"
+        reason: follow-up
+  - name: Aragorn Strider
+    SSN: "3456"
+    address: Weathertop, Misty Mountains
+    visits:
+      - date: "2025-02-22"
+        reason: wound care
+      - date: "2025-03-04"
+        reason: infection check
+      - date: "2025-03-14"
+        reason: physical therapy
+  - name: Legolas Greenleaf
+    SSN: "7890"
+    address: Mirkwood Forest, Woodland Realm
+    visits:
+      - date: "2025-02-25"
+        reason: vision check
+      - date: "2025-03-06"
+        reason: eye strain
+      - date: "2025-03-13"
+        reason: glasses adjustment
+  - name: Gimli Lockbeard
+    SSN: "1357"
+    address: Khazad-dûm, Dwarf Kingdom
+    visits:
+      - date: "2025-02-19"
+        reason: back injury
+      - date: "2025-03-03"
+        reason: physical therapy
+      - date: "2025-03-11"
+        reason: progress review
+  - name: Boromir of Gondor
+    SSN: "2468"
+    address: Minas Tirith, Gondor
+    visits:
+      - date: "2025-02-21"
+        reason: muscle strain
+      - date: "2025-02-29"
+        reason: treatment
+      - date: "2025-03-09"
+        reason: follow-up
+  - name: Samwise Gamgee
+    SSN: "3579"
+    address: Hobbiton, Shire
+    visits: []
+  - name: Meriadoc Brandybuck
+    SSN: "4680"
+    address: Buckland, Shire
+    visits: []
+  - name: Peregrin Took
+    SSN: "5791"
+    address: Great Smials, Shire
+    visits: []
+  - name: Gollum Sméagol
+    SSN: "6802"
+    address: Misty Mountains, Goblin Tunnels
+    visits: []
