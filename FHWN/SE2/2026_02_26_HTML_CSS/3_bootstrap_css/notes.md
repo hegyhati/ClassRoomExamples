@@ -1,0 +1,4 @@
+- Static `html`
+- Single page
+- Minimal, no meta-info
+- No `CSS`

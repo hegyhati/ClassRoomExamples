@@ -1,0 +1,54 @@
+/* Formatting for all pages */
+
+h1 {
+    background-color: rgb(51, 51, 51);
+    color: white;
+    padding: 20px;
+    margin: 0;
+    text-align: center;
+}
+
+/* Formatting for patient subpages */
+
+table {
+    border: 8px black solid;
+    width: 100%;
+}
+
+thead {
+    background-color: lightgray;
+    border-bottom: 2px black solid;
+}
+
+th {
+    text-align: left;
+}
+
+.address {
+    color: gray;
+}
+
+.ssn {
+    text-decoration: underline;
+}
+
+/* Main list formatting */
+
+ul {
+    list-style-type: square;
+    padding-left: 20px;
+    line-height: 1.6;
+}
+
+li {
+    margin-bottom: 8px;
+}
+
+li a {
+    text-decoration: none;
+}
+
+li a:hover {
+    font-weight: bold;
+}
+

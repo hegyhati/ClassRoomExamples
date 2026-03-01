@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en" data-bs-theme="dark">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nienna's patients</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/js/bootstrap.bundle.min.js"></script>
+</head>
+
+<body>
+    <div class="container mt-4">
+        <h1 class="mb-4">Nienna's Patients</h1>
+        <ul class="nav nav-pills mb-3" id="pills-tab" role="tablist">
+            <li class="nav-item" role="presentation">
+                <button class="nav-link active" id="pills-bilbo-tab" data-bs-toggle="pill" data-bs-target="#pills-bilbo" type="button" role="tab" aria-controls="pills-bilbo" aria-selected="true">Bilbo Baggins</button>
+            </li>
+            <li class="nav-item" role="presentation">
+                <button class="nav-link" id="pills-frodo-tab" data-bs-toggle="pill" data-bs-target="#pills-frodo" type="button" role="tab" aria-controls="pills-frodo" aria-selected="false">Frodo Baggins</button>
+            </li>
+            <li class="nav-item" role="presentation">
+                <button class="nav-link" id="pills-gandalf-tab" data-bs-toggle="pill" data-bs-target="#pills-gandalf" type="button" role="tab" aria-controls="pills-gandalf" aria-selected="false">Gandalf the Grey</button>
+            </li>
+            <li class="nav-item" role="presentation">
+                <button class="nav-link" id="pills-aragorn-tab" data-bs-toggle="pill" data-bs-target="#pills-aragorn" type="button" role="tab" aria-controls="pills-aragorn" aria-selected="false">Aragorn Strider</button>
+            </li>
+            <li class="nav-item" role="presentation">
+                <button class="nav-link" id="pills-legolas-tab" data-bs-toggle="pill" data-bs-target="#pills-legolas" type="button" role="tab" aria-controls="pills-legolas" aria-selected="false">Legolas Greenleaf</button>
+            </li>
+            <li class="nav-item" role="presentation">
+                <button class="nav-link disabled" id="pills-gimli-tab" data-bs-toggle="pill" data-bs-target="#pills-gimli" type="button" role="tab" aria-controls="pills-gimli" aria-selected="false">Gimli Lockbeard</button>
+            </li>
+            <li class="nav-item" role="presentation">
+                <button class="nav-link disabled" id="pills-boromir-tab" data-bs-toggle="pill" data-bs-target="#pills-boromir" type="button" role="tab" aria-controls="pills-boromir" aria-selected="false">Boromir of Gondor</button>
+            </li>
+
+        </ul>
+
+        <div class="tab-content" id="pills-tabContent">
+            <div class="tab-pane fade show active" id="pills-bilbo" role="tabpanel" aria-labelledby="pills-bilbo-tab" tabindex="0">
+                <h2>Bilbo Baggins</h2>
+                <p>SSN: <u>1234</u></p>
+                <p>Address: <i>Bag End, Shire</i></p>
+                <h3>Visits</h3>
+                <div class="row g-3">
+                    <div class="col-md-6">
+                        <div class="card">
+                            <div class="card-body">
+                                <h5 class="card-title">2025-02-22</h5>
+                                <p class="card-text">fatigue</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="card">
+                            <div class="card-body">
+                                <h5 class="card-title">2025-02-23</h5>
+                                <p class="card-text">hallucinations</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="card">
+                            <div class="card-body">
+                                <h5 class="card-title">2025-02-24</h5>
+                                <p class="card-text">bad eyesight</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="tab-pane fade" id="pills-frodo" role="tabpanel" aria-labelledby="pills-frodo-tab" tabindex="1">
+                <h2>Frodo Baggins</h2>
+                <p>SSN: <u>5678</u></p>
+                <p>Address: <i>Bag End, Shire</i></p>
+                <h3>Visits</h3>
+                <div class="row g-3">
+                    <div class="col-md-6">
+                        <div class="card">
+                            <div class="card-body">
+                                <h5 class="card-title">2025-02-20</h5>
+                                <p class="card-text">anxiety</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="card">
+                            <div class="card-body">
+                                <h5 class="card-title">2025-03-02</h5>
+                                <p class="card-text">headache</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="card">
+                            <div class="card-body">
+                                <h5 class="card-title">2025-03-10</h5>
+                                <p class="card-text">check-up</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="tab-pane fade" id="pills-gandalf" role="tabpanel" aria-labelledby="pills-gandalf-tab" tabindex="2">
+                <h2>Gandalf the Grey</h2>
+                <p>SSN: <u>9012</u></p>
+                <p>Address: <i>Wizard Tower, Grey Mountains</i></p>
+                <h3>Visits</h3>
+                <div class="row g-3">
+                    <div class="col-md-6">
+                        <div class="card">
+                            <div class="card-body">
+                                <h5 class="card-title">2025-02-18</h5>
+                                <p class="card-text">fatigue</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="card">
+                            <div class="card-body">
+                                <h5 class="card-title">2025-02-28</h5>
+                                <p class="card-text">arthritis pain</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="card">
+                            <div class="card-body">
+                                <h5 class="card-title">2025-03-08</h5>
+                                <p class="card-text">follow-up</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="tab-pane fade" id="pills-aragorn" role="tabpanel" aria-labelledby="pills-aragorn-tab" tabindex="3">
+                <h2>Aragorn Strider</h2>
+                <p>SSN: <u>3456</u></p>
+                <p>Address: <i>Weathertop, Misty Mountains</i></p>
+                <h3>Visits</h3>
+                <div class="row g-3">
+                    <div class="col-md-6">
+                        <div class="card">
+                            <div class="card-body">
+                                <h5 class="card-title">2025-02-22</h5>
+                                <p class="card-text">wound care</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="card">
+                            <div class="card-body">
+                                <h5 class="card-title">2025-03-04</h5>
+                                <p class="card-text">infection check</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="card">
+                            <div class="card-body">
+                                <h5 class="card-title">2025-03-14</h5>
+                                <p class="card-text">physical therapy</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="tab-pane fade" id="pills-legolas" role="tabpanel" aria-labelledby="pills-legolas-tab" tabindex="4">
+                <h2>Legolas Greenleaf</h2>
+                <p>SSN: <u>7890</u></p>
+                <p>Address: <i>Mirkwood Forest, Woodland Realm</i></p>
+                <h3>Visits</h3>
+                <div class="row g-3">
+                    <div class="col-md-6">
+                        <div class="card">
+                            <div class="card-body">
+                                <h5 class="card-title">2025-02-25</h5>
+                                <p class="card-text">vision check</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="card">
+                            <div class="card-body">
+                                <h5 class="card-title">2025-03-06</h5>
+                                <p class="card-text">eye strain</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="card">
+                            <div class="card-body">
+                                <h5 class="card-title">2025-03-13</h5>
+                                <p class="card-text">glasses adjustment</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

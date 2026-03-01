@@ -1,0 +1,4 @@
+- Static `html`
+- Separate pages for each client
+- Meta info there
+- Simple `CSS` examples
