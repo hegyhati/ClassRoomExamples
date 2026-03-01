@@ -181,7 +181,7 @@ Beide Fragen können leichter beantwortet werden, wenn wir schon ein bisschen Py
 
 Es wäre unorthodox, nicht mit "Hello World" zu beginnen:
 
-<table><tr><th>C</th><th>Python</th></tr><tr><td>
+<table><tr><th style="width: 50%;">C</th><th style="width: 50%;">Python</th></tr><tr><td style="vertical-align: top;">
 
 ```c
 #include <stdio.h>
@@ -192,7 +192,7 @@ int main() {
 }
 ```
 
-</td><td>
+</td><td style="vertical-align: top;">
 
 ```python
 print("Hello World!")
@@ -215,7 +215,7 @@ Einige Notizen:
 
 Natürlich:
 
-<table><tr><th>C</th><th>Python</th></tr><tr><td>
+<table><tr><th style="width: 50%;">C</th><th style="width: 50%;">Python</th></tr><tr><td style="vertical-align: top;">
 
 ```c
 #include <stdio.h>
@@ -227,7 +227,7 @@ int main() {
 }
 ```
 
-</td><td>
+</td><td style="vertical-align: top;">
 
 ```python
 number = 3
@@ -240,7 +240,7 @@ print(number)
 
 Ja genau: 
 
-<table><tr><th>C</th><th>Python</th></tr><tr><td>
+<table><tr><th style="width: 50%;">C</th><th style="width: 50%;">Python</th></tr><tr><td style="vertical-align: top;">
 
 ```c
 #include <stdio.h>
@@ -253,7 +253,7 @@ int main() {
 }
 ```
 
-</td><td>
+</td><td style="vertical-align: top;">
 
 ```python
 num1 = 3
@@ -275,7 +275,7 @@ print(f"{num1} plus {num2} ist {num1+num2}.")
 
 Ganz einfach:
 
-<table><tr><th>C</th><th>Python</th></tr><tr><td>
+<table><tr><th style="width: 50%;">C</th><th style="width: 50%;">Python</th></tr><tr><td style="vertical-align: top;">
 
 ```c
 #include <stdio.h>
@@ -289,7 +289,7 @@ int main() {
 }
 ```
 
-</td><td>
+</td><td style="vertical-align: top;">
 
 ```python
 num = input("Bitte eine ganzen Zahl eingeben: ")
@@ -686,5 +686,99 @@ False
 ```
 ## Steuerstrukturen
 
-## `list`
+## Bedingungen
 
+Einfache `if`-Anweisungen können ähnlich wie in C verwendet werden:
+
+<table><tr><th style="width: 50%;">C</th><th style="width: 50%;">Python</th></tr><tr><td style="vertical-align: top;">
+
+```c
+if ( number < 0 ) {
+    printf("Negative.\n");
+} else if ( number > 0 ) {
+    printf("Positive\n");
+} else {
+    printf("Zero.\n");
+}
+```
+
+</td><td style="vertical-align: top;">
+
+```python
+if number < 0 :
+    print("Negative.")
+elif number > 0 :
+    print("Positive\n")
+else :
+    print("Zero.")
+```
+
+</td></tr></table>
+
+Blöcke werden nicht durch geschweifte Klammern begrenzt, sondern durch Einrückung.
+
+> [!IMPORTANT]
+> Einrückung in Python ist nicht nur eine stilistische Frage wie in C, sondern trägt semantische Bedeutung.
+
+Es gibt auch einen ternären Operator, nur besser lesbar:
+
+<table><tr><th style="width: 50%;">C</th><th style="width: 50%;">Python</th></tr><tr><td style="vertical-align: top;">
+
+```c
+printf(num % 2 == 0 ? "gerade" : "ungerade")
+```
+
+</td><td style="vertical-align: top;">
+
+```python
+print("gerade" if num % 2 == 0 else "ungerade")
+```
+
+</td></tr></table>
+
+## Schleifen
+
+Jetzt lernen wir nur über while‑Schleifen, die ähnlich wie in C funktionieren:
+
+<table><tr><th style="width: 50%;">C</th><th style="width: 50%;">Python</th></tr><tr><td style="vertical-align: top;">
+
+```c
+while ( number > 0 ) {
+    printf("%d", number % 2);
+    number /= 2;
+}
+printf("\n");
+```
+
+</td><td style="vertical-align: top;">
+
+```python
+while number > 0 :
+    print(number % 2, end="")
+    number //= 2
+print()
+```
+
+</td></tr></table>
+
+
+Es gibt keine `do‑while`-Schleife in Python, aber `break` kann verwendet werden, um solches Verhalten zu erreichen:
+
+<table><tr><th style="width: 50%;">C</th><th style="width: 50%;">Python</th></tr><tr><td style="vertical-align: top;">
+
+```c
+do {
+    printf("Alter: ");
+    scanf("%d", &age);
+} while (age < 0);
+```
+
+</td><td style="vertical-align: top;">
+
+```python
+while True :
+    age = int(input("Alter: "))
+    if age >= 0: break
+```
+
+</td></tr></table>
