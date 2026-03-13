@@ -4,7 +4,7 @@
 
 - `int` und `str` sind mutable
 - Eine list, die als Funktionsargument übergeben wird, wird immer kopiert.
-- Der maximale Wert, der in einem int gespeichert werden kann, ist 2**63‑1.
+- Der maximale Wert, der in einem int gespeichert werden kann, ist 2<sup>63</sup>‑1.
 - Listen können in Dictionaries als Werte abgelegt werden.
 
 ## Wie lautet das Ergebnis dieser Ausdrücke?
@@ -59,10 +59,10 @@ def g(l:list[int], x:int) -> int:
     if x >= 1 and x < len(l)-1:
         return (l[x-1]+l[x]+l[x+1])//3
 
-def f(l:list[int]) -> list[list[int]]:
+def f(l:list[int]) -> None:
     l2 = []
     for idx in range(1,len(l)-1):
-        l2.append(g(l),idx)
+        l2.append(g(l,idx))
     l = l2
     print(l)
 
