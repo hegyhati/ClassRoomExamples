@@ -1,0 +1,42 @@
+<html>
+    <head>
+        <title>Nienna's patients</title>
+    </head>
+    <body>
+        <h1>Patients</h1>
+        
+        <h2>New patient</h2>
+        <input id="name" type="text">
+        <input id="ssn" type="number">
+        <button onclick="add_patient()">ADD</button>
+    
+        <h2>Patient list</h2>
+        <table border="1" width="100%">
+            <thead>
+                <tr>
+                    <th>Name</th>
+                    <th>SSN</th>
+                </tr>
+            </thead>
+            <tbody id = "patient_table">
+
+            </tbody>
+        </table>        
+
+        <script>
+            let patient_names = []
+
+            function add_patient(){
+                const name = document.getElementById("name").value
+                const ssn = document.getElementById("ssn").value
+                if (!patient_names.find(x => x==name)) {
+                    console.log(`The new patient is called ${name}(${ssn})`)
+                    document.getElementById("patient_table").innerHTML += `<tr><td>${name}</td><td>${ssn}</td></tr>`
+                    patient_names.push(name)
+                } else {
+                    alert("Patient already added.")
+                }
+            }
+        </script>
+    </body>
+</html>

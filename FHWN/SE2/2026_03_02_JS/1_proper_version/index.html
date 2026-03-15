@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Nienna's patients</title>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+        <script src="behavior.js" defer></script>        
+    </head>
+    <body>
+        <div class="container mt-5">
+            <h1 class="mb-4">Patients</h1>
+            <div class="card mb-4">
+                <div class="card-header bg-primary text-white">New patient</div>
+                <div class="card-body">
+                    <form id="new_patient" class="row g-3">
+                        <div class="col-md-6">
+                            <label for="name" class="form-label">Name</label>
+                            <input id="name" type="text" class="form-control" placeholder="Enter name">
+                        </div>
+                        <div class="col-md-6">
+                            <label for="ssn" class="form-label">SSN</label>
+                            <input id="ssn" type="number" class="form-control" placeholder="Enter SSN" min="1000" max="9999">
+                        </div>
+                        <button type="submit" class="btn btn-success col-12">ADD</button>
+                    </form>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-header bg-info">Patient list</div>
+                <div class="card-body p-0">
+                    <table class="table table-striped table-bordered mb-0">
+                        <thead class="table">
+                            <tr>
+                                <th>Name</th>
+                                <th>SSN</th>
+                            </tr>
+                        </thead>
+                        <tbody id="patient_table">
+                            <!-- Patient rows go here -->
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>

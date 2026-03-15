@@ -1,0 +1,8 @@
+- nicer `html` with bootstrap css
+  - proper form
+  - number input has local rules
+- JS in separate file
+  - initial data in JSON format
+  - Event handling assigned dynamically
+  - Logic broken down to smaller functions
+  - Proper DOM modification, no `innerHTML` 

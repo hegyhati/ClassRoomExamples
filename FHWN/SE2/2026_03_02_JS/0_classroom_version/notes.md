@@ -1,0 +1,4 @@
+- minimal `html`
+- single file, inline `js`
+- very basic event handling
+- `innerHTML` edit instead of proper DOM modifications
