@@ -411,7 +411,7 @@ Nein, wir haben die `int`‑Variablen nur **reassigned** (neu zugewiesen).
 
 Der unterschied zwischen **reassignment** und **mutation** (Wertänderung) ist sehr wesentlich!
 
-Einige Beispiele für zwei immutable Typen (`int`, `str`) und einen mutable Typ (`list`):
+Einige Beispiele mit Reassignment für zwei immutable Typen (`int`, `str`) und einen mutable Typ (`list`):
 
 <table>
 <tr>
@@ -518,13 +518,9 @@ Einige Beispiele für zwei immutable Typen (`int`, `str`) und einen mutable Typ 
 ```
 </td>
 </tr>
-<tr>
-<td>Mutation<br>andere Variable</td>
-<td style="vertical-align: top;">
+</table>
 
-Keine Änderung möglich für `int`.
-
-</td><td style="vertical-align: top;">
+Mutation is nicht möglich für `int`, `float`, usw.
 
 Auch keine Änderung möglich für `str`.:
 
@@ -538,7 +534,17 @@ Traceback (most recent call last):
     ~~^^^
 TypeError: 'str' object does not support item assignment
 ```
-</td><td style="vertical-align: top;">
+
+Eine `list` kann aber verändert werden:
+
+```py
+>>> l = [1,2,3]
+>>> l[1]=222222222
+>>> l
+[1, 222222222, 3]
+```
+
+Wenn zwei Listenvariablen derselben Liste zugewiesen sind, wirkt sich eine Veränderung/Mutation über die eine natürlich auch auf die andere aus:
 
 ```py
 >>> l = [1,2,3]
@@ -548,21 +554,8 @@ TypeError: 'str' object does not support item assignment
 [1, 222222222, 3]
 >>> l2
 [1, 222222222, 3]
-
 ```
-</td>
-</tr>
-<tr>
-<td>Mutation<br>Funktionargumente</td>
-<td style="vertical-align: top;">
-
-Keine Änderung möglich für `int`.
-
-</td><td style="vertical-align: top;">
-
-Keine Änderung möglich für `str`.
-
-</td><td style="vertical-align: top;">
+Das passiert auch, wenn eine Listenvariable als Argument an eine Funktion übergeben wird:
 
 ```py
 >>> def append_size(l:list[int]) -> None:
@@ -574,12 +567,86 @@ Keine Änderung möglich für `str`.
 [11, 22, 33, 3]
 
 ```
-</td>
-</tr>
-</table>
 
+Beobachte den Unterschied im Verhalten zwischen einer Reassignment und einer Veränderung/Mutation:
+
+```py
+>>> l = [1,2,3]
+>>> l2 = l      # Andere Variable derselbe Liste zugewiesen
+>>> l2 = []     # Reassignment für l2
+>>> l2          #   l2 erzeugt eine neue Liste... 
+[]              #   ... die nichts enthält.
+>>> l           # Aber l1 zeigt weiterhin auf die ursprüngliche Liste.
+[1, 2, 3]       
+>>> l2 = l      # l2 ist wieder derselbe Liste zugewiesen
+>>> l2
+[1, 2, 3]
+>>> l2[1] = 222 # Zweite Element der Liste ist bei l2 verändert = Mutation
+>>> l2          
+[1, 222, 3]     # Die Veränderung ist in l2 natürlich sichtbar...
+>>> l
+[1, 222, 3]     # ... aber auch in l, weil sowohl l als auch l2 auf dieselbe Liste zeigen.
+```
 
 ## `for`-Schleifen
+
+For‑Schleifen werden verwendet, wenn wir etwas mit jedem Element einer Liste machen möchten:
+
+```py
+l = [1,1,2,3,5,8]
+for number in l:
+    print("f{number} ist {'gerade' if number%2==0 else 'ungerade'}.")
+```
+
+Damit ist die For‑Schleife eigentlich eine For‑Each‑Schleife und nicht so ähnlich wie die For‑Schleife in C.
+
+Falls man [etwas](https://youtu.be/wjOfQfxmTLQ?si=Wp1zdoX1j65vOOMX) `n`-mal ausführen möchte, erzeugt man eine n‑Elemente‑Liste (meistens mit `range`) und benutzt die Schleifenvariable im Schleifenrumpf nicht:
+
+```py
+for _ in range(100):
+    print("Romani ite domum")
+```
+
+aber man könnte auch:
+
+```py
+for bart in ["simpson"] * 100:
+    print("I will not burp in class.")
+```
+> [!Note]
+> `_` ist nichts Besonderes, nur ein Variablenname wie jeder andere. 
+> Aber es ist eine Konvention, `_` zu verwenden, wenn keine Absicht besteht, die Schleifenvariable zu benutzen.
+
+> [!Important]
+> Reassignment der Schleifenvariable ändert die List-Elemente nicht!
+> ```py
+> l = [1, 2, 3]
+> for number in l:
+>     number = 5
+> print(l) # Ausgabe ist [1,2,3], nicht [5,5,5]
+> ```
+
+Wenn man die Listelemente tauschen (reassignen) möchte, sollte man das über den Index machen:
+
+```py
+l = ["apfel", "banana", "erdbeere"]
+for idx in [0,1,2]:
+    l[idx] = "obst"
+print(l) # Ausgabe ist ["obst", "obst", "obst"]
+```
+
+`[0, 1, 2]` sind die gültigen Indizes für `l`. 
+Aber normalerweise wissen wir nicht, wie viele Elemente `l` hat, also möchten wir dynamisch die Liste `[0, 1, …, len(l) – 1]` erzeugen. 
+Das kann man mit `range(len(l))` machen:
+
+```py
+l = [1,2,3]
+for idx in range(len(l)):
+    l[idx] *= 2
+print(l) # Ausgabe ist [2,4,6]
+```
+
+TODO: `enumerate`
 
 ## `dict`
 
