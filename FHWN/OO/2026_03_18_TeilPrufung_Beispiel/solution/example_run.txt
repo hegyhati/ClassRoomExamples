@@ -1,0 +1,63 @@
+$ python3 main.py 
+
+            What do you want to do?
+            1) Search for a POI
+            2) Add new POI
+            3) TOP 5 most popular POIs
+            4) Add visits from GPX files in a directory
+            5) Exit
+            3
+
+1. Herrentisch (47.6648127, 16.4217079) - 0 visit(s)
+2. Drei Säulen (47.6393216, 16.4980057) - 0 visit(s)
+3. Umbruch - Denkmal Paneuropäisches Picknick (47.7567819, 16.621029) - 0 visit(s)
+4. Rohrbacher Kogel (47.724642, 16.4482971) - 0 visit(s)
+5. Gschriebenstein (47.3528283, 16.4337197) - 0 visit(s)
+
+            What do you want to do?
+            1) Search for a POI
+            2) Add new POI
+            3) TOP 5 most popular POIs
+            4) Add visits from GPX files in a directory
+            5) Exit
+            4
+
+Where should I look for GPX files? /home/hegyhati/Downloads
+ - Checking activity_8410635995.gpx...  visited: Rohrbacher Kogel
+ - Checking activity_11617827834.gpx...  visited: Drei Säulen
+ - Checking activity_8049210109.gpx...  visited: Drei Säulen
+ - Checking activity_11639092948.gpx...  visited: 
+ - Checking activity_11114819354.gpx...  visited: Gschriebenstein
+ - Checking activity_15700840537.gpx...  visited: 
+ - Checking activity_8290831399.gpx...  visited: Herrentisch
+ - Checking activity_14774211688.gpx...  visited: 
+ - Checking activity_11218194525.gpx...  visited: 
+ - Checking activity_17808745465.gpx...  visited: Rohrbacher Kogel
+ - Checking activity_7950759751.gpx...  visited: Umbruch - Denkmal Paneuropäisches Picknick
+ - Checking activity_12316195285.gpx...  visited: Umbruch - Denkmal Paneuropäisches Picknick
+ - Checking activity_15689380467.gpx...  visited: Drei Säulen
+
+            What do you want to do?
+            1) Search for a POI
+            2) Add new POI
+            3) TOP 5 most popular POIs
+            4) Add visits from GPX files in a directory
+            5) Exit
+            3
+
+1. Drei Säulen (47.6393216, 16.4980057) - 3 visit(s)
+2. Umbruch - Denkmal Paneuropäisches Picknick (47.7567819, 16.621029) - 2 visit(s)
+3. Rohrbacher Kogel (47.724642, 16.4482971) - 2 visit(s)
+4. Herrentisch (47.6648127, 16.4217079) - 1 visit(s)
+5. Gschriebenstein (47.3528283, 16.4337197) - 1 visit(s)
+
+            What do you want to do?
+            1) Search for a POI
+            2) Add new POI
+            3) TOP 5 most popular POIs
+            4) Add visits from GPX files in a directory
+            5) Exit
+            5
+
+Bye-bye
+$ 

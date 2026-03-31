@@ -1,26 +1,47 @@
 [
     {
-        "name" : "Herrentisch",
-        "pos" : {
-            "lat" : 47.6648127,
-            "lon" : 16.4217079
+        "name": "Herrentisch",
+        "pos": {
+            "lat": 47.6648127,
+            "lon": 16.4217079
         },
-        "osm" : "https://www.openstreetmap.org/node/1656932352"
+        "osm": "https://www.openstreetmap.org/node/1656932352",
+        "visits": 1
     },
     {
-        "name" : "Drei Säulen",
-        "pos" : {
-            "lat" : 47.6393216, 
-            "lon" : 16.4980057
+        "name": "Drei Säulen",
+        "pos": {
+            "lat": 47.6393216,
+            "lon": 16.4980057
         },
-        "osm" : "https://www.openstreetmap.org/node/1732254930"
+        "osm": "https://www.openstreetmap.org/node/1732254930",
+        "visits": 3
     },
     {
-        "name" : "Umbruch - Denkmal Paneuropäisches Picknick",
-        "pos" : {
-            "lat" : 47.7567819,  
-            "lon" : 16.6210290
+        "name": "Umbruch - Denkmal Paneuropäisches Picknick",
+        "pos": {
+            "lat": 47.7567819,
+            "lon": 16.621029
         },
-        "osm" : "https://www.openstreetmap.org/node/1097783032"
+        "osm": "https://www.openstreetmap.org/node/1097783032",
+        "visits": 2
+    },
+    {
+        "name": "Rohrbacher Kogel",
+        "pos": {
+            "lat": 47.724642,
+            "lon": 16.4482971
+        },
+        "osm": "https://www.openstreetmap.org/node/804265484",
+        "visits": 2
+    },
+    {
+        "name": "Gschriebenstein",
+        "pos": {
+            "lat": 47.3528283,
+            "lon": 16.4337197
+        },
+        "osm": "https://www.openstreetmap.org/node/3596115326",
+        "visits": 1
     }
 ]

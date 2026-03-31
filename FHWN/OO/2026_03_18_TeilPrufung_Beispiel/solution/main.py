@@ -1,4 +1,5 @@
 import json
+import os
 
 def parse_latitude(trkpt_str:str) -> float:
     return float(trkpt_str.split("lat")[1].split('"')[1])
@@ -85,8 +86,21 @@ class POI_Manager:
         data = self.__get_data()
         data.sort(key = lambda poi: poi["visits"] if "visits" in poi else 0, reverse=True)
         return [poi["name"] for poi in data[:count]]
-
     
+    def process_gpx(self, filepath:str) -> set[str]:
+        visited = set()
+        with open(filepath) as f:
+            for line in f:
+                if "<trkpt" in line:
+                    lat = parse_latitude(line)
+                    lon = parse_longitude(line)
+                    pois = self.get_close_pois((lat,lon))
+                    for poi in pois:
+                        if poi not in visited:
+                            visited.add(poi)
+                            self._add_visit(poi)
+        return visited
+
 if __name__ == "__main__":
 
     manager = POI_Manager("../poi.json")
@@ -96,7 +110,7 @@ if __name__ == "__main__":
             1) Search for a POI
             2) Add new POI
             3) TOP 5 most popular POIs
-            4) Add visits from GPX file
+            4) Add visits from GPX files in a directory
             5) Exit
             """)
         match selection.strip():
@@ -122,7 +136,12 @@ if __name__ == "__main__":
                 for i,name in enumerate(top):
                     print(f"{i+1}. {name} {manager.get_pos(name)} - {manager.get_visits(name)} visit(s)")
             case "4":
-                print("Feature is not implemented yet, try again later.")
+                dirpath = input("Where should I look for GPX files? ")
+                for file in os.listdir(dirpath):
+                    if os.path.splitext(file)[1] == ".gpx":
+                        print(f" - Checking {file}... ", end="")
+                        pois = manager.process_gpx(os.path.join(dirpath,file))
+                        print(" visited: " + ", ".join(pois))
             case "5":
                 print("Bye-bye")
                 exit(0)
