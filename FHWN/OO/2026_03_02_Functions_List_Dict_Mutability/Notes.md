@@ -646,10 +646,266 @@ for idx in range(len(l)):
 print(l) # Ausgabe ist [2,4,6]
 ```
 
-TODO: `enumerate`
+Manchmal braucht man einfachen Zugriff sowohl auf den Wert als auch auf den Index. 
+Dann kann man die Funktion `enumerate` verwenden:
+
+```py
+l = ["Eins", "zwei", "Polizei"]
+for idx,value in enumerate(l):
+    print(f"l[{idx}]: {value})
+```
 
 ## `dict`
 
+Listen sind wunderbar, wenn man Werte ähnlicher Natur zusammenfassen möchte.
+
+Aber sie sind nicht wirklich nützlich, wenn man Werte unterschiedlicher Natur in einer Datenstruktur gruppieren möchte. 
+Ein Job hat zum Beispiel vielleicht eine Deadline, eine Priorität, eine Liste von Aufgaben usw. 
+Erst, diese Werte haben untershiedliche Typen. 
+Außerdem möchten wir in diesem Fall nicht per Index auf diese Daten zugreifen, da sie nicht das n-te Vorkommen derselben Sache sind. 
+Vielmehr haben sie unterschiedliche semantische Bedeutungen, sodass wir meistens per Namen, also per `str`, auf sie zugreifen möchten. 
+
+In Python können Dictionaries/Wörterbücher diesen Zweck erfüllen.
+Eigentlich ist ein `dict` nur eine Menge von Schlüssel‑Wert‑Paaren.
+
+```py
+agelimits = {"beer" : 16, "cigarette" : 18, "Kinder egg" : 6}
+
+job : dict = {
+    "deadline" : "2026-04-26",
+    "client" : "OBB",
+    "priority" : 1,
+    "tasks" : [
+        "requirements analysis',
+        "system design",
+        "module design",
+        "development",
+        "testing",
+        "deployment",
+        "maintenance"
+    ]
+}
+```
+
+> [!NOTE]
+> Nicht nur die Werte, sondern auch die Schlüssel können unterschiedliche Typen haben, solange sie immutable sind. 
+> Allerdings sind in den meisten Fällen alle Schlüssel Strings. 
+> Diese ist ebenfalls möglich, aber es gibt praktisch keinen Grund, es so zu machen:
+> ```py
+> dont_do_this_even_if_syntactically_correct  = {
+>     "foo" : "bar",
+>     True: False,
+>     1 : True,
+>     1.0 : 4+3j,    
+> }
+> ```
+
 ### Operatoren
 
+
+Auf den Wert zu einem Schlüssel zuzugreifen oder ihn neu zuzuweisen, ist genauso einfach wie mit Indizes bei `list`:
+
+```py
+date = {
+    "year" : 2026,
+    "month" : 3,
+    "day" 26
+}
+
+print(date['year']) # Wert zu Schlüssel "year" zugreifen
+date["month"] += 1  # Neuen Wert zu Schlüssel "month" zuweisen 
+```
+
+`del` kann verwendet werden, um ein Schlüssel‑Wert‑Paar zu entfernen:
+
+```py
+ages = {
+    "Anna" : 12,
+    "Bob" : 34,
+    "Cecil" : 56 
+}
+del ages["Anna"]
+print(ages) # Ausgabe: {"Bob": 34, "Cecil": 56}
+```
+
+`in` gibt zurück, ob ein Schlüssel in einem Dict verfügbar ist:
+
+```py
+>>> d = {"a": 1, "b": 2}
+>>> "a" in d
+True
+>>> "A" in d
+False
+>>> "b" not in d
+False
+```
+
+Schließlich gibt `len` die Anzahl der Schlüssel‑Wert‑Paare zurück:
+
+```py
+>>> len({"a": 1, "b": [1,2,3,4]})
+2
+```
+
 ### Methoden
+
+Ähnlich wie `list` hat auch `dict` die Methode `clear()`. 
+Schlüssel und Werte können mit `keys()` und `values()` zurückgegeben werden.
+Um eine Liste von Schlüssel‑Wert‑Paaren zu erhalten, kann `items()` verwendet werden.
+Natürlich gibt es noch [andere Methoden](https://docs.python.org/3/library/stdtypes.html#dict).
+
+### Schleifen
+
+for `x in my_dict` iteriert über die Schlüssel. 
+Wenn man die Werte oder sowohl die Schlüssel als auch die Werte braucht, sollte man die oben genannten Methoden verwenden:
+
+```py
+>>> countries = {"AT":"Austria", "HU":"Hungary", "DE": "Germany"}
+>>> for code in countries:
+        print(code)
+
+AT
+HU
+DE
+>>> for name in countries.values():
+        print(country)
+
+Austria
+Hungary
+Germany
+>>> for code, name in countries.items():
+        print(code, name)
+AT Austria
+HU Hungary
+DE Germany
+```
+
+### Nesting lists and dictionaries
+
+Hierarchische Daten können einfach in einer verschachtelten Listen‑Dict‑Datenstruktur gespeichert werden.
+
+Einige Beispiele:
+
+```py
+hutten = [
+    {
+        "name" : "Edelweißhütte",
+        "osm" : "https://www.openstreetmap.org/way/132613067",
+        "web" : "https://www.alpenverein.at/edelweisshuetteamschneeberg/",
+        "wiki" : "https://de.wikipedia.org/wiki/Edelweissh%C3%BCtte_%28Rax-Schneeberg-Gruppe%29"
+        "position" : {
+            "longitude": "15° 48′ 54″ O", 
+            "latitude": "47° 47′ 31″ N",
+            "altitude": 1235
+        }, 
+        "contact" : {
+            "phone" : [
+                "+43 2636 3616",
+                "+43 2636 3616"
+            ],
+            "email" : ["info@edelweishuette.at"]
+        },
+        "services" : {
+            "food" : {
+                "Gulasch" : 12.50,
+                "Kaiserschmarrn" : 8.75,
+                "Apfelstrudel" : 6.50,
+                "Wiener Schnitzel" : 14.00
+            }, 
+            "accomodation" : [
+                {
+                    "name": "Doppelzimmer",
+                    "capacity": 2,
+                    "price_per_night": 45.00
+                },
+                {
+                    "name": "Einzelzimmer",
+                    "capacity": 1,
+                    "price_per_night": 28.00
+                },
+                {
+                    "name": "Mehrbettzimmer",
+                    "capacity": 4,
+                    "price_per_night": 75.00
+                }
+            ]                
+        }
+    },
+    {
+        "name" : "Ohlschutzhuette",
+        "osm" : "https://www.openstreetmap.org/way/...",
+        "web" : "https://www.alpenverein.at/ohlschutzhuette/",
+        "wiki" : "https://de.wikipedia.org/wiki/Ohlschutzhuette",
+        "position" : {
+            "longitude": "15° 45′ 00″ O", 
+            "latitude": "47° 45′ 00″ N",
+            "altitude": 1200
+        }, 
+        "contact" : {
+            "phone" : ["+43 2636 789"],
+            "email" : ["info@ohlschutzhuette.at"]
+        },
+        "services" : {
+            "food" : {
+                "Gulasch" : 12.00,
+                "Kaiserschmarrn" : 8.50,
+                "Apfelstrudel" : 6.00,
+                "Wiener Schnitzel" : 13.50
+            }, 
+            "accomodation" : [
+                {
+                    "name": "Doppelzimmer",
+                    "capacity": 2,
+                    "price_per_night": 40.00
+                },
+                {
+                    "name": "Einzelzimmer",
+                    "capacity": 1,
+                    "price_per_night": 25.00
+                }
+            ]                
+        }
+    },
+    {
+        "name" : "Hengsttalhuette",
+        "osm" : "https://www.openstreetmap.org/way/...",
+        "web" : "https://www.alpenverein.at/hengsttalhuette/",
+        "wiki" : "https://de.wikipedia.org/wiki/Hengsttalhuette",
+        "position" : {
+            "longitude": "15° 50′ 00″ O", 
+            "latitude": "47° 50′ 00″ N",
+            "altitude": 1400
+        }, 
+        "contact" : {
+            "phone" : ["+43 2636 234"],
+            "email" : ["info@hengsttalhuette.at"]
+        },
+        "services" : {
+            "food" : {
+                "Gulasch" : 13.00,
+                "Kaiserschmarrn" : 9.00,
+                "Apfelstrudel" : 7.00,
+                "Wiener Schnitzel" : 15.00
+            }, 
+            "accomodation" : [
+                {
+                    "name": "Doppelzimmer",
+                    "capacity": 2,
+                    "price_per_night": 50.00
+                },
+                {
+                    "name": "Einzelzimmer",
+                    "capacity": 1,
+                    "price_per_night": 30.00
+                },
+                {
+                    "name": "Mehrbettzimmer",
+                    "capacity": 4,
+                    "price_per_night": 80.00
+                }
+            ]                
+        }
+    }
+]
+```
+()
