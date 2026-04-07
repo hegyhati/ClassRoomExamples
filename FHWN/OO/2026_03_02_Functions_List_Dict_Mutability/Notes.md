@@ -908,4 +908,4 @@ hutten = [
     }
 ]
 ```
-()
+(Die Daten sind teilweise von einem LLM generiert und sollten nicht exakt übernommen werden.)
