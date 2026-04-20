@@ -1,0 +1,187 @@
+[
+    {
+        "title" : "Ironman",
+        "year" : 2008,
+        "box-office" : 123,
+        "characters": [
+            "Ironman",
+            "Nick Fury",
+            "Black Widow"
+        ]
+
+    },
+    {
+        "title": "The Incredible Hulk",
+        "year": 2008,
+        "box-office": 134,
+        "characters": ["Hulk", "Betty Ross", "Thunderbolt Ross"]
+    },
+    {
+        "title": "Iron Man 2",
+        "year": 2010,
+        "box-office": 170,
+        "characters": ["Ironman", "Black Widow", "War Machine"]
+    },
+    {
+        "title": "Thor",
+        "year": 2011,
+        "box-office": 181,
+        "characters": ["Thor", "Loki", "Jane Foster"]
+    },
+    {
+        "title": "Captain America: The First Avenger",
+        "year": 2011,
+        "box-office": 176,
+        "characters": ["Captain America", "Peggy Carter", "Red Skull"]
+    },
+    {
+        "title": "The Avengers",
+        "year": 2012,
+        "box-office": 1519,
+        "characters": ["Ironman", "Captain America", "Thor", "Hulk", "Black Widow", "Hawkeye", "Loki"]
+    },
+    {
+        "title": "Iron Man 3",
+        "year": 2013,
+        "box-office": 1215,
+        "characters": ["Ironman", "Pepper Potts", "Mandarin"]
+    },
+    {
+        "title": "Thor: The Dark World",
+        "year": 2013,
+        "box-office": 644,
+        "characters": ["Thor", "Loki", "Jane Foster", "Malekith"]
+    },
+    {
+        "title": "Captain America: The Winter Soldier",
+        "year": 2014,
+        "box-office": 714,
+        "characters": ["Captain America", "Winter Soldier", "Black Widow"]
+    },
+    {
+        "title": "Guardians of the Galaxy",
+        "year": 2014,
+        "box-office": 773,
+        "characters": ["Star-Lord", "Gamora", "Drax", "Rocket", "Groot"]
+    },
+    {
+        "title": "Avengers: Age of Ultron",
+        "year": 2015,
+        "box-office": 1403,
+        "characters": ["Ironman", "Captain America", "Thor", "Hulk", "Black Widow", "Hawkeye", "Vision", "Scarlet Witch", "Ultron"]
+    },
+    {
+        "title": "Ant-Man",
+        "year": 2015,
+        "box-office": 519,
+        "characters": ["Ant-Man", "Hope van Dyne", "Hank Pym"]
+    },
+    {
+        "title": "Captain America: Civil War",
+        "year": 2016,
+        "box-office": 1153,
+        "characters": ["Captain America", "Ironman", "Black Panther", "Spider-Man", "Winter Soldier"]
+    },
+    {
+        "title": "Doctor Strange",
+        "year": 2016,
+        "box-office": 677,
+        "characters": ["Doctor Strange", "Wong", "Ancient One"]
+    },
+    {
+        "title": "Guardians of the Galaxy Vol. 2",
+        "year": 2017,
+        "box-office": 863,
+        "characters": ["Star-Lord", "Gamora", "Drax", "Rocket", "Groot", "Yondu"]
+    },
+    {
+        "title": "Spider-Man: Homecoming",
+        "year": 2017,
+        "box-office": 880,
+        "characters": ["Spider-Man", "Ironman", "Vulture"]
+    },
+    {
+        "title": "Thor: Ragnarok",
+        "year": 2017,
+        "box-office": 853,
+        "characters": ["Thor", "Loki", "Hulk", "Valkyrie"]
+    },
+    {
+        "title": "Black Panther",
+        "year": 2018,
+        "box-office": 1347,
+        "characters": ["Black Panther", "Shuri", "Killmonger"]
+    },
+    {
+        "title": "Avengers: Infinity War",
+        "year": 2018,
+        "box-office": 2048,
+        "characters": ["Ironman", "Captain America", "Thor", "Hulk", "Black Widow", "Spider-Man", "Doctor Strange", "Guardians", "Thanos"]
+    },
+    {
+        "title": "Ant-Man and the Wasp",
+        "year": 2018,
+        "box-office": 622,
+        "characters": ["Ant-Man", "Wasp", "Ghost"]
+    },
+    {
+        "title": "Captain Marvel",
+        "year": 2019,
+        "box-office": 1128,
+        "characters": ["Captain Marvel", "Nick Fury", "Talos"]
+    },
+    {
+        "title": "Avengers: Endgame",
+        "year": 2019,
+        "box-office": 2797,
+        "characters": ["Ironman", "Captain America", "Thor", "Hulk", "Black Widow", "Hawkeye", "Captain Marvel", "Thanos"]
+    },
+    {
+        "title": "Spider-Man: Far From Home",
+        "year": 2019,
+        "box-office": 1311,
+        "characters": ["Spider-Man", "Mysterio", "Nick Fury"]
+    },
+    {
+        "title": "Black Widow",
+        "year": 2021,
+        "box-office": 380,
+        "characters": ["Black Widow", "Yelena Belova", "Taskmaster"]
+    },
+    {
+        "title": "Shang-Chi and the Legend of the Ten Rings",
+        "year": 2021,
+        "box-office": 432,
+        "characters": ["Shang-Chi", "Xu Wenwu", "Katy"]
+    },
+    {
+        "title": "Eternals",
+        "year": 2021,
+        "box-office": 402,
+        "characters": ["Sersi", "Ikaris", "Kingo", "Thena"]
+    },
+    {
+        "title": "Spider-Man: No Way Home",
+        "year": 2021,
+        "box-office": 1916,
+        "characters": ["Spider-Man", "Doctor Strange", "MJ", "Green Goblin"]
+    },
+    {
+        "title": "Doctor Strange in the Multiverse of Madness",
+        "year": 2022,
+        "box-office": 955,
+        "characters": ["Doctor Strange", "Wanda Maximoff", "America Chavez"]
+    },
+    {
+        "title": "Thor: Love and Thunder",
+        "year": 2022,
+        "box-office": 760,
+        "characters": ["Thor", "Jane Foster", "Valkyrie", "Gorr"]
+    },
+    {
+        "title": "Black Panther: Wakanda Forever",
+        "year": 2022,
+        "box-office": 859,
+        "characters": ["Shuri", "Namor", "Okoye"]
+    }
+]
