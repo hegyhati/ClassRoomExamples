@@ -1,0 +1,37 @@
+<svg width="1200" height="250" xmlns="http://www.w3.org/2000/svg">
+<rect x="50" y="70" width="15" height="100" fill="maroon" />
+<rect x="50" y="70" width="60" height="15" fill="purple" />
+<rect x="50" y="155" width="60" height="15" fill="deeppink" />
+<rect x="95" y="120" width="15" height="50" fill="deeppink" />
+<rect x="80" y="120" width="30" height="15" fill="darkgreen" />
+<rect x="130" y="70" width="15" height="100" fill="darkorange" />
+<rect x="175" y="70" width="15" height="100" fill="darkorange" />
+<rect x="130" y="70" width="60" height="15" fill="midnightblue" />
+<rect x="130" y="155" width="60" height="15" fill="midnightblue" />
+<rect x="210" y="70" width="15" height="100" fill="blue" />
+<rect x="255" y="70" width="15" height="100" fill="darkviolet" />
+<rect x="210" y="70" width="60" height="15" fill="crimson" />
+<rect x="210" y="155" width="60" height="15" fill="red" />
+<rect x="290" y="70" width="15" height="100" fill="red" />
+<rect x="335" y="85" width="15" height="70" fill="darkgreen" />
+<rect x="290" y="70" width="45" height="15" fill="navy" />
+<rect x="290" y="155" width="45" height="15" fill="green" />
+<rect x="420" y="70" width="15" height="100" fill="darkgreen" />
+<rect x="420" y="155" width="60" height="15" fill="navy" />
+<rect x="500" y="70" width="15" height="100" fill="crimson" />
+<rect x="545" y="70" width="15" height="100" fill="darkcyan" />
+<rect x="500" y="155" width="60" height="15" fill="navy" />
+<rect x="580" y="70" width="15" height="100" fill="deeppink" />
+<rect x="580" y="70" width="60" height="15" fill="blue" />
+<rect x="580" y="155" width="60" height="15" fill="darkviolet" />
+<rect x="660" y="70" width="15" height="100" fill="darkviolet" />
+<rect x="675" y="113" width="30" height="15" fill="darkorange" />
+<rect x="705" y="70" width="15" height="45" fill="red" />
+<rect x="705" y="125" width="15" height="45" fill="forestgreen" />
+<rect x="803" y="70" width="15" height="70" fill="maroon" />
+<rect x="803" y="155" width="15" height="15" fill="darkviolet" />
+<rect x="853" y="70" width="15" height="70" fill="red" />
+<rect x="853" y="155" width="15" height="15" fill="green" />
+<rect x="903" y="70" width="15" height="70" fill="crimson" />
+<rect x="903" y="155" width="15" height="15" fill="midnightblue" />
+</svg>

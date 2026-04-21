@@ -1,0 +1,17 @@
+<svg width="987" height="610" xmlns="http://www.w3.org/2000/svg">
+<rect x="0" y="0" width="1" height="1" fill="forestgreen" />
+<rect x="0" y="1" width="1" height="1" fill="crimson" />
+<rect x="1" y="0" width="2" height="2" fill="royalblue" />
+<rect x="0" y="2" width="3" height="3" fill="white" />
+<rect x="3" y="0" width="5" height="5" fill="forestgreen" />
+<rect x="0" y="5" width="8" height="8" fill="crimson" />
+<rect x="8" y="0" width="13" height="13" fill="royalblue" />
+<rect x="0" y="13" width="21" height="21" fill="white" />
+<rect x="21" y="0" width="34" height="34" fill="forestgreen" />
+<rect x="0" y="34" width="55" height="55" fill="crimson" />
+<rect x="55" y="0" width="89" height="89" fill="royalblue" />
+<rect x="0" y="89" width="144" height="144" fill="white" />
+<rect x="144" y="0" width="233" height="233" fill="forestgreen" />
+<rect x="0" y="233" width="377" height="377" fill="crimson" />
+<rect x="377" y="0" width="610" height="610" fill="royalblue" />
+</svg>
