@@ -22,11 +22,13 @@ typedef struct {
 } algorithm;
 
 static const algorithm all_algorithms[] = {
-    { "Heap sort", heap_sort },
+    // O(n^2)
     { "Shaker sort", shaker_sort },
     { "Bubble sort", bubble_sort },
     { "Insertion sort", insertion_sort },
     { "Selection sort", selection_sort },
+    // O(nlogn)
+    { "Heap sort", heap_sort },
     { "Quick sort", quick_sort },
     { "Merge sort", merge_sort },
     { "Wasteful merge sort", wasteful_merge_sort },
