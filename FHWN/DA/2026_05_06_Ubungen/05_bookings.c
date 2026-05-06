@@ -31,11 +31,6 @@ Luckily, there is a well known algorithm for that:
 
 */
 
-
-struct Bookings {
-
-}
-
 int main(int argc, char** argv) {
     if (argc < 2) {
         printf("Provide the input file as command line argument.\n");
