@@ -1,0 +1,25 @@
+8
+I00 Cars: 17 Bikes: 30 Pedestrians: 140
+I01 Cars: 90 Bikes: 25 Pedestrians: 128
+I02 Cars: 76 Bikes: 4 Pedestrians: 177
+I03 Cars: 74 Bikes: 28 Pedestrians: 115
+I04 Cars: 89 Bikes: 7 Pedestrians: 114
+I05 Cars: 88 Bikes: 35 Pedestrians: 200
+I06 Cars: 20 Bikes: 43 Pedestrians: 200
+I07 Cars: 79 Bikes: 43 Pedestrians: 114
+I01 - I04 : 3.17 km
+I01 - I07 : 6.18 km
+I02 - I03 : 4.98 km
+I03 - I07 : 8.99 km
+I00 - I03 : 4.82 km
+I06 - I07 : 5.05 km
+I00 - I02 : 4.13 km
+I00 - I01 : 3.59 km
+I00 - I04 : 6.04 km
+I00 - I05 : 4.13 km
+I05 - I06 : 9.68 km
+I01 - I05 : 8.02 km
+I03 - I05 : 7.77 km
+I02 - I07 : 9.59 km
+I05 - I07 : 2.35 km
+I04 - I07 : 5.8 km
