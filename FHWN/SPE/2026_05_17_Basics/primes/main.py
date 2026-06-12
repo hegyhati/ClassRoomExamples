@@ -5,7 +5,7 @@ app = Flask(__name__)
 
 
 
-def is_prime(int: num) -> bool:
+def is_prime(num: int) -> bool:
     for div in range(2,num):
         if num % div == 0:
             return False
