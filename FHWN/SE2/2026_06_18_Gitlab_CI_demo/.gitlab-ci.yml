@@ -1,0 +1,39 @@
+stages:
+  - test
+  - docker
+
+variables:
+  MAVEN_CLI_OPTS: "--batch-mode --errors --fail-at-end"
+  MAVEN_OPTS: "-Dmaven.repo.local=.m2/repository"
+  DOCKER_DRIVER: overlay2
+  DOCKER_TLS_CERTDIR: "/certs"
+
+test:
+  stage: test
+  image: maven:3.9-eclipse-temurin-17
+  cache:
+    key: "$CI_COMMIT_REF_SLUG"
+    paths:
+      - .m2/repository
+  script:
+    - mvn $MAVEN_CLI_OPTS test
+
+build_docker_image:
+  stage: docker
+  image: docker:27
+  rules:
+    - if: '$CI_COMMIT_BRANCH == "main"'
+    - when: never
+  services:
+    - docker:27-dind
+  needs:
+    - test
+  script:
+    - docker build -t hibernate-sqlite:$CI_COMMIT_SHORT_SHA .
+    - docker image ls hibernate-sqlite:$CI_COMMIT_SHORT_SHA
+    - docker save hibernate-sqlite:$CI_COMMIT_SHORT_SHA -o image.tar
+  artifacts:
+    name: "docker-image-$CI_COMMIT_SHORT_SHA"
+    paths:
+      - image.tar
+    expire_in: 1 week
