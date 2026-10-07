@@ -10,7 +10,7 @@ Extend `POI_manager` with new methods:
 
 # Copy-paste your class defition here from 02 and extend it with the new methods
 
-class POI_manager:
+class POI_Manager:
     pass
 
 
