@@ -1,0 +1,8 @@
+<svg width="100.0" height="100.00000000000001" xmlns="http://www.w3.org/2000/svg">
+  <g transform="translate(0, 100.0) scale(1,-1)">
+    <line x1="0" y1="0" x2="6.123233995736766e-15" y2="100.0" style="stroke:black;stroke-width:2" />
+    <line x1="6.123233995736766e-15" y1="100.0" x2="100.0" y2="100.0" style="stroke:black;stroke-width:2" />
+    <line x1="100.0" y1="100.0" x2="100.0" y2="0.0" style="stroke:black;stroke-width:2" />
+    <line x1="100.0" y1="0.0" x2="0.0" y2="-1.2246467991473532e-14" style="stroke:black;stroke-width:2" />
+  </g>
+</svg>

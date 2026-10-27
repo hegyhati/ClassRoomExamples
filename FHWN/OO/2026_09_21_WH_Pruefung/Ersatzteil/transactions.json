@@ -1,0 +1,23 @@
+
+[
+    {"id": 1, "type": "deposit", "amount": 50.00, "status": "accepted"},
+    {"id": 2, "type": "withdrawal", "amount": 10.10, "status": "accepted"},
+    {"id": 3, "type": "deposit", "amount": 200.00, "status": "accepted"},
+    {"id": 4, "type": "withdrawal", "amount": 49.99, "status": "declined"},
+    {"id": 5, "type": "withdrawal", "amount": 10.50, "status": "accepted"},
+    {"id": 6, "type": "deposit", "amount": 250, "status": "declined"},
+    {"id": 7, "type": "withdrawal", "amount": 150, "status": "accepted"},
+    {"id": 8, "type": "deposit", "amount": 200.10, "status": "accepted"},
+    {"id": 9, "type": "withdrawal", "amount": 79.20, "status": "accepted"},
+    {"id": 10, "type": "deposit", "amount": 300.00, "status": "accepted"},
+    {"id": 11, "type": "withdrawal", "amount": 300.00, "status": "declined"},
+    {"id": 12, "type": "deposit", "amount": 400.00, "status": "accepted"},
+    {"id": 13, "type": "withdrawal", "amount": 19.90, "status": "accepted"},
+    {"id": 14, "type": "deposit", "amount": 50.00, "status": "declined"},
+    {"id": 15, "type": "withdrawal", "amount": 61.55, "status": "accepted"},
+    {"id": 16, "type": "deposit", "amount": 150.00, "status": "accepted"},
+    {"id": 17, "type": "withdrawal", "amount": 90.10, "status": "declined"},
+    {"id": 18, "type": "deposit", "amount": 249.90, "status": "accepted"},
+    {"id": 19, "type": "withdrawal", "amount": 40.00, "status": "accepted"},
+    {"id": 20, "type": "withdrawal", "amount": 22.97, "status": "accepted"}
+  ]
