@@ -4,7 +4,9 @@
 
 In order to avoid TLS, we go with a simple local setup, where the DB and its browser runs in [docker](https://www.docker.com/) containers.
 
-If you don't have docker, [install it first](https://docs.docker.com/desktop/setup/install/windows-install/), and for easier orchestration, [install docker compose](https://docs.docker.com/compose/install/) too.
+If you don't have docker, [install it first](https://docs.docker.com/desktop/setup/install/). Docker is "Linux native", don't forget to install `docker.io`, `docker-cli` and `docker-compose`. On Windows/Mac, Docker Desktop bundles them. On Windows don't forget to [install WSL](https://learn.microsoft.com/en-us/windows/wsl/install) too. 
+
+
 
 ## Starting the DB and browser
 
@@ -30,18 +32,18 @@ The web-based DB browser on port 8080.
       - "8080:8080"
 ```
 
-Start both of them by executing this in theasame directory:
+Start both of them by executing this in thea same directory:
 
 ```
 docker compose up
 ```
 
-For the first time, it will take some time to dowbload the images.
+For the first time, it will take some time to download the images.
 
 
 Now both of them are running, navigate to [localhost:8080](http://localhost:8080), select PostgreSQL, leave `db`, set username&database to `postgres`, password to  `password`, then login. 
 
-Leave both running.
+Leave both running, while playing around with the Rust code. You can <kbd>Ctrl</kbd>+<kbd>C</kbd> to close it, or if you started with `-d`, then just `docker compose down`. And you can restart whenever you need it again. 
 
 ## Rust project
 
