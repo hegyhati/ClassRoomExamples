@@ -1,0 +1,18 @@
+services:
+  postgres:
+    image: postgres:18-alpine
+    container_name: local_postgres
+    environment:
+      POSTGRES_USER: postgres
+      POSTGRES_PASSWORD: atleastonenumberandspecialcharacter
+    ports:
+      - "5432:5432"
+
+  pgadmin:
+    image: dpage/pgadmin4:9.19
+    container_name: local_pgadmin
+    environment:
+      PGADMIN_DEFAULT_EMAIL: admin@example.com
+      PGADMIN_DEFAULT_PASSWORD: adminpassword
+    ports:
+      - "5050:80"
